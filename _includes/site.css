@@ -1,0 +1,42 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1em;
+}
+
+article,
+main,
+footer,
+header {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 180%;
+}
+
+h3 {
+	font-size: 160%;
+}
+
+h4 {
+	font-size: 140%;
+}
+
+h5 {
+	font-size: 120%;
+}
+
+h6 {
+	font-size: 100%;
+}

@@ -7,3 +7,15 @@
 	gtag('config', 'UA-12769079-10');
 </script>
 
+<!-- Responsive tables -->
+<script>
+	document.querySelectorAll('table').forEach(function(element) {
+		if (!element.classList.contains('rouge-table')) {
+			let parent = element.parentNode;
+			let wrapper = document.createElement('div');
+			wrapper.classList.add('responsive-table');
+			parent.replaceChild(wrapper, element);
+			wrapper.appendChild(element);
+		}
+	});
+</script>

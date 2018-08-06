@@ -145,9 +145,9 @@ table td {
 	nav {
 		text-align: center
 	}
-	table {
+	.responsive-table {
 		width: 100%;
-		overflow: auto;
+		overflow: scroll;
 	}
 }
 

@@ -13,6 +13,10 @@ description: State of front-end development and what this does to the future of 
 - [Speed of development trumps code quality](#speed-of-development-trumps-code-quality)
 - [Load times of most popular websites](#load-times-of-most-popular-websites)
 
+```js
+console.log('asdasdasd')
+```
+
 ## Initial thoughts
 
 I have recently read an amazing essay by Nick Heer on the web called [The Bullshit Web](https://pxlnv.com/blog/bullshit-web/) and it got me thinking about the future of the web as it is today.

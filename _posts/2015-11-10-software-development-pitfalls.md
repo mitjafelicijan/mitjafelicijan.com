@@ -4,7 +4,7 @@ title: Software development and my favorite pitfalls
 description: Couple of observations regarding project management.
 ---
 
-**Table of content**
+**Table of contents**
 
 - [Initial thoughts](#initial-thoughts)
 - [Ping emails](#ping-emails)

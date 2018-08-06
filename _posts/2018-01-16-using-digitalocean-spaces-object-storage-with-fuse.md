@@ -4,7 +4,7 @@ title:  Using DigitalOcean Spaces Object Storage with FUSE
 description: Using DigitalOcean Spaces Object Storage with FUSE
 ---
 
-**Table of content**
+**Table of contents**
 
 - [Is it possible to use them as a mounted drive with FUSE?](#is-it-possible-to-use-them-as-a-mounted-drive-with-fuse)
 - [Will the performance degrade over time and over different sizes of objects?](#will-the-performance-degrade-over-time-and-over-different-sizes-of-objects)

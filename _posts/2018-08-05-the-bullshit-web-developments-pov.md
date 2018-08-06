@@ -4,7 +4,7 @@ title: The Bullshit Web - Development's POV
 description: State of front-end development and what this does to the future of web
 ---
 
-**Table of content**
+**Table of contents**
 
 - [Initial thoughts](#initial-thoughts)
 - [Front-end frameworks](#front-end-frameworks)

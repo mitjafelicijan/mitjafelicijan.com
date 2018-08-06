@@ -4,7 +4,7 @@ title: GCE, AWS, Docker and why I choose classic VM’s and DigitalOcean for my 
 description: Reasons why I choose DigitalOcean for my project
 ---
 
-**Table of content**
+**Table of contents**
 
 - [Docker tools and complexity that comes with it](#docker-tools-and-complexity-that-comes-with-it)
 - [Lack of real life examples of Docker in action](#lack-of-real-life-examples-of-docker-in-action)

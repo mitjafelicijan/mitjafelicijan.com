@@ -4,7 +4,7 @@ title: Profiling Python web applications with visual tools
 description: Missing link when debugging and profiling python web applications
 ---
 
-**Table of content**
+**Table of contents**
 
 - [Simple web-service](#simple-web-service)
 - [Visualize profile](#visualize-profile)

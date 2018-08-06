@@ -4,7 +4,7 @@ title: What I've learned developing ad server
 description: Lessons I learned developing contextual ad server
 ---
 
-**Table of content**
+**Table of contents**
 
 - [Aggregate everything](#aggregate-everything)
 - [Measure everything](#measure-everything)

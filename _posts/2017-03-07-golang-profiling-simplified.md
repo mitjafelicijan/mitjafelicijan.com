@@ -4,7 +4,7 @@ title: Golang profiling simplified
 description: Golang profiling made easy
 ---
 
-**Table of content**
+**Table of contents**
 
 - [Where are my pprof files?](#where-are-my-pprof-files)
 - [Why is my cpu profile empty?](#why-is-my-cpu-profile-empty)

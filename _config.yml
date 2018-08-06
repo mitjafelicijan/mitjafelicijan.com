@@ -8,6 +8,7 @@ exclude:
 permalink: /:title
 
 author: Mitja Felicijan
+domain: https://mitjafelicijan.com/
 description: Embedded systems developer and fanatical fan of science fiction
 twitter: "@mitjafelicijan"
 avatar: assets/avatar.gif

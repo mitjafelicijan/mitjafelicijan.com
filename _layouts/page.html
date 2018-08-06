@@ -16,17 +16,17 @@
 
 		<link rel="icon" type="image/gif" href="/{{ site.avatar }}?ver={{ site.cache_version }}">
 
-		<meta name="og:url" content="https://mitjafelicijan.com/{{ page.slug }}">
+		<meta name="og:url" content="{{ site.domain }}{{ page.slug }}">
 		<meta name="og:type" content="website">
 		<meta name="og:title" content="{{ page.title }}">
 		<meta name="og:description" content="{{ page.description }}">
-		<meta name="og:image" content="https://mitjafelicijan.com/{{ site.avatar }}?ver={{ site.cache_version }}">
+		<meta name="og:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}">
 
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="{{ site.twitter }}">
 		<meta name="twitter:title" content="{{ page.title }}">
 		<meta name="twitter:description" content="{{ page.description }}">
-		<meta name="twitter:image" content="https://mitjafelicijan.com/{{ site.avatar }}?ver={{ site.cache_version }}">
+		<meta name="twitter:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}">
 
 		<style>
 			{% include site.min.css %}

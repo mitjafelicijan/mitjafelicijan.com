@@ -114,12 +114,16 @@ table td {
 }
 
 .highlighter-rouge {
-	border: 1px solid #ddd;
 	padding: 0 15px;
 	font-size: 80%;
 	border: 2px solid #f1f1f1;
 	border-radius: 2px;
 	overflow: auto;
+}
+
+.highlighter-rouge table,
+.highlighter-rouge table td {
+	border: 0 !important;
 }
 
 ::selection {

@@ -38,7 +38,7 @@ We talk about progressive web applications, AMP, and other technologies that are
 
 ## Front-end frameworks
 
-I am not of of those purists that denies usage of JavaScript frameworks or SASS but there are limits to where this obsession should go. In order to use these technologies properly one should ask himself where exactly they are needed and not use them like hammer for nails.
+I am not of those purists that denies usage of JavaScript frameworks or SASS but there are limits to where this obsession should go. In order to use these technologies properly one should ask himself where exactly they are needed and not use them like hammer for nails.
 
 Whenever I need to do front-end UI I usually check specification before embarking on journey of coding. And most of the times I really don't need frameworks. Most of the code I need to write in JavaScript is done in couple of hundred lines of code and does exactly what specification requires. And developer that will be working on this code after me doesn't need to learn new framework, tooling, etc. Just pure vanilla JavaScript. In all of my years as a developer I can count on fingers on my one hand when I used some sort of a framework. And even in this exceptions we later rewrote code to vanilla JavaScript because maintaining complex code was just to time consuming.
 

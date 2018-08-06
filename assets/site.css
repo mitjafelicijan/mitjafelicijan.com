@@ -6,7 +6,10 @@ body {
 
 body {
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 1em;
+	font-size: 16px;
+	margin: 40px auto;
+	line-height: 1.6;
+	color: #000;
 }
 
 article,
@@ -41,9 +44,44 @@ h6 {
 	font-size: 100%;
 }
 
+article img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto
+}
+
+time {
+	display: block;
+	font-size: 80%;
+	color: #444;
+}
+
+main ul {
+	padding: 0 20px;
+}
+
+}
+
+main ul div {
+	font-size: 115%;
+}
+
 .highlighter-rouge {
 	border: 1px solid #ddd;
-	padding: 0 10px;
+	padding: 0 15px;
+	font-size: 80%;
+	border: 2px solid #f1f1f1;
+	border-radius: 2px
+}
+
+::selection {
+	background: #ff0;
+	color: #000
+}
+
+::-moz-selection {
+	background: #ff0;
+	color: #000
 }
 
 @media only screen and (max-width:768px) {

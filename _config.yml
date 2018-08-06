@@ -11,7 +11,7 @@ author: Mitja Felicijan
 description: Embedded systems developer and fanatical fan of science fiction
 twitter: "@mitjafelicijan"
 avatar: assets/avatar.gif
-cache_version: 20180806
+cache_version: 20180805
 
 kramdown:
   auto_ids:      true

@@ -23,7 +23,7 @@ I have recently read an amazing essay by Nick Heer on the web called [The Bullsh
 
 I really try to stray away from frond-end development as much as possible. The reason is nowhere close to me having any bad opinions but having to work with clients on visual stuff drains me to the point of sheer horror.
 
-I have observed silently the progress that was made in this field because I thought things will get better with time. I was so wrong. So wrong. Not only that things got extremely complicated to work with, the whole stack because so massive even simple pages have insanely large footprint.
+I have observed silently the progress that was made in this field because I thought things will get better with time. I was so wrong. So wrong. Not only that things got extremely complicated to work with, the whole stack became so massive even simple pages have insanely large footprint.
 
 The Bullshit Web essay concentrates mostly on page sizes and AMP but I would like to address tooling and technologies for development in this post.
 

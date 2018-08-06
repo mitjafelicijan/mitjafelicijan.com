@@ -17,13 +17,19 @@
 		<link rel="stylesheet" href="/assets/highlight.css">
 		<link rel="stylesheet" href="/assets/site.css">
 
-		<link rel="icon" type="image/gif" href="/assets/avatar.gif">
+		<link rel="icon" type="image/gif" href="/{{ site.avatar }}">
 
 		<meta name="og:url" content="https://mitjafelicijan.com">
 		<meta name="og:type" content="website">
 		<meta name="og:title" content="{{ site.title }}">
 		<meta name="og:description" content="{{ page.description }}">
-		<meta name="og:image" content="https://mitjafelicijan.com/assets/avatar.gif">
+		<meta name="og:image" content="https://mitjafelicijan.com/{{ site.avatar }}">
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="{{ site.twitter }}">
+		<meta name="twitter:title" content="{{ site.title }}">
+		<meta name="twitter:description" content="{{ site.description }}">
+		<meta name="twitter:image" content="https://mitjafelicijan.com/{{ site.avatar }}">
 
 	</head>
 

@@ -5,10 +5,12 @@ exclude:
 - Makefile
 - notes.md
 
+permalink: /:title
+
 author: Mitja Felicijan
 description: Embedded systems developer and fanatical fan of science fiction
-
-permalink: /:title
+twitter: "@mitjafelicijan"
+avatar: assets/avatar.gif
 
 kramdown:
   auto_ids:      true

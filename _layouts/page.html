@@ -5,12 +5,15 @@
 
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#000000">
+		<meta name="author" content="{{ site.author }}">
 		<meta name="description" content="{{ page.description }}">
 
 		<title>{{ page.title }}</title>
 
 		<link rel="stylesheet" href="/assets/highlight.css">
 		<link rel="stylesheet" href="/assets/site.css">
+
+		<link rel="icon" type="image/jpeg" href="/assets/avatar.jpg">
 
 	</head>
 
@@ -19,7 +22,11 @@
 		{% include header.html %}
 
 		<article>
-			 {{ content }}
+
+			<h1>{{ page.title }}</h1>
+
+			{{ content }}
+
 		</article>
 
 		{% include footer.html %}

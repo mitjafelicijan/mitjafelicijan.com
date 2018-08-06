@@ -5,6 +5,9 @@ exclude:
 - Makefile
 - notes.md
 
+author: Mitja Felicijan
+description: Embedded systems developer and fanatical fan of science fiction
+
 permalink: /:title
 
 kramdown:
@@ -18,7 +21,7 @@ kramdown:
   show_warnings: false
   syntax_highlighter: rouge
 
-highlighter: rouge
-
-#plugins:
-#- jekyll-minifier
+plugins:
+  - jekyll-sitemap
+  - jekyll-minifier
+  - jekyll-jsminify

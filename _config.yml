@@ -6,6 +6,7 @@ exclude:
 - notes.md
 
 permalink: /:title
+safe: false
 
 author: Mitja Felicijan
 domain: https://mitjafelicijan.com/

@@ -70,21 +70,27 @@ h4 {
 article img {
 	max-width: 100%;
 	display: block;
-	margin: 0 auto
+	border: 2px solid #f1f1f1;
+	border-radius: 2px
 }
 
 time {
 	display: block;
-	font-size: 80%;
+	font-size: 85%;
 	color: #444;
 }
 
 main ul {
+	margin-top: 50px;
 	padding: 0 20px;
 }
 
+main ul li {
+	margin-bottom: 20px;
+}
+
 main ul div {
-	font-size: 115%;
+	font-size: 116%;
 }
 
 blockquote {

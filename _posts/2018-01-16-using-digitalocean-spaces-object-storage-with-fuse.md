@@ -146,12 +146,12 @@ import sqlite3
 import sys
 
 if len(sys.argv) < 3:
-    print("usage: python sqlite-benchmark.py DB_PATH NUM_RECORDS REPEAT")
-    exit()
+  print("usage: python sqlite-benchmark.py DB_PATH NUM_RECORDS REPEAT")
+  exit()
 
 def data_iter(x):
-    for i in range(x):
-        yield "m" + str(i), "f" + str(i*i)
+  for i in range(x):
+    yield "m" + str(i), "f" + str(i*i)
 
 header_line = "%s\t%s\t%s\t%s\t%s\n" % ("DROPTABLE", "CREATETABLE", "INSERTMANY", "FETCHALL", "COMMIT")
 with open("sqlite-benchmarks.tsv", "w") as fp:

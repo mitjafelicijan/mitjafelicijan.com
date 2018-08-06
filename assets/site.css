@@ -17,7 +17,7 @@ main,
 footer,
 nav,
 header {
-	max-width: 800px;
+	max-width: 700px;
 	margin: 0 auto;
 }
 
@@ -97,6 +97,20 @@ blockquote {
 	margin: 40px 0 40px 20px;
 	border-left: 5px solid #eee;
 	padding: 5px 0 10px 20px;
+}
+
+table {
+	border: 2px solid #f1f1f1;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table th,
+table td {
+	border: 2px solid #f1f1f1;
+	text-align: left;
+	padding: 5px 10px;
 }
 
 .highlighter-rouge {

@@ -4,17 +4,26 @@ title:  Using DigitalOcean Spaces Object Storage with FUSE
 description: Using DigitalOcean Spaces Object Storage with FUSE
 ---
 
+**Table of content**
+
+- [Is it possible to use them as a mounted drive with FUSE?](#is-it-possible-to-use-them-as-a-mounted-drive-with-fuse)
+- [Will the performance degrade over time and over different sizes of objects?](#will-the-performance-degrade-over-time-and-over-different-sizes-of-objects)
+	- [Measurement experiment 1: File copy](#measurement-experiment-1-file-copy)
+	- [Measurement experiment 2: SQLite performanse](#measurement-experiment-2-sqlite-performanse)
+- [Can storage be mounted on multiple machines at the same time and be writable?](#can-storage-be-mounted-on-multiple-machines-at-the-same-time-and-be-writable)
+- [Observations and conslusion](#observations-and-conslusion)
+
 Couple of months ago [DigitalOcean](https://www.digitalocean.com) introduced new product called [Spaces](https://blog.digitalocean.com/introducing-spaces-object-storage/) which is Object Storage very similar to Amazon's S3. This really peaked my interest, because this was something I was missing and even the thought of going over the internet for such functionality was in no interest to me. Also in fashion with their previous pricing this also is very cheap and pricing page is a no-brainer compared to AWS or GCE. [Prices are clearly and precisely defined and outlined](https://www.digitalocean.com/pricing/). You must love them for that :)
 
 ### Initial requirements
 
-* [Is it possible to use them as a mounted drive with FUSE?](#fuse) (tl;dr YES)
-* [Will the performance degrade over time and over different sizes of objects?](#performanse) (tl;dr NO&YES)
-* [Can storage be mounted on multiple machines at the same time and be writable?](#multiuser) (tl;dr YES)
+* Is it possible to use them as a mounted drive with FUSE? (tl;dr YES)
+* Will the performance degrade over time and over different sizes of objects? (tl;dr NO&YES)
+* Can storage be mounted on multiple machines at the same time and be writable? (tl;dr YES)
 
 > Let me be clear. This scripts I use are made just for benchmarking and are not intended to be used in real-life situations. Besides that, I am looking into using this approaches but adding caching service in front of it and then dumping everything as an object to storage. This could potentially be some interesting post of itself. But in case you would need real-time data without eventual consistency please take this scripts as they are: not usable in such situations.
 
-## <a name="fuse"></a>Is it possible to use them as a mounted drive with FUSE?
+## Is it possible to use them as a mounted drive with FUSE?
 
 Well, actually they can be used in such manor. Because they are similar to [AWS S3](https://aws.amazon.com/s3/) many tools are available and you can find many articles and [Stackoverflow items](https://stackoverflow.com/search?q=s3+fuse).
 
@@ -67,7 +76,7 @@ Additional information on FUSE:
 * [Github project page for s3fs](https://github.com/s3fs-fuse/s3fs-fuse)
 * [FUSE - Filesystem in Userspace](https://en.wikipedia.org/wiki/Filesystem_in_Userspace)
 
-## <a name="performanse"></a>Will the performance degrade over time and over different sizes of objects?
+## Will the performance degrade over time and over different sizes of objects?
 
 For this task I didn't want to just read and write text files or uploading images. I actually wanted to figure out if using something like SQlite is viable in this case.
 
@@ -249,7 +258,7 @@ You can download [raw result here](/files/sqlite-benchmarks.tsv). And again, the
 })();
 </script>
 
-## <a name="multiuser"></a>Can storage be mounted on multiple machines at the same time and be writable?
+## Can storage be mounted on multiple machines at the same time and be writable?
 
 Well, this one didn't take long to test. And the answer is **YES**. I mounted space on both machines and measured same performance on both machines. But because file is downloaded before write and then uploaded on complete there could potentially be problems is another process is trying to access the same file.
 

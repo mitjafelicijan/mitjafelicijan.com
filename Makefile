@@ -2,7 +2,7 @@ clean:
 	-rm -Rf _site/
 
 run: clean
-	bundle exec jekyll serve --incremental
+	bundle exec jekyll serve --incremental --drafts
 
 publish:
 	git add .

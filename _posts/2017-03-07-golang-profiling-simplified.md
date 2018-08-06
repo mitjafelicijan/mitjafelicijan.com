@@ -4,6 +4,15 @@ title: Golang profiling simplified
 description: Golang profiling made easy
 ---
 
+**Table of content**
+
+- [Where are my pprof files?](#where-are-my-pprof-files)
+- [Why is my cpu profile empty?](#why-is-my-cpu-profile-empty)
+- [Profiling](#profiling)
+  - [Memory profiling](#memory-profiling)
+  - [CPU profiling](#cpu-profiling)
+  - [Generating profiling reports](#generating-profiling-reports)
+
 Many posts have been written regarding profiling in Golang and I haven’t found proper tutorial regarding this. Almost all of them are missing some part of important information and it gets pretty frustrating when you have a deadline and are not finding simple distilled solution.
 
 Nevertheless, after searching and experimenting I have found a solution that works for me and probably should also for you.

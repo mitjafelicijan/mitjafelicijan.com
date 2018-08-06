@@ -4,6 +4,15 @@ title: What I've learned developing ad server
 description: Lessons I learned developing contextual ad server
 ---
 
+**Table of content**
+
+- [Aggregate everything](#aggregate-everything)
+- [Measure everything](#measure-everything)
+- [Cache control is your friend](#cache-control-is-your-friend)
+- [Learn NGINX](#learn-nginx)
+- [Use Redis/Memcached](#use-redismemcached)
+- [Conclusion](#conclusion)
+
 For the past year and half I have been developing native advertising server that contextually matches ads and displays them in different template forms on variety of websites. This project grew from serving thousands of ads per day to millions.
 
 The system is made from couple of core components:

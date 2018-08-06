@@ -4,6 +4,12 @@ title: Profiling Python web applications with visual tools
 description: Missing link when debugging and profiling python web applications
 ---
 
+**Table of content**
+
+- [Simple web-service](#simple-web-service)
+- [Visualize profile](#visualize-profile)
+  - [Update 2017-04-22](#update-2017-04-22)
+
 I have been profiling my software with KCachegrind for a long time now and I was missing this option when I am developing API's or other web services. I always knew that this is possible but never really took the time and dive into it.
 
 Before we begin there are some requirements. We will need to:

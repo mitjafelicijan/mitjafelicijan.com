@@ -4,6 +4,19 @@ title: Simple IOT application supported by real-time monitoring and data history
 description: Develop simple IOT application with Arduino MKR1000 and Python
 ---
 
+**Table of content**
+
+- [Initial thoughts](#initial-thoughts)
+- [Simple Python API](#simple-python-api)
+  - [Basic web application](#basic-web-application)
+  - [Web application security](#web-application-security)
+  - [Simple API for writing data-points](#simple-api-for-writing-data-points)
+- [Sending data to API with Arduino MKR1000](#sending-data-to-api-with-arduino-mkr1000)
+- [Data visualization](#data-visualization)
+- [Conclusion](#conclusion)
+
+## Initial thoughts
+
 I have been developing these kind of application for the better part of my last 5 years and people keep asking me how to approach developing such application and I will give a try explaining it here.
 
 IOT applications are really no different than any other kind of applications. We have data that needs to be collected and visualized in some form of tables or charts. The main difference here is that most of the times these data is collected by some kind of device foreign to developer that mainly operates in web domain. But fear not, it's not that different than writing some JavaScript.

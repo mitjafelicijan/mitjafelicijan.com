@@ -4,6 +4,20 @@ title: Software development and my favorite pitfalls
 description: Couple of observations regarding project management.
 ---
 
+**Table of content**
+
+- [Initial thoughts](#initial-thoughts)
+- [Ping emails](#ping-emails)
+- [Everybody is a project manager](#everybody-is-a-project-manager)
+- [We are never wrong](#we-are-never-wrong)
+- [Micromanaging](#micromanaging)
+- [Human contact - no need for it!](#human-contact---no-need-for-it)
+- [MVP is killing innovation](#mvp-is-killing-innovation)
+- [Pressure wasteland](#pressure-wasteland)
+- [Conclusion](#conclusion)
+
+## Initial thoughts
+
 Over the years I had privilege to work on some very excited projects both in software development field and also in electronics field and every experience taught me some invaluable lessons about how NOT TO approach development. And through this post I will try to point out some of the absurd outdated techniques I find the most annoying and damaging during a development cycle. There will be swearing because this topic really gets on my nerves and I never coherently tried to explain them in writing. So if I get heated up please bare with me :)
 
 As new methods of project management are emerging, underlaying processes still stay old and outdated. This is mainly because we as people are unable to completely shift away from this approaches.

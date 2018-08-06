@@ -4,6 +4,13 @@ title: GCE, AWS, Docker and why I choose classic VM’s and DigitalOcean for my 
 description: Reasons why I choose DigitalOcean for my project
 ---
 
+**Table of content**
+
+- [Docker tools and complexity that comes with it](#docker-tools-and-complexity-that-comes-with-it)
+- [Lack of real life examples of Docker in action](#lack-of-real-life-examples-of-docker-in-action)
+- [Ease of deployment](#ease-of-deployment)
+- [Where to go from here](#where-to-go-from-here)
+
 I have been developing a product for the past few months and one of product’s requirement is the ability to automatically scale quickly on system’s demand.
 
 As most of you probably know system design is much more important then actual code that will drive the product. And this was my main concern when developing this product. I have read anything I could get my hands on about Docker as it was hyped so much in media for the past two years. At a first glance Docker was ideal fit for this platform. But then as I started to seriously experiment with it and developing around it several problems occurred. Well, it would be unfair to call them problems but lets say drawbacks when developing rapidly.

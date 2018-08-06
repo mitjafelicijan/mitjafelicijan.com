@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 body {
@@ -27,7 +27,7 @@ header {
 
 header a,
 nav ul li a {
-	text-decoration: none
+	text-decoration: none;
 }
 
 header a {
@@ -71,7 +71,6 @@ article img {
 	max-width: 100%;
 	display: block;
 	border: 2px solid #f1f1f1;
-	border-radius: 2px
 }
 
 time {
@@ -117,7 +116,6 @@ table td {
 	padding: 0 15px;
 	font-size: 80%;
 	border: 2px solid #f1f1f1;
-	border-radius: 2px;
 	overflow: auto;
 }
 
@@ -143,7 +141,7 @@ table td {
 	footer,
 	header,
 	nav {
-		text-align: center
+		text-align: center;
 	}
 	.responsive-table {
 		width: 100%;
@@ -153,6 +151,6 @@ table td {
 
 @media print {
 	body {
-		padding: 50px auto
+		padding: 50px auto;
 	}
 }

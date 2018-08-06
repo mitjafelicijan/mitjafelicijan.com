@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Bullshit Web revisited
+title: The Bullshit Web - Development's POV
 description: The bullshit web revisited
 ---
 
@@ -9,12 +9,17 @@ description: The bullshit web revisited
 - [Initial thoughts](#initial-thoughts)
 - [Front-end frameworks](#front-end-frameworks)
 - [Obsolescence to the rescue](#obsolescence-to-the-rescue)
+- [Unnecessary complexity](#unnecessary-complexity)
 - [Speed of development trumps code quality](#speed-of-development-trumps-code-quality)
 - [Load times of most popular websites](#load-times-of-most-popular-websites)
 
 ## Initial thoughts
 
 I have recently read an amazing essay by Nick Heer on the web called [The Bullshit Web](https://pxlnv.com/blog/bullshit-web/) and it got me thinking about the future of the web as it is today.
+
+> The average internet connection in the United States is about six times as fast as it was just ten years ago, but instead of making it faster to browse the same types of websites, we’re simply occupying that extra bandwidth with more stuff.
+>
+> **-- Nick Heer**
 
 I really try to stray away from frond-end development as much as possible. The reason is nowhere close to me having any bad opinions but having to work with clients on visual stuff drains me to the point of sheer horror.
 
@@ -49,15 +54,43 @@ We can all agree that frameworks or libraries usually are there to fill the gap 
 
 Don't get me wrong. Yes, I dislike jQuery but I find it indispensable and without it our web would be very different. For the worst in my opinion. It was a huge stepping stone for front-end development. But there comes a time where technologies get obsolete and standards catch up with the requirements of the field.
 
+And because libraries and frameworks have short lifespan I try to stay away from them and if possible use vanilla code. There is a wonderfull article about [The Brutal Lifecycle of JavaScript Frameworks](https://stackoverflow.blog/2018/01/11/brutal-lifecycle-javascript-frameworks/) that explains how quick they popup and become obsolete.
 
+> JavaScript UI frameworks and libraries work in cycles. Every six months or so, a new one pops up, claiming that it has revolutionized UI development. Thousands of developers adopt it into their new projects, blog posts are written, Stack Overflow questions are asked and answered, and then a newer (and even more revolutionary) framework pops up to usurp the throne.
+>
+> **-- Ian Allen**
+
+## Unnecessary complexity
+
+Libraries have a tendency to speed up development which is ok but there are a huge drawbacks in the future. Most of the times we work on simple projects. Not everybody is working on Facebook, Google or that kind of mamuth apps and by using libraries provided to us by these companies we introduce complexity these companies need in order to make their apps. And usually these libraries include edge case functionalities that only apply to them and by providing simpler way to use libraries very complex approaches get implemented.
+
+Another reason for me to not use frameworks and libraries is that there usually is a team behind a project and by working on a feature by your own it takes too much time to read through the documentation and properly understand what the reasoning was behind a feature in a library. Most of the stuff (dashboarding, tables, widgets) that I work on are done much faster by pure using JS. Codebase footprint is smaller and doesn't require other developers to learn a completly new framework.
+
+This freameworks are heavily opinionated. No question about it. And by using them you accept their dogma. And by doing so you put yourself in a wierd position when new "disruptive" framework comes to life. If we think about it these frameworks should rather be called "approaches".
+
+> *Just to be completely honest*
+>
+> There are use-cases for such frameworks. And there are situations where they are indispensable. I am not saying that they don't make sense. All I am saying that in my line of work I noticed that not every project is fit for a framework and it's better to not use them in such cases.
+
+An awesome talk about [Learning from JavaScript Libraries by Trevor Landau](https://www.youtube.com/watch?v=u2PgPWj8KrM).
 
 ## Speed of development trumps code quality
 
+I have found out that most of these frameworks or libraries have become very difficult to undestand in a matter of hours. In the past this was diifferent somehow. You could learn jQuery in a matter of hours and use it the next day like you were a pro. I know that it's not fair to compare framework and library but for our case this is acceptable.
 
-Num of request
+Every developer should have the knowledge and experience when selecting or not selection framework. I always stay true to [Occam's razor](https://en.wikipedia.org/wiki/Occam%27s_razor). And when prototyping I always use as barebone setup as I can. I see no problem with completly dumping a block of code and replacing it with something more complex if this makes sense. But there needs to be a huge reason behind this decision.
 
+Workarounds are one of the nessesary evils perticulary when dealing with frameworks. Either because the lack of time of just plain reason that framework doesn't support something. And this is the my main problem with them. In real life we don't have the time to properly implement ideas behind a framework. And when shit hits the fan we butcher up the code and mix different ideas just to catch a deadline. And this is in contadiction with the whole idea of using a framework.
+
+The impact that this has on quality and readability of code is massive. And threating this just as a symptom is probably the worst thing you can do. Through time these hacked-up code becomes legacy and additional code is molded to the code that already is in the codebase. And by doing this our code becomes more and more foregin of the initial concept.
+
+Code quality and readability should come first regardless of frameworks and libraries. Code should be as close to bare-metal as possible so when frameworks change our code is still usable and can be refreshed by any developer with the basic knowledge of desired programming language.
 
 ## Load times of most popular websites
+
+All this directly impacts performanse. Terabytes of bandwidth wasted because there was a decision made early in the development cycle. Laggy performance, slow loading, bad experience just because development team was not cautious enough.
+
+Here are some examples of loading times. It's up to you to decide if this really is the best way to do web.
 
 | URL                | Num of requests | Transfered | Finish  | DOMContentLoaded | Load   |
 | ------------------ | --------------- | ---------- | ------- | ---------------- | ------ |
@@ -65,7 +98,7 @@ Num of request
 | youtube.com        | 61              | 1.8 MB     | 5.13 s  | 1.78 s           | 1.97   |
 | wikipedia.com      | 11              | 64.5 KB    | 642 ms  | 531 ms           | 573 ms |
 | reddit.com         | 177             | 12.9 MB    | 7.65 MB | 2.03 s           | 3.74 s |
-| amamzon.com        | 278             | 8.0 MB     | 5.20 s  | 1.15s            | 2.99 s |
+| amazon.com         | 278             | 8.0 MB     | 5.20 s  | 1.15s            | 2.99 s |
 | twitter.com        | 202             | 5.1 MB     | 23.48 s | 3.20 s           | 4.55 s |
 | twitch.tv          | 177             | 4.4 MB     | 5.08 s  | 579 ms           | 798 ms |
 | microsoft.com      | 77              | 1.1 MB     | 3.96 s  | 1.01 s           | 1.26 s |

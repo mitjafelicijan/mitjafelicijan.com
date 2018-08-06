@@ -95,7 +95,7 @@ Here are some examples of loading times. It's up to you to decide if this really
 | URL                | Num of requests | Transfered | Finish  | DOMContentLoaded | Load   |
 | ------------------ | --------------- | ---------- | ------- | ---------------- | ------ |
 | cnn.com            | 134             | 3.22 MB    | 4.7 s   | 575 ms           | 3.60 s |
-| youtube.com        | 61              | 1.8 MB     | 5.13 s  | 1.78 s           | 1.97   |
+| youtube.com        | 61              | 1.8 MB     | 5.13 s  | 1.78 s           | 1.97 s |
 | wikipedia.com      | 11              | 64.5 KB    | 642 ms  | 531 ms           | 573 ms |
 | reddit.com         | 177             | 12.9 MB    | 7.65 MB | 2.03 s           | 3.74 s |
 | amazon.com         | 278             | 8.0 MB     | 5.20 s  | 1.15s            | 2.99 s |

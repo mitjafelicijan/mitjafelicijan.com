@@ -75,6 +75,37 @@
 
 		{% include footer.html %}
 
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "NewsArticle",
+				"mainEntityOfPage": {
+					"@type": "WebPage",
+					"@id": "{{ site.domain }}{{ page.slug }}"
+				},
+
+				"image": [
+					"{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}"
+				],
+				"datePublished": "{{ page.date | date_to_xmlschema }}",
+				"dateModified": "{{ page.date | date_to_xmlschema }}",
+				"author": {
+					"@type": "Person",
+					"name": "Mitja Felicijan"
+				},
+				"publisher": {
+					"@type": "Organization",
+					"name": "Mitja Felicijan",
+					"logo": {
+					"@type": "ImageObject",
+					"url": "{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}"
+					}
+				},
+				"headline": "{{ page.title }}",
+				"description": "{{ page.description }}"
+			}
+		</script>
+
 	</body>
 
 </html>

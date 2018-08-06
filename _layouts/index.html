@@ -1,34 +1,36 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="theme-color" content="#000000">
-	<meta name="description" content="{{ page.description }}">
-	<title>{{ page.title }}</title>
+	<head>
 
-	<style>{% include site.css %}</style>
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#000000">
+		<meta name="description" content="{{ page.description }}">
 
-</head>
+		<title>{{ page.title }}</title>
 
-<body>
+		<style>{% include site.css %}</style>
 
-	{% include header.html %}
+	</head>
 
-	<main>
+	<body>
 
-		<ul>
-			{% for post in site.posts %}
-			<li>
-				{{ post.date | date: "%m/%d/%Y" }}
-				<a href="{{ post.url }}">{{ post.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</main>
+		{% include header.html %}
 
-	{% include footer.html %}
+		<main>
 
-</body>
+			<ul>
+				{% for post in site.posts %}
+				<li>
+					{{ post.date | date: "%m/%d/%Y" }}
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</main>
+
+		{% include footer.html %}
+
+	</body>
 
 </html>

@@ -40,3 +40,8 @@ h5 {
 h6 {
 	font-size: 100%;
 }
+
+.highlighter-rouge {
+	border: 1px solid #ddd;
+	padding: 0 10px;
+}

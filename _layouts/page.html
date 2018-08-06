@@ -2,17 +2,22 @@
 <html lang="en">
 
 	<head>
+
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#000000">
 		<meta name="description" content="{{ page.description }}">
+
 		<title>{{ page.title }}</title>
+
+		<link rel="stylesheet" href="/assets/css/style.css">
+
+		<style>{% include site.css %}</style>
+
 	</head>
 
 	<body>
 
 		{% include header.html %}
-
-		<h1>page</h1>
 
 		<article>
 			 {{ content }}

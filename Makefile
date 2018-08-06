@@ -6,5 +6,5 @@ run: clean
 
 publish:
 	git add .
-	git commit -m "update"
+	git commit -m "content update"
 	git push

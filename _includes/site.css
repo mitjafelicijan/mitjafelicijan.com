@@ -149,7 +149,12 @@ table td {
 }
 
 @media print {
-	body {
-		padding: 50px auto;
+	@page {
+		margin: 2cm;
+	}
+	header,
+	nav,
+	.comments {
+		display: none;
 	}
 }

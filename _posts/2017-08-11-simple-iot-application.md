@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Simple IOT application supported by real-time monitoring and data history"
-description: "Develop simple IOT application with Arduino MKR1000 and Python"
+title: Simple IOT application supported by real-time monitoring and data history
+description: Develop simple IOT application with Arduino MKR1000 and Python
 ---
 
 I have been developing these kind of application for the better part of my last 5 years and people keep asking me how to approach developing such application and I will give a try explaining it here.

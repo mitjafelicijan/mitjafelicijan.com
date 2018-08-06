@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Profiling Python web applications with visual tools"
-description: "Missing link when debugging and profiling python web applications"
+title: Profiling Python web applications with visual tools
+description: Missing link when debugging and profiling python web applications
 ---
 
 I have been profiling my software with KCachegrind for a long time now and I was missing this option when I am developing API's or other web services. I always knew that this is possible but never really took the time and dive into it.

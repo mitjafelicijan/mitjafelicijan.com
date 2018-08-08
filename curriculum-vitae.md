@@ -9,13 +9,13 @@ Embedded systems developer
 [mitja.felicijan@gmail.com](mailto:mitja.felicijan@gmail.com)
 Slovenia, EU
 
-## Technical experience:
+### Technical experience:
 
 - Key languages: Golang, Python, C/C++, Bash, C#, Java, Perl.
 - Platforms: GNU/Linux - Debian, Gentoo, Red Hat, Custom distros.
 - Concepts: zigbee, knx, machine to machine, embedded systems, operating systems, distributed systems, relational database management systems, algorithms, database engine design, sql, nosql, big data analytics, machine learning, prediction algorithms.
 
-## Major projects:
+### Major projects:
 
 - SMS marketing system (2007)
 - Yacht management software (2008)
@@ -35,7 +35,7 @@ Slovenia, EU
 - Tick database engine specifically designed for storing and processing large amount of sensor data with high write throughput (2016)
 - Wireless industrial lighting management system - hardware and software (2016)
 
-## Employment history:
+### Employment history:
 
 - Freelancer (2001 – November 2006)
 - Software developer at Mobinia (December 2006 – August 2007)
@@ -44,12 +44,12 @@ Slovenia, EU
 - Founding member of Origami Group (March 2014 – Present)
 - Senior Software Engineer at TSmedia (January 2015 - Present)
 
-## Awards:
+### Awards:
 
 - Regional Award for Innovation by Chamber of Commerce and Industry of Slovenia for project Intelligent system management and regulation of Street Lighting, 2010
 - National Award for Innovation by Chamber of Commerce and Industry of Slovenia for project Intelligent system management and regulation of Street Lighting, 2010
 
-## Key responsibilities:
+### Key responsibilities:
 
 - Responsible for embedded platforms development.
 - Responsible for hardware design and driver development.
@@ -59,4 +59,3 @@ Slovenia, EU
 - Responsible for development and maintenance of the project.
 - Responsible for code revision, testing and output.
 - Work on the enhancement suggested by the customers and fixes the bugs reported.
-

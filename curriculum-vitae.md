@@ -4,6 +4,11 @@ title:  "Curriculum Vitae"
 description: "Summary of my experiences, skills and major projects I have worked on through years."
 ---
 
+**Mitja Felicijan**
+Embedded systems developer
+[mitja.felicijan@gmail.com](mailto:mitja.felicijan@gmail.com)
+Slovenia, EU
+
 ## Technical experience:
 
 - Key languages: Golang, Python, C/C++, Bash, C#, Java, Perl.

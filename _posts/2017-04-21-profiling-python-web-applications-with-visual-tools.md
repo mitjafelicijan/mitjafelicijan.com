@@ -8,7 +8,7 @@ description: Missing link when debugging and profiling python web applications
 
 - [Simple web-service](#simple-web-service)
 - [Visualize profile](#visualize-profile)
-  - [Update 2017-04-22](#update-2017-04-22)
+- [Update 2017-04-22](#update-2017-04-22)
 
 I have been profiling my software with KCachegrind for a long time now and I was missing this option when I am developing API's or other web services. I always knew that this is possible but never really took the time and dive into it.
 
@@ -146,7 +146,7 @@ This file can be opened with visualizing tools listed above. In this case we wil
 
 This is just a simple example but when you are developing real-life applications this can be very illuminating, especially to see which parts of your code are bottlenecks and need to be optimized.
 
-### Update 2017-04-22
+## Update 2017-04-22
 
 Reddit user [mvt](https://www.reddit.com/user/mvt) also recommended this awesome web based profile visualizer [SnakeViz](https://jiffyclub.github.io/snakeviz/) that directly takes output from [cProfile](https://docs.python.org/2/library/profile.html#module-cProfile) module.
 

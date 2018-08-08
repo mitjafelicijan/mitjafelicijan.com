@@ -8,7 +8,8 @@
 		"type": "image/gif"
 	}],
 	"start_url": "/",
-	"display": "fullscreen",
+	"scope": "/",
+	"display": "standalone",
 	"theme_color": "#c242f4",
 	"background_color": "#c242f4"
 }

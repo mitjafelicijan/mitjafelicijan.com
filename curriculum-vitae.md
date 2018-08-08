@@ -13,7 +13,7 @@ description: Summary of my experiences, skills and major projects I have worked 
 
 - Key languages: Golang, Python, C/C++, Bash, C#, Java, Perl.
 - Platforms: GNU/Linux, Arch, Debian, Gentoo, Red Hat, Custom distros.
-- Concepts: zigbee, knx, machine to machine, embedded systems, operating systems, distributed systems, relational database management systems, algorithms, database engine design, sql, nosql, big data analytics, machine learning, prediction algorithms.
+- Concepts: zigbee, knx, machine to machine, embedded systems, operating systems, distributed systems, relational database management systems, algorithms, database engine design, sql, nosql, newsql, big data analytics, machine learning, prediction algorithms.
 
 ### Major projects
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Curriculum Vitae
-description: Summary of my experiences, skills and major projects I have worked on through years.
+description: Summary of my experiences, skills and major projects I have worked on through year
 ---
 
 **Mitja Felicijan**

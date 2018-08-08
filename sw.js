@@ -5,7 +5,7 @@ self.addEventListener('install', function (e) {
 		caches.open('mitjafelicijan').then(function (cache) {
 			return cache.addAll([
 				'/?homescreen=1',
-				'/assets/site.css',
+				'/assets/site.min.css',
 			]);
 		})
 	);

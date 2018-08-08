@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Title</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"></script>
+
+		<script>
+			let slideshow = remark.create({
+				sourceUrl: 'slides.md',
+				ratio: '16:9',
+				mouseWheel: false,
+			});
+		</script>
+
+		<style>
+			* { box-shadow: none !important;}
+			.remark-container {
+				background-color: #fff !important;
+			}
+			table {
+				width:100%;
+				border-collapse:collapse;
+				border-spacing:0;
+			}
+			table, table td,table th {
+				border: 3px solid #f0f0f0;
+				text-align: left;
+				padding: 10px;
+			}
+		</style>
+
+	</body>
+
+</html>

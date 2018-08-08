@@ -6,7 +6,7 @@ description: "Summary of my experiences, skills and major projects I have worked
 
 **Mitja Felicijan**
 Embedded systems developer
-[mitja.felicijan@gmail.com](mailto:mitja.felicijan@gmail.com)
+[mitja.felicijan@gmail.com](mailto:mitja.felicijan@gmail.com?subject=Website+CV+Contact)
 Slovenia, EU
 
 ### Technical experience:

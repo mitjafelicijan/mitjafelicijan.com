@@ -1,0 +1,14 @@
+{
+	"short_name": "MF",
+	"name": "Mitja Felicijan",
+	"author": "Mitja Felicijan",
+	"icons": [{
+		"src": "/assets/avatar.gif",
+		"sizes": "512x512",
+		"type": "image/gif"
+	}],
+	"start_url": "/",
+	"display": "fullscreen",
+	"theme_color": "#c242f4",
+	"background_color": "#c242f4"
+}

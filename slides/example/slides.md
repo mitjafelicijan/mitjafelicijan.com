@@ -5,6 +5,14 @@ layout: true
 
 Couple of example slides to test
 
+![alt text](https://media.giphy.com/media/i9qmSfLuXXcXK/giphy.gif)
+
+---
+
+## Image
+
+![alt text](https://media.giphy.com/media/4d0nGeMweD49q/giphy.gif)
+
 ---
 
 ## JSON example

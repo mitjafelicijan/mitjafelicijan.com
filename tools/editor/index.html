@@ -17,16 +17,14 @@
 	<body>
 
 		<style>
-			textarea {
+			article {
 				display: block;
 				position: fixed;
 				left: 0;
 				top: 0;
 				right: 0;
 				bottom: 0;
-				width: 100%;
-				height: 100%;
-				padding: 20px;
+				padding: 40px;
 				outline: none;
 				border: 0;
 				background: #333;
@@ -37,20 +35,20 @@
 			}
 		</style>
 
-		<textarea></textarea>
+		<article contenteditable></article>
 
 		<script>
 
 			const autoSaveFrequency = 1000;
-			const editor = document.querySelector('textarea');
-
-			editor.focus();
+			const editor = document.querySelector('article');
 
 			if (typeof(Storage) !== 'undefined') {
-				editor.value = localStorage.getItem('content');
+				editor.innerHTML = sessionStorage.getItem('content');
+
 				setInterval(function() {
-					localStorage.setItem('content', editor.value);
+					sessionStorage.setItem('content', editor.innerHTML);
 				}, autoSaveFrequency);
+
 			} else {
 				console.log('Local Storage not supported');
 			}

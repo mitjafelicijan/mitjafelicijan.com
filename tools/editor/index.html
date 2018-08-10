@@ -38,9 +38,13 @@
 		<textarea></textarea>
 
 		<script>
+
+			const autoSaveFrequency = 1000;
+			const editor = document.querySelector('textarea');
+
+			editor.focus();
+
 			if (typeof(Storage) !== 'undefined') {
-				const autoSaveFrequency = 1000;
-				const editor = document.querySelector('textarea');
 				editor.value = localStorage.getItem('content');
 				setInterval(function() {
 					localStorage.setItem('content', editor.value);
@@ -48,6 +52,7 @@
 			} else {
 				console.log('storage nok');
 			}
+
 		</script>
 
 	</body>

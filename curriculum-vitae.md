@@ -27,7 +27,7 @@ description: Summary of my experiences, skills and major projects I have worked 
 - GPS Tourist - GIS Software (2011)
 - Minimal GNU/Linux distribution for embedded platforms (2011)
 - Digital Jukebox system (2012)
-- Neonfire - Machine to Machine (2012)
+- NanoCloudLogger - Machine to Machine (2012)
 - Street Lightning System (2012)
 - Smart cabins with hardware sensor management (2013)
 - Contextual advertising server (2015)

@@ -42,7 +42,7 @@ description: Summary of my experiences, skills and major projects I have worked 
 - Freelancer (2001 – Present)
 - Software developer at Mobinia (2005 – 2007)
 - CTO at Milk (2007 – 2009)
-- Founder and CTO of UTS (2010 – 2014)
+- Founder and CTO of UTS (2009 – 2014)
 - Founding member of Origami Group (2014 – 2017)
 - Senior Software Engineer at TSmedia (2015 - 2017)
 

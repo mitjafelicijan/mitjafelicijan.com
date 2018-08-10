@@ -39,8 +39,6 @@ Schema below represents what we will try to achieve and how different parts corr
 
 ![Overview](/files/simple-iot-application-overview.svg)
 
-
-
 ## Simple Python API
 
 I have always been a fan of simplicity so we will be using [Bottle: Python Web Framework](https://bottlepy.org/docs/dev/). It is a single file web framework that seriously simplifies working with routes, templating and has built-in web server that satisfies our need in this case.
@@ -48,8 +46,6 @@ I have always been a fan of simplicity so we will be using [Bottle: Python Web F
 First we need to install bottle package. This can be done by downloading ```bottle.py``` and placing it in the root of your application or by using pip software ```pip install bottle --user```.
 
 If you are using Linux or MacOS then Python is already installed. If you will try to test this on Windows please install [Python for Windows](https://www.python.org/downloads/windows/). There may be some problems with path when you will try to launch ```python webapp.py``` so please take care of this before you continue.
-
-
 
 ### Basic web application
 
@@ -89,16 +85,11 @@ If this fails at any time please fix it before you continue, because nothing bel
 
 > We use 0.0.0.0 as default host so that this app is available over your local network. If you find your local ip (```ifconfig```) and try accessing this site with your phone (if on same network/router as your machine) this should work as well (example of such ip ```http://192.168.1.15:5000```). This is a must have because Arduino will be accessing this application to send it's data.
 
-
-
 ### Web application security
 
 There is a lot to be said about security and is a topic of many books. Of course all this can not be written here but to just establish some basic security → you should always use SSL with your application. Some fantastic free certificates are available by [Let's Encrypt - Free SSL/TLS Certificates](https://letsencrypt.org). With SSL certificate installed you should then make use of HTTP headers and send your "API key" via a header. If your key is send via header then this key is encrypted by SSL and send encrypted over the network. Never send your api keys by GET parameter like ```http://example.com/?api_key=somekeyvalue```. The problem that this kind of sending presents is that this key is visible in logs and by network sniffers.
 
-There is a fantastic article describing some aspects about security: [11 Web Application Security Best Practices
-](https://www.keycdn.com/blog/web-application-security-best-practices/). Please check it out.
-
-
+There is a fantastic article describing some aspects about security: [11 Web Application Security Best Practices](https://www.keycdn.com/blog/web-application-security-best-practices/). Please check it out.
 
 ### Simple API for writing data-points
 
@@ -178,8 +169,6 @@ Table structure is as simple as it can be. We have ts (timestamp) and value (val
 > If you will deploy this app with uWSGI and multi-threaded, use DSN (Data Source Name) url with ```?check_same_thread=False```.
 
 Ok, now that we have some sort of a working API with some basic security so unwanted people can not post data to your database can we proceed further and try to program Arduino to send data to API.
-
-
 
 ## Sending data to API with Arduino MKR1000
 
@@ -279,7 +268,6 @@ void loop() {
 As seen from example you can notice that Arduino is generating random integer between [ 0 .. 1000 ]. You can easily replace this with a temperature sensor or any other kind of sensor.
 
 Now that we have API under the hood and Arduino is sending demo data we can now focus on data visualization.
-
 
 ## Data visualization
 
@@ -494,8 +482,6 @@ If you navigate to ```http://0.0.0.0:5000``` you should see rendered chart as sh
 ![Application output](/files/iot-app-output.png)
 
 Complete application with all the code is available for [download](/files/simple-iot-application.zip).
-
-
 
 ## Conclusion
 

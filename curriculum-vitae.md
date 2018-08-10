@@ -34,6 +34,8 @@ description: Summary of my experiences, skills and major projects I have worked 
 - Network accessible database engine for caching and in-memory storage (2016)
 - Tick database engine specifically designed for storing and processing large amount of sensor data with high write throughput (2016)
 - Wireless industrial lighting management system - hardware and software (2016)
+- Minimal configuration reverse proxy (2017)
+- Industrial IOT platform for deployment on on-premise (2018)
 
 ### Employment history
 

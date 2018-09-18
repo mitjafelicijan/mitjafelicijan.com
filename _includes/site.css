@@ -114,6 +114,17 @@ table td {
 	padding: 5px 10px;
 }
 
+summary {
+	outline: none;
+	cursor: pointer;
+	font-weight: 600;
+	user-select: none;
+}
+
+details .highlighter-rouge {
+	margin-top: 10px !important;
+}
+
 .highlighter-rouge {
 	padding: 0 15px;
 	font-size: 80%;
@@ -140,11 +151,13 @@ table td {
 	body {
 		padding: 0 20px;
 	}
+
 	footer,
 	header,
 	nav {
 		text-align: center;
 	}
+
 	.responsive-table {
 		width: 100%;
 		overflow: scroll;
@@ -155,6 +168,7 @@ table td {
 	@page {
 		margin: 2cm;
 	}
+
 	header,
 	nav,
 	.comments {

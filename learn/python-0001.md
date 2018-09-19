@@ -6,6 +6,8 @@ description: Couple of observations regarding project management.
 
 Application will fetch and cache Flickr feed and in the second phase display these images on a webpage.
 
+``$ y=\sum_{i=1}^n g(x_i) $``
+
 Categories: Python, Bottlepy, SQLite3, RSS
 
 **Table of contents**
@@ -42,12 +44,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis tempus sod
 
 <script>
 	// auto encloses all code blocks into details in case of tutorials
-	document.querySelectorAll('*[class^="language-"]').forEach(function(snippet, idx) {
+	/*document.querySelectorAll('*[class^="language-"]').forEach(function(snippet, idx) {
 		let details = document.createElement('details');
 		let summary = document.createElement('summary');
 		summary.innerText = 'Show solution';
 		details.appendChild(summary);
 		details.appendChild(snippet.cloneNode(true));
 		snippet.parentNode.replaceChild(details, snippet);
-	});
+	});*/
 </script>

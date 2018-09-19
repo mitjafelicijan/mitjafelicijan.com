@@ -10,30 +10,73 @@
 	<body>
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured"></script>
 
 		<script>
-			let slideshow = remark.create({
-				sourceUrl: 'slides.md',
-				ratio: '16:9',
-				mouseWheel: false,
-			});
+		MathJax.Hub.Config({
+			//displayAlign: 'left',
+			extensions: ['tex2jax.js'],
+			jax: ['input/TeX', 'output/SVG'],
+			tex2jax: {
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'code'],
+				inlineMath: [
+					['$', '$'],
+					["\\(", "\\)"]
+				],
+				displayMath: [
+					['$$', '$$'],
+					["\\[", "\\]"]
+				],
+			}
+		});
+		MathJax.Hub.Configured();
+
+		let slideshow = remark.create({
+			sourceUrl: 'slides.md',
+			ratio: '16:9',
+			mouseWheel: false,
+		});
+
 		</script>
 
 		<style>
-			* { box-shadow: none !important;}
-			.remark-container {
-				background-color: #fff !important;
-			}
-			table {
-				width:100%;
-				border-collapse:collapse;
-				border-spacing:0;
-			}
-			table, table td,table th {
-				border: 3px solid #f0f0f0;
-				text-align: left;
-				padding: 10px;
-			}
+		* {
+			box-shadow: none !important;
+		}
+
+		.remark-container {
+			background-color: #fff !important;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		table,
+		table td,
+		table th {
+			border: 3px solid #f0f0f0;
+			text-align: left;
+			padding: 10px;
+		}
+
+		img[src$="md-center"] {
+			display: block;
+			margin: 0 auto;
+		}
+
+		img[src$="md-left"] {
+			display: block;
+			margin: 0 auto;
+		}
+
+		img[src$="md-right"] {
+			display: block;
+			margin: 0 auto;
+		}
+
 		</style>
 
 	</body>

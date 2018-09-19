@@ -7,11 +7,36 @@ Couple of example slides to test
 
 ![alt text](https://media.giphy.com/media/i9qmSfLuXXcXK/giphy.gif)
 
+
+---
+
+## Math
+
+$$ \large{ \mathbb{R}^2 ∈ \vec{a} \bar{a} } $$
+$$ \large{ e^{i\pi} + 1 = 0 } $$
+$$ \large{ x = {-b \pm \sqrt{b^2-4ac} \over 2a} } $$
+
+
+$$ e^{i\pi} + 1 = 0 $$
+
+$$ \large{ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} } $$
+
+$$ \large{ ABCDEFGHIJKLMNOPQRSTUVXYZ } $$
+
 ---
 
 ## Image
 
-![alt text](https://media.giphy.com/media/4d0nGeMweD49q/giphy.gif)
+![alt text](https://media.giphy.com/media/4d0nGeMweD49q/giphy.gif?style=md-center)
+
+
+---
+
+## Lists
+
+- Couple of example slides to test
+- Couple of example slides to test
+- Couple of example slides to test
 
 ---
 

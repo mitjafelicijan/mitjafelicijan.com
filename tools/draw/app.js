@@ -57,17 +57,16 @@ window.addEventListener('load', function(evt) {
 						ctx.lineWidth = parseInt(button.dataset.value);
 						break;
 					}
-				case 'clear':
-					{
-						let clear = confirm('Do you really want to clear canvas?');
-						if (clear) {
-							ctx.clearRect(0, 0, canvas.width, canvas.height);
-						}
-						break;
-					}
 			}
 		});
 
 	});
+
+	document.addEventListener('keydown', function(evt) {
+		if (evt.keyCode == 8) {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+		}
+		console.log(evt.keyCode);
+	}, false);
 
 });

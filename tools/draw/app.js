@@ -40,9 +40,12 @@ window.addEventListener('load', function(evt) {
 
 
 	document.querySelectorAll('nav button').forEach(function(button, idx) {
-		button.addEventListener('click', function(evt) {
-			console.log(button.dataset.method);
 
+		if (button.dataset.method == 'color') {
+			button.style.background = button.dataset.value;
+		}
+
+		button.addEventListener('click', function(evt) {
 			switch (button.dataset.method) {
 				case 'color':
 					{
@@ -65,7 +68,6 @@ window.addEventListener('load', function(evt) {
 			}
 		});
 
-});
+	});
 
 });
-

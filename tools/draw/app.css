@@ -44,7 +44,6 @@ button {
 	background: #fff;
 	border-radius: 5px;
 	width: 100%;
-	margin-bottom: 10px;
 	font-weight: bold;
 	cursor: pointer;
 	text-align: center;
@@ -59,6 +58,7 @@ nav.colors {
 
 nav.colors button {
 	height: 40px;
+	margin-bottom: 10px;
 }
 
 nav.tools {
@@ -71,4 +71,5 @@ nav.tools {
 nav.tools button {
 	border: 2px solid #bbb;
 	padding: 10px 0;
+	margin-top: 10px;
 }

@@ -64,6 +64,7 @@ window.addEventListener('load', function(evt) {
 					slide.classList.add('hide');
 				});
 				slides[tmpIdx].classList.remove('hide');
+				window.scrollTo(0, 0);
 				nav.innerHTML = `${tmpIdx+1} / ${slides.length}`;
 				currentIdx = tmpIdx;
 			}

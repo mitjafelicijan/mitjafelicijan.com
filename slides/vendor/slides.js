@@ -136,6 +136,6 @@ window.addEventListener('load', function(evt) {
 			document.body.style.cursor = 'default';
 			cursorVisible = true;
 		}
-		mouseTimer = window.setTimeout(disappearCursor, 3000);
+		mouseTimer = window.setTimeout(disappearCursor, 2000);
 	};
 })();

@@ -69,6 +69,11 @@ window.addEventListener('load', function(evt) {
 			}
 		}
 
+		// fixes images relative path
+		document.querySelectorAll('img').forEach(function(image) {
+			image.src = `presentations/${hash}/${image.getAttribute('src')}`;
+		});
+
 		let slides = document.querySelectorAll('section');
 		let currentIdx = 0;
 		showSlide(slides, currentIdx);

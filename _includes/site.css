@@ -6,11 +6,16 @@
 
 body {
 	font-family: 'Roboto', 'Times New Roman', Times, serif;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.8;
 	color: #000;
 	margin: 0;
 	padding: 0 0 50px 0;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
 }
 
 article,
@@ -18,7 +23,7 @@ main,
 footer,
 nav,
 header {
-	max-width: 700px;
+	max-width: 850px;
 	margin: 0 auto;
 }
 
@@ -53,7 +58,8 @@ nav ul li a {
 }
 
 h1 {
-	font-size: 200%;
+	font-size: 260%;
+	line-height: 150%;
 }
 
 h2 {
@@ -89,7 +95,12 @@ main ul {
 }
 
 main ul li {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+main ul li a {
+	font-size: 100%;
+	font-weight: 500;
 }
 
 main ul div {
@@ -147,6 +158,36 @@ details .highlighter-rouge {
 ::-moz-selection {
 	background: #ff0;
 	color: #000;
+}
+
+/* commenting */
+#hcb_form_name,
+#hcb_form_content {
+	border: 2px solid #eee;
+	padding: 10px;
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+#hcb_submit {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	font-weight: 600;
+	padding: 7px 15px;
+	font-size: 85%;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #ccc;
+	border: 2px solid transparent;
+	width: auto;
+	user-select: none;
+	text-align: center;
+	height: auto;
+	margin-right: 20px;
 }
 
 @media only screen and (max-width:768px) {

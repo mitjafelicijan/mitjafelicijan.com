@@ -2,7 +2,7 @@ clean:
 	-rm -Rf _site/
 
 run: clean
-	bundle exec jekyll serve --incremental --drafts
+	bundle exec jekyll serve --host=0.0.0.0 --incremental --drafts
 
 publish:
 	cp _includes/site.min.css assets/site.min.css # for service worker

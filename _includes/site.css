@@ -168,8 +168,12 @@ ol {
 	margin-left: -0.3em;
 }
 
+ol li {
+	counter-increment: li;
+}
+
 ol li::before {
-	content: counter(li);
+	content: counter(li)'.';
 	color: #ccc;
 	font-weight: 500;
 	display: inline-block;
@@ -177,11 +181,6 @@ ol li::before {
 	margin-left: -1.5em;
 	margin-right: 0.9em;
 	text-align: right;
-	direction: rtl
-}
-
-ol li {
-	counter-increment: li
 }
 
 /* commenting */

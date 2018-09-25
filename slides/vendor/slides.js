@@ -5,9 +5,7 @@ window.addEventListener('load', function(evt) {
 	let wrapper = document.querySelector('div.wrapper');
 	let hash = window.location.hash.slice(1, window.location.hash.length);
 
-	if (hash.length == 0) {
-		main.innerHTML = '<h1>No presentation selected!</h1>';
-	} else {
+	if (hash.length > 0) {
 
 		fetch(`presentations/${hash}/default.pug`).then(function(response) {
 			response.text().then(function(template) {

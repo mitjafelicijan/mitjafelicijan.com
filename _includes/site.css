@@ -90,12 +90,14 @@ ul {
 }
 
 main ul {
-	margin-top: 30px;
+	margin-top: 40px;
 	padding: 0 20px;
 }
 
 main ul li {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
+	margin-left: -20px;
+	list-style-type: none;
 }
 
 main ul li a {

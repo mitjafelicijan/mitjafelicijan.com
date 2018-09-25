@@ -6,12 +6,12 @@ description: State of front-end development and what this does to the future of 
 
 **Table of contents**
 
-- [Initial thoughts](#initial-thoughts)
-- [Front-end frameworks](#front-end-frameworks)
-- [Obsolescence to the rescue](#obsolescence-to-the-rescue)
-- [Unnecessary complexity](#unnecessary-complexity)
-- [Speed of development trumps code quality](#speed-of-development-trumps-code-quality)
-- [Load times of most popular websites](#load-times-of-most-popular-websites)
+1. [Initial thoughts](#initial-thoughts)
+2. [Front-end frameworks](#front-end-frameworks)
+3. [Obsolescence to the rescue](#obsolescence-to-the-rescue)
+4. [Unnecessary complexity](#unnecessary-complexity)
+5. [Speed of development trumps code quality](#speed-of-development-trumps-code-quality)
+6. [Load times of most popular websites](#load-times-of-most-popular-websites)
 
 ## Initial thoughts
 

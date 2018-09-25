@@ -6,12 +6,12 @@ description: Lessons I learned developing contextual ad server
 
 **Table of contents**
 
-- [Aggregate everything](#aggregate-everything)
-- [Measure everything](#measure-everything)
-- [Cache control is your friend](#cache-control-is-your-friend)
-- [Learn NGINX](#learn-nginx)
-- [Use Redis/Memcached](#use-redismemcached)
-- [Conclusion](#conclusion)
+1. [Aggregate everything](#aggregate-everything)
+2. [Measure everything](#measure-everything)
+3. [Cache control is your friend](#cache-control-is-your-friend)
+4. [Learn NGINX](#learn-nginx)
+5. [Use Redis/Memcached](#use-redismemcached)
+6. [Conclusion](#conclusion)
 
 For the past year and half I have been developing native advertising server that contextually matches ads and displays them in different template forms on variety of websites. This project grew from serving thousands of ads per day to millions.
 

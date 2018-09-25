@@ -6,10 +6,10 @@ description: Reasons why I choose DigitalOcean for my project
 
 **Table of contents**
 
-- [Docker tools and complexity that comes with it](#docker-tools-and-complexity-that-comes-with-it)
-- [Lack of real life examples of Docker in action](#lack-of-real-life-examples-of-docker-in-action)
-- [Ease of deployment](#ease-of-deployment)
-- [Where to go from here](#where-to-go-from-here)
+1. [Docker tools and complexity that comes with it](#docker-tools-and-complexity-that-comes-with-it)
+2. [Lack of real life examples of Docker in action](#lack-of-real-life-examples-of-docker-in-action)
+3. [Ease of deployment](#ease-of-deployment)
+4. [Where to go from here](#where-to-go-from-here)
 
 I have been developing a product for the past few months and one of product’s requirement is the ability to automatically scale quickly on system’s demand.
 

@@ -6,14 +6,14 @@ description: Develop simple IOT application with Arduino MKR1000 and Python
 
 **Table of contents**
 
-- [Initial thoughts](#initial-thoughts)
-- [Simple Python API](#simple-python-api)
-  - [Basic web application](#basic-web-application)
-  - [Web application security](#web-application-security)
-  - [Simple API for writing data-points](#simple-api-for-writing-data-points)
-- [Sending data to API with Arduino MKR1000](#sending-data-to-api-with-arduino-mkr1000)
-- [Data visualization](#data-visualization)
-- [Conclusion](#conclusion)
+1. [Initial thoughts](#initial-thoughts)
+2. [Simple Python API](#simple-python-api)
+  1. [Basic web application](#basic-web-application)
+  2. [Web application security](#web-application-security)
+  3. [Simple API for writing data-points](#simple-api-for-writing-data-points)
+3. [Sending data to API with Arduino MKR1000](#sending-data-to-api-with-arduino-mkr1000)
+4. [Data visualization](#data-visualization)
+5. [Conclusion](#conclusion)
 
 ## Initial thoughts
 

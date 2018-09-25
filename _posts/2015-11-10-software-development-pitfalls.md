@@ -6,15 +6,15 @@ description: Couple of observations regarding project management.
 
 **Table of contents**
 
-- [Initial thoughts](#initial-thoughts)
-- [Ping emails](#ping-emails)
-- [Everybody is a project manager](#everybody-is-a-project-manager)
-- [We are never wrong](#we-are-never-wrong)
-- [Micromanaging](#micromanaging)
-- [Human contact - no need for it!](#human-contact---no-need-for-it)
-- [MVP is killing innovation](#mvp-is-killing-innovation)
-- [Pressure wasteland](#pressure-wasteland)
-- [Conclusion](#conclusion)
+1. [Initial thoughts](#initial-thoughts)
+2. [Ping emails](#ping-emails)
+3. [Everybody is a project manager](#everybody-is-a-project-manager)
+4. [We are never wrong](#we-are-never-wrong)
+5. [Micromanaging](#micromanaging)
+6. [Human contact - no need for it!](#human-contact---no-need-for-it)
+7. [MVP is killing innovation](#mvp-is-killing-innovation)
+8. [Pressure wasteland](#pressure-wasteland)
+9. [Conclusion](#conclusion)
 
 ## Initial thoughts
 

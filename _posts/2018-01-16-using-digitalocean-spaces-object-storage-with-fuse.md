@@ -6,12 +6,12 @@ description: Using DigitalOcean Spaces Object Storage with FUSE
 
 **Table of contents**
 
-- [Is it possible to use them as a mounted drive with FUSE?](#is-it-possible-to-use-them-as-a-mounted-drive-with-fuse)
-- [Will the performance degrade over time and over different sizes of objects?](#will-the-performance-degrade-over-time-and-over-different-sizes-of-objects)
-	- [Measurement experiment 1: File copy](#measurement-experiment-1-file-copy)
-	- [Measurement experiment 2: SQLite performanse](#measurement-experiment-2-sqlite-performanse)
-- [Can storage be mounted on multiple machines at the same time and be writable?](#can-storage-be-mounted-on-multiple-machines-at-the-same-time-and-be-writable)
-- [Observations and conslusion](#observations-and-conslusion)
+1. [Is it possible to use them as a mounted drive with FUSE?](#is-it-possible-to-use-them-as-a-mounted-drive-with-fuse)
+2. [Will the performance degrade over time and over different sizes of objects?](#will-the-performance-degrade-over-time-and-over-different-sizes-of-objects)
+	1. [Measurement experiment 1: File copy](#measurement-experiment-1-file-copy)
+	2. [Measurement experiment 2: SQLite performanse](#measurement-experiment-2-sqlite-performanse)
+3. [Can storage be mounted on multiple machines at the same time and be writable?](#can-storage-be-mounted-on-multiple-machines-at-the-same-time-and-be-writable)
+4. [Observations and conslusion](#observations-and-conslusion)
 
 Couple of months ago [DigitalOcean](https://www.digitalocean.com) introduced new product called [Spaces](https://blog.digitalocean.com/introducing-spaces-object-storage/) which is Object Storage very similar to Amazon's S3. This really peaked my interest, because this was something I was missing and even the thought of going over the internet for such functionality was in no interest to me. Also in fashion with their previous pricing this also is very cheap and pricing page is a no-brainer compared to AWS or GCE. [Prices are clearly and precisely defined and outlined](https://www.digitalocean.com/pricing/). You must love them for that :)
 

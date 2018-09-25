@@ -162,6 +162,27 @@ details .highlighter-rouge {
 	color: #000;
 }
 
+ol {
+	list-style: none;
+	counter-reset: li;
+}
+
+ol li::before {
+	content: counter(li);
+	color: #ccc;
+	font-weight: 500;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1.5em;
+	margin-right: 0.9em;
+	text-align: right;
+	direction: rtl
+}
+
+ol li {
+	counter-increment: li
+}
+
 /* commenting */
 #hcb_form_name,
 #hcb_form_content {

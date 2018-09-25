@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Bullshit Web - Development's POV
+title: The Bullshit Web - Development's Point of View
 description: State of front-end development and what this does to the future of web
 ---
 

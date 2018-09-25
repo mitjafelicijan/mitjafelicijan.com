@@ -165,6 +165,7 @@ details .highlighter-rouge {
 ol {
 	list-style: none;
 	counter-reset: li;
+	margin-left: -0.3em;
 }
 
 ol li::before {

@@ -207,6 +207,10 @@ details .highlighter-rouge {
 		width: 100%;
 		overflow: scroll;
 	}
+
+	h1 {
+		font-size: 200%;
+	}
 }
 
 @media print {

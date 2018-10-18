@@ -14,7 +14,7 @@ description: Embedded systems developer and fanatical fan of science fiction
 twitter: "@mitjafelicijan"
 avatar: assets/avatar.gif
 cache_version: 20180811
-theme_color: "#c242f4"
+theme_color: "#ffffff"
 
 kramdown:
   auto_ids:      true

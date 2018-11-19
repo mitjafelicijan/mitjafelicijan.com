@@ -1,116 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-	<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
 
-		<meta charset="utf-8">
+    <meta name="theme-color" content="{{ site.theme_color }}" />
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{{ page.description }}" />
 
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <meta name="google-site-verification" content="EwUGW1WlCkRIQuyQ9AE1-bLitWthw-eVMZFTAMZVZaA" />
 
-		<meta name="theme-color" content="{{ site.theme_color }}">
-		<meta name="author" content="{{ site.author }}">
-		<meta name="description" content="{{ page.description }}">
-		
-		<meta name="google-site-verification" content="EwUGW1WlCkRIQuyQ9AE1-bLitWthw-eVMZFTAMZVZaA">
+    <title>{{ page.title }}</title>
 
-		<title>{{ page.title }}</title>
+    <link rel="icon" type="image/gif" href="/{{ site.avatar }}?ver={{ site.cache_version }}" />
 
-		<link rel="icon" type="image/gif" href="/{{ site.avatar }}?ver={{ site.cache_version }}">
+    <meta name="og:url" content="{{ site.domain }}{{ page.slug }}" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="{{ page.title }}" />
+    <meta name="og:description" content="{{ page.description }}" />
+    <meta name="og:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}" />
 
-		<meta name="og:url" content="{{ site.domain }}{{ page.slug }}">
-		<meta name="og:type" content="website">
-		<meta name="og:title" content="{{ page.title }}">
-		<meta name="og:description" content="{{ page.description }}">
-		<meta name="og:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{{ site.twitter }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    <meta name="twitter:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}" />
 
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="{{ site.twitter }}">
-		<meta name="twitter:title" content="{{ page.title }}">
-		<meta name="twitter:description" content="{{ page.description }}">
-		<meta name="twitter:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}">
+    <link rel="manifest" href="/assets/manifest.json?ver={{ site.cache_version }}" />
 
-		<link rel="manifest" href="/assets/manifest.json?ver={{ site.cache_version }}">
+    <style>
+      {% include site.min.css %}
+      {% include highlight.min.css %}
+    </style>
+  </head>
 
-		<style>
-			{% include site.min.css %}
-			{% include highlight.min.css %}
-		</style>
+  <body>
+    {% include header.html %}
 
-	</head>
+    <article>
+      <h1>{{ page.title }}</h1>
 
-	<body>
+      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%A, %B %-d, %Y' }}</time>
 
-		{% include header.html %}
+      {{ content }}
 
-		<article>
+      <!--
+        <div id="HCB_comment_box" class="comments">Loading comments ...</div>
+        <script type="text/javascript" id="hcb">
+        	if (!window.hcb_user) {
+        		hcb_user = {
+        			logout_link: "logout",
+        			admin_link: "admin",
+        			reply: "reply",
+        			flag: "flag",
+        			like: "like",
+        			prev_page: "prev",
+        			next_page: "next",
+        		};
+        	}
+        	hcb_user.PAGE = "{{ site.domain }}";
+        	(function() {
+        		var s = document.createElement("script"),
+        			l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+        			h = "//www.htmlcommentbox.com";
+        		s.setAttribute("type", "text/javascript");
+        		s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24MpQDCL74rJm9DREvceKL%2F1" + "&opts=16399&num=10&ts=1490664489345");
+        		if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
+        	})();
+        </script>
+      -->
+    </article>
 
-			<h1>{{ page.title }}</h1>
+    {% include footer.html %}
 
-			<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%A, %B %-d, %Y' }}</time>
+    <!-- Linked data - Article -->
+    <script type="application/ld+json">
+      {
+      	"@context": "http://schema.org",
+      	"@type": "NewsArticle",
+      	"mainEntityOfPage": {
+      		"@type": "WebPage",
+      		"@id": "{{ site.domain }}{{ page.slug }}"
+      	},
 
-			{{ content }}
-
-			<!--<div id="HCB_comment_box" class="comments">Loading comments ...</div>
-			<script type="text/javascript" id="hcb">
-				if (!window.hcb_user) {
-					hcb_user = {
-						logout_link: "logout",
-						admin_link: "admin",
-						reply: "reply",
-						flag: "flag",
-						like: "like",
-						prev_page: "prev",
-						next_page: "next",
-					};
-				}
-				hcb_user.PAGE = "{{ site.domain }}";
-				(function() {
-					var s = document.createElement("script"),
-						l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
-						h = "//www.htmlcommentbox.com";
-					s.setAttribute("type", "text/javascript");
-					s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24MpQDCL74rJm9DREvceKL%2F1" + "&opts=16399&num=10&ts=1490664489345");
-					if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
-				})();
-			</script>-->
-
-		</article>
-
-		{% include footer.html %}
-
-		<!-- Linked data - Article -->
-		<script type="application/ld+json">
-			{
-				"@context": "http://schema.org",
-				"@type": "NewsArticle",
-				"mainEntityOfPage": {
-					"@type": "WebPage",
-					"@id": "{{ site.domain }}{{ page.slug }}"
-				},
-
-				"image": [
-					"{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}"
-				],
-				"datePublished": "{{ page.date | date_to_xmlschema }}",
-				"dateModified": "{{ page.date | date_to_xmlschema }}",
-				"author": {
-					"@type": "Person",
-					"name": "Mitja Felicijan"
-				},
-				"publisher": {
-					"@type": "Organization",
-					"name": "Mitja Felicijan",
-					"logo": {
-					"@type": "ImageObject",
-					"url": "{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}"
-					}
-				},
-				"headline": "{{ page.title }}",
-				"description": "{{ page.description }}"
-			}
-		</script>
-
-	</body>
-
+      	"image": [
+      		"{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}"
+      	],
+      	"datePublished": "{{ page.date | date_to_xmlschema }}",
+      	"dateModified": "{{ page.date | date_to_xmlschema }}",
+      	"author": {
+      		"@type": "Person",
+      		"name": "Mitja Felicijan"
+      	},
+      	"publisher": {
+      		"@type": "Organization",
+      		"name": "Mitja Felicijan",
+      		"logo": {
+      		"@type": "ImageObject",
+      		"url": "{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}"
+      		}
+      	},
+      	"headline": "{{ page.title }}",
+      	"description": "{{ page.description }}"
+      }
+    </script>
+  </body>
 </html>

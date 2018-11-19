@@ -1,65 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-	<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
 
-		<meta charset="utf-8">
+    <meta name="theme-color" content="{{ site.theme_color }}" />
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{{ site.description }}" />
 
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <meta name="google-site-verification" content="EwUGW1WlCkRIQuyQ9AE1-bLitWthw-eVMZFTAMZVZaA" />
 
-		<meta name="theme-color" content="{{ site.theme_color }}">
-		<meta name="author" content="{{ site.author }}">
-		<meta name="description" content="{{ site.description }}">
-		
-		<meta name="google-site-verification" content="EwUGW1WlCkRIQuyQ9AE1-bLitWthw-eVMZFTAMZVZaA">
+    <title>{{ page.title }}</title>
 
-		<title>{{ page.title }}</title>
+    <link rel="icon" type="image/gif" href="/{{ site.avatar }}?ver={{ site.cache_version }}" />
 
-		<link rel="icon" type="image/gif" href="/{{ site.avatar }}?ver={{ site.cache_version }}">
+    <meta name="og:url" content="{{ site.domain }}" />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="{{ site.title }}" />
+    <meta name="og:description" content="{{ page.description }}" />
+    <meta name="og:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}" />
 
-		<meta name="og:url" content="{{ site.domain }}">
-		<meta name="og:type" content="website">
-		<meta name="og:title" content="{{ site.title }}">
-		<meta name="og:description" content="{{ page.description }}">
-		<meta name="og:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{{ site.twitter }}" />
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    <meta name="twitter:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}" />
 
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="{{ site.twitter }}">
-		<meta name="twitter:title" content="{{ site.title }}">
-		<meta name="twitter:description" content="{{ site.description }}">
-		<meta name="twitter:image" content="{{ site.domain }}{{ site.avatar }}?ver={{ site.cache_version }}">
+    <link rel="manifest" href="/assets/manifest.json?ver={{ site.cache_version }}" />
 
-		<link rel="manifest" href="/assets/manifest.json?ver={{ site.cache_version }}">
+    <style>
+      {% include site.min.css %}
+      {% include highlight.min.css %}
+    </style>
+  </head>
 
-		<style>
-			{% include site.min.css %}
-			{% include highlight.min.css %}
-		</style>
+  <body>
+    {% include header.html %}
 
-	</head>
+    <main>
+      {{ content }}
 
-	<body>
+      <ul>
+        {% for post in site.posts %}
+        <li>
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%A, %B %-d, %Y' }}</time>
+          <div>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </main>
 
-		{% include header.html %}
-
-		<main>
-
-			{{ content }}
-
-			<ul>
-				{% for post in site.posts %}
-				<li>
-					<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%A, %B %-d, %Y' }}</time>
-					<div><a href="{{ post.url }}">{{ post.title }}</a></div>
-				</li>
-				{% endfor %}
-			</ul>
-
-		</main>
-
-		{% include footer.html %}
-
-	</body>
-
+    {% include footer.html %}
+  </body>
 </html>

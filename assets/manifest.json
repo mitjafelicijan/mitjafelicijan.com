@@ -1,19 +1,22 @@
 {
-	"short_name": "MF",
-	"name": "Mitja Felicijan",
-	"author": "Mitja Felicijan",
-	"icons": [{
-		"src": "/assets/avatar.png",
-		"sizes": "512x512",
-		"type": "image/png"
-	}, {
-		"src": "/assets/avatar.gif",
-		"sizes": "512x512",
-		"type": "image/gif"
-	}],
-	"start_url": "/",
-	"scope": "/",
-	"display": "standalone",
-	"theme_color": "#ffffff",
-	"background_color": "#ffffff"
+  "short_name": "MF",
+  "name": "Mitja Felicijan",
+  "author": "Mitja Felicijan",
+  "icons": [
+    {
+      "src": "/assets/avatar.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/avatar.gif",
+      "sizes": "512x512",
+      "type": "image/gif"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
 }

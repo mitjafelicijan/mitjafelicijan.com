@@ -13,7 +13,7 @@ domain: https://mitjafelicijan.com/
 description: Embedded systems developer and fanatical fan of science fiction
 twitter: '@mitjafelicijan'
 avatar: assets/avatar.gif
-cache_version: 20181119
+cache_version: 20181118
 theme_color: '#ffffff'
 
 kramdown:

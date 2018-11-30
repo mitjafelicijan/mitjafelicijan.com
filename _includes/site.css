@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Yrsa:300,400,500,600,700&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Yrsa:300,400,500,600,700&subset=latin-ext");
 
 * {
   box-sizing: border-box;
@@ -57,7 +57,7 @@ nav ul li {
 nav ul li a {
   color: #444;
   font-size: 85%;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 h1 {
@@ -176,7 +176,7 @@ ol li {
 }
 
 ol li::before {
-  content: counter(li) '.';
+  content: counter(li) ".";
   color: #ccc;
   font-weight: 500;
   display: inline-block;

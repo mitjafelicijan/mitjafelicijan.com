@@ -11,3 +11,4 @@ Rules I accumulated and abided by over the years.
 3. Always be transparent and truthful.
 4. Focus on little incremental steps.
 5. Document everything and follow standards.
+6. Assumption is the mother of all fuck ups.

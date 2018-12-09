@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Rules for developers
+title: Developer's mantra
 description: Basic rules every developer should follow
 ---
-
-Rules I accumulated over the years.
 
 1. Follow Occam's razor whenever you can.
 2. Early optimization is the root of all evil.

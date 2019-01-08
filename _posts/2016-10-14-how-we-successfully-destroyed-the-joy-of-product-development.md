@@ -1,7 +1,9 @@
 ---
+
 layout: post
 title: How we successfully destroyed the joy of product development
 description: My take on project development.
+
 ---
 
 No matter how hard we try to reinvent processes in software development we still haven’t found perfect solution for this. And to dismiss SDLC just because it’s something old is as ridiculous as the concept of designers being user experience gurus. As I have written couple of times before designers have their place and is not in the UX community. Most of them probably never heard of Jakob Nielsen and this proves a lot. Don’t get me wrong. There are designers out there that are absolutely amazing in what they do, but most of them are not. Good design has little to do with how things look in my opinion. But it has very much to do with how product behaves. And to take a chance on design look only is scary to me.

@@ -1,7 +1,9 @@
 ---
+
 layout: post
 title: What I've learned developing ad server
 description: Lessons I learned developing contextual ad server
+
 ---
 
 **Table of contents**

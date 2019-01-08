@@ -1,7 +1,9 @@
 ---
+
 layout: post
 title: The Bullshit Web - Development's Point of View
 description: State of front-end development and what this does to the future of web
+
 ---
 
 **Table of contents**
@@ -92,20 +94,20 @@ All this directly impacts performanse. Terabytes of bandwidth wasted because the
 
 Here are some examples of loading times. It's up to you to decide if this really is the best way to do web.
 
-| URL                | Num of requests | Transfered | Finish  | DOMContentLoaded | Load   |
-| ------------------ | --------------- | ---------- | ------- | ---------------- | ------ |
-| cnn.com            | 134             | 3.22 MB    | 4.7 s   | 575 ms           | 3.60 s |
-| youtube.com        | 61              | 1.8 MB     | 5.13 s  | 1.78 s           | 1.97 s |
-| wikipedia.com      | 11              | 64.5 KB    | 642 ms  | 531 ms           | 573 ms |
-| reddit.com         | 177             | 12.9 MB    | 7.65 s  | 2.03 s           | 3.74 s |
-| amazon.com         | 278             | 8.0 MB     | 5.20 s  | 1.15s            | 2.99 s |
-| twitter.com        | 202             | 5.1 MB     | 23.48 s | 3.20 s           | 4.55 s |
-| twitch.tv          | 177             | 4.4 MB     | 5.08 s  | 579 ms           | 798 ms |
-| microsoft.com      | 77              | 1.1 MB     | 3.96 s  | 1.01 s           | 1.26 s |
-| huffingtonpost.com | 134             | 2.9 MB     | 2.30 s  | 789 ms           | 1.47 s |
-| nytimes.com        | 240             | 2.9 MB     | 4.64 s  | 1.30 s           | 4.29 s |
-| foxnews.com        | 195             | 1.7 MB     | 4.42 s  | 1.25 s           | 3.86 s |
-| theguardian.com    | 203             | 2.8 MB     | 2.75 s  | 784 ms           | 2.43 s |
-| bbc.com            | 127             | 1.3 MB     | 3.44 s  | 1.24 s           | 2.65 s |
+| URL                | # req | Transfered | Finish  | DOM Content Loaded | Load   |
+| ------------------ | ----- | ---------- | ------- | ------------------ | ------ |
+| cnn.com            | 134   | 3.22 MB    | 4.7 s   | 575 ms             | 3.60 s |
+| youtube.com        | 61    | 1.8 MB     | 5.13 s  | 1.78 s             | 1.97 s |
+| wikipedia.com      | 11    | 64.5 KB    | 642 ms  | 531 ms             | 573 ms |
+| reddit.com         | 177   | 12.9 MB    | 7.65 s  | 2.03 s             | 3.74 s |
+| amazon.com         | 278   | 8.0 MB     | 5.20 s  | 1.15s              | 2.99 s |
+| twitter.com        | 202   | 5.1 MB     | 23.48 s | 3.20 s             | 4.55 s |
+| twitch.tv          | 177   | 4.4 MB     | 5.08 s  | 579 ms             | 798 ms |
+| microsoft.com      | 77    | 1.1 MB     | 3.96 s  | 1.01 s             | 1.26 s |
+| huffingtonpost.com | 134   | 2.9 MB     | 2.30 s  | 789 ms             | 1.47 s |
+| nytimes.com        | 240   | 2.9 MB     | 4.64 s  | 1.30 s             | 4.29 s |
+| foxnews.com        | 195   | 1.7 MB     | 4.42 s  | 1.25 s             | 3.86 s |
+| theguardian.com    | 203   | 2.8 MB     | 2.75 s  | 784 ms             | 2.43 s |
+| bbc.com            | 127   | 1.3 MB     | 3.44 s  | 1.24 s             | 2.65 s |
 
 Chrome Browser Developer tools was used to measure load times.

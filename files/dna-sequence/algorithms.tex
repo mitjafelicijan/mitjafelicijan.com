@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+\begin{document}
+
+% https://tex.stackexchange.com/questions/229355/algorithm-algorithmic-algorithmicx-algorithm2e-algpseudocode-confused
+% https://en.wikibooks.org/wiki/LaTeX/Algorithms
+
+\begin{algorithm}
+\caption{Naive  byte array to DNA encode}
+\begin{algorithmic}[1]
+\Procedure{EncodeToDNASequence}{$name$}
+   \State $fp\gets open(name)$
+   \State $en\gets null$
+   \While{$fp\not=EOF$}
+        \State $c\gets buf[0]$\Comment{Read 1 byte from buffer}
+        \State $b\gets sprintf("08b", c)$\Comment{Convert to string binary}
+        \For{\texttt{e in range[0,2,4,6]}}
+            \If {$e[0] = 48$ $1$ and $e[1] = 48$}\Comment{0x00 - A (Adenine)}
+                \State $en\gets en + `A`$
+            \EndIf
+            \If {$e[0] = 48$ $1$ and $e[1] = 49$}\Comment{0x01 - G (Guanine)}
+                \State $en\gets en + `G`$
+            \EndIf
+            \If {$e[0] = 49$ $1$ and $e[1] = 48$}\Comment{0x10 - C (Cytosine)}
+                \State $en\gets en + `C`$
+            \EndIf
+            \If {$e[0] = 49$ $1$ and $e[1] = 49$}\Comment{0x11 - T (Thymine)}
+                \State $en\gets en + `T`$
+            \EndIf
+        \EndFor
+   \EndWhile
+   \State \textbf{return} $en$\Comment{Return string DNA sequence}
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+%\begin{algorithm}
+%\caption{Euclid’s algorithm}\label{euclid}
+%\begin{algorithmic}[1]
+%\Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+%   \State $r\gets a\bmod b$
+%   \While{$r\not=0$}\Comment{We have the answer if r is 0}
+%      \State $a\gets b$
+%      \State $b\gets r$
+%      \State $r\gets a\bmod b$
+%   \EndWhile\label{euclidendwhile}
+%   \State \textbf{return} $b$\Comment{The gcd is b}
+%\EndProcedure
+%\end{algorithmic}
+%\end{algorithm}
+
+\end{document}

@@ -1,7 +1,9 @@
 ---
+
 layout: post
 title: Profiling Python web applications with visual tools
 description: Missing link when debugging and profiling python web applications
+
 ---
 
 **Table of contents**

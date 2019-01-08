@@ -1,7 +1,9 @@
 ---
+
 layout: post
 title: Using DigitalOcean Spaces Object Storage with FUSE
 description: Using DigitalOcean Spaces Object Storage with FUSE
+
 ---
 
 **Table of contents**

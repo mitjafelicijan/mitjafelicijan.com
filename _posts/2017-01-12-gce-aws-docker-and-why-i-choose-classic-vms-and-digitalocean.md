@@ -1,7 +1,9 @@
 ---
+
 layout: post
 title: GCE, AWS, Docker and why I choose classic VM’s and DigitalOcean for my current project
 description: Reasons why I choose DigitalOcean for my project
+
 ---
 
 **Table of contents**

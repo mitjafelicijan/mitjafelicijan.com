@@ -1,7 +1,9 @@
 ---
+
 layout: post
 title: What it's like to be a software developer
 description: Couple of observations regarding project management
+
 ---
 
 I get asked a lot what the hell I actually do. I find it funny but I guess it is my fault in most cases. I try not to be the kind of a man that is always talking about his work. I live in a small village and most of my neighbours probably have no idea what I actually do. And I am ok with that.  I prefer this. But on some occasions I find it disturbing how people judge other people just because they don't understand what they are all about. Many of them probably think I am some strange kind of a looser that is awake all the time and works from home. He probably plays games and type on a computer :) What kind of a job is that? That is no job at all! :) You work for eight hours, then you go home and drink a beer and go work in your workshop. This is what real men do!

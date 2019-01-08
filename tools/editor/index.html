@@ -46,16 +46,18 @@
 
 			editor.addEventListener('paste', function (evt) {
 				evt.preventDefault();
-				document.execCommand('insertHTML', false, evt.clipboardData.getData('text/plain'));
+
+				let clipped = evt.clipboardData.getData('text/plain');
+				clipped = clipped.replace(/(\r\n|\n|\r)/gm, "<br>");
+				document.execCommand('insertHTML', false, clipped);
 			});
 
 			if (typeof (Storage) !== 'undefined') {
-				editor.innerHTML = sessionStorage.getItem('content');
+				editor.innerHTML = localStorage.getItem('content');
 
 				setInterval(function () {
-					sessionStorage.setItem('content', editor.innerHTML);
+					localStorage.setItem('content', editor.innerHTML);
 				}, autoSaveFrequency);
-
 			} else {
 				console.log('Local Storage not supported');
 			}

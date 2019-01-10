@@ -189,12 +189,12 @@ FASTA format was extended by [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)
 
 ### PNG encoded DNA sequence
 
-| Nucleotides  | RGB         | Color name  |
-| ------------ | ----------- | ----------- |
-| A (Adenine)  | (0,0,255)   | Blue        |
-| G (Guanine)  | (0,100,0)   | Green       |
-| C (Cytosine) | (255,0,0)   | Red         |
-| T (Thymine)  | (255,255,0) | Yellow      |
+| Nucleotides  | RGB         | Color name |
+| ------------ | ----------- | ---------- |
+| A (Adenine)  | (0,0,255)   | Blue       |
+| G (Guanine)  | (0,100,0)   | Green      |
+| C (Cytosine) | (255,0,0)   | Red        |
+| T (Thymine)  | (255,255,0) | Yellow     |
 
 With this in mind we can create a simple algorithm to create PNG representation of a DNA sequence.
 
@@ -335,12 +335,12 @@ Our freshly generated 1KB file looks something like this (its full of garbage da
 ![Sample binary file 1KB](/files/dna-sequence/sample-binary-file.png)
 
 We create following binary files:
-- 1KB
-- 10KB
-- 100KB
-- 1MB
-- 10MB
-- 100MB
+- 1KB.bin
+- 10KB.bin
+- 100KB.bin
+- 1MB.bin
+- 10MB.bin
+- 100MB.bin
 
 After this we create FASTA files for all the binary files by encoding them into DNA sequence.
 
@@ -354,13 +354,55 @@ Then we GZIP all the FASTA files to see how much the can be compressed.
 gzip -9 < 10MB.fa > 10MB.fa.gz
 ```
 
+<script src="/assets/plotly-latest.min.js"></script>
+
 **Speed of encoding binary file into FASTA format.**
 
-![Chart: encoding speed](/files/dna-sequence/chart-encoding-speed.png)
+<div id="encoding-benchmarks"></div>
+<script>
+(function(){
+  var trace1 = {
+    x: ['1KB.bin', '10KB.bin', '100KB.bin', '1MB.bin', '10MB.bin', '100MB.bin'],
+    y: [5.625224, 32.679975, 112.864416, 872.887675, 8472.693202, 85525.178217],
+    type: 'scatter',
+  };
+  var data = [trace1];
+  Plotly.newPlot("encoding-benchmarks", data, {
+    legend: {"orientation": "h"},
+    height: 300,
+    margin: { l: 50, r: 0, b: 50, t: 30, pad: 0 },
+    yaxis: { title: "execution time in milliseconds", titlefont: { size: 12 } },
+    });
+})();
+</script>
 
 **File sizes of encoded files and also GZIP-ed variations.**
 
-![Chart: file sizes](/files/dna-sequence/chart-file-sizes.png)
+<div id="size-benchmarks"></div>
+<script>
+(function(){
+  var trace1 = {
+    x: ['1KB.bin', '10KB.bin', '100KB.bin', '1MB.bin', '10MB.bin', '100MB.bin'],
+    y: [4.1, 40.7, 406.7, 4100, 40700, 406700],
+    name: 'FASTA file size',
+    type: 'bar',
+  };
+  var trace2 = {
+    x: ['1KB.bin', '10KB.bin', '100KB.bin', '1MB.bin', '10MB.bin', '100MB.bin'],
+    y: [1.4, 13, 121, 1200, 12000, 118000],
+    name: 'FASTA GZIPPED file size',
+    type: 'bar',
+  };
+  var data = [trace1, trace2];
+  Plotly.newPlot("size-benchmarks", data, {
+    legend: {"orientation": "h"},
+    height: 300,
+    margin: { l: 50, r: 0, b: 50, t: 30, pad: 0 },
+    yaxis: { title: "size in kilobytes", titlefont: { size: 12 } },
+    barmode: 'stack'
+    });
+})();
+</script>
 
 [Download ODS file with benchmarks.](/files/dna-sequence/benchmarks.ods).
 

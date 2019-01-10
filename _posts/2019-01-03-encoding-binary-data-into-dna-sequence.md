@@ -189,12 +189,12 @@ FASTA format was extended by [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)
 
 ### PNG encoded DNA sequence
 
-| Nucleotides  | RGB         | Color  |
-| ------------ | ----------- | ------ |
-| A (Adenine)  | (0,0,255)   | Blue   |
-| G (Guanine)  | (0,100,0)   | Green  |
-| C (Cytosine) | (255,0,0)   | Red    |
-| T (Thymine)  | (255,255,0) | Yellow |
+| Nucleotides  | RGB         | Color name  |
+| ------------ | ----------- | ----------- |
+| A (Adenine)  | (0,0,255)   | Blue        |
+| G (Guanine)  | (0,100,0)   | Green       |
+| C (Cytosine) | (255,0,0)   | Red         |
+| T (Thymine)  | (255,255,0) | Yellow      |
 
 With this in mind we can create a simple algorithm to create PNG representation of a DNA sequence.
 

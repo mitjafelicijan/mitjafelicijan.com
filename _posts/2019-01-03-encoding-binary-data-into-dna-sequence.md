@@ -206,10 +206,10 @@ begin
   while not eof(f) do
     c char := buffer[0]                             { Read 1 char from buffer }
     case c of
-      'A': color := RGB{0, 0, 255}                  { Blue }
-      'G': color := RGB{0, 100, 0}                  { Green }
-      'C': color := RGB{255, 0, 0}                  { Red }
-      'T': color := RGB{255, 255, 0}                { Yellow }
+      'A': color := RGB(0, 0, 255)                  { Blue }
+      'G': color := RGB(0, 100, 0)                  { Green }
+      'C': color := RGB(255, 0, 0)                  { Red }
+      'T': color := RGB(255, 255, 0)                { Yellow }
     drawRect(i, [x, y], color)
   save(i)                                           { Save PNG image }
 end

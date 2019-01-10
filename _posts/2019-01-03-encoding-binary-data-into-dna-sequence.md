@@ -196,6 +196,25 @@ FASTA format was extended by [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)
 | C (Cytosine) | (255,0,0)   | Red    |
 | T (Thymine)  | (255,255,0) | Yellow |
 
+With this in mind we can create a simple algorithm to create PNG representation of a DNA sequence.
+
+```pascal
+{ Algorithm 2: Naive DNA to PNG encode from FASTA file }
+procedure EncodeDNASequenceToPNG(f)
+begin
+  i image
+  while not eof(f) do
+    c char := buffer[0]                             { Read 1 char from buffer }
+    case c of
+      'A': color := RGB{0, 0, 255}                  { Blue }
+      'G': color := RGB{0, 100, 0}                  { Green }
+      'C': color := RGB{255, 0, 0}                  { Red }
+      'T': color := RGB{255, 255, 0}                { Yellow }
+    drawRect(i, x, y, x_offset, y_offset, color)
+  save(i)                                           { Save PNG image }
+end
+```
+
 ## Encoding text file in practice
 
 In this example we will take a simple text file as our input stream for encoding. This file will have a quote from Niels Bohr and saved as txt file.

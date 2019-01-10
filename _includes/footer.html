@@ -11,7 +11,7 @@
 
 <!-- Responsive tables -->
 <script>
-  document.querySelectorAll('table').forEach(function(element) {
+  document.querySelectorAll('table').forEach(function (element) {
     if (!element.classList.contains('rouge-table')) {
       let parent = element.parentNode;
       let wrapper = document.createElement('div');
@@ -52,8 +52,25 @@
 <!-- Service worker -->
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then(function() {
+    navigator.serviceWorker.register('/sw.js').then(function () {
       console.log('Service Worker Registered');
     });
   }
 </script>
+
+<!-- MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\\(', '\\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>

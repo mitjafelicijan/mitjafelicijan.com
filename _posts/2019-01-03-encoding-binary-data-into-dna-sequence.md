@@ -210,7 +210,7 @@ begin
       'G': color := RGB{0, 100, 0}                  { Green }
       'C': color := RGB{255, 0, 0}                  { Red }
       'T': color := RGB{255, 255, 0}                { Yellow }
-    drawRect(i, x, y, x_offset, y_offset, color)
+    drawRect(i, [x, y], color)
   save(i)                                           { Save PNG image }
 end
 ```

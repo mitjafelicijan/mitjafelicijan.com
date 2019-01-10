@@ -219,7 +219,7 @@ end
 
 In this example we will take a simple text file as our input stream for encoding. This file will have a quote from Niels Bohr and saved as txt file.
 
-> How wonderful that we have met with a paradox. Now we have some hope of making > progress.
+> How wonderful that we have met with a paradox. Now we have some hope of making progress.
 > ― Niels Bohr
 
 First we encode text file into FASTA file.

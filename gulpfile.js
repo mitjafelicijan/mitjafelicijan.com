@@ -50,7 +50,7 @@ gulp.task('copy-robots', () => gulp.src('robots.txt')
   .pipe(gulp.dest('public'))
 );
 
-gulp.task('copy-files', () => gulp.src('files/**/*')
+gulp.task('copy-files', () => gulp.src('content/files/**/*')
   .pipe(gulp.dest('public/files'))
 );
 

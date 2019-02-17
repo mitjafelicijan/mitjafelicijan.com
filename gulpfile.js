@@ -29,7 +29,7 @@ const md = new markdown({
   .use(require('markdown-it-anchor'))
   .use(require('markdown-it-checkbox'))
 
-nunjucks.configure('layouts', {
+nunjucks.configure('source/layouts', {
   autoescape: false,
   noCache: true,
 });
@@ -142,11 +142,11 @@ const processMarkdown = (file) => {
 };
 
 const watchers = (done) => {
-  gulp.watch('source/*.css', {
+  gulp.watch('source/assets/*.css', {
     awaitWriteFinish: true,
   }).on('change', gulp.series('css'));
 
-  gulp.watch('source/*.js', {
+  gulp.watch('source/assets/*.js', {
     awaitWriteFinish: true,
   }).on('change', gulp.series('js'));
 

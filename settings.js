@@ -1,9 +1,12 @@
 exports.assets = {
   css: [
-    'source/default.css', 'source/prism.css'
+    'source/assets/default.css',
+    'source/assets/prism.css',
   ],
   javascript: [
-    'source/prism.js', 'source/languages/*.js', 'source/default.js'
+    'source/assets/prism.js',
+    'source/assets/languages/*.js',
+    'source/assets/default.js',
   ],
 }
 

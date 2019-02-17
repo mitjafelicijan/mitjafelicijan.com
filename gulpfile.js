@@ -46,6 +46,14 @@ gulp.task('css', () => gulp.src(settings.assets.css)
   .pipe(gulp.dest('tmp'))
 );
 
+gulp.task('copy-robots', () => gulp.src('robots.txt')
+  .pipe(gulp.dest('public'))
+);
+
+gulp.task('copy-files', () => gulp.src('files/**/*')
+  .pipe(gulp.dest('public/files'))
+);
+
 gulp.task('generate-static', function (done) {
   fs.readdir('content', function (err, items) {
 
@@ -158,4 +166,4 @@ const watchers = (done) => {
 }
 
 gulp.task('dev', gulp.parallel(watchers));
-gulp.task('build', gulp.series('css', 'js', 'generate-static'));
+gulp.task('build', gulp.series('css', 'js', 'copy-robots', 'copy-files', 'generate-static'));

@@ -1,9 +1,0 @@
-{
-	"strict": false,
-	"esversion": 6,
-	"curly": true,
-	"noempty": true,
-	"trailing": true,
-	"white": false,
-	"evil": true
-}

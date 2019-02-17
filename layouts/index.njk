@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="google-site-verification" content="EwUGW1WlCkRIQuyQ9AE1-bLitWthw-eVMZFTAMZVZaA">
+
+  <title>{{ vars.title }}</title>
+  <meta name="author" content="{{ vars.author }}">
+  <meta name="description" content="{{ vars.description }}">
+
+  <meta name="og:url" content="{{ vars.domain }}">
+  <meta name="og:type" content="website">
+  <meta name="og:title" content="{{ vars.title }}">
+  <meta name="og:description" content="{{ vars.description }}">
+  <meta name="og:image" content="{{ vars.domain }}/assets/avatar.gif?ver={{ timestamp }}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@mitjafelicijan">
+  <meta name="twitter:title" content="{{ vars.title }}">
+  <meta name="twitter:description" content="{{ vars.description }}">
+  <meta name="twitter:image" content="{{ vars.domain }}/assets/avatar.gif?ver={{ timestamp }}">
+
+  {{ css }}
+
+</head>
+
+<body>
+
+  <main class="wrapper">
+
+    {% include "navigation.njk" %}
+
+    <nav class="article-list">
+      {% for post in posts %}
+      <article>
+        <a href="/{{ post.slug }}">
+          <h2>{{ post.title }}</h2>
+          <time pubdate="{{ post.dateOriginal }}" class="pubdate">{{ post.dateFormatted }}</time>
+        </a>
+      </article>
+      {% endfor %}
+    </nav>
+
+    {{ javascript }}
+
+    {% include "footer.njk" %}
+
+  </main>
+
+</body>
+
+</html>

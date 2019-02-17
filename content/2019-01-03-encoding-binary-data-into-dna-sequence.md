@@ -404,7 +404,7 @@ gzip -9 < 10MB.fa > 10MB.fa.gz
 })();
 </script>
 
-[Download ODS file with benchmarks.](/files/dna-sequence/benchmarks.ods).
+[Download ODS file with benchmarks](/files/dna-sequence/benchmarks.ods).
 
 ## References
 

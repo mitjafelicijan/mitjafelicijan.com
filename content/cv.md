@@ -14,7 +14,7 @@ slug: curriculum-vitae
 
 - **Key languages:** Golang, Python, C/C++, Bash, C#, Java, Perl.
 - **Platforms:** GNU/Linux, Arch, Debian, Gentoo, Red Hat, Custom distros.
-- **Fields of study:** Zigbee, KNX, Modbus, Machine to Machine, Embedded systems, Operating systems, Distributed systems, IOT, RDBMS, Algorithms, Database engine design, SQL, NoSQL, NewSQL, Big data analytics, Machine learning, Prediction algorithms, Realtime analytics, Systems automation.
+- **Fields of study:** Zigbee, KNX, Modbus, Machine to Machine, Embedded systems, Operating systems, Distributed systems, IOT, RDBMS, Algorithms, Database engine design, SQL, NoSQL, NewSQL, Big data analytics, Machine learning, Prediction algorithms, Realtime analytics, Systems automation, Natural language processing, Bioinformatics.
 
 ## Major projects
 

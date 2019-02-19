@@ -44,7 +44,7 @@ h1 {
 }
 
 h2,h3,h4,h5 {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 img {
@@ -191,7 +191,7 @@ menu {
   font-size: 80%;
   padding: 0;
   padding-top: 10px;
-
+  margin-bottom: 40px;
 }
 
 menu a.logo {
@@ -237,6 +237,21 @@ footer > * {
   color: #333;
 }
 
+/*************************************************************** ARTICLE LIST */
+
+.article-list article {
+  margin-bottom: 20px;
+}
+
+.article-list article h2 {
+  margin: 0;
+  line-height: 150%;
+}
+
+.article-list a {
+  text-decoration: none;
+}
+
 /***************************************************************** RESPONSIVE */
 
 @media only screen and (max-width:800px) {
@@ -251,12 +266,16 @@ footer > * {
   h1 {
     font-size: 200%;
   }
+
+  footer {
+    text-align: center;
+  }
 }
 
-.article-list a {
-  text-decoration: none;
-}
+/********************************************************************** PRINT */
 
-.article-list a h2 {
-  margin-bottom: 5px;
+@media print {
+  nav, footer {
+      display: none;
+  }
 }

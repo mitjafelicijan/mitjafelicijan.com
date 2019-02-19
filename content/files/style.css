@@ -1,0 +1,6 @@
+
+@media print {
+  nav, footer {
+      display: none;
+  }
+}

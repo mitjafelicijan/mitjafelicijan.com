@@ -3,6 +3,7 @@ layout: post
 title: What I've learned developing ad server
 description: Lessons I learned developing contextual ad server
 slug: what-i-ve-learned-developing-ad-server
+type: note
 date: 2017-04-17
 ---
 

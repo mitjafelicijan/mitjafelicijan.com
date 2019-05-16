@@ -3,6 +3,7 @@ layout: post
 title: Golang profiling simplified
 description: Golang profiling made easy
 slug: golang-profiling-simplified
+type: note
 date: 2017-03-07
 ---
 

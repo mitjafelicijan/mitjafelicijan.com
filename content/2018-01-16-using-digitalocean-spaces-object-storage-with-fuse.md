@@ -3,6 +3,7 @@ layout: post
 title: Using DigitalOcean Spaces Object Storage with FUSE
 description: Using DigitalOcean Spaces Object Storage with FUSE
 slug: using-digitalocean-spaces-object-storage-with-fuse
+type: research
 date: 2018-01-16
 ---
 

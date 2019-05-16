@@ -1,7 +1,6 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900" rel="stylesheet">');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,900" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700,900');
 
 * {
   box-sizing: border-box;
@@ -11,8 +10,9 @@
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
-  font-size: 18px;
+  /*font-family: 'Heebo', sans-serif;*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 17px;
   line-height: 170%;
 }
 
@@ -39,22 +39,23 @@ ol a:hover {
 
 h1 {
   line-height: 140%;
-  font-weight: 900;
-  font-size: 250%;
+  font-weight: 600;
+  font-size: 210%;
 }
 
 h2,h3,h4,h5 {
   /*margin-top: 50px;*/
+  font-weight: 500;
 }
 
 img {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 30px auto;
   display: block;
 }
 
 .wrapper {
-  max-width: 750px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -75,7 +76,7 @@ pre, code {
 }
 
 pre {
-  font-size: 80%;
+  font-size: 85%;
   margin: 20px;
   background: #eee;
 }
@@ -195,16 +196,15 @@ menu {
 }
 
 menu a.logo {
-  background: black;
-  color: white;
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: none;
-  padding: 3px 15px;
+  font-size: 130%;
+  padding: 5px 0px ;
 }
 
 menu a.logo:hover {
-  background: fuchsia;
-  color: white;
+  /*background: fuchsia;
+  color: white;*/
 }
 
 menu nav {
@@ -239,6 +239,19 @@ footer > * {
 
 /*************************************************************** ARTICLE LIST */
 
+.list .article-list {
+  margin-bottom: 60px;
+}
+
+.list .article-list:last-child {
+  margin-bottom: 10px;
+}
+
+.list h3 {
+  font-weight: 700;
+  font-size: 140%;
+}
+
 .article-list article {
   margin-bottom: 20px;
 }
@@ -246,10 +259,19 @@ footer > * {
 .article-list article h2 {
   margin: 0;
   line-height: 150%;
+  font-size: 120%;
 }
 
 .article-list a {
   text-decoration: none;
+}
+
+article img.large {
+    max-width: 1100px;
+    width: 1100px;
+    position: relative;
+    left: -150px;
+    margin: 50px 0;
 }
 
 /***************************************************************** RESPONSIVE */
@@ -269,6 +291,12 @@ footer > * {
 
   footer {
     text-align: center;
+  }
+
+  article img.large {
+    position: initial;
+    width: 100%;
+    margin: 20px 0;
   }
 }
 

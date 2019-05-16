@@ -37,16 +37,37 @@
 
     {% include "navigation.njk" %}
 
-    <nav class="article-list">
-      {% for post in posts %}
-      <article>
-        <a href="/{{ post.slug }}">
-          <time pubdate="{{ post.dateOriginal }}" class="pubdate">{{ post.dateFormatted }}</time>
-          <h2>{{ post.title }}</h2>
-        </a>
-      </article>
-      {% endfor %}
-    </nav>
+    <div class="list">
+
+      <h3>Research</h3>
+      <nav class="article-list">
+        {% for post in posts %}
+        {% if post.type == "research" %}
+        <article>
+          <a href="/{{ post.slug }}" aria-label="Read more about {{ post.title }}">
+            <time pubdate="{{ post.dateOriginal }}" class="pubdate">{{ post.dateFormatted }}</time>
+            <h2>{{ post.title }}</h2>
+          </a>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </nav>
+
+      <h3>General</h3>
+      <nav class="article-list">
+        {% for post in posts %}
+        {% if post.type != "research" %}
+        <article>
+          <a href="/{{ post.slug }}" aria-label="Read more about {{ post.title }}">
+            <time pubdate="{{ post.dateOriginal }}" class="pubdate">{{ post.dateFormatted }}</time>
+            <h2>{{ post.title }}</h2>
+          </a>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </nav>
+
+    </div>
 
     {{ javascript }}
 

@@ -3,6 +3,7 @@ layout: post
 title: What it's like to be a software developer
 description: Couple of observations regarding project management
 slug: what-its-like-to-be-a-software-developer
+type: note
 date: 2017-04-10
 ---
 

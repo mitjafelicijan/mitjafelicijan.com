@@ -3,6 +3,7 @@ layout: post
 title: How we successfully destroyed the joy of product development
 description: My take on project development.
 slug: how-we-successfully-destroyed-the-joy-of-product-development
+type: note
 date: 2016-10-14
 ---
 

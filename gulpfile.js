@@ -125,7 +125,7 @@ const processMarkdown = (file) => {
 
   let post = nunjucks.render(`${meta.layout}.njk`, {
     content: md.render(raw.join('')),
-    title: meta.title.substring(0, 65),
+    title: meta.title, //.substring(0, 65)
     description: meta.description,
     css: `<style>${css}</style>`,
     javascript: `<script>${javascript}</script>`,

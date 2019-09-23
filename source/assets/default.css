@@ -266,6 +266,7 @@ footer > * {
   text-decoration: none;
 }
 
+article img[src*="#large"],
 article img.large {
     max-width: 1100px;
     width: 1100px;

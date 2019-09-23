@@ -7,13 +7,13 @@ const terser = require('gulp-terser');
 const clean = require('gulp-clean-css');
 const settings = require('./settings.js');
 const minify = require('html-minifier').minify;
+var browserSync = require('browser-sync').create();
 
 const fs = require('fs');
 const markdown = require('markdown-it');
 const prism = require('markdown-it-prism');
 const nunjucks = require('nunjucks');
 const yaml = require('yaml');
-const slugify = require('slugify');
 const dayjs = require('dayjs');
 
 const md = new markdown({
@@ -23,7 +23,6 @@ const md = new markdown({
   breaks: true,
 })
   .use(prism)
-  .use(require('markdown-it-table').markdownItTable)
   .use(require('markdown-it-deflist'))
   .use(require('markdown-it-footnote'))
   .use(require('markdown-it-anchor'))
@@ -165,5 +164,18 @@ const watchers = (done) => {
   done();
 }
 
-gulp.task('dev', gulp.parallel(watchers));
+gulp.task('browser-sync', () => {
+  browserSync.init({
+    watch: true,
+    open: false,
+    server: {
+      baseDir: './public',
+      serveStaticOptions: {
+        extensions: ["html"]
+      }
+    }
+  });
+});
+
+gulp.task('dev', gulp.series('css', 'js', 'copy-robots', 'copy-files', 'generate-static', gulp.parallel(watchers, 'browser-sync')));
 gulp.task('build', gulp.series('css', 'js', 'copy-robots', 'copy-files', 'generate-static'));

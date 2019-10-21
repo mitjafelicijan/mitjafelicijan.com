@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#ffffff">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#ffffff">
 
-  <meta name="google-site-verification" content="EwUGW1WlCkRIQuyQ9AE1-bLitWthw-eVMZFTAMZVZaA">
+    <meta name="google-site-verification" content="EwUGW1WlCkRIQuyQ9AE1-bLitWthw-eVMZFTAMZVZaA">
 
-  <link rel="icon" type="image/png" href="{{ vars.domain }}/files/avatar-64x64.png?ver={{ timestamp }}">
+    <link rel="icon" type="image/png" href="{{ vars.domain }}/files/avatar-64x64.png?ver={{ timestamp }}">
 
-  <title>{{ title }}</title>
-  <meta name="author" content="{{ vars.author }}">
-  <meta name="description" content="{{ description }}">
+    <title>{{ title }}</title>
+    <meta name="author" content="{{ vars.author }}">
+    <meta name="description" content="{{ description }}">
 
-  <meta name="og:url" content="{{ vars.domain }}/{{ slug }}">
-  <meta name="og:type" content="website">
-  <meta name="og:title" content="{{ title }}">
-  <meta name="og:description" content="{{ description }}">
-  <meta name="og:image" content="{{ vars.domain }}/files/avatar-512x512.png?ver={{ timestamp }}">
+    <meta name="og:url" content="{{ vars.domain }}/{{ slug }}">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="{{ title }}">
+    <meta name="og:description" content="{{ description }}">
+    <meta name="og:image" content="{{ vars.domain }}/files/avatar-512x512.png?ver={{ timestamp }}">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@mitjafelicijan">
-  <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:image" content="{{ vars.domain }}/files/avatar-512x512.png?ver={{ timestamp }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@mitjafelicijan">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ vars.domain }}/files/avatar-512x512.png?ver={{ timestamp }}">
 
-  {{ css }}
+    {{ css }}
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <main class="wrapper">
+    <main class="wrapper">
 
-    {% include "navigation.njk" %}
+      {% include "navigation.njk" %}
 
-    <article>
+      <article>
 
-      <header>
-        <h1>{{ title }}</h1>
-        <p class="pubdate">Published on
-          <time pubdate="{{ writtenDate.original }}">{{ writtenDate.formatted }}</time>
-          by {{ vars.author }}</p>
-      </header>
+        <header>
+          <h1>{{ title }}</h1>
+          <p class="pubdate">Published on
+            <time pubdate="{{ writtenDate.original }}">{{ writtenDate.formatted }}</time>
+            by
+            {{ vars.author }}</p>
+        </header>
 
-      {{ content|safe }}
+        {{ content|safe }}
 
-    </article>
+      </article>
 
-    {{ javascript }}
+      {{ javascript }}
 
-    {% include "footer.njk" %}
+      {% include "footer.njk" %}
 
-  </main>
+    </main>
 
-</body>
+  </body>
 
 </html>

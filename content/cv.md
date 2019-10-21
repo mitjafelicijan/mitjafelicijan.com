@@ -6,14 +6,13 @@ slug: curriculum-vitae
 ---
 
 **Mitja Felicijan**
-*Embedded systems developer*
 *[mitja.felicijan@gmail.com](mailto:mitja.felicijan@gmail.com?subject=Website+CV+Contact)*
 *Slovenia, EU*
 
 ## Technical experience
 
-- **Key languages:** Golang, Python, C/C++, Bash, C#, Java, Perl.
-- **Platforms:** GNU/Linux, Arch, Debian, Gentoo, Red Hat, Custom distros.
+- **Key languages:** Golang, Python, C, Bash.
+- **Platforms:** GNU/Linux, macOS.
 - **Fields of study:** Zigbee, KNX, Modbus, Machine to Machine, Embedded systems, Operating systems, Distributed systems, IOT, RDBMS, Algorithms, Database engine design, SQL, NoSQL, NewSQL, Big data analytics, Machine learning, Prediction algorithms, Realtime analytics, Systems automation, Natural language processing, Bioinformatics.
 
 ## Major projects
@@ -37,15 +36,20 @@ slug: curriculum-vitae
 - Wireless industrial lighting management system - hardware and software (2016)
 - Minimal configuration reverse proxy (2017)
 - Industrial IOT platform for deployment on on-premise (2018)
+- Custom Platform as a service based on Docker Swarm (2018)
+- Toolkit for encoding binary data into DNA sequence (2019)
+- Minimal configuration reverse proxy with load balancing and rate limiting (2019)
+- E-ink conference room occupancy display, hadrware and software solution (2019)
 
 ## Employment history
 
 - Freelancer (2001 – Present)
 - Software developer at Mobinia (2005 – 2007)
 - CTO at Milk (2007 – 2009)
-- Founder and CTO of UTS (2009 – 2014)
-- Founding member of Origami Group (2014 – 2017)
+- Co-Founder of UTS (2009 – 2014)
 - Senior Software Engineer at TSmedia (2015 - 2017)
+- Senior Software Engineer at Renderspace (2017 - 2019)
+- IT Consultant (2017 – Present)
 
 ## Awards
 
@@ -54,11 +58,11 @@ slug: curriculum-vitae
 
 ## Key responsibilities
 
-- Responsible for embedded platforms development.
-- Responsible for hardware design and driver development.
-- Responsible for the designing, develop and test the systems.
-- Responsible for implementation of the systems.
-- Responsible for writing and maintaining user and technical documents.
-- Responsible for development and maintenance of the project.
-- Responsible for code revision, testing and output.
-- Work on the enhancement suggested by the customers and fixes the bugs reported.)
+- Embedded platform development.
+- Hardware design and driver development.
+- Designing, developing and testing systems.
+- Implementation of the systems.
+- Writing and maintaining user and technical documents.
+- Development and maintenance of the project.
+- Code revision, testing and output.
+- Work on the enhancement suggested by the customers and fixes the bugs reported.

@@ -5,8 +5,8 @@
 * {
   box-sizing: border-box;
   -moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-	-webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 body {
@@ -55,7 +55,7 @@ img {
 }
 
 .wrapper {
-  max-width: 800px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -299,6 +299,26 @@ article img.large {
     width: 100%;
     margin: 20px 0;
   }
+}
+
+/******************************************************************* COMMENTS */
+
+#commento {
+  margin-top: 75px;
+}
+
+#commento-footer {
+  display: none !important;
+}
+
+#commento-submit-button-root {
+  background: #fff !important;
+  color: #495057 !important;
+  box-shadow: none !important;
+}
+
+.commento-avatar-img {
+  margin-top: 0 !important;
 }
 
 /********************************************************************** PRINT */

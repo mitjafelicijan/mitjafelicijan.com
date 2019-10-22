@@ -1,0 +1,5 @@
+\contentsline {chapter}{\numberline {1}Follow Occam\IeC {\textquoteright }s razor whenever you can}{1}% 
+\contentsline {section}{\numberline {1.1}What is Occam\IeC {\textquoteright }s razor}{1}% 
+\contentsline {section}{\numberline {1.2}How I apply Occam\IeC {\textquoteright }s razor}{2}% 
+\contentsline {section}{\numberline {1.3}Uncertainty vs. clarity}{3}% 
+\contentsline {section}{\numberline {1.4}Showcases and marketing}{4}% 

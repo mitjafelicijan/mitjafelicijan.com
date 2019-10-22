@@ -1,0 +1,39 @@
+TEMPLATES = site.tmpl
+SOURCE = src
+OUTPUT = public
+TITLE = Mitja Felicijan - Embedded systems developer
+DESCRIPTION = Embedded systems developer and fanatical fan of science fiction
+GOOGLE_VERIFICATION = EwUGW1WlCkRIQuyQ9AE1-bLitWthw-eVMZFTAMZVZaA
+URL = https://mitjafelicijan.com
+AUTHOR = Mitja Felicijan
+
+blog/*.md:
+	config
+	ext .html
+	tags tags/*.tag
+	markdown
+	template post
+	template page
+
+research/*.md:
+	config
+	ext .html
+	tags tags/*.tag
+	markdown
+	template post
+	template page
+
+feed.atom: blog/*.md
+	inner-template
+
+*.md:
+	config
+	ext .html
+	markdown
+	template post
+	template page
+
+index.html: blog/*.md
+	config
+	inner-template
+	template page

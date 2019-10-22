@@ -1,0 +1,95 @@
+{{ define "header" }}
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification" content="{{ html .Site.Other.Google_verification }}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name=description content="{{ html .Site.Other.Description }}">
+    
+    <meta name="author" content="{{ html .Site.Other.Author }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ html .Site.Other.Title }} feed" href="{{ .Rel "feed.atom" }}">
+    <title>{{ .Site.Other.Title }}{{ if .Title }}: {{ .Title }}{{ end }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ .Rel "static/style.css" }}">
+
+    <link rel="icon" type="image/png" href="{{ .Rel "static/avatar-64x64.png" }}">
+  </head>
+  <body>
+  <main>
+{{ end }}
+
+{{ define "footer" }}
+  </main>
+  {{ template "ga" . }}
+  </body>
+  </html>
+{{ end }}
+
+{{ define "navigation" }}
+  <nav>
+    <a href="/">{{ html .Site.Other.Author }}</a>
+    <a href="/curriculum-vitae">Curriculum Vitae</a>
+    <a href="https://twitter.com/mitjafelicijan" target="_blank" rel="noopener nofollow">Twitter</a>
+    <a href="https://github.com/mitjafelicijan" target="_blank" rel="noopener nofollow">Github</a>
+  </nav>
+{{ end }}
+
+{{ define "author" }}
+  <span>by {{ html .Site.Other.Author }}</span>
+{{ end }}
+
+{{define "date"}}
+  <time datetime="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+    {{ .Format "2006, January 02" }}
+  </time>
+{{end}}
+
+{{ define "page" }}
+  {{ template "header" . }}
+  {{ template "navigation" . }}
+  {{ .Content }}
+  {{ template "mathjax" . }}
+  {{ template "footer" . }}
+{{ end }}
+
+{{ define "post" }}
+  <article>
+    <header>
+      <h1>{{ .Title }}</h1>
+      <div class="info">
+        {{ template "date" .Date }}
+        {{ template "author" . }}
+      </div>
+    </header>
+    <section>
+    {{ .Content }}
+    </section>
+  </article>
+{{ end }}
+
+{{ define "mathjax" }}
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } },
+      tex2jax: {
+        inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ] ],
+        displayMath: [ ['$$', '$$'] ],
+        processEscapes: true
+      }});
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async="async"></script>
+{{ end }}
+
+{{ define "ga" }}
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-12769079-10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-12769079-10');
+  </script>
+{{ end }}

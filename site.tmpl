@@ -19,6 +19,12 @@
     <meta name="author" content="{{ html .Site.Other.Author }}">
     <meta name="description" content="{{ if .Other.Description  }}{{ .Other.Description }}{{ else }}{{ html .Site.Other.Description }}{{ end }}">
 
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Other.Title }}">
+    <meta property="og:description" content="{{ if .Other.Description  }}{{ .Other.Description }}{{ else }}{{ html .Site.Other.Description }}{{ end }}">
+    <meta property="og:url" content="{{ .Site.Other.Url }}/{{ .Url }}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ html .Site.Other.Twitter_handle }}">
   </head>
   <body>
   <main>

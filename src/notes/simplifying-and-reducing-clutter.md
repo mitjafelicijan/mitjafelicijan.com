@@ -1,4 +1,5 @@
 title: Simplifying and reducing clutter in my life and work
+description: Simplifying and reducing clutter in my life and work
 date: 2019-10-14
 tags: blog
 hide: false

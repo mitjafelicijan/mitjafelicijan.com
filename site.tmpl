@@ -11,12 +11,13 @@
 
     <link rel="preconnect" href="https://www.google-analytics.com">
 
-    <meta name="author" content="{{ html .Site.Other.Author }}">
     <link rel="alternate" type="application/atom+xml" title="{{ html .Site.Other.Title }} feed" href="{{ .Rel "feed.atom" }}">
-    <title>{{ .Site.Other.Title }}{{ if .Title }}: {{ .Title }}{{ end }}</title>
     <link rel="stylesheet" type="text/css" href="{{ .Rel "static/style.css" }}">
-
     <link rel="icon" type="image/png" href="{{ .Rel "static/avatar-64x64.png" }}">
+
+    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Other.Title }}</title>
+    <meta name="author" content="{{ html .Site.Other.Author }}">
+    <meta name="description" content="{{ if .Other.Description  }}{{ .Other.Description }}{{ else }}{{ html .Site.Other.Description }}{{ end }}">
 
   </head>
   <body>
@@ -49,6 +50,10 @@
   </time>
 {{end}}
 
+{{define "modified"}}
+  <p class="modified">Modified on {{ .ModTime }}</p>
+{{end}}
+
 {{ define "page" }}
   {{ template "header" . }}
   {{ template "navigation" . }}
@@ -71,6 +76,7 @@
     {{ .Content }}
     </section>
   </article>
+  {{ template "modified" . }}
 {{ end }}
 
 {{ define "mathjax" }}

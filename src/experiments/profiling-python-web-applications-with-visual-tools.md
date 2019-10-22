@@ -1,4 +1,5 @@
 title: Profiling Python web applications with visual tools
+description: Missing link when debugging and profiling python web application
 date: 2017-04-21
 tags: experiment
 hide: false

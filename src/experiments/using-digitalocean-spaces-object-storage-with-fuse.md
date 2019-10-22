@@ -1,4 +1,5 @@
 title: Using DigitalOcean Spaces Object Storage with FUSE
+description: Using DigitalOcean Spaces Object Storage with FUSE
 date: 2018-01-16
 tags: experiment
 hide: false

@@ -7,6 +7,38 @@
       "tmp/",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/encoding-binary-data-into-dna-sequence",
+        "destination": "/experiments/encoding-binary-data-into-dna-sequence.html",
+        "type": 301
+      },
+      {
+        "source": "/using-digitalocean-spaces-object-storage-with-fuse",
+        "destination": "/experiments/using-digitalocean-spaces-object-storage-with-fuse.html",
+        "type": 301
+      },
+      {
+        "source": "/simple-iot-application",
+        "destination": "/experiments/simple-iot-application.html",
+        "type": 301
+      },
+      {
+        "source": "/profiling-python-web-applications-with-visual-tools",
+        "destination": "/experiments/profiling-python-web-applications-with-visual-tools.html",
+        "type": 301
+      },
+      {
+        "source": "/what-i-ve-learned-developing-ad-server",
+        "destination": "/notes/what-i-ve-learned-developing-ad-server.html",
+        "type": 301
+      },
+      {
+        "source": "/golang-profiling-simplified",
+        "destination": "/notes/golang-profiling-simplified.html",
+        "type": 301
+      }
     ]
   }
 }

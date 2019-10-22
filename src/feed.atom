@@ -30,7 +30,7 @@
 {{ end }}
 {{ end }}
 
-{{ with .Site.Pages.Children "sandbox/" }}
+{{ with .Site.Pages.Children "experiments/" }}
 {{ range .Slice 0 5 }}
 <entry>
   <id>{{ .Url }}</id>

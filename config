@@ -15,7 +15,7 @@ notes/*.md:
 	template post
 	template page
 
-sandbox/*.md:
+experiments/*.md:
 	config
 	ext .html
 	tags tags/*.tag

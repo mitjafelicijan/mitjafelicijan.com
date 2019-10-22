@@ -1,6 +1,6 @@
 title: Simple IOT application supported by real-time monitoring and data history
 date: 2017-08-11
-tags: blog
+tags: experiment
 hide: false
 ----
 

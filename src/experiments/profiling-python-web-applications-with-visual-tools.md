@@ -1,6 +1,6 @@
 title: Profiling Python web applications with visual tools
 date: 2017-04-21
-tags: blog
+tags: experiment
 hide: false
 ----
 

@@ -1,6 +1,6 @@
 title: Encoding binary data into DNA sequence
 date: 2019-01-03
-tags: research
+tags: experiment
 hide: false
 ----
 

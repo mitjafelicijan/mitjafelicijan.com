@@ -3,7 +3,7 @@ GS ?= gostatic
 compile:
 	$(GS) config
 
-w:
+dev:
 	-rm public -rf
 	$(GS) -w config
 

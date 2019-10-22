@@ -1,6 +1,6 @@
-<h2>Research</h2>
+<h2>Sandbox experiments</h2>
 <ul class="article-list">
-{{ range .Site.Pages.Children "research/" }}
+{{ range .Site.Pages.Children "sandbox/" }}
   <li>
     {{ template "date" .Date }}
     <a href="{{ $.Rel .Url }}" title="{{ .Title }}">{{ .Title }}</a>
@@ -8,7 +8,7 @@
 {{ end }}
 </ul>
 
-<h2>Blog posts</h2>
+<h2>Blog entries</h2>
 <ul class="article-list">
 {{ range .Site.Pages.Children "blog/" }}
   <li>

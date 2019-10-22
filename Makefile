@@ -1,11 +1,13 @@
 GS ?= gostatic
 
-compile:
+compile: clean
 	$(GS) config
 
-dev:
+clean:
 	-rm public -rf
+
+dev: clean
 	$(GS) -w config
 
-deploy: compile
+deploy: clean compile
 	firebase deploy

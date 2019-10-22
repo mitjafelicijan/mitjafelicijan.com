@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name=description content="{{ html .Site.Other.Description }}">
 
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
     <meta name="author" content="{{ html .Site.Other.Author }}">
     <link rel="alternate" type="application/atom+xml" title="{{ html .Site.Other.Title }} feed" href="{{ .Rel "feed.atom" }}">
     <title>{{ .Site.Other.Title }}{{ if .Title }}: {{ .Title }}{{ end }}</title>

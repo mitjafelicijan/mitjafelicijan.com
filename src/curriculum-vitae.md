@@ -40,7 +40,7 @@ hide: false
 - Custom Platform as a service based on Docker Swarm (2018)
 - Toolkit for encoding binary data into DNA sequence (2019)
 - Minimal configuration reverse proxy with load balancing and rate limiting (2019)
-- E-ink conference room occupancy display, hadrware and software solution (2019)
+- E-ink conference room occupancy display, hardware and software solution (2019)
 
 ## Employment history
 

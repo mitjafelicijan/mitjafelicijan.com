@@ -32,8 +32,8 @@ import feedparser
 feed_url = "https://www.theguardian.com/world/rss"
 feed = feedparser.parse(feed_url)
 
-for item in feed.import re:
-    # sanitize html
+# sanitize html
+for item in feed.entries:
     item.description = re.sub('<[^<]+?>', '', item.description)
 ```
 

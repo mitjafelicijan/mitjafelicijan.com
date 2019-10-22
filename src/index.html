@@ -8,9 +8,9 @@
 {{ end }}
 </ul>
 
-<h2>Blog entries</h2>
+<h2>General notes</h2>
 <ul class="article-list">
-{{ range .Site.Pages.Children "blog/" }}
+{{ range .Site.Pages.Children "notes/" }}
   <li>
     {{ template "date" .Date }}
     <a href="{{ $.Rel .Url }}" title="{{ .Title }}">{{ .Title }}</a>

@@ -7,7 +7,7 @@ GOOGLE_VERIFICATION = EwUGW1WlCkRIQuyQ9AE1-bLitWthw-eVMZFTAMZVZaA
 URL = https://mitjafelicijan.com
 AUTHOR = Mitja Felicijan
 
-blog/*.md:
+notes/*.md:
 	config
 	ext .html
 	tags tags/*.tag
@@ -23,7 +23,7 @@ sandbox/*.md:
 	template post
 	template page
 
-feed.atom: blog/*.md
+feed.atom: notes/*.md
 	inner-template
 
 *.md:

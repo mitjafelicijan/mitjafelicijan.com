@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0">
   <id>{{ .Site.Other.Url }}</id>
   <title>{{ .Site.Other.Title }}</title>
-  {{ with .Site.Pages.Children "blog/" }}
+  {{ with .Site.Pages.Children "notes/" }}
   <updated>{{ .First.Date.Format "2006-01-02T15:04:05Z07:00" }}</updated>
   {{ end }}
   <author><name>{{ .Site.Other.Author }}</name></author>
   <link href="{{ .Site.Other.Url }}" rel="alternate"></link>
   <generator uri="https://github.com/piranha/gostatic">gostatic</generator>
 
-{{ with .Site.Pages.Children "blog/" }}
+{{ with .Site.Pages.Children "notes/" }}
 {{ range .Slice 0 5 }}
 <entry>
   <id>{{ .Url }}</id>
@@ -30,7 +30,7 @@
 {{ end }}
 {{ end }}
 
-{{ with .Site.Pages.Children "research/" }}
+{{ with .Site.Pages.Children "sandbox/" }}
 {{ range .Slice 0 5 }}
 <entry>
   <id>{{ .Url }}</id>

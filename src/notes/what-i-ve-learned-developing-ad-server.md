@@ -1,7 +1,7 @@
 title: What I've learned developing ad server
 description: Lessons I learned developing contextual ad server
 date: 2017-04-17
-tags: blog
+type: post
 hide: false
 ----
 

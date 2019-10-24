@@ -1,7 +1,7 @@
 title: Golang profiling simplified
 description: Golang profiling demystified
 date: 2017-03-07
-tags: blog
+type: post
 hide: false
 ----
 

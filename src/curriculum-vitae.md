@@ -1,6 +1,6 @@
 title: Curriculum Vitae
 date: 2018-01-16
-tags: research
+type: page
 hide: false
 ----
 

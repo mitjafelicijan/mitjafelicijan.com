@@ -2,8 +2,10 @@
 <ul class="article-list">
 {{ range .Site.Pages.Children "experiments/" }}
   <li>
-    {{ template "date" .Date }}
-    <a href="{{ $.Rel .Url }}" title="{{ .Title }}">{{ .Title }}</a>
+    <div>
+      <time>{{ template "date" .Date }}</time>
+      <a href="{{ $.Rel .Url }}" title="{{ .Title }}">{{ .Title }}</a>
+    </div>
   </li>
 {{ end }}
 </ul>
@@ -12,7 +14,7 @@
 <ul class="article-list">
 {{ range .Site.Pages.Children "notes/" }}
   <li>
-    {{ template "date" .Date }}
+    <time>{{ template "date" .Date }}</time>
     <a href="{{ $.Rel .Url }}" title="{{ .Title }}">{{ .Title }}</a>
   </li>
 {{ end }}

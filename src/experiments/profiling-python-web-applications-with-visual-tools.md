@@ -1,7 +1,7 @@
 title: Profiling Python web applications with visual tools
 description: Missing link when debugging and profiling python web application
 date: 2017-04-21
-tags: experiment
+type: post
 hide: false
 ----
 
@@ -16,7 +16,7 @@ Before we begin there are some requirements. We will need to:
 
 If you are using MacOS you should check out [Profiling Viewer](http://www.profilingviewer.com/) or [MacCallGrind](http://www.maccallgrind.com/).
 
-![KCachegrind](/files/kcachegrind.png)
+![KCachegrind](/files/python-profiling/kcachegrind.png)
 
 We will be dividing this post into two main categories:
 
@@ -135,7 +135,7 @@ $ pyprof2calltree -i awesome_random_number.prof
 
 This file can be opened with visualizing tools listed above. In this case we will be using Profilling Viewer under MacOS. You can open image in new tab. As you can see from this example there is hierarchy of execution order  of your code.
 
-![Profilling Viewer](/files/profiling-viewer.png)
+![Profilling Viewer](/files/python-profiling/profiling-viewer.png)
 
 > Make sure you  convert output of the cProfile output every time you want to refresh and take a look at your possible optimizations because cProfile updates .prof  file every time browser hits the function.
 
@@ -158,7 +158,7 @@ $ snakeviz awesome_random_number.prof
 # shows visualized profile
 ```
 
-![SnakeViz](/files/snakeviz.png)
+![SnakeViz](/files/python-profiling/snakeviz.png)
 
 Reddit user [ccharles](https://www.reddit.com/user/ccharles) suggested a better way for installing pip software by targeting user level instead of using sudo.
 

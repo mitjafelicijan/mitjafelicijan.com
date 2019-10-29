@@ -10,7 +10,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
-var docPath = 'comments' + window.location.pathname.replace('.html', '');
+var docPath = window.location.hostname.replace('.', '-') + '/comments' + window.location.pathname.replace('.html', '');
 var submit = document.querySelector('#submit');
 var comments = document.querySelector('.comments ul');
 var textName = document.querySelector('#name');
@@ -21,43 +21,45 @@ function encodeHTML(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 }
 
-ref.on("value", function (snapshot) {
-  comments.innerHTML = '';
-  var commentList = Array();
+if (submit) {
+  ref.on("value", function (snapshot) {
+    comments.innerHTML = '';
+    var commentList = Array();
 
-  // generating normal array
-  snapshot.forEach(function (item) {
-    commentList.push(item.val())
-  });
-
-  // rendering html
-  commentList.reverse().forEach(function (item) {
-    var liItem = `<li>
-        <div><b>${encodeHTML(item.name)}</b> - ${encodeHTML(item.published)}</div>
-        <div>${encodeHTML(item.comment)}</div>
-      </li>`;
-    comments.innerHTML += liItem;
-  });
-
-}, function (errorObject) {
-  console.log("The read failed: " + errorObject.code);
-});
-
-submit.addEventListener('click', function (evt) {
-  if (textName.value && textComment.value) {
-    submit.disabled = true;
-    firebase.database().ref(docPath + '/' + Date.now()).set({
-      name: textName.value,
-      comment: textComment.value,
-      published: new Date().toISOString().slice(0, 16).replace('T', ' '),
-    }, function (error) {
-      if (error) {
-        alert('Data could not be saved.' + error);
-      } else {
-        textName.value = '';
-        textComment.value = '';
-        submit.disabled = false;
-      }
+    // generating normal array
+    snapshot.forEach(function (item) {
+      commentList.push(item.val())
     });
-  }
-});
+
+    // rendering html
+    commentList.reverse().forEach(function (item) {
+      var liItem = `<li>
+          <div><b>${encodeHTML(item.name)}</b> - ${encodeHTML(item.published)}</div>
+          <div>${encodeHTML(item.comment)}</div>
+        </li>`;
+      comments.innerHTML += liItem;
+    });
+
+  }, function (errorObject) {
+    console.log("The read failed: " + errorObject.code);
+  });
+
+  submit.addEventListener('click', function (evt) {
+    if (textName.value && textComment.value) {
+      submit.disabled = true;
+      firebase.database().ref(docPath + '/' + Date.now()).set({
+        name: textName.value,
+        comment: textComment.value,
+        published: new Date().toISOString().slice(0, 16).replace('T', ' '),
+      }, function (error) {
+        if (error) {
+          alert('Data could not be saved.' + error);
+        } else {
+          textName.value = '';
+          textComment.value = '';
+          submit.disabled = false;
+        }
+      });
+    }
+  });
+}

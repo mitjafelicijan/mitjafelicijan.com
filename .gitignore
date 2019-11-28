@@ -4,3 +4,4 @@ package-lock.json
 .firebase/
 public/
 .DS_Store
+.log

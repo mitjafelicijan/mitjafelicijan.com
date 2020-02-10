@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -5,11 +7,12 @@
 body {
     line-height: 150%;
     margin-bottom: 100px;
-    font-family: serif;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
 }
 
 main {
-    max-width: 740px;
+    max-width: 760px;
     padding: 20px 30px;
 }
 
@@ -53,7 +56,7 @@ ul.article-list li div {
 
 ul.article-list time {
   display: inline-block;
-  min-width: 130px;
+  min-width: 160px;
 }
 
 
@@ -78,6 +81,20 @@ th, td {
     padding: 5px 10px;
 }
 
+code, pre {
+  font-size: 14px;
+}
+
+code {
+  background: rgb(255, 241, 177);
+  padding: 2px 5px;
+}
+
+pre > code {
+  background: unset;
+  padding: unset;
+}
+
 p.modified {
     font-style: oblique;
     font-size: 90%;
@@ -93,7 +110,6 @@ p.modified {
     background: #ff0;
     color: #000;
 }
-
 
 .comments {
   margin-top: 50px;
@@ -191,8 +207,8 @@ p.modified {
  * Inspired by Github syntax coloring
  */
 
- code[class*="language-"],
- pre[class*="language-"] {
+code[class*="language-"],
+pre[class*="language-"] {
      color: #393A34;
      font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
      direction: ltr;
@@ -200,7 +216,6 @@ p.modified {
      white-space: pre;
      word-spacing: normal;
      word-break: normal;
-     font-size: .75em;
      line-height: 1.2em;
 
      -moz-tab-size: 4;
@@ -214,7 +229,7 @@ p.modified {
  }
 
  pre > code[class*="language-"] {
-     font-size: 1em;
+
  }
 
  pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,

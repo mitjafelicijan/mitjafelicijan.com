@@ -1,4 +1,7 @@
-dev:
+watch:
+	find content/*.md | entr make generate
+
+server:
 	browser-sync start --server ./public --watch --no-open --no-notify
 
 clean:

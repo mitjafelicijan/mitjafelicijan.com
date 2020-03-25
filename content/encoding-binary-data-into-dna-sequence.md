@@ -39,7 +39,7 @@ My interests in this field are purely in encoding processes and experimental tes
 
 ## Data encoding
 
-**TL;DR:** Encoding involves the use of a code to change original data into a form that can be used by an external process [^1].
+**TL;DR:** Encoding involves the use of a code to change original data into a form that can be used by an external process.
 
 Encoding is the process of converting data into a format required for a number of information processing needs, including:
 
@@ -47,7 +47,7 @@ Encoding is the process of converting data into a format required for a number o
 - Data transmission, storage and compression/decompression
 - Application data processing, such as file conversion
 
-Encoding can have two meanings[^1]:
+Encoding can have two meanings:
 
 - In computer technology, encoding is the process of applying a specific code, such as letters, symbols and numbers, to data for conversion into an equivalent cipher.
 - In electronics, encoding refers to analog to digital conversion.
@@ -69,7 +69,7 @@ Encoding can have two meanings[^1]:
 - **2000** – Genetic code of the fruit fly is decoded.
 - **2002** – Mouse is the first mammal to have its genome decoded.
 - **2003** – The Human Genome Project is completed.
-- **2013** – DNA Worldwide and Eurofins Forensic discover identical twins have differences in their genetic makeup [^2].
+- **2013** – DNA Worldwide and Eurofins Forensic discover identical twins have differences in their genetic makeup.
 
 ## What is DNA?
 
@@ -83,7 +83,7 @@ The nucleotide in DNA consists of a sugar (deoxyribose), one of four bases (cyto
 
 ![DNA](/assets/dna-sequence/dna-basics.jpg#center)
 
-*DNA (a) forms a double stranded helix, and (b) adenine pairs with thymine and cytosine pairs with guanine. (credit a: modification of work by Jerome Walker, Dennis Myts) [^3]*
+*DNA (a) forms a double stranded helix, and (b) adenine pairs with thymine and cytosine pairs with guanine. (credit a: modification of work by Jerome Walker, Dennis Myts)*
 
 ## Encode binary data into DNA sequence
 
@@ -135,13 +135,13 @@ begin
 end
 ```
 
-Another encoding would be **Goldman encoding**. Using this encoding helps with Nonsense mutation (amino acids replaced by a stop codon) that occurs and is the most problematic during translation because it leads to truncated amino acid sequences, which in turn results in truncated proteins. [^4]
+Another encoding would be **Goldman encoding**. Using this encoding helps with Nonsense mutation (amino acids replaced by a stop codon) that occurs and is the most problematic during translation because it leads to truncated amino acid sequences, which in turn results in truncated proteins.
 
 [Where to store big data? In DNA: Nick Goldman at TEDxPrague](https://www.youtube.com/watch?v=a4PiGWNsIEU)
 
 ### FASTA file format
 
-In bioinformatics, FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a standard in the field of bioinformatics. [^5]
+In bioinformatics, FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a standard in the field of bioinformatics.
 
 The first line in a FASTA file started either with a ">" (greater-than) symbol or, less frequently, a ";" (semicolon) was taken as a comment. Subsequent lines starting with a semicolon would be ignored by software. Since the only comment used was the first, it quickly became used to hold a summary description of the sequence, often starting with a unique library accession number, and with time it has become commonplace to always use ">" for the first line and to not use ";" comments (which would otherwise be ignored).
 
@@ -339,8 +339,8 @@ gzip -9 < 10MB.fa > 10MB.fa.gz
 
 ## References
 
-[^1]: https://www.techopedia.com/definition/948/encoding
-[^2]: https://www.dna-worldwide.com/resource/160/history-dna-timeline
-[^3]: https://opentextbc.ca/biology/chapter/9-1-the-structure-of-dna/
-[^4]: https://arxiv.org/abs/1801.04774
-[^5]: https://en.wikipedia.org/wiki/FASTA_format
+- https://www.techopedia.com/definition/948/encoding
+- https://www.dna-worldwide.com/resource/160/history-dna-timeline
+- https://opentextbc.ca/biology/chapter/9-1-the-structure-of-dna/
+- https://arxiv.org/abs/1801.04774
+- https://en.wikipedia.org/wiki/FASTA_format

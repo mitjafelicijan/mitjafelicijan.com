@@ -390,9 +390,9 @@ You can use either Developer Tools Console to see incoming messages or you can d
 
 ## Reading further
 
-- [https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
-- [https://www.smashingmagazine.com/2018/02/sse-websockets-data-flow-http2/](https://www.smashingmagazine.com/2018/02/sse-websockets-data-flow-http2/)
-- [https://apifriends.com/api-streaming/server-sent-events/](https://apifriends.com/api-streaming/server-sent-events/)
-- [https://tools.ietf.org/id/draft-xie-bidirectional-messaging-01.html](https://tools.ietf.org/id/draft-xie-bidirectional-messaging-01.html)
-- [https://developers.google.com/web/fundamentals/performance/http2](https://developers.google.com/web/fundamentals/performance/http2)
-- [https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+- [Using server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
+- [Using SSE Instead Of WebSockets For Unidirectional Data Flow Over HTTP/2](https://www.smashingmagazine.com/2018/02/sse-websockets-data-flow-http2/)
+- [What is Server-Sent Events?](https://apifriends.com/api-streaming/server-sent-events/)
+- [An HTTP/2 extension for bidirectional messaging communication](https://tools.ietf.org/id/draft-xie-bidirectional-messaging-01.html)
+- [Introduction to HTTP/2](https://developers.google.com/web/fundamentals/performance/http2)
+- [The WebSocket API (WebSockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)

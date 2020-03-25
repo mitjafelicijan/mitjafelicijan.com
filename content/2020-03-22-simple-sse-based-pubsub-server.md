@@ -1,7 +1,7 @@
 ~ title: Simple Server-Sent Events based PubSub Server
 ~ description: PubSub server made with Server-Sent Events
 ~ slug: /simple-server-sent-events-based-pubsub-server.html
-~ date: 2020-03-25
+~ date: 2020-03-22
 ~ template: post
 ~ hide: false
 

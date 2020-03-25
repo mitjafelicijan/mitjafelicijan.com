@@ -1,8 +1,8 @@
-title: Curriculum Vitae
-date: 2018-01-16
-type: page
-hide: false
-----
+~ title: Curriculum Vitae
+~ slug: /curriculum-vitae.html
+~ date: 2018-01-16
+~ template: page
+~ hide: true
 
 **Mitja Felicijan**
 

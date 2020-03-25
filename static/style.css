@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 150%;
+  margin-bottom: 100px;
+  font-family: serif;
+}
+
+main {
+  max-width: 760px;
+  padding: 20px 30px;
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 280%;
+  line-height: initial;
+}
+
+h2 {
+  font-size: 200%;
+  line-height: initial;
+}
+
+h3 {
+  font-size: 160%;
+  line-height: initial;
+}
+
+img {
+  max-width: 100%;
+  margin: 30px auto;
+  display: block;
+}
+
+ul.article-list li {
+  margin-bottom: 10px;
+}
+
+ul.article-list li div {
+  display: flex;
+}
+
+ul.article-list time {
+  display: inline-block;
+  min-width: 160px;
+}
+
+article .info {
+  font-style: oblique;
+}
+
+pre {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: left;
+}
+
+th, td {
+  padding: 5px 10px;
+}
+
+code, pre {
+  font-size: 13px;
+}
+
+code {
+  background: rgb(255, 241, 177);
+  padding: 2px 5px;
+}
+
+pre > code {
+  background: unset;
+  padding: unset;
+}
+
+p.modified {
+  font-style: oblique;
+  font-size: 90%;
+  margin-top: 50px;
+}
+
+::selection {
+  background: #ff0;
+  color: #000;
+}
+
+::-moz-selection {
+  background: #ff0;
+  color: #000;
+}
+
+@media only screen and (max-width:480px) {
+  main {
+    padding: 20px;
+  }
+
+  nav {
+    text-align: center;
+    margin-bottom: initial;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  ul.article-list li {
+    margin-bottom: 20px;
+
+  }
+
+  ul.article-list li div {
+    display: block;
+    margin-top: 15px;
+    }
+
+  ul.article-list a {
+    display: block;
+    margin-top: 5px;
+  }
+
+  h1 {
+    font-size: 220%;
+  }
+
+  h2 {
+    font-size: 180%;
+  }
+
+  h3 {
+    font-size: 160%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(30, 30, 30);
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+}

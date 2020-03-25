@@ -1,9 +1,9 @@
-title: Golang profiling simplified
-description: Golang profiling demystified
-date: 2017-03-07
-type: post
-hide: false
-----
+~ title: Golang profiling simplified
+~ description: Golang profiling demystified
+~ slug: /notes/golang-profiling-simplified.html
+~ date: 2017-03-07
+~ template: post
+~ hide: false
 
 Many posts have been written regarding profiling in Golang and I haven’t found proper tutorial regarding this. Almost all of them are missing some part of important information and it gets pretty frustrating when you have a deadline and are not finding simple distilled solution.
 
@@ -107,5 +107,5 @@ go tool pprof -pdf ./cpu cpu.pprof > cpu.pdf
 
 This will generate PDF document with visualized profile.
 
-- [Memory PDF profile example](/files/go-profiling/golang-profiling-mem.pdf)
-- [CPU PDF profile example](/files/go-profiling/golang-profiling-cpu.pdf)
+- [Memory PDF profile example](/assets/go-profiling/golang-profiling-mem.pdf)
+- [CPU PDF profile example](/assets/go-profiling/golang-profiling-cpu.pdf)

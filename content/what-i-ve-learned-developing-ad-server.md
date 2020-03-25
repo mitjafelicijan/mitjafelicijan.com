@@ -1,9 +1,9 @@
-title: What I've learned developing ad server
-description: Lessons I learned developing contextual ad server
-date: 2017-04-17
-type: post
-hide: false
-----
+~ title: What I've learned developing ad server
+~ description: Lessons I learned developing contextual ad server
+~ slug: /notes/what-i-ve-learned-developing-ad-server.html
+~ date: 2017-04-17
+~ template: post
+~ hide: false
 
 For the past year and half I have been developing native advertising server that contextually matches ads and displays them in different template forms on variety of websites. This project grew from serving thousands of ads per day to millions.
 

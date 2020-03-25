@@ -1,9 +1,9 @@
-title: Simple IOT application supported by real-time monitoring and data history
-description: Develop simple IOT application with Arduino MKR1000 and Python
-date: 2017-08-11
-type: post
-hide: false
-----
+~ title: Simple IOT application supported by real-time monitoring and data history
+~ description: Develop simple IOT application with Arduino MKR1000 and Python
+~ slug: /experiments/simple-iot-application.html
+~ date: 2017-08-11
+~ template: post
+~ hide: false
 
 ## Initial thoughts
 
@@ -27,7 +27,7 @@ Step 1. and 3. will share the same web application. One route will be dedicated 
 
 Schema below represents what we will try to achieve and how different parts correlates to each other.
 
-![Overview](/files/iot-application/simple-iot-application-overview.svg)
+![Overview](/assets/iot-application/simple-iot-application-overview.svg)
 
 ## Simple Python API
 
@@ -148,11 +148,11 @@ To run this simply go to folder containing python file and run ```python webapp.
 
 After testing the service with Restlet Client you should be able to view your data in a database file ```data.db```.
 
-![REST settings example](/files/iot-application/iot-rest-example.png)
+![REST settings example](/assets/iot-application/iot-rest-example.png)
 
 You can also check the contents of new database file by using desktop client for SQLite → [DB Browser for SQLite](http://sqlitebrowser.org/).
 
-![SQLite database example](/files/iot-application/iot-sqlite-db.png)
+![SQLite database example](/assets/iot-application/iot-sqlite-db.png)
 
 Table structure is as simple as it can be. We have ts (timestamp) and value (value from Arduino). As you can see timestamp is generated on API side. If you would happen to have atomic clock on Arduino it would be then better to generate and send timestamp with the value. This would be particularity useful if we would be collecting sensor data at a higher frequency and then sending this data in bulk to API.
 
@@ -469,9 +469,9 @@ If everything goes well you should be seeing new data-points rendered on chart e
 
 If you navigate to ```http://0.0.0.0:5000``` you should see rendered chart as shown on picture below.
 
-![Application output](/files/iot-application/iot-app-output.png)
+![Application output](/assets/iot-application/iot-app-output.png)
 
-Complete application with all the code is available for [download](/files/iot-application/simple-iot-application.zip).
+Complete application with all the code is available for [download](/assets/iot-application/simple-iot-application.zip).
 
 ## Conclusion
 

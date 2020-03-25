@@ -1,9 +1,9 @@
-title: Simplifying and reducing clutter in my life and work
-description: Simplifying and reducing clutter in my life and work
-date: 2019-10-14
-type: post
-hide: false
-----
+~ title: Simplifying and reducing clutter in my life and work
+~ description: Simplifying and reducing clutter in my life and work
+~ slug: /notes/simplifying-and-reducing-clutter.html
+~ date: 2019-10-14
+~ template: post
+~ hide: false
 
 I recently moved my main working machine back from Hachintosh to Linux. Well the experiment was interesting and I have done some great work on macOS but it was time to move back.
 

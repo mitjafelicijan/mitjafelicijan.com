@@ -1,13 +1,11 @@
-GS ?= gostatic
-
-compile: clean
-	$(GS) config
+dev:
+	browser-sync ./public/ -w --no-notify --no-open
 
 clean:
-	-rm public -rf
+	rm -rf public/*
 
-dev: clean
-	$(GS) -w config
+generate:
+	staticgen --generate
 
-deploy: clean compile
+deploy: clean generate
 	firebase deploy

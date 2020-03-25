@@ -1,6 +1,6 @@
 ~ title: Using sentiment analysis for click&#8209;bait detection in RSS feeds
 ~ description: Using Python with sentiment analysis to detect if titles in RSS feeds are click-bait
-~ slug: /experiments/using-sentiment-analysis-for-click-bait-detection-in-rss-feeds.html
+~ slug: /using-sentiment-analysis-for-click-bait-detection-in-rss-feeds
 ~ date: 2019-10-19
 ~ template: post
 ~ hide: false

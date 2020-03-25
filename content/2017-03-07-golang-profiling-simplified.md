@@ -1,6 +1,6 @@
 ~ title: Golang profiling simplified
 ~ description: Golang profiling demystified
-~ slug: /notes/golang-profiling-simplified.html
+~ slug: /golang-profiling-simplified
 ~ date: 2017-03-07
 ~ template: post
 ~ hide: false

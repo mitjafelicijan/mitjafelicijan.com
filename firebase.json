@@ -10,33 +10,33 @@
     ],
     "redirects": [
       {
-        "source": "/encoding-binary-data-into-dna-sequence",
-        "destination": "/experiments/encoding-binary-data-into-dna-sequence.html",
+        "source": "/experiments/encoding-binary-data-into-dna-sequence.html",
+        "destination": "/encoding-binary-data-into-dna-sequence",
         "type": 301
       },
       {
-        "source": "/using-digitalocean-spaces-object-storage-with-fuse",
-        "destination": "/experiments/using-digitalocean-spaces-object-storage-with-fuse.html",
+        "source": "/experiments/using-digitalocean-spaces-object-storage-with-fuse.html",
+        "destination": "/using-digitalocean-spaces-object-storage-with-fuse",
         "type": 301
       },
       {
-        "source": "/simple-iot-application",
-        "destination": "/experiments/simple-iot-application.html",
+        "source": "/experiments/simple-iot-application.html",
+        "destination": "/simple-iot-application",
         "type": 301
       },
       {
-        "source": "/profiling-python-web-applications-with-visual-tools",
-        "destination": "/experiments/profiling-python-web-applications-with-visual-tools.html",
+        "source": "/experiments/profiling-python-web-applications-with-visual-tools.html",
+        "destination": "/profiling-python-web-applications-with-visual-tools",
         "type": 301
       },
       {
-        "source": "/what-i-ve-learned-developing-ad-server",
-        "destination": "/notes/what-i-ve-learned-developing-ad-server.html",
+        "source": "/notes/what-i-ve-learned-developing-ad-server.html",
+        "destination": "/what-i-ve-learned-developing-ad-server",
         "type": 301
       },
       {
-        "source": "/golang-profiling-simplified",
-        "destination": "/notes/golang-profiling-simplified.html",
+        "source": "/notes/golang-profiling-simplified.html",
+        "destination": "/golang-profiling-simplified",
         "type": 301
       }
     ]

@@ -1,5 +1,5 @@
 ~ title: Curriculum Vitae
-~ slug: /curriculum-vitae.html
+~ slug: /curriculum-vitae
 ~ date: 2018-01-16
 ~ template: page
 ~ hide: true

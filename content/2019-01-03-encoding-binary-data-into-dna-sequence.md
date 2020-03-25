@@ -1,6 +1,6 @@
 ~ title: Encoding binary data into DNA sequence
 ~ description: Imagine a world where you could go outside and take a leaf from a tree and put it through your ~ personal DNA sequencer and get data like music, videos or computer programs from it
-~ slug: /experiments/encoding-binary-data-into-dna-sequence.html
+~ slug: /encoding-binary-data-into-dna-sequence
 ~ date: 2019-01-03
 ~ template: post
 ~ hide: false

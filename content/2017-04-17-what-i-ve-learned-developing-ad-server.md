@@ -1,6 +1,6 @@
 ~ title: What I've learned developing ad server
 ~ description: Lessons I learned developing contextual ad server
-~ slug: /what-i-ve-learned-developing-ad-server
+~ slug: /what-i-ve-learned-developing-ad-server.html
 ~ date: 2017-04-17
 ~ template: post
 ~ hide: false

@@ -1,6 +1,6 @@
 ~ title: Simplifying and reducing clutter in my life and work
 ~ description: Simplifying and reducing clutter in my life and work
-~ slug: /simplifying-and-reducing-clutter
+~ slug: /simplifying-and-reducing-clutter.html
 ~ date: 2019-10-14
 ~ template: post
 ~ hide: false

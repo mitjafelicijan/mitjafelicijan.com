@@ -11,32 +11,7 @@
     "redirects": [
       {
         "source": "/experiments/encoding-binary-data-into-dna-sequence.html",
-        "destination": "/encoding-binary-data-into-dna-sequence",
-        "type": 301
-      },
-      {
-        "source": "/experiments/using-digitalocean-spaces-object-storage-with-fuse.html",
-        "destination": "/using-digitalocean-spaces-object-storage-with-fuse",
-        "type": 301
-      },
-      {
-        "source": "/experiments/simple-iot-application.html",
-        "destination": "/simple-iot-application",
-        "type": 301
-      },
-      {
-        "source": "/experiments/profiling-python-web-applications-with-visual-tools.html",
-        "destination": "/profiling-python-web-applications-with-visual-tools",
-        "type": 301
-      },
-      {
-        "source": "/notes/what-i-ve-learned-developing-ad-server.html",
-        "destination": "/what-i-ve-learned-developing-ad-server",
-        "type": 301
-      },
-      {
-        "source": "/notes/golang-profiling-simplified.html",
-        "destination": "/golang-profiling-simplified",
+        "destination": "/encoding-binary-data-into-dna-sequence.html",
         "type": 301
       }
     ]

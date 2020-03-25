@@ -1,5 +1,5 @@
 dev:
-	browser-sync ./public/ -w --no-notify --no-open
+	browser-sync ./public/ -w --no-notify --no-open --extensions=.html
 
 clean:
 	rm -rf public/*

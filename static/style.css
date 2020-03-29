@@ -31,8 +31,7 @@ blockquote {
   position: relative;
   margin-block-start: 30px;
   margin-block-end: 30px;
-
-  border: 1px solid red;
+  margin-right: 0;
 }
 
 blockquote:before {

@@ -1,0 +1,16 @@
+[debug] [2020-03-29T01:17:59.536Z] ----------------------------------------------------------------------
+[debug] [2020-03-29T01:17:59.538Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2020-03-29T01:17:59.538Z] CLI Version:   7.16.1
+[debug] [2020-03-29T01:17:59.538Z] Platform:      linux
+[debug] [2020-03-29T01:17:59.538Z] Node Version:  v12.13.0
+[debug] [2020-03-29T01:17:59.538Z] Time:          Sun Mar 29 2020 03:17:59 GMT+0200 (Central European Summer Time)
+[debug] [2020-03-29T01:17:59.538Z] ----------------------------------------------------------------------
+[debug] [2020-03-29T01:17:59.538Z] 
+[debug] [2020-03-29T01:17:59.541Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-29T01:17:59.542Z] > authorizing via signed-in user
+[debug] [2020-03-29T01:17:59.542Z] [iam] checking project mitja-felicijan-blog for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-03-29T01:17:59.543Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mitja-felicijan-blog:testIamPermissions  
+
+[debug] [2020-03-29T01:18:00.459Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-29T01:18:00.468Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mitja-felicijan-blog  
+ 

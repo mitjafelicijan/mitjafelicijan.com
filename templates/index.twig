@@ -36,18 +36,10 @@
       {% include "partials/navigation.twig" %}
 
       <h2>Posts</h2>
+      {% include "partials/posts.twig" %}
 
-      <ul class="article-list">
-        {% for item in list %}
-        <li>
-          <time datetime="{{ item.date|date("Y, F j") }}">{{ item.date|date("Y, F j") }}</time>
-          <a href="{{ item.slug }}">{{ item.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
 
       <h2>Projects</h2>
-
       {% include "partials/projects.twig" %}
 
     </main>

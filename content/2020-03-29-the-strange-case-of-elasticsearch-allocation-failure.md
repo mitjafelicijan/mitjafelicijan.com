@@ -1,11 +1,11 @@
 ~ title: The strange case of Elasticsearch allocation failure
 ~ description: Elasticsearch allocation failure on some indices while reporting domain processing
 ~ slug: /the-strange-case-of-elasticsearch-allocation-failure.html
-~ date: 2020-03-27
+~ date: 2020-03-29
 ~ template: post
 ~ hide: false
 
-I've been using Elasticsearch in production for 5 years now and never had a single problem with it. Hell, never even known a problem. Just worked. All this time. The first node that I deployed is still being used in production, never updated, upgraded, touched in anyway.
+I've been using Elasticsearch in production for 5 years now and never had a single problem with it. Hell, never even known there could be a problem. Just worked. All this time. The first node that I deployed is still being used in production, never updated, upgraded, touched in anyway.
 
 All this bliss came to an abrupt end this Friday when I got notification that Elasticsearch cluster went warm. Well, warm is not that bad right? Wrong! Quickly after that I got another email which sent chills down my spine. Cluster is now red. RED! Now, shit really hit the fan!
 
@@ -15,7 +15,7 @@ The strangest thing about it all was, that queries were still being fulfilled. D
 
 > **Please, DO NOT do what I did.** Seriously! Please ask someone on official forums or if you know an expert please consult him. There could be million of reasons and these solution fit my problem. Maybe in your case it would disastrous. I had all the data backed up and even if I would fail spectacularly I would be able to restore the data. It would be a huge pain and I would loose couple of days but I had a plan B.
 
-I got a feeling that something must be wrong with allocation so I looked at the results.
+Executing allocation and told me what the problem was but no clear solution yet.
 
 ```yaml
 GET /_cat/allocation?format=json
@@ -37,7 +37,7 @@ I got a message that significantly reduced my options.
 }
 ```
 
-After that I went on a hunt again. I won't bother you with all the details because hours/days went by until I was finally able to re-index the problematic index and hope for the best. Until that moment even re-indexing was giving me errors.
+After that I went on a hunt again. I won't bother you with all the details because hours/days went by until I was finally able to re-index the problematic index and hoped for the best. Until that moment even re-indexing was giving me errors.
 
 ```yaml
 POST _reindex

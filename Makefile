@@ -1,3 +1,7 @@
+MAKEFLAGS += -j2
+
+dev: server watch
+
 watch:
 	find content/*.md | entr make generate
 

@@ -54,7 +54,11 @@ ul.article-list li div {
 
 ul.article-list time {
   display: inline-block;
-  min-width: 160px;
+  min-width: 150px;
+}
+
+ul.project-list li {
+  margin-bottom: 5px;
 }
 
 article .info {

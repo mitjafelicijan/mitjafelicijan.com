@@ -3,7 +3,7 @@ MAKEFLAGS += -j2
 dev: server watch
 
 watch:
-	find content/*.md | entr make generate
+	find content/* templates/* static/* | entr make generate
 
 server:
 	browser-sync start --server ./public --watch --no-open --no-notify

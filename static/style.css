@@ -99,6 +99,7 @@ ul.article-list li {
 
 ul.article-list time {
   display: block;
+  font-size: 85%;
 }
 
 ul.article-list li a {

@@ -23,7 +23,7 @@ The easiest way to explain this is with diagram bellow. Basic function is simple
 
 ![How PubSub works](/assets/simple-pubsub-server/pubsub-overview.png)
 
-**ⓘ** These are some naive characteristics we want to achieve:
+**These are some naive characteristics we want to achieve:**
 
 - producer is publishing messages to subscribe topic,
 - consumer is receiving messages from subscribed topic,
@@ -35,7 +35,7 @@ The easiest way to explain this is with diagram bellow. Basic function is simple
 - producer can publish to multiple topics,
 - each message has a messageId.
 
-**ⓘ** Known drawbacks:
+**Known drawbacks:**
 
 - messages will not be stored in a persistent queue or unreceived messages like [DeadLetterQueue](https://en.wikipedia.org/wiki/Dead_letter_queue) so old messages could be lost on server restart,
 - [Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) opens a long-running connection between the client and the server so make sure if your setup is load balanced that the load balancer in this case can have long opened connection,
@@ -103,7 +103,7 @@ Connection: keep-alive
 
 Google Chrome provides build-in debugging and exploration tool for [Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) which is quite nice and available from Developer Tools under Network tab.
 
-**ⓘ** You can debug only client side events that get received and not the server ones.
+> You can debug only client side events that get received and not the server ones. For debugging server events add `console.log` to `server.js` code and print out events.
 
 ![Google Chrome Developer Tools EventStream](../assets/simple-pubsub-server/chrome-debugging.png)
 
@@ -318,7 +318,7 @@ Subscriber is responsible for receiving new messages that come from server via p
 
 You can use either Developer Tools Console to see incoming messages or you can defer to Debugging with Google Chrome section above to see all EventStream messages.
 
-**ⓘ** Don't be alarmed if the subscriber gets disconnected from the server every so often. The code we have here resets connection every 15s but it automatically get reconnected and fetches all messages up to last received message id. This setting can be adjusted in `server.js` file; search for the `maxStreamDuration` variable.
+> Don't be alarmed if the subscriber gets disconnected from the server every so often. The code we have here resets connection every 15s but it automatically get reconnected and fetches all messages up to last received message id. This setting can be adjusted in `server.js` file; search for the `maxStreamDuration` variable.
 
 ```html
 <!DOCTYPE html>

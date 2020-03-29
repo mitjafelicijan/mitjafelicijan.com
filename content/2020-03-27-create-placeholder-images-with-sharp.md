@@ -49,7 +49,7 @@ All this code was wrapped inside a web service with some additional security che
 
 And at that point I needed to return placeholder images as a response in case key is missing or x,y are not allowed by the server etc. I could have created PNG in Gimp and just serve them but I wanted to respect aspect ratio and I didn't want to return some mangled images.
 
-**ⓘ** Main problem with finding a clean solution I could copy and paste and change a bit was a task. API is changing constantly and there weren't clear examples or I was unable to find them.
+> Main problem with finding a clean solution I could copy and paste and change a bit was a task. API is changing constantly and there weren't clear examples or I was unable to find them.
 
 ## Generating placeholder images using SVG
 
@@ -80,4 +80,4 @@ const generatePlaceholderImageWithText = async (width, height, message) => {
 
 That is about it. Nothing more to it. You can change the color of the image by changing `background` and if you want to change text styling you can adapt SVG to your needs.
 
-**ⓘ** Also be careful about the length of the text. This function positions text at the center and adds `20px` padding on all sides. If text is longer than the image it will get cut.
+> Also be careful about the length of the text. This function positions text at the center and adds `20px` padding on all sides. If text is longer than the image it will get cut.

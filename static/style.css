@@ -27,6 +27,29 @@ header {
   margin-block-end: 40px;
 }
 
+blockquote {
+  position: relative;
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+
+  border: 1px solid red;
+}
+
+blockquote:before {
+  content: ' ';
+  background-image: url('/static/alert.svg');
+  background-size: 30px 30px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: -40px;
+  top: 6px;
+}
+
+blockquote p {
+  padding-left: 10px;
+}
+
 h1 {
   font-size: 280%;
   line-height: initial;

@@ -32,7 +32,7 @@ const originalImage = await s3.getObject({
 }).promise();
 
 const resizedImage = await sharp(originalImage.Body)
-  .resize(100, 100)
+  .resize(x, y)
   .jpeg({ progressive: true })
   .toBuffer();
 

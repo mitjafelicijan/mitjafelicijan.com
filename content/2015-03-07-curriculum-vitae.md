@@ -14,7 +14,7 @@
 
 - **Key languages:** Golang, Python, C, Bash.
 - **Platforms:** GNU/Linux, macOS.
-- **Fields of study:** Zigbee, KNX, Modbus, Machine to Machine, Embedded systems, Operating systems, Distributed systems, IOT, RDBMS, Algorithms, Database engine design, SQL, NoSQL, NewSQL, Big data analytics, Machine learning, Prediction algorithms, Realtime analytics, Systems automation, Natural language processing, Bioinformatics.
+- **Interests:** Zigbee, KNX, Modbus, Machine to Machine, Embedded systems, Operating systems, Distributed systems, IOT, RDBMS, Algorithms, Database engine design, SQL, NoSQL, NewSQL, Big data analytics, Machine learning, Prediction algorithms, Realtime analytics, Systems automation, Natural language processing, Bioinformatics.
 
 ## Major projects
 

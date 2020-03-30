@@ -16,7 +16,7 @@ a {
   font-style: italic;
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-color: #ccc;
+  text-decoration-color: #bbb;
 }
 
 main {
@@ -40,6 +40,10 @@ header {
 
 p {
   line-height: 1.5;
+}
+
+p a {
+  text-decoration-color: #333;
 }
 
 blockquote {

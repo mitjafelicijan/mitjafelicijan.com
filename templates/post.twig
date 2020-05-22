@@ -43,7 +43,21 @@
             <span>by {{ global.author }}</span>
           </div>
         </header>
+
+        {% if options.hide == 'true' %}
+        <div class="draft">Draft</div>
+        {% endif %}
+
         {{ content }}
+
+        <div id="replybox"></div>
+        <script>
+          window.replybox = {
+            site: 'm6gBxwQnbM',
+          };
+        </script>
+        <script src="https://cdn.getreplybox.com/js/embed.js"></script>
+
       </article>
 
     </main>

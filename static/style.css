@@ -155,6 +155,19 @@ p.modified {
   margin-top: 50px;
 }
 
+.draft {
+  color: #ddd;
+  position: absolute;
+  top: 500px;
+  left: 400px;
+  font-size: 160px;
+  text-transform: uppercase;
+  font-weight: 800;
+  z-index: -1;
+  transform: rotate(-45deg);
+  display: block;
+}
+
 ::selection {
   background: #ff0;
   color: #000;
@@ -163,6 +176,10 @@ p.modified {
 ::-moz-selection {
   background: #ff0;
   color: #000;
+}
+
+#replybox {
+  margin-top: 70px;
 }
 
 @media only screen and (max-width:480px) {
@@ -216,6 +233,12 @@ p.modified {
 
   code, pre {
     font-size: 14px;
+  }
+
+  .draft {
+    font-size: 90px;
+    top: 400px;
+    left: 50px;
   }
 }
 

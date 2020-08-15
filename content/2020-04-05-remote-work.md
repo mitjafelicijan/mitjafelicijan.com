@@ -1,9 +1,9 @@
 ~ title: Remote work and how it affects the daily lives of people
-~ description: How I found a way to love and hate Node.js with a passion
+~ description: Remote work and how it affects the daily lives of people
 ~ slug: /remote-work.html
-~ date: 2020-04-05
+~ date: 2020-05-05
 ~ template: post
-~ hide: true
+~ hide: false
 
 I have been working remotely for the past 5 years. I love it. Love the freedom and make your schedule thingy.
 

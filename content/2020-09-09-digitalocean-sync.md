@@ -1,5 +1,5 @@
 ~ title: Using Digitalocean Spaces to sync between computers
-~ description: Fix bind warning in .profile on login in Ubuntu
+~ description: Using Digitalocean Spaces to sync between computers
 ~ slug: /digitalocean-spaces-to-sync-between-computers.html
 ~ date: 2020-09-09
 ~ template: post

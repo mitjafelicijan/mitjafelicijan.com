@@ -26,6 +26,8 @@ So, my main problem was still there. No way of excluding a specific folder from 
 
 I initially wanted to use [rsync](https://linux.die.net/man/1/rsync) but I would need to then have a remote VPS or transfer between my computers directly. I wanted a solution where all my files could be accessible to me without my machine.
 
+> **WARNING: This solution will cost you money!** DigitalOcean Spaces are $5 per month and there are some bandwidth limitations and if you go beyond that you get billed additionally.
+
 Then I remembered that I could use something like [S3](https://en.wikipedia.org/wiki/Amazon_S3) since it has versioning and is fully managed. I didn't want to go down the AWS rabbit hole with this so I choose [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/).
 
 Then I needed a command-line tool to sync between source and target. I found this nice tool [s3cmd](https://s3tools.org/s3cmd) and it is in the Ubuntu repositories.

@@ -24,8 +24,8 @@
     <meta name="twitter:site" content="{{ global.twitter }}">
 
     <link rel="alternate" type="application/atom+xml" title="{{ global.author }}'s feed" href="/feed.atom">
-    <link rel="stylesheet" href="/static/style.css?v={{ "now"|date("YmdHi") }}">
-    <link rel="icon" type="image/png" href="/static/avatar-64x64.png?v={{ "now"|date("YmdHi") }}">
+    <link rel="stylesheet" href="/static/style.css?v={{ " now"|date("YmdHi") }}">
+    <link rel="icon" type="image/png" href="/static/avatar-64x64.png?v={{ " now"|date("YmdHi") }}">
 
   </head>
 
@@ -39,7 +39,7 @@
         <header>
           <h1>{{ options.title }}</h1>
           <div class="info">
-            <time datetime="{{ options.date|date("Y, F j") }}">{{ options.date|date("Y, F j") }}</time>
+            <time datetime="{{ options.date|date(" Y, F j") }}">{{ options.date|date("Y, F j") }}</time>
             <span>by {{ global.author }}</span>
           </div>
         </header>
@@ -50,13 +50,13 @@
 
         {{ content }}
 
-        <div id="replybox"></div>
+        {#<div id="replybox"></div>
         <script>
           window.replybox = {
             site: 'm6gBxwQnbM',
           };
         </script>
-        <script src="https://cdn.getreplybox.com/js/embed.js"></script>
+        <script src="https://cdn.getreplybox.com/js/embed.js"></script>#}
 
       </article>
 

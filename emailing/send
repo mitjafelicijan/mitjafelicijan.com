@@ -1,20 +1,47 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
-// const path = require('path');
+const path = require('path');
 const axios = require('axios');
 const dayjs = require('dayjs');
 const weekOfYear = require('dayjs/plugin/weekOfYear');
 const handlebars = require('handlebars');
 const yesno = require('yesno');
+const meow = require('meow');
+const { reverse } = require('dns');
 
 dayjs.extend(weekOfYear);
 
 (async function () {
 
-  //const campaignId = 'b03de6fc-ff95-40a0-8707-c0706b3c0b31'; // production
-  //const campaignId = '2bbcdedb-49d8-48f3-9f33-df6e04c9e5bf'; // testing
-  const from = { name: 'Mitja Felicijan', email: 'weekly@mitjafelicijan.com' };
+  const cli = meow(`
+	Usage
+	  $ ./send <input>
 
-  const mailingList = process.argv[2] == 'production'
+	Options
+	  --production, -p      Uses production mailing list
+
+	Examples
+    $ ./send campaigns/2020-51.json --production
+  `, {
+    flags: {
+      production: {
+        type: 'boolean',
+        alias: 'p'
+      }
+    }
+  });
+
+  if (cli.input.length === 0) {
+    console.log('You must provide campagin JSON file.');
+    process.exit(1);
+  }
+
+  const campaignJSONFile = cli.input[0];
+  const year = path.basename(cli.input[0]).split('.')[0].split('-')[0];
+  const week = path.basename(cli.input[0]).split('.')[0].split('-')[1];
+  const from = { name: 'Mitja Felicijan', email: 'weekly@mitjafelicijan.com' };
+  const mailingList = cli.flags.production
     ? { env: 'production', id: 'b03de6fc-ff95-40a0-8707-c0706b3c0b31' }
     : { env: 'testing', id: '2bbcdedb-49d8-48f3-9f33-df6e04c9e5bf' };
 
@@ -26,7 +53,7 @@ dayjs.extend(weekOfYear);
   // gets current week
   let campaign = null;
   try {
-    campaign = require(`./campaigns/${dayjs().format('YYYY')}-${dayjs().week()}.json`);
+    campaign = require(`./${campaignJSONFile}`);
   } catch (err) {
     console.error(err);
     process.exit(1);
@@ -46,12 +73,14 @@ dayjs.extend(weekOfYear);
   // gets handlebars template contents
   let template = null;
   try {
-    template = handlebars.compile(fs.readFileSync('template.hbs', 'utf8'));
-    template = template(campaign);
+    template = handlebars.compile(fs.readFileSync('templates/mailing.hbs', 'utf8'));
+    template = template({ title: `${year}: Week #${week} Links`, campaign });
   } catch (e) {
     console.error(err);
     process.exit(1);
   }
+
+  fs.writeFileSync(`generated/${year}-${week}.html`, template);
 
   // asks for user input to allow sending emails
   console.log(`\nWill send to ${personalizations.length} subscribers from list "${mailingList.env}":`)
@@ -67,7 +96,7 @@ dayjs.extend(weekOfYear);
     // send actual emails
     await axios.post('https://api.sendgrid.com/v3/mail/send', {
       from,
-      subject: `Week #${dayjs().week()} Links`,
+      subject: `Week #${week} Links`,
       personalizations,
       content: [{
         type: 'text/html',
@@ -77,5 +106,24 @@ dayjs.extend(weekOfYear);
   }
 
   console.log('\nAnd we are done.\n');
+
+  // generates index file
+
+  const HTMLFiles = fs.readdirSync('./generated/');
+  const indexFile = HTMLFiles.indexOf('index.html');
+  if (indexFile > -1) HTMLFiles.splice(indexFile, 1);
+
+  HTMLFiles.forEach((item, idx) => {
+    const parts = item.split('.')[0].split('-');
+    HTMLFiles[idx] = {
+      year: parts[0],
+      week: parts[1],
+      file: item,
+    }
+  });
+
+  let indexTemplate = handlebars.compile(fs.readFileSync('templates/index.hbs', 'utf8'));
+  indexTemplate = indexTemplate({ files: HTMLFiles.reverse() });
+  fs.writeFileSync(`generated/index.html`, indexTemplate);
 
 }());

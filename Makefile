@@ -14,5 +14,9 @@ clean:
 generate:
 	staticgen --generate
 
-deploy: clean generate
+deploy: clean generate copy-weekly-links
 	firebase deploy
+
+copy-weekly-links:
+	mkdir -p public/weekly-links-archive
+	cp -rf emailing/generated/* public/weekly-links-archive/

@@ -18,5 +18,5 @@ deploy: clean generate copy-weekly-links
 	firebase deploy
 
 copy-weekly-links:
-	mkdir -p public/weekly-links-archive
-	cp -rf emailing/generated/* public/weekly-links-archive/
+	mkdir -p public/weekly-newsletter-archive
+	cp -rf newsletter/generated/* public/weekly-newsletter-archive/

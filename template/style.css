@@ -1,5 +1,5 @@
 :root {
-  --base-document-width: 740px;
+  --base-document-width: 700px;
   --base-font-size: 18px;
   --base-color: #111111;
 
@@ -161,18 +161,18 @@ blockquote p {
 }
 
 .post-list li a {
-  text-decoration: none;
-  color: var(--link-color);
+  /*text-decoration: none;
+  color: var(--link-color);*/
 }
 
 .post-list li a:hover {
-  text-decoration: underline;
-  color: var(--link-color-hover);
+  /*text-decoration: underline;
+  color: var(--link-color-hover);*/
 }
 
 .post-list li a h2 {
   font-weight: 400;
-  font-size: 130%;
+  font-size: 110%;
   margin: 0;
 }
 
@@ -184,13 +184,13 @@ blockquote p {
 }
 
 .project-list a {
-  text-decoration: none;
-  color: var(--link-color);
+  /*text-decoration: none;
+  color: var(--link-color);*/
 }
 
 .project-list li a:hover {
-  text-decoration: underline;
-  color: var(--link-color-hover);
+  /*text-decoration: underline;
+  color: var(--link-color-hover);*/
 }
 
 

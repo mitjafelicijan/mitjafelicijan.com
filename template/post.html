@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    {{template "_meta.html"}}
+
+    <title>{{.Title}}</title>
+    <meta name="description" content="{{.Description}}">
+  </head>
+
+  <body>
+
+    {{template "_navigation.html"}}
+
+    <main class="wrapper">
+      <article itemtype="http://schema.org/Article">
+        <header>
+          <h1 itemtype="headline">{{.Title}}</h1>
+          <time>{{.Created}}</time>
+        </header>
+        <div>
+          {{.Content}}
+        </div>
+      </article>
+    </main>
+
+    {{template "_includes.html"}}
+
+  </body>
+
+</html>

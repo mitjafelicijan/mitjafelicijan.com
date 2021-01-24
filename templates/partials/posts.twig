@@ -1,8 +1,0 @@
-<ul class="article-list">
-  {% for item in list %}
-  <li>
-    <time datetime="{{ item.date|date("Y, F j") }}">{{ item.date|date("Y, F j") }}</time>
-    <a href="{{ item.slug }}">{{ item.title }}</a>
-  </li>
-  {% endfor %}
-</ul>

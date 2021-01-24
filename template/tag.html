@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    {{template "_meta.html"}}
+
+    <title>{{.Title}}</title>
+    <meta name="description" content="{{.Description}}">
+  </head>
+
+  <body>
+
+    {{template "_navigation.html"}}
+
+    <main class="wrapper">
+      <h2>Posts for `{{.Tag}}`</h2>
+      <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <meta itemprop="name" content="Article list">
+
+        <ul class="post-list">
+          {{range $index, $post := .Posts}}
+          <li>
+            <time>{{.Created}}</time>
+
+            <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
+              <h2>{{$post.Title}}</h2>
+            </a>
+
+            <!-- lists all tags available in this posts -->
+            {{if $post.Tags}}
+            <nav class="tags">
+              {{range $post.Tags}}
+              <a href="/tags/{{.}}.html" rel="tag">{{.}}</a>
+              {{end}}
+            </nav>
+            {{end}}
+
+          </li>
+          {{end}}
+        </ul>
+      </nav>
+
+      <!-- lists all tags available in all posts -->
+      {{if .Tags}}
+      <nav class="tags top-margin">
+        <strong>All tags on site:</strong>
+        {{range .Tags}}
+        <a href="/tags/{{.}}.html" rel="tag">{{.}}</a>
+        {{end}}
+      </nav>
+      {{end}}
+
+    </main>
+
+    {{template "_footer.html"}}
+
+    {{template "_includes.html"}}
+
+  </body>
+
+</html>

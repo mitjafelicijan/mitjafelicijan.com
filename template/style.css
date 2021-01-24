@@ -50,12 +50,12 @@ body {
 
 /* headings */
 
-h1 { font-size: 220%; }
-h2 { font-size: 180%; }
-h3 { font-size: 160%; }
-h4 { font-size: 140%; }
-h5 { font-size: 120%; }
-h6 { font-size: 100%; }
+h1 { font-size: 220%; line-height: 1.2em; }
+h2 { font-size: 180%; line-height: 1.2em; }
+h3 { font-size: 160%; line-height: 1.2em; }
+h4 { font-size: 140%; line-height: 1.2em; }
+h5 { font-size: 120%; line-height: 1.2em; }
+h6 { font-size: 100%; line-height: 1.2em; }
 
 h1[itemtype="headline"] {
   padding-bottom: 0;

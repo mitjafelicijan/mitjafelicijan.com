@@ -3,7 +3,7 @@ Title: Simplifying and reducing clutter in my life and work
 Description: Simplifying and reducing clutter in my life and work
 Slug: simplifying-and-reducing-clutter
 Listing: true
-Created: 2019, October 14
+Created: 2019-10-14
 Tags: []
 ---
 

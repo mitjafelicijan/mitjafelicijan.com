@@ -3,7 +3,7 @@ Title: Fix bind warning in .profile on login in Ubuntu
 Description: Fix bind warning in .profile on login in Ubuntu
 Slug: bind-warning-on-login-in-ubuntu
 Listing: true
-Created: 2020, September 8
+Created: 2020-09-08
 Tags: []
 ---
 

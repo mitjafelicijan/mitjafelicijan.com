@@ -3,7 +3,7 @@ Title: The strange case of Elasticsearch allocation failure
 Description: Elasticsearch allocation failure on some indices while reporting domain processing
 Slug: the-strange-case-of-elasticsearch-allocation-failure
 Listing: true
-Created: 2020, March 29
+Created: 2020-03-29
 Tags: []
 ---
 

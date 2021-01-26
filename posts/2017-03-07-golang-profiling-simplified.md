@@ -3,7 +3,7 @@ Title: Golang profiling simplified
 Description: Golang profiling simplified
 Slug: golang-profiling-simplified
 Listing: true
-Created: 2017, March 7
+Created: 2017-03-07
 Tags: []
 ---
 

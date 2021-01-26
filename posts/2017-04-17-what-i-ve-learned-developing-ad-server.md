@@ -3,7 +3,7 @@ Title: What I've learned developing ad server
 Description: Lessons I learned developing contextual ad server
 Slug: what-i-ve-learned-developing-ad-server
 Listing: true
-Created: 2017, April 17
+Created: 2017-04-17
 Tags: []
 ---
 

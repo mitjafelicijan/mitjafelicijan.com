@@ -3,7 +3,7 @@ Title: Remote work and how it affects the daily lives of people
 Description: Remote work and how it affects the daily lives of people
 Slug: remote-work
 Listing: true
-Created: 2020, May 5
+Created: 2020-05-05
 Tags: []
 ---
 

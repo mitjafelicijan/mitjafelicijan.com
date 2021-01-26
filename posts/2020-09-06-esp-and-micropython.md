@@ -3,7 +3,7 @@ Title: Getting started with MicroPython and ESP8266
 Description: Getting started with MicroPython and ESP8266
 Slug: esp8266-and-micropython-guide
 Listing: true
-Created: 2020, September 6
+Created: 2020-09-06
 Tags: []
 ---
 
@@ -12,6 +12,10 @@ Tags: []
 1. [Introduction](#introduction)
 2. [Flashing the SOC](#flashing-the-soc)
 3. [Install better tooling](#install-better-tooling)
+   1. [ampy](#ampy)
+   2. [rshell](#rshell)
+      1. [Moving files to flash](#moving-files-to-flash)
+      2. [Executing scripts](#executing-scripts)
 4. [Additional resources](#additional-resources)
 
 

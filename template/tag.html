@@ -20,7 +20,7 @@
         <ul class="post-list">
           {{range $index, $post := .Posts}}
           <li>
-            <time>{{.Created}}</time>
+            <time>{{.CreatedFormatted}}</time>
 
             <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
               <h2>{{$post.Title}}</h2>

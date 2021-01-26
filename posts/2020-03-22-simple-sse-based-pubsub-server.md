@@ -3,7 +3,7 @@ Title: Simple Server-Sent Events based PubSub Server
 Description: Simple Server-Sent Events based PubSub Server
 Slug: simple-server-sent-events-based-pubsub-server
 Listing: true
-Created: 2020, March 22
+Created: 2020-03-22
 Tags: []
 ---
 

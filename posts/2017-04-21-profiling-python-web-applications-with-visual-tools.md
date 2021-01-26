@@ -3,7 +3,7 @@ Title: Profiling Python web applications with visual tools
 Description: Missing link when debugging and profiling python web application
 Slug: profiling-python-web-applications-with-visual-tools
 Listing: true
-Created: 2017, April 21
+Created: 2017-04-21
 Tags: []
 ---
 

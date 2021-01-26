@@ -3,7 +3,7 @@ Title: Using Digitalocean Spaces to sync between computers
 Description: Using Digitalocean Spaces to sync between computers
 Slug: digitalocean-spaces-to-sync-between-computers
 Listing: true
-Created: 2020, September 9
+Created: 2020-09-09
 Tags: []
 ---
 

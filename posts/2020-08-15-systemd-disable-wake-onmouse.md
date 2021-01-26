@@ -3,7 +3,7 @@ Title: Disable mouse wake from suspend with systemd service
 Description: Disable mouse wake from suspend with systemd service
 Slug: disable-mouse-wake-from-suspend-with-systemd-service
 Listing: true
-Created: 2020, August 15
+Created: 2020-08-15
 Tags: []
 ---
 

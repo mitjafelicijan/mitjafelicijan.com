@@ -3,7 +3,7 @@ Title: Replacing Dropbox in favor of DigitalOcean spaces
 Description: Replacing Dropbox in favor of DigitalOcean spaces
 Slug: replacing-dropbox-in-favor-of-digitalocean-spaces
 Listing: true
-Created: 2021, January 24
+Created: 2021-01-24
 Tags: []
 ---
 
@@ -15,7 +15,7 @@ I am not a conspiracy theory nut, but to be honest, what these companies are doi
 
 **Anyways. Let's get to the meat of things.**
 
-Before you continue you should read my post about [syncing to Dropbox]((/digitalocean-spaces-to-sync-between-computers.html)).
+Before you continue you should read my post about [syncing to Dropbox](/digitalocean-spaces-to-sync-between-computers.html).
 
 > Also to note, I am using Linux on my machine with Gnome desktop environment. This should work on MacOS too. To use this on Windows I suggest using [Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or [Cygwin](https://www.cygwin.com/).
 

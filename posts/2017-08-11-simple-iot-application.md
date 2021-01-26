@@ -3,7 +3,7 @@ Title: Simple IOT application supported by real-time monitoring and data history
 Description: Develop simple IOT application with Arduino MKR1000 and Python
 Slug: simple-iot-application
 Listing: true
-Created: 2017, August 11
+Created: 2017-08-11
 Tags: []
 ---
 

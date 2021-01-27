@@ -6,7 +6,7 @@
   --link-color: #111111;
   --link-color-hover: #111111;
 
-  --label-color: #828282;
+  --label-color: #5f5f5f;
 
   --border-color: #eeeeee;
 
@@ -222,6 +222,10 @@ blockquote p {
   margin-top: 60px;
 }
 
+.top-margin-huge {
+  margin-top: 100px;
+}
+
 code {
   background: rgb(255, 241, 177);
   padding: 2px 5px;
@@ -248,6 +252,18 @@ time {
   color: var(--label-color);
   font-size: 90%;
 }
+
+/* article */
+
+article a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
 
 /* footer */
 

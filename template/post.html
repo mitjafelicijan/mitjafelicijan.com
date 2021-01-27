@@ -24,6 +24,35 @@
           {{.Content}}
         </div>
       </article>
+
+      {{if .Listing}}
+        <section class="top-margin">
+          <a href="mailto:m@mitjafelicijan.com">➝ Get in contact with me via email.</a>
+        </section>
+
+        <hr class="top-margin">
+
+        {{if .Posts}}
+          <nav class="top-margin">
+            <h4>Read more from this site</h4>
+            {{range $index, $post := .Posts}}
+              {{if (lt $index 5)}}
+              <p>
+                <time>{{$post.CreatedFormatted}}</time><br>
+                <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
+                  {{$post.Title}}
+                </a>
+              </p>
+              {{end}}
+            {{end}}
+          </nav>
+        {{end}}
+
+        <hr class="top-margin">
+
+        {{template "openring-build.html"}}
+      {{end}}
+
     </main>
 
     {{template "_includes.html"}}

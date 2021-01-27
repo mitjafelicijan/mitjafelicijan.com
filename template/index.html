@@ -21,20 +21,23 @@
 
         <ul class="post-list">
           {{range $index, $post := .Posts}}
-          <li>
-            <time>{{.CreatedFormatted}}</time>
+            {{if $post.Listing}}
+            <li>
+              <time>{{.CreatedFormatted}}</time>
 
-            <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
-              <h2>{{$post.Title}}</h2>
-            </a>
-
-          </li>
+              <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
+                <h2>{{$post.Title}}</h2>
+              </a>
+            </li>
+            {{end}}
           {{end}}
         </ul>
       </nav>
 
+      <hr class="top-margin">
+
       <section class="project-list">
-        <h2>Side projects</h2>
+        <h4>Side projects I work on</h4>
         <ul>
           <li><a href="https://github.com/mitjafelicijan/redis-marshal" target="_blank" rel="noopener nofollow">redis-marshal - Lightweight Redis data exploration tool</a></li>
           <li><a href="https://github.com/mitjafelicijan/dna-encoding" target="_blank" rel="noopener nofollow">dna-encoding - Tools for encoding files to DNA sequence</a></li>
@@ -44,6 +47,10 @@
           <li><a href="https://github.com/mitjafelicijan/scarecrow" target="_blank" rel="noopener nofollow">scarecrow - Minimal configuration reverse proxy</a></li>
         </ul>
       </section>
+
+      <hr class="top-margin">
+
+      {{template "openring-build.html"}}
     </main>
 
     {{template "_includes.html"}}

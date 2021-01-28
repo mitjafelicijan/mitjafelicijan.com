@@ -21,15 +21,15 @@
 
         <ul class="post-list">
           {{range $index, $post := .Posts}}
-            {{if $post.Listing}}
-            <li>
-              <time>{{.CreatedFormatted}}</time>
+          {{if $post.Listing}}
+          <li>
+            <time>{{.CreatedFormatted}}</time>
 
-              <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
-                <h2>{{$post.Title}}</h2>
-              </a>
-            </li>
-            {{end}}
+            <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
+              <h2>{{$post.Title}}</h2>
+            </a>
+          </li>
+          {{end}}
           {{end}}
         </ul>
       </nav>
@@ -52,8 +52,6 @@
 
       {{template "openring-build.html"}}
     </main>
-
-    {{template "_includes.html"}}
 
   </body>
 

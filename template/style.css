@@ -295,4 +295,17 @@ article a {
 
 @media (prefers-color-scheme: light) { }
 
-@media (prefers-color-scheme: dark) { }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: white;
+  }
+
+  a {
+    color: white !important;
+  }
+
+  code {
+    color: #111;
+  }
+}

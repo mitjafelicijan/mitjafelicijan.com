@@ -265,6 +265,13 @@ article a {
 }
 
 
+/* audio */
+
+audio {
+  width: 100%;
+}
+
+
 /* footer */
 
 .footer {

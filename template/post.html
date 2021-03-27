@@ -38,14 +38,16 @@
       <nav class="top-margin">
         <h4>Read more from this site</h4>
         {{range $index, $post := .Posts}}
-        {{if (lt $index 5)}}
-        <p>
-          <time>{{$post.CreatedFormatted}}</time><br>
-          <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
-            {{$post.Title}}
-          </a>
-        </p>
-        {{end}}
+          {{if .Listing}}
+            {{if (lt $index 5)}}
+            <p>
+              <time>{{$post.CreatedFormatted}}</time><br>
+              <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
+                {{$post.Title}}
+              </a>
+            </p>
+            {{end}}
+          {{end}}
         {{end}}
       </nav>
       {{end}}

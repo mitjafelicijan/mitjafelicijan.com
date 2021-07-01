@@ -5,6 +5,16 @@ provision:
 	go build \
 	go install
 
+dev:
+	openring -l 180 -n 4 -p 1 \
+		-s https://cronokirby.com/posts/index.xml \
+		-s https://drewdevault.com/feed.xml \
+		-s https://danluu.com/atom.xml \
+		-s https://serokell.io/blog.rss.xml \
+		< template/openring.tmpl \
+		> template/openring-build.html
+	alternator --watch
+
 build:
 	mkdir -p public
 	openring -l 180 -n 4 -p 1 \

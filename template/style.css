@@ -304,7 +304,7 @@ audio {
 @media (prefers-color-scheme: light) { }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  /* body {
     background: #111;
     color: white;
   }
@@ -315,5 +315,5 @@ audio {
 
   code {
     color: #111;
-  }
+  } */
 }

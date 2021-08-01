@@ -303,8 +303,8 @@ article a {
 
 article img {
   max-width: 120%;
+  width: 120%;
   position: relative;
-  width: 130%;
   left: -10%;
   margin: 70px auto;
 }
@@ -343,6 +343,373 @@ audio {
   footer { padding: 0 20px; }
   h1[itemtype="headline"] { font-size: 220%; }
   .navigation header { padding: 0 20px; }
+
+  article img {
+    max-width: 100%;
+    position: initial;
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation header { display: block; }
+  .navigation header h3 { text-align: center; margin-bottom: 10px; }
+  .navigation header nav { text-align: center; }
+}
+
+
+/* light/dark mode */@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --base-document-width: 760px;
+  --base-font-size: 18px;
+  --base-color: #111111;
+
+  --link-color: #111111;
+  --link-color-hover: #111111;
+
+  --label-color: #5f5f5f;
+
+  --border-color: #eeeeee;
+
+  --badge-background-color: #eeeeee;
+  --badge-label-color: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--base-color);
+  font-size: var(--base-font-size);
+  line-height: 1.7em;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+hr {
+  border: 0;
+  border-top: 5px solid #f7f7f7;
+}
+
+
+::selection {
+  background: #ff0;
+  color: #000;
+}
+
+::-moz-selection {
+  background: #ff0;
+  color: #000;
+}
+
+/* width of the page */
+
+.wrapper {
+  max-width: var(--base-document-width);
+  margin: 0 auto;
+}
+
+/* links */
+
+a {
+  color: var(--link-color);
+  /* font-weight: 600; */
+}
+
+a:hover {
+  color: var(--link-color-hover);
+}
+
+
+/* headings */
+
+h1 { font-size: 220%; line-height: 1.2em; }
+h2 { font-size: 180%; line-height: 1.2em; }
+h3 { font-size: 160%; line-height: 1.2em; }
+h4 { font-size: 140%; line-height: 1.2em; }
+h5 { font-size: 120%; line-height: 1.2em; }
+h6 { font-size: 100%; line-height: 1.2em; }
+
+h1[itemtype="headline"] {
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  font-size: 260%;
+  line-height: 1.2em;
+}
+
+/* tables */
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: left;
+}
+
+th, td {
+  padding: 5px 10px;
+}
+
+
+/* quotes */
+
+blockquote {
+  position: relative;
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+  margin-right: 0;
+}
+
+blockquote:before {
+  content: ' ';
+  background-image: url('/assets/general/alert.svg');
+  background-size: 30px 30px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: -40px;
+  top: 6px;
+}
+
+blockquote p {
+  padding-left: 10px;
+}
+
+
+/* header navigation */
+
+.navigation {
+  /*border-bottom: 1px dotted var(--border-color);*/
+  margin-block-start: 30px;
+  margin-block-end: 50px;
+}
+
+.navigation header {
+  display: flex;
+  align-items: center;
+}
+
+.navigation header a {
+  text-decoration: none;
+}
+
+.navigation header a:hover {
+  text-decoration: underline;
+}
+
+.navigation header .home {
+  font-size: 130%;
+  font-weight: 900;
+}
+
+.navigation header .home a:hover {
+  text-decoration: none;
+}
+
+.navigation header nav {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation header nav a {
+  padding: 0 10px;
+  font-size: 90%;
+  font-weight: 500;
+}
+
+/* index post list */
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  margin: 0 0 20px 0;
+}
+
+.post-list li time {
+  display: block;
+  font-size: 70%;
+  font-weight: 500;
+}
+
+.post-list li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.post-list li a:hover {
+  text-decoration: underline;
+}
+
+.post-list li a h2 {
+  font-weight: 500;
+  font-size: 100%;
+  margin: 0;
+}
+
+
+/* project list */
+
+.project-list {
+  margin-top: 60px;
+}
+
+.project-list a {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.project-list li {
+  list-style-type: disclosure-closed;
+  padding-left: 10px;
+}
+
+
+/* webring */
+
+.webring a {
+  font-weight: 500;
+}
+
+
+/* tag badges */
+
+.tags {
+  margin-top: 5px;
+}
+
+.tags a {
+  font-size: 80%;
+  padding: 2px 10px;
+  border-radius: 20px;
+
+  background: var(--badge-background-color);
+  color: var(--badge-label-color) !important;
+}
+
+.tags a:hover {
+  filter: brightness(90%);
+}
+
+
+/* helpers */
+
+.top-margin {
+  margin-top: 60px;
+}
+
+.top-margin-huge {
+  margin-top: 100px;
+}
+
+code {
+  font-family: 'IBM Plex Mono', monospace;
+  background: rgb(255, 241, 177);
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+pre > code {
+  background: unset;
+  padding: unset;
+
+  padding: 15px 20px !important;
+  border-radius: 5px !important;
+  font-weight: 400;
+}
+
+pre {
+  font-size: 14px;
+  line-height: 1.5em;
+
+  margin-block-start: 40px;
+  margin-block-end: 40px;
+}
+
+img, video {
+  max-width: 100%;
+  margin: 30px auto;
+  display: block;
+  border-radius: 5px;
+}
+
+time {
+  color: var(--label-color);
+  font-size: 90%;
+}
+
+/* article */
+
+article a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+article img {
+  max-width: 120%;
+  width: 120%;
+  position: relative;
+  left: -10%;
+  margin: 70px auto;
+}
+
+article strong {
+  font-weight: 600;
+}
+
+/* audio */
+
+audio {
+  width: 100%;
+  outline: none;
+}
+
+
+/* footer */
+
+.footer {
+  margin-top: 70px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 90%;
+  color: #888;
+}
+
+.footer a {
+  color: #777;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 960px) {
+  main { padding: 0 20px; }
+  footer { padding: 0 20px; }
+  h1[itemtype="headline"] { font-size: 220%; }
+  .navigation { margin-block-start: 30px; }
+  .navigation header { padding: 0 20px; }
+
+  article img {
+    max-width: 100%;
+    position: initial;
+    margin: 50px auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -356,17 +723,9 @@ audio {
 
 @media (prefers-color-scheme: light) { }
 
-@media (prefers-color-scheme: dark) {
-  /* body {
-    background: #111;
-    color: white;
-  }
+@media (prefers-color-scheme: dark) { }
 
-  a {
-    color: white !important;
-  }
 
-  code {
-    color: #111;
-  } */
-}
+@media (prefers-color-scheme: light) { }
+
+@media (prefers-color-scheme: dark) { }

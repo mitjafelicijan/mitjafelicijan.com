@@ -22,22 +22,22 @@ My interests in this field are purely in encoding processes and experimental tes
 ## Glossary
 
 **deoxyribose**
-:  A five-carbon sugar molecule with a hydrogen atom rather than a hydroxyl group in the 2′ position; the sugar component of DNA nucleotides.
+A five-carbon sugar molecule with a hydrogen atom rather than a hydroxyl group in the 2′ position; the sugar component of DNA nucleotides.
 
 **double helix**
-:  The molecular shape of DNA in which two strands of nucleotides wind around each other in a spiral shape.
+The molecular shape of DNA in which two strands of nucleotides wind around each other in a spiral shape.
 
 **nitrogenous base**
-:  A nitrogen-containing molecule that acts as a base; often referring to one of the purine or pyrimidine components of nucleic acids.
+A nitrogen-containing molecule that acts as a base; often referring to one of the purine or pyrimidine components of nucleic acids.
 
 **phosphate group**
-:  A molecular group consisting of a central phosphorus atom bound to four oxygen atoms.
+A molecular group consisting of a central phosphorus atom bound to four oxygen atoms.
 
 **RGB**
-:  The RGB color model is an additive color model in which red, green and blue light are added together in various ways to reproduce a broad array of colors.
+The RGB color model is an additive color model in which red, green and blue light are added together in various ways to reproduce a broad array of colors.
 
 **GCC**
-:  The GNU Compiler Collection is a compiler system produced by the GNU Project supporting various programming languages.
+The GNU Compiler Collection is a compiler system produced by the GNU Project supporting various programming languages.
 
 ## Data encoding
 

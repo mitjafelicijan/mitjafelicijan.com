@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="yapyap.xsl"?>
+<rss version="2.0">
+ <channel>
+  <title>Mitja Felicijan</title>
+  <link>https://mitjafelicijan.com</link>
+  <description>Fan of science fiction and dabbler in code</description>
+  <managingEditor>m@mitjafelicijan.com</managingEditor>
+  <generator>YapYap</generator>
+  <crawlable>yes</crawlable>
+  <yapyap>1.0</yapyap>
+  <image>
+   <url>https://mitjafelicijan.com/assets/general/favicon.png</url>
+  </image>
+
+
+  <item>
+   <rid>2</rid>
+   <description>No-Code ML Apps: Build Models in a Few Clicks https://serokell.io/blog/benefits-of-no-code-applications</description>
+   <enclosure url="https://c.tenor.com/9Pxk6fdasc4AAAAC/what-elias-elias.gif"></enclosure>
+   <pubDate>Tue, 07 Sep 2021 16:00:00 +0000</pubDate>
+  </item>
+
+  <item>
+   <rid>2</rid>
+   <description>Well, this is cool http://unikernel.org/. Rethinking Cloud Infrastructure</description>
+   <pubDate>Tue, 07 Sep 2021 16:00:00 +0000</pubDate>
+  </item>
+
+  <item>
+   <rid>1</rid>
+   <description>Hi, Mark!</description>
+   <pubDate>Tue, 07 Sep 2021 00:00:00 +0000</pubDate>
+  </item>
+
+
+ </channel>
+</rss>

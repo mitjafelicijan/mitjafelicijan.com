@@ -15,7 +15,7 @@ But I also have a bunch of electronics that I bought through the time, and I am 
 
 A while ago I bought a small eInk display [Inky pHAT](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811) and I have a bunch of [Raspberry Pi's Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/) lying around that I really need to use.
 
-![Inky pHAT, Raspberry Pi Zero](/assets/world-clock/hardware.jpg)
+![Inky pHAT, Raspberry Pi Zero](/assets/world-clock/hardware.jpg.dith.gif)
 
 Since the Inky [Inky pHAT](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811) is essentially a HAT, it can easily be added on top of the [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/).
 
@@ -80,7 +80,7 @@ Then we add a cronjob with `crontab -e`.
 
 So, we end up with a result like this.
 
-![World Clock](/assets/world-clock/world-clock.jpg)
+![World Clock](/assets/world-clock/world-clock.jpg.dith.gif)
 
 And for the enclosure that can be 3D printed, but I haven't yet something like this can be used.
 

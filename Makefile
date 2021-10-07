@@ -16,6 +16,7 @@ dev:
 	alternator --watch
 
 build:
+	bash dither-images.sh
 	mkdir -p public
 	openring -l 165 -n 4 -p 1 \
 		-s https://cronokirby.com/posts/index.xml \

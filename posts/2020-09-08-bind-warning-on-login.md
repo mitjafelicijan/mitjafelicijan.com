@@ -23,7 +23,7 @@ bind '"\e[Z":menu-complete-backward'
 
 I haven't noticed anything wrong with this and all was working fine until I restarted my machine and then I got this error.
 
-![Profile bind error](/assets/profile-bind-error/error.jpg)
+![Profile bind error](/assets/profile-bind-error/error.jpg.dith.gif)
 
 When I pressed OK, I got into the [Gnome shell](https://wiki.gnome.org/Projects/GnomeShell) and all was working fine, but the error was still bugging me. I started looking for the reason why this is happening and found a solution to this error on [Remote SSH Commands - bash bind warning: line editing not enabled](https://superuser.com/a/892682).
 

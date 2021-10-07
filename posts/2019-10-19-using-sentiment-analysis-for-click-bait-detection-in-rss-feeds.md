@@ -74,7 +74,7 @@ plt.show()
 2. Rule-based approach may not be the best way of doing this. By using deep learning we would be able to get better insights.
 3. **Next step would be to** periodically fetch RSS items and store them over a longer period of time and then perform analysis again and use either machine learning or deep learning on top of it.
 
-![Relationship between title and description](/assets/sentiment-analysis/guardian-sa-title-desc-relationship.png)
+![Relationship between title and description](/assets/sentiment-analysis/guardian-sa-title-desc-relationship.png.dith.gif)
 
 Figure above displays difference between title and description sentiment for specific RSS feed item. 1 means positive and -1 means negative sentiment.
 

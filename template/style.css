@@ -38,12 +38,12 @@ hr {
 
 
 ::selection {
-  background: #ff0;
+  background: rgb(255, 241, 177);
   color: #000;
 }
 
 ::-moz-selection {
-  background: #ff0;
+  background: rgb(255, 241, 177);
   color: #000;
 }
 
@@ -399,17 +399,6 @@ body {
 hr {
   border: 0;
   border-top: 5px solid #f7f7f7;
-}
-
-
-::selection {
-  background: #ff0;
-  color: #000;
-}
-
-::-moz-selection {
-  background: #ff0;
-  color: #000;
 }
 
 /* width of the page */

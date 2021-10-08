@@ -12,4 +12,13 @@ window.addEventListener('load', () => {
       evt.target.src = ditheredImage;
     });
   });
+
+  // flip CV image on mouse over
+  document.querySelector('.cv-picture img').addEventListener('mouseover', evt => {
+    evt.target.style.transform = 'scaleX(-1)';
+  });
+
+  document.querySelector('.cv-picture img').addEventListener('mouseout', evt => {
+    evt.target.style.transform = 'scaleX(1)';
+  });
 });

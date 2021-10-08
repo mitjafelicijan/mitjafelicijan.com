@@ -16,7 +16,11 @@ Tags: []
   }
 </style>
 
+<div class="cv-picture">
+
 ![Picture](/assets/cv/avatar.gif)
+
+</div>
 
 **Mitja Felicijan**
 

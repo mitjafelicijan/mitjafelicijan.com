@@ -7,11 +7,20 @@ Created: ""
 Tags: []
 ---
 
+<style>
+  img {
+    width: auto !important;
+    left: initial !important;
+    margin: initial !important;
+    border: 0 !important;
+  }
+</style>
+
+![Picture](/assets/cv/avatar.gif)
+
 **Mitja Felicijan**
 
-*[m@mitjafelicijan.com](mailto:m@mitjafelicijan.com?subject=Website+CV+Contact)*
-
-*Slovenia, EU*
+Email me at *[m@mitjafelicijan.com](mailto:m@mitjafelicijan.com?subject=Website+CV+Contact)*
 
 ## Technical experience
 
@@ -49,11 +58,11 @@ Tags: []
 
 - Freelancer (2001 – Present)
 - Software developer at Mobinia (2005 – 2007)
-- CTO at Milk (2007 – 2009)
+- Senior Software Engineer at Milk (2007 – 2009)
 - Co-Founder of UTS (2009 – 2014)
 - Senior Software Engineer at TSmedia (2015 - 2017)
 - Senior Software Engineer at Renderspace (2017 - 2019)
-- IT Consultant (2017 – Present)
+- Senior Software Engineer at Digg (2019 - Present)
 
 ## Awards
 

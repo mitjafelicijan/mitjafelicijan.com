@@ -59,7 +59,7 @@ Email me at *[m@mitjafelicijan.com](mailto:m@mitjafelicijan.com?subject=Website+
 - Freelancer (2001 – Present)
 - Software developer at Mobinia (2005 – 2007)
 - Senior Software Engineer at Milk (2007 – 2009)
-- Co-Founder of UTS (2009 – 2014)
+- Co-Founder of UTS (2009 – 2015)
 - Senior Software Engineer at TSmedia (2015 - 2017)
 - Senior Software Engineer at Renderspace (2017 - 2019)
 - Senior Software Engineer at Digg (2019 - Present)

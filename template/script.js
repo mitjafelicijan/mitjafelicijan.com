@@ -14,11 +14,14 @@ window.addEventListener('load', () => {
   });
 
   // flip CV image on mouse over
-  document.querySelector('.cv-picture img').addEventListener('mouseover', evt => {
-    evt.target.style.transform = 'scaleX(-1)';
-  });
+  const cvImage = document.querySelector('.cv-picture img');
+  if (cvImage) {
+    cvImage.addEventListener('mouseover', evt => {
+      evt.target.style.transform = 'scaleX(-1)';
+    });
 
-  document.querySelector('.cv-picture img').addEventListener('mouseout', evt => {
-    evt.target.style.transform = 'scaleX(1)';
-  });
+    cvImage.addEventListener('mouseout', evt => {
+      evt.target.style.transform = 'scaleX(1)';
+    });
+  }
 });

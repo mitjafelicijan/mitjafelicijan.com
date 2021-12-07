@@ -143,6 +143,10 @@ blockquote p {
   font-weight: 900;
 }
 
+.navigation header .home a {
+  color: var(--base-color);
+}
+
 .navigation header .home a:hover {
   text-decoration: none;
 }

@@ -303,6 +303,10 @@ article strong {
   font-weight: 600;
 }
 
+article ol {
+  padding-inline-start: 30px;
+}
+
 article .katex-display {
   margin: 3em 0 !important;
 }

@@ -23,7 +23,7 @@ Publisher Subscriber model is nothing new and there are many amazing solutions o
 
 The easiest way to explain this is with diagram bellow. Basic function is simple. We have subscribers that receive messages, and we have publishers that create and post messages. Similar model is also well know pattern that works on a premise of consumers and producers, and they take similar roles.
 
-![How PubSub works](/assets/simple-pubsub-server/pubsub-overview.png.dith.gif)
+![How PubSub works](/assets/simple-pubsub-server/pubsub-overview.png)
 
 **These are some naive characteristics we want to achieve:**
 
@@ -49,7 +49,7 @@ Read more about it on [official specification page](https://html.spec.whatwg.org
 
 ### Current browser support
 
-![Browser support](../assets/simple-pubsub-server/caniuse.png.dith.gif)
+![Browser support](../assets/simple-pubsub-server/caniuse.png)
 
 Check [https://caniuse.com/#feat=eventsource](https://caniuse.com/#feat=eventsource) for latest information about browser support.
 
@@ -107,7 +107,7 @@ Google Chrome provides build-in debugging and exploration tool for [Server-Sent 
 
 > You can debug only client side events that get received and not the server ones. For debugging server events add `console.log` to `server.js` code and print out events.
 
-![Google Chrome Developer Tools EventStream](../assets/simple-pubsub-server/chrome-debugging.png.dith.gif)
+![Google Chrome Developer Tools EventStream](../assets/simple-pubsub-server/chrome-debugging.png)
 
 ## Server implementation
 

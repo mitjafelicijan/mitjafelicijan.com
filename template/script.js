@@ -1,17 +1,17 @@
 window.addEventListener('load', () => {
   // dither image on mouse over replace
-  document.querySelectorAll('article img').forEach(img => {
-    const ditheredImage = img.src;
-    const originalImage = img.src.replace('.dith.gif', '');
+  // document.querySelectorAll('article img').forEach(img => {
+  //   const ditheredImage = img.src;
+  //   const originalImage = img.src.replace('.dith.gif', '');
 
-    img.addEventListener('mouseover', evt => {
-      evt.target.src = originalImage;
-    });
+  //   img.addEventListener('mouseover', evt => {
+  //     evt.target.src = originalImage;
+  //   });
 
-    img.addEventListener('mouseout', evt => {
-      evt.target.src = ditheredImage;
-    });
-  });
+  //   img.addEventListener('mouseout', evt => {
+  //     evt.target.src = ditheredImage;
+  //   });
+  // });
 
   // flip CV image on mouse over
   const cvImage = document.querySelector('.cv-picture img');

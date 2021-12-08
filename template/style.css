@@ -1,5 +1,5 @@
 :root {
-  --base-document-width: 740px;
+  --base-document-width: 680px;
   --base-font-size: 18px;
   --base-color: #111111;
 
@@ -176,7 +176,7 @@ blockquote p {
 
 .post-list li time {
   display: block;
-  font-size: 70%;
+  font-size: 80%;
   font-weight: 500;
   line-height: 1.2em;
 }
@@ -300,7 +300,7 @@ article img {
   position: relative;
   left: -10%;
   margin: 40px auto;
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
 }
 
 article strong {
@@ -349,7 +349,7 @@ audio {
   article img {
     max-width: 100%;
     position: initial;
-    margin: 50px auto;
+    margin: 20px auto;
   }
 }
 

@@ -5,7 +5,10 @@ provision:
 	go build \
 	go install
 
-dev:
+dither:
+	bash dither-images.sh
+
+openring:
 	openring -l 165 -n 4 -p 1 \
 		-s https://cronokirby.com/posts/index.xml \
 		-s https://drewdevault.com/feed.xml \
@@ -13,10 +16,11 @@ dev:
 		-s https://serokell.io/blog.rss.xml \
 		< template/openring.tmpl \
 		> template/openring-build.html
+
+dev: openring
 	alternator --watch
 
 build:
-	bash dither-images.sh
 	mkdir -p public
 	openring -l 165 -n 4 -p 1 \
 		-s https://cronokirby.com/posts/index.xml \
@@ -28,7 +32,7 @@ build:
 
 	alternator --build
 	rm template/openring-build.html
-	cp yapyap/* public/
 
 deploy: build
 	cd public && scp -r * root@165.22.87.180:/var/www/html/mitjafelicijan.com/
+	ssh root@165.22.87.180 chown www-data:www-data /var/www/html/mitjafelicijan.com/ -Rf

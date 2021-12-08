@@ -1,7 +1,7 @@
 ---
-Title: Using sentiment analysis for click&#8209;bait detection in RSS feeds
-Description: Using Python with sentiment analysis to detect if titles in RSS feeds are click-bait
-Slug: using-sentiment-analysis-for-click-bait-detection-in-rss-feeds
+Title: Using sentiment analysis for clickbait detection in RSS feeds
+Description: Using Python with sentiment analysis to detect if titles in RSS feeds are clickbait
+Slug: using-sentiment-analysis-for-clickbait-detection-in-rss-feeds
 Listing: true
 Created: 2019-10-19
 Tags: []
@@ -11,7 +11,7 @@ Tags: []
 
 One of the things that interested me for a while now is  if major well established news sites use click bait titles to drive additional traffic to their sites and generate additional impressions.
 
-Goal is to see how article titles and actual content of article differ from each other and see if titles are click-baited.
+Goal is to see how article titles and actual content of article differ from each other and see if titles are clickbaited.
 
 ## Preparing and cleaning data
 
@@ -74,7 +74,7 @@ plt.show()
 2. Rule-based approach may not be the best way of doing this. By using deep learning we would be able to get better insights.
 3. **Next step would be to** periodically fetch RSS items and store them over a longer period of time and then perform analysis again and use either machine learning or deep learning on top of it.
 
-![Relationship between title and description](/assets/sentiment-analysis/guardian-sa-title-desc-relationship.png.dith.gif)
+![Relationship between title and description](/assets/sentiment-analysis/guardian-sa-title-desc-relationship.png)
 
 Figure above displays difference between title and description sentiment for specific RSS feed item. 1 means positive and -1 means negative sentiment.
 

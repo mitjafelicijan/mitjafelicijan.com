@@ -144,6 +144,9 @@ su - root \
 
 Currently, most of these recipes use what Debian and this is totally fine with me since I never use bleeding edge features of a package. But if something major would come to light, I will replace it with a possible compilation script or something similar.
 
+This is some of the output from the installation script.
+
+![](/assets/dfd-rice/script.png)
 
 Let's take a look at some examples in the installation script.
 
@@ -185,3 +188,9 @@ Check [Multi-Threaded Processing in Bash Scripts](https://www.cloudsavvyit.com/1
 ## Conclusion
 
 Take a look at https://github.com/mitjafelicijan/dfd-rice/blob/develop/tools/install.sh script to get familiar with it. This is just a first iteration and I will continue to update it because I need this in my life.
+
+The current version boots in 4s to the login prompt, and after you log in, the desktop environment loads in 2s. So, its fast, very fast. And on clean boot, I measured ~230 MB of RAM usage.
+
+And this is how it looks with two terminals side by side. I really like the simplicity and clean interface. I will polish the colors and stuff like that, but I really do like the results.
+
+![](/assets/dfd-rice/desktop.png)

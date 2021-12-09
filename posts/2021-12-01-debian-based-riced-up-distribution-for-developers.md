@@ -2,7 +2,7 @@
 Title: Debian based riced up distribution for Developers and DevOps folks
 Description: Debian based riced up distribution for Developers and DevOps folks
 Slug: debian-based-riced-up-distribution-for-developers-and-devops-folks
-Listing: false
+Listing: true
 Created: 2021-12-01
 Tags: []
 ---
@@ -106,6 +106,49 @@ While all of them provided what I needed, I liked i3 the most. What particular c
 
 ## Batteries included
 
+The source for the whole thing is located on Github https://github.com/mitjafelicijan/dfd-rice.
+
+Currenly included:
+- `non-free` (enables non-free packages in apt)
+- `sudo` (adds sudo and adds user to sudo group)
+- `essentials` (gcc, htop, zip, curl, etc...)
+- `wifi` (network manager nmtui)
+- `desktop` (i3, dmenu, fonts, configurations)
+- `pulseaudio` (pulseaudio with pavucontrol)
+- `code-editors` (vim, micro, vscode)
+- `ohmybash` (make bash pretty)
+- `file-managers` (mc)
+- `git-ui` (terminal git gui)
+- `meld` (diff tool)
+- `profiling` (kcachegrind, valgrind, strace, ltrace)
+- `browsers` (brave, firefox, chromium)
+- programming languages:
+  - `python`
+  - `golang`
+  - `nodejs`
+  - `rust`
+  - `nim`
+  - `php`
+  - `ruby`
+- `docker` (with docker-compose)
+- `ansible`
+
+Install script also allows you to install only specific packages (example for: essentials ohmybash docker rust).
+
+```sh
+su - root \
+    bash -c "$(wget -q https://raw.github.com/mitjafelicijan/dfd-rice/master/tools/install.sh -O -)" -- \
+    essentials ohmybash docker rust
+
+```
+
+Currently, most of these recipes use what Debian and this is totally fine with me since I never use bleeding edge features of a package. But if something major would come to light, I will replace it with a possible compilation script or something similar.
+
+
+Let's take a look at some examples in the installation script.
+
+
+##### Docker recipe
 
 ```sh
 # docker
@@ -122,7 +165,7 @@ systemctl status docker --no-pager
 /sbin/usermod -aG docker $USERNAME
 ```
 
-### Making bash pretty
+##### Making bash pretty
 
 I really like [Oh My Zsh](https://ohmyz.sh/), but I don't like zsh shell. When I used it, I constantly needed to be aware of it and running bash scripts was a pain. So, I was really delighted when I found out that a version for bash existed called [Oh My Bash](https://ohmybash.nntoan.com/). Let's take a look at the recipe for installing it.
 
@@ -136,8 +179,9 @@ wait ${T1}
 
 Because OhMyBash does `exec bash` at the end, this traps our script inside another shell and our script cannot continue.  For that reason, I executed this in background. But that presents a new problem. Because this is executed in background, we lose track of progress naturally. And that strange trick with `T1=${!}` and `wait ${T1}` waits for the background process to finish before continuing to another task in bash script.
 
-[Multi-Threaded Processing in Bash Scripts](https://www.cloudsavvyit.com/12277/how-to-use-multi-threaded-processing-in-bash-scripts/)
+Check [Multi-Threaded Processing in Bash Scripts](https://www.cloudsavvyit.com/12277/how-to-use-multi-threaded-processing-in-bash-scripts/) for more details.
 
 
+## Conclusion
 
-
+Take a look at https://github.com/mitjafelicijan/dfd-rice/blob/develop/tools/install.sh script to get familiar with it. This is just a first iteration and I will continue to update it because I need this in my life.

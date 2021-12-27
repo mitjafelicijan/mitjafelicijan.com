@@ -15,7 +15,8 @@ Tags: []
 6. [Preparing PID 1 application in Golang](#preparing-pid-1-application-in-golang)
 7. [Running all of it with QEMU](#running-all-of-it-with-qemu)
 8. [Size comparison](#size-comparison)
-9. [Is running applications as PID 1 even worth it?](#is-running-applications-as-pid-1-even-worth-it)
+9. [Creating ISO image and running with VirtualBox](#creating-iso-image-and-running-with-virtualbox)
+10. [Is running applications as PID 1 even worth it?](#is-running-applications-as-pid-1-even-worth-it)
 
 ## Unikernels, kernels, and alike
 
@@ -84,19 +85,19 @@ For the sake of simplicity we will not be cross-compiling any of it and just use
 ## Compiling Linux kernel
 
 ```sh
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.7.tar.xz
-tar xf linux-5.15.7.tar.xz
+$ wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.7.tar.xz
+$ tar xf linux-5.15.7.tar.xz
 
-cd linux-5.15.7
+$ cd linux-5.15.7
 
-make clean
+$ make clean
 
 # read more about this https://stackoverflow.com/a/41886394
-make defconfig
+$ make defconfig
 
-time make -j `nproc`
+$ time make -j `nproc`
 
-cd ..
+$ cd ..
 ```
 
 At this point we have kernel image that is located in `arch/x86_64/boot/bzImage`. We will use this in QEMU later.
@@ -145,7 +146,7 @@ There are two ways of compiling Golang application. Statically and dynamically.
 To statically compile the binary, use the following command.
 
 ```sh
-go build -ldflags="-extldflags=-static" init.go
+$ go build -ldflags="-extldflags=-static" init.go
 ```
 
 We can also check if the binary is statically compiled with:
@@ -161,8 +162,8 @@ not a dynamic executable
 At this point, we need to create [initramfs](https://www.linuxfromscratch.org/blfs/view/svn/postlfs/initramfs.html) (abbreviated from "initial RAM file system", is the successor of initrd. It is a cpio archive of the initial file system that gets loaded into memory during the Linux startup process).
 
 ```sh
-echo init | cpio -o --format=newc > initramfs
-mv initramfs bin/initramfs
+$ echo init | cpio -o --format=newc > initramfs
+$ mv initramfs bin/initramfs
 ```
 
 The projects at this stage should look like this.
@@ -182,7 +183,7 @@ pid1/
 [QEMU](https://www.qemu.org/) is a free and open-source hypervisor. It emulates the machine's processor through dynamic binary translation and provides a set of different hardware and device models for the machine, enabling it to run a variety of guest operating systems.
 
 ```sh
-qemu-system-x86_64 -serial stdio -kernel bin/bzImage -initrd bin/initramfs -append "console=ttyS0" -m 128
+$ qemu-system-x86_64 -serial stdio -kernel bin/bzImage -initrd bin/initramfs -append "console=ttyS0" -m 128
 ```
 
 ```sh
@@ -231,6 +232,65 @@ total 12M
 -rw-r--r--. 1 m m 9.3M Dec 13 10:24 bzImage
 -rw-r--r--. 1 m m 1.9M Dec 27 01:19 initramfs
 ```
+
+## Creating ISO image and running with VirtualBox
+
+First we need to create proper folder structure with `mkdir -p iso/boot/grub`.
+
+Then we need to download the [grub binary](https://github.com/littleosbook/littleosbook/raw/master/files/stage2_eltorito). You can read more about this program on https://github.com/littleosbook/littleosbook.
+
+```sh
+$ wget -O iso/boot/grub/stage2_eltorito https://github.com/littleosbook/littleosbook/raw/master/files/stage2_eltorito
+```
+
+```sh
+$ tree iso/boot/
+iso/boot/
+├── bzImage
+├── grub
+│   ├── menu.lst
+│   └── stage2_eltorito
+└── initramfs
+```
+
+Let's copy files into proper folders.
+
+
+```sh
+$ cp stage2_eltorito iso/boot/grub/
+$ cp bin/bzImage iso/boot/
+$ cp bin/initramfs iso/boot/
+```
+
+Lets create a GRUB config file at `nano iso/boot/grub/menu.lst` with contents.
+
+```ini
+default=0
+timeout=5
+
+title GoAsPID1
+kernel /boot/bzImage
+initrd /boot/initramfs
+```
+
+Let's create iso file by using genisoimage:
+
+```sh
+genisoimage -R                              \
+            -b boot/grub/stage2_eltorito    \
+            -no-emul-boot                   \
+            -boot-load-size 4               \
+            -A os                           \
+            -input-charset utf8             \
+            -quiet                          \
+            -boot-info-table                \
+            -o GoAsPID1.iso                 \
+            iso
+```
+
+This will produce `GoAsPID1.iso` which you can use with [Virtualbox](https://www.virtualbox.org/) or [Gnome Boxes](https://apps.gnome.org/app/org.gnome.Boxes/).
+
+<video src="/assets/pid1/boxes.mp4" controls></video>
 
 ## Is running applications as PID 1 even worth it?
 

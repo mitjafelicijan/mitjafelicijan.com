@@ -128,7 +128,7 @@ func main() {
 }
 ```
 
-If you notice, we have a forever loop in the main, with a simple sleep of 1 second to not overwhelm the CPU.
+If you notice, we have a forever loop in the main, with a simple sleep of 1 second to not overwhelm the CPU. This is because PID 1 should never complete and exit. That would result in kernel panic.
 
 There are two ways of compiling Golang application. Statically and dynamically.
 

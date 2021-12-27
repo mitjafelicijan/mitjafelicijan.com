@@ -15,7 +15,7 @@ Tags: []
 6. [Preparing PID 1 application in Golang](#preparing-pid-1-application-in-golang)
 7. [Running all of it with QEMU](#running-all-of-it-with-qemu)
 8. [Size comparison](#size-comparison)
-9. [Creating ISO image and running with VirtualBox](#creating-iso-image-and-running-with-virtualbox)
+9. [Creating ISO image and running it with Gnome Boxes](#creating-iso-image-and-running-it-with-gnome-boxes)
 10. [Is running applications as PID 1 even worth it?](#is-running-applications-as-pid-1-even-worth-it)
 
 ## Unikernels, kernels, and alike
@@ -233,7 +233,7 @@ total 12M
 -rw-r--r--. 1 m m 1.9M Dec 27 01:19 initramfs
 ```
 
-## Creating ISO image and running with VirtualBox
+## Creating ISO image and running it with Gnome Boxes
 
 First we need to create proper folder structure with `mkdir -p iso/boot/grub`.
 

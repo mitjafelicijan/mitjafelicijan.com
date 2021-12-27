@@ -7,7 +7,17 @@ Created: 2021-12-25
 Tags: []
 ---
 
+1. [Unikernels, kernels, and alike](#unikernels-kernels-and-alike)
+2. [What is PID 1?](#what-is-pid-1)
+3. [So why even run application as PID 1 instead of just using a container?](#so-why-even-run-application-as-pid-1-instead-of-just-using-a-container)
+4. [The master plan](#the-master-plan)
+5. [Compiling Linux kernel](#compiling-linux-kernel)
+6. [Preparing PID 1 application in Golang](#preparing-pid-1-application-in-golang)
+7. [Running all of it with QEMU](#running-all-of-it-with-qemu)
+8. [Size comparison](#size-comparison)
+9. [Is running applications as PID 1 even worth it?](#is-running-applications-as-pid-1-even-worth-it)
 
+## Unikernels, kernels, and alike
 
 I have been reading a lot about [unikernernels](https://en.wikipedia.org/wiki/Unikernel) lately and found them very intriguing. When you push away all the marketing speak and look at the idea, it makes a lot of sense.
 
@@ -63,7 +73,7 @@ The idea of running this as PID 1 would result in a significantly smaller footpr
 
 > You could run a simple init system inside Docker container described more in this article [Docker and the PID 1 zombie reaping problem](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/).
 
-## The plan
+## The master plan
 
 1. Compile Linux kernel with the default definitions.
 2. Prepare a Hello World application in Golang that is statically compiled.

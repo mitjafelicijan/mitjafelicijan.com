@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="unikernels.svg"
+   inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+   inkscape:export-xdpi="127.98862"
+   inkscape:export-ydpi="127.98862"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4948513"
+     inkscape:cx="431.48104"
+     inkscape:cy="473.6257"
+     inkscape:window-width="1887"
+     inkscape:window-height="913"
+     inkscape:window-x="1859"
+     inkscape:window-y="48"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g98495"
+       inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+       inkscape:export-xdpi="127.98862"
+       inkscape:export-ydpi="127.98862">
+      <rect
+         style="fill:#ececec;stroke:none;stroke-width:0.318966;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect18248"
+         width="65.511665"
+         height="75.571449"
+         x="5.6951494"
+         y="75.506912"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862" />
+      <rect
+         style="fill:#ececec;stroke:none;stroke-width:0.318966;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect18418"
+         width="65.511665"
+         height="75.571449"
+         x="72.166878"
+         y="75.506912"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862" />
+      <rect
+         style="fill:#ececec;stroke:none;stroke-width:0.318966;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect18420"
+         width="65.511665"
+         height="75.571449"
+         x="138.63863"
+         y="75.506912"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Heavy';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="25.735832"
+         y="144.60236"
+         id="text18439"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862"><tspan
+           sodipodi:role="line"
+           id="tspan18437"
+           style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:2.82222px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Ultra-Bold';fill:#000000;stroke-width:0.264583"
+           x="25.735832"
+           y="144.60236">VIRTUAL MACHINE</tspan></text>
+      <g
+         id="g50691"
+         transform="translate(0,-101.60001)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.429153;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect38097-3"
+           width="50.57568"
+           height="8.4333"
+           x="13.294504"
+           y="213.63496"
+           ry="1.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:2.46944px;line-height:1.25;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Heavy';fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.263063"
+           y="218.54855"
+           id="text32261"><tspan
+             sodipodi:role="line"
+             id="tspan32259"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;stroke-width:0.264583"
+             x="24.263063"
+             y="218.54855">HOST OS / HYPERVISOR</tspan></text>
+      </g>
+      <rect
+         style="fill:#f9f9f9;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect38097"
+         width="22.000685"
+         height="26.315866"
+         x="13.294504"
+         y="184.14406"
+         ry="1.5"
+         transform="translate(0,-102.12917)" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="24.336025"
+         y="204.21999"
+         id="text38435"
+         transform="translate(0,-102.12917)"><tspan
+           sodipodi:role="line"
+           id="tspan38433"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+           x="24.336025"
+           y="204.48907">VIRTUAL</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+           x="24.336025"
+           y="206.28824"
+           id="tspan38945">MACHINE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="24.336025"
+         y="198.19913"
+         id="text41165"
+         transform="translate(0,-102.12917)"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+           x="24.336025"
+           y="198.19913"
+           id="tspan41163">GUEST OS</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="24.336025"
+         y="189.40337"
+         id="text42587"
+         transform="translate(0,-102.12917)"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+           x="24.336025"
+           y="189.67245"
+           id="tspan42585">TARGET</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+           x="24.336025"
+           y="191.47162"
+           id="tspan42611">SOFTWARE</tspan></text>
+      <g
+         id="g50696"
+         transform="translate(0,-99.483339)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.429153;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect48544"
+           width="50.57568"
+           height="8.4333"
+           x="13.294504"
+           y="223.15991"
+           ry="1.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:2.46944px;line-height:1.25;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Heavy';fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="31.535746"
+           y="228.24654"
+           id="text47169"><tspan
+             sodipodi:role="line"
+             id="tspan47167"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;stroke-width:0.264583"
+             x="31.535746"
+             y="228.24654">HARDWARE</tspan></text>
+      </g>
+      <g
+         id="g48202"
+         transform="translate(28.574999,-102.12917)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect48184"
+           width="22.000685"
+           height="26.315866"
+           x="13.294504"
+           y="184.14406"
+           ry="1.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="204.21999"
+           id="text48190"><tspan
+             sodipodi:role="line"
+             id="tspan48186"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="204.48907">VIRTUAL</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="206.28824"
+             id="tspan48188">MACHINE</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="198.19913"
+           id="text48194"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="198.19913"
+             id="tspan48192">GUEST OS</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="189.40337"
+           id="text48200"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="189.67245"
+             id="tspan48196">TARGET</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="191.47162"
+             id="tspan48198">SOFTWARE</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Heavy';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="95.948242"
+         y="144.60236"
+         id="text51110"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862"><tspan
+           sodipodi:role="line"
+           id="tspan51108"
+           style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:2.82222px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Ultra-Bold';fill:#000000;stroke-width:0.264583"
+           x="95.948242"
+           y="144.60236">CONTAINERS</tspan></text>
+      <g
+         id="g51118"
+         transform="translate(66.675002,-101.60001)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.429153;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect51112"
+           width="50.57568"
+           height="8.4333"
+           x="13.294504"
+           y="213.63496"
+           ry="1.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;line-height:1.25;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="33.144272"
+           y="218.54855"
+           id="text51116"><tspan
+             sodipodi:role="line"
+             id="tspan51114"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;stroke-width:0.264583"
+             x="33.144272"
+             y="218.54855">HOST OS</tspan></text>
+      </g>
+      <g
+         id="g51138"
+         transform="translate(66.675002,-102.12917)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect51120"
+           width="22.000685"
+           height="26.315866"
+           x="13.294504"
+           y="184.14406"
+           ry="1.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="206.33662"
+           id="text51126"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="206.33662"
+             id="tspan51124">CONTAINER</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="198.19913"
+           id="text51130"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="198.46822"
+             id="tspan51128">PROGRAMS &amp;</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="200.26738"
+             id="tspan56912">LIBRARIES</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="189.40337"
+           id="text51136"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="189.67245"
+             id="tspan51132">TARGET</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="191.47162"
+             id="tspan51134">SOFTWARE</tspan></text>
+      </g>
+      <g
+         id="g51146"
+         transform="translate(66.675002,-99.483339)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.429153;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect51140"
+           width="50.57568"
+           height="8.4333"
+           x="13.294504"
+           y="223.15991"
+           ry="1.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;line-height:1.25;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="31.535746"
+           y="228.24654"
+           id="text51144"><tspan
+             sodipodi:role="line"
+             id="tspan51142"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;stroke-width:0.264583"
+             x="31.535746"
+             y="228.24654">HARDWARE</tspan></text>
+      </g>
+      <g
+         id="g51166"
+         transform="translate(95.250005,-102.12917)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect51148"
+           width="22.000685"
+           height="26.315866"
+           x="13.294504"
+           y="184.14406"
+           ry="1.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="206.33662"
+           id="text51154"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="206.33662"
+             id="tspan51152">CONTAINER</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="198.19913"
+           id="text51158"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="198.46822"
+             id="tspan51156">PROGRAMS &amp;</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="200.26738"
+             id="tspan64780">LIBRARIES</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="189.40337"
+           id="text51164"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="189.67245"
+             id="tspan51160">TARGET</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="191.47162"
+             id="tspan51162">SOFTWARE</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Heavy';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="162.66873"
+         y="144.60236"
+         id="text74212"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862"><tspan
+           sodipodi:role="line"
+           id="tspan74210"
+           style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:2.82222px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Ultra-Bold';fill:#000000;stroke-width:0.264583"
+           x="162.66873"
+           y="144.60236">UNIKERNELS</tspan></text>
+      <g
+         id="g74220"
+         transform="translate(132.82087,-101.60001)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.429153;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect74214"
+           width="50.57568"
+           height="8.4333"
+           x="13.294504"
+           y="213.63496"
+           ry="1.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;line-height:1.25;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="30.66217"
+           y="218.54855"
+           id="text74218"><tspan
+             sodipodi:role="line"
+             id="tspan74216"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;stroke-width:0.264583"
+             x="30.66217"
+             y="218.54855">HYPERVISOR</tspan></text>
+      </g>
+      <g
+         id="g74240"
+         transform="translate(132.82087,-102.12917)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.377825;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect74222"
+           width="22.000685"
+           height="15.026576"
+           x="13.294504"
+           y="195.43335"
+           ry="0.85651237" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="202.66647"
+           id="text74232"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="202.93556"
+             id="tspan74228">UNIKERNEL &amp;</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="204.73473"
+             id="tspan74230">APPLICATION</tspan></text>
+      </g>
+      <g
+         id="g74248"
+         transform="translate(132.82087,-99.483339)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.429153;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect74242"
+           width="50.57568"
+           height="8.4333"
+           x="13.294504"
+           y="223.15991"
+           ry="1.5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;line-height:1.25;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="31.535746"
+           y="228.24654"
+           id="text74246"><tspan
+             sodipodi:role="line"
+             id="tspan74244"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.46944px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';fill:#4d4d4d;stroke-width:0.264583"
+             x="31.535746"
+             y="228.24654">HARDWARE</tspan></text>
+      </g>
+      <g
+         id="g85408"
+         transform="translate(161.34783,-102.25244)"
+         inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+         inkscape:export-xdpi="127.98862"
+         inkscape:export-ydpi="127.98862">
+        <rect
+           style="fill:#f9f9f9;stroke:none;stroke-width:0.377825;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect85400"
+           width="22.000685"
+           height="15.026576"
+           x="13.294504"
+           y="195.43335"
+           ry="0.85651237" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;line-height:0.85;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="24.336025"
+           y="202.66647"
+           id="text85406"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="202.93556"
+             id="tspan85402">UNIKERNEL &amp;</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.11667px;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display Bold';text-align:center;text-anchor:middle;fill:#4d4d4d;stroke-width:0.264583"
+             x="24.336025"
+             y="204.73473"
+             id="tspan85404">APPLICATION</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g48182"
+       transform="translate(0,-102.12917)"
+       inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/assets/pid1/unikernels.png"
+       inkscape:export-xdpi="127.98862"
+       inkscape:export-ydpi="127.98862" />
+  </g>
+</svg>

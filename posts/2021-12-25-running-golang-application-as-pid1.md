@@ -89,7 +89,7 @@ time make -j `nproc`
 cd ..
 ```
 
-At this point we have kernel image that is located in `arch/x86_64/boot/bzImage`. We will use this this in QEMU later.
+At this point we have kernel image that is located in `arch/x86_64/boot/bzImage`. We will use this in QEMU later.
 
 To make our lives a bit easier lets move the kernel image to another place. Lets create a folder `bin/` in the root of our project with `mkdir -p bin`.
 
@@ -128,7 +128,7 @@ func main() {
 }
 ```
 
-If you notice, we have a forever loop in the main, with a simple sleep of 1 second to not overwhelm the CPU. This is because PID 1 should never complete and exit. That would result in kernel panic.
+If you notice, we have a forever loop in the main, with a simple sleep of 1 second to not overwhelm the CPU. This is because PID 1 should never complete and/or exit. That would result in a kernel panic. Which is BAD!
 
 There are two ways of compiling Golang application. Statically and dynamically.
 

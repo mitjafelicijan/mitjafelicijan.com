@@ -19,14 +19,17 @@ About two weeks ago, I watched this outstanding documentary on YouTube [Springbo
 
 Before that, I only owned normal phones from Nokia and Siemens etc. Nothing special, actually. These are the phones we are talking about. Before 2007. Apple and Android phones didn't exist yet.
 
+These phones were rocking:
+
 - No selfie cameras.
 - ~2 inch displays.
 - ~120 MHz beast CPU's.
 - 144p main cameras.
 - But they had a headphone jack.
 
+Let's take a look at these beauties.
 
-![](/assets/wap/phones.jpg)
+![Old phones](/assets/wap/phones.jpg)
 
 ## WAP or Wireless Application Protocol
 

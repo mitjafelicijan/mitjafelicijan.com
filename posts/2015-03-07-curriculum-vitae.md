@@ -28,7 +28,7 @@ Email me at *[m@mitjafelicijan.com](mailto:m@mitjafelicijan.com?subject=Website+
 
 ## Technical experience
 
-- **Key languages:** Golang, Python, C, Bash.
+- **Key languages:** Nim, Golang, Python, C, Bash.
 - **Platforms:** GNU/Linux, macOS.
 - **Interests:** Zigbee, KNX, Modbus, Machine to Machine, Embedded systems, Operating systems, Distributed systems, IOT, RDBMS, Algorithms, Database engine design, SQL, NoSQL, NewSQL, Big data analytics, Machine learning, Prediction algorithms, Realtime analytics, Systems automation, Natural language processing, Bioinformatics.
 

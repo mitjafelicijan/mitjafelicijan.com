@@ -29,7 +29,7 @@ These phones were rocking:
 
 Let's take a look at these beauties.
 
-![Old phones](/assets/wap/phones.jpg)
+![Old phones](/assets/wap/phones.gif)
 
 ## WAP - Wireless Application Protocol
 

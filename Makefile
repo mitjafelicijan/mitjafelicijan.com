@@ -6,7 +6,7 @@ provision:
 	go install
 
 dither:
-	bash dither-images.sh
+	bash tools/dither-images.sh
 
 openring:
 	openring -l 165 -n 4 -p 1 \

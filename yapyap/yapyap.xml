@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="theme.xsl"?>
+<?xml-stylesheet type="text/xsl" href="theme.xsl?v=2"?>
 <rss version="2.0">
     <channel>
 
@@ -46,7 +46,7 @@
         <item>
 
             <guid>3</guid>
-            <description>It has to start somewhere! 🖖</description>
+            <description>It has to start somewhere! 🖖🤯🥷🦄</description>
             <pubDate>Fri, 28 Jan 2022 08:00:00 EST</pubDate>
 
             

@@ -35,7 +35,7 @@
 
           body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 140%;
             background: #fff;
           }
@@ -73,7 +73,7 @@
             max-width: var(--base-document-width);
             margin: 0 auto;
             padding: 20px;
-            padding-top: 110px;
+            padding-top: 100px;
           }
 
           article {
@@ -119,6 +119,12 @@
 
             article {
               border-color: #444;
+            }
+          }
+
+          @media only screen and (max-width: 600px) {
+            body {
+              font-size: 12px;
             }
           }
 

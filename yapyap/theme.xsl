@@ -134,7 +134,7 @@
               <h1><xsl:value-of select="rss/channel/title" /></h1>
               <p>
                 <a target="_blank">
-                  
+
                   <xsl:attribute name="href">
                     <xsl:value-of select="rss/channel/link" />
                   </xsl:attribute>
@@ -165,7 +165,7 @@
 
               <section>
                 <xsl:if test="description">
-                  <p><xsl:value-of select="description" /></p>
+                  <p><xsl:copy-of select="description" /></p>
                 </xsl:if>
 
                 <xsl:if test="pubDate">

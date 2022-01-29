@@ -10,9 +10,9 @@
 
         {{ range $i, $e := .Posts }}
         <item>
-            
-            <guid>aaa{{ $i }}</guid>
-            <description>{{ .Text }}</description>
+
+            <guid>{{ $i }}</guid>
+            <description>{{ .Text | nl2br }}</description>
             <pubDate>{{ .Date }}</pubDate>
 
             {{if .Image }}

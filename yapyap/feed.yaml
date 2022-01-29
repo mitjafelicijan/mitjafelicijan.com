@@ -5,6 +5,26 @@ feed:
 
 posts:
 
-  - text: My first post! It has to start somewhere!
+  - text: |
+      Containers are wonderful, but they come with a lot of baggage. And because they are in their nature layered, the images require quite a lot of space and also a lot of additional software to handle them. They are not as lightweight as they seem, and many popular images require 500 MB plus disk space.
+      The idea of running this as PID 1 would result in a significantly smaller footprint, as we will see later in the post.
+      https://mitjafelicijan.com/running-golang-application-as-pid1.html
     date: Sat, 29 Jan 2022 08:00:00 EST
+    image: /assets/yapyap/pid1.jpg
+
+  - text: |
+      A while ago I bought a small eInk display Inky pHAT and I have a bunch of Raspberry Pi's Zero lying around that I really need to use.
+      A cool, simple evening project using some of the parts I had lying at home.
+      https://mitjafelicijan.com/simple-world-clock-with-eiink-display-and-raspberry-pi-zero.html
+    date: Sat, 29 Jan 2022 08:00:00 EST
+    image: /assets/world-clock/world-clock.jpg
+
+  - text: |
+      A simple microblogging platform that you host yourself and is a valid RSS feed.
+      Done with XSL (The Extensible Stylesheet Language).
+      https://git.mitjafelicijan.com/yapyap.git/
+    date: Sat, 29 Jan 2022 08:00:00 EST
+
+  - text: It has to start somewhere! 🖖
+    date: Fri, 28 Jan 2022 08:00:00 EST
     image: /assets/yapyap/hello.png

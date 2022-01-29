@@ -1,3 +1,5 @@
+MAKEFLAGS := --jobs=2
+
 provision:
 	cd ~/Junk \
 	git clone https://git.sr.ht/~sircmpwn/openring \
@@ -17,7 +19,9 @@ openring:
 		< template/openring.tmpl \
 		> template/openring-build.html
 
-dev: openring
+dev: alternator server
+
+alternator: openring
 	alternator --watch
 
 build:
@@ -32,6 +36,10 @@ build:
 
 	alternator --build
 	rm template/openring-build.html
+
+	cd yapyap && yapyap --gen
+	cp yapyap/yapyap.xml public/
+	cp yapyap/theme.xsl public/
 
 server:
 	python3 -m http.server 8000 --directory public

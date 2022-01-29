@@ -1,0 +1,10 @@
+feed:
+  author: Mitja Felicijan
+  link: https://mitjafelicijan.com
+  email: m@mitjafelicijan.com
+
+posts:
+
+  - text: My first post! It has to start somewhere!
+    date: Sat, 29 Jan 2022 08:00:00 EST
+    image: /assets/yapyap/hello.png

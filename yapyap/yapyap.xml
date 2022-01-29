@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="theme.xsl"?>
+<rss version="2.0">
+    <channel>
+
+        <title>Mitja Felicijan</title>
+        <link>https://mitjafelicijan.com</link>
+        <managingEditor>m@mitjafelicijan.com (Mitja Felicijan)</managingEditor>
+        <generator>YapYap</generator>
+
+        
+        <item>
+            
+            <guid>aaa0</guid>
+            <description>My first post! It has to start somewhere!</description>
+            <pubDate>Sat, 29 Jan 2022 08:00:00 EST</pubDate>
+
+            
+            <enclosure url="/assets/yapyap/hello.png" type="image/jpeg" />
+            
+
+        </item>
+        
+
+    </channel>
+</rss>

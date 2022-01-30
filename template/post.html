@@ -28,8 +28,17 @@
       </article>
 
       {{if .Listing}}
-      <section class="top-margin">
-        <a href="mailto:m@mitjafelicijan.com">➝ Get in contact with me via email.</a>
+
+      <hr class="top-margin">
+
+      <section class="comments" data-guid="{{.Slug}}">
+        <h4>Comments</h4>
+        <form>
+          <p><input type="text" placeholder="Your name (optional)"></p>
+          <p><textarea placeholder="Your comment" required></textarea></p>
+          <p><button type="button">Submit your comment</button></p>
+        </form>
+        <ul></ul>
       </section>
 
       <hr class="top-margin">

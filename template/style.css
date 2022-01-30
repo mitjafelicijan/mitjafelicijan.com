@@ -14,6 +14,8 @@
   --badge-label-color: #111111;
 
   --code-font-size: 13px;
+
+  --comment-form-font: 16px 'Times New Roman', Times, serif;
 }
 
 * {
@@ -337,6 +339,34 @@ audio {
   color: #666;
 }
 
+/* comments */
+
+.comments input{
+  width: 100%;
+  font: var(--comment-form-font);
+  border: 1px solid #bbb;
+  padding: 5px;
+}
+
+.comments textarea{
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+  font: var(--comment-form-font);
+  border: 1px solid #bbb;
+  padding: 5px;
+}
+
+.comments ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.comments hr {
+  border: initial !important;
+  border-top: initial !important;
+}
 
 /* responsive */
 

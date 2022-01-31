@@ -37,10 +37,6 @@ build:
 	alternator --build
 	rm template/openring-build.html
 
-	cd yapyap && yapyap --gen
-	cp yapyap/yapyap.xml public/
-	cp yapyap/theme.xsl public/
-
 server:
 	python3 -m http.server 8000 --directory public
 

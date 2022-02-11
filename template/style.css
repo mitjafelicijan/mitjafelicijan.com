@@ -1,12 +1,13 @@
 :root {
   --base-document-width: 680px;
-  --base-font-size: 18px;
+  --base-font-size: 16px;
+  --base-line-heigh: 1.6em;
   --base-color: #111111;
 
   --link-color: #111111;
   --link-color-hover: #111111;
 
-  --label-color: #333333;
+  --label-color: #222222;
 
   --border-color: #eeeeee;
 
@@ -27,7 +28,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   color: var(--base-color);
   font-size: var(--base-font-size);
-  line-height: 1.7em;
+  line-height: var(--base-line-heigh);
   padding: 0;
   margin: 0;
   padding-bottom: 100px;
@@ -75,7 +76,7 @@ h6 { font-size: 100%; line-height: 1.2em; }
 h1[itemtype="headline"] {
   padding-bottom: 0;
   margin-bottom: 20px;
-  font-size: 260%;
+  font-size: 230%;
   line-height: 1.2em;
 }
 
@@ -160,7 +161,7 @@ blockquote p {
 
 .navigation header nav a {
   padding: 0 10px;
-  font-size: 90%;
+  font-size: 100%;
   font-weight: 500;
 }
 

@@ -15,3 +15,5 @@ I buy all the books I read from [Book Depository](https://www.bookdepository.com
 - The Essential Marcus Aurelius ([Goodreads](https://www.goodreads.com/book/show/2467557.The_Essential_Marcus_Aurelius))
 - Nim in Action ([Goodreads](https://www.goodreads.com/book/show/30724354-nim-in-action))
 - Flatland: A Romance of Many Dimensions ([Goodreads](https://www.goodreads.com/book/show/433567.Flatland))
+- Redis Cookbook ([Goodreads](https://www.goodreads.com/book/show/12481481-redis-cookbook))
+- Microservice Architecture ([Goodreads](https://www.goodreads.com/book/show/30827276-microservice-architecture-aligning-principles-practices-and-culture?ref=nav_sb_noss_l_15))

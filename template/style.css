@@ -281,6 +281,10 @@ img, video {
   border-radius: 5px;
 }
 
+video {
+  background: var(--badge-background-color);
+}
+
 time {
   color: var(--label-color);
   font-size: 90%;

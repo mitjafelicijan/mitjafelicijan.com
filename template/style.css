@@ -398,9 +398,21 @@ audio {
 
 @media (prefers-color-scheme: light) { }
 
-@media (prefers-color-scheme: dark) { }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #222;
+    color: #fff;
+  }
 
+  time {
+    color: #fff;
+  }
 
-@media (prefers-color-scheme: light) { }
+  a {
+    color: #fff !important;
+  }
 
-@media (prefers-color-scheme: dark) { }
+  code {
+    color: #222 !important;
+  }
+}

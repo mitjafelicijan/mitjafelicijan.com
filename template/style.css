@@ -107,7 +107,7 @@ blockquote {
 
 blockquote:before {
   content: ' ';
-  background-image: url('/assets/general/alert.svg');
+  background-image: url('/assets/general/alert-light.svg');
   background-size: 30px 30px;
   height: 30px;
   width: 30px;
@@ -414,5 +414,9 @@ audio {
 
   code {
     color: #222 !important;
+  }
+
+  blockquote:before {
+    background-image: url('/assets/general/alert-dark.svg');
   }
 }

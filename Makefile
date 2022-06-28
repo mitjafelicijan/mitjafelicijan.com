@@ -11,29 +11,24 @@ dither:
 	bash tools/dither-images.sh
 
 openring:
-	openring -l 165 -n 4 -p 1 \
-		-s https://cronokirby.com/posts/index.xml \
+	mkdir -p public
+	openring -l 165 -n 5 -p 1 \
 		-s https://drewdevault.com/feed.xml \
 		-s https://danluu.com/atom.xml \
 		-s https://serokell.io/blog.rss.xml \
+		-s https://cronokirby.com/posts/index.xml \
+		-s https://www.jeffgeerling.com/blog.xml \
 		< template/openring.tmpl \
 		> template/openring-build.html
 
 dev: alternator server
 
 alternator: openring
+	mkdir -p public
 	alternator --watch
 
-build:
+build: openring
 	mkdir -p public
-	openring -l 165 -n 4 -p 1 \
-		-s https://cronokirby.com/posts/index.xml \
-		-s https://drewdevault.com/feed.xml \
-		-s https://danluu.com/atom.xml \
-		-s https://serokell.io/blog.rss.xml \
-		< template/openring.tmpl \
-		> template/openring-build.html
-
 	alternator --build
 	rm template/openring-build.html
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
 :root {
   --base-document-width: 640px;
   --base-font-size: 16px;
@@ -25,7 +27,8 @@
 
 body {
   background: white;
-  font-family: 'Times New Roman', Times, serif;
+  /*font-family: 'Times New Roman', Times, serif;*/
+  font-family: 'IBM Plex Sans', sans-serif;
   color: var(--base-color);
   font-size: var(--base-font-size);
   line-height: var(--base-line-heigh);
@@ -59,9 +62,13 @@ hr {
 
 /* links */
 
-a {}
+a {
+  color: black;
+}
 
-a:hover {}
+a:hover {
+  background: rgb(255, 241, 177);
+}
 
 
 /* headings */
@@ -182,16 +189,18 @@ blockquote p {
   font-size: 80%;
   font-weight: 500;
   line-height: 1.2em;
+  color: #a7a7a7;
 }
 
 .post-list li a {
   display: inline-block;
+  text-decoration: none;
 }
 
 .post-list li a:hover {}
 
 .post-list li a h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 100%;
   margin: 0;
 }
@@ -392,11 +401,12 @@ audio {
   .navigation header { display: block; }
   .navigation header h3 { text-align: center; margin-bottom: 10px; }
   .navigation header nav { text-align: center; }
+  .post-list li a h2 { font-weight: 500; }
 }
 
 /* light/dark mode */
 
-@media (prefers-color-scheme: light) { }
+/*@media (prefers-color-scheme: light) { }
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -419,4 +429,4 @@ audio {
   blockquote:before {
     background-image: url('/assets/general/alert-dark.svg');
   }
-}
+}*/

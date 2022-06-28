@@ -147,7 +147,7 @@ In bioinformatics, FASTA format is a text-based format for representing either n
 
 The first line in a FASTA file started either with a ">" (greater-than) symbol or, less frequently, a ";" (semicolon) was taken as a comment. Subsequent lines starting with a semicolon would be ignored by software. Since the only comment used was the first, it quickly became used to hold a summary description of the sequence, often starting with a unique library accession number, and with time it has become commonplace to always use ">" for the first line and to not use ";" comments (which would otherwise be ignored).
 
-```text
+```
 ;LCBO - Prolactin precursor - Bovine
 ; a sample sequence in FASTA format
 MDSKGSSQKGSRLLLLLVVSNLLLCQGVVSTPVCPNGPGNCQVSLRDLFDRAVMVSHYIHDLSS
@@ -220,7 +220,7 @@ First we encode text file into FASTA file.
 
 Output of `quote.fa` file contains the encoded DNA sequence in ASCII format.
 
-```text
+```
 >SEQ1
 GACAGCTTGTGTACAAGTGTGCTTGCTCGCGAGCGGGTACGCGCGTGGGCTAACAAGTGA
 GCCAGCAGGTGAACAAGTGTGCGGACAAGCCAGCAGGTGCGCGGACAAGCTGGCGGGTGA

@@ -19,7 +19,7 @@
         <header>
           <h1 itemtype="headline">{{.Title}}</h1>
           {{if .Listing}}
-          <time>Posted on {{.CreatedFormatted}}</time>
+          <time>Published on {{.CreatedFormatted}}</time>
           {{end}}
         </header>
         <div>
@@ -31,10 +31,12 @@
 
       <hr class="top-margin">
 
-      <p>
-        <strong>IRC:</strong> You can contact me on IRC <code>irc.libera.chat:6697</code> on channel <code>#mitjafelicijan</code>.
+      <p class="top-margin">
+        <strong>Comment, contact:</strong> You can contact me on IRC <code>irc.libera.chat:6697</code> on channel <code>#mitjafelicijan</code>.
         Or by going to <a href="https://web.libera.chat/#mitjafelicijan" target="_blank">https://web.libera.chat/#mitjafelicijan</a>.
       </p>
+
+      <p>You can also just write me an email at m@mitjafelicijan.com</p>
 
       <hr class="top-margin">
 
@@ -59,6 +61,7 @@
       <hr class="top-margin">
 
       {{template "openring-build.html"}}
+
       {{end}}
 
     </main>

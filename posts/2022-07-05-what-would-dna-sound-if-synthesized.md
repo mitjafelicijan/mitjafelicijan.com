@@ -188,6 +188,8 @@ plot "audio_only.dat" with lines lt rgb 'red'
 
 ## Pre-generated sequences
 
+What I did was take interesting parts from an animal's genome and feed it to a tone generator script. This then generated a WAV file and I converted those to MP3, so they can be played in a browser. The last step was creating a spectrogram based on a WAV file.
+
 ### Niels Bohr quote
 
 <audio controls>

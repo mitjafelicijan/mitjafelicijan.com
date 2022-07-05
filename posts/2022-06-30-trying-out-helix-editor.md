@@ -29,5 +29,5 @@ And it comes us packed with many [really good themes](https://github.com/helix-e
 
 ![Editor](/assets/helix-editor/editor.png)
 
-I would advise using this editor. It's still young but has this mature feeling to it. It has sane defaults and mimics Vim (works a bit differently, but the overall idea is similar).
+It's still young but has this mature feeling to it. It has sane defaults and mimics Vim (works a bit differently, but the overall idea is similar).
 

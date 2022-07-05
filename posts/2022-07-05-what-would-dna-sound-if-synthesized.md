@@ -293,8 +293,8 @@ All of this could be made much more interesting if I choose different instrument
 
 ## Going even further
 
-It is really astonishing what can be achieved with a little bit of code and an idea. I could see this becoming an interesting background soundscape instrument if done properly. It could replace random note generator with something more intriguing, biological, natural.
-
 As you probably notice, the end results are quite similar to each other. This is to be expected because we are operating only with 4 notes essentially. What could make this more interesting is using something like [Supercollider](https://supercollider.github.io/) to create more interesting sounds. By transposing notes or using effects based on repeated data in a sequence. Possibilities are endless.
+
+It is really astonishing what can be achieved with a little bit of code and an idea. I could see this becoming an interesting background soundscape instrument if done properly. It could replace random note generator with something more intriguing, biological, natural.
 
 I actually find the results fascinating. I took some time and listened to this music of nature. Even though it's quite the same, it's also quite different. The subtle differences on repeat kind of creates music on its own. Makes you wonder. It kind of puts Occam’s Razor in its place. Nature for sure loves to make things as energy efficient as possible.

@@ -18,7 +18,8 @@ Tags: []
    2. [Mouse](#mouse)
    3. [Bison](#bison)
    4. [Taurus](#taurus)
-8. [Going even further](#going-even-further)
+8. [Making a drummer out of a DNA sequence](#making-a-drummer-out-of-a-dna-sequence)
+9. [Going even further](#going-even-further)
 
 ## Introduction
 
@@ -227,6 +228,68 @@ This is part of a taurus genome `Bos_taurus.ARS-UCD1.2.cdna`. You can get [genom
 </audio>
 
 ![Spectogram](/assets/dna-synthesized/taurus/spectogram.png)
+
+## Making a drummer out of a DNA sequence
+
+To make things even more interesting, I decided to send this data via MIDI to my [Elektron Model:Samples](https://www.elektron.se/en/model-samples). This is a really cool piece of equipment that supports MIDI in via USB and 3.5 mm audio jack.
+
+Elektron is connected to my MacBook via USB cable and audio out is patched to a Sony Bluetooth speaker I have that supports 3.5 mm audio in. Elektron doesn't have internal speakers.
+
+![](/assets/dna-synthesized/elektron/IMG_0619.jpg)
+
+![](/assets/dna-synthesized/elektron/IMG_0620.jpg)
+
+![](/assets/dna-synthesized/elektron/IMG_0622.jpg)
+
+For communicating with Elektron, I choose `pygame` Python module that has MIDI built in. With this, it was rather simple to send notes to the device. All I did was map MIDI notes to the actual Nucleotides.
+
+Before all of this I also checked Audio MIDI Setup app under MacOS and checked MIDI Studio by pressing ⌘-2.
+
+![](/assets/dna-synthesized/elektron/midi-studio.jpg)
+
+The whole script that parses and send notes to the Elektron looks like this.
+
+```python
+import pygame.midi
+import time
+
+pygame.midi.init()
+
+print(pygame.midi.get_default_output_id())
+print(pygame.midi.get_device_info(0))
+
+player = pygame.midi.Output(1)
+player.set_instrument(2)
+
+def send_note(note, velocity):
+  global player
+  player.note_on(note, velocity)
+  time.sleep(0.3)
+  player.note_off(note, velocity)
+
+
+nucleotide_midi_map = {
+  'A': 60,
+  'C': 90,
+  'G': 160,
+  'T': 180,  # is D
+}
+
+with open("quote.fa") as f:
+  sequence = f.read().replace('\n', '')
+
+for nucleotide in [char for char in sequence]:
+  print("Playing nucleotide {} with MIDI note {}".format(
+      nucleotide, nucleotide_midi_map[nucleotide]))
+  send_note(nucleotide_midi_map[nucleotide], 127)
+
+del player
+pygame.midi.quit()
+```
+
+<video src="/assets/dna-synthesized/elektron/elektron.mp4" controls></video>
+
+All of this could be made much more interesting if I choose different instruments for different Nucleotides, or doing more funky stuff with Elektron. But for now, this should be enough. It is just a proof of concept. Something to play around with.
 
 ## Going even further
 

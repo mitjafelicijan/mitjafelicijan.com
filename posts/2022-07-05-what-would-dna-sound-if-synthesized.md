@@ -208,7 +208,7 @@ This is part of a mouse genome `Mus_musculus.GRCm39.dna.nonchromosomal`. You can
 
 ### Bison
 
-This is part of a mouse genome `Bison_bison_bison.Bison_UMD1.0.cdna`. You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bison_bison_bison/cdna/).
+This is part of a bison genome `Bison_bison_bison.Bison_UMD1.0.cdna`. You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bison_bison_bison/cdna/).
 
 <audio controls>
   <source src="/assets/dna-synthesized/bison/out.mp3" type="audio/mpeg">
@@ -218,7 +218,7 @@ This is part of a mouse genome `Bison_bison_bison.Bison_UMD1.0.cdna`. You can ge
 
 ### Taurus
 
-This is part of a mouse genome `Bos_taurus.ARS-UCD1.2.cdna`. You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bos_taurus/cdna/).
+This is part of a taurus genome `Bos_taurus.ARS-UCD1.2.cdna`. You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bos_taurus/cdna/).
 
 <audio controls>
   <source src="/assets/dna-synthesized/taurus/out.mp3" type="audio/mpeg">

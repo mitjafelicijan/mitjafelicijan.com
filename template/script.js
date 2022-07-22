@@ -25,79 +25,88 @@ window.addEventListener('load', async () => {
     });
   }
 
-  // comments code
-  const commentsEndpoint = 'https://mitjafelicijan.com/comments-api';
-  const commentsPlaceholder = document.querySelector('.comments');
+  // Search functionality
 
-  if (commentsPlaceholder) {
-    const guid = commentsPlaceholder.dataset.guid;
-    const name = commentsPlaceholder.querySelector('input');
-    const comment = commentsPlaceholder.querySelector('textarea');
-    const submit = commentsPlaceholder.querySelector('button');
-    const comments = commentsPlaceholder.querySelector('ul');
+  window.index = null;
 
-    if (guid) {
-      await readAndRenderComments(guid, comments);
+  const response = await fetch('/feed.json');
+  const feed = await response.json();
 
-      submit.addEventListener('click', async() => {
-        submit.disabled = true;
-        await writeComments(guid, name.value, comment.value);
+  window.index = elasticlunr(function () {
+    this.addField('title');
+    this.addField('body');
+    this.setRef('id');
+  });
 
-        submit.disabled = false;
-        name.value = '';
-        comment.value = '';
-
-        await readAndRenderComments(guid, comments);
-      });
-    }
-  }
-
-  async function writeComments(guid, name, comment) {
-    const response = await fetch(commentsEndpoint, {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        action: 'write',
-        guid,
-        name,
-        comment,
-      })
+  for (const item of feed.items) {
+    item.id = item.url;
+    window.index.addDoc({
+      id: item.url,
+      title: item.title,
+      body: item.content_html,
+      url: item.url,
     });
   }
 
-  async function readAndRenderComments(guid, commentsPlaceholder) {
-    const response = await fetch(commentsEndpoint, {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        action: 'read',
-        guid,
-      })
-    });
+  const blur = document.querySelector('.blur');
+  const searchForm = document.querySelector('.search-form');
+  const searchResultsList = document.querySelector('.search-form ul');
 
-    // remove all existing comments from list
-    commentsPlaceholder.innerHTML = '';
+  function showSearchModal() {
+    blur.classList.remove('hidden');
+    searchForm.classList.remove('hidden');
 
-    const commentList = await response.json();
-    for (const comment of commentList.reverse()) {
-      const date = new Date(comment.date).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric'
-      });
+    // Clear search input.
+    searchForm.querySelector('input').value = '';
 
-      const commentElement = document.createElement('li');
-      commentElement.innerHTML = `<p><b>${comment.name}</b> - ${date}<p><p>${comment.comment}<p><hr>`;
-      commentsPlaceholder.appendChild(commentElement);
-    }
+    // We need to clear the list before opening modal.
+    searchResultsList.innerHTML = '';
+
+    // Focus on search input.
+    searchForm.querySelector('input').focus();
   }
+
+  document.querySelector('.search-trigger').addEventListener('click', async (evt) => {
+    showSearchModal();
+  });
+
+  document.onkeydown = function (e) {
+    // Show search modal on F key.
+    if (blur.classList.contains('hidden')) {
+      if (e.key === 'f') {
+        setTimeout(() => {
+          showSearchModal();
+        }, 100);
+      }
+    }
+
+    // Hide search modal on escape key.
+    if (!blur.classList.contains('hidden')) {
+      if (e.key === 'Escape') {
+        blur.classList.add('hidden');
+        searchForm.classList.add('hidden');
+      }
+    }
+  };
+
+  blur.addEventListener('click', async (evt) => {
+    evt.target.classList.add('hidden');
+    searchForm.classList.add('hidden');
+  });
+
+  document.querySelector('.search-form input').addEventListener('keyup', async (evt) => {
+    // Perform search.
+    const searchResults = window.index.search(evt.target.value);
+
+    // We need to clear the list before adding new results.
+    searchResultsList.innerHTML = '';
+
+    // Loop through the results and add them to the list.
+    for (const result of searchResults.slice(0, 9)) {
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `<a href="${result.doc.url}">${result.doc.title}</a>`;
+      searchResultsList.appendChild(listItem);
+    }
+  });
 
 });

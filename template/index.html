@@ -1,64 +1,62 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    {{template "_meta.html"}}
+<head>
+  {{template "_meta.html"}}
 
-    <title>{{.Title}}</title>
-    <meta name="description" content="{{.Description}}">
-    <meta property="og:title" content="{{.Title}}">
-    <meta property="og:description" content="{{.Description}}">
-  </head>
+  <title>{{.Title}}</title>
+  <meta name="description" content="{{.Description}}">
+  <meta property="og:title" content="{{.Title}}">
+  <meta property="og:description" content="{{.Description}}">
+</head>
 
-  <body>
+<body>
 
-    {{template "_navigation.html"}}
+  {{template "_navigation.html"}}
 
-    <main class="wrapper">
-      <h2>Blog posts</h2>
-      <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
-        <meta itemprop="name" content="Article list">
+  <main class="wrapper">
+    <h2>Blog posts</h2>
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <meta itemprop="name" content="Article list">
 
-        <ul class="post-list">
-          {{range $index, $post := .Posts}}
-          {{if $post.Listing}}
-          <li>
-            <time>{{.CreatedFormatted}}</time>
+      <ul class="post-list">
+        {{range $index, $post := .Posts}}
+        {{if $post.Listing}}
+        <li>
+          <time>{{.CreatedFormatted}}</time>
 
-            <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
-              <h2>{{$post.Title}}</h2>
-            </a>
-          </li>
-          {{end}}
-          {{end}}
-        </ul>
-      </nav>
+          <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
+            <h2>{{$post.Title}}</h2>
+          </a>
+        </li>
+        {{end}}
+        {{end}}
+      </ul>
+    </nav>
 
-      <hr class="top-margin">
+    <hr class="top-margin">
 
-      <section class="project-list">
-        <h4>Side projects I work/worked on</h4>
-        <ul>
-          <li><a href="https://git.mitjafelicijan.com/journalctl-proxy.git/" target="_blank" rel="noopener nofollow">journalctl-proxy - Exposes your systemd logs to web via web interface</a></li>
-          <li><a href="https://git.mitjafelicijan.com/redis-marshal.git/" target="_blank" rel="noopener nofollow">redis-marshal - Lightweight Redis data exploration tool</a></li>
-          <li><a href="https://git.mitjafelicijan.com/dna-encoding.git/" target="_blank" rel="noopener nofollow">dna-encoding - Tools for encoding files to DNA sequence</a></li>
-          <li><a href="https://git.mitjafelicijan.com/vertex.git/" target="_blank" rel="noopener nofollow">vertex - Create mock API's and add basic logic to simplify prototyping</a></li>
-          <li><a href="https://git.mitjafelicijan.com/scarecrow.git/" target="_blank" rel="noopener nofollow">scarecrow - Minimal configuration reverse proxy</a></li>
-        </ul>
-      </section>
+    <section class="project-list">
+      <h4>Side projects I work/worked on</h4>
+      <ul>
+        <li><a href="https://git.mitjafelicijan.com/journalctl-proxy.git/" target="_blank" rel="noopener nofollow">journalctl-proxy - Exposes your systemd logs to web via web interface</a></li>
+        <li><a href="https://git.mitjafelicijan.com/redis-marshal.git/" target="_blank" rel="noopener nofollow">redis-marshal - Lightweight Redis data exploration tool</a></li>
+        <li><a href="https://git.mitjafelicijan.com/dna-encoding.git/" target="_blank" rel="noopener nofollow">dna-encoding - Tools for encoding files to DNA sequence</a></li>
+        <li><a href="https://git.mitjafelicijan.com/vertex.git/" target="_blank" rel="noopener nofollow">vertex - Create mock API's and add basic logic to simplify prototyping</a></li>
+        <li><a href="https://git.mitjafelicijan.com/scarecrow.git/" target="_blank" rel="noopener nofollow">scarecrow - Minimal configuration reverse proxy</a></li>
+      </ul>
+    </section>
 
-      <hr class="top-margin">
+    <hr class="top-margin">
 
-      {{template "openring-build.html"}}
+    {{template "openring-build.html"}}
 
-    </main>
+  </main>
 
-    {{template "_footer.html"}}
+  {{template "_footer.html"}}
 
-    {{template "_includes.html"}}
+  {{template "_includes.html"}}
 
-    {{template "_search.html"}}
-
-  </body>
+</body>
 
 </html>

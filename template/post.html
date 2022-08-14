@@ -1,78 +1,76 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    {{template "_meta.html"}}
+<head>
+  {{template "_meta.html"}}
 
-    <title>{{.Title}}</title>
-    <meta name="description" content="{{.Description}}">
-    <meta property="og:title" content="{{.Title}}">
-    <meta property="og:description" content="{{.Description}}">
-  </head>
+  <title>{{.Title}}</title>
+  <meta name="description" content="{{.Description}}">
+  <meta property="og:title" content="{{.Title}}">
+  <meta property="og:description" content="{{.Description}}">
+</head>
 
-  <body>
+<body>
 
-    {{template "_navigation.html"}}
+  {{template "_navigation.html"}}
 
-    <main class="wrapper">
-      <article itemtype="http://schema.org/Article">
-        <header>
-          <h1 itemtype="headline">{{.Title}}</h1>
-          {{if .Listing}}
-          <time>Published on {{.CreatedFormatted}}</time>
-          {{end}}
-        </header>
-        <div>
-          {{.Content}}
-        </div>
-      </article>
-
-      {{if .Listing}}
-
-      <hr class="top-margin">
-
-      <p class="top-margin">
-        <strong>Comment, contact:</strong> The easiest way to contact me is by writing me a message on <a href="https://t.me/mitjafelicijan" target="_blank">Telegram (https://t.me/mitjafelicijan)</a>.
-      </p>
-
-      <p>You can also just write me an email at <a href="mailto:m@mitjafelicijan.com">m@mitjafelicijan.com</a>.</p>
-
-      <hr class="top-margin">
-
-      {{if .Posts}}
-      <nav class="top-margin">
-        <h4>Read more from this site</h4>
-        {{range $index, $post := .Posts}}
-          {{if .Listing}}
-            {{if (lt $index 5)}}
-            <p>
-              <time>{{$post.CreatedFormatted}}</time><br>
-              <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
-                {{$post.Title}}
-              </a>
-            </p>
-            {{end}}
-          {{end}}
+  <main class="wrapper">
+    <article itemtype="http://schema.org/Article">
+      <header>
+        <h1 itemtype="headline">{{.Title}}</h1>
+        {{if .Listing}}
+        <time>Published on {{.CreatedFormatted}}</time>
         {{end}}
-      </nav>
+      </header>
+      <div>
+        {{.Content}}
+      </div>
+    </article>
+
+    {{if .Listing}}
+
+    <hr class="top-margin">
+
+    <p class="top-margin">
+      <strong>Comment, contact:</strong> The easiest way to contact me is by writing me a message on <a href="https://t.me/mitjafelicijan" target="_blank">Telegram (https://t.me/mitjafelicijan)</a>.
+    </p>
+
+    <p>You can also just write me an email at <a href="mailto:m@mitjafelicijan.com">m@mitjafelicijan.com</a>.</p>
+
+    <hr class="top-margin">
+
+    {{if .Posts}}
+    <nav class="top-margin">
+      <h4>Read more from this site</h4>
+      {{range $index, $post := .Posts}}
+      {{if .Listing}}
+      {{if (lt $index 5)}}
+      <p>
+        <time>{{$post.CreatedFormatted}}</time><br>
+        <a href="/{{$post.Slug}}" title="{{$post.Title}}" itemprop="url">
+          {{$post.Title}}
+        </a>
+      </p>
       {{end}}
-
-      <hr class="top-margin">
-
-      {{template "openring-build.html"}}
-
       {{end}}
+      {{end}}
+    </nav>
+    {{end}}
 
-    </main>
+    <hr class="top-margin">
 
-    {{template "_footer.html"}}
+    {{template "openring-build.html"}}
 
-    {{template "_includes.html"}}
+    {{end}}
 
-    {{template "_search.html"}}
+  </main>
 
-    {{template "_libraries.html"}}
+  {{template "_footer.html"}}
 
-  </body>
+  {{template "_includes.html"}}
+
+  {{template "_libraries.html"}}
+
+</body>
 
 </html>

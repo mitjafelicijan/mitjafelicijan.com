@@ -36,5 +36,5 @@ server:
 	python3 -m http.server 8000 --directory public
 
 deploy: build
-	cd public && scp -r * root@165.22.87.180:/var/www/html/mitjafelicijan.com/
+	rsync -a --delete public/ root@165.22.87.180:/var/www/html/mitjafelicijan.com/
 	ssh root@165.22.87.180 chown www-data:www-data /var/www/html/mitjafelicijan.com/ -Rf

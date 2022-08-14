@@ -7,7 +7,7 @@ Created: 2022-08-13
 Tags: []
 ---
 
-This is a bit of a different post than I usually write, but quite interesting one to me. River Sava has plenty of hydropower plants located down the stream. This makes regulating the strength of a current easier than normally. Because of lower stream strength and high temperatures, algae has formed in the river. This is the first time I've seen something like this in my whole life.
+This is a bit of a different post than I usually write, but quite interesting one to me. River Sava has plenty of hydropower plants located down the stream. This makes regulating the strength of a current easier than normally. Because of lower stream strength and high temperatures, algae has formed on the river. This is the first time I've seen something like this in my whole life.
 
 Below are some photographs taken from a DJI drone capturing the event.
 

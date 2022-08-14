@@ -7,8 +7,7 @@ Created: ""
 Tags: []
 ---
 
-I buy all the books I read from [Book Depository](https://www.bookdepository.com/). I don't borrow them, and I don't like e-books. I, however, own an e-reader, which I mostly use for reading articles. Tried some audiobooks in the past, and they can be hit-and-miss, so I try to stay away from them. Furthermore, reading is a way to escape work and taking some time for yourself if nothing else.
-
+I buy all the books I read from [Book Depository](https://www.bookdepository.com/). I don't borrow them, and I don't like e-books. I, however, own an e-reader, which I mostly use for reading articles. Tried some audiobooks in the past, and they can be hit-and-miss, so I try to stay away from them.
 ## Year 2022
 
 - Quantum Theory: A Very Short Introduction ([Goodreads](https://www.goodreads.com/book/show/100049.Quantum_Theory))

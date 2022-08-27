@@ -158,4 +158,4 @@ server {
 
 ## Conclusion
 
-Well, this was pointless, but very fun! You can [give it a try on digg.mitjafelicijan.com](digg.mitjafelicijan.com) but make sure you are using a browser or old emulator that supports WML.
+Well, this was pointless, but very fun! You can [give it a try on digg.mitjafelicijan.com](http://digg.mitjafelicijan.com) but make sure you are using a browser or old emulator that supports WML.

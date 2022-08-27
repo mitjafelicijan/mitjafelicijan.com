@@ -1,0 +1,31 @@
+baseURL = 'https://mitjafelicijan.com/'
+languageCode = 'en-us'
+title = 'Mitja Felicijan'
+
+# Theme selction.
+theme = 'simple'
+
+# Makes url's have '.html' at the end.
+uglyurls = true
+
+[params]
+  description = 'You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.'
+
+[permalinks]
+  posts = ':title'
+  # pages = ':title'
+
+[author]
+  name = 'Mitja Felicijan'
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.highlight]
+    style = 'github'

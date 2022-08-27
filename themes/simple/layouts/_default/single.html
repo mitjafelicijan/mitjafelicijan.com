@@ -1,0 +1,46 @@
+{{ define "main" }}
+<main aria-role="main" class="container-blog">
+
+  <!-- Single article -->
+  <article itemtype="http://schema.org/Article" class="mb-12">
+    <header>
+      <h1 itemtype="headline" class="text-4xl font-extrabold mb-6">{{.Title}}</h1>
+      <time class="text-gray-400 font-medium text-sm">Published on {{ .Date.Format "Monday Jan 2, 2006" }}</time>
+    </header>
+
+    <div class="leading-relaxed">
+      {{.Content}}
+    </div>
+  </article>
+
+  <hr class="border-2 border-gray-100 mb-10">
+
+  <!-- Comment, contact -->
+  <section class="mb-10">
+    <p class="mb-4">
+      <strong>Comment, contact:</strong> The easiest way to contact me is by writing me a message on <a href="https://t.me/mitjafelicijan" target="_blank">Telegram (https://t.me/mitjafelicijan)</a>.
+    </p>
+    <p>You can also just write me an email at <a href="mailto:m@mitjafelicijan.com">m@mitjafelicijan.com</a>.</p>
+  </section>
+
+  <hr class="border-2 border-gray-100 mb-10">
+
+  <!-- Read more -->
+  <section>
+    <h1 class="text-2xl font-bold mb-6">Read more from this site</h1>
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="mb-12">
+      <meta itemprop="name" content="Article list">
+      <ul>
+        {{ $randomPosts := shuffle (where .Site.RegularPages "Type" "posts") | first 5 }}
+        {{ range $randomPosts }}
+        <li class="mb-3">
+          <time class="block text-gray-500 text-sm">{{ .Date.Format "Mon Jan 2, 2006" }}</time>
+          <a href="{{.Permalink}}" itemprop="url" class="hover:bg-yellow-200">{{.Title}}</a>
+        </li>
+        {{end}}
+      </ul>
+    </nav>
+  </section>
+
+</main>
+{{ end }}

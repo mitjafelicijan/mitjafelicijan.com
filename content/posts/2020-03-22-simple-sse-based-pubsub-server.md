@@ -234,7 +234,7 @@ One example would be, that we have index page and we want to receive messages ab
 
 ### Publisher and subscriber in action
 
-<video src="/simple-pubsub-server/clients.mp4" controls></video>
+<video src="/simple-pubsub-server/clients.m4v" controls></video>
 
 You can download [the code](../simple-pubsub-server/sse-pubsub-server.zip) and follow along.
 

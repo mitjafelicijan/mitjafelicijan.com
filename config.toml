@@ -8,16 +8,23 @@ theme = 'simple'
 # Makes url's have '.html' at the end.
 uglyurls = true
 
+# Length of summary.
+summaryLength = 5
+
+# Custom params.
 [params]
   description = 'You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.'
 
+# URL if not specified in a post or a page.
 [permalinks]
   posts = ':title'
-  # pages = ':title'
+  pages = ':title'
 
+# Author information.
 [author]
   name = 'Mitja Felicijan'
 
+# Additional markup settings.
 [markup]
   [markup.tableOfContents]
     endLevel = 3

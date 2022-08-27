@@ -2,7 +2,7 @@
 <main aria-role="main" class="container-blog px-6 md:p-0">
 
   <!-- Single article -->
-  <article itemtype="http://schema.org/Article" class="mb-12">
+  <article itemtype="http://schema.org/Article" class="single mb-12">
     <header class="mb-6">
       <h1 itemtype="headline" class="text-4xl font-extrabold mb-6">{{.Title}}</h1>
       <time class="text-gray-400 font-medium text-sm">Published on {{ .Date.Format "Monday Jan 2, 2006" }}</time>
@@ -34,13 +34,19 @@
         {{ $randomPosts := shuffle (where .Site.RegularPages "Type" "posts") | first 5 }}
         {{ range $randomPosts }}
         <li class="mb-3">
-          <time class="block text-gray-500 text-sm">{{ .Date.Format "Mon Jan 2, 2006" }}</time>
-          <a href="{{.Permalink}}" itemprop="url" class="hover:bg-yellow-200">{{.Title}}</a>
+          <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Mon Jan 2, 2006" }}</time>
+          <a href="{{.Permalink}}" itemprop="url" class="hover:bg-yellow-200 font-medium">{{.Title}}</a>
+          <p class="text-gray-600 text-sm">{{.Summary}}</p>
         </li>
         {{end}}
       </ul>
     </nav>
   </section>
+
+  <hr class="border-2 border-gray-100 mb-10">
+
+  <!-- Openring -->
+  {{ partial "openring.html" . }}
 
 </main>
 {{ end }}

@@ -5,7 +5,10 @@
   <article itemtype="http://schema.org/Article" class="single mb-12">
     <header class="mb-6">
       <h1 itemtype="headline" class="text-4xl font-extrabold mb-6">{{.Title}}</h1>
+
+      {{ if in .Type "posts" }}
       <time class="text-gray-400 font-medium text-sm">Published on {{ .Date.Format "Monday Jan 2, 2006" }}</time>
+      {{ end }}
     </header>
 
     <div class="leading-relaxed">
@@ -13,19 +16,26 @@
     </div>
   </article>
 
+  {{ if in .Type "posts" }}
   <hr class="border-2 border-gray-100 mb-10">
+  {{ end }}
 
   <!-- Comment, contact -->
+  {{ if in .Type "posts" }}
   <section class="mb-10">
     <p class="mb-4">
       <strong>Comment, contact:</strong> The easiest way to contact me is by writing me a message on <a href="https://t.me/mitjafelicijan" target="_blank">Telegram (https://t.me/mitjafelicijan)</a>.
     </p>
     <p>You can also just write me an email at <a href="mailto:m@mitjafelicijan.com">m@mitjafelicijan.com</a>.</p>
   </section>
+  {{ end }}
 
+  {{ if in .Type "posts" }}
   <hr class="border-2 border-gray-100 mb-10">
+  {{ end }}
 
   <!-- Read more -->
+  {{ if in .Type "posts" }}
   <section>
     <h1 class="text-2xl font-bold mb-6">Read more from this site</h1>
     <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="mb-12">
@@ -42,11 +52,16 @@
       </ul>
     </nav>
   </section>
+  {{ end }}
 
+  {{ if in .Type "posts" }}
   <hr class="border-2 border-gray-100 mb-10">
+  {{ end }}
 
   <!-- Openring -->
-  {{ partial "openring.html" . }}
+  {{ if in .Type "posts" }}
+    {{ partial "openring.html" . }}
+  {{ end }}
 
 </main>
 {{ end }}

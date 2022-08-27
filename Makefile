@@ -2,7 +2,7 @@ dev: openring
 	hugo server
 
 deploy: openring
-	hugo
+	hugo --gc --minify
 	rsync -az --delete public/ root@165.22.87.180:/var/www/html/mitjafelicijan.com/
 	ssh root@165.22.87.180 chown www-data:www-data /var/www/html/mitjafelicijan.com/ -Rf
 

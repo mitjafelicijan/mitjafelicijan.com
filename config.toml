@@ -11,6 +11,9 @@ uglyurls = true
 # Length of summary.
 summaryLength = 5
 
+# Enabling robots.txt.
+enableRobotsTXT = true
+
 # Custom params.
 [params]
   description = 'You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.'

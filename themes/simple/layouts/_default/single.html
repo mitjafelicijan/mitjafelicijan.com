@@ -45,7 +45,7 @@
         {{ range $randomPosts }}
         <li class="mb-6">
           <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Mon Jan 2, 2006" }}</time>
-          <a href="{{.Permalink}}" itemprop="url" class="hover:bg-yellow-200 font-medium">{{.Title}}</a>
+          <a href="{{.Permalink}}" itemprop="url" class="hover:bg-yellow-100 font-medium">{{.Title}}</a>
           <p class="text-gray-600 text-sm">{{.Summary}}</p>
         </li>
         {{end}}

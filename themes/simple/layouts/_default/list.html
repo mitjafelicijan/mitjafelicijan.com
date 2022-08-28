@@ -10,7 +10,7 @@
       {{ range (where .Site.RegularPages "Section" "posts") }}
       <li class="mb-5">
         <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Monday Jan 2, 2006" }}</time>
-        <a href="{{.Permalink}}" itemprop="url" class="hover:bg-yellow-200">{{.Title}}</a>
+        <a href="{{.Permalink}}" itemprop="url" class="hover:bg-yellow-100">{{.Title}}</a>
       </li>
       {{end}}
     </ul>
@@ -22,11 +22,11 @@
   <section class="mb-12">
     <h4 class="text-2xl font-bold mb-6">Side projects I worked on</h4>
     <ul class="list-disc ml-6">
-      <li><a href="https://git.mitjafelicijan.com/journalctl-proxy.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-200">journalctl-proxy - Exposes your systemd logs to web via web interface</a></li>
-      <li><a href="https://git.mitjafelicijan.com/redis-marshal.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-200">redis-marshal - Lightweight Redis data exploration tool</a></li>
-      <li><a href="https://git.mitjafelicijan.com/dna-encoding.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-200">dna-encoding - Tools for encoding files to DNA sequence</a></li>
-      <li><a href="https://git.mitjafelicijan.com/vertex.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-200">vertex - Create mock API's and add basic logic to simplify prototyping</a></li>
-      <li><a href="https://git.mitjafelicijan.com/scarecrow.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-200">scarecrow - Minimal configuration reverse proxy</a></li>
+      <li><a href="https://git.mitjafelicijan.com/journalctl-proxy.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">journalctl-proxy - Exposes your systemd logs to web via web interface</a></li>
+      <li><a href="https://git.mitjafelicijan.com/redis-marshal.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">redis-marshal - Lightweight Redis data exploration tool</a></li>
+      <li><a href="https://git.mitjafelicijan.com/dna-encoding.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">dna-encoding - Tools for encoding files to DNA sequence</a></li>
+      <li><a href="https://git.mitjafelicijan.com/vertex.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">vertex - Create mock API's and add basic logic to simplify prototyping</a></li>
+      <li><a href="https://git.mitjafelicijan.com/scarecrow.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">scarecrow - Minimal configuration reverse proxy</a></li>
     </ul>
   </section>
 

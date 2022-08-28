@@ -3,9 +3,9 @@
 
 name = "Simple"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
+licenselink = "https://github.com/mitjafelicijan/hugo-simple/blob/master/LICENSE"
+description = "Simlistic theme"
+homepage = "http://mitjafelicijan.com/"
 tags = []
 features = []
 min_version = "0.41.0"

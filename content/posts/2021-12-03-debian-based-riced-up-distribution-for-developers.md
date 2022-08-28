@@ -43,28 +43,28 @@ I didn't want this to just be a set of config files for theming purpose. I wante
 
 First, I choose terminal installer and left it to load additional components. Avoid using graphical installer in this case.
 
-![](/dfd-rice/install-00.png)
+![](/assets/dfd-rice/install-00.png)
 
 After that I selected hostname and created a normal user and set password for that user and root user and choose guided mode for disk partitioning.
 
-![](/dfd-rice/install-01.png)
+![](/assets/dfd-rice/install-01.png)
 
 I left it run to install all the things required for the base system and opted out of scanning additional media for use by the package manager. Those will be downloaded from the internet during installation.
 
-![](/dfd-rice/install-02.png)
+![](/assets/dfd-rice/install-02.png)
 
 
 I opted out of the popularity contest, and **now comes the important part**. Uncheck all the boxes in Software selection and only leave 'standard system utilities'. I also left an SSH server, so I was able to log in to the machine from my main PC.
 
-![](/dfd-rice/install-03.png)
+![](/assets/dfd-rice/install-03.png)
 
 At this point, I installed GRUB bootloader on the disk where I installed the system.
 
-![](/dfd-rice/install-04.png)
+![](/assets/dfd-rice/install-04.png)
 
 That concluded the installation of base Debian and after restarting the computer I was prompted with the login screen.
 
-![](/dfd-rice/install-05.png)
+![](/assets/dfd-rice/install-05.png)
 
 Now that I had the base installation, it was time to choose what software do I want to include in this so-called distribution. I wanted out of the box developer experience, so I had plenty to choose.
 
@@ -84,7 +84,7 @@ One of the requirements for me was easy custom layouts because I use a really st
 
 What I was doing in Gnome was having windows in a layout like the diagram below. This is my common practice. And if you look at it you can clearly see I was replicating tiling window manager setup in Gnome.
 
-![](/dfd-rice/layout.png)
+![](/assets/dfd-rice/layout.png)
 
 
 That made me look into a bunch of tiling window managers and then tested them out. Candidates I was looking at were:
@@ -144,7 +144,7 @@ Currently, most of these recipes use what Debian and this is totally fine with m
 
 This is some of the output from the installation script.
 
-![](/dfd-rice/script.png)
+![](/assets/dfd-rice/script.png)
 
 Let's take a look at some examples in the installation script.
 
@@ -191,4 +191,4 @@ The current version boots in 4s to the login prompt, and after you log in, the d
 
 And this is how it looks with two terminals side by side. I really like the simplicity and clean interface. I will polish the colors and stuff like that, but I really do like the results.
 
-![](/dfd-rice/desktop.png)
+![](/assets/dfd-rice/desktop.png)

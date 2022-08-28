@@ -26,13 +26,13 @@ To make this work you will need DigitalOcean account. If you don't have one you 
 
 Instuctions on how to use SSH keys and how to setup them are available in article [How To Use SSH Keys with DigitalOcean Droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
 
-![DigitalOcean Droplets](/do-fuse/fuse-droplets.png)
+![DigitalOcean Droplets](/assets/do-fuse/fuse-droplets.png)
 
 After we created Droplet it's time to create new Space. This is done by clicking on a button [Create](https://cloud.digitalocean.com/spaces/new) (right top corner) and selecting Spaces. Choose pronounceable ```Unique name``` because we will use it in examples below. You can either choose Private or Public, it doesn't matter in our case. And you can always change that in the future.
 
 When you have created new Space we should [generate Access key](https://cloud.digitalocean.com/settings/api/tokens). This link will guide to the page when you can generate this key. After you create new one, please save provided Key and Secret because Secret will not be shown again.
 
-![DigitalOcean Spaces](/do-fuse/fuse-spaces.png)
+![DigitalOcean Spaces](/assets/do-fuse/fuse-spaces.png)
 
 Now that we have new Space and Access key we should SSH into our machine.
 
@@ -102,14 +102,14 @@ As I suspected, object size is not really that important. Sadly I don't have the
 
 **Here are plotted results**
 
-You can download [raw result here](/do-fuse/copy-benchmarks.tsv). Measurements are in seconds.
+You can download [raw result here](/assets/do-fuse/copy-benchmarks.tsv). Measurements are in seconds.
 
 <script src="//cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="copy-benchmarks"></div>
 <script>
 (function(){
 	var request = new XMLHttpRequest();
-	request.open("GET", "/do-fuse/copy-benchmarks.tsv", true);
+	request.open("GET", "/assets/do-fuse/copy-benchmarks.tsv", true);
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			var payload = request.responseText.trim();
@@ -218,13 +218,13 @@ result_time = CLOSE = end_time - start_time
 print("CLOSE: %g seconds" % (result_time))
 ```
 
-You can download [raw result here](/do-fuse/sqlite-benchmarks.tsv). And again, these results are done on a local block storage and do not represent capabilities of object storage. With my current approach and state of the test code these can not be done. I would need to make Python code much more robust and check locking etc.
+You can download [raw result here](/assets/do-fuse/sqlite-benchmarks.tsv). And again, these results are done on a local block storage and do not represent capabilities of object storage. With my current approach and state of the test code these can not be done. I would need to make Python code much more robust and check locking etc.
 
 <div id="sqlite-benchmarks"></div>
 <script>
 (function(){
 	var request = new XMLHttpRequest();
-	request.open("GET", "/do-fuse/sqlite-benchmarks.tsv", true);
+	request.open("GET", "/assets/do-fuse/sqlite-benchmarks.tsv", true);
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			var payload = request.responseText.trim();

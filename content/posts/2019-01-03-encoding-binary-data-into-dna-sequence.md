@@ -81,7 +81,7 @@ Deoxyribonucleic acid, a self-replicating material which is **present in nearly 
 
 The nucleotide in DNA consists of a sugar (deoxyribose), one of four bases (cytosine (C), thymine (T), adenine (A), guanine (G)), and a phosphate. Cytosine and thymine are pyrimidine bases, while adenine and guanine are purine bases. The sugar and the base together are called a nucleoside.
 
-![DNA](/dna-sequence/dna-basics.jpg)
+![DNA](/assets/dna-sequence/dna-basics.jpg)
 
 *DNA (a) forms a double stranded helix, and (b) adenine pairs with thymine and cytosine pairs with guanine. (credit a: modification of work by Jerome Walker, Dennis Myts)*
 
@@ -246,11 +246,11 @@ Then we encode FASTA file from previous operation to encode this data into PNG.
 
 After encoding into PNG format this file looks like this.
 
-![Encoded Quote in PNG format](/dna-sequence/quote.png)
+![Encoded Quote in PNG format](/assets/dna-sequence/quote.png)
 
 The larger the input stream is the larger the PNG file would be.
 
-Compiled basic Hello World C program with [GCC](https://www.gnu.org/software/gcc/) would [look like](/dna-sequence/sample.png).
+Compiled basic Hello World C program with [GCC](https://www.gnu.org/software/gcc/) would [look like](/assets/dna-sequence/sample.png).
 
 ```c
 // gcc -O3 -o sample sample.c
@@ -313,7 +313,7 @@ dd if=<(openssl enc -aes-256-ctr  -pass pass:"$(dd if=/dev/urandom bs=128 count=
 
 Our freshly generated 1KB file looks something like this (its full of garbage data as intended).
 
-![Sample binary file 1KB](/dna-sequence/sample-binary-file.png)
+![Sample binary file 1KB](/assets/dna-sequence/sample-binary-file.png)
 
 We create following binary files:
 - 1KB.bin

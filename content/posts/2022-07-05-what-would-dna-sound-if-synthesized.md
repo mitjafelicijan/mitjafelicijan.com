@@ -145,10 +145,10 @@ sox output.wav -n spectrogram -o spectrogram.png
 An example spectrogram of Ludwig van Beethoven Symphony No. 6 First movement.
 
 <audio controls>
-  <source src="/dna-synthesized/symphony-no6-1st-movement.mp3" type="audio/mpeg">
+  <source src="/assets/dna-synthesized/symphony-no6-1st-movement.mp3" type="audio/mpeg">
 </audio>
 
-![Ludwig van Beethoven Symphony No. 6 First movement](/dna-synthesized/symphony-no6-1st-movement.png)
+![Ludwig van Beethoven Symphony No. 6 First movement](/assets/dna-synthesized/symphony-no6-1st-movement.png)
 
 The other option could also be in combination with [gnuplot](http://www.gnuplot.info/). This would require an intermediary step, however.
 
@@ -194,40 +194,40 @@ What I did was take interesting parts from an animal's genome and feed it to a t
 ### Niels Bohr quote
 
 <audio controls>
-  <source src="/dna-synthesized/quote/out.mp3" type="audio/mpeg">
+  <source src="/assets/dna-synthesized/quote/out.mp3" type="audio/mpeg">
 </audio>
 
-![Spectogram](/dna-synthesized/quote/spectogram.png)
+![Spectogram](/assets/dna-synthesized/quote/spectogram.png)
 
 ### Mouse
 
 This is part of a mouse genome `Mus_musculus.GRCm39.dna.nonchromosomal`. You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/mus_musculus/dna/).
 
 <audio controls>
-  <source src="/dna-synthesized/mouse/out.mp3" type="audio/mpeg">
+  <source src="/assets/dna-synthesized/mouse/out.mp3" type="audio/mpeg">
 </audio>
 
-![Spectogram](/dna-synthesized/mouse/spectogram.png)
+![Spectogram](/assets/dna-synthesized/mouse/spectogram.png)
 
 ### Bison
 
 This is part of a bison genome `Bison_bison_bison.Bison_UMD1.0.cdna`. You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bison_bison_bison/cdna/).
 
 <audio controls>
-  <source src="/dna-synthesized/bison/out.mp3" type="audio/mpeg">
+  <source src="/assets/dna-synthesized/bison/out.mp3" type="audio/mpeg">
 </audio>
 
-![Spectogram](/dna-synthesized/bison/spectogram.png)
+![Spectogram](/assets/dna-synthesized/bison/spectogram.png)
 
 ### Taurus
 
 This is part of a taurus genome `Bos_taurus.ARS-UCD1.2.cdna`. You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bos_taurus/cdna/).
 
 <audio controls>
-  <source src="/dna-synthesized/taurus/out.mp3" type="audio/mpeg">
+  <source src="/assets/dna-synthesized/taurus/out.mp3" type="audio/mpeg">
 </audio>
 
-![Spectogram](/dna-synthesized/taurus/spectogram.png)
+![Spectogram](/assets/dna-synthesized/taurus/spectogram.png)
 
 ## Making a drummer out of a DNA sequence
 
@@ -235,17 +235,17 @@ To make things even more interesting, I decided to send this data via MIDI to my
 
 Elektron is connected to my MacBook via USB cable and audio out is patched to a Sony Bluetooth speaker I have that supports 3.5 mm audio in. Elektron doesn't have internal speakers.
 
-![](/dna-synthesized/elektron/IMG_0619.jpg)
+![](/assets/dna-synthesized/elektron/IMG_0619.jpg)
 
-![](/dna-synthesized/elektron/IMG_0620.jpg)
+![](/assets/dna-synthesized/elektron/IMG_0620.jpg)
 
-![](/dna-synthesized/elektron/IMG_0622.jpg)
+![](/assets/dna-synthesized/elektron/IMG_0622.jpg)
 
 For communicating with Elektron, I choose `pygame` Python module that has MIDI built in. With this, it was rather simple to send notes to the device. All I did was map MIDI notes to the actual Nucleotides.
 
 Before all of this I also checked Audio MIDI Setup app under MacOS and checked MIDI Studio by pressing ⌘-2.
 
-![](/dna-synthesized/elektron/midi-studio.jpg)
+![](/assets/dna-synthesized/elektron/midi-studio.jpg)
 
 The whole script that parses and send notes to the Elektron looks like this.
 
@@ -287,7 +287,7 @@ del player
 pygame.midi.quit()
 ```
 
-<video src="/dna-synthesized/elektron/elektron.mp4" controls></video>
+<video src="/assets/dna-synthesized/elektron/elektron.mp4" controls></video>
 
 All of this could be made much more interesting if I choose different instruments for different Nucleotides, or doing more funky stuff with Elektron. But for now, this should be enough. It is just a proof of concept. Something to play around with.
 

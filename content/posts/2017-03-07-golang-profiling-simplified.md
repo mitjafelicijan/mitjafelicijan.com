@@ -107,5 +107,5 @@ go tool pprof -pdf ./cpu cpu.pprof > cpu.pdf
 
 This will generate PDF document with visualized profile.
 
-- [Memory PDF profile example](/go-profiling/golang-profiling-mem.pdf)
-- [CPU PDF profile example](/go-profiling/golang-profiling-cpu.pdf)
+- [Memory PDF profile example](/assets/go-profiling/golang-profiling-mem.pdf)
+- [CPU PDF profile example](/assets/go-profiling/golang-profiling-cpu.pdf)

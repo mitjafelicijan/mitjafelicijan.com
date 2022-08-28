@@ -1,0 +1,106 @@
+<style type="text/tailwindcss">
+  @layer utilities {
+
+    /* Container */
+    .container-blog {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* User text selection */
+    ::selection {
+      @apply bg-yellow-100 text-black;
+    }
+
+    ::-moz-selection {
+      @apply bg-yellow-100 text-black;
+    }
+
+    /* Headings */
+    article.single h2 {
+      @apply text-2xl font-bold mb-4 mt-8;
+    }
+
+    article.single h3 {
+      @apply text-xl font-bold mb-4 mt-8;
+    }
+
+    article.single h4 {
+      @apply text-lg font-bold mb-4 mt-8;
+    }
+
+    /* Paragraph */
+    article.single p {
+      @apply mb-5;
+    }
+
+    /* Links */
+    article.single a {
+      @apply underline hover:bg-yellow-200;
+    }
+
+    /* Blockquote */
+    article.single blockquote {
+      background-image: url('/general/alert-light.svg');
+      background-size: 30px 30px;
+      background-repeat: no-repeat;
+      background-position: 0 5px;
+      @apply pl-12 my-8;
+    }
+
+    /* Media: Images, audio, video */
+    article.single img {
+      @apply rounded w-full !bg-gray-50 my-8;
+    }
+
+    article.single video {
+      @apply rounded w-full !bg-gray-50;
+    }
+
+    article.single audio {
+      @apply w-full mb-6;
+    }
+
+    /* Code */
+    article.single code {
+      @apply bg-yellow-200 rounded px-2 py-1 text-xs font-medium;
+    }
+
+    article.single pre {
+      @apply !bg-gray-50 rounded text-xs p-4 mb-6 overflow-x-auto;
+    }
+
+    article.single pre code {
+      background: unset;
+      padding: unset;
+      @apply leading-relaxed;
+    }
+
+    /* Tables */
+    article.single table {
+      @apply w-full border border-black border-collapse mb-4;
+    }
+
+    article.single table tr,
+    article.single table td,
+    article.single table th {
+      @apply px-4 py-2 border text-left;
+    }
+
+    /* Unordered list */
+    article.single ul {
+      @apply list-disc pl-6 md:pl-10 mb-6;
+    }
+
+    /* Ordered list */
+    article.single ol {
+      @apply list-decimal pl-8 md:pl-10;
+    }
+
+    /* Katex */
+    article.single .katex-display {
+      @apply my-10;
+    }
+
+  }
+</style>

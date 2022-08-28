@@ -29,7 +29,7 @@ These phones were rocking:
 
 Let's take a look at these beauties.
 
-![Old phones](/wap/phones.gif)
+![Old phones](/assets/wap/phones.gif)
 
 ## WAP - Wireless Application Protocol
 
@@ -146,7 +146,7 @@ If you look at the python file, I convert all the images into tiny B&W images. T
 
 Because I currently don't have a phone old enough to test it on, I used an emulator. And it was really hard to find one. I found [WAP Proof](http://wap-proof.sharewarejunction.com/) on shareware junction, and it did the job well enough. I will try to find and actual device to test it on.
 
-<video src="/wap/emulator.mp4" controls></video>
+<video src="/assets/wap/emulator.mp4" controls></video>
 
 If you are using Nginx to serve the contents, add a directive to the hosts file that will automatically server `index.wml` file.
 

@@ -28,7 +28,7 @@ I really like the explanation from the article [Unikernels: Rise of the Virtual 
 
 If we compare a normal operating system to a unikernel side by side, they would look something like this.
 
-![Virtual machines vs Containers vs Unikernels](/pid1/unikernels.png)
+![Virtual machines vs Containers vs Unikernels](/assets/pid1/unikernels.png)
 
 From this image, we can see how the complexity significantly decreases with the use of Unikernels. This comes with a price, of course. Unikernels are hard to get running and require a lot of work since you don't have an actual proper kernel running in the background providing network access and drivers etc.
 
@@ -221,7 +221,7 @@ Hello from Golang
 Hello from Golang
 ```
 
-The whole [log file here](/pid1/qemu.log).
+The whole [log file here](/assets/pid1/qemu.log).
 
 ## Size comparison
 
@@ -290,7 +290,7 @@ genisoimage -R                              \
 
 This will produce `GoAsPID1.iso` which you can use with [Virtualbox](https://www.virtualbox.org/) or [Gnome Boxes](https://apps.gnome.org/app/org.gnome.Boxes/).
 
-<video src="/pid1/boxes.mp4" controls></video>
+<video src="/assets/pid1/boxes.mp4" controls></video>
 
 ## Is running applications as PID 1 even worth it?
 

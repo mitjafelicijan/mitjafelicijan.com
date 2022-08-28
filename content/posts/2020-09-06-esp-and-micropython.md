@@ -23,7 +23,7 @@ A while ago I bought some [ESP8266](https://www.espressif.com/en/products/socs/e
 
 For my project, I used [ESP32](https://www.espressif.com/en/products/socs/esp32) but I could easily choose [ESP8266](https://www.espressif.com/en/products/socs/esp8266). This guide contains which tools I use and how I prepared my workspace to code for [ESP8266](https://www.espressif.com/en/products/socs/esp8266).
 
-![ESP8266 and ESP32 boards](/esp8366-micropython/boards.jpg)
+![ESP8266 and ESP32 boards](/assets/esp8366-micropython/boards.jpg)
 
 This guide covers:
 - flashing SOC

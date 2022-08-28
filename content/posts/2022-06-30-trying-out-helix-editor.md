@@ -25,7 +25,7 @@ I am still getting used to the keyboard shortcuts and getting better. What Helix
 
 And it comes us packed with many [really good themes](https://github.com/helix-editor/helix/wiki/Themes).
 
-![Editor](/helix-editor/editor.png)
+![Editor](/assets/helix-editor/editor.png)
 
 It's still young but has this mature feeling to it. It has sane defaults and mimics Vim (works a bit differently, but the overall idea is similar).
 

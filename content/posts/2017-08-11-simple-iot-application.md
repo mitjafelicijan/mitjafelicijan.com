@@ -5,6 +5,17 @@ date: 2017-08-11
 draft: false
 ---
 
+**Table of contents**
+
+1. [Initial thoughts](#initial-thoughts)
+2. [Simple Python API](#simple-python-api)
+   1. [Basic web application](#basic-web-application)
+   2. [Web application security](#web-application-security)
+   3. [Simple API for writing data-points](#simple-api-for-writing-data-points)
+3. [Sending data to API with Arduino MKR1000](#sending-data-to-api-with-arduino-mkr1000)
+4. [Data visualization](#data-visualization)
+5. [Conclusion](#conclusion)
+
 ## Initial thoughts
 
 I have been developing these kind of application for the better part of my last 5 years and people keep asking me how to approach developing such application and I will give a try explaining it here.

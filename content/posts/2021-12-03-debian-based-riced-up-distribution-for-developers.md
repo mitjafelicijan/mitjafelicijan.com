@@ -5,6 +5,19 @@ date: 2021-12-03
 draft: false
 ---
 
+**Table of contents**
+
+1. [Introduction](#introduction)
+2. [How should I approach this?](#how-should-i-approach-this)
+3. [Desktop environments](#desktop-environments)
+4. [Batteries included](#batteries-included)
+      1. [Docker recipe](#docker-recipe)
+      2. [Making bash pretty](#making-bash-pretty)
+5. [Conclusion](#conclusion)
+
+
+## Introduction
+
 I have been using [Ubuntu](https://ubuntu.com/) for quite a longtime now. I have used [Debian](https://www.debian.org/) in the past and [Manjaro](https://manjaro.org/). Also had [Arch](https://archlinux.org/) for some time and even ran [Gentoo](https://www.gentoo.org/) way back.
 
 What I learned from all this is that I prefer running a bit older versions and having them be stable than run bleeding edge rolling release. For that reason, I stuck with Ubuntu for a couple of years now. I am also at a point in my life where I just don't care what is cool or hip anymore. I just want a stable system that doesn't get in my way.
@@ -149,7 +162,7 @@ This is some of the output from the installation script.
 Let's take a look at some examples in the installation script.
 
 
-##### Docker recipe
+#### Docker recipe
 
 ```sh
 # docker
@@ -166,7 +179,7 @@ systemctl status docker --no-pager
 /sbin/usermod -aG docker $USERNAME
 ```
 
-##### Making bash pretty
+#### Making bash pretty
 
 I really like [Oh My Zsh](https://ohmyz.sh/), but I don't like zsh shell. When I used it, I constantly needed to be aware of it and running bash scripts was a pain. So, I was really delighted when I found out that a version for bash existed called [Oh My Bash](https://ohmybash.nntoan.com/). Let's take a look at the recipe for installing it.
 

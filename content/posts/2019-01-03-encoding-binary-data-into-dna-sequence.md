@@ -5,6 +5,24 @@ date: 2019-01-03
 draft: false
 ---
 
+**Table of contents**
+
+1. [Initial thoughts](#initial-thoughts)
+2. [Glossary](#glossary)
+3. [Data encoding](#data-encoding)
+4. [Quick history of DNA](#quick-history-of-dna)
+5. [What is DNA?](#what-is-dna)
+6. [Encode binary data into DNA sequence](#encode-binary-data-into-dna-sequence)
+   1. [Basic Encoding](#basic-encoding)
+   2. [FASTA file format](#fasta-file-format)
+   3. [PNG encoded DNA sequence](#png-encoded-dna-sequence)
+7. [Encoding text file in practice](#encoding-text-file-in-practice)
+8. [Toolkit for encoding data](#toolkit-for-encoding-data)
+   1. [dnae-encode](#dnae-encode)
+   2. [dnae-png](#dnae-png)
+9. [Benchmarks](#benchmarks)
+10. [References](#references)
+
 ## Initial thoughts
 
 Imagine a world where you could go outside and take a leaf from a tree and put it through your personal DNA sequencer and get data like music, videos or computer programs from it. Well, this is all possible now. It was not done on a large scale because it is quite expensive to create DNA strands but it's possible.

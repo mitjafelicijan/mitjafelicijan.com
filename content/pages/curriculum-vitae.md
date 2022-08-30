@@ -16,9 +16,21 @@ draft: false
 
 <div class="cv-picture">
 
-![Picture](/assets/cv/avatar.gif)
+![Mitja Felicijan](/assets/cv/avatar.gif)
 
 </div>
+
+<script>
+  window.addEventListener('load', async () => {
+    // flip CV image on mouse over
+    const cvImage = document.querySelector('.cv-picture img');
+    if (cvImage) {
+      setInterval(() => {
+        cvImage.style.transform = cvImage.style.transform === 'scaleX(1)' ? 'scaleX(-1)' : 'scaleX(1)';
+      }, 1000);
+    }
+  });
+</script>
 
 **Mitja Felicijan**
 

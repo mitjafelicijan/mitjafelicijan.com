@@ -35,13 +35,15 @@ I first tried [React JS](https://reactjs.org/). I kind of like it. Furthermore, 
 
 I prefer using [Tailwind CSS](https://tailwindcss.com/) for my styling pleasures, and integrating that was also a painless experience. It was actually nice to see that some things got better with time. In about 2 minutes I got Tailwind working, and I was able to use classes at my disposal. All that `postcss` stuff was taken care of by adding a couple of things in config files (all described really well in their documentation).
 
+It is not that different from Vue. People will probably call me a lunatic for saying this. But you know, it is the truth. Same same, but different. I still believe that using libraries like this is beneficial. I am not a JavaScript purist. They all have their quirks, but at the end of the day, I truly believe it’s worth it.
+
 ## Bundlers and Transpilers
 
 I still reject calling [Typescript](https://www.typescriptlang.org/) to [JavaScript](https://www.javascript.com/) conversion as a compilation process. I call them [transpilers](https://devopedia.org/transpiler), and I don’t care! 😈
 
 And if you want to fight this, take a look at this little chart and be mad at it!
 
-![Untitled](/assets/state-of-web/compiling-vs-transpiling.png)
+![Compiling vs Transpiling](/assets/state-of-web/compiling-vs-transpiling.png)
 
 The first one that I ever used was [webpack](https://webpack.js.org/), and it was an absolute horrific experience. Saying this, it is an absolutely fantastic tool. I felt more like a config editor than actually a programmer. To be fair, I am a huge fan of [make](https://www.gnu.org/software/make/), and you can do as you wish with this information. I like my build systems simple.
 
@@ -85,6 +87,10 @@ They sell you [NoOps](https://www.geeksforgeeks.org/overview-of-noops/), but whe
 Lately, this has become a huge trend that will for sure bite us in the future. And let’s not get it twisted. By doing this, PaaS providers like [AWS](https://aws.amazon.com/), [GCS](https://cloud.google.com/), etc. obscure their billing, and you end up paying more than you really should. And even if that is not an issue, it comes down to the principle of things. AWS is known for having multiple “currencies“ inside their projects like write operations, read operations, etc. which add up, and it creates this impossible to track billing scheme. It all behaves suspiciously like a pay-to-win game you could find on mobile phones that scams you out of your money.
 
 And as far as I am concerned, the most important thing was me not coding the functionalities for the game I want to make. I was battling libraries and cloud providers. How to deploy, what settings are relevant. Bad documentation or multiple versions of achieving the same thing. You are getting bombarded by all this information, and you don’t really have any control over it. Production-ready code becomes a joke, essentially. Specially if you tend to work on that project for a prolonged period of time.
+
+All of these options end up creating a fatigue. What to choose, what not to choose. Unnecessary worrying about if the stack will still be deemed worthy in six months. There is elegance in simplicity.
+
+![To many options](/assets/state-of-web/2008-vs-2020.png)
 
 And this jab at these libraries and cloud providers is not done out of malice. It is a real concern that I have about them. In my life, I have seen technologies come and go, but the basics always stick around. So surrendering all the power you have to a library or a cloud provider is in my opinion a stupid move.
 

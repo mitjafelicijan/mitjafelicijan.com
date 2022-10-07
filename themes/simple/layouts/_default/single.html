@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main aria-role="main" class="container-blog px-6 md:p-0">
+<main aria-role="main" class="container-blog mx-auto px-6 md:p-0">
 
   <!-- Single article -->
   <article itemtype="http://schema.org/Article" class="single mb-12">
@@ -17,21 +17,18 @@
   </article>
 
   {{ if in .Type "posts" }}
-  <hr class="border-2 border-gray-100 mb-10">
+  <hr class="border-2 border-gray-100 mb-10" />
   {{ end }}
 
   <!-- Comment, contact -->
   {{ if in .Type "posts" }}
   <section class="mb-10">
-    <p class="mb-4">
-      <strong>Comment, contact:</strong> The easiest way to contact me is by writing me a message on <a href="https://t.me/mitjafelicijan" target="_blank" class="underline hover:bg-yellow-100">Telegram (https://t.me/mitjafelicijan)</a>.
-    </p>
-    <p>You can also just write me an email at <a href="mailto:m@mitjafelicijan.com" class="underline hover:bg-yellow-100">m@mitjafelicijan.com</a>.</p>
+    {{ partial "comments.html" . }}
   </section>
   {{ end }}
 
   {{ if in .Type "posts" }}
-  <hr class="border-2 border-gray-100 mb-10">
+  <hr class="border-2 border-gray-100 mb-10" />
   {{ end }}
 
   <!-- Read more -->

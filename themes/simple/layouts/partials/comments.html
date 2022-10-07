@@ -1,0 +1,20 @@
+<section class="comments">
+  <p class="mb-4">You can write me an email at <a href="mailto:m@mitjafelicijan.com" class="underline hover:bg-yellow-100">m@mitjafelicijan.com</a> or comment bellow.</p>
+  <div id="comment-section"></div>
+
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="_https://latest.cactus.chat/style.css" type="text/css">
+
+  <script>
+    window.addEventListener('load', () => {
+      initComments({
+        node: document.getElementById("comment-section"),
+        defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+        serverName: "cactus.chat",
+        siteName: "mitjafelicijan.com",
+        commentSectionId: "{{.File}}",
+        updateInterval: 15
+      });
+    });
+  </script>
+</section>

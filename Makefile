@@ -7,9 +7,10 @@ deploy: openring
 	ssh root@165.22.87.180 chown www-data:www-data /var/www/html/mitjafelicijan.com/ -Rf
 
 openring:
-	openring -l 165 -n 5 -p 1 \
+	openring -l 165 -n 6 -p 1 \
 		-s https://drewdevault.com/feed.xml \
 		-s https://danluu.com/atom.xml \
+		-s https://mirzapandzo.com/feed/feed.xml \
 		-s https://serokell.io/blog.rss.xml \
 		-s https://cronokirby.com/posts/index.xml \
 		-s https://www.jeffgeerling.com/blog.xml \

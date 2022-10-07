@@ -18,3 +18,8 @@ I buy all the books I read from [Book Depository](https://www.bookdepository.com
 - A Clockwork Orange ([Goodreads](https://www.goodreads.com/book/show/41817486-a-clockwork-orange))
 - Spaceman: An Astronaut's Unlikely Journey to Unlock the Secrets of the Universe ([Goodreads](https://www.goodreads.com/book/show/28439264-spaceman))
 - The Physics of Star Trek ([Goodreads](https://www.goodreads.com/book/show/2104.The_Physics_of_Star_Trek))
+- Data Analytics for Absolute Beginners: A Deconstructed Guide to Data Literacy ([Goodreads](https://www.goodreads.com/book/show/49964446-data-analytics-for-absolute-beginners))
+- Statistics for Absolute Beginners: A Plain English Introduction ([Goodreads](https://www.goodreads.com/book/show/36333089-statistics-for-absolute-beginners))
+- Machine Learning For Beginners ([Goodreads](https://www.goodreads.com/book/show/41442685-machine-learning-for-beginners))
+- Machine Learning with Python: A Practical Beginners’ Guide ([Goodreads](https://www.goodreads.com/book/show/52345141-machine-learning-with-python))
+- Tinyml: Machine Learning with Tensorflow Lite on Arduino and Ultra-Low-Power Microcontrollers ([Goodreads](https://www.goodreads.com/book/show/50204679-tinyml))

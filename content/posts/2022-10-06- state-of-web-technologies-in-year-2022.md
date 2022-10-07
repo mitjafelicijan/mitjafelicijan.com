@@ -11,8 +11,9 @@ draft: false
 3. [Bundlers and Transpilers](#bundlers-and-transpilers)
 4. [Jam Stack, Mach Stack no snack](#jam-stack-mach-stack-no-snack)
 5. [Tailwind CSS still rocks!](#tailwind-css-still-rocks)
-6. [Web development has a marketing issue](#web-development-has-a-marketing-issue)
-7. [Conclusion](#conclusion)
+6. [Code maintainability](#code-maintainability)
+7. [Web development has a marketing issue](#web-development-has-a-marketing-issue)
+8. [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -107,6 +108,14 @@ I am also not saying that Tailwind is the cure for everything. Something custom 
 I have also noticed that people who criticize Tailwind the most never actually used it in a real project that has a long lifetime with plenty of changes that will happen in the future.
 
 But you know, whatever floats your boat!
+
+## Code maintainability
+
+Somehow, people also stopped talking about maintenance. If you constantly try to catch the latest and greatest train, you are by that logic always trying new things. Which is a good thing if you want to learn about technologies and try them. But for the production environment, you have to have a stable stack that doesn’t change every 6 months.
+
+You can lock dependencies for sure. Nevertheless, the hype train moves along anyway. And the mindset this breads goes against locking the code. These bleeding-edge rolling release cycle is not helping. That is why enterprise solutions usually look down on these popular stacks and only do bare minimum to appear hip and cool.
+
+With that said, I still think that progress is good, but should be taken with a grain of salt. If your project is something that should be built once and then rarely updated, going with the latest stack is a possible way to go. But, if you are working on a project that lasts for years, you should probably approach it with some level of caution. Web development is often times too volatile.
 
 ## Web development has a marketing issue
 

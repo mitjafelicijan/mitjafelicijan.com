@@ -91,6 +91,8 @@ And as far as I am concerned, the most important thing was me not coding the fun
 
 All of these options end up creating a fatigue. What to choose, what not to choose. Unnecessary worrying about if the stack will still be deemed worthy in six months. There is elegance in simplicity.
 
+> JavaScript UI frameworks and libraries work in cycles. Every six months or so, a new one pops up, claiming that it has revolutionized UI development. Thousands of developers adopt it into their new projects, blog posts are written, Stack Overflow questions are asked and answered, and then a newer (and even more revolutionary) framework pops up to usurp the throne. — Ian Allen
+
 ![To many options](/assets/state-of-web/2008-vs-2020.png)
 
 And this jab at these libraries and cloud providers is not done out of malice. It is a real concern that I have about them. In my life, I have seen technologies come and go, but the basics always stick around. So surrendering all the power you have to a library or a cloud provider is in my opinion a stupid move.

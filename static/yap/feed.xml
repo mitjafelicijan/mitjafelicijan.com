@@ -15,6 +15,11 @@
     <!-- October, 2022 -->
 
     <item>
+      <title>Managing all the requirements for Gtk4 development looked more and more like a huge pain, so I moved to Gnome Builder for development of desktop apps. Builder is really impressive piece of software! 👀</title>
+      <pubDate>Sat, 08 Oct 2022 22:53:08 +02:00</pubDate>
+    </item>
+
+    <item>
       <title>Gtk4 is really missing some quality Python documentation! All that you can find is examples for Gtk3, and it is not really completely compatible with v4. This makes working with it extremely frustrating. 😠</title>
       <pubDate>Sat, 08 Oct 2022 02:42:52 +02:00</pubDate>
     </item>

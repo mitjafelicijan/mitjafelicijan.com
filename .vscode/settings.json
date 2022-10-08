@@ -4,5 +4,9 @@
   "[xml]": {
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false
+  },
+  "[xsl]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
   }
 }

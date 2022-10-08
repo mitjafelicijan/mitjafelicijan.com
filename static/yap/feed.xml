@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="theme.xsl"?>
+<rss version="2.0">
+  <channel>
+
+    <title>Mitja Felicijan</title>
+    <link>https://mitjafelicijan.com/yap/feed.xml</link>
+    <description>You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.</description>
+    <managingEditor>m@mitjafelicijan.com (Mitja Felicijan)</managingEditor>
+    <generator>YapYap</generator>
+
+    <!-- RFC 2882 generator: https://epochtimestamp.com/ -->
+
+    <!-- October, 2022 -->
+
+    <item>
+      <description>Gtk4 is really missing some quality Python documentation! All that you can find is examples for Gtk3, and it is not really completely compatible with v4. This makes working with it extremely frustrating. 😠</description>
+      <pubDate>Sat, 08 Oct 2022 02:42:52 +02:00</pubDate>
+    </item>
+
+    <item>
+      <description>I started work on a hobby project that uses Gtk4 to display various data like CSV, SQLite, MySQL and Redis. Essentially, a data exploration tool with some plotting features.</description>
+      <pubDate>Sat, 08 Oct 2022 02:22:04 +02:00</pubDate>
+    </item>
+
+    <item>
+      <description>An interesting use-case for this type of blogging is also that it is by default RSS reader friendly, making subscribing to these feeds incredibly convenient.</description>
+      <pubDate>Sat, 08 Oct 2022 01:47:47 +02:00</pubDate>
+    </item>
+
+    <item>
+      <description>I added comments to my site finally. I choose https://cactus.chat/. Really simple implementation and uses Matrix protocol, which makes it even more cool. 🎉</description>
+      <pubDate>Sat, 08 Oct 2022 00:38:18 +02:00</pubDate>
+    </item>
+
+    <item>
+      <description>I have been testing ideas how to implement microblogging as a replacement for Twitter. Using XSL and XML is an interesting idea that is supported through major browser. View the source of this page and check it out in action.</description>
+      <pubDate>Sat, 07 Oct 2022 01:38:18 +02:00</pubDate>
+    </item>
+
+    <!--
+      Examples:
+
+      <item>
+        <guid>1</guid>
+        <description>Example of Image post</description>
+        <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+        <enclosure url="https://placeimg.com/550/300/tech" />
+      </item>
+      <item>
+        <description>Example of Text post</description>
+        <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+      </item>
+    -->
+
+  </channel>
+</rss>

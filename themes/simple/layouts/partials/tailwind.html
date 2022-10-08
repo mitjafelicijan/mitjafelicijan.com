@@ -142,11 +142,11 @@
     }
 
     .cactus-container .cactus-comment .cactus-comment-avatar img {
-      @apply w-10 h-10 rounded-full;
+      @apply w-8 h-8 rounded-full;
     }
 
     .cactus-container .cactus-comment .cactus-comment-avatar-placeholder {
-      @apply w-10 h-10 rounded-full bg-gray-300;
+      @apply w-8 h-8 rounded-full bg-gray-300;
     }
 
     .cactus-container .cactus-comment .cactus-comment-header {
@@ -159,6 +159,20 @@
 
     .cactus-container .cactus-comment .cactus-comment-header .cactus-comment-time {
       @apply text-gray-400 text-sm;
+    }
+
+    .cactus-container .cactus-comment .cactus-message-text code {
+      @apply bg-yellow-100 rounded px-2 py-1 text-xs font-medium;
+    }
+
+    /* Unordered list */
+    .cactus-container .cactus-comment .cactus-message-text  ul {
+      @apply list-disc pl-2 md:pl-6;
+    }
+
+    /* Ordered list */
+    .cactus-container .cactus-comment .cactus-message-text  ol {
+      @apply list-decimal pl-2 md:pl-6;
     }
 
     /* Cactus: Login */

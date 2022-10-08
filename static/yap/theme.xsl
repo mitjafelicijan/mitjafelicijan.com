@@ -32,6 +32,21 @@
           });
         </script>
 
+        <!--
+          Examples:
+
+          <item>
+            <guid>1</guid>
+            <title>Example of Image post</title>
+            <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+            <enclosure url="https://placeimg.com/550/300/tech" />
+          </item>
+          <item>
+            <title>Example of Text post</title>
+            <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
+          </item>
+        -->
+
       </head>
 
       <body>
@@ -40,7 +55,7 @@
           <div class="flex py-4 mt-4 mb-6 items-center gap-2">
             <h1>
               <a href="/" class="text-xl font-bold hover:bg-yellow-100">
-                <xsl:value-of select="rss/channel/title" />
+                <xsl:value-of select="rss/channel/pageTitle" />
               </a>
             </h1>
           </div>
@@ -79,9 +94,9 @@
                   </div>
                 </xsl:if>
 
-                <xsl:if test="description">
-                  <div class="description">
-                    <xsl:value-of select="description" />
+                <xsl:if test="title">
+                  <div>
+                    <xsl:value-of select="title" />
                   </div>
                 </xsl:if>
               </section>

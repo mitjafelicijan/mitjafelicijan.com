@@ -69,7 +69,7 @@
             <article class="flex flex-col md:flex-row gap-4 mb-10">
 
               <xsl:if test="enclosure/@url">
-                <a class="w-full md:w-80" target="_blank">
+                <a class="w-full md:w-90 block" target="_blank">
                   <xsl:attribute name="href">
                     <xsl:value-of select="enclosure/@url" />
                   </xsl:attribute>

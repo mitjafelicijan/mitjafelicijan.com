@@ -36,3 +36,9 @@ You land on a planet where every living organism is a plant and among those plan
 In a distant future where everybody has bio implants, you have just received your first one, which happens to be a brain implant. Something goes wrong, and your implant is starting to misbehave, and you are experiencing brain malfunctions. You are on the streets at night a couple of hours after your procedure. You can feel your sanity breaking down.
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913808801/size=small/bgcol=ffffff/linkcol=0687f5/track=1157430581/transparent=true/" seamless><a href="https://mitjafelicijan.bandcamp.com/album/that-sound-that-machine-makes-when-struggling">That sound that machine makes when struggling by Mitja Felicijan</a></iframe>
+
+## Cow animation
+
+I also made this little cow animation. Go into full screen to see the effects in more details.
+
+<video src="/assets/microsoundtrack/cow.m4v" controls loop></video>

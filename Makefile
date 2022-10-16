@@ -1,5 +1,5 @@
 dev: openring
-	hugo server --bind=0.0.0.0
+	hugo server --bind=0.0.0.0 --buildDrafts
 
 deploy: openring
 	hugo --gc --minify

@@ -101,6 +101,20 @@
       @apply my-10;
     }
 
+    /* Lazy loading of iframes */
+    article.single .ll-iframe {
+      @apply bg-gray-100 rounded;
+    }
+
+    article.single .ll-iframe::before {
+      @apply h-full flex border-2 border-gray-300 rounded justify-center items-center font-medium text-sm cursor-pointer animate-pulse;
+      content: 'Click here to load resource…';
+    }
+
+    article.single .ll-iframe.empty::before {
+      content: none;
+    }
+
     /* Cactus Comments */
     .comments img {
       max-width: auto !important;

@@ -10,7 +10,12 @@
       {{ range (where .Site.RegularPages "Section" "posts") }}
       <li class="mb-5">
         <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Monday Jan 2, 2006" }}</time>
-        <a href="{{.Permalink}}" itemprop="url" class="hover:bg-yellow-100">{{.Title}}</a>
+        <a href="/{{.Params.url}}" itemprop="url" class="hover:bg-yellow-100">
+          {{ if .Params.draft }}
+          <span class="bg-orange-600 text-white px-1.5">Draft</span>
+          {{ end }}
+          {{.Title}}
+        </a>
       </li>
       {{end}}
     </ul>

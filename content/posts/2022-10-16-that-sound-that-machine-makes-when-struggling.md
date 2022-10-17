@@ -1,5 +1,5 @@
 ---
-title: Microsoundtrack - That sound that machine makes when struggling
+title: Microsoundtrack — That sound that machine makes when struggling
 url: that-sound-that-machine-makes-when-struggling.html
 date: 2022-10-16
 draft: false

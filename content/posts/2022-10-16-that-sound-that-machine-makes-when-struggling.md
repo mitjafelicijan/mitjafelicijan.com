@@ -15,7 +15,7 @@ You can listen to the whole set on [Youtube](https://www.youtube.com/watch?v=_5o
 
 ## A bunch of inter-dimensional people with loud clocks
 
-A group of inter-dimensional people are going up and down the elevator with you while having loud clocks around their necks. Each clock ticks on a different frequency and speed. A lot of other sounds are getting drawn into your dimension, resulting in a strange merging of dimensions.
+A group of inter-dimensional people are going up and down the elevator with you while having loud clocks around their necks. Each clock ticks on a different frequency. A lot of other sounds are getting drawn into your dimension, resulting in a strange merging of dimensions.
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3913808801/size=small/bgcol=ffffff/linkcol=0687f5/track=1349272965/transparent=true/" seamless><a href="https://mitjafelicijan.bandcamp.com/album/that-sound-that-machine-makes-when-struggling">That sound that machine makes when struggling by Mitja Felicijan</a></iframe>
 

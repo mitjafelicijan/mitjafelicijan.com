@@ -6,16 +6,14 @@ dev-server: openring
 	hugo server --bind=0.0.0.0 --buildDrafts
 
 tailwind-watch:
-	npx tailwindcss \
+	npx tailwindcss --jit --minify --watch \
 		-i ./themes/simple/static/css/tailwind.css \
-		-o ./static/general/index.css \
-		--jit --minify --watch
+		-o ./static/general/index.css
 
 tailwind-build:
-	npx tailwindcss \
+	npx tailwindcss --jit --minify \
 		-i ./themes/simple/static/css/tailwind.css \
-		-o ./static/general/index.css \
-		--jit --minify
+		-o ./static/general/index.css
 
 deploy: openring tailwind-build
 	hugo --gc --minify

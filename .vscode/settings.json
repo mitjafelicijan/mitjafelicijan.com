@@ -8,5 +8,9 @@
   "[xsl]": {
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false
-  }
+  },
+  "[css]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
 }

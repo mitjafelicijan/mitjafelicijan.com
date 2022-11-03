@@ -1,7 +1,23 @@
-dev: openring
+MAKEFLAGS=-j4
+
+dev: tailwind-watch dev-server
+
+dev-server: openring
 	hugo server --bind=0.0.0.0 --buildDrafts
 
-deploy: openring
+tailwind-watch:
+	npx tailwindcss \
+		-i ./themes/simple/static/css/tailwind.css \
+		-o ./static/general/index.css \
+		--jit --minify --watch
+
+tailwind-build:
+	npx tailwindcss \
+		-i ./themes/simple/static/css/tailwind.css \
+		-o ./static/general/index.css \
+		--jit --minify
+
+deploy: openring tailwind-build
 	hugo --gc --minify
 	rsync -az --delete public/ root@165.22.87.180:/var/www/html/mitjafelicijan.com/
 	ssh root@165.22.87.180 chown www-data:www-data /var/www/html/mitjafelicijan.com/ -Rf
@@ -18,6 +34,7 @@ openring:
 		> themes/simple/layouts/partials/openring.html
 
 provision:
+	npm install
 	cd ~/Junk \
 	git clone https://git.sr.ht/~sircmpwn/openring \
 	cd openring \

@@ -14,3 +14,7 @@ hugo.linux
 
 # Openring build
 themes/simple/layouts/partials/openring.html
+
+# NodeJS
+node_modules/
+package-lock.json

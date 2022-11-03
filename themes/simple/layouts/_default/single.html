@@ -1,10 +1,10 @@
 {{ define "main" }}
-<main aria-role="main" class="container-blog mx-auto px-6 md:p-0">
+<main role="main" class="container-blog mx-auto px-6 md:p-0">
 
   <!-- Single article -->
   <article itemtype="http://schema.org/Article" class="single mb-12">
     <header class="mb-6">
-      <h1 itemtype="headline" class="text-4xl font-extrabold mb-6 leading-tight">{{.Title}}</h1>
+      <h1 itemtype="headline" class="text-4xl font-extrabold mb-6 leading-tight">{{ .Title }}</h1>
 
       {{ if in .Type "posts" }}
       <time class="text-gray-400 font-medium text-sm">Published on {{ .Date.Format "Monday Jan 2, 2006" }}</time>
@@ -33,22 +33,7 @@
 
   <!-- Read more -->
   {{ if in .Type "posts" }}
-  <section>
-    <h2 class="text-2xl font-bold mb-6">Read more from this site</h2>
-    <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="mb-12">
-      <meta itemprop="name" content="Article list">
-      <ul>
-        {{ $randomPosts := shuffle (where .Site.RegularPages "Type" "posts") | first 5 }}
-        {{ range $randomPosts }}
-        <li class="mb-6">
-          <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Mon Jan 2, 2006" }}</time>
-          <a href="/{{.Params.url}}" itemprop="url" class="hover:bg-yellow-100 font-medium">{{.Title}}</a>
-          <p class="text-gray-600 text-sm">{{.Summary}}</p>
-        </li>
-        {{end}}
-      </ul>
-    </nav>
-  </section>
+  {{ partial "read-more.html" . }}
   {{ end }}
 
   {{ if in .Type "posts" }}

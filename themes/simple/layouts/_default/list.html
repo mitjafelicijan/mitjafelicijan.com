@@ -1,39 +1,28 @@
 {{ define "main" }}
-<main aria-role="main" class="container-blog mx-auto px-6 md:p-0">
+<main role="main" class="container-blog mx-auto px-6 md:p-0">
 
   <h1 class="text-2xl font-bold mb-6">Blog posts</h1>
 
   <!-- List of all blog posts -->
-  <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="mb-12">
+  <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="mb-12" role="feed">
     <meta itemprop="name" content="Article list">
-    <ul>
-      {{ range (where .Site.RegularPages "Section" "posts") }}
-      <li class="mb-5">
-        <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Monday Jan 2, 2006" }}</time>
-        <a href="/{{.Params.url}}" itemprop="url" class="hover:bg-yellow-100">
-          {{ if .Params.draft }}
-          <span class="bg-orange-600 text-white px-1.5">Draft</span>
-          {{ end }}
-          {{.Title}}
-        </a>
-      </li>
-      {{end}}
-    </ul>
+    {{ range (where .Site.RegularPages "Section" "posts") }}
+    <article class="mb-5" itemscope itemtype="http://schema.org/Article">
+      <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Monday Jan 2, 2006" }}</time>
+      <a href="/{{ .Params.url }}" itemprop="url" class="hover:bg-yellow-100" rel="bookmark noopener" aria-label="Opens URL">
+        {{ if .Params.draft }}
+        <span class="bg-orange-600 text-white px-1.5">Draft</span>
+        {{ end }}
+        {{.Title}}
+      </a>
+    </article>
+    {{ end }}
   </nav>
 
   <hr class="border-2 border-gray-100 mb-10">
 
   <!-- Projects I work on -->
-  <section class="mb-12">
-    <h4 class="text-2xl font-bold mb-6">Side projects I worked on</h4>
-    <ul class="list-disc ml-6">
-      <li><a href="https://git.mitjafelicijan.com/journalctl-proxy.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">journalctl-proxy - Exposes your systemd logs to web via web interface</a></li>
-      <li><a href="https://git.mitjafelicijan.com/redis-marshal.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">redis-marshal - Lightweight Redis data exploration tool</a></li>
-      <li><a href="https://git.mitjafelicijan.com/dna-encoding.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">dna-encoding - Tools for encoding files to DNA sequence</a></li>
-      <li><a href="https://git.mitjafelicijan.com/vertex.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">vertex - Create mock API's and add basic logic to simplify prototyping</a></li>
-      <li><a href="https://git.mitjafelicijan.com/scarecrow.git/" target="_blank" rel="noopener nofollow" class="hover:bg-yellow-100">scarecrow - Minimal configuration reverse proxy</a></li>
-    </ul>
-  </section>
+  {{ partial "side-projects.html" . }}
 
   <hr class="border-2 border-gray-100 mb-10">
 

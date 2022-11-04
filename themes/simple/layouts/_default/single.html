@@ -4,7 +4,7 @@
   <!-- Single article -->
   <article itemtype="http://schema.org/Article" class="single mb-12">
     <header class="mb-6">
-      <h1 itemtype="headline" class="text-4xl font-extrabold mb-6 leading-tight">{{ .Title }}</h1>
+      <h1 itemtype="headline" class="text-4xl font-extrabold mb-6 leading-tightest md:leading-tight">{{ .Title }}</h1>
 
       {{ if in .Type "posts" }}
       <time class="text-gray-400 font-medium text-sm">Published on {{ .Date.Format "Monday Jan 2, 2006" }}</time>

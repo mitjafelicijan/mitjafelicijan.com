@@ -130,7 +130,7 @@ using a single nucleotide. In this way, we are able to use the 4 bases that comp
 | 01       | **C** (Cytosine) |
 | 11       | **T** (Thymine)  |
 
-With this in mind we can simply encode any data by using two-bit to Nucleotides conversion
+With this in mind we can simply encode any data by using two-bit to Nucleotides conversion.
 
 ```python
 { Algorithm 1: Naive byte array to DNA encode }
@@ -354,6 +354,10 @@ gzip -9 < 10MB.fa > 10MB.fa.gz
 ```
 
 [Download ODS file with benchmarks](/dna-sequence/benchmarks.ods).
+
+![Sample binary file 1KB](/assets/dna-sequence/chart-1.png)
+
+![Sample binary file 1KB](/assets/dna-sequence/chart-2.png)
 
 ## References
 

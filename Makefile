@@ -17,8 +17,8 @@ tailwind-build:
 
 deploy: openring tailwind-build
 	hugo --gc --minify
-	rsync -az --delete public/ root@165.22.87.180:/var/www/html/mitjafelicijan.com/
-	ssh root@165.22.87.180 chown www-data:www-data /var/www/html/mitjafelicijan.com/ -Rf
+	rsync -az --delete public/ root@mitjafelicijan.com:/var/www/html/mitjafelicijan.com/
+	ssh root@mitjafelicijan.com chown www-data:www-data /var/www/html/mitjafelicijan.com/ -Rf
 
 openring:
 	openring -l 165 -n 6 -p 1 \

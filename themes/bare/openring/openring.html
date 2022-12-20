@@ -1,0 +1,19 @@
+<section class="mb-10">
+  <h2 class="text-2xl font-bold mb-6">Articles from blogs I follow around the net</h2>
+
+  <section>
+    {{ range .Articles }}
+    <article class="mb-6">
+      <a href="{{ .Link }}" target="_blank" rel="noopener" class="font-medium mb-1 hover:bg-yellow-100">{{ .Title }}</a>
+      <p class="mb-1 text-sm text-gray-600">{{ .Summary }}</p>
+      <div class="text-gray-500 font-medium text-xs">
+        Via <a href="{{ .SourceLink }}" class="underline">{{ .SourceTitle }}</a> on {{ .Date | datef "January 2, 2006" }}
+      </div>
+    </article>
+    {{ end }}
+  </section>
+
+  <p class="text-sm text-gray-500">
+    <a href="https://git.sr.ht/~sircmpwn/openring" class="no-underline hover:underline">Generated with openring.</a>
+  </p>
+</section>

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main role="main">
+
+  <!-- Single article -->
+  <article itemtype="http://schema.org/Article">
+    <header>
+      <h1 itemtype="headline">{{ .Title }}</h1>
+
+      {{ if in .Type "posts" }}
+      <time>Published on {{ .Date.Format "Monday Jan 2, 2006" }}</time>
+      {{ end }}
+    </header>
+
+    <div>
+      {{.Content}}
+    </div>
+  </article>
+
+</main>
+{{ end }}

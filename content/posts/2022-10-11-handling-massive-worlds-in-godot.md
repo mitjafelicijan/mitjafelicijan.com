@@ -10,7 +10,7 @@ draft: true
 1. [Handling lazy loading in 2D world](#handling-lazy-loading-in-2d-world)
    1. [Player movement](#player-movement)
 
-> Because these examples are exported from **Godot to WebAssembly** and the packaging produces **large files**, you will need to **click to lazy load them**
+Because these examples are exported from **Godot to WebAssembly** and the packaging produces **large files**, you will need to **click to lazy load them**
 
 I have seen a couple of examples on the net, but never really a comprehensive guide how this would be achieved. My solution is nowhere perfect, but it will get you started. This code is also not optimized, so buyer beware.
 

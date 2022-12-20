@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Mitja Felicijan'
 
 # Theme selction.
-theme = 'simple'
+theme = 'bare'
 
 # Makes url's have '.html' at the end.
 uglyurls = true

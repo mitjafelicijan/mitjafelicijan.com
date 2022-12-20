@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="alternate" type="application/rss+xml" href="/index.xml" title="{{ .Site.Author.name }}">
+
+<style>
+body{padding:10px;line-height:1.3em;font-family:serif;}
+h1,h2,h3,h4,h5,h6{line-height:110%;}
+h1{font-size:190%}
+video,img{max-width:700px;}
+code{background:#ddd;white-space:nowrap;}
+pre code{background:transparent;white-space:pre;}
+pre{border:1px solid #000;padding:5px;overflow:auto;}
+table {border-collapse: collapse;border: 1px solid #000;}
+td,th {border:1px solid #000;padding:3px 10px;}
+@media only screen and (max-width: 740px){video,img{max-width:100%;}time{display:block!important}}
+</style>
+
+<link
+  href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA=="
+  rel="icon" type="image/x-icon" />
+
+<title>{{ .Title }}</title>
+<meta name="description" content="{{ .Site.Params.description }}" />
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+<meta property="og:url" content="https://mitjafelicijan.com/{{ .Params.url }}">
+<meta property="og:image" content="https://mitjafelicijan.com/general/og-big.jpg">

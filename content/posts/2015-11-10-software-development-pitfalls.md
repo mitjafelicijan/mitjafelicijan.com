@@ -5,17 +5,6 @@ date: 2015-11-10
 draft: false
 ---
 
-**Table of contents**
-
-1. [Ping emails](#ping-emails)
-2. [Everybody is a project manager](#everybody-is-a-project-manager)
-3. [We are never wrong](#we-are-never-wrong)
-4. [Micromanaging](#micromanaging)
-5. [Human contact — no need for it!](#human-contact--no-need-for-it)
-6. [MVP is killing innovation](#mvp-is-killing-innovation)
-7. [Pressure wasteland](#pressure-wasteland)
-8. [Conclusion](#conclusion)
-
 Over the years I had the privilege to work on some very excited projects both in software development field and also in electronics field and every experience taught me some invaluable lessons about how NOT TO approach development. And through this post I will try to point out some absurd, outdated techniques I find the most annoying and damaging during a development cycle. There will be swearing because this topic really gets on my nerves and I never coherently tried to explain them in writing. So if I get heated up, please bear with me.
 
 As new methods of project management are emerging, underlying processes still stay old and outdated. This is mainly because we as people are unable to completely shift away from these approaches.

@@ -7,7 +7,8 @@
       <a href="{{ .Link }}" target="_blank" rel="noopener" class="font-medium mb-1 hover:bg-yellow-100">{{ .Title }}</a>
       <p class="mb-1 text-sm text-gray-600">{{ .Summary }}</p>
       <div class="text-gray-500 font-medium text-xs">
-        Via <a href="{{ .SourceLink }}" class="underline">{{ .SourceTitle }}</a> on {{ .Date | datef "January 2, 2006" }}
+        Via <a href="{{ .SourceLink }}" class="underline">{{ .SourceTitle }}</a>
+        on {{ .Date | datef "January 2, 2006" }}
       </div>
     </article>
     {{ end }}

@@ -5,16 +5,6 @@ date: 2022-10-06
 draft: false
 ---
 
-**Table of Contents**
-1. [Initial thoughts](#initial-thoughts)
-2. [Giving React JS a spin](#giving-react-js-a-spin)
-3. [Bundlers and Transpilers](#bundlers-and-transpilers)
-4. [Jam Stack, Mach Stack no snack](#jam-stack-mach-stack-no-snack)
-5. [Tailwind CSS still rocks!](#tailwind-css-still-rocks)
-6. [Code maintainability](#code-maintainability)
-7. [Web development has a marketing issue](#web-development-has-a-marketing-issue)
-8. [Conclusion](#conclusion)
-
 ## Initial thoughts
 
 *This post is a critique on the current state of web development. It is an opinionated post! I will learn more about this in the future, and probably slightly change my mind about some of the things I criticize.*

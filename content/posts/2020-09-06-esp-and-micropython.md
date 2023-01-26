@@ -5,18 +5,6 @@ date: 2020-09-06
 draft: false
 ---
 
-**Table of contents**
-
-1. [Introduction](#introduction)
-2. [Flashing the SOC](#flashing-the-soc)
-3. [Install better tooling](#install-better-tooling)
-   1. [ampy](#ampy)
-   2. [rshell](#rshell)
-      1. [Moving files to flash](#moving-files-to-flash)
-      2. [Executing scripts](#executing-scripts)
-4. [Additional resources](#additional-resources)
-
-
 ## Introduction
 
 A while ago I bought some [ESP8266](https://www.espressif.com/en/products/socs/esp8266) and [ESP32](https://www.espressif.com/en/products/socs/esp32) dev boards to play around with and I finally found a project to try it out.

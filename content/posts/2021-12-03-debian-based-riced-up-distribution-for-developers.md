@@ -5,17 +5,6 @@ date: 2021-12-03
 draft: false
 ---
 
-**Table of contents**
-
-1. [Introduction](#introduction)
-2. [How should I approach this?](#how-should-i-approach-this)
-3. [Desktop environments](#desktop-environments)
-4. [Batteries included](#batteries-included)
-      1. [Docker recipe](#docker-recipe)
-      2. [Making bash pretty](#making-bash-pretty)
-5. [Conclusion](#conclusion)
-
-
 ## Introduction
 
 I have been using [Ubuntu](https://ubuntu.com/) for quite a longtime now. I have used [Debian](https://www.debian.org/) in the past and [Manjaro](https://manjaro.org/). Also had [Arch](https://archlinux.org/) for some time and even ran [Gentoo](https://www.gentoo.org/) way back.

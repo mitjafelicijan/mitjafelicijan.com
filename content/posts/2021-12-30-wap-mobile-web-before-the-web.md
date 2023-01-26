@@ -5,14 +5,6 @@ date: 2021-12-30
 draft: false
 ---
 
-**Table of contents**
-
-1. [A little stroll down the history lane](#a-little-stroll-down-the-history-lane)
-2. [WAP - Wireless Application Protocol](#wap---wireless-application-protocol)
-3. [WML - Wireless Markup Language](#wml---wireless-markup-language)
-4. [Converting Digg to WML](#converting-digg-to-wml)
-5. [Conclusion](#conclusion)
-
 ## A little stroll down the history lane
 
 About two weeks ago, I watched this outstanding documentary on YouTube [Springboard: the secret history of the first real smartphone](https://www.youtube.com/watch?v=b9_Vh9h3Ohw) about the history of smartphones and phones in general. It brought back so many memories. I never had an actual smartphone before the Android. The closest to smartphone was [Sony Ericsson P1](https://www.gsmarena.com/sony_ericsson_p1-1982.php). A fantastic phone and I broke it in Prague after a party and that was one of those rare occasions where I was actually mad at myself. But nevertheless, after that phone, the next one was an Android one.

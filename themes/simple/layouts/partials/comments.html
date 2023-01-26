@@ -1,21 +1,11 @@
 <section class="comments">
-  <h2 class="text-xl font-bold mb-2">Leave a comment</h2>
-  <p class="mb-4">You can write me an email at <a href="mailto:m@mitjafelicijan.com" class="underline hover:bg-yellow-100">m@mitjafelicijan.com</a> or comment bellow.</p>
-  <div id="comment-section"></div>
-
-  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
-
-  <script>
-    window.addEventListener('load', () => {
-      initComments({
-        node: document.getElementById("comment-section"),
-        defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
-        serverName: "cactus.chat",
-        siteName: "mitjafelicijan.com",
-        commentSectionId: "{{ .File }}",
-        pageSize: 50,
-        updateInterval: 10,
-      });
-    });
-  </script>
+  <h2 class="text-xl font-bold mb-2">Care to leave a comment?</h2>
+  <p class="mb-4">You can write me an email at
+    <a href="mailto:m@mitjafelicijan.com"
+      class="underline-offset-2 decoration-1 decoration-wavy underline hover:bg-yellow-100">m@mitjafelicijan.com</a>
+    or catch up with me
+    <a href="https://telegram.me/mitjafelicijan" target="_blank"
+      class="underline-offset-2 decoration-1 decoration-wavy underline hover:bg-yellow-100">on
+      Telegram</a>.
+  </p>
 </section>

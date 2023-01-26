@@ -5,45 +5,6 @@ date: 2021-08-01
 draft: false
 ---
 
-**Table of contents**
-
-1. [Generate SSH key](#generate-ssh-key)
-2. [Login to host via SSH](#login-to-host-via-ssh)
-3. [Execute command on a server through SSH](#execute-command-on-a-server-through-ssh)
-4. [Displays currently logged in users in the system](#displays-currently-logged-in-users-in-the-system)
-5. [Displays Linux system information](#displays-linux-system-information)
-6. [Displays kernel release information](#displays-kernel-release-information)
-7. [Shows the system hostname](#shows-the-system-hostname)
-8. [Shows system reboot history](#shows-system-reboot-history)
-9. [Displays information about the user](#displays-information-about-the-user)
-10. [Displays IP addresses and all the network interfaces](#displays-ip-addresses-and-all-the-network-interfaces)
-11. [Downloads a file from an online source](#downloads-a-file-from-an-online-source)
-12. [Compress a file with gzip](#compress-a-file-with-gzip)
-13. [Interactive disk usage analyzer](#interactive-disk-usage-analyzer)
-14. [Install Node.js using the Node Version Manager](#install-nodejs-using-the-node-version-manager)
-15. [Too long; didn't read](#too-long-didnt-read)
-16. [Combine all Nginx access logs to one big log file](#combine-all-nginx-access-logs-to-one-big-log-file)
-17. [Set up Redis server](#set-up-redis-server)
-18. [Generate statistics of your webserver](#generate-statistics-of-your-webserver)
-19. [Search for a given pattern in files](#search-for-a-given-pattern-in-files)
-20. [Find proccess ID for a specific program](#find-proccess-id-for-a-specific-program)
-21. [Print name of current/working directory](#print-name-of-currentworking-directory)
-22. [Creates a blank new file](#creates-a-blank-new-file)
-23. [Displays first lines in a file](#displays-first-lines-in-a-file)
-24. [Displays last lines in a file](#displays-last-lines-in-a-file)
-25. [Count lines in a file](#count-lines-in-a-file)
-26. [Find all instances of the file](#find-all-instances-of-the-file)
-27. [Find file names that begin with ‘index’ in /home folder](#find-file-names-that-begin-with-index-in-home-folder)
-28. [Find files larger than 100MB in the home folder](#find-files-larger-than-100mb-in-the-home-folder)
-29. [Displays block devices related information](#displays-block-devices-related-information)
-30. [Displays free space on mounted systems](#displays-free-space-on-mounted-systems)
-31. [Displays free and used memory in the system](#displays-free-and-used-memory-in-the-system)
-32. [Displays all active listening ports](#displays-all-active-listening-ports)
-33. [Kill a process violently](#kill-a-process-violently)
-34. [List files opened by user](#list-files-opened-by-user)
-35. [Execute "df -h", showing periodic updates](#execute-df--h-showing-periodic-updates)
-
-
 ##### Generate SSH key
 
 ```bash

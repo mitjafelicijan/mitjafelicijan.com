@@ -5,22 +5,6 @@ date: 2022-07-05
 draft: false
 ---
 
-**Table of contents**
-
-1. [Introduction](#introduction)
-2. [DNA encoding and primer example](#dna-encoding-and-primer-example)
-3. [Parsing DNA data](#parsing-dna-data)
-4. [Generating sine wave](#generating-sine-wave)
-5. [Generating a WAV file from accumulated sine waves](#generating-a-wav-file-from-accumulated-sine-waves)
-6. [Generating Spectograms](#generating-spectograms)
-7. [Pre-generated sequences](#pre-generated-sequences)
-   1. [Niels Bohr quote](#niels-bohr-quote)
-   2. [Mouse](#mouse)
-   3. [Bison](#bison)
-   4. [Taurus](#taurus)
-8. [Making a drummer out of a DNA sequence](#making-a-drummer-out-of-a-dna-sequence)
-9. [Going even further](#going-even-further)
-
 ## Introduction
 
 Lately, I have been thinking a lot about the nature of life, what are the foundation blocks of life and things like that. It's remarkable how complex and on the other hand simple the creation is when you look at it. The miracle of life keeps us grounded when our imagination goes wild. If the DNA are the blocks of life, you could consider them to be an API nature provided us to better understand all of this chaos masquerading as order.

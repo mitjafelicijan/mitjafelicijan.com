@@ -30,7 +30,7 @@ enableRobotsTXT = true
 # Additional markup settings.
 [markup]
   [markup.tableOfContents]
-    endLevel = 3
+    endLevel = 5
     ordered = false
     startLevel = 2
 

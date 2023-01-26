@@ -1,5 +1,5 @@
 ---
-title: Trying to build a New kind of terminal emulator
+title: Trying to build a New kind of terminal emulator for the modern age
 url: trying-to-build-a-new-kind-of-terminal-emulator.html
 date: 2022-12-20
 draft: true

@@ -20,7 +20,7 @@
 
 /* Headings */
 article.single h2 {
-  @apply text-2xl font-bold mb-4 mt-8;
+  @apply text-2xl font-bold mb-8 mt-8;
 }
 
 article.single h3 {
@@ -38,16 +38,20 @@ article.single p {
 
 /* Links */
 article.single a {
-  @apply underline hover:bg-yellow-100;
+  @apply underline-offset-2 decoration-1 decoration-wavy underline hover:bg-yellow-100;
 }
 
 /* Blockquote */
-article.single blockquote {
+article.single .content blockquote {
   background-image: url('/general/alert-light.svg');
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: 0 5px;
   @apply pl-12 my-8;
+}
+
+article.single .content blockquote p {
+  @apply mb-2;
 }
 
 /* Media: Images, audio, video */
@@ -90,13 +94,21 @@ article.single table th {
 }
 
 /* Unordered list */
-article.single ul {
+article.single .content ul {
   @apply list-disc pl-6 md:pl-10 mb-6;
 }
 
 /* Ordered list */
-article.single ol {
-  @apply list-decimal pl-8 md:pl-10;
+article.single .content ol {
+  @apply list-decimal pl-8 md:pl-10 mb-6;
+}
+
+/* Table of contents */
+article.single #TableOfContents {
+  @apply mb-10 ml-4 leading-relaxed;
+}
+article.single #TableOfContents ul {
+  @apply list-decimal pl-4 md:pl-6;
 }
 
 /* Katex */
@@ -116,120 +128,4 @@ article.single .ll-iframe::before {
 
 article.single .ll-iframe.empty::before {
   content: none;
-}
-
-/* Cactus Comments */
-.comments img {
-  max-width: auto !important;
-  max-width: unset !important;
-  max-width: inherit !important;
-}
-
-.cactus-container .cactus-editor-textarea {
-  @apply border w-full h-32 px-3 py-2 outline-none rounded mb-2;
-}
-
-.cactus-container .cactus-editor-name input {
-  @apply border w-full px-3 py-2 mb-2 outline-none rounded;
-}
-
-.cactus-container .cactus-editor-name {
-  @apply mb-1;
-}
-
-/* Cactus: Buttons */
-.cactus-editor-buttons {
-  @apply flex gap-2;
-}
-
-.cactus-container .cactus-button {
-  @apply text-base bg-gray-200 hover:bg-gray-300 font-medium px-6 py-2 rounded;
-}
-
-.cactus-container .cactus-editor {
-  @apply mb-10;
-}
-
-/* Cactus: Comment List */
-.cactus-container .cactus-comments-list {
-  @apply flex flex-col gap-8;
-}
-
-.cactus-container .cactus-comment {
-  @apply flex gap-4;
-}
-
-.cactus-container .cactus-comment .cactus-comment-avatar img {
-  @apply w-8 h-8 rounded-full;
-}
-
-.cactus-container .cactus-comment .cactus-comment-avatar-placeholder {
-  @apply w-8 h-8 rounded-full bg-gray-300;
-}
-
-.cactus-container .cactus-comment .cactus-comment-header {
-  @apply flex gap-2 items-center;
-}
-
-.cactus-container .cactus-comment .cactus-comment-header .cactus-comment-displayname {
-  @apply font-semibold;
-}
-
-.cactus-container .cactus-comment .cactus-comment-header .cactus-comment-time {
-  @apply text-gray-400 text-sm;
-}
-
-.cactus-container .cactus-comment .cactus-message-text code {
-  @apply bg-yellow-100 rounded px-2 py-1 text-xs font-medium;
-}
-
-/* Unordered list */
-.cactus-container .cactus-comment .cactus-message-text ul {
-  @apply list-disc pl-2 md:pl-6;
-}
-
-/* Ordered list */
-.cactus-container .cactus-comment .cactus-message-text ol {
-  @apply list-decimal pl-2 md:pl-6;
-}
-
-/* Cactus: Login */
-.cactus-container .cactus-login-form-wrapper {
-  @apply border mb-6 p-3 relative rounded;
-}
-
-.cactus-container .cactus-login-form .cactus-login-close {
-  @apply absolute right-3 top-3 w-4 h-4;
-}
-
-.cactus-container .cactus-login-form .cactus-login-title {
-  @apply font-bold mb-4 mt-0 pt-0;
-}
-
-/* Cactus: Login with a button */
-.cactus-container .cactus-login-form .cactus-login-client {
-  @apply mb-6;
-}
-
-.cactus-container .cactus-login-form .cactus-login-client-title {
-  @apply font-semibold mb-2;
-}
-
-/* Cactus: Login with credentials */
-.cactus-container .cactus-login-form .cactus-login-credentials {}
-
-.cactus-container .cactus-login-form .cactus-login-credentials-title {
-  @apply font-semibold mb-1;
-}
-
-.cactus-container .cactus-login-form .cactus-login-field {
-  @apply flex gap-4 mb-2 items-center;
-}
-
-.cactus-container .cactus-login-form .cactus-login-label {
-  @apply w-20;
-}
-
-.cactus-container .cactus-login-form input {
-  @apply border px-2 py-1 rounded;
 }

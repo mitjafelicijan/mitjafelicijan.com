@@ -4,14 +4,21 @@
   <!-- Single article -->
   <article itemtype="http://schema.org/Article" class="single mb-12">
     <header class="mb-6">
-      <h1 itemtype="headline" class="text-4xl font-extrabold mb-6 leading-1 md:leading-2">{{ .Title }}</h1>
+      <h1 itemtype="headline" class="text-4xl font-bold mb-4 leading-1 md:leading-2">{{ .Title }}</h1>
 
       {{ if in .Type "posts" }}
       <time class="text-gray-400 font-medium text-sm">Published on {{ .Date.Format "Monday Jan 2, 2006" }}</time>
       {{ end }}
     </header>
 
-    <div class="leading-relaxed">
+    <div>
+      {{ if ge (len .TableOfContents) 100 }}
+      <p class="font-semibold">Table of contents</p>
+      <div>{{ .TableOfContents }}</div>
+      {{ end }}
+    </div>
+
+    <div class="leading-relaxed content">
       {{.Content}}
     </div>
   </article>

@@ -1,16 +1,4 @@
 {
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "[xml]": {
-    "editor.formatOnSave": false,
-    "editor.formatOnPaste": false
-  },
-  "[xsl]": {
-    "editor.formatOnSave": false,
-    "editor.formatOnPaste": false
-  },
-  "[css]": {
-    "editor.formatOnSave": false,
-    "editor.formatOnPaste": false
-  },
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
 }

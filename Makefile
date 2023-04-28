@@ -24,7 +24,7 @@ openring:
 	openring -l 165 -n 6 -p 1 \
 		-s https://drewdevault.com/feed.xml \
 		-s https://danluu.com/atom.xml \
-		-s https://mirzapandzo.com/feed/feed.xml \
+		-s https://mirzapandzo.com/rss.xml \
 		-s https://serokell.io/blog.rss.xml \
 		-s https://cronokirby.com/posts/index.xml \
 		-s https://www.jeffgeerling.com/blog.xml \

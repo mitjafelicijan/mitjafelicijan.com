@@ -23,7 +23,7 @@ deploy: openring tailwind-build
 openring:
 	openring -l 165 -n 6 -p 1 \
 		-s https://drewdevault.com/feed.xml \
-		-s https://danluu.com/atom.xml \
+		-s https://offbeatpursuit.com/blog/index.rss \
 		-s https://mirzapandzo.com/rss.xml \
 		-s https://serokell.io/blog.rss.xml \
 		-s https://cronokirby.com/posts/index.xml \

@@ -7,6 +7,17 @@ draft: false
 
 *No additional explanation provided here. Use blog for more detailed stuff.*
 
+**▒ #cat-v on weechat configuration**
+
+```sh
+# Install weechat and launch it and execute the following commands.
+
+/server add oftc irc.oftc.net -tls
+/set irc.server.oftc.autoconnect on
+/set irc.server.oftc.autojoin "#cat-v"
+/set irc.server.oftc.nicks "nick1,nick2,nick3"
+```
+
 **▒ Write ISO to USB Key**
 
 ```sh

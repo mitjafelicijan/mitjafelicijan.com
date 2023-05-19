@@ -7,6 +7,28 @@ draft: false
 
 *No additional explanation provided here. Use blog for more detailed stuff.*
 
+**▒ Write ISO to USB Key**
+
+```sh
+sudo dd if=iso_file.iso of=/dev/sdX bs=4M status=progress conv=fdatasync
+```
+
+**▒ Mount Plan9 over network**
+
+- First install `libfuse` with `sudo apt install libfuse-dev`.
+- Then clone https://github.com/ftrvxmtrx/9pfs and compile it with `make`.
+- Copy `9pfs` to your path.
+
+```sh
+# On Plan9 side
+ip/ipconfig # enables network
+aux/listen1 -tv tcp!*!9999 /bin/exportfs -r tmp # export tmp folder
+
+# On Linux side
+9pfs 172.18.0.1 -p 9999 local_folder # mount
+umount local_folder # unmount
+```
+
 **▒ Push to multiple origins at once in Git**
 
 ```sh
@@ -14,6 +36,8 @@ git config --global alias.pushall '!sh -c "git remote | xargs -L1 git push --all
 ```
 
 **▒ Run 9front in Qemu**
+
+Download from here http://9front.org/iso/.
 
 ```sh
 # Create a qcow2 image.

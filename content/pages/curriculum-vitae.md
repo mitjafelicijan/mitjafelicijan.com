@@ -38,7 +38,7 @@ Email me at *[m@mitjafelicijan.com](mailto:m@mitjafelicijan.com?subject=Website+
 
 ## Technical experience
 
-- **Key languages:** Nim, Golang, Python, C, Bash.
+- **Key languages:** C, Golang, Lua, Python, Bash.
 - **Platforms:** GNU/Linux, macOS.
 - **Interests:** Zigbee, KNX, Modbus, Machine to Machine, Embedded systems, Operating systems, Distributed systems, IOT, RDBMS, Algorithms, Database engine design, SQL, NoSQL, NewSQL, Big data analytics, Machine learning, Prediction algorithms, Realtime analytics, Systems automation, Natural language processing, Bioinformatics, Game development.
 
@@ -67,6 +67,9 @@ Email me at *[m@mitjafelicijan.com](mailto:m@mitjafelicijan.com?subject=Website+
 - Toolkit for encoding binary data into DNA sequence (2019)
 - Minimal configuration reverse proxy with load balancing and rate limiting (2019)
 - E-ink conference room occupancy display, hardware and software solution (2019)
+- Caching module for Apache web server (2022)
+- Task runner for the command line (2022)
+- World of Warcraft Tweaks and Enhancements Addon (2023)
 
 ## Employment history
 

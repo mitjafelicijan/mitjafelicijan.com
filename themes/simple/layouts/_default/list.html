@@ -1,31 +1,24 @@
 {{ define "main" }}
 <main role="main" class="container-blog mx-auto px-6 md:p-0">
 
-  <!-- Plan9 microblog promotion link card -->
-  <a class="block rounded bg-yellow-300 hover:bg-yellow-400 mb-10 px-4 py-3 flex gap-4 items-center" href="https://bakingonagrill.com" target="_blank" title="Baking on a Grill, Plan9 experiments">
-    <img class="h-12" src="/general/9logo.png" alt="Plan9 Logo">
-    <div>
-      <p class="font-semibold">Baking on a Grill</p>
-    <p class="text-sm">Experiments about/with Plan9 OS, other silly things and storage of random files.</p>
-    </div>
-  </a>
-
   <h1 class="text-2xl font-bold mb-6">Blog posts</h1>
 
   <!-- List of all blog posts -->
   <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="mb-12" role="feed">
     <meta itemprop="name" content="Article list">
     {{ range (where .Site.RegularPages "Section" "posts") }}
-    <article class="mb-5" itemscope itemtype="http://schema.org/Article">
-      <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Monday Jan 2, 2006" }}</time>
-      <a href="/{{ .Params.url }}" itemprop="url" class="hover:bg-yellow-100" rel="bookmark noopener"
-        aria-label="Opens URL">
-        {{ if .Params.draft }}
-        <span class="bg-orange-600 text-white px-1.5">Draft</span>
-        {{ end }}
-        {{.Title}}
-      </a>
-    </article>
+    <div>
+      <article class="mb-5" itemscope itemtype="http://schema.org/Article">
+        <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Monday Jan 2, 2006" }}</time>
+        <a href="/{{ .Params.url }}" itemprop="url" class="hover:bg-yellow-100" rel="bookmark noopener"
+          aria-label="Opens URL">
+          {{ if .Params.draft }}
+          <span class="bg-orange-600 text-white px-1.5">Draft</span>
+          {{ end }}
+          {{.Title}}
+        </a>
+      </article>
+    </div>
     {{ end }}
   </nav>
 

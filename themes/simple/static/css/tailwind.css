@@ -18,6 +18,10 @@
   @apply bg-yellow-100 text-black;
 }
 
+a:hover {
+  color: blue;
+}
+
 /* Headings */
 article.single h2 {
   @apply text-2xl font-bold mb-8 mt-8;

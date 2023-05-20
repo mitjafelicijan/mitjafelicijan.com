@@ -10,8 +10,7 @@
     <div>
       <article class="mb-5" itemscope itemtype="http://schema.org/Article">
         <time class="block text-gray-400 font-medium text-xs">{{ .Date.Format "Monday Jan 2, 2006" }}</time>
-        <a href="/{{ .Params.url }}" itemprop="url" class="hover:bg-yellow-100" rel="bookmark noopener"
-          aria-label="Opens URL">
+        <a href="/{{ .Params.url }}" itemprop="url" class="hover:bg-yellow-100" rel="bookmark noopener" aria-label="Opens URL">
           {{ if .Params.draft }}
           <span class="bg-orange-600 text-white px-1.5">Draft</span>
           {{ end }}

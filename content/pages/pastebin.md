@@ -7,6 +7,19 @@ draft: false
 
 *No additional explanation provided here. Use blog for more detailed stuff.*
 
+**▒ Fix bootloader not being written in Plan9**
+
+If the bootloader is not being written to a disk when installing 9front on
+real harware try clearing first sector of the disk with the following command.
+
+```sh
+dd if=/dev/zero of=/dev/sdX bs=512 count=1
+
+# If command above doesn't work try this one, wait couple of seconds and
+# press delete key to stop the command.
+cat </dev/zero >/dev/sd*/data
+```
+
 **▒ Take a screenshot in Plan9**
 
 ```sh

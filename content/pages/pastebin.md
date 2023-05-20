@@ -7,6 +7,12 @@ draft: false
 
 *No additional explanation provided here. Use blog for more detailed stuff.*
 
+**▒ Take a screenshot in Plan9**
+
+```sh
+cat /dev/screen | topng > screen.png
+```
+
 **▒ #cat-v on weechat configuration**
 
 ```sh

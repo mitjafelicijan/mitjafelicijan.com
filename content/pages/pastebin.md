@@ -10,7 +10,11 @@ draft: false
 **▒ Previews how man page written in Troff will look like**
 
 ```sh
+# On Linux system.
 groff -man -Tascii filename
+
+# On Plan9 system.
+man 1 filename
 ```
 
 **▒ Convert all MKV files into WebM format**

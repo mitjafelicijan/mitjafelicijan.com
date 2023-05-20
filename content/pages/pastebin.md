@@ -7,6 +7,20 @@ draft: false
 
 *No additional explanation provided here. Use blog for more detailed stuff.*
 
+**▒ Download list of YouTube files**
+
+```js
+// Used to get list of raw URL's from YouTube's video tab'.
+// Copy them into videos.txt.
+document.querySelectorAll('#contents a.ytd-thumbnail.style-scope.ytd-thumbnail').forEach(el => console.log(el.href))
+```
+
+Download and install https://github.com/yt-dlp/yt-dlp.
+
+```sh
+yt-dlp --batch-file videos.txt -N `nproc` -f webm
+```
+
 **▒ Install Plan9port on Linux**
 
 ```sh

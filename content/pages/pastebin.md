@@ -7,6 +7,12 @@ draft: false
 
 *No additional explanation provided here. Use blog for more detailed stuff.*
 
+**▒ Previews how man page written in Troff will look like**
+
+```sh
+groff -man -Tascii filename
+```
+
 **▒ Convert all MKV files into WebM format**
 
 ```sh

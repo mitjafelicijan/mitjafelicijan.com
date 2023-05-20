@@ -7,6 +7,15 @@ draft: false
 
 *No additional explanation provided here. Use blog for more detailed stuff.*
 
+**▒ Install Plan9port on Linux**
+
+```sh
+sudo apt-get install gcc libx11-dev libxt-dev libxext-dev libfontconfig1-dev
+git clone https://github.com/9fans/plan9port $HOME/plan9
+cd $HOME/plan9/plan9port
+./INSTALL -r $HOME/plan9
+```
+
 **▒ Fix bootloader not being written in Plan9**
 
 If the bootloader is not being written to a disk when installing 9front on

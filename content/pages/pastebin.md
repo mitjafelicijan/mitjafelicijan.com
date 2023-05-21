@@ -7,6 +7,12 @@ draft: false
 
 *No additional explanation provided here. Use blog for more detailed stuff.*
 
+**▒ Change permissions of all files matching a pattern recursively**
+
+```sh
+find . -type f -name "*.xml" -exec chmod -x {} +
+```
+
 **▒ Previews how man page written in Troff will look like**
 
 ```sh

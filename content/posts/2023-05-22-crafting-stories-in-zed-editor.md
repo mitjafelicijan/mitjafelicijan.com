@@ -9,7 +9,7 @@ Pretentious title! Good start! I have nothing to add to this discussion. I just 
 
 **TLDR:** I think this code editor is very cool and has a massive potential. I hope they don’t mess up with adding a plugin ecosystem to it!
 
-Out of morbid curiosity, I started using the [Zed editor](https://zed.dev/) on my Mac. Zed is a high-performance, multiplayer code editor developed by the creators of Atom and Tree-sitter. Written in Rust so it has to be blazingly fast! 😊 It's a joke, camn down.
+Out of morbid curiosity, I started using the [Zed editor](https://zed.dev/) on my Mac. Zed is a high-performance, multiplayer code editor developed by the creators of Atom and Tree-sitter. Written in Rust so it has to be blazingly fast! 😊 It's a joke, calm down.
 
 Over the past year, I have switched between [Helix editor](https://helix-editor.com/) and [VS Code](https://code.visualstudio.com/), but for the last couple of months, I have been using Helix exclusively.
 

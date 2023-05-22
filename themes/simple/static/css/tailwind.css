@@ -61,24 +61,15 @@ article.single .content blockquote p {
 /* Media: Images, audio, video */
 article.single img {
   @apply rounded w-full !bg-gray-50 my-8;
-}
-
-article.single img[src*="?style=bigimg"] {
-  transform: scale(1.25);
-  margin-top: 100px;
-  margin-bottom: 100px;
-  transform-origin: center center;
 
   image-rendering: crisp-edges;
   image-rendering: -webkit-optimize-contrast;
 }
 
+article.single img[src*="?style=bigimg"] {}
+
 @media (max-width: 900px) {
-  article.single img[src*="?style=bigimg"] {
-    transform: initial;
-    margin-top: initial;
-    margin-bottom: initial;
-  }
+  article.single img[src*="?style=bigimg"] {}
 }
 
 article.single video {

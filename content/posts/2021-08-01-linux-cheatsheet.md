@@ -5,7 +5,7 @@ date: 2021-08-01
 draft: false
 ---
 
-##### Generate SSH key
+**Generate SSH key**
 
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
@@ -16,9 +16,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 Note: By default SSH keys get stored to `/home/<username>/.ssh/` folder.
 
-
-
-##### Login to host via SSH
+**Login to host via SSH**
 
 ```bash
 # connect to host as your local username
@@ -31,9 +29,7 @@ ssh <user>@<host>
 ssh -p <port> <user>@<host>
 ```
 
-
-
-##### Execute command on a server through SSH
+**Execute command on a server through SSH**
 
 ```bash
 # execute one command
@@ -43,66 +39,50 @@ ssh root@100.100.100.100 "ls /root"
 ssh root@100.100.100.100 "cd /root;touch file.txt"
 ```
 
-
-
-##### Displays currently logged in users in the system
+**Displays currently logged in users in the system**
 
 ```bash
 w
 ```
 
-
-
-##### Displays Linux system information
+**Displays Linux system information**
 
 ```bash
 uname
 ```
 
-
-
-##### Displays kernel release information
+**Displays kernel release information**
 
 ```bash
 uname -r
 ```
 
-
-
-##### Shows the system hostname
+**Shows the system hostname**
 
 ```bash
 hostname
 ```
 
-
-
-##### Shows system reboot history
+**Shows system reboot history**
 
 ```bash
 last reboot
 ```
 
-
-
-##### Displays information about the user
+**Displays information about the user**
 
 ```bash
 sudo apt install finger
 finger <username>
 ```
 
-
-
-##### Displays IP addresses and all the network interfaces
+**Displays IP addresses and all the network interfaces**
 
 ```bash
 ip addr show
 ```
 
-
-
-##### Downloads a file from an online source
+**Downloads a file from an online source**
 
 ```bash
 wget https://example.com/example.tgz
@@ -110,9 +90,7 @@ wget https://example.com/example.tgz
 
 Note: If URL contains ?, & enclose the URL in double quotes.
 
-
-
-##### Compress a file with gzip
+**Compress a file with gzip**
 
 ```bash
 # will not keep the original file
@@ -122,9 +100,7 @@ gzip file.txt
 gzip --keep file.txt
 ```
 
-
-
-##### Interactive disk usage analyzer
+**Interactive disk usage analyzer**
 
 ```bash
 sudo apt install ncdu
@@ -133,9 +109,7 @@ ncdu
 ncdu <path/to/directory>
 ```
 
-
-
-##### Install Node.js using the Node Version Manager
+**Install Node.js using the Node Version Manager**
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
@@ -144,9 +118,7 @@ source ~/.bashrc
 nvm install v13
 ```
 
-
-
-##### Too long; didn't read
+**Too long; didn't read**
 
 ```bash
 npm install -g tldr
@@ -154,17 +126,13 @@ npm install -g tldr
 tldr tar
 ```
 
-
-
-##### Combine all Nginx access logs to one big log file
+**Combine all Nginx access logs to one big log file**
 
 ```bash
 zcat -f /var/log/nginx/access.log* > /var/log/nginx/access-all.log
 ```
 
-
-
-##### Set up Redis server
+**Set up Redis server**
 
 ```bash
 sudo apt install redis-server redis-tools
@@ -180,9 +148,7 @@ redis-cli get mykey
 redis-cli
 ```
 
-
-
-##### Generate statistics of your webserver
+**Generate statistics of your webserver**
 
 ```bash
 sudo apt install goaccess
@@ -206,50 +172,38 @@ goaccess \
 rm /var/log/nginx/access-all.log
 ```
 
-
-
-##### Search for a given pattern in files
+**Search for a given pattern in files**
 
 ```bash
 grep -r ‘pattern’ files
 ```
 
-
-
-##### Find proccess ID for a specific program
+**Find proccess ID for a specific program**
 
 ```bash
 pgrep nginx
 ```
 
-
-
-##### Print name of current/working directory
+**Print name of current/working directory**
 
 ```bash
 pwd
 ```
 
-
-
-##### Creates a blank new file
+**Creates a blank new file**
 
 ```bash
 touch newfile.txt
 ```
 
-
-
-##### Displays first lines in a file
+**Displays first lines in a file**
 
 ```bash
 # -n <x> presents the number of lines (10 by default)
 head -n 20 somefile.txt
 ```
 
-
-
-##### Displays last lines in a file
+**Displays last lines in a file**
 
 ```bash
 # -n <x> presents the number of lines (10 by default)
@@ -259,17 +213,13 @@ tail -n 20 somefile.txt
 tail -f somefile.txt
 ```
 
-
-
-##### Count lines in a file
+**Count lines in a file**
 
 ```bash
 wc -l somefile.txt
 ```
 
-
-
-##### Find all instances of the file
+**Find all instances of the file**
 
 ```bash
 sudo apt install mlocate
@@ -277,49 +227,37 @@ sudo apt install mlocate
 locate somefile.txt
 ```
 
-
-
-##### Find file names that begin with ‘index’ in /home folder
+**Find file names that begin with ‘index’ in /home folder**
 
 ```bash
 find /home/ -name "index"
 ```
 
-
-
-##### Find files larger than 100MB in the home folder
+**Find files larger than 100MB in the home folder**
 
 ```bash
 find /home -size +100M
 ```
 
-
-
-##### Displays block devices related information
+**Displays block devices related information**
 
 ```bash
 lsblk
 ```
 
-
-
-##### Displays free space on mounted systems
+**Displays free space on mounted systems**
 
 ```bash
 df -h
 ```
 
-
-
-##### Displays free and used memory in the system
+**Displays free and used memory in the system**
 
 ```bash
 free -h
 ```
 
-
-
-##### Displays all active listening ports
+**Displays all active listening ports**
 
 ```bash
 sudo apt install net-tools
@@ -327,30 +265,21 @@ sudo apt install net-tools
 netstat -pnltu
 ```
 
-
-
-##### Kill a process violently
+**Kill a process violently**
 
 ```bash
 kill -9 <pid>
 ```
 
-
-
-##### List files opened by user
+**List files opened by user**
 
 ```bash
 lsof -u <user>
 ```
 
-
-
-##### Execute "df -h", showing periodic updates
+**Execute "df -h", showing periodic updates**
 
 ```bash
 # -n 1 means every second
 watch -n 1 df -h
 ```
-
-
-

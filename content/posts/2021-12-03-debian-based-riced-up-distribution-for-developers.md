@@ -151,7 +151,7 @@ This is some of the output from the installation script.
 Let's take a look at some examples in the installation script.
 
 
-#### Docker recipe
+### Docker recipe
 
 ```sh
 # docker
@@ -168,7 +168,7 @@ systemctl status docker --no-pager
 /sbin/usermod -aG docker $USERNAME
 ```
 
-#### Making bash pretty
+### Making bash pretty
 
 I really like [Oh My Zsh](https://ohmyz.sh/), but I don't like zsh shell. When I used it, I constantly needed to be aware of it and running bash scripts was a pain. So, I was really delighted when I found out that a version for bash existed called [Oh My Bash](https://ohmybash.nntoan.com/). Let's take a look at the recipe for installing it.
 

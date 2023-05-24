@@ -91,7 +91,8 @@ article.single pre {
   @apply !bg-gray-50 rounded text-xs p-4 mb-6 overflow-x-auto;
 }
 
-article.single pre code {
+article.single pre code,
+article.single.note pre code {
   background: unset;
   padding: unset;
   @apply leading-relaxed;

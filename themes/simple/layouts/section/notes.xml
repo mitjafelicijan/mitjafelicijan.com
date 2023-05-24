@@ -2,7 +2,7 @@
 
   <channel>
 
-    <title>{{ .Site.Author.name }} - Notes</title>
+    <title>{{ .Site.Author.name }}'s Notes</title>
     <link>{{ .Permalink }}</link>
     <description>{{ .Site.Params.description }}</description>
     <language>en-us</language>

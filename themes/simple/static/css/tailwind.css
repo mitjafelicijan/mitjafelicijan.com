@@ -24,15 +24,19 @@ a:hover {
 
 /* Headings */
 article.single h2 {
-  @apply text-2xl font-bold mb-8 mt-8;
+  @apply text-2xl font-bold mb-8 mt-8 leading-tight;
+}
+
+article.single h2.notes-heading {
+  @apply text-2xl font-bold mb-4 mt-8 leading-tight;
 }
 
 article.single h3 {
-  @apply text-xl font-bold mb-4 mt-8;
+  @apply text-xl font-bold mb-4 mt-8 leading-tight;
 }
 
 article.single h4 {
-  @apply text-lg font-bold mb-4 mt-8;
+  @apply text-lg font-bold mb-4 mt-8 leading-tight;
 }
 
 /* Paragraph */
@@ -64,12 +68,6 @@ article.single img {
 
   image-rendering: crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-}
-
-article.single img[src*="?style=bigimg"] {}
-
-@media (max-width: 900px) {
-  article.single img[src*="?style=bigimg"] {}
 }
 
 article.single video {

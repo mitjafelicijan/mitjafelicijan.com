@@ -39,3 +39,19 @@ enableRobotsTXT = true
 
   [markup.highlight]
     style = 'github'
+
+# Taxonomies.
+[outputs]
+  index = ["HTML", "atom"]
+  section = ["HTML", "notes"]
+
+# Output formats.
+[outputFormats]
+  [outputFormats.atom]
+    mediatype = "application/rss"
+    rel = "atom"
+    baseName = "atom"
+  [outputFormats.notes]
+    mediatype = "application/rss"
+    rel = "notes"
+    baseName = "notes"

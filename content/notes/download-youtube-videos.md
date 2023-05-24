@@ -4,6 +4,7 @@ url: download-youtube-videos.html
 date: 2023-05-13
 type: notes
 draft: false
+tags: [youtube, yt-dlp, ffmpeg, webm, mp4]
 ---
 
 If you need to download a list of YouTube videos and don't want to download the

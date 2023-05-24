@@ -4,6 +4,7 @@ url: git-push-multiple-origins.html
 date: 2023-05-06
 type: notes
 draft: false
+tags: [git]
 ---
 
 Sometimes you want to push to multiple origins at once. This is useful if you

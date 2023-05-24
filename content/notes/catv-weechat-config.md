@@ -4,6 +4,7 @@ url: catv-weechat-config.html
 date: 2023-05-09
 type: notes
 draft: false
+tags: [irc, weechat, cat-v]
 ---
 
 Set up weechat to connect to #cat-v on oftc. This applies to [weechat](https://weechat.org/)

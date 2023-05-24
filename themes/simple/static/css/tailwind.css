@@ -27,8 +27,8 @@ article.single h2 {
   @apply text-2xl font-bold mb-8 mt-8 leading-tight;
 }
 
-article.single h2.notes-heading {
-  @apply text-2xl font-bold mb-4 mt-8 leading-tight;
+article.single.note h2 {
+  @apply text-2xl font-bold mb-1 mt-8 leading-tight;
 }
 
 article.single h3 {
@@ -81,6 +81,10 @@ article.single audio {
 /* Code */
 article.single code {
   @apply bg-yellow-100 rounded px-2 py-1 text-xs font-medium;
+}
+
+article.single.note code {
+  @apply bg-gray-100 rounded px-2 py-1 text-xs font-medium;
 }
 
 article.single pre {

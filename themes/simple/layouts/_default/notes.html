@@ -19,8 +19,23 @@
     <section>
       {{ range (where .Site.RegularPages "Section" "notes") }}
       <div class="mb-10">
-        <article class="mb-5 single" itemscope itemtype="http://schema.org/Article">
+        <article class="mb-5 single note" itemscope itemtype="http://schema.org/Article">
           <h2 class="text-xl font-medium notes-heading">{{.Title}}</h2>
+          <p class="text-gray-600 _italic text-sm">
+            <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">
+              {{ .Date.Format "Monday Jan 2, 2006" }}
+            </time>
+
+            {{ if .Params.tags }}
+              <span>with tags</span>
+              <span class="inline-flex flex-row gap-1">
+                <span>(</span>
+                {{ range .Params.tags }}
+                  <span>{{ . }}</span>
+                {{ end }}
+                <span>)</span>
+              </span>
+            {{ end }}
           <div class="content">
             {{ .Content | safeHTML }}
           </div>

@@ -4,6 +4,7 @@ url: mass-set-permission.html
 date: 2023-05-16
 type: notes
 draft: false
+tags: [linux, find, chmod]
 ---
 
 Replace `*.xml` with your pattern. This will remove executable bit from all

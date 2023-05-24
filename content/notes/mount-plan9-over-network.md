@@ -4,6 +4,7 @@ url: mount-plan9-over-network.html
 date: 2023-05-07
 type: notes
 draft: false
+tags: [plan9, linux, 9pfs]
 ---
 
 - First install libfuse with sudo apt install libfuse-dev.

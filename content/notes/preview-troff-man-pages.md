@@ -4,6 +4,7 @@ url: preview-troff-man-pages.html
 date: 2023-05-15
 type: notes
 draft: false
+tags: [troff, man]
 ---
 
 Troff is used to write man pages and it is difficult to read it so this will

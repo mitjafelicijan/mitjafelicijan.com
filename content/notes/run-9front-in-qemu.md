@@ -4,6 +4,7 @@ url: run-9front-in-qemu.html
 date: 2023-05-05
 type: notes
 draft: false
+tags: [plan9, qemu]
 ---
 
 Run 9front in Qemu. This applies to [Plan9](https://9p.io/plan9/) and

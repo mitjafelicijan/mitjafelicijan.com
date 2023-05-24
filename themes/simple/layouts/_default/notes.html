@@ -11,7 +11,11 @@
     </p>
   </section>
 
-  <hr class="border-2 border-gray-100 mb-12">
+  <hr class="border-2 border-gray-100 mb-8">
+
+  <select id="jump-to-note" class="px-3 py-2 rounded mb-2">
+    <option>Jump to note</option>
+  </select>
 
   <!-- List of all notes -->
   <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="mb-12" role="feed">
@@ -46,6 +50,30 @@
       {{ end }}
     </section>
   </nav>
+
+  <script>
+    try {
+      const notes = document.querySelectorAll('h2');
+      const select = document.querySelector('#jump-to-note');
+
+      notes.forEach(note => {
+        const id = note.innerText.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
+        note.id = id;
+        note.innerHTML = `<a href="#${id}"></a>${note.innerHTML}`;
+
+        const option = document.createElement('option');
+        option.value = id;
+        option.innerText = note.innerText;
+        select.appendChild(option);
+
+        select.addEventListener('change', () => {
+          window.location.hash = select.value;
+        });
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  </script>
 
 </main>
 {{ end }}

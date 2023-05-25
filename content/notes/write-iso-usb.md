@@ -13,5 +13,3 @@ Write ISO to USB key. Nothing fancy here.
 sudo dd if=iso_file.iso of=/dev/sdX bs=4M status=progress conv=fdatasync
 ```
 
-
-

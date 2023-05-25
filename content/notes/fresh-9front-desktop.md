@@ -11,3 +11,4 @@ I have been experimenting with Plan9/9front for a week now. Noice! This is how
 my desktop looks like.
 
 ![9front desktop](/notes/9front-desktop.png)
+

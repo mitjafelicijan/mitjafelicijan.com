@@ -20,3 +20,4 @@ aux/listen1 -tv tcp!*!9999 /bin/exportfs -r tmp # export tmp folder
 9pfs 172.18.0.1 -p 9999 local_folder # mount
 umount local_folder # unmount
 ```
+

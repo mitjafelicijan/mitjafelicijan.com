@@ -15,3 +15,4 @@ image.
 ```sh
 cat /dev/screen | topng > screen.png
 ```
+

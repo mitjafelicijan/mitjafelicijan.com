@@ -14,3 +14,4 @@ multiple push urls to your git config. This is a shorthand for command above.
 ```sh
 git config --global alias.pushall '!sh -c "git remote | xargs -L1 git push --all"'
 ```
+

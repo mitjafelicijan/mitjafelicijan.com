@@ -34,3 +34,4 @@ set -g window-status-current-format "#[fg=#ffffff]#[bg=#111111]#[fg=#ffffff]#[bg
 # Disable mouse mode (tmux 2.1 and above).
 set -g mouse off
 ```
+

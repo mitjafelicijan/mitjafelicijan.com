@@ -15,3 +15,4 @@ tags: [hugo, cachebusting]
 
 This `6fab11c6669976d759d2992eff1dd5be` can be random string you generate use.
 You can use whatever you want.
+

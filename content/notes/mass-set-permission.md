@@ -13,3 +13,4 @@ files matching the pattern. Change `+` to `-` to add executable bit.
 ```sh
 find . -type f -name "*.xml" -exec chmod -x {} +
 ```
+

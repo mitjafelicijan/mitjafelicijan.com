@@ -25,3 +25,4 @@ qemu-system-x86_64 -cpu host -enable-kvm -m 1024 \
     -drive if=none,id=vd1,file=$HOME/VM/ISO/9front.386.iso \
     -device scsi-cd,drive=vd1,bootindex=0
 ```
+

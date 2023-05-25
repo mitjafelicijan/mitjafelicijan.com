@@ -17,3 +17,4 @@ dd if=/dev/zero of=/dev/sdX bs=512 count=1
 # press delete key to stop the command.
 cat </dev/zero >/dev/sd*/data
 ```
+

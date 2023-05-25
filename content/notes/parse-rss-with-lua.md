@@ -8,6 +8,7 @@ tags: [lua, rss]
 ---
 
 Example of parsing RSS feeds with Lua. Before running the script install:
+
 - feedparser with `luarocks install feedparser`
 - luasocket with `luarocks install luasocket`
 
@@ -37,3 +38,4 @@ else
   print("! Request failed. Status:", status)
 end
 ```
+

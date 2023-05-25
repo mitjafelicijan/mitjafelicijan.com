@@ -1,6 +1,6 @@
 ---
-title: Tmux config for my machines
-url: tmux-config.html
+title: Sane defaults for tmux with more visible statusbar
+url: tmux-sane-defaults.html
 date: 2023-05-25
 type: notes
 draft: false

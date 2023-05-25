@@ -1,47 +1,71 @@
 ---
 title: Encoding binary data into DNA sequence
 url: encoding-binary-data-into-dna-sequence.html
-date: 2019-01-03
+date: 2019-01-03T12:00:00+02:00
 draft: false
 ---
 
 ## Initial thoughts
 
-Imagine a world where you could go outside and take a leaf from a tree and put it through your personal DNA sequencer and get data like music, videos or computer programs from it. Well, this is all possible now. It was not done on a large scale because it is quite expensive to create DNA strands but it's possible.
+Imagine a world where you could go outside and take a leaf from a tree and put 
+it through your personal DNA sequencer and get data like music, videos or 
+computer programs from it. Well, this is all possible now. It was not done 
+on a large scale because it is quite expensive to create DNA strands but it's 
+possible.
 
-Encoding data into DNA sequence is relatively simple process once you understand the relationship between binary data and nucleotides and scientists have been making large leaps in this field in order to provide viable long-term storage solution for our data that would potentially survive our specie if case of global disaster. We could imprint all the world's knowledge into plants and ensure the survival of our knowledge.
+Encoding data into DNA sequence is relatively simple process once you understand 
+the relationship between binary data and nucleotides and scientists have been 
+making large leaps in this field in order to provide viable long-term storage 
+solution for our data that would potentially survive our specie if case of 
+global disaster. We could imprint all the world's knowledge into plants and 
+ensure the survival of our knowledge.
 
-More optimistic usage for this technology would be easier storage of ever growing data we produce every day. Once machines for sequencing DNA become fast enough and cheaper this could mean the next evolution of storing data and abandoning classical hard and solid state drives in data warehouses.
+More optimistic usage for this technology would be easier storage of ever 
+growing data we produce every day. Once machines for sequencing DNA become fast 
+enough and cheaper this could mean the next evolution of storing data and 
+abandoning classical hard and solid state drives in data warehouses.
 
-As we currently stand this is still not viable but it is quite an amazing and cool technology.
+As we currently stand this is still not viable but it is quite an amazing and 
+cool technology.
 
-My interests in this field are purely in encoding processes and experimental testing mainly because I don't have the access to this expensive machines. My initial goal was to create a toolkit that can be used by everybody to encode their data into a proper DNA sequence.
+My interests in this field are purely in encoding processes and experimental 
+testing mainly because I don't have the access to this expensive machines. My 
+initial goal was to create a toolkit that can be used by everybody to encode 
+their data into a proper DNA sequence.
 
 ## Glossary
 
 **deoxyribose**
-A five-carbon sugar molecule with a hydrogen atom rather than a hydroxyl group in the 2′ position; the sugar component of DNA nucleotides.
+A five-carbon sugar molecule with a hydrogen atom rather than a hydroxyl group 
+in the 2′ position; the sugar component of DNA nucleotides.
 
 **double helix**
-The molecular shape of DNA in which two strands of nucleotides wind around each other in a spiral shape.
+The molecular shape of DNA in which two strands of nucleotides wind around 
+each other in a spiral shape.
 
 **nitrogenous base**
-A nitrogen-containing molecule that acts as a base; often referring to one of the purine or pyrimidine components of nucleic acids.
+A nitrogen-containing molecule that acts as a base; often referring to one of 
+the purine or pyrimidine components of nucleic acids.
 
 **phosphate group**
-A molecular group consisting of a central phosphorus atom bound to four oxygen atoms.
+A molecular group consisting of a central phosphorus atom bound to four oxygen 
+atoms.
 
 **RGB**
-The RGB color model is an additive color model in which red, green and blue light are added together in various ways to reproduce a broad array of colors.
+The RGB color model is an additive color model in which red, green and blue 
+light are added together in various ways to reproduce a broad array of colors.
 
 **GCC**
-The GNU Compiler Collection is a compiler system produced by the GNU Project supporting various programming languages.
+The GNU Compiler Collection is a compiler system produced by the GNU Project 
+supporting various programming languages.
 
 ## Data encoding
 
-**TL;DR:** Encoding involves the use of a code to change original data into a form that can be used by an external process.
+**TL;DR:** Encoding involves the use of a code to change original data into a 
+form that can be used by an external process.
 
-Encoding is the process of converting data into a format required for a number of information processing needs, including:
+Encoding is the process of converting data into a format required for a number 
+of information processing needs, including:
 
 - Program compiling and execution
 - Data transmission, storage and compression/decompression
@@ -49,7 +73,9 @@ Encoding is the process of converting data into a format required for a number o
 
 Encoding can have two meanings:
 
-- In computer technology, encoding is the process of applying a specific code, such as letters, symbols and numbers, to data for conversion into an equivalent cipher.
+- In computer technology, encoding is the process of applying a specific code,
+  such as letters, symbols and numbers, to data for conversion into an 
+  equivalent cipher.
 - In electronics, encoding refers to analog to digital conversion.
 
 ## Quick history of DNA
@@ -73,13 +99,19 @@ Encoding can have two meanings:
 
 ## What is DNA?
 
-Deoxyribonucleic acid, a self-replicating material which is **present in nearly all living organisms** as the main constituent of chromosomes. It is the **carrier of genetic information**.
+Deoxyribonucleic acid, a self-replicating material which is 
+**present in nearly all living organisms** as the main constituent of 
+chromosomes. It is the **carrier of genetic information**.
 
-> The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of starstuff.
->
+> The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, 
+> the carbon in our apple pies were made in the interiors of collapsing stars. 
+> We are made of starstuff.
 > **-- Carl Sagan, Cosmos**
 
-The nucleotide in DNA consists of a sugar (deoxyribose), one of four bases (cytosine (C), thymine (T), adenine (A), guanine (G)), and a phosphate. Cytosine and thymine are pyrimidine bases, while adenine and guanine are purine bases. The sugar and the base together are called a nucleoside.
+The nucleotide in DNA consists of a sugar (deoxyribose), one of four bases 
+(cytosine (C), thymine (T), adenine (A), guanine (G)), and a phosphate. 
+Cytosine and thymine are pyrimidine bases, while adenine and guanine are purine 
+bases. The sugar and the base together are called a nucleoside.
 
 ![DNA](/assets/dna-sequence/dna-basics.jpg)
 
@@ -88,6 +120,7 @@ The nucleotide in DNA consists of a sugar (deoxyribose), one of four bases (cyto
 ## Encode binary data into DNA sequence
 
 As an input file you can use any file you want:
+
 - ASCII files,
 - Compiled programs,
 - Multimedia files (MP3, MP4, MVK, etc),
@@ -95,15 +128,19 @@ As an input file you can use any file you want:
 - Database files,
 - etc.
 
-Note: If you would copy all the bytes from RAM to file or pipe data to file you could encode also this data as long as you provide file pointer to the encoder.
+Note: If you would copy all the bytes from RAM to file or pipe data to file you 
+could encode also this data as long as you provide file pointer to the encoder.
 
 ### Basic Encoding
 
-As already mentioned, the Basic Encoding is based on a simple mapping. Since DNA is composed of 4 nucleotides (Adenine, Cytosine, Guanine, Thymine; usually referred using the first letter). Using this technique we can encode
+As already mentioned, the Basic Encoding is based on a simple mapping. Since 
+DNA is composed of 4 nucleotides (Adenine, Cytosine, Guanine, Thymine; usually 
+referred using the first letter). Using this technique we can encode
 
 $$ log_2(4) = log_2(2^2) = 2 bits $$
 
-using a single nucleotide. In this way, we are able to use the 4 bases that compose the DNA strand to encode each byte of data.
+using a single nucleotide. In this way, we are able to use the 4 bases that 
+compose the DNA strand to encode each byte of data.
 
 | Two bits | Nucleotides      |
 | -------- | ---------------- |
@@ -112,7 +149,8 @@ using a single nucleotide. In this way, we are able to use the 4 bases that comp
 | 01       | **C** (Cytosine) |
 | 11       | **T** (Thymine)  |
 
-With this in mind we can simply encode any data by using two-bit to Nucleotides conversion.
+With this in mind we can simply encode any data by using two-bit to 
+Nucleotides conversion.
 
 ```python
 { Algorithm 1: Naive byte array to DNA encode }
@@ -135,15 +173,29 @@ begin
 end
 ```
 
-Another encoding would be **Goldman encoding**. Using this encoding helps with Nonsense mutation (amino acids replaced by a stop codon) that occurs and is the most problematic during translation because it leads to truncated amino acid sequences, which in turn results in truncated proteins.
+Another encoding would be **Goldman encoding**. Using this encoding helps with 
+Nonsense mutation (amino acids replaced by a stop codon) that occurs and is 
+the most problematic during translation because it leads to truncated amino 
+acid sequences, which in turn results in truncated proteins.
 
 [Where to store big data? In DNA: Nick Goldman at TEDxPrague](https://www.youtube.com/watch?v=a4PiGWNsIEU)
 
 ### FASTA file format
 
-In bioinformatics, FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a standard in the field of bioinformatics.
+In bioinformatics, FASTA format is a text-based format for representing either 
+nucleotide sequences or peptide sequences, in which nucleotides or amino acids 
+are represented using single-letter codes. The format also allows for sequence 
+names and comments to precede the sequences. The format originates from the 
+FASTA software package, but has now become a standard in the field of 
+bioinformatics.
 
-The first line in a FASTA file started either with a ">" (greater-than) symbol or, less frequently, a ";" (semicolon) was taken as a comment. Subsequent lines starting with a semicolon would be ignored by software. Since the only comment used was the first, it quickly became used to hold a summary description of the sequence, often starting with a unique library accession number, and with time it has become commonplace to always use ">" for the first line and to not use ";" comments (which would otherwise be ignored).
+The first line in a FASTA file started either with a ">" (greater-than) symbol 
+or, less frequently, a ";" (semicolon) was taken as a comment. Subsequent 
+lines starting with a semicolon would be ignored by software. Since the only 
+comment used was the first, it quickly became used to hold a summary 
+description of the sequence, often starting with a unique library accession 
+number, and with time it has become commonplace to always use ">" for the first 
+line and to not use ";" comments (which would otherwise be ignored).
 
 ```
 ;LCBO - Prolactin precursor - Bovine
@@ -166,7 +218,8 @@ GLMPFLHTSKHRSMMLRPLSQALFWTLTMDLLTLTWIGSQPVEYPYTIIGQMASILYFSIILAFLPIAGX
 IENY
 ```
 
-FASTA format was extended by [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) format from the [Sanger Centre](https://www.sanger.ac.uk/) in Cambridge.
+FASTA format was extended by [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format) 
+format from the [Sanger Centre](https://www.sanger.ac.uk/) in Cambridge.
 
 ### PNG encoded DNA sequence
 
@@ -177,7 +230,8 @@ FASTA format was extended by [FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)
 | C ➞ Cytosine | (255,0,0)   | Red        |
 | T ➞ Thymine  | (255,255,0) | Yellow     |
 
-With this in mind we can create a simple algorithm to create PNG representation of a DNA sequence.
+With this in mind we can create a simple algorithm to create PNG representation 
+of a DNA sequence.
 
 ```python
 { Algorithm 2: Naive DNA to PNG encode from FASTA file }
@@ -198,9 +252,11 @@ end
 
 ## Encoding text file in practice
 
-In this example we will take a simple text file as our input stream for encoding. This file will have a quote from Niels Bohr and saved as txt file.
+In this example we will take a simple text file as our input stream for 
+encoding. This file will have a quote from Niels Bohr and saved as txt file.
 
-> How wonderful that we have met with a paradox. Now we have some hope of making progress.
+> How wonderful that we have met with a paradox. Now we have some hope of
+> making progress.
 > ― Niels Bohr
 
 First we encode text file into FASTA file.
@@ -250,7 +306,8 @@ After encoding into PNG format this file looks like this.
 
 The larger the input stream is the larger the PNG file would be.
 
-Compiled basic Hello World C program with [GCC](https://www.gnu.org/software/gcc/) would [look like](/assets/dna-sequence/sample.png).
+Compiled basic Hello World C program with [GCC](https://www.gnu.org/software/gcc/) 
+would [look like](/assets/dna-sequence/sample.png).
 
 ```c
 // gcc -O3 -o sample sample.c
@@ -265,10 +322,12 @@ main() {
 ## Toolkit for encoding data
 
 I have created a toolkit with two main programs:
+
 - dnae-encode (encodes file into FASTA file)
 - dnae-png (encodes FASTA file into PNG)
 
-Toolkit with full source code is available on [github.com/mitjafelicijan/dna-encoding](https://github.com/mitjafelicijan/dna-encoding).
+Toolkit with full source code is available on 
+[github.com/mitjafelicijan/dna-encoding](https://github.com/mitjafelicijan/dna-encoding).
 
 ### dnae-encode
 
@@ -311,11 +370,13 @@ First we generate some binary sample data with dd.
 dd if=<(openssl enc -aes-256-ctr  -pass pass:"$(dd if=/dev/urandom bs=128 count=1 2>/dev/null | base64)" -nosalt < /dev/zero) of=1KB.bin bs=1KB count=1 iflag=fullblock
 ```
 
-Our freshly generated 1KB file looks something like this (its full of garbage data as intended).
+Our freshly generated 1KB file looks something like this (its full of garbage 
+data as intended).
 
 ![Sample binary file 1KB](/assets/dna-sequence/sample-binary-file.png)
 
 We create following binary files:
+
 - 1KB.bin
 - 10KB.bin
 - 100KB.bin
@@ -323,7 +384,8 @@ We create following binary files:
 - 10MB.bin
 - 100MB.bin
 
-After this we create FASTA files for all the binary files by encoding them into DNA sequence.
+After this we create FASTA files for all the binary files by encoding them 
+into DNA sequence.
 
 ```bash
 ./dnae-encode -i 100MB.bin -o 100MB.fa
@@ -348,3 +410,4 @@ gzip -9 < 10MB.fa > 10MB.fa.gz
 - https://opentextbc.ca/biology/chapter/9-1-the-structure-of-dna/
 - https://arxiv.org/abs/1801.04774
 - https://en.wikipedia.org/wiki/FASTA_format
+

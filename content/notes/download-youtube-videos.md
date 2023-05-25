@@ -1,7 +1,7 @@
 ---
 title: Download list of YouTube files
 url: download-youtube-videos.html
-date: 2023-05-13
+date: 2023-05-13T12:00:00+02:00
 type: notes
 draft: false
 tags: [youtube, yt-dlp, ffmpeg, webm, mp4]

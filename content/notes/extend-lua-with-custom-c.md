@@ -1,7 +1,7 @@
 ---
 title: Extend Lua with custom C functions using Clang
 url: extend-lua-with-custom-c.html
-date: 2023-05-23
+date: 2023-05-23T12:00:00+02:00
 type: notes
 draft: false
 tags: [lua, clang, c]

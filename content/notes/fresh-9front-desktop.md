@@ -1,7 +1,7 @@
 ---
 title: My brand new Plan9/9front desktop
 url: fresh-9front-desktop.html
-date: 2023-05-24
+date: 2023-05-24T12:00:00+02:00
 type: notes
 draft: false
 tags: [plan9, 9front]

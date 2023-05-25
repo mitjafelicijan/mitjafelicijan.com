@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-date: 2022-08-27
+date: 2022-08-27T12:00:00+02:00
 url: curriculum-vitae.html
 draft: false
 ---

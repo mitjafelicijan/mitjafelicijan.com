@@ -1,34 +1,45 @@
 ---
 title: Getting started with MicroPython and ESP8266
 url: esp8266-and-micropython-guide.html
-date: 2020-09-06
+date: 2020-09-06T12:00:00+02:00
 draft: false
 ---
 
 ## Introduction
 
-A while ago I bought some [ESP8266](https://www.espressif.com/en/products/socs/esp8266) and [ESP32](https://www.espressif.com/en/products/socs/esp32) dev boards to play around with and I finally found a project to try it out.
+A while ago I bought some [ESP8266](https://www.espressif.com/en/products/socs/esp8266) 
+and [ESP32](https://www.espressif.com/en/products/socs/esp32) dev boards to
+play around with and I finally found a project to try it out.
 
-For my project, I used [ESP32](https://www.espressif.com/en/products/socs/esp32) but I could easily choose [ESP8266](https://www.espressif.com/en/products/socs/esp8266). This guide contains which tools I use and how I prepared my workspace to code for [ESP8266](https://www.espressif.com/en/products/socs/esp8266).
+For my project, I used [ESP32](https://www.espressif.com/en/products/socs/esp32) 
+but I could easily choose [ESP8266](https://www.espressif.com/en/products/socs/esp8266).
+This guide contains which tools I use and how I prepared my workspace to code 
+for [ESP8266](https://www.espressif.com/en/products/socs/esp8266).
 
 ![ESP8266 and ESP32 boards](/assets/esp8366-micropython/boards.jpg)
 
 This guide covers:
+
 - flashing SOC
 - install proper tooling
 - deploying a simple script
 
-> Make sure that you are using **a good USB cable**. I had some problems with mine and once I replaced it everything started to work.
+> Make sure that you are using **a good USB cable**. I had some problems with
+mine and once I replaced it everything started to work.
 
 ## Flashing the SOC
 
-Plug your ESP8266 to USB port and check if the device was recognized with executing `dmesg | grep ch341-uart`.
+Plug your ESP8266 to USB port and check if the device was recognized with 
+executing `dmesg | grep ch341-uart`.
 
 Then check if the device is available under `/dev/` by running `ls /dev/ttyUSB*`.
 
-> **Linux users**: if a device is not available be sure you are in `dialout` group. You can check this by executing `groups $USER`. You can add a user to `dialout` group with `sudo adduser $USER dialout`.
+> **Linux users**: if a device is not available be sure you are in `dialout` 
+> group. You can check this by executing `groups $USER`. You can add a user to
+> `dialout` group with `sudo adduser $USER dialout`.
 
-After these conditions are meet go to the navigate to [https://micropython.org/download/esp8266/](https://micropython.org/download/esp8266/) and download `esp8266-20200902-v1.13.bin`.
+After these conditions are meet go to the navigate to [https://micropython.org/download/esp8266/](https://micropython.org/download/esp8266/)
+and download `esp8266-20200902-v1.13.bin`.
 
 ```sh
 mkdir esp8266-test
@@ -37,7 +48,8 @@ cd esp8266-test
 wget https://micropython.org/resources/firmware/esp8266-20200902-v1.13.bin
 ```
 
-After obtaining firmware we will need some tooling to flash the firmware to the board.
+After obtaining firmware we will need some tooling to flash the firmware to
+the board.
 
 ```sh
 sudo pip3 install esptool
@@ -45,7 +57,8 @@ sudo pip3 install esptool
 
 You can read more about `esptool` at [https://github.com/espressif/esptool/](https://github.com/espressif/esptool/).
 
-Before flashing the firmware we need to erase the flash on device. Substitute `USB0` with the device listed in output of `ls /dev/ttyUSB*`.
+Before flashing the firmware we need to erase the flash on device. Substitute
+`USB0` with the device listed in output of `ls /dev/ttyUSB*`.
 
 ```sh
 esptool.py --port /dev/ttyUSB0 erase_flash
@@ -57,9 +70,11 @@ If flash was successfully erased it is now time to flash the new firmware to it.
 esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 esp8266-20200902-v1.13.bin
 ```
 
-If everything went ok you can try accessing MicroPython REPL with `screen /dev/ttyUSB0 115200` or `picocom /dev/ttyUSB0 -b115200`.
+If everything went ok you can try accessing MicroPython REPL with `
+screen /dev/ttyUSB0 115200` or `picocom /dev/ttyUSB0 -b115200`.
 
-> Sometimes you will need to press `ENTER` in `screen` or `picocom` to access REPL.
+> Sometimes you will need to press `ENTER` in `screen` or `picocom` to access 
+> REPL.
 
 When you are in REPL you can test if all is working properly following steps.
 
@@ -68,7 +83,8 @@ When you are in REPL you can test if all is working properly following steps.
 > machine.freq()
 ```
 
-This should output a number representing a frequency of the CPU (mine was `80000000`).
+This should output a number representing a frequency of the CPU (mine was 
+`80000000`).
 
 When you are in `screen` or `picocom` these can help you a bit.
 
@@ -81,7 +97,8 @@ When you are in `screen` or `picocom` these can help you a bit.
 
 ## Install better tooling
 
-Now, to make our lives a little bit easier there are couple of additional tools that will make this whole experience a little more bearable.
+Now, to make our lives a little bit easier there are couple of additional tools
+that will make this whole experience a little more bearable.
 
 There are twq cool ways of uploading local files to SOC flash.
 
@@ -113,7 +130,8 @@ ampy --delay 2 --port /dev/ttyUSB0 cat boot.py
 
 ### rshell
 
-Even though `ampy` is a cool tool I opted with `rshell` in the end since it's much more polished and feature rich.
+Even though `ampy` is a cool tool I opted with `rshell` in the end since it's 
+much more polished and feature rich.
 
 ```bash
 # installing ampy
@@ -126,7 +144,9 @@ Now that `rshell` is installed we can connect to the board.
 rshell --buffer-size=30 -p /dev/ttyUSB0 -a
 ```
 
-This will open a shell inside bash and from here you can execute multiple commands. You can check what is supported with `help` once you are inside of a shell.
+This will open a shell inside bash and from here you can execute multiple 
+commands. You can check what is supported with `help` once you are inside of 
+a shell.
 
 ```bash
 m@turing ~/Junk/esp8266-test
@@ -151,11 +171,14 @@ boards  cd   cp       echo  exit  filetype  ls    repl   rsync
 Use Control-D (or the exit command) to exit rshell.
 ```
 
-> Inside a shell `ls` will display list of files on your machine. To get list of files on flash folder `/pyboard` is remapped inside the shell. To list files on flash you must perform `ls /pyboard`.
+> Inside a shell `ls` will display list of files on your machine. To get list 
+> of files on flash folder `/pyboard` is remapped inside the shell. To list files
+> on flash you must perform `ls /pyboard`.
 
 #### Moving files to flash
 
-To avoid copying files all the time I used `rsync` function from the inside of `rshell`.
+To avoid copying files all the time I used `rsync` function from the
+inside of `rshell`.
 
 ```bash
 rsync . /pyboard
@@ -163,9 +186,11 @@ rsync . /pyboard
 
 #### Executing scripts
 
-It is a pain to continuously reboot the device to trigger `/pyboard/boot.py` and there is a better way of testing local scripts on remote device.
+It is a pain to continuously reboot the device to trigger `/pyboard/boot.py`
+and there is a better way of testing local scripts on remote device.
 
-Lets assume we have `src/freq.py` file that displays CPU frequency of a remote device.
+Lets assume we have `src/freq.py` file that displays CPU frequency of a
+remote device.
 
 ```py
 # src/freq.py
@@ -191,5 +216,6 @@ repl
 
 ## Additional resources
 
-- [https://randomnerdtutorials.com/getting-started-micropython-esp32-esp8266/](https://randomnerdtutorials.com/getting-started-micropython-esp32-esp8266/)
-- [http://docs.micropython.org/en/latest/esp8266/quickref.html](http://docs.micropython.org/en/latest/esp8266/quickref.html)
+- https://randomnerdtutorials.com/getting-started-micropython-esp32-esp8266/
+- http://docs.micropython.org/en/latest/esp8266/quickref.html
+

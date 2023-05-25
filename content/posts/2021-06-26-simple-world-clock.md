@@ -1,21 +1,31 @@
 ---
 title: Simple world clock with eInk display and Raspberry Pi Zero
 url: simple-world-clock-with-eiink-display-and-raspberry-pi-zero.html
-date: 2021-06-26
+date: 2021-06-26T12:00:00+02:00
 draft: false
 ---
 
-Our team is spread across the world, from the USA all the way to Australia, so having some sort of world clock makes sense.
+Our team is spread across the world, from the USA all the way to Australia, 
+so having some sort of world clock makes sense.
 
-Currently, I am using an extension for Gnome called [Timezone extension](https://extensions.gnome.org/extension/2657/timezones-extension/), and it serves the purpose quite well.
+Currently, I am using an extension for Gnome called 
+[Timezone extension](https://extensions.gnome.org/extension/2657/timezones-extension/), 
+and it serves the purpose quite well.
 
-But I also have a bunch of electronics that I bought through the time, and I am not using any of them, and it's time to stop hording this stuff and use it in a project.
+But I also have a bunch of electronics that I bought through the time, and I 
+am not using any of them, and it's time to stop hording this stuff and use it 
+in a project.
 
-A while ago I bought a small eInk display [Inky pHAT](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811) and I have a bunch of [Raspberry Pi's Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/) lying around that I really need to use.
+A while ago I bought a small eInk display 
+[Inky pHAT](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811) 
+and I have a bunch of [Raspberry Pi's Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/) 
+lying around that I really need to use.
 
 ![Inky pHAT, Raspberry Pi Zero](/assets/world-clock/hardware.jpg)
 
-Since the Inky [Inky pHAT](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811) is essentially a HAT, it can easily be added on top of the [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/).
+Since the Inky [Inky pHAT](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811) 
+is essentially a HAT, it can easily be added on top of the 
+[Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/).
 
 First, I installed the necessary software on Raspberry Pi with `pip3 install inky`.
 
@@ -66,7 +76,8 @@ board.set_image(img)
 board.show()
 ```
 
-And because eInk displays are rather slow to refresh and the clock requires refreshing only once a minute, this can be done through cronjob.
+And because eInk displays are rather slow to refresh and the clock requires 
+refreshing only once a minute, this can be done through cronjob.
 
 Before we add this job to cron we need to make `clock.py` executable with `chmod +x clock.py`.
 
@@ -80,8 +91,13 @@ So, we end up with a result like this.
 
 ![World Clock](/assets/world-clock/world-clock.jpg)
 
-And for the enclosure that can be 3D printed, but I haven't yet something like this can be used.
+And for the enclosure that can be 3D printed, but I haven't yet something like 
+this can be used.
 
 <iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fmitjafelicijan.com%2Fassets%2Fworld-clock%2Fenclosure.stl&color=gray&bgcolor=white&edges=no&orientation=front&noborder=no" style="border:0;margin:0;width:100%;height:400px;"></iframe>
 
-You can download my [STL file for the enclosure here](/assets/world-clock/enclosure.stl), but make sure that dimensions make sense and also opening for USB port should be added or just use a drill and some hot glue to make it stick in the enclosure.
+You can download my [STL file for the enclosure here](/assets/world-clock/enclosure.stl), 
+but make sure that dimensions make sense and also opening for USB port should 
+be added or just use a drill and some hot glue to make it stick in the 
+enclosure.
+

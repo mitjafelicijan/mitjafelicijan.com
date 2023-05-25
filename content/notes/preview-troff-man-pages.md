@@ -1,7 +1,7 @@
 ---
 title: Previews how man page written in Troff will look like
 url: preview-troff-man-pages.html
-date: 2023-05-15
+date: 2023-05-15T12:00:00+02:00
 type: notes
 draft: false
 tags: [troff, man]

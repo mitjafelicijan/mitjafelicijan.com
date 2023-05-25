@@ -1,27 +1,40 @@
 ---
 title: Golang profiling simplified
 url: golang-profiling-simplified.html
-date: 2017-03-07
+date: 2017-03-07T12:00:00+02:00
 draft: false
 ---
 
-Many posts have been written regarding profiling in Golang and I haven’t found proper tutorial regarding this. Almost all of them are missing some part of important information and it gets pretty frustrating when you have a deadline and are not finding simple distilled solution.
+Many posts have been written regarding profiling in Golang and I haven’t found
+proper tutorial regarding this. Almost all of them are missing some part of 
+important information and it gets pretty frustrating when you have a deadline 
+and are not finding simple distilled solution.
 
-Nevertheless, after searching and experimenting I have found a solution that works for me and probably should also for you.
+Nevertheless, after searching and experimenting I have found a solution that 
+works for me and probably should also for you.
 
 ## Where are my pprof files?
 
-By default pprof files are generated in /tmp/ folder. You can override folder where this files are generated programmatically in your golang code as we will see below in example.
+By default pprof files are generated in /tmp/ folder. You can override folder 
+where this files are generated programmatically in your golang code as we will 
+see below in example.
 
 ## Why is my CPU profile empty?
 
-I have found out that sometimes CPU profile is empty because program was not executing long enough. Programs, that execute too quickly don’t produce pprof file in my cases. Well, file is generated but only contains 4KB of information.
+I have found out that sometimes CPU profile is empty because program was not 
+executing long enough. Programs, that execute too quickly don’t produce pprof 
+file in my cases. Well, file is generated but only contains 4KB of information.
 
 ## Profiling
 
-As you can see from examples we are executing dummy_benchmark functions to ensure some sort of execution. Memory profiling can be done without such a “complex” function. But CPU profiling needs it.
+As you can see from examples we are executing dummy_benchmark functions to 
+ensure some sort of execution. Memory profiling can be done without such a 
+“complex” function. But CPU profiling needs it.
 
-Both memory and CPU profiling examples are almost the same. Only parameters in main function when calling profile.Start are different. When we set profile.ProfilePath(“.”) we tell profiler to store pprof files in the same folder as our program.
+Both memory and CPU profiling examples are almost the same. Only parameters 
+in main function when calling profile.Start are different. When we set 
+profile.ProfilePath(“.”) we tell profiler to store pprof files in the same 
+folder as our program.
 
 ### Memory profiling
 
@@ -109,3 +122,4 @@ This will generate PDF document with visualized profile.
 
 - [Memory PDF profile example](/assets/go-profiling/golang-profiling-mem.pdf)
 - [CPU PDF profile example](/assets/go-profiling/golang-profiling-cpu.pdf)
+

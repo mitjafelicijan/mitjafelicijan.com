@@ -1,7 +1,7 @@
 ---
 title: Install Plan9port on Linux
 url: install-plan9port-linux.html
-date: 2023-05-12
+date: 2023-05-12T12:00:00+02:00
 type: notes
 draft: false
 tags: [plan9, plan9port, linux]

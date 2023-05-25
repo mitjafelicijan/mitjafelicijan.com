@@ -1,7 +1,7 @@
 ---
 title: Sane defaults for tmux with more visible statusbar
 url: tmux-sane-defaults.html
-date: 2023-05-25
+date: 2023-05-25T12:00:00+02:00
 type: notes
 draft: false
 tags: [tmux]

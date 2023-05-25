@@ -1,7 +1,7 @@
 ---
 title: List of essential Linux commands for server management
 url: linux-cheatsheet.html
-date: 2021-08-01
+date: 2021-08-01T12:00:00+02:00
 draft: false
 ---
 
@@ -283,3 +283,4 @@ lsof -u <user>
 # -n 1 means every second
 watch -n 1 df -h
 ```
+

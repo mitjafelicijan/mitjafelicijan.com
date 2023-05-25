@@ -1,7 +1,7 @@
 ---
 title: "#cat-v on weechat configuration"
 url: catv-weechat-config.html
-date: 2023-05-09
+date: 2023-05-09T12:00:00+02:00
 type: notes
 draft: false
 tags: [irc, weechat, cat-v]

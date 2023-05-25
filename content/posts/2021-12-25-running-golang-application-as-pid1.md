@@ -1,43 +1,62 @@
 ---
 title: Running Golang application as PID 1 with Linux kernel
 url: running-golang-application-as-pid1.html
-date: 2021-12-25
+date: 2021-12-25T12:00:00+02:00
 draft: false
 ---
 
 ## Unikernels, kernels, and alike
 
-I have been reading a lot about [unikernernels](https://en.wikipedia.org/wiki/Unikernel) lately and found them very intriguing. When you push away all the marketing speak and look at the idea, it makes a lot of sense.
+I have been reading a lot about [unikernernels](https://en.wikipedia.org/wiki/Unikernel)
+lately and found them very intriguing. When you push away all the marketing 
+speak and look at the idea, it makes a lot of sense.
 
-> A unikernel is a specialized, single address space machine image constructed by using library operating systems. ([Wikipedia](https://en.wikipedia.org/wiki/Unikernel))
+> A unikernel is a specialized, single address space machine image constructed 
+> by using library operating systems. ([Wikipedia](https://en.wikipedia.org/wiki/Unikernel))
 
-I really like the explanation from the article [Unikernels: Rise of the Virtual Library Operating System](https://queue.acm.org/detail.cfm?id=2566628). Really worth a read.
+I really like the explanation from the article 
+[Unikernels: Rise of the Virtual Library Operating System](https://queue.acm.org/detail.cfm?id=2566628). 
+Really worth a read.
 
-If we compare a normal operating system to a unikernel side by side, they would look something like this.
+If we compare a normal operating system to a unikernel side by side, they would
+look something like this.
 
 ![Virtual machines vs Containers vs Unikernels](/assets/pid1/unikernels.png)
 
-From this image, we can see how the complexity significantly decreases with the use of Unikernels. This comes with a price, of course. Unikernels are hard to get running and require a lot of work since you don't have an actual proper kernel running in the background providing network access and drivers etc.
+From this image, we can see how the complexity significantly decreases with 
+the use of Unikernels. This comes with a price, of course. Unikernels are hard 
+to get running and require a lot of work since you don't have an actual proper
+kernel running in the background providing network access and drivers etc.
 
-So as a half step to make the stack simpler, I started looking into using Linux kernel as a base and going from there. I came across this [Youtube video talking about Building the Simplest Possible Linux System](https://www.youtube.com/watch?v=Sk9TatW9ino) by [Rob Landley](https://landley.net) and apart from statically compiling the application to be run as PID1 there was really no other obstacles.
+So as a half step to make the stack simpler, I started looking into using 
+Linux kernel as a base and going from there. I came across this 
+[Youtube video talking about Building the Simplest Possible Linux System](https://www.youtube.com/watch?v=Sk9TatW9ino) 
+by [Rob Landley](https://landley.net) and apart from statically compiling the
+application to be run as PID1 there was really no other obstacles.
 
 ## What is PID 1?
 
-PID 1 is the first process that Linux kernel starts after the boot process. It also has a couple of unique properties that are unique to it.
+PID 1 is the first process that Linux kernel starts after the boot process.
+It also has a couple of unique properties that are unique to it.
 
-- When the process with PID 1 dies for any reason, all other processes are killed with KILL signal.
-- When any process having children dies for any reason, its children are re-parented to process with PID 1.
+- When the process with PID 1 dies for any reason, all other processes are 
+  killed with KILL signal.
+- When any process having children dies for any reason, its children are 
+  re-parented to process with PID 1.
 - Many signals which have default action of Term do not have one for PID 1.
-- When the process with PID 1 dies for any reason, kernel panics, which result in system crash.
+- When the process with PID 1 dies for any reason, kernel panics, which 
+  result in system crash.
 
-PID 1 is considered as an Init application which takes care of running other and handling services like:
+PID 1 is considered as an Init application which takes care of running other
+and handling services like:
 
 - sshd,
 - nginx,
 - pulseaudio,
 - etc.
 
-If you are on a Linux machine, you can check what your process is with PID 1 by running the following.
+If you are on a Linux machine, you can check what your process is with PID 1
+by running the following.
 
 ```sh
 $ cat /proc/1/status
@@ -51,23 +70,34 @@ PPid:	0
 ...
 ```
 
-As we can see on my machine the process with id of 1 is [systemd](https://systemd.io/) which is a software suite that provides an array of system components for Linux operating systems. If you look closely you can also see that the `PPid` (process id of the parent process) is `0` which additionally confirms that this process doesn't have a parent.
+As we can see on my machine the process with id of 1 is [systemd](https://systemd.io/)
+which is a software suite that provides an array of system components for Linux 
+operating systems. If you look closely you can also see that the `PPid` 
+(process id of the parent process) is `0` which additionally confirms that 
+this process doesn't have a parent.
 
 ## So why even run application as PID 1 instead of just using a container?
 
-Containers are wonderful, but they come with a lot of baggage. And because they are in their nature layered, the images require quite a lot of space and also a lot of additional software to handle them. They are not as lightweight as they seem, and many popular images require 500 MB plus disk space.
+Containers are wonderful, but they come with a lot of baggage. And because they 
+are in their nature layered, the images require quite a lot of space and also a 
+lot of additional software to handle them. They are not as lightweight as they
+seem, and many popular images require 500 MB plus disk space.
 
-The idea of running this as PID 1 would result in a significantly smaller footprint, as we will see later in the post.
+The idea of running this as PID 1 would result in a significantly smaller footprint, 
+as we will see later in the post.
 
-> You could run a simple init system inside Docker container described more in this article [Docker and the PID 1 zombie reaping problem](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/).
+> You could run a simple init system inside Docker container described more
+> in this article [Docker and the PID 1 zombie reaping problem](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/).
 
 ## The master plan
 
 1. Compile Linux kernel with the default definitions.
 2. Prepare a Hello World application in Golang that is statically compiled.
-3. Run it with [QEMU](https://www.qemu.org/) and providing Golang application as init application / PID 1.
+3. Run it with [QEMU](https://www.qemu.org/) and providing Golang application 
+   as init application / PID 1.
 
-For the sake of simplicity we will not be cross-compiling any of it and just use the 64bit version.
+For the sake of simplicity we will not be cross-compiling any of it and just
+use the 64bit version.
 
 ## Compiling Linux kernel
 
@@ -87,12 +117,15 @@ $ time make -j `nproc`
 $ cd ..
 ```
 
-At this point we have kernel image that is located in `arch/x86_64/boot/bzImage`. We will use this in QEMU later.
+At this point we have kernel image that is located in `arch/x86_64/boot/bzImage`.
+We will use this in QEMU later.
 
-To make our lives a bit easier lets move the kernel image to another place. Lets create a folder `bin/` in the root of our project with `mkdir -p bin`.
+To make our lives a bit easier lets move the kernel image to another place. 
+Lets create a folder `bin/` in the root of our project with `mkdir -p bin`.
 
 
-At this point we can copy `bzImage` to `bin/` folder with `cp linux-5.15.7/arch/x86_64/boot/bzImage bin/bzImage`.
+At this point we can copy `bzImage` to `bin/` folder with 
+`cp linux-5.15.7/arch/x86_64/boot/bzImage bin/bzImage`.
 
 The folder structure of this experiment should look like this.
 
@@ -106,7 +139,8 @@ pid1/
 
 ## Preparing PID 1 application in Golang
 
-This step is relatively easy. The only thing we must have in mind that we will need to compile the binary as a static one.
+This step is relatively easy. The only thing we must have in mind that we will 
+need to compile the binary as a static one.
 
 Let's create `init.go` file in the root of the project.
 
@@ -126,7 +160,9 @@ func main() {
 }
 ```
 
-If you notice, we have a forever loop in the main, with a simple sleep of 1 second to not overwhelm the CPU. This is because PID 1 should never complete and/or exit. That would result in a kernel panic. Which is BAD!
+If you notice, we have a forever loop in the main, with a simple sleep of 1 
+second to not overwhelm the CPU. This is because PID 1 should never complete 
+and/or exit. That would result in a kernel panic. Which is BAD!
 
 There are two ways of compiling Golang application. Statically and dynamically.
 
@@ -146,7 +182,10 @@ $ ldd init
 not a dynamic executable
 ```
 
-At this point, we need to create [initramfs](https://www.linuxfromscratch.org/blfs/view/svn/postlfs/initramfs.html) (abbreviated from "initial RAM file system", is the successor of initrd. It is a cpio archive of the initial file system that gets loaded into memory during the Linux startup process).
+At this point, we need to create [initramfs](https://www.linuxfromscratch.org/blfs/view/svn/postlfs/initramfs.html) 
+(abbreviated from "initial RAM file system", is the successor of initrd. It 
+is a cpio archive of the initial file system that gets loaded into memory 
+during the Linux startup process).
 
 ```sh
 $ echo init | cpio -o --format=newc > initramfs
@@ -167,7 +206,10 @@ pid1/
 
 ## Running all of it with QEMU
 
-[QEMU](https://www.qemu.org/) is a free and open-source hypervisor. It emulates the machine's processor through dynamic binary translation and provides a set of different hardware and device models for the machine, enabling it to run a variety of guest operating systems.
+[QEMU](https://www.qemu.org/) is a free and open-source hypervisor. It emulates
+the machine's processor through dynamic binary translation and provides a set 
+of different hardware and device models for the machine, enabling it to run a
+variety of guest operating systems.
 
 ```sh
 $ qemu-system-x86_64 -serial stdio -kernel bin/bzImage -initrd bin/initramfs -append "console=ttyS0" -m 128
@@ -212,7 +254,12 @@ The whole [log file here](/assets/pid1/qemu.log).
 
 ## Size comparison
 
-The cool thing about this approach is that the Linux kernel and the application together only take around 12 MB, which is impressive as hell. And we need to also know that the size of bzImage (Linux kernel) could be greatly decreased by going into `make menuconfig` and removing a ton of features from the kernel, making the size even smaller. I managed to get kernel size down to 2 MB and still working properly.
+The cool thing about this approach is that the Linux kernel and the application 
+together only take around 12 MB, which is impressive as hell. And we need to
+also know that the size of bzImage (Linux kernel) could be greatly decreased 
+by going into `make menuconfig` and removing a ton of features from the kernel,
+making the size even smaller. I managed to get kernel size down to 2 MB and 
+still working properly.
 
 ```sh
 total 12M
@@ -224,7 +271,8 @@ total 12M
 
 First we need to create proper folder structure with `mkdir -p iso/boot/grub`.
 
-Then we need to download the [grub binary](https://github.com/littleosbook/littleosbook/raw/master/files/stage2_eltorito). You can read more about this program on https://github.com/littleosbook/littleosbook.
+Then we need to download the [grub binary](https://github.com/littleosbook/littleosbook/raw/master/files/stage2_eltorito).
+You can read more about this program on https://github.com/littleosbook/littleosbook.
 
 ```sh
 $ wget -O iso/boot/grub/stage2_eltorito https://github.com/littleosbook/littleosbook/raw/master/files/stage2_eltorito
@@ -275,12 +323,24 @@ genisoimage -R                              \
             iso
 ```
 
-This will produce `GoAsPID1.iso` which you can use with [Virtualbox](https://www.virtualbox.org/) or [Gnome Boxes](https://apps.gnome.org/app/org.gnome.Boxes/).
+This will produce `GoAsPID1.iso` which you can use with [Virtualbox](https://www.virtualbox.org/) 
+or [Gnome Boxes](https://apps.gnome.org/app/org.gnome.Boxes/).
 
 <video src="/assets/pid1/boxes.mp4" controls></video>
 
 ## Is running applications as PID 1 even worth it?
 
-Well, the answer to this is not as simple as one would think. Sometimes it is and sometimes it's not. For embedded systems and very specialized applications it is worth for sure. But in normal uses, I don't think so. It was an interesting exercise in compiling kernels and looking at the guts of the Linux kernel, but sticking to containers for most of the things is a better option in my opinion.
+Well, the answer to this is not as simple as one would think. Sometimes it is 
+and sometimes it's not. For embedded systems and very specialized applications
+it is worth for sure. But in normal uses, I don't think so. It was an interesting
+exercise in compiling kernels and looking at the guts of the Linux kernel, 
+but sticking to containers for most of the things is a better option in my 
+opinion.
 
-An interesting experiment would be creating an image that supports networking and could be deployed to AWS as an EC2 instance and observing how it fares. But in that case, we would need to write some sort of supervisor that would run on a separate EC2 that would check if other EC2 instances are running properly. Remember that if your application fails, kernel panics and the whole machine is inoperable in this case.
+An interesting experiment would be creating an image that supports networking
+and could be deployed to AWS as an EC2 instance and observing how it fares. 
+But in that case, we would need to write some sort of supervisor that would 
+run on a separate EC2 that would check if other EC2 instances are running 
+properly. Remember that if your application fails, kernel panics and the
+whole machine is inoperable in this case.
+

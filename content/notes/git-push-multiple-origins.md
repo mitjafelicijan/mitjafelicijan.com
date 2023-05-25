@@ -1,7 +1,7 @@
 ---
 title: Push to multiple origins at once in Git
 url: git-push-multiple-origins.html
-date: 2023-05-06
+date: 2023-05-06T12:00:00+02:00
 type: notes
 draft: false
 tags: [git]

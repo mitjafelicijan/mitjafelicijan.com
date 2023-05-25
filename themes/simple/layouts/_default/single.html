@@ -6,7 +6,7 @@
     <header class="mb-6">
       <h1 itemtype="headline" class="text-4xl font-bold mb-4 leading-1 md:leading-2">{{ .Title }}</h1>
 
-      {{ if in .Type "posts" }}
+      {{ if not (eq .Type "pages") }}
       <time class="text-gray-400 font-medium text-sm">Published on {{ .Date.Format "Monday Jan 2, 2006" }}</time>
       {{ end }}
     </header>
@@ -23,7 +23,7 @@
     </div>
   </article>
 
-  {{ if in .Type "posts" }}
+  {{ if not (eq .Type "pages") }}
   <hr class="border-2 border-gray-100 mb-10" />
   {{ end }}
 
@@ -39,7 +39,7 @@
   {{ end }}
 
   <!-- Read more -->
-  {{ if in .Type "posts" }}
+  {{ if not (eq .Type "pages") }}
   {{ partial "read-more.html" . }}
   {{ end }}
 

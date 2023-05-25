@@ -1,6 +1,6 @@
 ---
 title: Books I've read so far
-date: 2022-08-27
+date: 2022-08-27T12:00:00+02:00
 url: books.html
 draft: false
 ---

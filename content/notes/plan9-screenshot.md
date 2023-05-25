@@ -1,7 +1,7 @@
 ---
 title: Take a screenshot in Plan9
 url: plan9-screenshot.html
-date: 2023-05-10
+date: 2023-05-10T12:00:00+02:00
 type: notes
 draft: false
 tags: [plan9, screenshot]

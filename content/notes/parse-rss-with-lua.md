@@ -1,7 +1,7 @@
 ---
 title: Parse RSS feeds with Lua
 url: parse-rss-with-lua.html
-date: 2023-05-23
+date: 2023-05-23T12:00:00+02:00
 type: notes
 draft: false
 tags: [lua, rss]

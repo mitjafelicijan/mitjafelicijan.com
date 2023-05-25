@@ -127,6 +127,11 @@ article.single #TableOfContents ul {
   @apply list-decimal pl-4 md:pl-6;
 }
 
+/* Lists */
+article.single .content ul ul {
+  margin-bottom: auto;
+}
+
 /* Katex */
 article.single .katex-display {
   @apply my-10;

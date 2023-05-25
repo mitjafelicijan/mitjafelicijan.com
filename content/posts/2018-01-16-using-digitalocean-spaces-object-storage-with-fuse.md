@@ -1,36 +1,67 @@
 ---
 title: Using DigitalOcean Spaces Object Storage with FUSE
 url: using-digitalocean-spaces-object-storage-with-fuse.html
-date: 2018-01-16
+date: 2018-01-16T12:00:00+02:00
 draft: false
 ---
 
-Couple of months ago [DigitalOcean](https://www.digitalocean.com) introduced new product called [Spaces](https://blog.digitalocean.com/introducing-spaces-object-storage/) which is Object Storage very similar to Amazon's S3. This really peaked my interest, because this was something I was missing and even the thought of going over the internet for such functionality was in no interest to me. Also in fashion with their previous pricing this also is very cheap and pricing page is a no-brainer compared to AWS or GCE. [Prices are clearly and precisely defined and outlined](https://www.digitalocean.com/pricing/). You must love them for that :)
+Couple of months ago [DigitalOcean](https://www.digitalocean.com) introduced 
+new product called [Spaces](https://blog.digitalocean.com/introducing-spaces-object-storage/) 
+which is Object Storage very similar to Amazon's S3. This really peaked my 
+interest, because this was something I was missing and even the thought of 
+going over the internet for such functionality was in no interest to me. Also 
+in fashion with their previous pricing this also is very cheap and pricing 
+page is a no-brainer compared to AWS or GCE. [Prices are clearly and precisely defined and outlined](https://www.digitalocean.com/pricing/). 
+You must love them for that :)
 
 ## Initial requirements
 
 * Is it possible to use them as a mounted drive with FUSE? (tl;dr YES)
-* Will the performance degrade over time and over different sizes of objects? (tl;dr NO&YES)
-* Can storage be mounted on multiple machines at the same time and be writable? (tl;dr YES)
+* Will the performance degrade over time and over different sizes of objects? 
+  (tl;dr NO&YES)
+* Can storage be mounted on multiple machines at the same time and be writable? 
+  (tl;dr YES)
 
-> Let me be clear. This scripts I use are made just for benchmarking and are not intended to be used in real-life situations. Besides that, I am looking into using this approaches but adding caching service in front of it and then dumping everything as an object to storage. This could potentially be some interesting post of itself. But in case you would need real-time data without eventual consistency please take this scripts as they are: not usable in such situations.
+> Let me be clear. This scripts I use are made just for benchmarking and are 
+> not intended to be used in real-life situations. Besides that, I am looking 
+> into using this approaches but adding caching service in front of it and then 
+> dumping everything as an object to storage. This could potentially be some 
+> interesting post of itself. But in case you would need real-time data without 
+> eventual consistency please take this scripts as they are: not usable in such 
+> situations.
 
 ## Is it possible to use them as a mounted drive with FUSE?
 
-Well, actually they can be used in such manor. Because they are similar to [AWS S3](https://aws.amazon.com/s3/) many tools are available and you can find many articles and [Stackoverflow items](https://stackoverflow.com/search?q=s3+fuse).
+Well, actually they can be used in such manor. Because they are similar to 
+[AWS S3](https://aws.amazon.com/s3/) many tools are available and you can find 
+many articles and [Stackoverflow items](https://stackoverflow.com/search?q=s3+fuse).
 
-To make this work you will need DigitalOcean account. If you don't have one you will not be able to test this code. But if you have an account then you go and [create new Droplet](https://cloud.digitalocean.com/droplets/new?size=s-1vcpu-1gb&region=ams3&distro=debian&distroImage=debian-9-x64&options=private_networking,install_agent). If you click on this link you will already have preselected Debian 9 with smallest VM option.
+To make this work you will need DigitalOcean account. If you don't have one you 
+will not be able to test this code. But if you have an account then you go and 
+[create new Droplet](https://cloud.digitalocean.com/droplets/new?size=s-1vcpu-1gb&region=ams3&distro=debian&distroImage=debian-9-x64&options=private_networking,install_agent). 
+If you click on this link you will already have preselected Debian 9 with 
+smallest VM option.
 
-* Please be sure to add you SSH key, because we will login to this machine remotely.
-* If you change your region please remember which one you choose because we will need this information when we try to mount space to our machine.
+* Please be sure to add you SSH key, because we will login to this machine 
+  remotely.
+* If you change your region please remember which one you choose because we 
+  will need this information when we try to mount space to our machine.
 
-Instuctions on how to use SSH keys and how to setup them are available in article [How To Use SSH Keys with DigitalOcean Droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
+Instuctions on how to use SSH keys and how to setup them are available in article 
+[How To Use SSH Keys with DigitalOcean Droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
 
 ![DigitalOcean Droplets](/assets/do-fuse/fuse-droplets.png)
 
-After we created Droplet it's time to create new Space. This is done by clicking on a button [Create](https://cloud.digitalocean.com/spaces/new) (right top corner) and selecting Spaces. Choose pronounceable ```Unique name``` because we will use it in examples below. You can either choose Private or Public, it doesn't matter in our case. And you can always change that in the future.
+After we created Droplet it's time to create new Space. This is done by clicking 
+on a button [Create](https://cloud.digitalocean.com/spaces/new) (right top 
+corner) and selecting Spaces. Choose pronounceable ```Unique name``` because we 
+will use it in examples below. You can either choose Private or Public, it 
+doesn't matter in our case. And you can always change that in the future.
 
-When you have created new Space we should [generate Access key](https://cloud.digitalocean.com/settings/api/tokens). This link will guide to the page when you can generate this key. After you create new one, please save provided Key and Secret because Secret will not be shown again.
+When you have created new Space we should [generate Access key](https://cloud.digitalocean.com/settings/api/tokens). 
+This link will guide to the page when you can generate this key. After you 
+create new one, please save provided Key and Secret because Secret will not
+be shown again.
 
 ![DigitalOcean Spaces](/assets/do-fuse/fuse-spaces.png)
 
@@ -59,9 +90,14 @@ s3fs UNIQUE-NAME /mnt/ -ourl=https://ams3.digitaloceanspaces.com -ouse_cache=/tm
 echo "Hello cruel world" > /mnt/hello.txt
 ```
 
-After all this you can return to your browser and go to [DigitalOcean Spaces](https://cloud.digitalocean.com/spaces) and click on your created space. If file hello.txt is present you have successfully mounted space to your machine and wrote data to it.
+After all this you can return to your browser and go to 
+[DigitalOcean Spaces](https://cloud.digitalocean.com/spaces) and click on your 
+created space. If file hello.txt is present you have successfully mounted 
+space to your machine and wrote data to it.
 
-I choose the same region for my Droplet and my Space but you don't have to. You can have different regions. What this actually does to performance I don't know.
+I choose the same region for my Droplet and my Space but you don't have to. 
+You can have different regions. What this actually does to performance I 
+don't know.
 
 Additional information on FUSE:
 
@@ -70,7 +106,9 @@ Additional information on FUSE:
 
 ## Will the performance degrade over time and over different sizes of objects?
 
-For this task I didn't want to just read and write text files or uploading images. I actually wanted to figure out if using something like SQlite is viable in this case.
+For this task I didn't want to just read and write text files or uploading 
+images. I actually wanted to figure out if using something like SQlite is 
+viable in this case.
 
 ### Measurement experiment 1: File copy
 
@@ -96,13 +134,17 @@ n=0; while (( n++ < 100 )); do (time cp 1MB.dat /mnt/1MB.$n.dat) |& tee -a 1MB.r
 n=0; while (( n++ < 100 )); do (time cp 10MB.dat /mnt/10MB.$n.dat) |& tee -a 10MB.results.txt; done
 ```
 
-Files of size 100MB were not successfully transferred and ended up displaying error (cp: failed to close '/mnt/100MB.1.dat': Operation not permitted).
+Files of size 100MB were not successfully transferred and ended up displaying 
+error (cp: failed to close '/mnt/100MB.1.dat': Operation not permitted).
 
-As I suspected, object size is not really that important. Sadly I don't have the time to test performance over periods of time. But if some of you would do it please send me your data. I would be interested in seeing results.
+As I suspected, object size is not really that important. Sadly I don't have 
+the time to test performance over periods of time. But if some of you would do 
+it please send me your data. I would be interested in seeing results.
 
 **Here are plotted results**
 
-You can download [raw result here](/assets/do-fuse/copy-benchmarks.tsv). Measurements are in seconds.
+You can download [raw result here](/assets/do-fuse/copy-benchmarks.tsv). 
+Measurements are in seconds.
 
 <script src="//cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="copy-benchmarks"></div>
@@ -135,11 +177,18 @@ You can download [raw result here](/assets/do-fuse/copy-benchmarks.tsv). Measure
 })();
 </script>
 
-As far as these tests show, performance is quite stable and can be predicted which is fantastic. But this is a small test and spans only over couple of hours. So you should not completely trust them.
+As far as these tests show, performance is quite stable and can be predicted 
+which is fantastic. But this is a small test and spans only over couple of 
+hours. So you should not completely trust them.
 
 ### Measurement experiment 2: SQLite performanse
 
-I was unable to use database file directly from mounted drive so this is a no-go as I suspected. So I executed code below on a local disk just to get some benchmarks. I inserted 1000 records with DROPTABLE, CREATETABLE, INSERTMANY, FETCHALL, COMMIT for 1000 times to generate statistics. As you can see performance of SQLite is quite amazing. You could then potentially just copy file to mounted drive and be done with it.
+I was unable to use database file directly from mounted drive so this is a 
+no-go as I suspected. So I executed code below on a local disk just to get 
+some benchmarks. I inserted 1000 records with DROPTABLE, CREATETABLE, 
+INSERTMANY, FETCHALL, COMMIT for 1000 times to generate statistics. As you can 
+see performance of SQLite is quite amazing. You could then potentially just 
+copy file to mounted drive and be done with it.
 
 ```python
 import time
@@ -218,7 +267,11 @@ result_time = CLOSE = end_time - start_time
 print("CLOSE: %g seconds" % (result_time))
 ```
 
-You can download [raw result here](/assets/do-fuse/sqlite-benchmarks.tsv). And again, these results are done on a local block storage and do not represent capabilities of object storage. With my current approach and state of the test code these can not be done. I would need to make Python code much more robust and check locking etc.
+You can download [raw result here](/assets/do-fuse/sqlite-benchmarks.tsv). And 
+again, these results are done on a local block storage and do not represent 
+capabilities of object storage. With my current approach and state of the test 
+code these can not be done. I would need to make Python code much more robust 
+and check locking etc.
 
 <div id="sqlite-benchmarks"></div>
 <script>
@@ -252,10 +305,24 @@ You can download [raw result here](/assets/do-fuse/sqlite-benchmarks.tsv). And a
 
 ## Can storage be mounted on multiple machines at the same time and be writable?
 
-Well, this one didn't take long to test. And the answer is **YES**. I mounted space on both machines and measured same performance on both machines. But because file is downloaded before write and then uploaded on complete there could potentially be problems is another process is trying to access the same file.
+Well, this one didn't take long to test. And the answer is **YES**. I mounted 
+space on both machines and measured same performance on both machines. But 
+because file is downloaded before write and then uploaded on complete there 
+could potentially be problems is another process is trying to access the same 
+file.
 
 ## Observations and conslusion
 
-Using Spaces in this way makes it easier to access and manage files. But besides that you would need to write additional code to make this one play nice with you applications.
+Using Spaces in this way makes it easier to access and manage files. But 
+besides that you would need to write additional code to make this one play 
+nice with you applications.
 
-Nevertheless, this was extremely simple to setup and use and this is just another excellent product in DigitalOcean product line. I found this exercise very valuable and am thinking about implementing some sort of mechanism for SQLite, so data can be stored on Spaces and accessed by many VM's. For a project where data doesn't need to be accessible in real-time and can have couple of minutes old data this would be very interesting. If any of you find this proposal interesting please write in a comment box below or shoot me an email and I will keep you posted.
+Nevertheless, this was extremely simple to setup and use and this is just 
+another excellent product in DigitalOcean product line. I found this exercise 
+very valuable and am thinking about implementing some sort of mechanism for 
+SQLite, so data can be stored on Spaces and accessed by many VM's. For a 
+project where data doesn't need to be accessible in real-time and can have 
+couple of minutes old data this would be very interesting. If any of you find 
+this proposal interesting please write in a comment box below or shoot me an 
+email and I will keep you posted.
+

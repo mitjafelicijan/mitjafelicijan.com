@@ -24,7 +24,9 @@
       {{ range (where .Site.RegularPages "Section" "notes") }}
       <div class="mb-10">
         <article class="mb-5 single note" itemscope itemtype="http://schema.org/Article">
-          <h2 class="text-xl font-medium notes-heading">{{.Title}}</h2>
+          <a href="{{ .Params.url }}">
+            <h2 class="text-xl font-medium notes-heading">{{.Title}}</h2>
+          </a>
           <p class="text-gray-600 _italic text-sm flex flex-col md:flex-row gap-1">
             <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">
               {{ .Date.Format "Monday Jan 2, 2006" }}

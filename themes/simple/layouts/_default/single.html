@@ -28,13 +28,13 @@
   {{ end }}
 
   <!-- Comment, contact -->
-  {{ if in .Type "posts" }}
+  {{ if not (eq .Type "pages") }}
   <section class="mb-10">
     {{ partial "comments.html" . }}
   </section>
   {{ end }}
 
-  {{ if in .Type "posts" }}
+  {{ if not (eq .Type "pages") }}
   <hr class="border-2 border-gray-100 mb-10" />
   {{ end }}
 

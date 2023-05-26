@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-* { cursor: url(/general/9front-cursor.png), auto; }
+/* * { cursor: url(/general/9front-cursor.png), auto; } */
 
 /* Container */
 .container-blog {

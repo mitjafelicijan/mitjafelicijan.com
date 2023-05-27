@@ -45,9 +45,9 @@ main()
   im = allocimage(display, Rect(0, 0, 300, 300), RGB24, 0, DYellow);
   bg = allocimage(display, Rect(0, 0, 1, 1), RGB24, 1, co);
 
-  if (im1 == nil || bg == nil)
+  if (im == nil || bg == nil)
   {
-    sysfatal("get more memory, bub");
+    sysfatal("not enough memory");
   }
 
   draw(screen, screen->r, bg, nil, ZP);

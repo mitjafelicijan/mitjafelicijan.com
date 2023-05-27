@@ -13,6 +13,7 @@ alternative for drawing that draws a yellow square on a red background.
 ![Plan9 Howdy World!](/notes/plan9-pixels.png)
 
 ```c
+// main.c
 #include <u.h>
 #include <libc.h>
 #include <draw.h>
@@ -52,6 +53,7 @@ void main(int argc, char *argv[])
 And then compile with `mk` (mkfile below):
 
 ```makefile
+# mkfile
 </$objtype/mkfile
 
 RC=/rc/bin
@@ -62,5 +64,8 @@ main:
 	$CC $CFLAGS main.c
 	$LD $LDFLAGS -o main main.$O
 ```
+
+And run with `./main`. To exit the program, press `Delete key` (strange but this
+is the alternative for Ctrl+C).
 
 *This is **very cool** indeed!*

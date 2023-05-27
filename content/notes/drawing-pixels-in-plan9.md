@@ -10,6 +10,15 @@ tags: [plan9, graphics]
 I have started exploring Plan9's graphics capabilities. This is a hello world
 alternative for drawing that draws a yellow square on a red background.
 
+More information:
+
+- [draw.h header file](https://github.com/0intro/plan9/blob/main/sys/include/draw.h)
+  contains all the drawing functions
+- [draw man page](https://9fans.github.io/plan9port/man/man3/graphics.html)
+  has a bit more digestable descriptions of the functions
+- [all man pages](https://9fans.github.io/plan9port/man/man3/)
+  can be a valuable resource for learning about the system
+
 ![Plan9 Howdy World!](/notes/plan9-pixels.png)
 
 ```c

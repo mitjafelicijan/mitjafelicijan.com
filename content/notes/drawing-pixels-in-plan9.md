@@ -8,7 +8,7 @@ tags: [plan9, graphics]
 ---
 
 I have started exploring Plan9's graphics capabilities. This is a hello world
-alternative for drawing that draws a yellow square on a blue background.
+alternative for drawing that draws a yellow square on a red background.
 
 ![Plan9 Howdy World!](/notes/plan9-pixels.png)
 

@@ -30,7 +30,7 @@ More information:
 #include <draw.h>
 #include <cursor.h>
 
-void main(int argc, char *argv[])
+void main()
 {
   ulong co;
   Image *im, *bg;

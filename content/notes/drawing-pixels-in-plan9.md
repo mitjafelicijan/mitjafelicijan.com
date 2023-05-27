@@ -34,14 +34,14 @@ void main(int argc, char *argv[])
 {
   ulong co;
   Image *im, *bg;
-  co = 0xFF0000FF;
+  co = 0x0000FFFF;
 
   if (initdraw(nil, nil, argv0) < 0)
   {
     sysfatal("%s: %r", argv0);
   }
 
-  im = allocimage(display, Rect(0, 0, 100, 100), RGB24, 0, DYellow);
+  im = allocimage(display, Rect(0, 0, 300, 300), RGB24, 0, DYellow);
   bg = allocimage(display, Rect(0, 0, 1, 1), RGB24, 1, co);
 
   if (im1 == nil || bg == nil)

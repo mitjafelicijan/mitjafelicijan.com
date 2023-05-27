@@ -49,7 +49,7 @@ void main(int argc, char *argv[])
 }
 ```
 
-And then compile with `mk` (Makefile below):
+And then compile with `mk` (mkfile below):
 
 ```makefile
 </$objtype/mkfile

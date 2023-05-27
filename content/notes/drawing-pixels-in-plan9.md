@@ -3,7 +3,7 @@ title: "Drawing Pixels in Plan9"
 url: drawing-pixels-in-plan9.html
 date: 2023-05-27T17:41:33+02:00
 type: notes
-draft: true
+draft: false
 tags: [plan9, graphics]
 ---
 

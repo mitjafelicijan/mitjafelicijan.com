@@ -4,7 +4,7 @@ url: write-iso-usb.html
 date: 2023-05-25T12:00:00+02:00
 type: notes
 draft: false
-tags: [linux, xterm, palette]
+tags: [linux]
 ---
 
 - `bash xterm-palette.sh` - will show you number of max colors available
@@ -27,7 +27,7 @@ function setbg () {
 }
 
 function showcolors() {
-    # Given an integer, display that many colors 
+    # Given an integer, display that many colors
     for ((i=0; i<$1; i++))
     do
 	printf '%4d ' $i
@@ -44,10 +44,10 @@ printf '\e]4;%d;?\a' 0
 read -d $'\a' -s -t 0.1 </dev/tty
 if [ -z "$REPLY" ]
 then
-    # OSC 4 not supported, so we'll fall back to terminfo 
+    # OSC 4 not supported, so we'll fall back to terminfo
     max=$(tput colors)
 else
-    # OSC 4 is supported, so use it for a binary search 
+    # OSC 4 is supported, so use it for a binary search
     min=0
     max=256
     while [[ $((min+1)) -lt $max ]]

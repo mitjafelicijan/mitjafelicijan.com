@@ -4,7 +4,7 @@ url: cachebusting-in-hugo.html
 date: 2023-05-01T12:00:00+02:00
 type: notes
 draft: false
-tags: [hugo, cachebusting]
+tags: [hugo]
 ---
 
 ```html

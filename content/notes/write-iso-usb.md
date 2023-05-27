@@ -4,7 +4,7 @@ url: write-iso-usb.html
 date: 2023-05-08T12:00:00+02:00
 type: notes
 draft: false
-tags: [linux, iso, usb]
+tags: [linux]
 ---
 
 Write ISO to USB key. Nothing fancy here.

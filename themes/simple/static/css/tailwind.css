@@ -18,7 +18,13 @@
   @apply bg-yellow-100 text-black;
 }
 
+/* Helpers */
+
 a:hover {
+  color: blue;
+}
+
+.blue {
   color: blue;
 }
 

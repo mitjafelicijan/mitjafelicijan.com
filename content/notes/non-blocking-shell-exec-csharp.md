@@ -4,7 +4,7 @@ url: non-blocking-shell-exec-csharp.html
 date: 2023-05-22T12:00:00+02:00
 type: notes
 draft: false
-tags: [csharp, async, shell]
+tags: [csharp]
 ---
 
 Execute a shell command in async in C# while not blocking the UI thread.

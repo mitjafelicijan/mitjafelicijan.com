@@ -4,7 +4,7 @@ url: convert-mkv.html
 date: 2023-05-14T12:00:00+02:00
 type: notes
 draft: false
-tags: [ffmpeg, mkv, webm, mp4]
+tags: [ffmpeg]
 ---
 
 You will need `ffmpeg` installed on your system. This will convert all MKV files

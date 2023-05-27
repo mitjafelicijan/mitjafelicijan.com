@@ -2,7 +2,13 @@
 <main role="main" class="container-blog mx-auto px-6 md:p-0">
 
   <section class="mb-6">
-    <h1 class="text-2xl font-bold mb-2">Notes, notes and notes</h1>
+    <h1 class="text-2xl font-bold mb-2 italic">
+      <span class="blue">{{ .Title }}</span>
+      <span>//</span>
+      <span>notes</span>
+      <span>//</span>
+      <span class="text-sm">{{ len .Pages }} of them</span>
+    </h1>
     <p class="text-gray-600 italic">
       Notes about things I learn, things I do, things I want to remember,
       but never do. You can subscribe to this
@@ -18,27 +24,11 @@
     <option>Jump to note</option>
   </select>
 
-  <!-- List all unique tags -->
-  <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="mt-6 mb-10" role="feed">
-    <meta itemprop="name" content="Tag list">
-    <section>
-      <ul class="flex flex-wrap gap-2">
-        {{ range .Site.Taxonomies.tags }}
-        <li>
-          <a href="{{ .Page.Permalink }}" class="inline-block px-3 py-1 rounded bg-gray-100 hover:bg-yellow-100">
-            {{ .Page.Title }}
-          </a>
-        </li>
-        {{ end }}
-      </ul>
-    </section>
-  </nav>
-
   <!-- List of all notes -->
   <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="mb-12" role="feed">
     <meta itemprop="name" content="Article list">
     <section>
-      {{ range (where .Site.RegularPages "Section" "notes") }}
+      {{ range .Pages }}
       <div class="mb-10">
         <article class="mb-5 single note" itemscope itemtype="http://schema.org/Article">
           <a href="{{ .Params.url }}">
@@ -55,7 +45,7 @@
               <span class="inline-flex flex-row gap-1">
                 <span>(</span>
                 {{ range .Params.tags }}
-                  <a href="/tags/{{ . | urlize }}.html">{{ . }}</a>
+                  <span>{{ . }}</span>
                 {{ end }}
                 <span>)</span>
               </span>

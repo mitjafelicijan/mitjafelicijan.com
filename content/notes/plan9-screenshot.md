@@ -13,6 +13,10 @@ output it to `/dev/screen`. You can then use `topng` to convert it to a png
 image.
 
 ```sh
+# Instant screenshot.
 cat /dev/screen | topng > screen.png
+
+# Delayed screenshot (5 seconds).
+sleep 5; cat /dev/screen | topng > screen.png
 ```
 

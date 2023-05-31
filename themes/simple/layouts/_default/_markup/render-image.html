@@ -1,8 +1,10 @@
+{{ $cachebuster := delimit (shuffle (split (md5 "6fab11c6669976d759d2992eff1dd5be") "" )) "" }}
+
 <figure>
   <a href="{{ .Destination }}" target="_blank">
     <img
       loading="lazy"
-      src="{{ .Destination }}"
+      src="{{ .Destination }}?v={{ $cachebuster }}"
       alt="{{ .Text }}" title="{{ .Text }}"> 
   </a>
 </figure>

@@ -7,7 +7,7 @@ draft: false
 tags: [bash]
 ---
 
-Make bulk thumbnails with ImageMagick.
+Make bulk thumbnails of JPGs with ImageMagick.
 
 ```sh
 #!/bin/bash
@@ -16,8 +16,6 @@ directory="./images/"
 dimensions="360x360"
 
 for file in "$directory"*.jpg; do
-  convert "$file" -resize $dimensions "$file"
-  new_filename="${file%.*}-thumbnail.jpg"
-  mv "$file" "$new_filename"
+  convert "$file" -resize $dimensions "$file" "${file%.*}-thumbnail.jpg"
 done
 ```

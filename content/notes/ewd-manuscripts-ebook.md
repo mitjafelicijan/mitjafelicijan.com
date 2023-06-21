@@ -4,7 +4,7 @@ url: ewd-manuscripts-ebook.html
 date: 2023-06-01T22:47:56+02:00
 type: notes
 draft: false
-tags: []
+tags: [random]
 ---
 
 I love reading the original manuscripts of Edsger W. Dijkstra. They are

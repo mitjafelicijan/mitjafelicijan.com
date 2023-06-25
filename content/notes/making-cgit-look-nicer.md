@@ -7,9 +7,9 @@ draft: false
 tags: [git]
 ---
 
-For personal use I have a private Git server set up and I use GitHub just as a
-mirror. By default the cgit theme looks a bit dated so I made the folowing
-theme.
+For personal use I have a [private Git server](https://git.mitjafelicijan.com)
+set up and I use GitHub just as a mirror. By default the cgit theme looks a bit
+dated so I made the flowing theme.
 
 - `/etc/cgitrc`
 

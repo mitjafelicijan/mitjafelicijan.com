@@ -7,8 +7,8 @@ draft: false
 tags: [random]
 ---
 
-A simple way to make presentations without using desktop apps or using 
-online services is https://github.com/remarkjs/remark.
+A simple way to make presentations without using desktop apps or using online
+services is https://github.com/remarkjs/remark.
 
 First create `index.html` and be sure you make changes to `config` variable.
 

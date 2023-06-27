@@ -7,13 +7,14 @@ draft: false
 tags: [dte]
 ---
 
-[`dte`](https://craigbarnes.gitlab.io/dte/) is an interesting editor I started using
-lately more and more. Since it is using [`execvp()`](https://linux.die.net/man/3/execvp)
-it can be easily extended. I needed comment/uncomment feature so I created a
-small utility that does this for me. Code lives on repository
-[dte extensions](https://git.mitjafelicijan.com/dte-extensions.git/about/)
-but this utilities can be used for whatever you want. Make sure you have
-version 1.11 or above.
+[`dte`](https://craigbarnes.gitlab.io/dte/) is an interesting editor I started
+using lately more and more. Since it is using
+[`execvp()`](https://linux.die.net/man/3/execvp) it can be easily extended. I
+needed comment/uncomment feature so I created a small utility that does this for
+me. Code lives on repository [dte
+extensions](https://git.mitjafelicijan.com/dte-extensions.git/about/) but this
+utilities can be used for whatever you want. Make sure you have version 1.11 or
+above.
 
 Next one will be invoking formatter based on the type of a file.
 

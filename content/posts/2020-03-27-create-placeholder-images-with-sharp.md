@@ -5,14 +5,15 @@ date: 2020-03-27T12:00:00+02:00
 draft: false
 ---
 
-I have been searching for a solution to pre-generate some placeholder images 
-for image server I needed to develop that resizes images on S3. I though this 
-would be a 15min job and quickly found out how very mistaken I was.
+I have been searching for a solution to pre-generate some placeholder images for
+image server I needed to develop that resizes images on S3. I though this would
+be a 15min job and quickly found out how very mistaken I was.
 
-Even though Node.js is not really the best way to do this kind of things 
-(surely something written in C or Rust or even Golang would be the correct way 
-to do this but we didn't need the speed in our case) I found an excellent 
-library [sharp - High performance Node.js image processing](https://github.com/lovell/sharp).
+Even though Node.js is not really the best way to do this kind of things (surely
+something written in C or Rust or even Golang would be the correct way to do
+this but we didn't need the speed in our case) I found an excellent library
+[sharp - High performance Node.js image
+processing](https://github.com/lovell/sharp).
 
 Getting things running was a breeze.
 
@@ -53,20 +54,20 @@ s3.putObject({
 All this code was wrapped inside a web service with some additional security 
 checks and defensive coding to detect if key is missing on S3.
 
-And at that point I needed to return placeholder images as a response in case 
-key is missing or x,y are not allowed by the server etc. I could have created 
-PNG in Gimp and just serve them but I wanted to respect aspect ratio and I 
+And at that point I needed to return placeholder images as a response in case
+key is missing or x,y are not allowed by the server etc. I could have created
+PNG in Gimp and just serve them but I wanted to respect aspect ratio and I
 didn't want to return some mangled images.
 
-> Main problem with finding a clean solution I could copy and paste and change 
-a bit was a task. API is changing constantly and there weren't clear examples 
-or I was unable to find them.
+> Main problem with finding a clean solution I could copy and paste and change a
+> bit was a task. API is changing constantly and there weren't clear examples or
+> I was unable to find them.
 
 ## Generating placeholder images using SVG
 
-What I ended up was using SVG to generate text and created image with sharp and 
-used composition to combine both layers. Response returned by this function is 
-a buffer you can use to either upload to S3 or save to local file.
+What I ended up was using SVG to generate text and created image with sharp and
+used composition to combine both layers. Response returned by this function is a
+buffer you can use to either upload to S3 or save to local file.
 
 ```js
 const generatePlaceholderImageWithText = async (width, height, message) => {
@@ -91,11 +92,10 @@ const generatePlaceholderImageWithText = async (width, height, message) => {
 }
 ```
 
-That is about it. Nothing more to it. You can change the color of the image by 
-changing `background` and if you want to change text styling you can adapt 
-SVG to your needs.
+That is about it. Nothing more to it. You can change the color of the image by
+changing `background` and if you want to change text styling you can adapt SVG
+to your needs.
 
-> Also be careful about the length of the text. This function positions text 
-> at the center and adds `20px` padding on all sides. If text is longer than 
-> the image it will get cut.
-
+> Also be careful about the length of the text. This function positions text at
+> the center and adds `20px` padding on all sides. If text is longer than the
+> image it will get cut.

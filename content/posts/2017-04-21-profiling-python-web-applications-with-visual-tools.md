@@ -5,10 +5,9 @@ date: 2017-04-21T12:00:00+02:00
 draft: false
 ---
 
-I have been profiling my software with KCachegrind for a long time now and I 
-was missing this option when I am developing API's or other web services. I 
-always knew that this is possible but never really took the time and dive 
-into it.
+I have been profiling my software with KCachegrind for a long time now and I was
+missing this option when I am developing API's or other web services. I always
+knew that this is possible but never really took the time and dive into it.
 
 Before we begin there are some requirements. We will need to:
 
@@ -17,7 +16,9 @@ Before we begin there are some requirements. We will need to:
 - visualize data with [KCachegrind](http://kcachegrind.sourceforge.net/html/Home.html) or [Profiling Viewer](http://www.profilingviewer.com/).
 
 
-If you are using MacOS you should check out [Profiling Viewer](http://www.profilingviewer.com/) or [MacCallGrind](http://www.maccallgrind.com/).
+If you are using MacOS you should check out [Profiling
+Viewer](http://www.profilingviewer.com/) or
+[MacCallGrind](http://www.maccallgrind.com/).
 
 ![KCachegrind](/assets/python-profiling/kcachegrind.png)
 
@@ -28,7 +29,7 @@ We will be dividing this post into two main categories:
 
 ## Simple web-service
 
-Let's use virtualenv so we won't pollute our base system. If you don't have 
+Let's use virtualenv so we won't pollute our base system. If you don't have
 virtualenv installed on your system you can install it with pip command.
 
 ```bash
@@ -73,8 +74,8 @@ $ pip install bottle
 $ deactivate
 ```
 
-We are now ready to write simple web service. Let's create file app.py and 
-paste code bellow in this newly created file.
+We are now ready to write simple web service. Let's create file app.py and paste
+code bellow in this newly created file.
 
 ```python
 # -*- coding: utf-8 -*-
@@ -126,8 +127,8 @@ if __name__ == '__main__':
 # open browser 'http://0.0.0.0:4000'
 ```
 
-When browser hits awesome\_random\_number() function profile is created in 
-prof/ subfolder.
+When browser hits awesome\_random\_number() function profile is created in prof/
+subfolder.
 
 ## Visualize profile
 
@@ -139,26 +140,27 @@ $ pyprof2calltree -i awesome_random_number.prof
 # this creates 'awesome_random_number.prof.log' file in the same folder
 ```
 
-This file can be opened with visualizing tools listed above. In this case we 
-will be using Profilling Viewer under MacOS. You can open image in new tab. 
-As you can see from this example there is hierarchy of execution order of 
-your code.
+This file can be opened with visualizing tools listed above. In this case we
+will be using Profilling Viewer under MacOS. You can open image in new tab.  As
+you can see from this example there is hierarchy of execution order of your
+code.
 
 ![Profilling Viewer](/assets/python-profiling/profiling-viewer.png)
 
-> Make sure you  convert output of the cProfile output every time you want to 
-refresh and take a look at your possible optimizations because cProfile 
-updates .prof  file every time browser hits the function.
+> Make sure you convert output of the cProfile output every time you want to
+refresh and take a look at your possible optimizations because cProfile updates
+.prof file every time browser hits the function.
 
-This is just a simple example but when you are developing real-life applications 
-this can be very illuminating, especially to see which parts of your code are 
+This is just a simple example but when you are developing real-life applications
+this can be very illuminating, especially to see which parts of your code are
 bottlenecks and need to be optimized.
 
 ## Update 2017-04-22
 
-Reddit user [mvt](https://www.reddit.com/user/mvt) also recommended this 
-awesome web based profile visualizer [SnakeViz](https://jiffyclub.github.io/snakeviz/) 
-that directly takes output from [cProfile](https://docs.python.org/2/library/profile.html#module-cProfile) 
+Reddit user [mvt](https://www.reddit.com/user/mvt) also recommended this awesome
+web based profile visualizer [SnakeViz](https://jiffyclub.github.io/snakeviz/)
+that directly takes output from
+[cProfile](https://docs.python.org/2/library/profile.html#module-cProfile)
 module.
 
 <div class="reddit-embed" data-embed-media="www.redditmedia.com" data-embed-parent="false" data-embed-live="false" data-embed-uuid="583880c1-002e-41ed-a373-020a0ef2cff9" data-embed-created="2017-04-22T19:46:54.810Z"><a href="https://www.reddit.com/r/Python/comments/66v373/profiling_python_web_applications_with_visual/dgljhsb/">Comment</a> from discussion <a href="https://www.reddit.com/r/Python/comments/66v373/profiling_python_web_applications_with_visual/">Profiling Python web applications with visual tools</a>.</div><script async src="https://www.redditstatic.com/comment-embed.js"></script>
@@ -201,4 +203,3 @@ $ pip install snakeviz --user
 
 Or as suggested by [mvt](https://www.reddit.com/user/mvt) you can 
 use [pipsi](https://github.com/mitsuhiko/pipsi).
-

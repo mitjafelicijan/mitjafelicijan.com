@@ -7,37 +7,38 @@ draft: false
 
 ## Introduction
 
-Lately, I have been thinking a lot about the nature of life, what are the 
-foundation blocks of life and things like that. It's remarkable how complex 
-and on the other hand simple the creation is when you look at it. The miracle
-of life keeps us grounded when our imagination goes wild. If the DNA are the
-blocks of life, you could consider them to be an API nature provided us to
-better understand all of this chaos masquerading as order.
+Lately, I have been thinking a lot about the nature of life, what are the
+foundation blocks of life and things like that. It's remarkable how complex and
+on the other hand simple the creation is when you look at it. The miracle of
+life keeps us grounded when our imagination goes wild. If the DNA are the blocks
+of life, you could consider them to be an API nature provided us to better
+understand all of this chaos masquerading as order.
 
-I have been reading a lot about superintelligence and our somehow misguided 
-path to create general artificial intelligence. What would the building blocks
-or our creation look like? Is the compression really the ultimate storage of 
-information? Will our creation also ponder this questions when creating new 
-worlds for themselves, or will we just disappear into the vastness of 
-possibilities? It is a little offensive that we are playing God whilst being 
-completely ignorant of our own reality. Who knows! Like many other 
-breakthroughs, this one will also come at a cost not known to us when it
-finally happens.
+I have been reading a lot about superintelligence and our somehow misguided path
+to create general artificial intelligence. What would the building blocks or our
+creation look like? Is the compression really the ultimate storage of
+information? Will our creation also ponder this questions when creating new
+worlds for themselves, or will we just disappear into the vastness of
+possibilities? It is a little offensive that we are playing God whilst being
+completely ignorant of our own reality. Who knows! Like many other
+breakthroughs, this one will also come at a cost not known to us when it finally
+happens.
 
-To keep things a bit lighter, I decided to convert some popular DNA sequences 
-into an audio files for us to listen to. I am not the first one, nor I will be 
-the last one to do this. But it is an interesting exercise in better 
-understanding the relationship between art and science. Maybe listening to DNA 
+To keep things a bit lighter, I decided to convert some popular DNA sequences
+into an audio files for us to listen to. I am not the first one, nor I will be
+the last one to do this. But it is an interesting exercise in better
+understanding the relationship between art and science. Maybe listening to DNA
 instead of parsing it will find a way into better understanding, or at least
 enjoying the creation and cryptic nature of life.
 
 ## DNA encoding and primer example
 
-I have been exploring DNA in the past in my post from about 3 years ago in 
-[Encoding binary data into DNA sequence](/encoding-binary-data-into-dna-sequence.html) 
-where I have been converting all sorts of data into DNA sequences.
+I have been exploring DNA in the past in my post from about 3 years ago in
+[Encoding binary data into DNA
+sequence](/encoding-binary-data-into-dna-sequence.html) where I have been
+converting all sorts of data into DNA sequences.
 
-This will be a similar exercise but instead of converting to DNA, I will be 
+This will be a similar exercise but instead of converting to DNA, I will be
 generating tones from Nucleotides.
 
 | Nucleotides      | Note | Frequency |
@@ -49,12 +50,13 @@ generating tones from Nucleotides.
 
 Since we do not have T in equal-tempered scale, I choose D to represent T note.
 
-You can check [Frequencies for equal-tempered scale, A4 = 440 Hz](https://pages.mtu.edu/~suits/notefreqs.html). 
-For this tuning, we also choose `Speed of Sound = 345 m/s = 1130 ft/s = 770 miles/hr`.
+You can check [Frequencies for equal-tempered scale, A4 = 440
+Hz](https://pages.mtu.edu/~suits/notefreqs.html).  For this tuning, we also
+choose `Speed of Sound = 345 m/s = 1130 ft/s = 770 miles/hr`.
 
-Now that we have this out of the way, we can also brush up on the DNA 
-sequencing a bit. This is a famous quote I also used for the encoding tests,
-and it goes like this.
+Now that we have this out of the way, we can also brush up on the DNA sequencing
+a bit. This is a famous quote I also used for the encoding tests, and it goes
+like this.
 
 > How wonderful that we have met with a paradox. Now we have some hope of
 > making progress.
@@ -72,16 +74,16 @@ AACCTCACCAAACGGGACAAGATCGCCGGCGGGCTAGTATACAAGAACGCTTGCCAGTAC
 AACC
 ```
 
-This is what we gonna work with to get things rolling forward, when creating 
+This is what we gonna work with to get things rolling forward, when creating
 parser and waveform generator.
 
 ## Parsing DNA data
 
-This step is rather simple one. All we need to do is parse input DNA sequence in 
-[FASTA format](https://en.wikipedia.org/wiki/FASTA_format) well known 
-in [Bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics) to extract 
-single Nucleotides that will be converted into separate tones based on 
-equal-tempered scale explained above.
+This step is rather simple one. All we need to do is parse input DNA sequence in
+[FASTA format](https://en.wikipedia.org/wiki/FASTA_format) well known in
+[Bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics) to extract single
+Nucleotides that will be converted into separate tones based on equal-tempered
+scale explained above.
 
 ```python
 nucleotide_tone_map = {
@@ -101,8 +103,9 @@ def generate_from_dna_sequence(sequence):
 
 ## Generating sine wave
 
-Because we are essentially creating a long stream of notes we will be appending 
-sine notes to a global array we will later use for creating a WAV file out of it.
+Because we are essentially creating a long stream of notes we will be appending
+sine notes to a global array we will later use for creating a WAV file out of
+it.
 
 ```python
 import math
@@ -118,7 +121,7 @@ def append_sinewave(freq=440.0, duration_milliseconds=500, volume=1.0):
   return
 ```
 
-The sine wave generated here is the standard beep. If you want something more 
+The sine wave generated here is the standard beep. If you want something more
 aggressive, you could try a square or saw tooth waveform.
 
 ## Generating a WAV file from accumulated sine waves
@@ -144,13 +147,13 @@ def save_wav(file_name):
   wav_file.close()
 ```
 
-44100 is the industry standard sample rate - CD quality.  If you need to save 
-on file size, you can adjust it downwards. The standard for low quality is, 
-8000 or 8kHz.
+44100 is the industry standard sample rate - CD quality.  If you need to save on
+file size, you can adjust it downwards. The standard for low quality is, 8000 or
+8kHz.
 
 WAV files here are using short, 16 bit, signed integers for the sample size.
-So, we multiply the floating-point data we have by 32767, the maximum value 
-for a short integer.
+So, we multiply the floating-point data we have by 32767, the maximum value for
+a short integer.
 
 > It is theoretically possible to use the floating point -1.0 to 1.0 data 
 > directly in a WAV file, but not obvious how to do that using the wave module 
@@ -159,8 +162,9 @@ for a short integer.
 ## Generating Spectograms
 
 I have tried two methods of doing this and both were just fine. I however opted
-out to use the [SoX - Sound eXchange, the Swiss Army knife of audio manipulation](https://linux.die.net/man/1/sox) 
-one because it didn't require anything else.
+out to use the [SoX - Sound eXchange, the Swiss Army knife of audio
+manipulation](https://linux.die.net/man/1/sox) one because it didn't require
+anything else.
 
 ```shell
 sox output.wav -n spectrogram -o spectrogram.png
@@ -174,8 +178,9 @@ An example spectrogram of Ludwig van Beethoven Symphony No. 6 First movement.
 
 ![Ludwig van Beethoven Symphony No. 6 First movement](/assets/dna-synthesized/symphony-no6-1st-movement.png)
 
-The other option could also be in combination with [gnuplot](http://www.gnuplot.info/). 
-This would require an intermediary step, however.
+The other option could also be in combination with
+[gnuplot](http://www.gnuplot.info/).  This would require an intermediary step,
+however.
 
 ```shell
 sox output.wav audio.dat
@@ -183,7 +188,8 @@ tail -n+3 audio.dat > audio_only.dat
 gnuplot audio.gpi
 ```
 
-And input file `audio.gpi` that would be passed to gnuplot looks something like this.
+And input file `audio.gpi` that would be passed to gnuplot looks something like
+this.
 
 ```
 # set output format and size
@@ -214,9 +220,9 @@ plot "audio_only.dat" with lines lt rgb 'red'
 
 ## Pre-generated sequences
 
-What I did was take interesting parts from an animal's genome and feed it to a 
+What I did was take interesting parts from an animal's genome and feed it to a
 tone generator script. This then generated a WAV file and I converted those to
-MP3, so they can be played in a browser. The last step was creating a 
+MP3, so they can be played in a browser. The last step was creating a
 spectrogram based on a WAV file.
 
 ### Niels Bohr quote
@@ -229,8 +235,9 @@ spectrogram based on a WAV file.
 
 ### Mouse
 
-This is part of a mouse genome `Mus_musculus.GRCm39.dna.nonchromosomal`. 
-You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/mus_musculus/dna/).
+This is part of a mouse genome `Mus_musculus.GRCm39.dna.nonchromosomal`.  You
+can get [genom data
+here](http://ftp.ensembl.org/pub/release-106/fasta/mus_musculus/dna/).
 
 <audio controls>
   <source src="/assets/dna-synthesized/mouse/out.mp3" type="audio/mpeg">
@@ -240,8 +247,9 @@ You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/mus_m
 
 ### Bison
 
-This is part of a bison genome `Bison_bison_bison.Bison_UMD1.0.cdna`. 
-You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bison_bison_bison/cdna/).
+This is part of a bison genome `Bison_bison_bison.Bison_UMD1.0.cdna`.  You can
+get [genom data
+here](http://ftp.ensembl.org/pub/release-106/fasta/bison_bison_bison/cdna/).
 
 <audio controls>
   <source src="/assets/dna-synthesized/bison/out.mp3" type="audio/mpeg">
@@ -251,8 +259,9 @@ You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bison
 
 ### Taurus
 
-This is part of a taurus genome `Bos_taurus.ARS-UCD1.2.cdna`.
-You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bos_taurus/cdna/).
+This is part of a taurus genome `Bos_taurus.ARS-UCD1.2.cdna`.  You can get
+[genom data
+here](http://ftp.ensembl.org/pub/release-106/fasta/bos_taurus/cdna/).
 
 <audio controls>
   <source src="/assets/dna-synthesized/taurus/out.mp3" type="audio/mpeg">
@@ -262,14 +271,14 @@ You can get [genom data here](http://ftp.ensembl.org/pub/release-106/fasta/bos_t
 
 ## Making a drummer out of a DNA sequence
 
-To make things even more interesting, I decided to send this data via MIDI to
-my [Elektron Model:Samples](https://www.elektron.se/en/model-samples). This is
-a really cool piece of equipment that supports MIDI in via USB and 3.5 mm
-audio jack.
+To make things even more interesting, I decided to send this data via MIDI to my
+[Elektron Model:Samples](https://www.elektron.se/en/model-samples). This is a
+really cool piece of equipment that supports MIDI in via USB and 3.5 mm audio
+jack.
 
-Elektron is connected to my MacBook via USB cable and audio out is patched to 
-a Sony Bluetooth speaker I have that supports 3.5 mm audio in. Elektron 
-doesn't have internal speakers.
+Elektron is connected to my MacBook via USB cable and audio out is patched to a
+Sony Bluetooth speaker I have that supports 3.5 mm audio in. Elektron doesn't
+have internal speakers.
 
 ![](/assets/dna-synthesized/elektron/IMG_0619.jpg)
 
@@ -277,9 +286,9 @@ doesn't have internal speakers.
 
 ![](/assets/dna-synthesized/elektron/IMG_0622.jpg)
 
-For communicating with Elektron, I choose `pygame` Python module that has MIDI 
-built in. With this, it was rather simple to send notes to the device. All I 
-did was map MIDI notes to the actual Nucleotides.
+For communicating with Elektron, I choose `pygame` Python module that has MIDI
+built in. With this, it was rather simple to send notes to the device. All I did
+was map MIDI notes to the actual Nucleotides.
 
 Before all of this I also checked Audio MIDI Setup app under MacOS and checked
 MIDI Studio by pressing ⌘-2.
@@ -329,20 +338,21 @@ pygame.midi.quit()
 <video src="/assets/dna-synthesized/elektron/elektron.mp4" controls></video>
 
 All of this could be made much more interesting if I choose different
-instruments for different Nucleotides, or doing more funky stuff with Elektron. 
-But for now, this should be enough. It is just a proof of concept. Something
-to play around with.
+instruments for different Nucleotides, or doing more funky stuff with Elektron.
+But for now, this should be enough. It is just a proof of concept. Something to
+play around with.
 
 ## Going even further
 
-As you probably notice, the end results are quite similar to each other. This
-is to be expected because we are operating only with 4 notes essentially. What
-could make this more interesting is using something like [Supercollider](https://supercollider.github.io/)
-to create more interesting sounds. By transposing notes or using effects based 
-on repeated data in a sequence. Possibilities are endless.
+As you probably notice, the end results are quite similar to each other. This is
+to be expected because we are operating only with 4 notes essentially. What
+could make this more interesting is using something like
+[Supercollider](https://supercollider.github.io/) to create more interesting
+sounds. By transposing notes or using effects based on repeated data in a
+sequence. Possibilities are endless.
 
 It is really astonishing what can be achieved with a little bit of code and an
-idea. I could see this becoming an interesting background soundscape instrument 
+idea. I could see this becoming an interesting background soundscape instrument
 if done properly. It could replace random note generator with something more
 intriguing, biological, natural.
 
@@ -351,4 +361,3 @@ music of nature. Even though it's quite the same, it's also quite different.
 The subtle differences on repeat kind of creates music on its own. Makes you
 wonder. It kind of puts Occam’s Razor in its place. Nature for sure loves to
 make things as energy efficient as possible.
-

@@ -9,7 +9,8 @@ tags: [random]
 
 Nix is amazing for making reproducible cross OS development environment.
 
-First you need to [install Nix package manager](https://nixos.org/download.html).
+First you need to [install Nix package
+manager](https://nixos.org/download.html).
 
 - Create a file `shell.nix` in your project folder.
 - In the section that has `python3` etc add programs you want to use. These can

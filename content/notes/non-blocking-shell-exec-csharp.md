@@ -32,8 +32,8 @@ private async Task executeCopyCommand()
 }
 ```
 
-Make sure that `async` is present in the function definition and `await` is
-used in the method that calls `executeCopyCommand()`.
+Make sure that `async` is present in the function definition and `await` is used
+in the method that calls `executeCopyCommand()`.
 
 ```c#
 private async void button_Click(object sender, EventArgs e)

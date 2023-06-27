@@ -7,9 +7,10 @@ draft: false
 
 ## Unikernels, kernels, and alike
 
-I have been reading a lot about [unikernernels](https://en.wikipedia.org/wiki/Unikernel)
-lately and found them very intriguing. When you push away all the marketing 
-speak and look at the idea, it makes a lot of sense.
+I have been reading a lot about
+[unikernernels](https://en.wikipedia.org/wiki/Unikernel) lately and found them
+very intriguing. When you push away all the marketing speak and look at the
+idea, it makes a lot of sense.
 
 > A unikernel is a specialized, single address space machine image constructed 
 > by using library operating systems. ([Wikipedia](https://en.wikipedia.org/wiki/Unikernel))

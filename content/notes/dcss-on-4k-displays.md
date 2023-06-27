@@ -25,4 +25,6 @@ tile_sidebar_pixels = 64
 
 To zoom in and out in viewport, press `Ctrl+` and `Ctrl-` respectively.
 
-All the possible options are documented in the [Dungeon Crawl Stone Soup Options Guide](https://github.com/crawl/crawl/blob/master/crawl-ref/docs/options_guide.txt) file.
+All the possible options are documented in the [Dungeon Crawl Stone Soup Options
+Guide](https://github.com/crawl/crawl/blob/master/crawl-ref/docs/options_guide.txt)
+file.

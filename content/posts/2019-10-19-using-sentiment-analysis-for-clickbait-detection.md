@@ -7,22 +7,22 @@ draft: false
 
 ## Initial thoughts
 
-One of the things that interested me for a while now is  if major well 
-established news sites use click bait titles to drive additional traffic 
-to their sites and generate additional impressions.
+One of the things that interested me for a while now is if major well
+established news sites use click bait titles to drive additional traffic to
+their sites and generate additional impressions.
 
-Goal is to see how article titles and actual content of article differ from 
-each other and see if titles are clickbaited.
+Goal is to see how article titles and actual content of article differ from each
+other and see if titles are clickbaited.
 
 ## Preparing and cleaning data
 
-For this example I opted to just use RSS feed from a new website and decided 
-to go with [The Guardian](https://www.theguardian.com) World news. While this 
-gets us limited data (~40) articles and also description (actual content) is 
-trimmed this really doesn't reflect the actual article contents.
+For this example I opted to just use RSS feed from a new website and decided to
+go with [The Guardian](https://www.theguardian.com) World news. While this gets
+us limited data (~40) articles and also description (actual content) is trimmed
+this really doesn't reflect the actual article contents.
 
-To get better content I could use web scraping and use RSS as link list and 
-fetch contents directly from website, but for this simple example this will 
+To get better content I could use web scraping and use RSS as link list and
+fetch contents directly from website, but for this simple example this will
 suffice.
 
 There are couple of requirements we need to install before we continue:
@@ -50,12 +50,12 @@ for item in feed.entries:
 Since we now have cleaned up data in our `feed.entries` object we can start with
 performing sentiment analysis.
 
-There are many sentiment analysis libraries available that range from rule-based 
-sentiment analysis up to machine learning supported analysis. To keep things 
-simple I decided to use rule-based analysis library 
-[vaderSentiment](https://github.com/cjhutto/vaderSentiment) from 
-[C.J. Hutto](https://github.com/cjhutto). Really nice library and quite 
-easy to use.
+There are many sentiment analysis libraries available that range from rule-based
+sentiment analysis up to machine learning supported analysis. To keep things
+simple I decided to use rule-based analysis library
+[vaderSentiment](https://github.com/cjhutto/vaderSentiment) from
+[C.J. Hutto](https://github.com/cjhutto). Really nice library and quite easy to
+use.
 
 ```python
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -68,9 +68,9 @@ for item in feed.entries:
     sentiment_results.append([sentiment_title['compound'], sentiment_description['compound']])
 ```
 
-Now that we have this data in a shape that is compatible with matplotlib we can 
-plot results to see the difference between title and description sentiment of 
-an article.
+Now that we have this data in a shape that is compatible with matplotlib we can
+plot results to see the difference between title and description sentiment of an
+article.
 
 ```python
 import matplotlib.pyplot as plt
@@ -85,15 +85,15 @@ plt.show()
 ## Results and assets
 
 1. Because of the small sample size further conclusions are impossible to make.
-2. Rule-based approach may not be the best way of doing this. By using deep 
+2. Rule-based approach may not be the best way of doing this. By using deep
    learning we would be able to get better insights.
-3. **Next step would be to** periodically fetch RSS items and store them over 
-   a longer period of time and then perform analysis again and use either 
-   machine learning or deep learning on top of it.
+3. **Next step would be to** periodically fetch RSS items and store them over a
+   longer period of time and then perform analysis again and use either machine
+   learning or deep learning on top of it.
 
 ![Relationship between title and description](/assets/sentiment-analysis/guardian-sa-title-desc-relationship.png)
 
-Figure above displays difference between title and description sentiment for 
+Figure above displays difference between title and description sentiment for
 specific RSS feed item. 1 means positive and -1 means negative sentiment.
 
 [» Download Jupyter Notebook](/assets/sentiment-analysis/sentiment-analysis.ipynb)

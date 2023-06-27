@@ -8,8 +8,8 @@ tags: [random]
 ---
 
 I love reading the original manuscripts of Edsger W. Dijkstra. They are
-available online at the University of Texas at Austin website, but I also
-found MOBI version. I converted it into ePub as well.
+available online at the University of Texas at Austin website, but I also found
+MOBI version. I converted it into ePub as well.
 
 Downloads:
 

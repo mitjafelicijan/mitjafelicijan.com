@@ -7,7 +7,9 @@ draft: false
 tags: [bash]
 ---
 
-In Bash, the `$SECONDS` variable is a special variable that automatically keeps track of the number of seconds since the current shell or script started executing. It starts counting from the moment the script begins running.
+In Bash, the `$SECONDS` variable is a special variable that automatically keeps
+track of the number of seconds since the current shell or script started
+executing. It starts counting from the moment the script begins running.
 
 ```bash
 #!/bin/bash

@@ -7,9 +7,10 @@ draft: false
 tags: [plan9]
 ---
 
-Install Plan9port on Linux. This applies to [Plan9port](https://9fans.github.io/plan9port/).
-This is a port of many Plan 9 programs to Unix-like operating systems. Useful for
-programs like `9term` and `rc`.
+Install Plan9port on Linux. This applies to
+[Plan9port](https://9fans.github.io/plan9port/). This is a port of many Plan 9
+programs to Unix-like operating systems. Useful for programs like `9term` and
+`rc`.
 
 ```sh
 sudo apt-get install gcc libx11-dev libxt-dev libxext-dev libfontconfig1-dev

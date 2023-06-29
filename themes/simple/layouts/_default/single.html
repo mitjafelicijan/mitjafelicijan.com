@@ -14,12 +14,14 @@
       {{ end }}
     </header>
 
+    {{ if not .Params.hidetoc }}
     <div>
       {{ if ge (len .TableOfContents) 100 }}
       <p class="font-semibold">Table of contents</p>
       <div>{{ .TableOfContents }}</div>
       {{ end }}
     </div>
+    {{ end }}
 
     <div class="leading-relaxed content">
       {{.Content}}

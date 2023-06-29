@@ -1,6 +1,9 @@
 {{ define "main" }}
 <main role="main" class="container-blog mx-auto px-6 md:p-0">
 
+  <!-- Search modal and results -->
+  {{ partial "search.html" . }}
+
   <!-- Single article -->
   <article itemtype="http://schema.org/Article" class="single mb-12">
     <header class="mb-6">

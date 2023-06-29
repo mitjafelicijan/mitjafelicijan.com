@@ -5,6 +5,9 @@ dev: tailwind-watch dev-server
 dev-server: openring
 	hugo server --bind=0.0.0.0 --buildDrafts
 
+dev-server-no-openring:
+	hugo server --bind=0.0.0.0 --buildDrafts
+
 tailwind-watch:
 	npx tailwindcss --jit --minify --watch \
 		-i ./themes/simple/static/css/tailwind.css \
@@ -23,9 +26,9 @@ deploy: openring tailwind-build
 openring:
 	openring -l 165 -n 6 -p 1 \
 		-s https://drewdevault.com/feed.xml \
-		-s https://offbeatpursuit.com/blog/index.rss \
-		-s https://mirzapandzo.com/rss.xml \
 		-s https://serokell.io/blog.rss.xml \
+		-s https://matduggan.com/rss/ \
+		-s https://neil.computer/rss/ \
 		-s https://cronokirby.com/posts/index.xml \
 		-s https://www.jeffgeerling.com/blog.xml \
 		< themes/simple/openring/openring.html \

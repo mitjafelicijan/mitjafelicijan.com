@@ -1,6 +1,9 @@
 {{ define "main" }}
 <main role="main" class="container-blog mx-auto px-6 md:p-0">
 
+  <!-- Search modal and results -->
+  {{ partial "search.html" . }}
+
   <section class="mb-6">
     <h1 class="text-2xl font-bold mb-2 italic">
       <span class="blue">{{ .Title }}</span>

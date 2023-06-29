@@ -50,6 +50,7 @@
       }
 
       // On keyboard shortcut shows search modal.
+      let currentSearchResultsSectionIndex = -1;
       document.addEventListener('keydown', function(event) {
           // Handles macOS CMD+k.
           if ((event.ctrlKey || event.metaKey) && event.key === 'k') {
@@ -62,6 +63,62 @@
               event.preventDefault();
               showSearchModal();
           }
+
+          // If ESC is pressed when the input is empty close the search modal.
+          if (event.key === 'Escape' || event.key === 'Esc') {
+              if (searchInput.value.length == 0) {
+                  if (!searchModal.classList.contains('hidden')) {
+                      cachedSearchTerm = null;
+                      searchModal.classList.add('hidden');
+                      searchResults.innerText = '';
+                      if (!searchResults.classList.contains('hidden')) {
+                          searchResults.classList.add('hidden');
+                      }
+                  }
+              }
+          }
+
+          // Arrow UP/DOWN movement through search results.
+          const list = document.querySelector('.ulist');
+          const itemHoverClass = 'bg-gray-100';
+          if (event.key === 'ArrowUp') {
+              if (!searchResults.classList.contains('hidden')) {
+                  event.preventDefault();
+
+                  const listItems = searchResults.querySelectorAll('a');
+                  listItems.forEach(el => el.classList.remove(itemHoverClass));
+                  currentSearchResultsSectionIndex--;
+
+                  if (!listItems[currentSearchResultsSectionIndex]) {
+                      currentSearchResultsSectionIndex = -1;
+                      searchInput.focus();
+                  }
+
+                  if (currentSearchResultsSectionIndex != -1) {
+                      listItems[currentSearchResultsSectionIndex].classList.add(itemHoverClass);
+                      listItems[currentSearchResultsSectionIndex].focus();
+                  }
+              }
+          }
+          if (event.key === 'ArrowDown') {
+              if (!searchResults.classList.contains('hidden')) {
+                  event.preventDefault();
+
+                  const listItems = searchResults.querySelectorAll('a');
+                  listItems.forEach(el => el.classList.remove(itemHoverClass));
+                  currentSearchResultsSectionIndex++;
+
+                  if (!listItems[currentSearchResultsSectionIndex]) {
+                      currentSearchResultsSectionIndex = 0;
+                  }
+
+                  if (currentSearchResultsSectionIndex != -1) {
+                      listItems[currentSearchResultsSectionIndex].classList.add(itemHoverClass);
+                      listItems[currentSearchResultsSectionIndex].focus();
+                  }
+              }
+          }
+
       });
 
       // Debounce magic.
@@ -82,7 +139,9 @@
 			        const results = searchIndex.search(query);
 
               if (results.length == 0) {
-	                searchResults.classList.add('hidden');
+                  if (!searchResults.classList.contains('hidden')) {
+	                    searchResults.classList.add('hidden');
+                  }
               } else {
                   searchResults.innerText = '';
 	                searchResults.classList.remove('hidden');

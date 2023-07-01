@@ -105,6 +105,7 @@ examples.mitjafelicijan.com {
   cgi /bash-test /opt/projects/examples/bash-test.sh
   cgi /tcl-test /opt/projects/examples/tcl-test.tcl
   cgi /lua-test /opt/projects/examples/lua-test.lua
+  cgi /python-test /opt/projects/examples/python-test.py
 
   root * /opt/projects/examples
   file_server
@@ -119,8 +120,8 @@ examples.mitjafelicijan.com {
   config file.
 
 I did a small batch of tests with [Bash](https://www.gnu.org/software/bash/),
-[Tcl](https://www.tcl-lang.org/) and [Lua](https://www.lua.org/). Here is a
-cheat sheet if you need it.
+[Tcl](https://www.tcl-lang.org/), [Lua](https://www.lua.org/) and
+[Python](https://www.python.org/). Here is a cheat sheet if you need it.
 
 Let's get Bash out the way first.
 
@@ -156,6 +157,24 @@ puts ""
 for {set i 0} {$i < 10} {incr i} {
   puts "> $i"
 }
+```
+
+And for all you Python enjoyers.
+
+```python
+#!/usr/bin/python3
+
+import os
+
+print("Content-type: text/plain\n")
+
+print("Hello from Python\n")
+print("PATH_INFO     [{}]".format(os.environ['PATH_INFO']))
+print("QUERY_STRING  [{}]".format(os.environ['QUERY_STRING']))
+print("")
+
+for i in range(10):
+  print("> {}".format(i))
 ```
 
 And for the final example, Lua.
@@ -194,6 +213,7 @@ examples.mitjafelicijan.com {
   cgi /bash-test /opt/projects/examples/bash-test.sh
   cgi /tcl-test /opt/projects/examples/tcl-test.tcl
   cgi /lua-test /opt/projects/examples/lua-test.lua
+  cgi /python-test /opt/projects/examples/python-test.py
 
   root * /opt/projects/examples
   file_server

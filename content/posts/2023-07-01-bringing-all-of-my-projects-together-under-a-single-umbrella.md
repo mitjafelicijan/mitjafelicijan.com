@@ -251,6 +251,7 @@ AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
 WantedBy=multi-user.target
 ```
 
+- You might need to reload systemd with `systemctl daemon-reload`.
 - Then I enabled the service with `systemctl enable caddy.service`.
 - And then I started the service with `systemctl start caddy.service`.
 

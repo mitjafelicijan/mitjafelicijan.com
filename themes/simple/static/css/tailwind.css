@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * { cursor: url(/general/9front-cursor.png), auto; } */
+* { cursor: url(/general/9front-cursor.png), auto; }
 
 /* Container */
 .container-blog {
@@ -11,11 +11,11 @@
 
 /* User text selection */
 ::selection {
-	@apply bg-yellow-100 text-black;
+	@apply bg-yellow-200 text-black;
 }
 
 ::-moz-selection {
-	@apply bg-yellow-100 text-black;
+	@apply bg-yellow-200 text-black;
 }
 
 /* Helpers */
@@ -52,7 +52,7 @@ article.single p {
 
 /* Links */
 article.single a {
-	@apply underline-offset-2 underline hover:bg-yellow-100;
+	@apply underline-offset-2 underline;
 }
 
 /* Blockquote */
@@ -94,7 +94,7 @@ article.single audio {
 
 /* Code */
 article.single code {
-	@apply bg-yellow-100 rounded px-2 py-1 text-xs font-medium;
+	@apply bg-yellow-200 rounded px-2 py-1 text-xs font-medium;
 }
 
 article.single.note code {

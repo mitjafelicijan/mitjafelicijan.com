@@ -1,6 +1,6 @@
 ---
-title: "Bringing all of my projects together under a single umbrella"
-url: bringing-all-of-my-projects-together-under-a-single-umbrella.html
+title: "Bringing all of my projects together under one umbrella"
+url: bringing-all-of-my-projects-together-under-one-umbrella.html
 date: 2023-07-01T18:49:07+02:00
 draft: false
 ---
@@ -11,7 +11,7 @@ Over the years, I have accumulated a bunch of virtual servers on my
 [DigitalOcean](https://www.digitalocean.com/) account for small experimental
 projects I dabble in. And this has resulted in quite a bill. I mean, I wouldn't
 care if these projects were actually being used. But there were just being there
-unused and wasting resources. Which makes this an unnecessary burden on me.
+unused and wasting resources. Which makes this an unnecessary burden for me.
 
 Most of them are just small HTML pages that have an endpoint or two to read data
 from or to, and for that reason I wrote servers left and right. To be honest,
@@ -79,7 +79,7 @@ I decided to move all the projects and services into two main VMs:
 
 - personal server (still Nginx)
   - git server
-  - files static server
+  - static file server
   - personal blog
 - projects server (Caddy server)
   - personal experiments
@@ -123,7 +123,7 @@ I did a small batch of tests with [Bash](https://www.gnu.org/software/bash/),
 [Tcl](https://www.tcl-lang.org/), [Lua](https://www.lua.org/) and
 [Python](https://www.python.org/). Here is a cheat sheet if you need it.
 
-Let's get Bash out the way first.
+Let's get Bash out of the way first.
 
 ```bash
 #!/usr/bin/bash

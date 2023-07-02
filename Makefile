@@ -24,7 +24,7 @@ deploy: openring tailwind-build
 	ssh root@mitjafelicijan.com chown www-data:www-data /var/www/html/mitjafelicijan.com/ -Rf
 
 openring:
-	openring -l 165 -n 6 -p 1 \
+	openring -l 150 -n 6 -p 1 \
 		-s https://drewdevault.com/feed.xml \
 		-s https://serokell.io/blog.rss.xml \
 		-s https://matduggan.com/rss/ \

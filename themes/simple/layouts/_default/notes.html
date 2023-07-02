@@ -9,7 +9,7 @@
     <p class="text-gray-600 italic">
       Notes about things I learn, things I do, things I want to remember,
       but never do. You can subscribe to this
-      <a href="/notes/index.xml" class="underline hover:bg-yellow-100">RSS feed</a>
+      <a href="/notes/index.xml" class="underline">RSS feed</a>
       which contains only the notes without the blog posts.
     </p>
   </section>
@@ -28,7 +28,7 @@
       <ul class="flex flex-wrap gap-2">
         {{ range .Site.Taxonomies.tags }}
         <li>
-          <a href="{{ .Page.Permalink }}" class="inline-block px-3 py-1 rounded bg-gray-100 hover:bg-yellow-100">
+          <a href="{{ .Page.Permalink }}" class="inline-block px-3 py-1 rounded bg-gray-100 hover:bg-yellow-200">
             {{ .Page.Title }}
           </a>
         </li>

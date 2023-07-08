@@ -1,0 +1,188 @@
+<!doctype html><html lang=en-us><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA==" rel=icon type=image/x-icon><title>State of Web Technologies and Web development in year 2022</title><meta name=description content="Initial thoughtsThis post is a critique on the current state of web development."><link rel=alternate type=application/rss+xml title="Mitja Felicijan's posts" href=https://mitjafelicijan.com/index.xml><link rel=alternate type=application/rss+xml title="Mitja Felicijan's notes" href=https://mitjafelicijan.com/notes.xml><style>body{padding:1rem;max-width:760px;background:#fff;font-family:times new roman,Times,serif;line-height:1.35rem}hr{margin-block-start:1.5rem}h1,h2,h3{line-height:initial}footer{margin-block-start:3rem}table{max-width:100%;border-collapse:separate;border-spacing:2px;border:1px solid #000;border-left:1px solid #999;border-top:1px solid #999}blockquote{font-style:italic}table thead{background:#eee}td,th{border:1px solid #000;padding:4px;border-right:1px solid #999;border-bottom:1px solid #999;text-align:left}pre{text-wrap:nowrap;overflow-x:auto;margin-block-start:1.5rem;margin-block-end:1.5rem;padding:.5rem 0;border-top:1px solid #000;border-bottom:1px solid #000}pre code{line-height:1.3em}pre,code,pre *,code *{font-family:monospace;font-size:initial!important}img,video,audio{max-width:100%}header{display:flex;flex-direction:row;gap:3rem}nav{display:flex;gap:.75rem}.pstatus-orange{background:gold}.pstatus-green{background:#9acd32}.pstatus-red{background:#cd5c5c}@media only screen and (max-width:600px){header{flex-direction:column;gap:1rem}a{word-wrap:break-word}}</style><header><nav class=main><a href=/>Home</a>
+<a href=https://git.mitjafelicijan.com/ target=_blank>Git</a>
+<a href=https://files.mitjafelicijan.com/ target=_blank>Files</a>
+<a href=/mitjafelicijan.pgp.pub.txt target=_blank>PGP</a>
+<a href=/curriculum-vitae.html>CV</a>
+<a href=/index.xml target=_blank>RSS</a></nav></header><main><div><h1>State of Web Technologies and Web development in year 2022</h1><p>Oct 6, 2022<div><h2 id=initial-thoughts>Initial thoughts</h2><p><em>This post is a critique on the current state of web development. It is an
+opinionated post! I will learn more about this in the future, and probably
+slightly change my mind about some of the things I criticize.</em><p>I have started working on a hobby project about two weeks ago, and I wanted to
+use that situation as a learning one. Trying new things, new technologies, new
+tools. I always considered myself to be an adventurous person when it comes to
+technology. I never shy away from trying new languages, new operating systems
+etc. Likewise, I find the whole experience satisfying, and it tickles that part
+of my brain that finds discovery the highest of the mountains to climb.<p>What I always wanted to make was a coding game, that you would play in a browser
+(just to eliminate building binaries for each operating system) where you would
+level up your character and go into these scriptable battles. You know, RPG
+elements.<p>So, the natural way to go would be some sort of SPA (single page application)
+with basic routing and some state management. Nothing crazy.<blockquote><p><strong>Before we move on</strong>, I have to be transparent. Take my views on this with
+a grain of salt. I have only scratched the surface with these technologies,
+and my knowledge is full of gaps. This is my experience using some of these
+products for the first time or in a limited capacity.</blockquote><p>Having this out of the way, I got myself a fresh pot of coffee and down the
+rabbit hole I went.<h2 id=giving-react-js-a-spin>Giving React JS a spin</h2><p>I first tried <a href=https://reactjs.org/>React JS</a>. I kind of like it. Furthermore,
+I have worked with libraries like this in the past and also wrote a couple of
+them (nothing compared to that level), but I had the basic understanding of what
+was going on. I rolled up a project quickly and had basic things done in a
+matter of two hours, which was impressive.<p>I prefer using <a href=https://tailwindcss.com/>Tailwind CSS</a> for my styling
+pleasures, and integrating that was also a painless experience. It was actually
+nice to see that some things got better with time. In about 2 minutes I got
+Tailwind working, and I was able to use classes at my disposal. All that
+<code>postcss</code> stuff was taken care of by adding a couple of things in config files
+(all described really well in their documentation).<p>It is not that different from Vue which I have had more encounters with in the
+past People will probably call me a lunatic for saying this. But you know, it is
+the truth. Same same, but different. I still believe that using libraries like
+this is beneficial. I am not a JavaScript purist. They all have their quirks,
+but at the end of the day, I truly believe it’s worth it.<h2 id=bundlers-and-transpilers>Bundlers and Transpilers</h2><p>I still reject calling <a href=https://www.typescriptlang.org/>Typescript</a> to
+<a href=https://www.javascript.com/>JavaScript</a> conversion a "compilation process". I
+call them <a href=https://devopedia.org/transpiler>transpilers</a>, and I don’t care! 😈<p>And if you want to fight this, take a look at this little chart and be mad at
+it!<p><img src=/assets/state-of-web/compiling-vs-transpiling.png alt="Compiling vs Transpiling"><p>The first one that I ever used was <a href=https://webpack.js.org/>webpack</a>, and it
+was an absolute horrific experience. Saying this, it is an absolutely fantastic
+tool. I felt more like a config editor than actually a programmer. To be fair,
+I am a huge fan of <a href=https://www.gnu.org/software/make/>make</a>, and you can do as
+you wish with this information. I like my build systems simple.<p>Also, isn’t it interesting that we need something like
+<a href=https://babeljs.io/>Babel</a> to make JavaScript code work in a browser that has
+only one client side scripting available, which is by no accident also
+JavaScript. Why? I know why it’s needed, but seriously, why.<p>I haven’t used Babel for years now. Or if I did, it was packaged together by
+some other bundler thingy. Which does not make things better, but at least I
+didn’t need to worry about it.<p>I really don’t like complicated build systems. I really don’t like abstracting
+code and making things appear magical. The older I get, the more I appreciate
+clear and clean, expressive code. No one-liners, if possible.<p>But I have to give props to <a href=https://vitejs.dev/>Vite</a>! This was one of the
+best developer experiences I have ever had. Granted, it still has magical
+properties. And yes, it still is a bundler and abstracts things to the nth
+degree. But at least it didn’t force me to configure 700 lines of JSON. And I
+know that this makes me a hypocrite. You can’t have it all. Nonetheless, my
+reasoning here is, if using bundlers is inevitable, then at least they should
+provide an excellent developer experience.<p>I also noticed that now the catch-all phrase is “blazingly fast” and “lightning
+fast” and “next generation” and stuff like that. I mean, yeah, tools should get
+faster with time. But saying that starting a project now takes 2 seconds instead
+of 20 seconds is something that is a break it or make it kind of a deal is
+ridiculous. I don’t mind waiting a couple of seconds every couple of days. I
+also don’t create 700 projects every day, and also who does? This argument has
+no bite. All I want is a decent reload time (~100ms is more than good enough for
+me) and that is it.<p>You don’t need to sell me benefits if I only get them when I start a fresh
+project, and then try to convince me that this is somehow changing the fate of
+the universe. First of all, it is not. And second, if this is your only argument
+for your tool, I would advise you to maybe re-focus your efforts to something
+else. Vite says that startup times are really fast. And if that would be the
+only thing differentiating it from other tools, I would ignore it. But it has
+some really compelling features like <a href=https://www.geeksforgeeks.org/reactjs-hot-module-replacement/>Hot Module
+Replacement</a> that
+really works well. It was a joy to use.<p>So, I will be definitely using Vite in the future.<h2 id=jam-stack-mach-stack-no-snack>Jam Stack, Mach Stack no snack</h2><p>Let's get a couple of the acronyms out of the way, so we all know what we are
+talking about:<ul><li>Jam Stack - JavaScript, API and Markup<li>Mach Stack - Microservices, API-first, Cloud-Native SaaS, Headless</ul><p>It is so hard to follow all these new trendy things happening around you, that
+it makes you have a massive <strong>FOMO</strong> all the time. But on the other hand, you
+also don’t want to be that old fart that doesn’t move with the times and still
+writes his trusty jQuery code while listening to Blink 182 All the small things
+on full blast. It’s a good song, don’t get me wrong, but there are other songs
+out there.<p>I have to admit. <a href=https://vercel.com/>Vercel</a> is really cool! Love the
+simplicity of the service. You could compare it to
+<a href=https://www.netlify.com/>Netlify</a>. I haven’t tried Netlify extensively, but
+from a couple of experimental deployments I still prefer Vercel. It is much more
+streamlined, but maybe this is bias in me. I really like Vercel’s Analytics,
+which give you a <a href=https://web.dev/vitals/>Core Web Vitals report</a> in their
+admin console. Kind of cool, I’m not going to lie.<p>This whole idea about frontend and backend merging into <a href=https://www.debugbear.com/blog/server-side-rendering>SSR (server-side
+rendering)</a> looks so good
+on paper. It almost doesn’t come with any major flaws.<p>But when it comes to the actual implementation, there is much to be desired.
+I’m going to lump <a href=https://nextjs.org/>Next.js</a> and
+<a href=https://nuxtjs.org/>Nuxt.js</a> together because they are essentially the same
+thing, just a different library.<p>Now comes the reality. Mixing backend and frontend in this manner creates this
+weird mental model where you kind of rely on magical properties of these
+libraries. You relinquish control over to them for better developer experience.
+But is that really true? Initially, I was so stoked about it. However, the more
+I used them, the more I felt uncomfortable. I felt dirty, actually. Maybe this
+is because I come from old ways of doing things where you control every step of
+request, and allowing something to hijack it feels like blasphemy.<p>More than that, some pretty significant technical issues arose from this. How do
+you do JWT token authentication? You put it in <code>api</code> folder and then do some
+fetching and storing into local state management. But doing this also requires
+some tinkering with await/async stuff on the React/Vue side of things. And then
+you need to write middleware for it. And the more I look at it, the more I see
+that this whole thing was not meant to be used like this, and it all feels and
+looks like a huge hack.<p>The issue I have with this is that they over-promise and under-deliver. They
+want to be an all-in-one replacement for everything, and they don’t deliver on
+this promise. And how could they?! We have to be fair. It is an impossible task.<p>They sell you <a href=https://www.geeksforgeeks.org/overview-of-noops/>NoOps</a>, but
+when you need to accomplish something a little bit more out of the scope of
+Hello World, you have to make hacky decisions to make it work. And having a
+deployment strategy that relies on many moving parts is never a good idea.
+Abstracting too much is usually a sign of bad architecture.<p>Lately, this has become a huge trend that will for sure bite us in the future.
+And let’s not get it twisted. By doing this, PaaS providers like
+<a href=https://aws.amazon.com/>AWS</a>, <a href=https://cloud.google.com/>GCS</a>, etc. obscure
+their billing, and you end up paying more than you really should. And even if
+that is not an issue, it comes down to the principle of things. AWS is known for
+having multiple “currencies“ inside their projects like write operations, read
+operations, etc. which add up, and it creates this impossible to track billing
+scheme. It all behaves suspiciously like a pay-to-win game you could find on
+mobile phones that scams you out of your money.<p>And as far as I am concerned, the most important thing was me not coding the
+functionalities for the game I want to make. I was battling libraries and cloud
+providers. How to deploy, what settings are relevant. Bad documentation or
+multiple versions of achieving the same thing. You are getting bombarded by all
+this information, and you don’t really have any control over it.
+Production-ready code becomes a joke, essentially. Especially if you tend to
+work on that project for a prolonged period of time.<p>All of these options end up creating a fatigue. What to choose, what not to
+choose. Unnecessary worrying about if the stack will still be deemed worthy in
+six months. There is elegance in simplicity.<blockquote><p>JavaScript UI frameworks and libraries work in cycles. Every six months or
+so, a new one pops up, claiming that it has revolutionized UI development.
+Thousands of developers adopt it into their new projects, blog posts are
+written, Stack Overflow questions are asked and answered, and then a newer
+(and even more revolutionary) framework pops up to usurp the throne.
+— Ian Allen</blockquote><p><img src=/assets/state-of-web/2008-vs-2020.png alt="To many options"><p>And this jab at these libraries and cloud providers is not done out of malice.
+It is a real concern that I have about them. In my life, I have seen
+technologies come and go, but the basics always stick around. So surrendering
+all the power you have to a library or a cloud provider is in my opinion a
+stupid move.<h2 id=tailwind-css-still-rocks>Tailwind CSS still rocks!</h2><p>You know, many people say negative things about Tailwind. And after a lot of
+deliberation, I came to the conclusion that Tailwind is good for two types of
+developers. Tailwind is good for a complete noob or a senior developer. A
+complete noob doesn’t really care about inner workings of CSS, and a senior
+developer also doesn’t care about CSS. Well, at least, not anymore. And
+developers in between usually have the biggest issues with it. Not always of
+course, but in a lot of cases.<p>I like the creature comforts of Tailwind. Being utility first would make me
+argue that it is actually more similar to <a href=https://sass-lang.com/>Sass</a> or
+<a href=https://lesscss.org/>Less</a> than something like Bootstrap. Not technically, but
+ideologically. After I started using it, I never looked back. I use it every
+time I need to do something web related.<p>Writing CSS for general things feels like going several steps back. Instead of
+focusing on what you are actually trying to achieve, you focus on notations like
+<a href=https://en.bem.info/methodology/css/>BEM</a>, code structuring, optimizing HTML
+size. Just doing things that make 0.1% difference. You know that saying: Early
+optimization is the root of all evil. Exactly that.<p>I am also not saying that Tailwind is the cure for everything. Sometimes custom
+CSS is necessary. But from what I found out in using it for almost two years in
+a production environment (on a site getting quite a lot of traffic and
+constantly being changed), I can say without any reservations that Tailwind
+saved our asses countless times. We would be rewriting CSS all the time without
+it. And I don’t really think writing CSS is the best way to spend my time.<p>I have also noticed that people who criticize Tailwind the most never actually
+used it in a real project that has a long lifetime with plenty of changes that
+will happen in the future.<p>But you know, whatever floats your boat!<h2 id=code-maintainability>Code maintainability</h2><p>Somehow, people also stopped talking about maintenance. If you constantly try to
+catch the latest and greatest train, you are by that logic always trying new
+things. Which is a good thing if you want to learn about technologies and try
+them. But for the production environment, you have to have a stable stack that
+doesn’t change every 6 months.<p>You can lock dependencies for sure. Nevertheless, the hype train moves along
+anyway. And the mindset this breeds goes against locking the code. This
+bleeding-edge rolling release cycle is not helping. That is why enterprise
+solutions usually look down on these popular stacks and only do bare minimum to
+appear hip and cool.<p>With that said, I still think that progress is good, but should be taken with a
+grain of salt. If your project is something that should be built once and then
+rarely updated, going with the latest stack is a possible way to go. But, if you
+are working on a project that lasts for years, you should probably approach it
+with some level of caution. Web development is often times too volatile.<h2 id=web-development-has-a-marketing-issue>Web development has a marketing issue</h2><p>I noticed that almost every project now has this marketing spin put on it.
+Everything is blazingly fast now. I get it, they are competing for your
+attention, but what happened to just being truthful and not inflating reality.<p>And in order to appeal to mass market, they leave things out of their marketing
+materials. These open-source projects are now behaving more and more like
+companies do. Which is a scary thought on its self.<p>And we are also seeing a rise in a concept of building a company in the open,
+which is a good thing, don't get me wrong. But when it is using open-source to
+lure people and then lock them in their ecosystem, there is where I have issues
+with it.<p>This might be because I have been using GNU/Linux for 20 years now and have been
+so beholden for my success to open-source that I see issues when open-source is
+being used to trick people into a false sense of security that these projects
+are built in the spirit of open-source. Because there is a difference. They are
+NOT! They have a really specific goal in mind. And the open-source is being used
+as a delivery system. Which is in my opinion disgusting!<h2 id=conclusion>Conclusion</h2><p>I will end my post with this. Web development is running now in circles. People
+are discovering <a href=https://www.tutorialspoint.com/remote-procedure-call-rpc>RPC</a>
+now and this is the now the next big thing. <a href=https://graphql.org/>GraphQL</a> is
+so passé. And I am so tired of it all. Of blazingly fast libraries, of all these
+new technologies that are actually just a remake of old ones. Of just the
+general spirit of the web. I will just use what I already know. Which worked 10
+years ago and will work 10 years after this. I will adopt a couple of little
+tools like Vite. But I will not waste my time on this anymore.<p>It was a good exercise to get in touch with what’s new now. Nothing really
+changed that much. FOMO is now cured! Now I have to get my ass back to actually
+code and make the project that I wanted to make in the first place.</div></div></main><footer><hr><div><h3>Want to comment or have something to add?</h3>You can write me an email at
+<a href=mailto:m@mitjafelicijan.com>m@mitjafelicijan.com</a> or catch up
+with me
+<a href=https://telegram.me/mitjafelicijan target=_blank>on Telegram</a>.</div><hr><p>This website does not track you. Content is made available under
+the <a href=https://creativecommons.org/licenses/by/4.0/ target=_blank rel=noreferrer>CC BY 4.0 license</a> unless specified
+otherwise. Blog feed is available as <a href=/index.xml target=_blank>RSS feed</a>.</footer><script src=https://cdn.usefathom.com/script.js data-site=XHQARKXP defer></script>

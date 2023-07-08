@@ -1,0 +1,1373 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+	<title>Mitja Felicijan's notes</title>
+	<link>https://mitjafelicijan.com</link>
+	<description>You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.</description>
+	<language>en-us</language>
+
+	
+	
+	
+	
+	
+	
+	<item>
+	  <title>60&#39;s IBM Computers Commercial</title>
+	  <link>https://mitjafelicijan.com/60s-ibm-computers-commercial.html</link>
+	  <pubDate>Thu, 29 Jun 2023 22:13:45 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/60s-ibm-computers-commercial.html</guid>
+	  <description>Likely aired during an hour-long program during the 1960s, long commercials suchas this typically aired during hour-long programs.</description>
+	  <content:encoded>&lt;p&gt;Likely aired during an hour-long program during the 1960s, long commercials such
+as this typically aired during hour-long programs. They would &lt;em&gt;not&lt;/em&gt; have aired
+during a half-hour program.&lt;/p&gt;
+&lt;p&gt;&lt;video
+poster=&#34;/notes/60s-ibm-computers-commercial.jpg&#34;
+src=&#34;/notes/60s-ibm-computers-commercial.mp4&#34;
+controls&gt;&lt;/video&gt;&lt;/p&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>10/GUI 10 Finger Multitouch User Interface</title>
+	  <link>https://mitjafelicijan.com/10gui-10-finger-multitouch-user-interface.html</link>
+	  <pubDate>Thu, 29 Jun 2023 14:51:39 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/10gui-10-finger-multitouch-user-interface.html</guid>
+	  <description>Message from 10/GUI team (page 10gui.</description>
+	  <content:encoded>&lt;p&gt;Message from 10/GUI team (page 10gui.com does not exist anymore):&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Over a quarter-century ago, Xerox introduced the modern graphical user
+interface paradigm we today take for granted.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;That it has endured is a testament to the genius of its design. But the
+industry is now at a crossroads: New technologies promise higher-bandwidth
+interaction, but have yet to find a truly viable implementation.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;10/GUI aims to bridge this gap by rethinking the desktop to leverage technology
+in an intuitive and powerful way.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;video
+poster=&#34;/notes/10gui-10-finger-multitouch-user-interface.jpg&#34;
+src=&#34;/notes/10gui-10-finger-multitouch-user-interface.mp4&#34;
+controls&gt;&lt;/video&gt;&lt;/p&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Alacritty open links with modifier</title>
+	  <link>https://mitjafelicijan.com/alacritty-open-links-with-modifier.html</link>
+	  <pubDate>Sun, 25 Jun 2023 17:17:16 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/alacritty-open-links-with-modifier.html</guid>
+	  <description>Alacritty by default makes all links in the terminal output clickable and thisgets annoying rather quickly.</description>
+	  <content:encoded>&lt;p&gt;Alacritty by default makes all links in the terminal output clickable and this
+gets annoying rather quickly. I liked the default behavior of Gnome terminal
+where you needed to hold Control key and then you could click and open links.&lt;/p&gt;
+&lt;p&gt;To achieve this in Alacritty you need to provide a &lt;code&gt;hint&lt;/code&gt; in the configuration
+file. Config file is located at &lt;code&gt;~/.config/alacritty/alacritty.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hints:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  enabled:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - regex: &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;            [^\u0000-\u001F\u007F-\u009F&amp;lt;&amp;gt;\&amp;#34;\\s{-}\\^⟨⟩`]&#43;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    command: xdg-open
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    post_processing: &lt;span style=&#34;color:#00f&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    mouse:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      enabled: &lt;span style=&#34;color:#00f&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      mods: Control
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The following should work under any Linux system. For macOS, you will need to
+change &lt;code&gt;command: xdg-open&lt;/code&gt; to something else.&lt;/p&gt;
+&lt;p&gt;Now the links will be visible and clickable only when Control key is being
+pressed.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://github.com/alacritty/alacritty/issues/5246&#34;&gt;https://github.com/alacritty/alacritty/issues/5246&lt;/a&gt;&lt;/p&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Development environments with Nix</title>
+	  <link>https://mitjafelicijan.com/development-environments-with-nix.html</link>
+	  <pubDate>Sun, 25 Jun 2023 16:38:10 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/development-environments-with-nix.html</guid>
+	  <description>Nix is amazing for making reproducible cross OS development environment.</description>
+	  <content:encoded>&lt;p&gt;Nix is amazing for making reproducible cross OS development environment.&lt;/p&gt;
+&lt;p&gt;First you need to &lt;a href=&#34;https://nixos.org/download.html&#34;&gt;install Nix package
+manager&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a file &lt;code&gt;shell.nix&lt;/code&gt; in your project folder.&lt;/li&gt;
+&lt;li&gt;In the section that has &lt;code&gt;python3&lt;/code&gt; etc add programs you want to use. These can
+be CLI or GUI applications. It doesn&#39;t matter to Nix.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{ pkgs ? &lt;span style=&#34;color:#00f&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a31515&#34;&gt;&amp;lt;nixpkgs&amp;gt;&lt;/span&gt; {} }:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pkgs.mkShell {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    nativeBuildInputs = &lt;span style=&#34;color:#00f&#34;&gt;with&lt;/span&gt; pkgs.buildPackages; [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  python3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	  tinycc
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And then run it &lt;code&gt;nix-shell&lt;/code&gt;. By default it will look for &lt;code&gt;shell.nix&lt;/code&gt; file. If
+you want to specify a different file use &lt;code&gt;nix-shell file.nix&lt;/code&gt;. That is about it.&lt;/p&gt;
+&lt;p&gt;When the shell is spawned it could happen that your &lt;code&gt;PS1&lt;/code&gt; prompt will be
+overwritten and your prompt will look differently. In that case you need to
+either do &lt;code&gt;NIX_SHELL_PRESERVE_PROMPT=1 nix shell&lt;/code&gt; or add
+&lt;code&gt;NIX_SHELL_PRESERVE_PROMPT&lt;/code&gt; variable to your &lt;code&gt;bashrc&lt;/code&gt; or &lt;code&gt;zshrc&lt;/code&gt; file and set it
+to &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I also have a modified &lt;code&gt;PS1&lt;/code&gt; prompt for Bash that I use and it also catches the
+usage of Nix shell.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;NIX_SHELL_PRESERVE_PROMPT=1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;parse_git_branch() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	git branch 2&amp;gt; /dev/null | sed -e &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;/^[^*]/d&amp;#39;&lt;/span&gt; -e &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;s/* \(.*\)/ (\1)/&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;is_inside_nix_shell() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	nix_shell_name=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;$(&lt;/span&gt;basename &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$IN_NIX_SHELL&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; 2&amp;gt;/dev/null&lt;span style=&#34;color:#00f&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; [[ -n &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$nix_shell_name&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; ]]; &lt;span style=&#34;color:#00f&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		echo &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34; \e[0;36m(nix-shell)\e[0m&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#00f&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export PS1=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;[\033[38;5;9m\]\u@\h\[&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;$(&lt;/span&gt;tput sgr0&lt;span style=&#34;color:#00f&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;\]]&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;$(&lt;/span&gt;is_inside_nix_shell&lt;span style=&#34;color:#00f&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \w\[&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;$(&lt;/span&gt;tput sgr0&lt;span style=&#34;color:#00f&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;\] \n&lt;/span&gt;$&lt;span style=&#34;color:#a31515&#34;&gt; &amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And this is what it looks like when you are in a Nix shell. Otherwise that part
+of prompt is omitted&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/notes/ps1-prompt.png&#34; alt=&#34;PS1 Prompt&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;More resources:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nixos.wiki/wiki/Development_environment_with_nix-shell&#34;&gt;https://nixos.wiki/wiki/Development_environment_with_nix-shell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nixos.wiki/wiki/Main_Page&#34;&gt;https://nixos.wiki/wiki/Main_Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://itsfoss.com/why-use-nixos/&#34;&gt;https://itsfoss.com/why-use-nixos/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mynixos.com/&#34;&gt;https://mynixos.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Making cgit look nicer</title>
+	  <link>https://mitjafelicijan.com/making-cgit-look-nicer.html</link>
+	  <pubDate>Sat, 24 Jun 2023 13:33:58 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/making-cgit-look-nicer.html</guid>
+	  <description>For personal use I have a private Git serverset up and I use GitHub just as a mirror.</description>
+	  <content:encoded>&lt;p&gt;For personal use I have a &lt;a href=&#34;https://git.mitjafelicijan.com&#34;&gt;private Git server&lt;/a&gt;
+set up and I use GitHub just as a mirror. By default the cgit theme looks a bit
+dated so I made the flowing theme.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/etc/cgitrc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;css=&lt;span style=&#34;color:#a31515&#34;&gt;/cgit.css&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;logo=&lt;span style=&#34;color:#a31515&#34;&gt;/startrek.gif&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;favicon=&lt;span style=&#34;color:#a31515&#34;&gt;/favicon.png&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source-filter=&lt;span style=&#34;color:#a31515&#34;&gt;/usr/lib/cgit/filters/syntax-highlighting-edited.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;about-filter=&lt;span style=&#34;color:#a31515&#34;&gt;/usr/lib/cgit/filters/about-formatting.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;local-time=&lt;span style=&#34;color:#a31515&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;snapshots=&lt;span style=&#34;color:#a31515&#34;&gt;tar.gz&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;repository-sort=&lt;span style=&#34;color:#a31515&#34;&gt;age&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cache-size=&lt;span style=&#34;color:#a31515&#34;&gt;1000&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;branch-sort=&lt;span style=&#34;color:#a31515&#34;&gt;age&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;summary-log=&lt;span style=&#34;color:#a31515&#34;&gt;200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;max-atom-items=&lt;span style=&#34;color:#a31515&#34;&gt;50&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;max-repo-count=&lt;span style=&#34;color:#a31515&#34;&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;enable-index-owner=&lt;span style=&#34;color:#a31515&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;enable-follow-links=&lt;span style=&#34;color:#a31515&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;enable-log-filecount=&lt;span style=&#34;color:#a31515&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;enable-log-linecount=&lt;span style=&#34;color:#a31515&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root-title=&lt;span style=&#34;color:#a31515&#34;&gt;Place for code, experiments and other bullshit!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root-desc=
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;clone-url=&lt;span style=&#34;color:#a31515&#34;&gt;git@git.mitjafelicijan.com:/home/git/$CGIT_REPO_URL&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mimetype.gif=&lt;span style=&#34;color:#a31515&#34;&gt;image/gif&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mimetype.html=&lt;span style=&#34;color:#a31515&#34;&gt;text/html&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mimetype.jpg=&lt;span style=&#34;color:#a31515&#34;&gt;image/jpeg&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mimetype.jpeg=&lt;span style=&#34;color:#a31515&#34;&gt;image/jpeg&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mimetype.pdf=&lt;span style=&#34;color:#a31515&#34;&gt;application/pdf&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mimetype.png=&lt;span style=&#34;color:#a31515&#34;&gt;image/png&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mimetype.svg=&lt;span style=&#34;color:#a31515&#34;&gt;image/svg&#43;xml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;readme=&lt;span style=&#34;color:#a31515&#34;&gt;:README.md&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;readme=&lt;span style=&#34;color:#a31515&#34;&gt;:readme.md&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Must be at the end!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;virtual-root=&lt;span style=&#34;color:#a31515&#34;&gt;/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;scan-path=&lt;span style=&#34;color:#a31515&#34;&gt;/home/git/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For &lt;code&gt;syntax-highlighting-edited.sh&lt;/code&gt; follow instructions on
+&lt;a href=&#34;https://wiki.archlinux.org/title/Cgit#Using_highlight&#34;&gt;https://wiki.archlinux.org/title/Cgit&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/usr/share/cgit/cgit.css&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;font-size&lt;/span&gt;: 11&lt;span style=&#34;color:#2b91af&#34;&gt;pt&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;body {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;font-family&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;monospace&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;background&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;white&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding&lt;/span&gt;: 1&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;th, td {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;text-align&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;left&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;/* HEADER */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#header {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;margin-bottom&lt;/span&gt;: 1&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#header .&lt;span style=&#34;color:#2b91af&#34;&gt;logo&lt;/span&gt; img {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;block&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;height&lt;/span&gt;: 3&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;margin-right&lt;/span&gt;: 10&lt;span style=&#34;color:#2b91af&#34;&gt;px&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#header .&lt;span style=&#34;color:#2b91af&#34;&gt;sub&lt;/span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;right&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;/* FOOTER */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;footer&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;margin-top&lt;/span&gt;: 2&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;font-style&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;italic&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;footer&lt;/span&gt;, .&lt;span style=&#34;color:#2b91af&#34;&gt;footer&lt;/span&gt; a {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;gray&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;/* TABS */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;tabs&lt;/span&gt; a {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;margin-bottom&lt;/span&gt;: 2&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;inline-block&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;margin-right&lt;/span&gt;: 1&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;tabs&lt;/span&gt; td a:only-child {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;/* HIDING ELEMENTS */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;cgit-panel&lt;/span&gt;, .&lt;span style=&#34;color:#2b91af&#34;&gt;form&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;/* LISTS */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;list&lt;/span&gt; td, .&lt;span style=&#34;color:#2b91af&#34;&gt;list&lt;/span&gt; th {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding-right&lt;/span&gt;: 2&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;list&lt;/span&gt; .&lt;span style=&#34;color:#2b91af&#34;&gt;nohover&lt;/span&gt; a {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;black&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;list&lt;/span&gt; .&lt;span style=&#34;color:#2b91af&#34;&gt;button&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding-right&lt;/span&gt;: 0.5&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;/* COMMIT */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;commit-subject&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding&lt;/span&gt;: 1&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt; 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;decoration&lt;/span&gt; a {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding-left&lt;/span&gt;: 0.5&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;commit-info&lt;/span&gt; th {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding-right&lt;/span&gt;: 1&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;commit-subject&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding&lt;/span&gt;: 2&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt; 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;table.&lt;span style=&#34;color:#2b91af&#34;&gt;diff&lt;/span&gt; div.&lt;span style=&#34;color:#2b91af&#34;&gt;head&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding-top&lt;/span&gt;: 2&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;table.&lt;span style=&#34;color:#2b91af&#34;&gt;diffstat&lt;/span&gt; td {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding-right&lt;/span&gt;: 1&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;/* CONTENT */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;linenumbers&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding-right&lt;/span&gt;: 0.5&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;linenumbers&lt;/span&gt; a {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;gray&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;.&lt;span style=&#34;color:#2b91af&#34;&gt;pager&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;display&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;flex&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;list-style-type&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;padding&lt;/span&gt;: 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        gap: 0.5&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;/* DIFF COLORS */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;table.&lt;span style=&#34;color:#2b91af&#34;&gt;diff&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;width&lt;/span&gt;: 100&lt;span style=&#34;color:#2b91af&#34;&gt;%&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;table.&lt;span style=&#34;color:#2b91af&#34;&gt;diff&lt;/span&gt; td {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;white-space&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;pre&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;table.&lt;span style=&#34;color:#2b91af&#34;&gt;diff&lt;/span&gt; td div.&lt;span style=&#34;color:#2b91af&#34;&gt;head&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;font-weight&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;bold&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;margin-top&lt;/span&gt;: 1&lt;span style=&#34;color:#2b91af&#34;&gt;em&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;black&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;table.&lt;span style=&#34;color:#2b91af&#34;&gt;diff&lt;/span&gt; td div.&lt;span style=&#34;color:#2b91af&#34;&gt;hunk&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;color&lt;/span&gt;: #009;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;table.&lt;span style=&#34;color:#2b91af&#34;&gt;diff&lt;/span&gt; td div.&lt;span style=&#34;color:#2b91af&#34;&gt;add&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;green&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;table.&lt;span style=&#34;color:#2b91af&#34;&gt;diff&lt;/span&gt; td div.&lt;span style=&#34;color:#2b91af&#34;&gt;del&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;red&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Simple presentations with Markdown</title>
+	  <link>https://mitjafelicijan.com/presentations-with-markdown.html</link>
+	  <pubDate>Wed, 21 Jun 2023 08:54:48 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/presentations-with-markdown.html</guid>
+	  <description>A simple way to make presentations without using desktop apps or using onlineservices is https://github.</description>
+	  <content:encoded>&lt;p&gt;A simple way to make presentations without using desktop apps or using online
+services is &lt;a href=&#34;https://github.com/remarkjs/remark&#34;&gt;https://github.com/remarkjs/remark&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First create &lt;code&gt;index.html&lt;/code&gt; and be sure you make changes to &lt;code&gt;config&lt;/code&gt; variable.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;html&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;meta charset=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;style&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        body {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#00f&#34;&gt;font-family&lt;/span&gt;: &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;SF Pro Display&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        .&lt;span style=&#34;color:#2b91af&#34;&gt;remark-code&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        .&lt;span style=&#34;color:#2b91af&#34;&gt;remark-inline-code&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#00f&#34;&gt;font-family&lt;/span&gt;: &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;SF Mono&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#00f&#34;&gt;font-size&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;medium&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#00f&#34;&gt;background-color&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;gainsboro&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#00f&#34;&gt;border-radius&lt;/span&gt;: 5&lt;span style=&#34;color:#2b91af&#34;&gt;px&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#00f&#34;&gt;padding&lt;/span&gt;: 0 5&lt;span style=&#34;color:#2b91af&#34;&gt;px&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/style&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;body&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;textarea id=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;source&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/textarea&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;script src=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;https://remarkjs.com/downloads/remark-latest.min.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;script&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#00f&#34;&gt;const&lt;/span&gt; config = {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			title: &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;My presentation&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			file: &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;presentation.md&amp;#39;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		};
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		document.title = config.title;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        remark.create({ sourceUrl: config.file });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;/script&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/body&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/html&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now the markdown file &lt;code&gt;presentation.md&lt;/code&gt; with presenetation. &lt;code&gt;---&lt;/code&gt; is used to
+separate slides. Other stuff is just pure markdown.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;class: center, middle
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;# Main title of the presentation
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;# Fist slide
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Eveniet mollitia nemo architecto rerum aut iure iste. Sit nihil nobis libero iusto fugit nam laudantium ut. Dignissimos corrupti laudantium nisi.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;-&lt;/span&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;-&lt;/span&gt; Integer aliquet mauris a felis fringilla, ut congue massa finibus.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;# Slide two
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;-&lt;/span&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;-&lt;/span&gt; Vestibulum eget leo ac dolor venenatis pulvinar.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Bulk thumbnails</title>
+	  <link>https://mitjafelicijan.com/bulk-make-thumbnails.html</link>
+	  <pubDate>Sun, 04 Jun 2023 20:46:56 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/bulk-make-thumbnails.html</guid>
+	  <description>Make bulk thumbnails of JPGs with ImageMagick.</description>
+	  <content:encoded>&lt;p&gt;Make bulk thumbnails of JPGs with ImageMagick.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;directory=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;./images/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dimensions=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;360x360&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;for&lt;/span&gt; file in &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$directory&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;*.jpg; &lt;span style=&#34;color:#00f&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  convert &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$file&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; -resize $dimensions &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$file&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;${&lt;/span&gt;file%.*&lt;span style=&#34;color:#a31515&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;-thumbnail.jpg&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Edsger W. Dijkstra Manuscripts ebook</title>
+	  <link>https://mitjafelicijan.com/ewd-manuscripts-ebook.html</link>
+	  <pubDate>Thu, 01 Jun 2023 22:47:56 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/ewd-manuscripts-ebook.html</guid>
+	  <description>I love reading the original manuscripts of Edsger W.</description>
+	  <content:encoded>&lt;p&gt;I love reading the original manuscripts of Edsger W. Dijkstra. They are
+available online at the University of Texas at Austin website, but I also found
+MOBI version. I converted it into ePub as well.&lt;/p&gt;
+&lt;p&gt;Downloads:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://files.mitjafelicijan.com/haphazard/ewd-manuscripts.mobi&#34;&gt;MOBI version of all Manuscripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://files.mitjafelicijan.com/haphazard/ewd-manuscripts.epub&#34;&gt;ePub version of all Manuscripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sources and credits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cs.utexas.edu/users/EWD/index00xx.html&#34;&gt;Original manuscripts from University of Texas at Austin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/evmn/The-Manuscripts-of-Edsger-W.-Dijkstra&#34;&gt;Original repository of MOBI version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	
+	
+	<item>
+	  <title>Extending dte editor</title>
+	  <link>https://mitjafelicijan.com/extending-dte-editor.html</link>
+	  <pubDate>Wed, 31 May 2023 08:12:45 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/extending-dte-editor.html</guid>
+	  <description>dte is an interesting editor I startedusing lately more and more.</description>
+	  <content:encoded>&lt;p&gt;&lt;a href=&#34;https://craigbarnes.gitlab.io/dte/&#34;&gt;&lt;code&gt;dte&lt;/code&gt;&lt;/a&gt; is an interesting editor I started
+using lately more and more. Since it is using
+&lt;a href=&#34;https://linux.die.net/man/3/execvp&#34;&gt;&lt;code&gt;execvp()&lt;/code&gt;&lt;/a&gt; it can be easily extended. I
+needed comment/uncomment feature so I created a small utility that does this for
+me. Code lives on repository &lt;a href=&#34;https://git.mitjafelicijan.com/dte-extensions.git/about/&#34;&gt;dte
+extensions&lt;/a&gt; but this
+utilities can be used for whatever you want. Make sure you have version 1.11 or
+above.&lt;/p&gt;
+&lt;p&gt;Next one will be invoking formatter based on the type of a file.&lt;/p&gt;
+&lt;p&gt;My config that works for me.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set show-line-numbers true;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set tab-width 4;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;set &lt;span style=&#34;color:#00f&#34;&gt;case&lt;/span&gt;-sensitive-search false;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Special aliases&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alias m_comment &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;exec -s -i line -o buffer -e errmsg ~/.dte/bin/comment&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alias m_format &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;save; exec go fmt .; reload&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alias m_duplicate &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;copy;paste&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Useful aliases.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alias m_force_close &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;quit -f&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;alias m_reload &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;close; open $FILE&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Key bindings.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind M-s save;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind M-q m_force_close;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind M-z refresh;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind C-down blkdown;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind C-up blkup;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind C-_ m_comment;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind M-. m_format;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bind C-d m_duplicate;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Syntax highlighting.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hi preproc magenta;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hi keyword red;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hi linenumber blue;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hi comment cyan;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Grep to Less that maintain colors</title>
+	  <link>https://mitjafelicijan.com/grep-to-less-maintain-colors.html</link>
+	  <pubDate>Mon, 29 May 2023 21:27:07 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/grep-to-less-maintain-colors.html</guid>
+	  <description>I often use grep to search for todo&amp;#39;s in my code and other people&amp;#39;s code andthen pipe them in less and I missed having colors that grep outputs in less.</description>
+	  <content:encoded>&lt;p&gt;I often use &lt;code&gt;grep&lt;/code&gt; to search for todo&#39;s in my code and other people&#39;s code and
+then pipe them in &lt;code&gt;less&lt;/code&gt; and I missed having colors that grep outputs in &lt;code&gt;less&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grep&#39;s &lt;code&gt;--color=always&lt;/code&gt; use markers to highlight the matching strings.&lt;/li&gt;
+&lt;li&gt;Less&#39;s &lt;code&gt;-R&lt;/code&gt; option outputs &amp;quot;raw&amp;quot; control characters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You could use &lt;code&gt;alias grep=&#39;grep --color=always&#39;&lt;/code&gt; and &lt;code&gt;alias less=&#39;less -R&#39;&lt;/code&gt; or
+create todo function in your &lt;code&gt;.bashrc&lt;/code&gt; that accepts first argument as search
+string.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# This is where the magic happens.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;grep --color=always -rni &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;TODO:&amp;#34;&lt;/span&gt; | less -R
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/notes/grep-less.png&#34; alt=&#34;Less and grep&#34; /&gt;&lt;/p&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Easy measure time took in a bash script</title>
+	  <link>https://mitjafelicijan.com/easy-time-took-in-bash.html</link>
+	  <pubDate>Sun, 28 May 2023 17:53:20 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/easy-time-took-in-bash.html</guid>
+	  <description>In Bash, the $SECONDS variable is a special variable that automatically keepstrack of the number of seconds since the current shell or script startedexecuting.</description>
+	  <content:encoded>&lt;p&gt;In Bash, the &lt;code&gt;$SECONDS&lt;/code&gt; variable is a special variable that automatically keeps
+track of the number of seconds since the current shell or script started
+executing. It starts counting from the moment the script begins running.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Reset the timer to zero.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SECONDS=0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Do something.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sleep 5
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Print the time elapsed.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Time taken: &lt;/span&gt;$SECONDS&lt;span style=&#34;color:#a31515&#34;&gt; seconds&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Make DCSS playable on 4k displays</title>
+	  <link>https://mitjafelicijan.com/dcss-on-4k-display.html</link>
+	  <pubDate>Sat, 27 May 2023 19:35:11 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/dcss-on-4k-display.html</guid>
+	  <description>Dungeon Crawl Stone Soup has a a very small font by default.</description>
+	  <content:encoded>&lt;p&gt;Dungeon Crawl Stone Soup has a a very small font by default. On a 4k display, it
+is barely readable. This is how I made it playable.&lt;/p&gt;
+&lt;p&gt;Make a file &lt;code&gt;~/.crawlrc&lt;/code&gt; with the following content:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Adjust the sizes to your liking.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tile_font_crt_size = &lt;span style=&#34;color:#a31515&#34;&gt;32&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tile_font_stat_size = &lt;span style=&#34;color:#a31515&#34;&gt;32&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tile_font_msg_size = &lt;span style=&#34;color:#a31515&#34;&gt;32&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tile_font_tip_size = &lt;span style=&#34;color:#a31515&#34;&gt;32&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tile_font_lbl_size = &lt;span style=&#34;color:#a31515&#34;&gt;32&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tile_sidebar_pixels = &lt;span style=&#34;color:#a31515&#34;&gt;64&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To zoom in and out in viewport, press &lt;code&gt;Ctrl&#43;&lt;/code&gt; and &lt;code&gt;Ctrl-&lt;/code&gt; respectively.&lt;/p&gt;
+&lt;p&gt;All the possible options are documented in the &lt;a href=&#34;https://github.com/crawl/crawl/blob/master/crawl-ref/docs/options_guide.txt&#34;&gt;Dungeon Crawl Stone Soup Options
+Guide&lt;/a&gt;
+file.&lt;/p&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Drawing Pixels in Plan9</title>
+	  <link>https://mitjafelicijan.com/drawing-pixels-in-plan9.html</link>
+	  <pubDate>Sat, 27 May 2023 17:41:33 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/drawing-pixels-in-plan9.html</guid>
+	  <description>I have started exploring Plan9&amp;#39;s graphics capabilities.</description>
+	  <content:encoded>&lt;p&gt;I have started exploring Plan9&#39;s graphics capabilities. This is a hello world
+alternative for drawing that draws a yellow square on a blue background.&lt;/p&gt;
+&lt;p&gt;More information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/0intro/plan9/blob/main/sys/include/draw.h&#34;&gt;draw.h header file&lt;/a&gt;
+contains all the drawing functions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://9fans.github.io/plan9port/man/man3/draw.html&#34;&gt;draw man page&lt;/a&gt;
+has a bit more digestable descriptions of the draw functions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://9fans.github.io/plan9port/man/man3/graphics.html&#34;&gt;graphics man page&lt;/a&gt;
+has a bit more digestable descriptions of the graphics functions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://9fans.github.io/plan9port/man/man3/&#34;&gt;all man pages&lt;/a&gt;
+can be a valuable resource for learning about the system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/notes/plan9-pixels.png&#34; alt=&#34;Plan9 Howdy World!&#34; /&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;// main.c
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;u.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;libc.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;draw.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;cursor.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2b91af&#34;&gt;void&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;main()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ulong co;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Image *im, *bg;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  co = 0x0000FFFF;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; (initdraw(nil, nil, argv0) &amp;lt; 0)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sysfatal(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;%s: %r&amp;#34;&lt;/span&gt;, argv0);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  im = allocimage(display, Rect(0, 0, 300, 300), RGB24, 0, DYellow);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  bg = allocimage(display, Rect(0, 0, 1, 1), RGB24, 1, co);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; (im == nil || bg == nil)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    sysfatal(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;not enough memory&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  draw(screen, screen-&amp;gt;r, bg, nil, ZP);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  draw(screen, screen-&amp;gt;r, im, nil, Pt(-40, -40));
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  flushimage(display, Refnone);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#008000&#34;&gt;// Wait 10 seconds before exiting.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;&lt;/span&gt;  sleep(10000);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  exits(nil);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And then compile with &lt;code&gt;mk&lt;/code&gt; (mkfile below):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# mkfile
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;&lt;/span&gt;&lt;span style=&#34;&#34;&gt;&amp;lt;/$objtype/mkfile&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;RC=/rc/bin
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;BIN=/$objtype/bin
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;MAN=/sys/man
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;main:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	$CC $CFLAGS main.c
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	$LD $LDFLAGS -o main main.$O
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And run with &lt;code&gt;./main&lt;/code&gt;. To exit the program, press &lt;code&gt;Delete key&lt;/code&gt; (strange but this
+is the alternative for Ctrl&#43;C).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This is &lt;strong&gt;very cool&lt;/strong&gt; indeed!&lt;/em&gt;&lt;/p&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Cronjobs on Github with Github Actions</title>
+	  <link>https://mitjafelicijan.com/cronjobs-github-with-actions.html</link>
+	  <pubDate>Sat, 27 May 2023 00:35:36 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/cronjobs-github-with-actions.html</guid>
+	  <description>In the root of your repository create a folder .</description>
+	  <content:encoded>&lt;p&gt;In the root of your repository create a folder &lt;code&gt;.github/workflows&lt;/code&gt; and in that
+folder create a file a file &lt;code&gt;cron.yaml&lt;/code&gt;. This file can be named whatever you
+wish. But it has to be a &lt;code&gt;yaml&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;File below (&lt;code&gt;.github/workflows/cron.yaml&lt;/code&gt;) describes an action that will trigger
+every six hours and it will curl example.com.&lt;/p&gt;
+&lt;p&gt;However. Be sure that you have enough credits. Free account is not that generous
+with the minutes they give you for free. Check more about GitHub Actions usage
+on their website &lt;a href=&#34;https://docs.github.com/en/actions&#34;&gt;https://docs.github.com/en/actions&lt;/a&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# .github/workflows/cron.yaml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;name: Do a curl every 6 hours
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;on:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  schedule:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - cron: &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;0 */6 * * *&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jobs:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  cron:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    runs-on: ubuntu-latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    steps:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - name: Call some url
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        run: curl &amp;#39;https://example.com&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Dungeon Crawl Stone Soup - New player guide</title>
+	  <link>https://mitjafelicijan.com/dcss-new-player-guide.html</link>
+	  <pubDate>Thu, 25 May 2023 22:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/dcss-new-player-guide.html</guid>
+	  <description>An amazing game deserves an amazing guide.</description>
+	  <content:encoded>&lt;p&gt;An amazing game deserves an amazing guide. All this material can be find in some
+form on another on &lt;a href=&#34;https://github.com/crawl/crawl&#34;&gt;craw&#39;s&lt;/a&gt; official repository.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/notes/dcss-quickstart.pdf&#34;&gt;DCSS Quickstart&lt;/a&gt; - Very short introduction to the
+game&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/notes/dcss_manual.pdf&#34;&gt;DCSS Manual&lt;/a&gt; - Extensive manual about the game&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/notes/dcss.jpg&#34; alt=&#34;Dungeon Crawl Stone Soup&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Movement and Exploration&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can move around with the numpad (try numlock on and off), vi-keys, or
+clicking with the mouse. Arrow keys work, though you can&#39;t move diagonally
+with them. Pressing Shift and a direction will move until you see/hit
+something.&lt;/li&gt;
+&lt;li&gt;Pressing &lt;code&gt;&amp;gt;&lt;/code&gt; will take you down a staircase, and &lt;code&gt;&amp;lt;&lt;/code&gt; to go up a staircase.&lt;/li&gt;
+&lt;li&gt;You can open doors by walking into them, and close them with &lt;code&gt;C&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You can autoexplore by pressing &lt;code&gt;o&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You can re-view recent messages with &lt;code&gt;Ctrl-p&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Monsters and Combat&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can pick up items with &lt;code&gt;,&lt;/code&gt; or &lt;code&gt;g&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Wield weapons with &lt;code&gt;w&lt;/code&gt;. Weapons have different stats.
+&lt;ul&gt;
+&lt;li&gt;(You may also engage in Unarmed Combat, though it isn&#39;t very effective when
+untrained).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Attack monsters in melee by walking in their direction (or with
+Ctrl-direction).&lt;/li&gt;
+&lt;li&gt;You can wait with &lt;code&gt;.&lt;/code&gt; or &lt;code&gt;s&lt;/code&gt;, passing your turn - such as to get monsters into
+a corridor with you.&lt;/li&gt;
+&lt;li&gt;You can rest with &lt;code&gt;5&lt;/code&gt;, waiting until you are fully healed, or something
+noteworthy happens.&lt;/li&gt;
+&lt;li&gt;Either mouseover and rightclick, or use &lt;code&gt;x&lt;/code&gt; then &lt;code&gt;v&lt;/code&gt; on the monster to examine
+monsters. Monsters with a red border are &#39;dangerous&#39; relative to your current
+XP level (XL).&lt;/li&gt;
+&lt;li&gt;Quiver (often ranged) actions for further use with &lt;code&gt;Q&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You can fire ranged weapons manually with &lt;code&gt;f&lt;/code&gt;, or auto-target your quiver with
+&lt;code&gt;p&lt;/code&gt; or &lt;code&gt;Shift-Tab&lt;/code&gt;. Throwing weapons can be thrown immediately, while
+launchers (like bows) need to be wielded first.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Items and Inventory&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;View your inventory by pressing &lt;code&gt;i&lt;/code&gt;. Most item related commands can also be
+done with this menu.&lt;/li&gt;
+&lt;li&gt;You can wear amour with &lt;code&gt;W;&lt;/code&gt; amour gives &lt;code&gt;AC&lt;/code&gt;, while heavier body armour
+reduces &lt;code&gt;EV&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Autoexplore will automatically pick up useful items, such as potions and
+scrolls, if you aren&#39;t in danger.&lt;/li&gt;
+&lt;li&gt;You can read scrolls with &lt;code&gt;r&lt;/code&gt; and drink (&amp;quot;quaff&amp;quot;) potions with &lt;code&gt;q&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Equipment items may have brands, with special properties. Branded equipment is
+blue when unidentified.&lt;/li&gt;
+&lt;li&gt;Equipment items may be artifacts, often with unique properties, and are
+unmodifiable. They are written in white.&lt;/li&gt;
+&lt;li&gt;You can evoke wands with &lt;code&gt;V&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You can put on jewelry with &lt;code&gt;P&lt;/code&gt;, and remove it with &lt;code&gt;R&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Gold is used in shops, which can be interacted with by either &lt;code&gt;&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Magic and Spellcasting&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Once you find a spellbook, you can memorize spells with &lt;code&gt;M&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You need to be the same XL as the spell&#39;s spell level in order to learn it, in
+addition to training magical skill (to lower failure rate).&lt;/li&gt;
+&lt;li&gt;Cast spells by pressing &lt;code&gt;z&lt;/code&gt;, then the letter assigned to the spell. You may
+also Quiver a spell and then use it like a ranged weapon (with Shift-Tab).&lt;/li&gt;
+&lt;li&gt;You can view your memorized spells by pressing &lt;code&gt;I&lt;/code&gt; (capital-i) or &lt;code&gt;z&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Like HP, you can recover MP by resting (with 5).&lt;/li&gt;
+&lt;li&gt;Many spells can be positioned more effectively, or combined with other spells,
+in order to get (more effective) use out of them.&lt;/li&gt;
+&lt;li&gt;Heavier body amour and shields hamper spellcasting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Gods and Divine Abilities&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You may look at a god&#39;s overview by praying at their altar (with &lt;code&gt;&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;&lt;/code&gt;).
+After praying, you can worship the god by pressing Enter afterwards.&lt;/li&gt;
+&lt;li&gt;Gods all have unique features about them. Trog, the god of the tutorial, is
+also the god of rage and bloodshed, and so despises spellcasting.&lt;/li&gt;
+&lt;li&gt;Gods like and dislike different things. Most gods either like killing things
+(like Trog) or exploring new areas (like Elyvilon), rewarding you piety
+(divine favor) for doing so.&lt;/li&gt;
+&lt;li&gt;You should learn to use and even rely on divine abilities often, as they are
+usually very strong. Trog&#39;s Berserk gives you 1.5x health, 1.5x speed (to all
+valid actions), and a big damage boost. Note that Berserk prevents most
+actions other than move and melee attack, and runs out very quickly if you
+aren&#39;t attacking. And after berserk ends, you are slowed down and can&#39;t
+berserk again for a short time.&lt;/li&gt;
+&lt;li&gt;In addition, the vast majority of abilities consume piety in the process.
+Regardless, this ability is very cheap, and the benefits are incredible, so
+don&#39;t hold back!&lt;/li&gt;
+&lt;li&gt;Pressing &lt;code&gt;^&lt;/code&gt; will let you view your current god, abilities, and piety.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Display xterm color palette</title>
+	  <link>https://mitjafelicijan.com/write-iso-usb.html</link>
+	  <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/write-iso-usb.html</guid>
+	  <description>bash xterm-palette.</description>
+	  <content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bash xterm-palette.sh&lt;/code&gt; - will show you number of max colors available&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bash xterm-palette.sh -v&lt;/code&gt; - will create a list of all colors with codes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/notes/xterm-palette.png&#34; alt=&#34;xterm color palette&#34; /&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#!/usr/bin/env bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# xterm-palette.sh&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;trap &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;tput sgr0&amp;#39;&lt;/span&gt; exit		&lt;span style=&#34;color:#008000&#34;&gt;# Clean up even if user hits ^C&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; setfg () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    printf &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;\e[38;5;%dm&amp;#39;&lt;/span&gt; $1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; setbg () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    printf &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;\e[48;5;%dm&amp;#39;&lt;/span&gt; $1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;function&lt;/span&gt; showcolors() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#008000&#34;&gt;# Given an integer, display that many colors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00f&#34;&gt;for&lt;/span&gt; ((i=0; i&amp;lt;$1; i&#43;&#43;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00f&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	printf &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;%4d &amp;#39;&lt;/span&gt; $i
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	setbg $i
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	tput el
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	tput sgr0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	echo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00f&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    tput sgr0 el
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# First, test if terminal supports OSC 4 at all.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;printf &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;\e]4;%d;?\a&amp;#39;&lt;/span&gt; 0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;read -d &lt;span style=&#34;color:#a31515&#34;&gt;$&amp;#39;\a&amp;#39;&lt;/span&gt; -s -t 0.1 &amp;lt;/dev/tty
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; [ -z &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$REPLY&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#008000&#34;&gt;# OSC 4 not supported, so we&amp;#39;ll fall back to terminfo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    max=&lt;span style=&#34;color:#00f&#34;&gt;$(&lt;/span&gt;tput colors&lt;span style=&#34;color:#00f&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#008000&#34;&gt;# OSC 4 is supported, so use it for a binary search&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    min=0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    max=256
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00f&#34;&gt;while&lt;/span&gt; [[ &lt;span style=&#34;color:#00f&#34;&gt;$((&lt;/span&gt;min&#43;1&lt;span style=&#34;color:#00f&#34;&gt;))&lt;/span&gt; -lt $max ]]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00f&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	i=&lt;span style=&#34;color:#00f&#34;&gt;$((&lt;/span&gt; (min&#43;max)/2 &lt;span style=&#34;color:#00f&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	printf &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;\e]4;%d;?\a&amp;#39;&lt;/span&gt; $i
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	read -d &lt;span style=&#34;color:#a31515&#34;&gt;$&amp;#39;\a&amp;#39;&lt;/span&gt; -s -t 0.1 &amp;lt;/dev/tty
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; [ -z &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$REPLY&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; ]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#00f&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            max=$i
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#00f&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	    min=$i
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#00f&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#00f&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# If -v is given, show all the colors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#a31515&#34;&gt;${&lt;/span&gt;1-none&lt;span style=&#34;color:#a31515&#34;&gt;}&lt;/span&gt; in
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    none)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	echo $max
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    -v)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	showcolors $max
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    *)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; [[ &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$1&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; -gt 0 ]]; &lt;span style=&#34;color:#00f&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	    showcolors $1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#00f&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	    echo $max
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#00f&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;esac&lt;/span&gt; | less --raw-control-chars --QUIT-AT-EOF --no-init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Sane defaults for tmux with more visible statusbar</title>
+	  <link>https://mitjafelicijan.com/tmux-sane-defaults.html</link>
+	  <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/tmux-sane-defaults.html</guid>
+	  <description># Remap prefix from &amp;#39;C-b&amp;#39; to &amp;#39;M-a&amp;#39;.</description>
+	  <content:encoded>&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;# Remap prefix from &#39;C-b&#39; to &#39;M-a&#39;.
+unbind C-b
+set-option -g prefix M-a
+bind-key M-a send-prefix
+
+# Split panes using | and -.
+bind | split-window -h
+bind - split-window -v
+unbind &#39;&amp;quot;&#39;
+unbind %
+
+# Start counting windows with 1.
+set-option -g allow-rename on
+set -g base-index 1
+setw -g pane-base-index 1
+
+# Statusbar: purple bg and white fg.
+set -g status-bg &#39;#480b8e&#39;
+set -g status-fg &#39;#ffffff&#39;
+
+# Active window: black bg and white fg. 
+set -g window-status-current-format &amp;quot;#[fg=#ffffff]#[bg=#111111]#[fg=#ffffff]#[bg=#111111] #I:#W #[fg=#ffffff]#[bg=#111111]&amp;quot;
+
+# Disable mouse mode (tmux 2.1 and above).
+set -g mouse off
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>My brand new Plan9/9front desktop</title>
+	  <link>https://mitjafelicijan.com/fresh-9front-desktop.html</link>
+	  <pubDate>Wed, 24 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/fresh-9front-desktop.html</guid>
+	  <description>I have been experimenting with Plan9/9front for a week now.</description>
+	  <content:encoded>&lt;p&gt;I have been experimenting with Plan9/9front for a week now. Noice! This is how
+my desktop looks like.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/notes/9front-desktop.png&#34; alt=&#34;9front desktop&#34; /&gt;&lt;/p&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	
+	
+	<item>
+	  <title>Parse RSS feeds with Lua</title>
+	  <link>https://mitjafelicijan.com/parse-rss-with-lua.html</link>
+	  <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/parse-rss-with-lua.html</guid>
+	  <description>Example of parsing RSS feeds with Lua.</description>
+	  <content:encoded>&lt;p&gt;Example of parsing RSS feeds with Lua. Before running the script install:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;feedparser with &lt;code&gt;luarocks install feedparser&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;luasocket with &lt;code&gt;luarocks install luasocket&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; http = require(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;socket.http&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; feedparser = require(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;feedparser&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; feed_url = &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;https://mitjafelicijan.com/feed.rss&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; response, status, _ = http.request(feed_url)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; status == 200 &lt;span style=&#34;color:#00f&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; parsed = feedparser.parse(response)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#008000&#34;&gt;-- Print out feed details.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; Title   &amp;#34;&lt;/span&gt;, parsed.feed.title)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; Author  &amp;#34;&lt;/span&gt;, parsed.feed.author)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; ID      &amp;#34;&lt;/span&gt;, parsed.feed.id)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; Entries &amp;#34;&lt;/span&gt;, #parsed.entries)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;for&lt;/span&gt; _, item &lt;span style=&#34;color:#00f&#34;&gt;in&lt;/span&gt; ipairs(parsed.entries) &lt;span style=&#34;color:#00f&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;GUID    &amp;#34;&lt;/span&gt;, item.guid)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Title   &amp;#34;&lt;/span&gt;, item.title)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Link    &amp;#34;&lt;/span&gt;, item.link)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Summary &amp;#34;&lt;/span&gt;, item.summary)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;! Request failed. Status:&amp;#34;&lt;/span&gt;, status)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Extend Lua with custom C functions using Clang</title>
+	  <link>https://mitjafelicijan.com/extend-lua-with-custom-c.html</link>
+	  <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/extend-lua-with-custom-c.html</guid>
+	  <description>Here is a boilerplate for extending Lua with custom C functions.</description>
+	  <content:encoded>&lt;p&gt;Here is a boilerplate for extending Lua with custom C functions. This requires
+Clang and Lua 5.1 to be installed. GCC can be used instead of Clang, but the
+Makefile will need to be modified.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;nativefunc.c&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;lua.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;lauxlib.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#2b91af&#34;&gt;int&lt;/span&gt; l_mult50(lua_State *L) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#2b91af&#34;&gt;double&lt;/span&gt; number = luaL_checknumber(L, 1);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  lua_pushnumber(L, number * 50);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;return&lt;/span&gt; 1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2b91af&#34;&gt;int&lt;/span&gt; luaopen_nativefunc(lua_State *L) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;struct&lt;/span&gt; luaL_Reg nativeFuncLib[] = {{&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;mult50&amp;#34;&lt;/span&gt;, l_mult50}, {NULL, NULL}};
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  luaL_register(L, &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;nativelib&amp;#34;&lt;/span&gt;, nativeFuncLib);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;return&lt;/span&gt; 1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;main.lua&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;require &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;nativefunc&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(nativelib.mult50(50))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Makefile&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CC       = clang
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CFLAGS   =
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;INCLUDES = &lt;span style=&#34;color:#a31515&#34;&gt;`&lt;/span&gt;pkg-config lua5.1 --cflags-only-I&lt;span style=&#34;color:#a31515&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;all:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;$(&lt;/span&gt;CC&lt;span style=&#34;color:#00f&#34;&gt;)&lt;/span&gt; -shared -o nativefunc.so -fPIC nativefunc.c &lt;span style=&#34;color:#00f&#34;&gt;$(&lt;/span&gt;CFLAGS&lt;span style=&#34;color:#00f&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;$(&lt;/span&gt;INCLUDES&lt;span style=&#34;color:#00f&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;clean:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  rm *.so
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	
+	
+	<item>
+	  <title>Execute not blocking async shell command in C#</title>
+	  <link>https://mitjafelicijan.com/non-blocking-shell-exec-csharp.html</link>
+	  <pubDate>Mon, 22 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/non-blocking-shell-exec-csharp.html</guid>
+	  <description>Execute a shell command in async in C# while not blocking the UI thread.</description>
+	  <content:encoded>&lt;p&gt;Execute a shell command in async in C# while not blocking the UI thread.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;async&lt;/span&gt; Task executeCopyCommand()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;await&lt;/span&gt; Task.Run(() =&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#2b91af&#34;&gt;var&lt;/span&gt; processStartInfo = &lt;span style=&#34;color:#00f&#34;&gt;new&lt;/span&gt; ProcessStartInfo(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;cmd&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;/c dir&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      RedirectStandardOutput = &lt;span style=&#34;color:#00f&#34;&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      UseShellExecute = &lt;span style=&#34;color:#00f&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      CreateNoWindow = &lt;span style=&#34;color:#00f&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#2b91af&#34;&gt;var&lt;/span&gt; process = &lt;span style=&#34;color:#00f&#34;&gt;new&lt;/span&gt; Process
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      StartInfo = processStartInfo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    process.Start();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    process.WaitForExit();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  });
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Make sure that &lt;code&gt;async&lt;/code&gt; is present in the function definition and &lt;code&gt;await&lt;/code&gt; is used
+in the method that calls &lt;code&gt;executeCopyCommand()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;void&lt;/span&gt; button_Click(&lt;span style=&#34;color:#2b91af&#34;&gt;object&lt;/span&gt; sender, EventArgs e)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;await&lt;/span&gt; executeCopyCommand();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Change permissions of matching files recursively</title>
+	  <link>https://mitjafelicijan.com/mass-set-permission.html</link>
+	  <pubDate>Tue, 16 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/mass-set-permission.html</guid>
+	  <description>Replace *.</description>
+	  <content:encoded>&lt;p&gt;Replace &lt;code&gt;*.xml&lt;/code&gt; with your pattern. This will remove executable bit from all
+files matching the pattern. Change &lt;code&gt;&#43;&lt;/code&gt; to &lt;code&gt;-&lt;/code&gt; to add executable bit.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find . -type f -name &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;*.xml&amp;#34;&lt;/span&gt; -exec chmod -x {} &#43;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	
+	
+	<item>
+	  <title>Previews how man page written in Troff will look like</title>
+	  <link>https://mitjafelicijan.com/preview-troff-man-pages.html</link>
+	  <pubDate>Mon, 15 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/preview-troff-man-pages.html</guid>
+	  <description>Troff is used to write man pages and it is difficult to read it so this willpreview how it will look like when it is rendered.</description>
+	  <content:encoded>&lt;p&gt;Troff is used to write man pages and it is difficult to read it so this will
+preview how it will look like when it is rendered.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# On Linux system.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;groff -man -Tascii filename
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# On Plan9 system.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;man 1 filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Convert all MKV files into other formats</title>
+	  <link>https://mitjafelicijan.com/convert-mkv.html</link>
+	  <pubDate>Sun, 14 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/convert-mkv.html</guid>
+	  <description>You will need ffmpeg installed on your system.</description>
+	  <content:encoded>&lt;p&gt;You will need &lt;code&gt;ffmpeg&lt;/code&gt; installed on your system. This will convert all MKV files
+into WebM format.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Convert all MKV files into WebM format.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find ./ -name &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;*.mkv&amp;#39;&lt;/span&gt; -exec bash -c &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;ffmpeg -i &amp;#34;$0&amp;#34; -vcodec libvpx -acodec libvorbis -cpu-used 5 -threads 8 &amp;#34;${0%%.mp4}.webm&amp;#34;&amp;#39;&lt;/span&gt; {} &lt;span style=&#34;color:#a31515&#34;&gt;\;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Convert all MKV files into MP4 format.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find ./ -name &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;*.mkv&amp;#39;&lt;/span&gt; -exec bash -c &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;ffmpeg -i &amp;#34;$0&amp;#34; c:a copy -c:v copy -cpu-used 5 -threads 8 &amp;#34;${0%%.mp4}.mp4&amp;#34;&amp;#39;&lt;/span&gt; {} &lt;span style=&#34;color:#a31515&#34;&gt;\;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Download list of YouTube files</title>
+	  <link>https://mitjafelicijan.com/download-youtube-videos.html</link>
+	  <pubDate>Sat, 13 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/download-youtube-videos.html</guid>
+	  <description>If you need to download a list of YouTube videos and don&amp;#39;t want to download theactual YouTube list (which yt-dlp supports), you can use the following method.</description>
+	  <content:encoded>&lt;p&gt;If you need to download a list of YouTube videos and don&#39;t want to download the
+actual YouTube list (which &lt;code&gt;yt-dlp&lt;/code&gt; supports), you can use the following method.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;// Used to get list of raw URL&amp;#39;s from YouTube&amp;#39;s video tab&amp;#39;.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;// Copy them into videos.txt.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;&lt;/span&gt;document.querySelectorAll(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;#contents a.ytd-thumbnail.style-scope.ytd-thumbnail&amp;#39;&lt;/span&gt;).forEach(el =&amp;gt; console.log(el.href))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Download and install &lt;a href=&#34;https://github.com/yt-dlp/yt-dlp&#34;&gt;https://github.com/yt-dlp/yt-dlp&lt;/a&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# This will download all videos in videos.txt.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yt-dlp --batch-file videos.txt -N &lt;span style=&#34;color:#a31515&#34;&gt;`&lt;/span&gt;nproc&lt;span style=&#34;color:#a31515&#34;&gt;`&lt;/span&gt; -f webm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Install Plan9port on Linux</title>
+	  <link>https://mitjafelicijan.com/install-plan9port-linux.html</link>
+	  <pubDate>Fri, 12 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/install-plan9port-linux.html</guid>
+	  <description>Install Plan9port on Linux.</description>
+	  <content:encoded>&lt;p&gt;Install Plan9port on Linux. This applies to
+&lt;a href=&#34;https://9fans.github.io/plan9port/&#34;&gt;Plan9port&lt;/a&gt;. This is a port of many Plan 9
+programs to Unix-like operating systems. Useful for programs like &lt;code&gt;9term&lt;/code&gt; and
+&lt;code&gt;rc&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install gcc libx11-dev libxt-dev libxext-dev libfontconfig1-dev
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/9fans/plan9port $HOME/plan9
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd $HOME/plan9/plan9port
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./INSTALL -r $HOME/plan9
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Fix bootloader not being written in Plan9</title>
+	  <link>https://mitjafelicijan.com/fix-plan9-bootloader.html</link>
+	  <pubDate>Thu, 11 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/fix-plan9-bootloader.html</guid>
+	  <description>If the bootloader is not being written to a disk when installing 9front on realharware try clearing first sector of the disk with the following command.</description>
+	  <content:encoded>&lt;p&gt;If the bootloader is not being written to a disk when installing 9front on real
+harware try clearing first sector of the disk with the following command.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dd &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt;=/dev/zero of=/dev/sdX bs=512 count=1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# If command above doesn&amp;#39;t work try this one, wait couple of seconds and&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# press delete key to stop the command.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat &amp;lt;/dev/zero &amp;gt;/dev/sd*/data
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Take a screenshot in Plan9</title>
+	  <link>https://mitjafelicijan.com/plan9-screenshot.html</link>
+	  <pubDate>Wed, 10 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/plan9-screenshot.html</guid>
+	  <description>Take a screenshot in Plan9.</description>
+	  <content:encoded>&lt;p&gt;Take a screenshot in Plan9. This applies to &lt;a href=&#34;https://9p.io/plan9/&#34;&gt;Plan9&lt;/a&gt; and
+&lt;a href=&#34;https://9front.org/&#34;&gt;9front&lt;/a&gt;. This will take a screenshot of the screen and
+output it to &lt;code&gt;/dev/screen&lt;/code&gt;. You can then use &lt;code&gt;topng&lt;/code&gt; to convert it to a png
+image.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Instant screenshot.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat /dev/screen | topng &amp;gt; screen.png
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Delayed screenshot (5 seconds).&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sleep 5; cat /dev/screen | topng &amp;gt; screen.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>#cat-v on weechat configuration</title>
+	  <link>https://mitjafelicijan.com/catv-weechat-config.html</link>
+	  <pubDate>Tue, 09 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/catv-weechat-config.html</guid>
+	  <description>Set up weechat to connect to #cat-v on oftc.</description>
+	  <content:encoded>&lt;p&gt;Set up weechat to connect to #cat-v on oftc. This applies to
+&lt;a href=&#34;https://weechat.org/&#34;&gt;weechat&lt;/a&gt; but should be similar for other irc clients.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Install weechat and launch it and execute the following commands.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/server add oftc irc.oftc.net -tls
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/set irc.server.oftc.autoconnect on
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/set irc.server.oftc.autojoin &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;#cat-v&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/set irc.server.oftc.nicks &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;nick1,nick2,nick3&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Write ISO to USB Key</title>
+	  <link>https://mitjafelicijan.com/write-iso-usb.html</link>
+	  <pubDate>Mon, 08 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/write-iso-usb.html</guid>
+	  <description>Write ISO to USB key.</description>
+	  <content:encoded>&lt;p&gt;Write ISO to USB key. Nothing fancy here.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dd &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt;=iso_file.iso of=/dev/sdX bs=4M status=progress conv=fdatasync
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Mount Plan9 over network</title>
+	  <link>https://mitjafelicijan.com/mount-plan9-over-network.html</link>
+	  <pubDate>Sun, 07 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/mount-plan9-over-network.html</guid>
+	  <description>First install libfuse with sudo apt install libfuse-dev.</description>
+	  <content:encoded>&lt;ul&gt;
+&lt;li&gt;First install libfuse with sudo apt install libfuse-dev.&lt;/li&gt;
+&lt;li&gt;Then clone &lt;a href=&#34;https://github.com/ftrvxmtrx/9pfs&#34;&gt;https://github.com/ftrvxmtrx/9pfs&lt;/a&gt; and compile it with make.&lt;/li&gt;
+&lt;li&gt;Copy 9pfs to your path.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# On Plan9 side&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ip/ipconfig &lt;span style=&#34;color:#008000&#34;&gt;# enables network&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;aux/listen1 -tv tcp!*!9999 /bin/exportfs -r tmp &lt;span style=&#34;color:#008000&#34;&gt;# export tmp folder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# On Linux side&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;9pfs 172.18.0.1 -p 9999 local_folder &lt;span style=&#34;color:#008000&#34;&gt;# mount&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;umount local_folder &lt;span style=&#34;color:#008000&#34;&gt;# unmount&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Push to multiple origins at once in Git</title>
+	  <link>https://mitjafelicijan.com/git-push-multiple-origins.html</link>
+	  <pubDate>Sat, 06 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/git-push-multiple-origins.html</guid>
+	  <description>Sometimes you want to push to multiple origins at once.</description>
+	  <content:encoded>&lt;p&gt;Sometimes you want to push to multiple origins at once. This is useful if you
+have a mirror of your repository on another server. You can do this by adding
+multiple push urls to your git config. This is a shorthand for command above.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global alias.pushall &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;!sh -c &amp;#34;git remote | xargs -L1 git push --all&amp;#34;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Run 9front in Qemu</title>
+	  <link>https://mitjafelicijan.com/run-9front-in-qemu.html</link>
+	  <pubDate>Fri, 05 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/run-9front-in-qemu.html</guid>
+	  <description>Run 9front in Qemu.</description>
+	  <content:encoded>&lt;p&gt;Run 9front in Qemu. This applies to &lt;a href=&#34;https://9p.io/plan9/&#34;&gt;Plan9&lt;/a&gt; and
+&lt;a href=&#34;https://9front.org/&#34;&gt;9front&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Download from here &lt;a href=&#34;http://9front.org/iso/&#34;&gt;http://9front.org/iso/&lt;/a&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Create a qcow2 image.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;qemu-img create -f qcow2 $HOME/VM/9front.qcow2.img 30G
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Run the VM.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;qemu-system-x86_64 -cpu host -enable-kvm -m 1024 &lt;span style=&#34;color:#a31515&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&lt;/span&gt;    -net nic,model=virtio,macaddr=52:54:00:00:EE:03 -net user &lt;span style=&#34;color:#a31515&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&lt;/span&gt;    -device virtio-scsi-pci,id=scsi &lt;span style=&#34;color:#a31515&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&lt;/span&gt;    -drive &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt;=none,id=vd0,file=$HOME/VM/9front.qcow2.img &lt;span style=&#34;color:#a31515&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&lt;/span&gt;    -device scsi-hd,drive=vd0 &lt;span style=&#34;color:#a31515&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&lt;/span&gt;    -drive &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt;=none,id=vd1,file=$HOME/VM/ISO/9front.386.iso &lt;span style=&#34;color:#a31515&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&lt;/span&gt;    -device scsi-cd,drive=vd1,bootindex=0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
+	</item>
+	
+	
+	
+	<item>
+	  <title>Cache busting in Hugo</title>
+	  <link>https://mitjafelicijan.com/cachebusting-in-hugo.html</link>
+	  <pubDate>Mon, 01 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/cachebusting-in-hugo.html</guid>
+	  <description>{{ $cachebuster := delimit (shuffle (split (md5 &amp;#34;6fab11c6669976d759d2992eff1dd5be&amp;#34;) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }}&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;/style.</description>
+	  <content:encoded>&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ $cachebuster := delimit (shuffle (split (md5 &amp;#34;6fab11c6669976d759d2992eff1dd5be&amp;#34;) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;link rel=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; href=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;/style.css?v={{ $cachebuster }}&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This &lt;code&gt;6fab11c6669976d759d2992eff1dd5be&lt;/code&gt; can be random string you generate use.
+You can use whatever you want.&lt;/p&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  </channel>
+</rss>

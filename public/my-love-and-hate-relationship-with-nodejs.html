@@ -1,0 +1,77 @@
+<!doctype html><html lang=en-us><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA==" rel=icon type=image/x-icon><title>My love and hate relationship with Node.js</title><meta name=description content="Previous project I was working on was being coded inGolang."><link rel=alternate type=application/rss+xml title="Mitja Felicijan's posts" href=https://mitjafelicijan.com/index.xml><link rel=alternate type=application/rss+xml title="Mitja Felicijan's notes" href=https://mitjafelicijan.com/notes.xml><style>body{padding:1rem;max-width:760px;background:#fff;font-family:times new roman,Times,serif;line-height:1.35rem}hr{margin-block-start:1.5rem}h1,h2,h3{line-height:initial}footer{margin-block-start:3rem}table{max-width:100%;border-collapse:separate;border-spacing:2px;border:1px solid #000;border-left:1px solid #999;border-top:1px solid #999}blockquote{font-style:italic}table thead{background:#eee}td,th{border:1px solid #000;padding:4px;border-right:1px solid #999;border-bottom:1px solid #999;text-align:left}pre{text-wrap:nowrap;overflow-x:auto;margin-block-start:1.5rem;margin-block-end:1.5rem;padding:.5rem 0;border-top:1px solid #000;border-bottom:1px solid #000}pre code{line-height:1.3em}pre,code,pre *,code *{font-family:monospace;font-size:initial!important}img,video,audio{max-width:100%}header{display:flex;flex-direction:row;gap:3rem}nav{display:flex;gap:.75rem}.pstatus-orange{background:gold}.pstatus-green{background:#9acd32}.pstatus-red{background:#cd5c5c}@media only screen and (max-width:600px){header{flex-direction:column;gap:1rem}a{word-wrap:break-word}}</style><header><nav class=main><a href=/>Home</a>
+<a href=https://git.mitjafelicijan.com/ target=_blank>Git</a>
+<a href=https://files.mitjafelicijan.com/ target=_blank>Files</a>
+<a href=/mitjafelicijan.pgp.pub.txt target=_blank>PGP</a>
+<a href=/curriculum-vitae.html>CV</a>
+<a href=/index.xml target=_blank>RSS</a></nav></header><main><div><h1>My love and hate relationship with Node.js</h1><p>Mar 30, 2020<div><p>Previous project I was working on was being coded in
+<a href=https://golang.org/>Golang</a>. Also was my first project using it. And damn,
+that was an awesome experience. The whole thing is just superb. From how errors
+are handled. The C-like way you handle compiling. The way the language is
+structured making it incredibly versatile and easy to learn.<p>It may cause some pain for somebody that is not used of using interfaces to map
+JSON and doing the recompilation all the time. But we have tools like
+<a href=http://eradman.com/entrproject/>entr</a> and
+<a href=https://www.gnu.org/software/make/>make</a> to fix that.<p>But we are not here to talk about my undying love for <strong>Golang</strong>. Only in some
+way we probably should. It is an excellent example of how modern language should
+be designed. And because I have used it extensively in the last couple of years
+this probably taints my views of other languages. And is doing me a great
+disservice. Nevertheless, here we are.<p>About two years ago I started flirting with <a href=https://nodejs.org/en/>Node.js</a>
+for a project I started working on. What I wanted was to have things written in
+a language that is widely used, and we could get additional developers for. As
+much as <strong>Golang</strong> is amazing it's really hard to get developers for it. Even
+now. And after playing around with it for a week I felt in love with the speed
+of iteration and massive package ecosystem. Do you want SSO? You got it! Do you
+want some esoteric library for something? There is a strong chance somebody
+wrote it. It is so extensive that you find yourself evaluating packages based on
+<strong>GitHub stars</strong> and number of contributors. You get swallowed by the vanity
+metrics and that potentially will become the downfall of Node.js.<p>Because of the sheer amount of choice I often got anxiety when choosing
+libraries. Will I choose the correct one? Is this library something that will be
+supported for a foreseeable future or not? I am used of using libraries that are
+being in development for 10 years plus (Python, C) and that gave me some sort of
+comfort. And it is probably unfair to Node.js and community to expect same
+dedication.<p>Moving forward ... Work started and things were great. <strong>Speed of iteration was
+insane</strong>. For some feature that I would need a day in Golang only took me hour
+or two. I became lazy! Using packages all over the place. Falling into the same
+trap as others. Packages on top of packages. And <a href=https://www.npmjs.com/>npm</a>
+didn't help at all. The way that the package manager works is just
+horrendous. And not allowing to have node_modules outside the project is also
+the stupidest idea ever.<p>So at that point I started feeling the technical debt that comes with Node.js
+and the whole ecosystem. What nobody tells you is that <strong>structuring large
+Node.js apps</strong> is more problematic than one would think. And going microservice
+for every single thing is also a bad idea. The amount of networking you
+introduce with that approach always ends up being a pain in the ass. And I don't
+even want to go into system administration here. The overhead is
+insane. Package-lock.json made many days feel like living hell for me. And I
+would eat the cost of all this if it meant for better development
+experience. Well, it didn't.<p>The <strong>lack of Typescript</strong> support in the interpreter is still mind boggling to
+me. Why haven't they added native support yet for this is beyond me?! That would
+have solved so many problems. Lack of type safety became a problem somewhere in
+the middle of the project where the codebase was sufficiently large enough to
+present problems. We started adding arguments to functions and there was <strong>no
+way to implicitly define argument types</strong>. And because at that point there were
+a lot of functions, it became impossible to know what each one accepts,
+development became more and more trial and error based.<p>I tried <strong>implementing Typescript</strong>, but that would present a large refactor
+that we were not willing to do at that point. The benefits were not enough. I
+also tried <a href=https://flow.org/>Flow - static type checker</a> but implementation
+was also horrible. What Typescript and Flow forces you is to have src folder and
+then <strong>transpile</strong> your code into dist folder and run it with node. WTH is that
+all about. Why can't this be done in memory or some virtual file system? Why? I
+see no reason why this couldn't be done like this. But it is what it is. I
+abandoned all hope for static type checking.<p>One of the problems that resulted from not having interfaces or types was
+inability to model out our data from <strong>Elasticsearch</strong>. I could have done a
+<strong>pedestrian implementation</strong> of it, but there must be a better way of doing
+this without resorting to some hack basically. Or maybe I haven't found a
+solution, which is also a possibility. I have looked, though. No juice!<p><strong>Error handling?</strong> Is that a joke?<p>Thank god for <strong>await/async</strong>. Without it, I would have probably just abandoned
+the whole thing and went with something else like Python. That's all I am going
+to say about this :)<p>I started asking myself a question if Node.js is actually ready to be used in a
+<strong>large scale applications</strong>? And this was a totally wrong question. What I
+should have been asking myself was, how to use Node.js in large scale
+application. And you don't get this in <strong>marketing material</strong> for Express or Koa
+etc. They never tell you this. Making Node.js scale on infrastructure or in
+codebase is really <strong>more of an art than a science</strong>. And just like with the
+whole JavaScript ecosystem:<ul><li>impossible to master,<li>half of your time you work on your tooling,<li>just accept transpilers that convert one code into another (holly smokes),<li>error handling is a joke,<li>standards? What standards?</ul><p>But on the other hand. As I did, you will also learn to love it. Learn to use it
+quickly and do impossible things in crazy limited time.<p>I hate to admit it. But I love Node.js. Dammit, I love it :)<p>2023 Update: I hate Node.js!</div></div></main><footer><hr><div><h3>Want to comment or have something to add?</h3>You can write me an email at
+<a href=mailto:m@mitjafelicijan.com>m@mitjafelicijan.com</a> or catch up
+with me
+<a href=https://telegram.me/mitjafelicijan target=_blank>on Telegram</a>.</div><hr><p>This website does not track you. Content is made available under
+the <a href=https://creativecommons.org/licenses/by/4.0/ target=_blank rel=noreferrer>CC BY 4.0 license</a> unless specified
+otherwise. Blog feed is available as <a href=/index.xml target=_blank>RSS feed</a>.</footer><script src=https://cdn.usefathom.com/script.js data-site=XHQARKXP defer></script>

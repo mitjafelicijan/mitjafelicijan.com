@@ -1,0 +1,143 @@
+<!doctype html><html lang=en-us><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA==" rel=icon type=image/x-icon><title>Profiling Python web applications with visual tools</title><meta name=description content="I have been profiling my software with KCachegrind for a long time now and I wasmissing this option when I am developing API&amp;#39;s or other web services."><link rel=alternate type=application/rss+xml title="Mitja Felicijan's posts" href=https://mitjafelicijan.com/index.xml><link rel=alternate type=application/rss+xml title="Mitja Felicijan's notes" href=https://mitjafelicijan.com/notes.xml><style>body{padding:1rem;max-width:760px;background:#fff;font-family:times new roman,Times,serif;line-height:1.35rem}hr{margin-block-start:1.5rem}h1,h2,h3{line-height:initial}footer{margin-block-start:3rem}table{max-width:100%;border-collapse:separate;border-spacing:2px;border:1px solid #000;border-left:1px solid #999;border-top:1px solid #999}blockquote{font-style:italic}table thead{background:#eee}td,th{border:1px solid #000;padding:4px;border-right:1px solid #999;border-bottom:1px solid #999;text-align:left}pre{text-wrap:nowrap;overflow-x:auto;margin-block-start:1.5rem;margin-block-end:1.5rem;padding:.5rem 0;border-top:1px solid #000;border-bottom:1px solid #000}pre code{line-height:1.3em}pre,code,pre *,code *{font-family:monospace;font-size:initial!important}img,video,audio{max-width:100%}header{display:flex;flex-direction:row;gap:3rem}nav{display:flex;gap:.75rem}.pstatus-orange{background:gold}.pstatus-green{background:#9acd32}.pstatus-red{background:#cd5c5c}@media only screen and (max-width:600px){header{flex-direction:column;gap:1rem}a{word-wrap:break-word}}</style><header><nav class=main><a href=/>Home</a>
+<a href=https://git.mitjafelicijan.com/ target=_blank>Git</a>
+<a href=https://files.mitjafelicijan.com/ target=_blank>Files</a>
+<a href=/mitjafelicijan.pgp.pub.txt target=_blank>PGP</a>
+<a href=/curriculum-vitae.html>CV</a>
+<a href=/index.xml target=_blank>RSS</a></nav></header><main><div><h1>Profiling Python web applications with visual tools</h1><p>Apr 21, 2017<div><p>I have been profiling my software with KCachegrind for a long time now and I was
+missing this option when I am developing API's or other web services. I always
+knew that this is possible but never really took the time and dive into it.<p>Before we begin there are some requirements. We will need to:<ul><li>implement <a href=https://docs.python.org/2/library/profile.html#module-cProfile>cProfile</a> into our web app,<li>convert output to <a href=http://valgrind.org/docs/manual/cl-manual.html>callgrind</a> format with <a href=https://pypi.python.org/pypi/pyprof2calltree/>pyprof2calltree</a>,<li>visualize data with <a href=http://kcachegrind.sourceforge.net/html/Home.html>KCachegrind</a> or <a href=http://www.profilingviewer.com/>Profiling Viewer</a>.</ul><p>If you are using MacOS you should check out <a href=http://www.profilingviewer.com/>Profiling
+Viewer</a> or
+<a href=http://www.maccallgrind.com/>MacCallGrind</a>.<p><img src=/assets/python-profiling/kcachegrind.png alt=KCachegrind><p>We will be dividing this post into two main categories:<ul><li>writing simple web-service,<li>visualize profile of this web-service.</ul><h2 id=simple-web-service>Simple web-service</h2><p>Let's use virtualenv so we won't pollute our base system. If you don't have
+virtualenv installed on your system you can install it with pip command.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># let&#39;s install virtualenv globally</span>
+</span></span><span style=display:flex><span>$ sudo pip install virtualenv
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># let&#39;s also install pyprof2calltree globally</span>
+</span></span><span style=display:flex><span>$ sudo pip install pyprof2calltree
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># now we create project</span>
+</span></span><span style=display:flex><span>$ mkdir demo-project
+</span></span><span style=display:flex><span>$ cd demo-project/
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># now let&#39;s create folder where we will store profiles</span>
+</span></span><span style=display:flex><span>$ mkdir prof
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># now we create empty virtualenv in venv/ folder</span>
+</span></span><span style=display:flex><span>$ virtualenv --no-site-packages venv
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># we now need to activate virtualenv</span>
+</span></span><span style=display:flex><span>$ source venv/bin/activate
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># you can check if virtualenv was correctly initialized by</span>
+</span></span><span style=display:flex><span><span style=color:green># checking where your python interpreter is located</span>
+</span></span><span style=display:flex><span><span style=color:green># if command bellow points to your created directory and not some</span>
+</span></span><span style=display:flex><span><span style=color:green># system dir like /usr/bin/python then everything is fine</span>
+</span></span><span style=display:flex><span>$ which python
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># we can check now if all is good ➜ if ok couple of</span>
+</span></span><span style=display:flex><span><span style=color:green># lines will be displayed</span>
+</span></span><span style=display:flex><span>$ pip freeze
+</span></span><span style=display:flex><span><span style=color:green># appdirs==1.4.3</span>
+</span></span><span style=display:flex><span><span style=color:green># packaging==16.8</span>
+</span></span><span style=display:flex><span><span style=color:green># pyparsing==2.2.0</span>
+</span></span><span style=display:flex><span><span style=color:green># six==1.10.0</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># now we are ready to install bottlepy ➜ web micro-framework</span>
+</span></span><span style=display:flex><span>$ pip install bottle
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># you can deactivate virtualenv but you will then go</span>
+</span></span><span style=display:flex><span><span style=color:green># under system domain ➜ for now don&#39;t deactivate</span>
+</span></span><span style=display:flex><span>$ deactivate
+</span></span></code></pre><p>We are now ready to write simple web service. Let's create file app.py and paste
+code bellow in this newly created file.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># -*- coding: utf-8 -*-</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00f>import</span> bottle
+</span></span><span style=display:flex><span><span style=color:#00f>import</span> random
+</span></span><span style=display:flex><span><span style=color:#00f>import</span> cProfile
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>app = bottle.Bottle()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># this function is a decorator and encapsulates function</span>
+</span></span><span style=display:flex><span><span style=color:green># and performs profiling and then saves it to subfolder</span>
+</span></span><span style=display:flex><span><span style=color:green># prof/function-name.prof</span>
+</span></span><span style=display:flex><span><span style=color:green># in our example only awesome_random_number function will</span>
+</span></span><span style=display:flex><span><span style=color:green># be profiled because it has do_cprofile defined</span>
+</span></span><span style=display:flex><span><span style=color:#00f>def</span> do_cprofile(func):
+</span></span><span style=display:flex><span>  <span style=color:#00f>def</span> profiled_func(*args, **kwargs):
+</span></span><span style=display:flex><span>    profile = cProfile.Profile()
+</span></span><span style=display:flex><span>    <span style=color:#00f>try</span>:
+</span></span><span style=display:flex><span>      profile.enable()
+</span></span><span style=display:flex><span>      result = func(*args, **kwargs)
+</span></span><span style=display:flex><span>      profile.disable()
+</span></span><span style=display:flex><span>      <span style=color:#00f>return</span> result
+</span></span><span style=display:flex><span>    <span style=color:#00f>finally</span>:
+</span></span><span style=display:flex><span>      profile.dump_stats(<span style=color:#a31515>&#34;prof/&#34;</span> + str(func.__name__) + <span style=color:#a31515>&#34;.prof&#34;</span>)
+</span></span><span style=display:flex><span>  <span style=color:#00f>return</span> profiled_func
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># we use profiling over specific function with including</span>
+</span></span><span style=display:flex><span><span style=color:green># @do_cprofile above function declaration</span>
+</span></span><span style=display:flex><span>@app.route(<span style=color:#a31515>&#34;/&#34;</span>)
+</span></span><span style=display:flex><span>@do_cprofile
+</span></span><span style=display:flex><span><span style=color:#00f>def</span> awesome_random_number():
+</span></span><span style=display:flex><span>  awesome_random_number = random.randint(0, 100)
+</span></span><span style=display:flex><span>  <span style=color:#00f>return</span> <span style=color:#a31515>&#34;awesome random number is &#34;</span> + str(awesome_random_number)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>@app.route(<span style=color:#a31515>&#34;/test&#34;</span>)
+</span></span><span style=display:flex><span><span style=color:#00f>def</span> test():
+</span></span><span style=display:flex><span>  <span style=color:#00f>return</span> <span style=color:#a31515>&#34;dummy test&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00f>if</span> __name__ == <span style=color:#a31515>&#39;__main__&#39;</span>:
+</span></span><span style=display:flex><span>  bottle.run(
+</span></span><span style=display:flex><span>    app = app,
+</span></span><span style=display:flex><span>    host = <span style=color:#a31515>&#34;0.0.0.0&#34;</span>,
+</span></span><span style=display:flex><span>    port = 4000
+</span></span><span style=display:flex><span>  )
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># run with &#39;python app.py&#39;</span>
+</span></span><span style=display:flex><span><span style=color:green># open browser &#39;http://0.0.0.0:4000&#39;</span>
+</span></span></code></pre><p>When browser hits awesome_random_number() function profile is created in prof/
+subfolder.<h2 id=visualize-profile>Visualize profile</h2><p>Now let's create callgrind format from this cProfile output.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>$ cd prof/
+</span></span><span style=display:flex><span>$ pyprof2calltree -i awesome_random_number.prof
+</span></span><span style=display:flex><span><span style=color:green># this creates &#39;awesome_random_number.prof.log&#39; file in the same folder</span>
+</span></span></code></pre><p>This file can be opened with visualizing tools listed above. In this case we
+will be using Profilling Viewer under MacOS. You can open image in new tab. As
+you can see from this example there is hierarchy of execution order of your
+code.<p><img src=/assets/python-profiling/profiling-viewer.png alt="Profilling Viewer"><blockquote><p>Make sure you convert output of the cProfile output every time you want to
+refresh and take a look at your possible optimizations because cProfile updates
+.prof file every time browser hits the function.</blockquote><p>This is just a simple example but when you are developing real-life applications
+this can be very illuminating, especially to see which parts of your code are
+bottlenecks and need to be optimized.<h2 id=update-2017-04-22>Update 2017-04-22</h2><p>Reddit user <a href=https://www.reddit.com/user/mvt>mvt</a> also recommended this awesome
+web based profile visualizer <a href=https://jiffyclub.github.io/snakeviz/>SnakeViz</a>
+that directly takes output from
+<a href=https://docs.python.org/2/library/profile.html#module-cProfile>cProfile</a>
+module.<div class=reddit-embed data-embed-media=www.redditmedia.com data-embed-parent=false data-embed-live=false data-embed-uuid=583880c1-002e-41ed-a373-020a0ef2cff9 data-embed-created=2017-04-22T19:46:54.810Z><a href=https://www.reddit.com/r/Python/comments/66v373/profiling_python_web_applications_with_visual/dgljhsb/>Comment</a> from discussion <a href=https://www.reddit.com/r/Python/comments/66v373/profiling_python_web_applications_with_visual/>Profiling Python web applications with visual tools</a>.</div><script async src=https://www.redditstatic.com/comment-embed.js></script><pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># let&#39;s install it globally as well</span>
+</span></span><span style=display:flex><span>$ sudo pip install snakeviz
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># now let&#39;s visualize</span>
+</span></span><span style=display:flex><span>$ cd prof/
+</span></span><span style=display:flex><span>$ snakeviz awesome_random_number.prof
+</span></span><span style=display:flex><span><span style=color:green># this automatically opens browser window and</span>
+</span></span><span style=display:flex><span><span style=color:green># shows visualized profile</span>
+</span></span></code></pre><p><img src=/assets/python-profiling/snakeviz.png alt=SnakeViz><p>Reddit user <a href=https://www.reddit.com/user/ccharles>ccharles</a> suggested a better
+way for installing pip software by targeting user level instead of using sudo.<div class=reddit-embed data-embed-media=www.redditmedia.com data-embed-parent=false data-embed-live=false data-embed-uuid=f4f0459e-684d-441e-bebe-eb49b2f0a31d data-embed-created=2017-04-22T19:46:10.874Z><a href=https://www.reddit.com/r/Python/comments/66v373/profiling_python_web_applications_with_visual/dglpzkx/>Comment</a> from discussion <a href=https://www.reddit.com/r/Python/comments/66v373/profiling_python_web_applications_with_visual/>Profiling Python web applications with visual tools</a>.</div><script async src=https://www.redditstatic.com/comment-embed.js></script><pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># now we need to add this path to our $PATH variable</span>
+</span></span><span style=display:flex><span><span style=color:green># we do this my adding this line at the end of your</span>
+</span></span><span style=display:flex><span><span style=color:green># ~/.bashrc file</span>
+</span></span><span style=display:flex><span>PATH=$PATH:$HOME/.local/bin/
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># in order to use this new configuration you can close</span>
+</span></span><span style=display:flex><span><span style=color:green># and reopen terminal or reload .bashrc file</span>
+</span></span><span style=display:flex><span>$ source ~/.bashrc
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># now let&#39;s test if new directory is present in $PATH</span>
+</span></span><span style=display:flex><span>$ echo $PATH
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># now we can install on user level by adding --user</span>
+</span></span><span style=display:flex><span><span style=color:green># without use of sudo</span>
+</span></span><span style=display:flex><span>$ pip install snakeviz --user
+</span></span></code></pre><p>Or as suggested by <a href=https://www.reddit.com/user/mvt>mvt</a> you can
+use <a href=https://github.com/mitsuhiko/pipsi>pipsi</a>.</div></div></main><footer><hr><div><h3>Want to comment or have something to add?</h3>You can write me an email at
+<a href=mailto:m@mitjafelicijan.com>m@mitjafelicijan.com</a> or catch up
+with me
+<a href=https://telegram.me/mitjafelicijan target=_blank>on Telegram</a>.</div><hr><p>This website does not track you. Content is made available under
+the <a href=https://creativecommons.org/licenses/by/4.0/ target=_blank rel=noreferrer>CC BY 4.0 license</a> unless specified
+otherwise. Blog feed is available as <a href=/index.xml target=_blank>RSS feed</a>.</footer><script src=https://cdn.usefathom.com/script.js data-site=XHQARKXP defer></script>

@@ -1,0 +1,105 @@
+{{ template "base.html" . }}
+
+{{ define "add-navigation" }}
+<nav class="additional">
+  <a href="#current">current</a>
+  <a href="#posts">posts</a>
+  <a href="#notes">notes</a>
+  <a href="#sideprojects">side projects</a>
+</nav>
+{{ end }}
+
+{{ define "content" }}
+<div>
+  <h1>A place where I experiment and have fun!</h1>
+  <p>{{ .Config.Description }}</p>
+  <p>Please <b><i>stop offering me a redesign</i></b> of this webpage. This site
+  intentionally looks like it does!</p>
+
+  <h2><a name="current"></a>What I am currently working on</h2>
+  <p>Semi-live status of things to keep myself honest!</p>
+  <table>
+	<thead>
+	  <tr>
+		<th width="5"></th>
+		<th>Project name</th>
+		<th>What is being worked on?</th>
+		<th>Last updated</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td class="pstatus-orange" title="Somewhat works"></td>
+		<td><a href="https://github.com/mitjafelicijan/errand" target="_blank">Errand - Task runner</a></td>
+		<td>Working on re-implementating the whole thing in C.</td>
+		<td>7th of June, 2023</td>
+	  </tr>
+	  <tr>
+		<td class="pstatus-green" title="Kinda works"></td>
+		<td><a href="https://github.com/mitjafelicijan/jbmafp" target="_blank">JBMAFP - Generates static sites</a></td>
+		<td>Fixing minor issues and writing docs.</td>
+		<td>8th of June, 2023</td>
+	  </tr>
+	  <tr>
+		<td class="pstatus-red" title="Still in initial stage"></td>
+		<td><a href="https://github.com/mitjafelicijan/marionette" target="_blank">Marionette - UI testing tool</a></td>
+		<td>Implementing HTTP server for viewing reports.</td>
+		<td>6th of June, 2023</td>
+	  </tr>
+	</tbody>
+  </table>
+  
+  <h2><a name="posts"></a>More long form, blog type of content</h2>
+  <ul>
+	{{ range .Pages }}
+	{{ if eq .Type "post" }}
+	<li><a href="/{{ .RelPermalink }}">{{ .Title }}</a></li>
+	{{ end }}
+	{{ end }}
+  </ul>
+
+  <h2><a name="notes"></a>Notes?! Maybe useful</h2>
+  <h2></h2>
+  <ul>
+	{{ range .Pages }}
+	{{ if eq .Type "note" }}
+	<li><a href="/{{ .RelPermalink }}">{{ .Title }}</a></li>
+	{{ end }}
+	{{ end }}
+  </ul>
+
+  <h2><a name="sideprojects"></a>Side projects I work/worked on</h2>
+  <table>
+	<tbody>
+	  <tr>
+		<td><a href="https://git.mitjafelicijan.com/cord.h.git/" target="_blank">cord.h</a></td>
+		<td>Small C library for handling strings</td>
+	  </tr>	  
+	  <tr>
+		<td><a href="https://git.mitjafelicijan.com/mprogress.git/" target="_blank">mprogress</a></td>
+		<td>Tiny utility that displays progress bar in terminal</td>
+	  </tr>
+	  <tr>
+		<td><a href="https://git.mitjafelicijan.com/journalctl-proxy.git/" target="_blank">journalctl-proxy</a></td>
+		<td>Exposes your systemd logs to web via web interface</td>
+	  </tr>
+	  <tr>
+		<td><a href="https://git.mitjafelicijan.com/redis-marshal.git/" target="_blank">redis-marshal</a></td>
+		<td>Lightweight Redis data exploration tool</td>
+	  </tr>
+	  <tr>
+		<td><a href="https://git.mitjafelicijan.com/dna-encoding.git/" target="_blank">dna-encoding</a></td>
+		<td>Tools for encoding files to DNA sequence</td>
+	  </tr>
+	  <tr>
+		<td><a href="https://git.mitjafelicijan.com/vertex.git/" target="_blank">vertex</a></td>
+		<td>Create mock API's and add basic logic to simplify prototyping</td>
+	  </tr>
+	  <tr>
+		<td><a href="https://git.mitjafelicijan.com/scarecrow.git/" target="_blank">scarecrow</a></td>
+		<td>Minimal configuration reverse proxy</td>
+	  </tr>
+	</tbody>
+  </table>
+</div>
+{{ end }}

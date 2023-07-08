@@ -1,0 +1,125 @@
+<!doctype html><html lang=en-us><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA==" rel=icon type=image/x-icon><title>Debian based riced up distribution for Developers and DevOps folks</title><meta name=description content="IntroductionI have been using Ubuntu for quite a longtime now."><link rel=alternate type=application/rss+xml title="Mitja Felicijan's posts" href=https://mitjafelicijan.com/index.xml><link rel=alternate type=application/rss+xml title="Mitja Felicijan's notes" href=https://mitjafelicijan.com/notes.xml><style>body{padding:1rem;max-width:760px;background:#fff;font-family:times new roman,Times,serif;line-height:1.35rem}hr{margin-block-start:1.5rem}h1,h2,h3{line-height:initial}footer{margin-block-start:3rem}table{max-width:100%;border-collapse:separate;border-spacing:2px;border:1px solid #000;border-left:1px solid #999;border-top:1px solid #999}blockquote{font-style:italic}table thead{background:#eee}td,th{border:1px solid #000;padding:4px;border-right:1px solid #999;border-bottom:1px solid #999;text-align:left}pre{text-wrap:nowrap;overflow-x:auto;margin-block-start:1.5rem;margin-block-end:1.5rem;padding:.5rem 0;border-top:1px solid #000;border-bottom:1px solid #000}pre code{line-height:1.3em}pre,code,pre *,code *{font-family:monospace;font-size:initial!important}img,video,audio{max-width:100%}header{display:flex;flex-direction:row;gap:3rem}nav{display:flex;gap:.75rem}.pstatus-orange{background:gold}.pstatus-green{background:#9acd32}.pstatus-red{background:#cd5c5c}@media only screen and (max-width:600px){header{flex-direction:column;gap:1rem}a{word-wrap:break-word}}</style><header><nav class=main><a href=/>Home</a>
+<a href=https://git.mitjafelicijan.com/ target=_blank>Git</a>
+<a href=https://files.mitjafelicijan.com/ target=_blank>Files</a>
+<a href=/mitjafelicijan.pgp.pub.txt target=_blank>PGP</a>
+<a href=/curriculum-vitae.html>CV</a>
+<a href=/index.xml target=_blank>RSS</a></nav></header><main><div><h1>Debian based riced up distribution for Developers and DevOps folks</h1><p>Dec 3, 2021<div><h2 id=introduction>Introduction</h2><p>I have been using <a href=https://ubuntu.com/>Ubuntu</a> for quite a longtime now. I have
+used <a href=https://www.debian.org/>Debian</a> in the past and
+<a href=https://manjaro.org/>Manjaro</a>. Also had <a href=https://archlinux.org/>Arch</a> for
+some time and even ran <a href=https://www.gentoo.org/>Gentoo</a> way back.<p>What I learned from all this is that I prefer running a bit older versions and
+having them be stable than run bleeding edge rolling release. For that reason, I
+stuck with Ubuntu for a couple of years now. I am also at a point in my life
+where I just don't care what is cool or hip anymore. I just want a stable system
+that doesn't get in my way.<p>During all this, I noticed that these distributions were getting very bloated
+and a lot of software got included that I usually uninstall on fresh
+installation. Maybe this is my OCD speaking, but why do I have to give fresh
+installation min 1 GB of ram out of the box just to have a blank screen in front
+of me? I get it, there are many things included in the distro to make my life
+easier. I understand. But at this point I have a feeling that modern Linux
+distributions are becoming similar to <a href=https://devhumor.com/content/uploads/images/August2017/node-modules.jpg>Node.js project with
+node_modules</a>.
+Just a crazy number of packages serving very little or no purpose, just
+supporting other software.<p>I felt I needed a fresh start. To start over with something minimal and clean.
+Something that would put a little more joy into using a computer again.<p>For the first version, I wanted to target the following machines I have at home
+that I want this thing to work on.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># My main stationary work machine</span>
+</span></span><span style=display:flex><span>Resolution: 3840x1080 (Super Ultrawide Monitor 32:9)
+</span></span><span style=display:flex><span>CPU: Intel i7-8700 (12) @ 4.600GHz
+</span></span><span style=display:flex><span>GPU: AMD ATI Radeon RX 470/480/570/570X/580/580X/590
+</span></span><span style=display:flex><span>Memory: 32020MiB
+</span></span></code></pre><pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># Thinkpad x220 for testing things and goofing around</span>
+</span></span><span style=display:flex><span>Resolution: 1366x768
+</span></span><span style=display:flex><span>CPU: Intel i5-2520M (4) @ 3.200GHz
+</span></span><span style=display:flex><span>GPU: Intel 2nd Generation Core Processor Family
+</span></span><span style=display:flex><span>Memory: 15891MiB
+</span></span></code></pre><h2 id=how-should-i-approach-this>How should I approach this?</h2><p>I knew I wanted to use <a href=https://www.debian.org/CD/netinst/>minimal Debian netinst</a> for the base to give myself a head
+start. No reason to go through changing the installer and also testing all that
+behemoth of a thing. So, some sort of ricing was the only logical option to get
+this thing of the grounds somewhat quickly.<blockquote><p><strong>What is ricing anyway?</strong>
+The term “RICE” stands for Race Inspired Cosmetic Enhancement. A group of
+people (could be one, idk) decided to see if they could tweak their own
+distros like they/others did their cars. This gave rise to a community of
+Linux/Unix enthusiasts trying to make their distros look cooler and better
+than others... For more information, read this article
+<a href=https://pesos.github.io/2020/07/14/what-is-ricing.html>What in the world is ricing!?</a>.</blockquote><p>I didn't want this to just be a set of config files for theming purpose. I
+wanted this to include a set of pre-installed tools and services that are being
+used all the time by a modern developer. Theming is just a tiny part of it.
+Fonts being applied across the distro and things like that.<p>First, I choose terminal installer and left it to load additional components.
+Avoid using graphical installer in this case.<p><img src=/assets/dfd-rice/install-00.png alt><p>After that I selected hostname and created a normal user and set password for
+that user and root user and choose guided mode for disk partitioning.<p><img src=/assets/dfd-rice/install-01.png alt><p>I left it run to install all the things required for the base system and opted
+out of scanning additional media for use by the package manager. Those will be
+downloaded from the internet during installation.<p><img src=/assets/dfd-rice/install-02.png alt><p>I opted out of the popularity contest, and <strong>now comes the important part</strong>.
+Uncheck all the boxes in Software selection and only leave 'standard system
+utilities'. I also left an SSH server, so I was able to log in to the machine
+from my main PC.<p><img src=/assets/dfd-rice/install-03.png alt><p>At this point, I installed GRUB bootloader on the disk where I installed the
+system.<p><img src=/assets/dfd-rice/install-04.png alt><p>That concluded the installation of base Debian and after restarting the computer
+I was prompted with the login screen.<p><img src=/assets/dfd-rice/install-05.png alt><p>Now that I had the base installation, it was time to choose what software do I
+want to include in this so-called distribution. I wanted out of the box
+developer experience, so I had plenty to choose.<p>Let's not waste time and go through the list.<h2 id=desktop-environments>Desktop environments</h2><p>I have been using <a href=https://www.gnome.org/>Gnome</a> for my whole Linux life. From
+version 2 forward. It's been quite a ride. I hated version 3 when it came out
+and replaced version 2. But I got used to it. And now with version 40+ they also
+made couple of changes which I found both frustrating and presently surprised.<p>The amount of vertical space you loose because of the beefy title bars on
+windows is ridiculous. And then in case of
+<a href=https://gnunn1.github.io/tilix-web/>Tilix</a> you also have tabs, and you are
+100px deep. Vertical space is one of the most important things for a
+developer. The more real estate you have, the more code you can have in a
+viewport.<p>But on the other hand, I still love how Gnome feels and looks. I gotta give them
+that. They really are trying to make Gnome feel unified and modern.<p>Regardless of all the nice things Gnome has, I was looking at the tiling window
+managers for some time, but never had the nerve to actually go with it. But now
+was the ideal time to give it a go. No guts, no glory kind of a thing.<p>One of the requirements for me was easy custom layouts because I use a really
+strange monitor with aspect ratio of 32:9. So relying on included layouts most
+of them have is a non-starter.<p>What I was doing in Gnome was having windows in a layout like the diagram
+below. This is my common practice. And if you look at it you can clearly see I
+was replicating tiling window manager setup in Gnome.<p><img src=/assets/dfd-rice/layout.png alt><p>That made me look into a bunch of tiling window managers and then tested them
+out. Candidates I was looking at were:<ul><li><a href=https://i3wm.org/>i3</a><li><a href=https://github.com/baskerville/bspwm>bspwm</a><li><a href=https://awesomewm.org/index.html>awesome</a><li><a href=https://xmonad.org/>XMonad</a><li><a href=https://swaywm.org/>sway</a><li><a href=http://www.qtile.org/>Qtile</a><li><a href=https://dwm.suckless.org/>dwm</a></ul><p>You can also check article <a href=https://www.tecmint.com/best-tiling-window-managers-for-linux/>13 Best Tiling Window Managers for
+Linux</a> I was
+referencing while testing them out.<p>While all of them provided what I needed, I liked i3 the most. What particular
+caught my eye was the ease to use and tree based layouts which allows flexible
+layouts. I know others can be set up also to have custom layouts other than<br>spiral, dwindle etc. I think i3 is a good entry-level window manager for
+somebody like me.<h2 id=batteries-included>Batteries included</h2><p>The source for the whole thing is located on Github
+<a href=https://github.com/mitjafelicijan/dfd-rice>https://github.com/mitjafelicijan/dfd-rice</a>.<p>Currenly included:<ul><li><code>non-free</code> (enables non-free packages in apt)<li><code>sudo</code> (adds sudo and adds user to sudo group)<li><code>essentials</code> (gcc, htop, zip, curl, etc...)<li><code>wifi</code> (network manager nmtui)<li><code>desktop</code> (i3, dmenu, fonts, configurations)<li><code>pulseaudio</code> (pulseaudio with pavucontrol)<li><code>code-editors</code> (vim, micro, vscode)<li><code>ohmybash</code> (make bash pretty)<li><code>file-managers</code> (mc)<li><code>git-ui</code> (terminal git gui)<li><code>meld</code> (diff tool)<li><code>profiling</code> (kcachegrind, valgrind, strace, ltrace)<li><code>browsers</code> (brave, firefox, chromium)<li>programming languages:<ul><li><code>python</code><li><code>golang</code><li><code>nodejs</code><li><code>rust</code><li><code>nim</code><li><code>php</code><li><code>ruby</code></ul><li><code>docker</code> (with docker-compose)<li><code>ansible</code></ul><p>Install script also allows you to install only specific packages (example for:
+essentials ohmybash docker rust).<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>su - root <span style=color:#a31515>\
+</span></span></span><span style=display:flex><span><span style=color:#a31515></span>    bash -c <span style=color:#a31515>&#34;</span><span style=color:#00f>$(</span>wget -q https://raw.github.com/mitjafelicijan/dfd-rice/master/tools/install.sh -O -<span style=color:#00f>)</span><span style=color:#a31515>&#34;</span> -- <span style=color:#a31515>\
+</span></span></span><span style=display:flex><span><span style=color:#a31515></span>    essentials ohmybash docker rust
+</span></span></code></pre><p>Currently, most of these recipes use what Debian and this is totally fine with
+me since I never use bleeding edge features of a package. But if something major
+would come to light, I will replace it with a possible compilation script or
+something similar.<p>This is some of the output from the installation script.<p><img src=/assets/dfd-rice/script.png alt><p>Let's take a look at some examples in the installation script.<h3 id=docker-recipe>Docker recipe</h3><pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># docker</span>
+</span></span><span style=display:flex><span>print_header <span style=color:#a31515>&#34;Installing Docker&#34;</span>
+</span></span><span style=display:flex><span>curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --yes --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+</span></span><span style=display:flex><span>echo <span style=color:#a31515>&#34;deb [arch=</span><span style=color:#00f>$(</span>dpkg --print-architecture<span style=color:#00f>)</span><span style=color:#a31515> signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian </span><span style=color:#00f>$(</span>lsb_release -cs<span style=color:#00f>)</span><span style=color:#a31515> stable&#34;</span> | tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</span></span><span style=display:flex><span>apt update
+</span></span><span style=display:flex><span>apt -y install docker-ce docker-ce-cli containerd.io docker-compose
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>systemctl start docker
+</span></span><span style=display:flex><span>systemctl enable docker
+</span></span><span style=display:flex><span>systemctl status docker --no-pager
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>/sbin/usermod -aG docker $USERNAME
+</span></span></code></pre><h3 id=making-bash-pretty>Making bash pretty</h3><p>I really like <a href=https://ohmyz.sh/>Oh My Zsh</a>, but I don't like zsh shell. When
+I used it, I constantly needed to be aware of it and running bash scripts was a
+pain. So, I was really delighted when I found out that a version for bash
+existed called <a href=https://ohmybash.nntoan.com/>Oh My Bash</a>. Let's take a look at
+the recipe for installing it.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># ohmybash</span>
+</span></span><span style=display:flex><span>print_header <span style=color:#a31515>&#34;Enabling OhMyBash&#34;</span>
+</span></span><span style=display:flex><span>sudo -u $USERNAME sh -c <span style=color:#a31515>&#34;</span><span style=color:#00f>$(</span>curl -fsSL https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh<span style=color:#00f>)</span><span style=color:#a31515>&#34;</span> &amp;
+</span></span><span style=display:flex><span>T1=<span style=color:#a31515>${</span>!<span style=color:#a31515>}</span>
+</span></span><span style=display:flex><span>wait <span style=color:#a31515>${</span>T1<span style=color:#a31515>}</span>
+</span></span></code></pre><p>Because OhMyBash does <code>exec bash</code> at the end, this traps our script inside
+another shell and our script cannot continue. For that reason, I executed this
+in background. But that presents a new problem. Because this is executed in
+background, we lose track of progress naturally. And that strange trick with
+<code>T1=${!}</code> and <code>wait ${T1}</code> waits for the background process to finish before
+continuing to another task in bash script.<p>Check <a href=https://www.cloudsavvyit.com/12277/how-to-use-multi-threaded-processing-in-bash-scripts/>Multi-Threaded Processing in Bash Scripts</a>
+for more details.<h2 id=conclusion>Conclusion</h2><p>Take a look at
+<a href=https://github.com/mitjafelicijan/dfd-rice/blob/develop/tools/install.sh>https://github.com/mitjafelicijan/dfd-rice/blob/develop/tools/install.sh</a> script
+to get familiar with it. This is just a first iteration and I will continue to
+update it because I need this in my life.<p>The current version boots in 4s to the login prompt, and after you log in, the
+desktop environment loads in 2s. So, its fast, very fast. And on clean boot, I
+measured ~230 MB of RAM usage.<p>And this is how it looks with two terminals side by side. I really like the
+simplicity and clean interface. I will polish the colors and stuff like that,
+but I really do like the results.<p><img src=/assets/dfd-rice/desktop.png alt></div></div></main><footer><hr><div><h3>Want to comment or have something to add?</h3>You can write me an email at
+<a href=mailto:m@mitjafelicijan.com>m@mitjafelicijan.com</a> or catch up
+with me
+<a href=https://telegram.me/mitjafelicijan target=_blank>on Telegram</a>.</div><hr><p>This website does not track you. Content is made available under
+the <a href=https://creativecommons.org/licenses/by/4.0/ target=_blank rel=noreferrer>CC BY 4.0 license</a> unless specified
+otherwise. Blog feed is available as <a href=/index.xml target=_blank>RSS feed</a>.</footer><script src=https://cdn.usefathom.com/script.js data-site=XHQARKXP defer></script>

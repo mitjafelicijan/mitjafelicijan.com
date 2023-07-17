@@ -55,7 +55,8 @@
   </table>
   
   <h2><a name="posts"></a>More long form, ramblings etc</h2>
-  <ul>
+  <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+	<meta itemprop="name" content="Article list">
 	{{ range .Pages }}
 	{{ if eq .Type "post" }}
 	<li><a href="/{{ .RelPermalink }}">{{ .Title }}</a></li>
@@ -65,7 +66,8 @@
 
   <h2><a name="notes"></a>Notes?! Maybe useful</h2>
   <h2></h2>
-  <ul>
+  <ul itemscope itemtype="https://schema.org/SiteNavigationElement">
+	<meta itemprop="name" content="Note list">
 	{{ range .Pages }}
 	{{ if eq .Type "note" }}
 	<li><a href="/{{ .RelPermalink }}">{{ .Title }}</a></li>

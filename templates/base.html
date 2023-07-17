@@ -127,7 +127,7 @@
   <body>
 
 	<header>
-	  <nav class="main">
+	  <nav class="main" itemscope itemtype="http://schema.org/SiteNavigationElement" role="toolbar">
 		<a href="/">Home</a>
 		<a href="https://git.mitjafelicijan.com/" target="_blank">Git</a>
 		<a href="https://files.mitjafelicijan.com/" target="_blank">Files</a>
@@ -139,7 +139,7 @@
 	  {{ block "add-navigation" . }}{{ end }}
 	</header>
 	
-    <main>
+    <main role="main">
       {{ block "content" . }}{{ end }}
     </main>
 

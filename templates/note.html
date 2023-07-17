@@ -4,8 +4,8 @@
 {{ define "description" }}{{ .Page.Summary }}{{ end }}
 
 {{ define "content" }}
-<div>
-  <h1>{{ .Page.Title }}</h1>
+<article itemtype="http://schema.org/Article">
+  <h1 itemtype="headline">{{ .Page.Title }}</h1>
   <p><cap>{{ .Page.Type }}</cap>, {{ .Page.Created.Format "Jan 2, 2006" }}</p>
   <div>
 	{{ .Page.HTML }}

@@ -15,3 +15,7 @@ extras:
     url: index.xml
   - template: notes.xml
     url: notes.xml
+  - template: robots.txt
+    url: robots.txt
+  - template: sitemap.xml
+    url: sitemap.xml

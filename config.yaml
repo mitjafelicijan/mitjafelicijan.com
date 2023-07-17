@@ -19,3 +19,5 @@ extras:
     url: robots.txt
   - template: sitemap.xml
     url: sitemap.xml
+  - template: radio.pls
+    url: radio.pls

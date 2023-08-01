@@ -10,18 +10,34 @@ Install pip requirements.
 
 ```sh
 pip install matplotlib
-pip install numpy
 pip install pandas
 ```
 
-Now execute the script.
+Example of data being used.
+
+```csv
+Epoch,Connect (NLB),Processing (NLB),Waiting (NLB),Total (NLB),Connect (ALB),Processing (ALB),Waiting (ALB),Total (ALB)
+1,57.7,315.7,309.4,321.6,9,104.4,98.3,105.7
+2,121.9,114.4,100.3,176.9,5.8,99.1,97.1,101.1
+3,5.3,229.4,231.2,231.4,14.2,83,69.4,87.9
+4,4.2,134.5,112.2,135.3,5.3,132.4,105.5,134.1
+5,5.8,247.4,246.8,248.1,6,74.3,70.2,75.5
+6,9.9,122.9,100.6,122.7,7.5,241.1,79.3,242.3
+7,6.1,170.2,106.4,170.5,7.2,382.4,375.1,383.8
+8,6.6,194.3,201.4,195.5,7.1,130.9,104.8,132.6
+9,6.4,146.1,122.3,147.7,9.4,95.6,74,96.4
+```
+
+In the code you can use `df` as dataframes and use the headers like `df["Epoch"]`.
+This is how you get a column data with pandas.
+
+The Python code responsible for generating a chart:
 
 ```python
 import csv
 import sys
 
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 
 # Read the data
@@ -49,3 +65,5 @@ plt.savefig("plot.svg", format="svg")
 ```
 
 ![SVG Chart](/notes/plot.svg)
+
+The image above is SVG and you can zoom in and out and check that the image is vector.

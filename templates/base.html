@@ -16,10 +16,11 @@
 	<style>
 	  body {
           padding: 1rem;
-          max-width: 760px;
+          max-width: 700px;
           background: white;
-		  font-family: "Times New Roman", Times, serif;
+		  font-family: sans-serif;
           line-height: 1.35rem;
+		  font-size: 16px;
 	  }
 
 	  hr {
@@ -55,6 +56,14 @@
 		  background: #eee;
 	  }
 
+	  ul.list li {
+		  padding: 0.2em 0;
+	  }
+
+	  ul {
+		  line-height: 1.4em;
+	  }
+
 	  td, th {
           border: 1px solid black;
           padding: 4px;
@@ -66,15 +75,14 @@
 	  pre {
           text-wrap: nowrap;
           overflow-x: auto;
-          margin-block-start: 1.5rem;
-          margin-block-end: 1.5rem;
-          padding: 0.5rem 0;
-          border-top: 1px solid #aaa;
-          border-bottom: 1px solid #aaa;
+		  padding: 0 1em;
+		  background: whitesmoke;
 	  }
 
 	  code {
-		  background: #f6f6f6;
+		  background: #fff0e3;
+		  padding: 0 3px;
+		  font-size: 14px;
 	  }
 
 	  pre code {
@@ -84,7 +92,6 @@
 
 	  pre, code, pre *, code * {
 		  font-family: monospace;
-		  font-size: initial !important;
 	  }
 
 	  img, video, audio {
@@ -113,6 +120,10 @@
 	  }
 
 	  @media only screen and (max-width: 600px) {
+		  body {
+			  padding: 5px;
+		  }
+		  
 		  header {
 			  flex-direction: column;
 			  gap: 1rem;
@@ -161,7 +172,5 @@
 		target="_blank">RSS feed</a>.
 	  </p>
 	</footer>
-
-	<script src="https://cdn.usefathom.com/script.js" data-site="XHQARKXP" defer></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ pip install pandas
 
 Example of data being used.
 
-```csv
+```text
 Epoch,Connect (NLB),Processing (NLB),Waiting (NLB),Total (NLB),Connect (ALB),Processing (ALB),Waiting (ALB),Total (ALB)
 1,57.7,315.7,309.4,321.6,9,104.4,98.3,105.7
 2,121.9,114.4,100.3,176.9,5.8,99.1,97.1,101.1

@@ -45,6 +45,7 @@ df = pd.read_csv("data.csv")
 
 # Settings
 plt.title("Connect median NLB vs ALB")
+plt.tight_layout(pad=2)
 fig = plt.gcf()
 fig.set_size_inches(10, 4)
 

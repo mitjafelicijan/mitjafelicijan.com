@@ -30,6 +30,7 @@ supported languages is not extensive, but it's still impressive.  It's a great
 example of how to create a product that stays out of your way.
 
 ![Zed editor](/posts/zed/zed-1.png?style=bigimg)
+C code on a light theme.
 
 For C development it downloaded [clangd](https://clangd.llvm.org/) and setting
 up missing dependencies in code was rather easy. For this project I use

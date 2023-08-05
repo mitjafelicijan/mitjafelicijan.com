@@ -21,7 +21,7 @@ If you are using MacOS you should check out [Profiling
 Viewer](http://www.profilingviewer.com/) or
 [MacCallGrind](http://www.maccallgrind.com/).
 
-![KCachegrind](/assets/python-profiling/kcachegrind.png)
+![KCachegrind](/posts/python-profiling/kcachegrind.png)
 
 We will be dividing this post into two main categories:
 
@@ -146,7 +146,7 @@ will be using Profilling Viewer under MacOS. You can open image in new tab.  As
 you can see from this example there is hierarchy of execution order of your
 code.
 
-![Profilling Viewer](/assets/python-profiling/profiling-viewer.png)
+![Profilling Viewer](/posts/python-profiling/profiling-viewer.png)
 
 > Make sure you convert output of the cProfile output every time you want to
 refresh and take a look at your possible optimizations because cProfile updates
@@ -177,7 +177,7 @@ $ snakeviz awesome_random_number.prof
 # shows visualized profile
 ```
 
-![SnakeViz](/assets/python-profiling/snakeviz.png)
+![SnakeViz](/posts/python-profiling/snakeviz.png)
 
 Reddit user [ccharles](https://www.reddit.com/user/ccharles) suggested a better
 way for installing pip software by targeting user level instead of using sudo.

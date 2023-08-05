@@ -62,5 +62,5 @@ procedure. You can feel your sanity breaking down.
 I also made this little cow animation. Go into full screen to see the effects in
 more details.
 
-<video src="/assets/microsoundtrack/cow.m4v" controls loop></video>
+<video src="/posts/microsoundtrack/cow.m4v" controls loop></video>
 

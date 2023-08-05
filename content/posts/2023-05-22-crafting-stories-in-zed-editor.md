@@ -29,7 +29,7 @@ server)](https://en.wikipedia.org/wiki/Language_Server_Protocol).  The list of
 supported languages is not extensive, but it's still impressive.  It's a great
 example of how to create a product that stays out of your way.
 
-![Zed editor](/assets/zed/zed-1.png?style=bigimg)
+![Zed editor](/posts/zed/zed-1.png?style=bigimg)
 
 For C development it downloaded [clangd](https://clangd.llvm.org/) and setting
 up missing dependencies in code was rather easy. For this project I use
@@ -70,7 +70,7 @@ marketing speak there but the product is still amazing!
 For me the speed and the simplicity of the product was the most impressive 
 thing. You get that: it just works feeling. A rare thing in 2023.
 
-![Zed editor](/assets/zed/zed-2.png?style=bigimg)
+![Zed editor](/posts/zed/zed-2.png?style=bigimg)
 
 They also managed to add [Github Copilot](https://github.com/features/copilot)
 in a non obtrusive way. To me, everything feels very intentional and

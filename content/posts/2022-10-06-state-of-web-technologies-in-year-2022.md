@@ -65,7 +65,7 @@ call them [transpilers](https://devopedia.org/transpiler), and I don’t care! �
 And if you want to fight this, take a look at this little chart and be mad at
 it!
 
-![Compiling vs Transpiling](/assets/state-of-web/compiling-vs-transpiling.png)
+![Compiling vs Transpiling](/posts/state-of-web/compiling-vs-transpiling.png)
 
 The first one that I ever used was [webpack](https://webpack.js.org/), and it
 was an absolute horrific experience. Saying this, it is an absolutely fantastic
@@ -202,7 +202,7 @@ six months. There is elegance in simplicity.
 > (and even more revolutionary) framework pops up to usurp the throne.
 > — Ian Allen
 
-![To many options](/assets/state-of-web/2008-vs-2020.png)
+![To many options](/posts/state-of-web/2008-vs-2020.png)
 
 And this jab at these libraries and cloud providers is not done out of malice.
 It is a real concern that I have about them. In my life, I have seen

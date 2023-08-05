@@ -6,14 +6,14 @@ type: post
 draft: false
 ---
 
-<video src="/assets/floods/IMG_1471.mp4" controls></video>
+<video src="/posts/floods/IMG_1471.mp4" controls></video>
 
-<video src="/assets/floods/IMG_1474.mp4" controls></video>
+<video src="/posts/floods/IMG_1474.mp4" controls></video>
 
-![](/assets/floods/IMG_1469.webp)
+![](/posts/floods/IMG_1469.webp)
 
-![](/assets/floods/IMG_1470.webp)
+![](/posts/floods/IMG_1470.webp)
 
-<video src="/assets/floods/IMG_1461.mp4" controls></video>
+<video src="/posts/floods/IMG_1461.mp4" controls></video>
 
-<video src="/assets/floods/IMG_1466.mp4" controls></video>
+<video src="/posts/floods/IMG_1466.mp4" controls></video>

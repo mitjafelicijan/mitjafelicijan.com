@@ -17,7 +17,7 @@ draft: false
 
 <div class="cv-picture">
 
-![](/assets/cv/avatar.gif)
+![](/posts/cv/avatar.gif)
 
 </div>
 

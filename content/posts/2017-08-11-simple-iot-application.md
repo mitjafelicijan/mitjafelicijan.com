@@ -50,7 +50,7 @@ to API and another to serving HTML with chart.
 Schema below represents what we will try to achieve and how different parts
 correlates to each other.
 
-![Overview](/assets/iot-application/simple-iot-application-overview.svg)
+![Overview](/posts/iot-application/simple-iot-application-overview.svg)
 
 ## Simple Python API
 
@@ -218,12 +218,12 @@ available via POST method on /api route.
 After testing the service with Restlet Client you should be able to view your
 data in a database file ```data.db```.
 
-![REST settings example](/assets/iot-application/iot-rest-example.png)
+![REST settings example](/posts/iot-application/iot-rest-example.png)
 
 You can also check the contents of new database file by using desktop client 
 for SQLite → [DB Browser for SQLite](http://sqlitebrowser.org/).
 
-![SQLite database example](/assets/iot-application/iot-sqlite-db.png)
+![SQLite database example](/posts/iot-application/iot-sqlite-db.png)
 
 Table structure is as simple as it can be. We have ts (timestamp) and value
 (value from Arduino). As you can see timestamp is generated on API side. If you
@@ -585,10 +585,10 @@ every 5 seconds.
 If you navigate to ```http://0.0.0.0:5000``` you should see rendered chart as
 shown on picture below.
 
-![Application output](/assets/iot-application/iot-app-output.png)
+![Application output](/posts/iot-application/iot-app-output.png)
 
 Complete application with all the code is available for
-[download](/assets/iot-application/simple-iot-application.zip).
+[download](/posts/iot-application/simple-iot-application.zip).
 
 ## Conclusion
 

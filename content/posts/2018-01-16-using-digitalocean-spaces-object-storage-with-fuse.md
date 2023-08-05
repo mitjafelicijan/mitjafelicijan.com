@@ -55,7 +55,7 @@ Instuctions on how to use SSH keys and how to setup them are available in
 article [How To Use SSH Keys with DigitalOcean
 Droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
 
-![DigitalOcean Droplets](/assets/do-fuse/fuse-droplets.png)
+![DigitalOcean Droplets](/posts/do-fuse/fuse-droplets.png)
 
 After we created Droplet it's time to create new Space. This is done by clicking
 on a button [Create](https://cloud.digitalocean.com/spaces/new) (right top
@@ -68,7 +68,7 @@ key](https://cloud.digitalocean.com/settings/api/tokens).  This link will guide
 to the page when you can generate this key. After you create new one, please
 save provided Key and Secret because Secret will not be shown again.
 
-![DigitalOcean Spaces](/assets/do-fuse/fuse-spaces.png)
+![DigitalOcean Spaces](/posts/do-fuse/fuse-spaces.png)
 
 Now that we have new Space and Access key we should SSH into our machine.
 
@@ -147,7 +147,7 @@ please send me your data. I would be interested in seeing results.
 
 **Here are plotted results**
 
-You can download [raw result here](/assets/do-fuse/copy-benchmarks.tsv). 
+You can download [raw result here](/posts/do-fuse/copy-benchmarks.tsv). 
 Measurements are in seconds.
 
 <script src="//cdn.plot.ly/plotly-latest.min.js"></script>
@@ -155,7 +155,7 @@ Measurements are in seconds.
 <script>
 (function(){
 	var request = new XMLHttpRequest();
-	request.open("GET", "/assets/do-fuse/copy-benchmarks.tsv", true);
+	request.open("GET", "/posts/do-fuse/copy-benchmarks.tsv", true);
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			var payload = request.responseText.trim();
@@ -271,7 +271,7 @@ result_time = CLOSE = end_time - start_time
 print("CLOSE: %g seconds" % (result_time))
 ```
 
-You can download [raw result here](/assets/do-fuse/sqlite-benchmarks.tsv). And 
+You can download [raw result here](/posts/do-fuse/sqlite-benchmarks.tsv). And 
 again, these results are done on a local block storage and do not represent 
 capabilities of object storage. With my current approach and state of the test 
 code these can not be done. I would need to make Python code much more robust 
@@ -281,7 +281,7 @@ and check locking etc.
 <script>
 (function(){
 	var request = new XMLHttpRequest();
-	request.open("GET", "/assets/do-fuse/sqlite-benchmarks.tsv", true);
+	request.open("GET", "/posts/do-fuse/sqlite-benchmarks.tsv", true);
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			var payload = request.responseText.trim();

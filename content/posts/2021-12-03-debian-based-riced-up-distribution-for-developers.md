@@ -76,35 +76,35 @@ Fonts being applied across the distro and things like that.
 First, I choose terminal installer and left it to load additional components.
 Avoid using graphical installer in this case.
 
-![](/assets/dfd-rice/install-00.png)
+![](/posts/dfd-rice/install-00.png)
 
 After that I selected hostname and created a normal user and set password for
 that user and root user and choose guided mode for disk partitioning.
 
-![](/assets/dfd-rice/install-01.png)
+![](/posts/dfd-rice/install-01.png)
 
 I left it run to install all the things required for the base system and opted
 out of scanning additional media for use by the package manager. Those will be
 downloaded from the internet during installation.
 
-![](/assets/dfd-rice/install-02.png)
+![](/posts/dfd-rice/install-02.png)
 
 I opted out of the popularity contest, and **now comes the important part**.
 Uncheck all the boxes in Software selection and only leave 'standard system
 utilities'. I also left an SSH server, so I was able to log in to the machine
 from my main PC.
 
-![](/assets/dfd-rice/install-03.png)
+![](/posts/dfd-rice/install-03.png)
 
 At this point, I installed GRUB bootloader on the disk where I installed the
 system.
 
-![](/assets/dfd-rice/install-04.png)
+![](/posts/dfd-rice/install-04.png)
 
 That concluded the installation of base Debian and after restarting the computer
 I was prompted with the login screen.
 
-![](/assets/dfd-rice/install-05.png)
+![](/posts/dfd-rice/install-05.png)
 
 Now that I had the base installation, it was time to choose what software do I
 want to include in this so-called distribution. I wanted out of the box
@@ -141,7 +141,7 @@ What I was doing in Gnome was having windows in a layout like the diagram
 below. This is my common practice. And if you look at it you can clearly see I
 was replicating tiling window manager setup in Gnome.
 
-![](/assets/dfd-rice/layout.png)
+![](/posts/dfd-rice/layout.png)
 
 That made me look into a bunch of tiling window managers and then tested them
 out. Candidates I was looking at were:
@@ -211,7 +211,7 @@ something similar.
 
 This is some of the output from the installation script.
 
-![](/assets/dfd-rice/script.png)
+![](/posts/dfd-rice/script.png)
 
 Let's take a look at some examples in the installation script.
 
@@ -273,4 +273,4 @@ And this is how it looks with two terminals side by side. I really like the
 simplicity and clean interface. I will polish the colors and stuff like that,
 but I really do like the results.
 
-![](/assets/dfd-rice/desktop.png)
+![](/posts/dfd-rice/desktop.png)

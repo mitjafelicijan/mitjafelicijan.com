@@ -29,6 +29,9 @@ File8=http://streams.fluxfm.de/80er/mp3-320
 Title9=Roots Legacy Radio Dub
 File9=http://l.rootslegacy.fr/
 
+Title10=Ambiental
+File10=http://radio.stereoscenic.com/ama-h
+
 #Title6=
 #File6=
 

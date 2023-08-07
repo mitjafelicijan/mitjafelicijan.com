@@ -99,7 +99,7 @@ So, we end up with a result like this.
 And for the enclosure that can be 3D printed, but I haven't yet something like
 this can be used.
 
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fmitjafelicijan.com%2Fassets%2Fworld-clock%2Fenclosure.stl&color=gray&bgcolor=white&edges=no&orientation=front&noborder=no" style="border:0;margin:0;width:100%;height:400px;"></iframe>
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=https%3A%2F%2Fmitjafelicijan.com%2Fposts%2Fworld-clock%2Fenclosure.stl&color=gray&bgcolor=white&edges=no&orientation=front&noborder=no" style="border:0;margin:0;width:100%;height:400px;"></iframe>
 
 You can download my [STL file for the enclosure
 here](/posts/world-clock/enclosure.stl), but make sure that dimensions make

@@ -5,7 +5,8 @@ language: "en-us"
 
 # Code highlighting.
 # https://swapoff.org/chroma/playground/
-highlighting: "pygments"
+# highlighting: "pygments"
+highlighting: "vs"
 
 # Minifies output HTML (including inline CSS, JS).
 minify: true

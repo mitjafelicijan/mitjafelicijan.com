@@ -1,0 +1,110 @@
+<!doctype html><html lang=en-us><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA==" rel=icon type=image/x-icon><title>Getting started with MicroPython and ESP8266</title><meta name=description content="IntroductionA while ago I bought someESP8266 andESP32 dev boards to playaround with and I finally found a project to try it out."><link rel=alternate type=application/rss+xml title="Mitja Felicijan's posts" href=https://mitjafelicijan.com/index.xml><link rel=alternate type=application/rss+xml title="Mitja Felicijan's notes" href=https://mitjafelicijan.com/notes.xml><style>body{padding:1rem;max-width:760px;background:#fff;font-family:sans-serif;line-height:1.35rem;font-size:16px;margin:0 auto}hr{margin-block-start:1.5rem}h1,h2,h3{line-height:initial}h1{font-size:xx-large}footer{margin-block-start:2rem}cap{text-transform:capitalize}table{max-width:100%;width:100%;border-collapse:separate;border-spacing:2px;border:1px solid #000;border-left:1px solid #999;border-top:1px solid #999}blockquote{font-style:italic}table thead{background:#eee}ul.list li{padding:.2em 0}ul{line-height:1.4em}td,th{border:1px solid #000;padding:4px;border-right:1px solid #999;border-bottom:1px solid #999;text-align:left}pre{text-wrap:nowrap;overflow-x:auto;padding:0 1em;border:1px solid #dcdcdc}code{padding:0 3px;font-size:14px;border:0}pre code{line-height:1.3em}pre,code,pre *,code *{font-family:monospace}figure{margin-inline-start:0;margin-inline-end:0}figcaption{text-align:center}figcaption p{margin:.3em 0 0}img,video,audio{max-width:100%}header{display:flex;flex-direction:row;gap:3rem}nav{display:flex;gap:.75rem}nav.main{flex-grow:1}.pstatus-orange{background:gold}.pstatus-green{background:#9acd32}.pstatus-red{background:#cd5c5c}@media only screen and (max-width:600px){body{padding:15px}header{flex-direction:column;gap:1rem}a{word-wrap:break-word}}</style><header><nav class=main itemscope itemtype=http://schema.org/SiteNavigationElement role=toolbar><a href=/>Home</a>
+<a href=https://git.mitjafelicijan.com/ target=_blank>Git</a>
+<a href=https://files.mitjafelicijan.com/ target=_blank>Files</a>
+<a href=/radio.pls target=_blank>Radio</a>
+<a href=/mitjafelicijan.pgp.pub.txt target=_blank>PGP</a>
+<a href=/curriculum-vitae.html>CV</a>
+<a href=/index.xml target=_blank>RSS</a></nav></header><main role=main><article itemtype=http://schema.org/Article><h1 itemtype=headline>Getting started with MicroPython and ESP8266</h1><p><cap>post</cap>, Sep 6, 2020 on <a href=https://mitjafelicijan.com>Mitja Felicijan's blog</a><div><h2 id=introduction>Introduction</h2><p>A while ago I bought some
+<a href=https://www.espressif.com/en/products/socs/esp8266>ESP8266</a> and
+<a href=https://www.espressif.com/en/products/socs/esp32>ESP32</a> dev boards to play
+around with and I finally found a project to try it out.<p>For my project, I used <a href=https://www.espressif.com/en/products/socs/esp32>ESP32</a>
+but I could easily choose
+<a href=https://www.espressif.com/en/products/socs/esp8266>ESP8266</a>. This guide
+contains which tools I use and how I prepared my workspace to code for
+<a href=https://www.espressif.com/en/products/socs/esp8266>ESP8266</a>.<figure><img src=/posts/esp8366-micropython/boards.jpg alt="ESP8266 and ESP32 boards"></figure><p>This guide covers:<ul><li>flashing SOC<li>install proper tooling<li>deploying a simple script</ul><blockquote><p>Make sure that you are using <strong>a good USB cable</strong>. I had some problems with
+mine and once I replaced it everything started to work.</blockquote><h2 id=flashing-the-soc>Flashing the SOC</h2><p>Plug your ESP8266 to USB port and check if the device was recognized with
+executing <code>dmesg | grep ch341-uart</code>.<p>Then check if the device is available under <code>/dev/</code> by running <code>ls /dev/ttyUSB*</code>.<blockquote><p><strong>Linux users</strong>: if a device is not available be sure you are in <code>dialout</code>
+group. You can check this by executing <code>groups $USER</code>. You can add a user to
+<code>dialout</code> group with <code>sudo adduser $USER dialout</code>.</blockquote><p>After these conditions are meet go to the navigate to
+<a href=https://micropython.org/download/esp8266/>https://micropython.org/download/esp8266/</a>
+and download <code>esp8266-20200902-v1.13.bin</code>.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>mkdir esp8266-test
+</span></span><span style=display:flex><span>cd esp8266-test
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>wget https://micropython.org/resources/firmware/esp8266-20200902-v1.13.bin
+</span></span></code></pre><p>After obtaining firmware we will need some tooling to flash the firmware to the
+board.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>sudo pip3 install esptool
+</span></span></code></pre><p>You can read more about <code>esptool</code> at
+<a href=https://github.com/espressif/esptool/>https://github.com/espressif/esptool/</a>.<p>Before flashing the firmware we need to erase the flash on device. Substitute
+<code>USB0</code> with the device listed in output of <code>ls /dev/ttyUSB*</code>.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>esptool.py --port /dev/ttyUSB0 erase_flash
+</span></span></code></pre><p>If flash was successfully erased it is now time to flash the new firmware to it.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 esp8266-20200902-v1.13.bin
+</span></span></code></pre><p>If everything went ok you can try accessing MicroPython REPL with <code>screen /dev/ttyUSB0 115200</code> or <code>picocom /dev/ttyUSB0 -b115200</code>.<blockquote><p>Sometimes you will need to press <code>ENTER</code> in <code>screen</code> or <code>picocom</code> to access
+REPL.</blockquote><p>When you are in REPL you can test if all is working properly following steps.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>&gt; <span style=color:#00f>import</span> machine
+</span></span><span style=display:flex><span>&gt; machine.freq()
+</span></span></code></pre><p>This should output a number representing a frequency of the CPU (mine was
+<code>80000000</code>).<p>When you are in <code>screen</code> or <code>picocom</code> these can help you a bit.<table><thead><tr><th>Key<th>Command<tbody><tr><td>CTRL+d<td>preforms soft reboot<tr><td>CTRL+a x<td>exits picocom<tr><td>CTRL+a \<td>exits screen</table><h2 id=install-better-tooling>Install better tooling</h2><p>Now, to make our lives a little bit easier there are couple of additional tools
+that will make this whole experience a little more bearable.<p>There are twq cool ways of uploading local files to SOC flash.<ul><li>ampy → <a href=https://github.com/scientifichackers/ampy>https://github.com/scientifichackers/ampy</a><li>rshell → <a href=https://github.com/dhylands/rshell>https://github.com/dhylands/rshell</a></ul><h3 id=ampy>ampy</h3><pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># installing ampy</span>
+</span></span><span style=display:flex><span>sudo pip3 install adafruit-ampy
+</span></span></code></pre><p>Listed below are some common commands I used.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># uploads file to flash</span>
+</span></span><span style=display:flex><span>ampy --delay 2 --port /dev/ttyUSB0 put boot.py
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># lists file on flash</span>
+</span></span><span style=display:flex><span>ampy --delay 2 --port /dev/ttyUSB0 ls
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># outputs contents of file on flash</span>
+</span></span><span style=display:flex><span>ampy --delay 2 --port /dev/ttyUSB0 cat boot.py
+</span></span></code></pre><blockquote><p>I added <code>delay</code> of 2 seconds because I had problems with executing commands.</blockquote><h3 id=rshell>rshell</h3><p>Even though <code>ampy</code> is a cool tool I opted with <code>rshell</code> in the end since it's
+much more polished and feature rich.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># installing ampy</span>
+</span></span><span style=display:flex><span>sudo pip3 install rshell
+</span></span></code></pre><p>Now that <code>rshell</code> is installed we can connect to the board.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>rshell --buffer-size=30 -p /dev/ttyUSB0 -a
+</span></span></code></pre><p>This will open a shell inside bash and from here you can execute multiple
+commands. You can check what is supported with <code>help</code> once you are inside of a
+shell.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>m@turing ~/Junk/esp8266-test
+</span></span><span style=display:flex><span>$ rshell --buffer-size=30 -p /dev/ttyUSB0 -a
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Using buffer-size of 30
+</span></span><span style=display:flex><span>Connecting to /dev/ttyUSB0 (buffer-size 30)...
+</span></span><span style=display:flex><span>Trying to connect to REPL  connected
+</span></span><span style=display:flex><span>Testing <span style=color:#00f>if</span> ubinascii.unhexlify exists ... Y
+</span></span><span style=display:flex><span>Retrieving root directories ... /boot.py/
+</span></span><span style=display:flex><span>Setting time ... Sep 06, 2020 23:54:28
+</span></span><span style=display:flex><span>Evaluating board_name ... pyboard
+</span></span><span style=display:flex><span>Retrieving time epoch ... Jan 01, 2000
+</span></span><span style=display:flex><span>Welcome to rshell. Use Control-D (or the exit command) to exit rshell.
+</span></span><span style=display:flex><span>/home/m/Junk/esp8266-test&gt; help
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Documented commands (type help &lt;topic&gt;):
+</span></span><span style=display:flex><span>========================================
+</span></span><span style=display:flex><span>args    cat  connect  date  edit  filesize  help  mkdir  rm     shell
+</span></span><span style=display:flex><span>boards  cd   cp       echo  exit  filetype  ls    repl   rsync
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Use Control-D (or the exit command) to exit rshell.
+</span></span></code></pre><blockquote><p>Inside a shell <code>ls</code> will display list of files on your machine. To get list
+of files on flash folder <code>/pyboard</code> is remapped inside the shell. To list files
+on flash you must perform <code>ls /pyboard</code>.</blockquote><h4 id=moving-files-to-flash>Moving files to flash</h4><p>To avoid copying files all the time I used <code>rsync</code> function from the inside of
+<code>rshell</code>.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>rsync . /pyboard
+</span></span></code></pre><h4 id=executing-scripts>Executing scripts</h4><p>It is a pain to continuously reboot the device to trigger <code>/pyboard/boot.py</code> and
+there is a better way of testing local scripts on remote device.<p>Lets assume we have <code>src/freq.py</code> file that displays CPU frequency of a remote
+device.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># src/freq.py</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#00f>import</span> machine
+</span></span><span style=display:flex><span>print(machine.freq())
+</span></span></code></pre><p>Now lets upload this and execute it.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># syncs files to remove device</span>
+</span></span><span style=display:flex><span>rsync ./src /pyboard
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># goes into REPL</span>
+</span></span><span style=display:flex><span>repl
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># we import file by importing it without .py extension and this will run the script</span>
+</span></span><span style=display:flex><span>&gt; import freq
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># CTRL+x will exit REPL</span>
+</span></span></code></pre><h2 id=additional-resources>Additional resources</h2><ul><li><a href=https://randomnerdtutorials.com/getting-started-micropython-esp32-esp8266/>https://randomnerdtutorials.com/getting-started-micropython-esp32-esp8266/</a><li><a href=http://docs.micropython.org/en/latest/esp8266/quickref.html>http://docs.micropython.org/en/latest/esp8266/quickref.html</a></ul></div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://chotrin.org/writing/2023-10-20.html target=_blank rel=noopener>OpenBSD upgrade and fall things.</a><div>Been AFK for a bit. It's autumn and I upgraded this server to OpenBSD 7.4! — <a href=https://chotrin.org>chötrin's wiki.</a><li><a href=https://mirzapandzo.com/next-image-url-parameter-is-valid-but-upstream-response-is-invalid target=_blank rel=noopener>Next/Image "url" parameter is valid but upstream response is invalid</a><div>Getting "url" parameter is valid but upstream response is invalid error with Next/Image on WSL2 — <a href=https://mirzapandzo.com/>Mirza Pandzo's Blog</a><li><a href=https://drewdevault.com/2023/10/13/Going-off-script.html target=_blank rel=noopener>Going off-script</a><div>There is a phenomenon in society which I find quite bizarre. Upon our entry to
+this mortal coil, we are endowed with self-awareness, agency, and free will.
+Each of th… — <a href=https://drewdevault.com>Drew DeVault's blog</a><li><a href=https://solar.lowtechmagazine.com/2023/10/workshop-in-rotterdam-how-to-build-a-bike-generator/ target=_blank rel=noopener>Workshop in Rotterdam: How to Build a Bike Generator</a><div>Afbeelding: Low-tech Magazine workshop in Rotterdam, the Netherlands. Poster: Marie Verdeil. Image: Sara Vercauteren
+The workshop takes place on behalf of the “Hou… — <a href=https://solar.lowtechmagazine.com/posts/>LOW←TECH MAGAZINE English</a><li><a href="http://offbeatpursuit.com:80/blog/?id=24" target=_blank rel=noopener>Printf debugging</a><div>tags:
+plan9
+There’s no shame in that. Yes, there is documentation, code to be
+read, and debuggers to be used. But sometimes you just need to “see”
+what is happening.
+So… — <a href=http://offbeatpursuit.com:80/blog/>WLOG - blog</a><li><a href=https://neil.computer/notes/chart-of-accounts-for-startups-and-saas-companies/ target=_blank rel=noopener>Chart of Accounts for Startups and SaaS Companies</a><div>Accounting is fundamental to starting a business. You need to have a basic understanding of accounting principles and essential bookkeeping. I had to learn it. Ther… — <a href=https://neil.computer/>Neil Panchal</a><li><a href=https://journal.valeriansaliou.name/deploy-a-nomad-cluster-on-alpine-linux-with-vultr/ target=_blank rel=noopener>Deploy a Nomad Cluster on Alpine Linux with Vultr</a><div>After spending countless hours trying to understand how to deploy my apps on Kubernetes for the first time to host Mirage, an AI API service that I run, I ended up … — <a href=https://journal.valeriansaliou.name/>Valerian Saliou</a><li><a href=https://jcs.org/2023/10/17/wikipedia target=_blank rel=noopener>Wikipedia Reader 1.0 Released</a><div>Wikipedia Reader
+1.0 has been released:
+wikipedia-1.0.sit
+(StuffIt 3 archive, includes
+source code
+and THINK C 5 project file)
+SHA256: 360e12d064f6579695f1e627ce34cb2f0… — <a href=https://jcs.org/>joshua stein</a></ul><p><a href=https://git.sr.ht/~sircmpwn/openring>Generated with openring.</a></section><footer><hr><p><big><strong>Want to comment or have something to add?</strong></big><p>You can write me an email
+at <a href=mailto:m@mitjafelicijan.com>m@mitjafelicijan.com</a> or
+catch up with me <a href=https://telegram.me/mitjafelicijan target=_blank>on Telegram</a>.<hr><p>This website does not track you. Content is made available under
+the <a href=https://creativecommons.org/licenses/by/4.0/ target=_blank rel=noreferrer>CC BY 4.0 license</a> unless specified
+otherwise. Blog is also available as <a href=/index.xml target=_blank>RSS feed</a>.</footer>

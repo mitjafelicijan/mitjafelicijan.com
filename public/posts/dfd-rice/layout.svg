@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="210mm" height="297mm" viewBox="0 0 210 297" version="1.1" id="svg5" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)" sodipodi:docname="layout.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+   <sodipodi:namedview id="namedview7" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:document-units="mm" showgrid="false" inkscape:zoom="0.08" inkscape:cx="1143.75" inkscape:cy="1893.75" inkscape:window-width="2305" inkscape:window-height="752" inkscape:window-x="873" inkscape:window-y="136" inkscape:window-maximized="0" inkscape:current-layer="layer1" />
+   <defs id="defs2" />
+   <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+      <g id="g2012" inkscape:export-filename="/home/m/Vault/projects/mitjafelicijan.com/dfd-rice/layout.png" inkscape:export-xdpi="6.6072011" inkscape:export-ydpi="6.6072011">
+         <rect style="fill:#e6e6e6;stroke:#303030;stroke-width:0.447874;stroke-linecap:round;stroke-linejoin:miter;paint-order:stroke fill markers" id="rect1454" width="1360.1339" height="1074.3162" x="-360.50458" y="-265.69751" ry="0" />
+         <rect style="fill:#e6e6e6;stroke:#303030;stroke-width:0.261189;stroke-linecap:round;stroke-linejoin:miter;paint-order:stroke fill markers" id="rect1456" width="1058.4567" height="469.50305" x="1025.9943" y="-265.79086" ry="0" />
+         <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:51.606px;line-height:1.25;font-family:sans-serif;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1.29015" x="1407.4224" y="-12.228849" id="text7667-3">
+            <tspan sodipodi:role="line" id="tspan7665-6" style="font-weight:bold;stroke-width:1.29015;fill:#4d4d4d" x="1407.4224" y="-12.228849">TERMINAL</tspan>
+         </text>
+         <rect style="fill:#e6e6e6;stroke:#303030;stroke-width:0.289748;stroke-linecap:round;stroke-linejoin:miter;paint-order:stroke fill markers" id="rect1458" width="1058.4564" height="577.78894" x="1028.7416" y="230.8085" ry="0" />
+         <rect style="fill:#e6e6e6;stroke:#303030;stroke-width:0.447874;stroke-linecap:round;stroke-linejoin:miter;paint-order:stroke fill markers" id="rect135" width="1360.1339" height="1074.3162" x="-1747.0968" y="-265.69751" ry="0" />
+         <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:51.606px;line-height:1.25;font-family:sans-serif;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1.29015" x="-1214.8931" y="290.24585" id="text3280">
+            <tspan sodipodi:role="line" id="tspan3278" style="font-weight:bold;stroke-width:1.29015;fill:#4d4d4d" x="-1214.8931" y="290.24585">BROWSER</tspan>
+         </text>
+         <rect style="fill:none;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" id="rect31" width="3834.2903" height="1074.2903" x="-1747.0922" y="-265.69287" ry="0" />
+         <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:51.606px;line-height:1.25;font-family:sans-serif;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1.29015" x="121.84438" y="290.24585" id="text7667">
+            <tspan sodipodi:role="line" id="tspan7665" style="font-weight:bold;stroke-width:1.29015;fill:#4d4d4d" x="121.84438" y="290.24585">CODE EDITOR</tspan>
+         </text>
+         <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:51.606px;line-height:1.25;font-family:sans-serif;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:1.29015" x="1410.1696" y="538.51349" id="text12264">
+            <tspan sodipodi:role="line" id="tspan12262" style="font-weight:bold;stroke-width:1.29015;fill:#4d4d4d" x="1410.1696" y="538.51349">TERMINAL</tspan>
+         </text>
+      </g>
+   </g>
+</svg>

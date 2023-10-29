@@ -1,0 +1,110 @@
+<!doctype html><html lang=en-us><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA==" rel=icon type=image/x-icon><title>Using GoAccess with Nginx to replace Google Analytics</title><meta name=description content="IntroductionI know!"><link rel=alternate type=application/rss+xml title="Mitja Felicijan's posts" href=https://mitjafelicijan.com/index.xml><link rel=alternate type=application/rss+xml title="Mitja Felicijan's notes" href=https://mitjafelicijan.com/notes.xml><style>body{padding:1rem;max-width:760px;background:#fff;font-family:sans-serif;line-height:1.35rem;font-size:16px;margin:0 auto}hr{margin-block-start:1.5rem}h1,h2,h3{line-height:initial}h1{font-size:xx-large}footer{margin-block-start:2rem}cap{text-transform:capitalize}table{max-width:100%;width:100%;border-collapse:separate;border-spacing:2px;border:1px solid #000;border-left:1px solid #999;border-top:1px solid #999}blockquote{font-style:italic}table thead{background:#eee}ul.list li{padding:.2em 0}ul{line-height:1.4em}td,th{border:1px solid #000;padding:4px;border-right:1px solid #999;border-bottom:1px solid #999;text-align:left}pre{text-wrap:nowrap;overflow-x:auto;padding:0 1em;border:1px solid #dcdcdc}code{padding:0 3px;font-size:14px;border:0}pre code{line-height:1.3em}pre,code,pre *,code *{font-family:monospace}figure{margin-inline-start:0;margin-inline-end:0}figcaption{text-align:center}figcaption p{margin:.3em 0 0}img,video,audio{max-width:100%}header{display:flex;flex-direction:row;gap:3rem}nav{display:flex;gap:.75rem}nav.main{flex-grow:1}.pstatus-orange{background:gold}.pstatus-green{background:#9acd32}.pstatus-red{background:#cd5c5c}@media only screen and (max-width:600px){body{padding:15px}header{flex-direction:column;gap:1rem}a{word-wrap:break-word}}</style><header><nav class=main itemscope itemtype=http://schema.org/SiteNavigationElement role=toolbar><a href=/>Home</a>
+<a href=https://git.mitjafelicijan.com/ target=_blank>Git</a>
+<a href=https://files.mitjafelicijan.com/ target=_blank>Files</a>
+<a href=/radio.pls target=_blank>Radio</a>
+<a href=/mitjafelicijan.pgp.pub.txt target=_blank>PGP</a>
+<a href=/curriculum-vitae.html>CV</a>
+<a href=/index.xml target=_blank>RSS</a></nav></header><main role=main><article itemtype=http://schema.org/Article><h1 itemtype=headline>Using GoAccess with Nginx to replace Google Analytics</h1><p><cap>post</cap>, Jan 25, 2021 on <a href=https://mitjafelicijan.com>Mitja Felicijan's blog</a><div><h2 id=introduction>Introduction</h2><p>I know! You cannot simply replace Google Analytics with parsing access logs and
+displaying a couple of charts. But to be honest, I actually never used Google
+Analytics to the fullest extent and was usually interested in seeing page hits
+and which pages were visited most often.<p>I recently moved my blog from Firebase to a VPS and also decided to remove
+Google Analytics tracking code from the site since its quite malicious and
+tracks users across other pages also and is creating a profile of a user, and
+I've had it. But I also need some insight of what is happening on a server and
+which content is being read the most etc.<p>I have looked at many existing solutions like:<ul><li><a href=https://umami.is/>Umami</a><li><a href=https://github.com/sheshbabu/freshlytics>Freshlytics</a><li><a href=https://matomo.org/>Matomo</a></ul><p>But the more I looked at them the more I noticed that I am replacing one evil
+with another one. Don't get me wrong. Some of these solutions are absolutely
+fantastic but would require installation of databases and something like PHP or
+Node. And I was not ready to put those things on my fresh server. Also having
+Docker installed is out of the question.<h2 id=opting-for-log-parsing>Opting for log parsing</h2><p>So, I defaulted to parsing already existing logs and generating HTML reports
+from this data.<p>I found this amazing software <a href=https://goaccess.io/>GoAccess</a> which provides
+all the functionalities I need, and it's a single binary. Written in Go.<p>GoAccess can be used in two different modes.<figure><img src=/posts/goaccess/goaccess-dash-term.png alt="GoAccess Terminal"></figure><center><i>Running in a terminal</i></center><figure><img src=/posts/goaccess/goaccess-dash-html.png alt="GoAccess HTML"></figure><center><i>Running in a browser</i></center><p>I, however, need this to run in a browser. So, the second option is the way to
+go. The Idea is to periodically run cronjob and export this report into a folder
+that gets then server by Nginx behind a Basic authentication.<h2 id=getting-nginx-ready>Getting Nginx ready</h2><p>I choose Ubuntu on <a href=https://www.digitalocean.com/>DigitalOcean</a>. First I
+installed <a href=https://nginx.org/en/>Nginx</a>, and
+<a href=https://letsencrypt.org/getting-started/>Letsencrypt</a> certbot and all the
+necessary dependencies.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># log in as root user</span>
+</span></span><span style=display:flex><span>sudo su -
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># first let&#39;s update the system</span>
+</span></span><span style=display:flex><span>apt update &amp;&amp; apt upgrade -y
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:green># let&#39;s install</span>
+</span></span><span style=display:flex><span>apt install nginx certbot python3-certbot-nginx apache2-utils
+</span></span></code></pre><p>After all this is installed we can create a new configuration for a statistics.
+Stats will be available at <code>stats.domain.com</code>.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># creates directory where html will be hosted</span>
+</span></span><span style=display:flex><span>mkdir -p /var/www/html/stats.domain.com
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>cp /etc/nginx/sites-available/default /etc/nginx/sites-available/stats.domain.com
+</span></span><span style=display:flex><span>nano /etc/nginx/sites-available/stats.domain.com
+</span></span></code></pre><pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:#00f>server</span> {
+</span></span><span style=display:flex><span>  <span style=color:#00f>root</span> <span style=color:#a31515>/var/www/html/stats.domain.com</span>;
+</span></span><span style=display:flex><span>  <span style=color:#00f>server_name</span> <span style=color:#a31515>stats.domain.com</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#00f>index</span> <span style=color:#a31515>index.html</span>;
+</span></span><span style=display:flex><span>  <span style=color:#00f>location</span> <span style=color:#a31515>/</span> {
+</span></span><span style=display:flex><span>    <span style=color:#00f>try_files</span> $uri $uri/ =404;
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre><p>Now we check if the configuration is ok. We can do this with <code>nginx -t</code>. If all
+is ok, we can restart Nginx with <code>service nginx restart</code>.<p>After all that you should add A record for this domain that points to IP of a
+droplet.<p>Before enabling SSL you should test if DNS records have propagated with <code>curl stats.domain.com</code>.<p>Now, it's time to provision TLS certificate. To achieve this, you execute
+command <code>certbot --nginx</code>. Follow the wizard and when you are asked about
+redirection always choose 2 (always redirect to HTTPS).<p>When this is done you can visit <a href=https://stats.domain.com>https://stats.domain.com</a> and you should get 404
+not found error which is correct.<h2 id=getting-goaccess-ready>Getting GoAccess ready</h2><p>If you are using Debian like system GoAccess should be available in repository.
+Otherwise refer to the official website.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>apt install goaccess
+</span></span></code></pre><p>To enable Geo location we also need one additiona thing.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>cd /var/www/html/stats.stats.com
+</span></span><span style=display:flex><span>wget https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-City.mmdb
+</span></span></code></pre><p>Now we create a shell script that will be executed every 10 minutes.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>nano /var/www/html/stats.domain.com/generate-stats.sh
+</span></span></code></pre><p>Contents of this file should look like this.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:#00f>#!/bin/sh
+</span></span></span><span style=display:flex><span><span style=color:#00f></span>
+</span></span><span style=display:flex><span>zcat -f /var/log/nginx/access.log* &gt; /var/log/nginx/access-all.log
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>goaccess <span style=color:#a31515>\
+</span></span></span><span style=display:flex><span><span style=color:#a31515></span>  --log-file=/var/log/nginx/access-all.log <span style=color:#a31515>\
+</span></span></span><span style=display:flex><span><span style=color:#a31515></span>  --log-format=COMBINED <span style=color:#a31515>\
+</span></span></span><span style=display:flex><span><span style=color:#a31515></span>  --exclude-ip=0.0.0.0 <span style=color:#a31515>\
+</span></span></span><span style=display:flex><span><span style=color:#a31515></span>  --geoip-database=/var/www/html/stats.domain.com/GeoLite2-City.mmdb <span style=color:#a31515>\
+</span></span></span><span style=display:flex><span><span style=color:#a31515></span>  --ignore-crawlers <span style=color:#a31515>\
+</span></span></span><span style=display:flex><span><span style=color:#a31515></span>  --real-os <span style=color:#a31515>\
+</span></span></span><span style=display:flex><span><span style=color:#a31515></span>  --output=/var/www/html/stats.domain.com/index.html
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>rm /var/log/nginx/access-all.log
+</span></span></code></pre><p>Because after a while nginx creates multiple files with access logs we use
+<a href=https://linux.die.net/man/1/zcat><code>zcat</code></a> to extract Gziped contents and create
+a file that has all the access logs. After this file is used we delete it.<p>If you want to exclude your home IP's result look at the <code>--exclude-ip</code> option
+in script and instead of <code>0.0.0.0</code> add your own home IP address. You can find
+your home IP by executing <code>curl ifconfig.me</code> from your local machine and NOT
+from the droplet.<p>Test the script by executing <code>sh /var/www/html/stats.domain.com/generate-stats.sh</code> and then checking
+<code>https://stats.domain.com</code>. If you can see stats instead of 404 than you are
+set.<p>It's time to add this script to cron with <code>cron -e</code>.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span>*/10 * * * * sh /<span style=color:#00f>var</span>/www/html/stats.domain.com/generate-stats.sh
+</span></span></code></pre><h2 id=securing-with-basic-authentication>Securing with Basic authentication</h2><p>You probably don't want stats to be publicly available, so we should create a
+user and a password for Basic authentication.<p>First we create a password for a user <code>stats</code> with <code>htpasswd -c /etc/nginx/.htpasswd stats</code>.<p>Now we update config file with <code>nano /etc/nginx/sites-available/stats.domain.com</code>. You probably noticed that the
+file looks a bit different from before. This is because <code>certbot</code> added
+additional rules for SSL.<p>Your location portion the config file should now look like. You should add
+<code>auth_basic</code> and <code>auth_basic_user_file</code> lines to the file.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:#00f>location</span> <span style=color:#a31515>/</span> {
+</span></span><span style=display:flex><span>  <span style=color:#00f>try_files</span> $uri $uri/ =404;
+</span></span><span style=display:flex><span>  <span style=color:#00f>auth_basic</span> <span style=color:#a31515>&#34;Private</span> <span style=color:#a31515>Property&#34;</span>;
+</span></span><span style=display:flex><span>  <span style=color:#00f>auth_basic_user_file</span> <span style=color:#a31515>/etc/nginx/.htpasswd</span>;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre><p>Test if config is still ok with <code>nginx -t</code> and if it is you can restart Nginx
+with <code>service nginx restart</code>.<p>If you now visit <code>https://stats.domain.com</code> you should be prompted for username
+and password. If not, try reopening your browser.<p>That is all. You now have analytics for your server that gets refreshed every 10
+minutes.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://chotrin.org/writing/2023-10-20.html target=_blank rel=noopener>OpenBSD upgrade and fall things.</a><div>Been AFK for a bit. It's autumn and I upgraded this server to OpenBSD 7.4! — <a href=https://chotrin.org>chötrin's wiki.</a><li><a href=https://mirzapandzo.com/next-image-url-parameter-is-valid-but-upstream-response-is-invalid target=_blank rel=noopener>Next/Image "url" parameter is valid but upstream response is invalid</a><div>Getting "url" parameter is valid but upstream response is invalid error with Next/Image on WSL2 — <a href=https://mirzapandzo.com/>Mirza Pandzo's Blog</a><li><a href=https://drewdevault.com/2023/10/13/Going-off-script.html target=_blank rel=noopener>Going off-script</a><div>There is a phenomenon in society which I find quite bizarre. Upon our entry to
+this mortal coil, we are endowed with self-awareness, agency, and free will.
+Each of th… — <a href=https://drewdevault.com>Drew DeVault's blog</a><li><a href=https://solar.lowtechmagazine.com/2023/10/workshop-in-rotterdam-how-to-build-a-bike-generator/ target=_blank rel=noopener>Workshop in Rotterdam: How to Build a Bike Generator</a><div>Afbeelding: Low-tech Magazine workshop in Rotterdam, the Netherlands. Poster: Marie Verdeil. Image: Sara Vercauteren
+The workshop takes place on behalf of the “Hou… — <a href=https://solar.lowtechmagazine.com/posts/>LOW←TECH MAGAZINE English</a><li><a href="http://offbeatpursuit.com:80/blog/?id=24" target=_blank rel=noopener>Printf debugging</a><div>tags:
+plan9
+There’s no shame in that. Yes, there is documentation, code to be
+read, and debuggers to be used. But sometimes you just need to “see”
+what is happening.
+So… — <a href=http://offbeatpursuit.com:80/blog/>WLOG - blog</a><li><a href=https://neil.computer/notes/chart-of-accounts-for-startups-and-saas-companies/ target=_blank rel=noopener>Chart of Accounts for Startups and SaaS Companies</a><div>Accounting is fundamental to starting a business. You need to have a basic understanding of accounting principles and essential bookkeeping. I had to learn it. Ther… — <a href=https://neil.computer/>Neil Panchal</a><li><a href=https://journal.valeriansaliou.name/deploy-a-nomad-cluster-on-alpine-linux-with-vultr/ target=_blank rel=noopener>Deploy a Nomad Cluster on Alpine Linux with Vultr</a><div>After spending countless hours trying to understand how to deploy my apps on Kubernetes for the first time to host Mirage, an AI API service that I run, I ended up … — <a href=https://journal.valeriansaliou.name/>Valerian Saliou</a><li><a href=https://jcs.org/2023/10/17/wikipedia target=_blank rel=noopener>Wikipedia Reader 1.0 Released</a><div>Wikipedia Reader
+1.0 has been released:
+wikipedia-1.0.sit
+(StuffIt 3 archive, includes
+source code
+and THINK C 5 project file)
+SHA256: 360e12d064f6579695f1e627ce34cb2f0… — <a href=https://jcs.org/>joshua stein</a></ul><p><a href=https://git.sr.ht/~sircmpwn/openring>Generated with openring.</a></section><footer><hr><p><big><strong>Want to comment or have something to add?</strong></big><p>You can write me an email
+at <a href=mailto:m@mitjafelicijan.com>m@mitjafelicijan.com</a> or
+catch up with me <a href=https://telegram.me/mitjafelicijan target=_blank>on Telegram</a>.<hr><p>This website does not track you. Content is made available under
+the <a href=https://creativecommons.org/licenses/by/4.0/ target=_blank rel=noreferrer>CC BY 4.0 license</a> unless specified
+otherwise. Blog is also available as <a href=/index.xml target=_blank>RSS feed</a>.</footer>

@@ -986,43 +986,6 @@ don&#39;t hold back!&lt;/li&gt;
 	
 	
 	<item>
-	  <title>Sane defaults for tmux with more visible statusbar</title>
-	  <link>https://mitjafelicijan.com/tmux-sane-defaults.html</link>
-	  <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/tmux-sane-defaults.html</guid>
-	  <description># Remap prefix from &amp;#39;C-b&amp;#39; to &amp;#39;M-a&amp;#39;.</description>
-	  <content:encoded>&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;# Remap prefix from &#39;C-b&#39; to &#39;M-a&#39;.
-unbind C-b
-set-option -g prefix M-a
-bind-key M-a send-prefix
-
-# Split panes using | and -.
-bind | split-window -h
-bind - split-window -v
-unbind &#39;&amp;quot;&#39;
-unbind %
-
-# Start counting windows with 1.
-set-option -g allow-rename on
-set -g base-index 1
-setw -g pane-base-index 1
-
-# Statusbar: purple bg and white fg.
-set -g status-bg &#39;#480b8e&#39;
-set -g status-fg &#39;#ffffff&#39;
-
-# Active window: black bg and white fg. 
-set -g window-status-current-format &amp;quot;#[fg=#ffffff]#[bg=#111111]#[fg=#ffffff]#[bg=#111111] #I:#W #[fg=#ffffff]#[bg=#111111]&amp;quot;
-
-# Disable mouse mode (tmux 2.1 and above).
-set -g mouse off
-&lt;/code&gt;&lt;/pre&gt;
-</content:encoded>
-	</item>
-	
-	
-	
-	<item>
 	  <title>Display xterm color palette</title>
 	  <link>https://mitjafelicijan.com/write-iso-usb.html</link>
 	  <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
@@ -1109,6 +1072,43 @@ set -g mouse off
 	
 	
 	<item>
+	  <title>Sane defaults for tmux with more visible statusbar</title>
+	  <link>https://mitjafelicijan.com/tmux-sane-defaults.html</link>
+	  <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/tmux-sane-defaults.html</guid>
+	  <description># Remap prefix from &amp;#39;C-b&amp;#39; to &amp;#39;M-a&amp;#39;.</description>
+	  <content:encoded>&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;# Remap prefix from &#39;C-b&#39; to &#39;M-a&#39;.
+unbind C-b
+set-option -g prefix M-a
+bind-key M-a send-prefix
+
+# Split panes using | and -.
+bind | split-window -h
+bind - split-window -v
+unbind &#39;&amp;quot;&#39;
+unbind %
+
+# Start counting windows with 1.
+set-option -g allow-rename on
+set -g base-index 1
+setw -g pane-base-index 1
+
+# Statusbar: purple bg and white fg.
+set -g status-bg &#39;#480b8e&#39;
+set -g status-fg &#39;#ffffff&#39;
+
+# Active window: black bg and white fg. 
+set -g window-status-current-format &amp;quot;#[fg=#ffffff]#[bg=#111111]#[fg=#ffffff]#[bg=#111111] #I:#W #[fg=#ffffff]#[bg=#111111]&amp;quot;
+
+# Disable mouse mode (tmux 2.1 and above).
+set -g mouse off
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded>
+	</item>
+	
+	
+	
+	<item>
 	  <title>My brand new Plan9/9front desktop</title>
 	  <link>https://mitjafelicijan.com/fresh-9front-desktop.html</link>
 	  <pubDate>Wed, 24 May 2023 12:00:00 &#43;0200</pubDate>
@@ -1120,6 +1120,48 @@ my desktop looks like.&lt;/p&gt;
 &lt;img src=&#34;/notes/9front-desktop.png&#34; alt=&#34;9front desktop&#34; /&gt;
 &lt;/figure&gt;
 </content:encoded>
+	</item>
+	
+	
+	
+	
+	
+	<item>
+	  <title>Parse RSS feeds with Lua</title>
+	  <link>https://mitjafelicijan.com/parse-rss-with-lua.html</link>
+	  <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
+	  <guid>https://mitjafelicijan.com/parse-rss-with-lua.html</guid>
+	  <description>Example of parsing RSS feeds with Lua.</description>
+	  <content:encoded>&lt;p&gt;Example of parsing RSS feeds with Lua. Before running the script install:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;feedparser with &lt;code&gt;luarocks install feedparser&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;luasocket with &lt;code&gt;luarocks install luasocket&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; http = require(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;socket.http&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; feedparser = require(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;feedparser&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; feed_url = &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;https://mitjafelicijan.com/feed.rss&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; response, status, _ = http.request(feed_url)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; status == 200 &lt;span style=&#34;color:#00f&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; parsed = feedparser.parse(response)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#008000&#34;&gt;-- Print out feed details.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; Title   &amp;#34;&lt;/span&gt;, parsed.feed.title)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; Author  &amp;#34;&lt;/span&gt;, parsed.feed.author)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; ID      &amp;#34;&lt;/span&gt;, parsed.feed.id)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; Entries &amp;#34;&lt;/span&gt;, #parsed.entries)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;for&lt;/span&gt; _, item &lt;span style=&#34;color:#00f&#34;&gt;in&lt;/span&gt; ipairs(parsed.entries) &lt;span style=&#34;color:#00f&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;GUID    &amp;#34;&lt;/span&gt;, item.guid)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Title   &amp;#34;&lt;/span&gt;, item.title)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Link    &amp;#34;&lt;/span&gt;, item.link)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Summary &amp;#34;&lt;/span&gt;, item.summary)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;! Request failed. Status:&amp;#34;&lt;/span&gt;, status)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
 	</item>
 	
 	
@@ -1175,48 +1217,6 @@ Makefile will need to be modified.&lt;/p&gt;
 	
 	
 	
-	
-	
-	<item>
-	  <title>Parse RSS feeds with Lua</title>
-	  <link>https://mitjafelicijan.com/parse-rss-with-lua.html</link>
-	  <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/parse-rss-with-lua.html</guid>
-	  <description>Example of parsing RSS feeds with Lua.</description>
-	  <content:encoded>&lt;p&gt;Example of parsing RSS feeds with Lua. Before running the script install:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;feedparser with &lt;code&gt;luarocks install feedparser&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;luasocket with &lt;code&gt;luarocks install luasocket&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; http = require(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;socket.http&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; feedparser = require(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;feedparser&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; feed_url = &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;https://mitjafelicijan.com/feed.rss&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; response, status, _ = http.request(feed_url)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; status == 200 &lt;span style=&#34;color:#00f&#34;&gt;then&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; parsed = feedparser.parse(response)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#008000&#34;&gt;-- Print out feed details.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; Title   &amp;#34;&lt;/span&gt;, parsed.feed.title)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; Author  &amp;#34;&lt;/span&gt;, parsed.feed.author)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; ID      &amp;#34;&lt;/span&gt;, parsed.feed.id)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&amp;gt; Entries &amp;#34;&lt;/span&gt;, #parsed.entries)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;for&lt;/span&gt; _, item &lt;span style=&#34;color:#00f&#34;&gt;in&lt;/span&gt; ipairs(parsed.entries) &lt;span style=&#34;color:#00f&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;GUID    &amp;#34;&lt;/span&gt;, item.guid)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Title   &amp;#34;&lt;/span&gt;, item.title)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Link    &amp;#34;&lt;/span&gt;, item.link)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Summary &amp;#34;&lt;/span&gt;, item.summary)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;end&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;else&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;! Request failed. Status:&amp;#34;&lt;/span&gt;, status)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;end&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
 	<item>
 	  <title>Execute not blocking async shell command in C#</title>
 	  <link>https://mitjafelicijan.com/non-blocking-shell-exec-csharp.html</link>
@@ -1255,8 +1255,6 @@ in the method that calls &lt;code&gt;executeCopyCommand()&lt;/code&gt;.&lt;/p&gt
 	
 	
 	
-	
-	
 	<item>
 	  <title>Change permissions of matching files recursively</title>
 	  <link>https://mitjafelicijan.com/mass-set-permission.html</link>
@@ -1268,6 +1266,8 @@ files matching the pattern. Change &lt;code&gt;&#43;&lt;/code&gt; to &lt;code&gt
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find . -type f -name &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;*.xml&amp;#34;&lt;/span&gt; -exec chmod -x {} &#43;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
 	</item>
+	
+	
 	
 	
 	
@@ -1490,6 +1490,8 @@ multiple push urls to your git config. This is a shorthand for command above.&lt
 You can use whatever you want.&lt;/p&gt;
 </content:encoded>
 	</item>
+	
+	
 	
 	
 	

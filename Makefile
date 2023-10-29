@@ -2,6 +2,10 @@ MAKEFLAGS=-j4
 
 # Using: https://github.com/mitjafelicijan/jbmafp
 
+build: openring
+	python3 vault.py
+	jbmafp --build
+
 dev:
 	jbmafp --build --server
 
@@ -17,9 +21,6 @@ openring:
 		-s https://solar.lowtechmagazine.com/posts/index.xml \
 		< templates/openring.html \
 		> templates/includes/openring.html
-
-build: openring
-	jbmafp --build
 
 deploy: build
 	rsync -az --delete public/ root@mitjafelicijan.com:/var/www/html/mitjafelicijan.com/

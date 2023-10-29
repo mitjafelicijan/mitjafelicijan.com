@@ -126,23 +126,18 @@
   </url>
   
   <url>
-	<loc>https://mitjafelicijan.com/tmux-sane-defaults.html</loc>
+	<loc>https://mitjafelicijan.com/write-iso-usb.html</loc>
 	<lastmod>2023-05-25T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-	<loc>https://mitjafelicijan.com/write-iso-usb.html</loc>
+	<loc>https://mitjafelicijan.com/tmux-sane-defaults.html</loc>
 	<lastmod>2023-05-25T12:00:00+00:00</lastmod>
   </url>
   
   <url>
 	<loc>https://mitjafelicijan.com/fresh-9front-desktop.html</loc>
 	<lastmod>2023-05-24T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-	<loc>https://mitjafelicijan.com/extend-lua-with-custom-c.html</loc>
-	<lastmod>2023-05-23T12:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -156,17 +151,22 @@
   </url>
   
   <url>
+	<loc>https://mitjafelicijan.com/extend-lua-with-custom-c.html</loc>
+	<lastmod>2023-05-23T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
 	<loc>https://mitjafelicijan.com/non-blocking-shell-exec-csharp.html</loc>
 	<lastmod>2023-05-22T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-	<loc>https://mitjafelicijan.com/rekindling-my-love-for-programming.html</loc>
+	<loc>https://mitjafelicijan.com/mass-set-permission.html</loc>
 	<lastmod>2023-05-16T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-	<loc>https://mitjafelicijan.com/mass-set-permission.html</loc>
+	<loc>https://mitjafelicijan.com/rekindling-my-love-for-programming.html</loc>
 	<lastmod>2023-05-16T12:00:00+00:00</lastmod>
   </url>
   
@@ -243,6 +243,11 @@
   <url>
 	<loc>https://mitjafelicijan.com/state-of-web-technologies-and-web-development-in-year-2022.html</loc>
 	<lastmod>2022-10-06T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+	<loc>https://mitjafelicijan.com/vault.html</loc>
+	<lastmod>2022-08-27T12:00:00+00:00</lastmod>
   </url>
   
   <url>

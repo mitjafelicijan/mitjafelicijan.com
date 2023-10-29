@@ -7,7 +7,7 @@ def truncate_filename(filename, max_length):
     if len(filename) <= max_length:
         return filename
     file_extension = filename.split('.')[-1]
-    return f"{filename[:max_length - len(file_extension) - 5]}....{file_extension}"
+    return f"{filename[:max_length - len(file_extension) - 5]}….{file_extension}"
 
 response = requests.get(url)
 if response.status_code == 200:

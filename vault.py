@@ -37,7 +37,7 @@ if response.status_code == 200:
                 md += tree_to_md(v, indent + 1, path=f"{path}{k}/")
             else:  # If the node is empty, it's a file
                 file_url = f"{url}{path}{k}"
-                file_name = truncate_filename(k, 80)
+                file_name = truncate_filename(k, 300)
                 md += "  " * indent + f"- [{file_name}](<{file_url}>)\n"
         return md
 

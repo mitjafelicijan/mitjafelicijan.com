@@ -6,7 +6,7 @@ type: page
 draft: false
 ---
 
-## Hi traveler!
+**Hi traveler!**
 
 This is a repository of interesting things I have gathered over time and it also
 stores binaries etc of my personal projects.

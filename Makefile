@@ -10,15 +10,17 @@ dev:
 	jbmafp --build --server
 
 openring:
-	openring -l 165 -n 8 -p 1 \
+	openring -l 300 -n 10 -p 1 \
 		-s https://jcs.org/rss \
-		-s https://chotrin.org/rss.xml \
+		-s https://landley.net/rss.xml \
 		-s https://drewdevault.com/feed.xml \
 		-s https://offbeatpursuit.com/blog/index.rss \
 		-s https://mirzapandzo.com/rss.xml \
 		-s https://journal.valeriansaliou.name/rss/ \
 		-s https://neil.computer/rss/ \
-		-s https://solar.lowtechmagazine.com/posts/index.xml \
+		-s https://michael.stapelberg.ch/feed.xml \
+		-s https://utcc.utoronto.ca/~cks/space/blog/?atom \
+		-s https://szymonkaliski.com/feed.xml \
 		< templates/openring.html \
 		> templates/includes/openring.html
 

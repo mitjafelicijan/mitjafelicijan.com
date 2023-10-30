@@ -3,12 +3,10 @@
 <ul>
   {{ range .Articles }}
   <li>
-    <a href="{{ .Link }}" target="_blank" rel="noopener">{{ .Title }}</a>
-	<div>{{ .Summary }} — <a href="{{ .SourceLink }}">{{ .SourceTitle }}</a>
+    <a href="{{ .Link }}" target="_blank" rel="noopener">{{ .Title }}</a> — <a href="{{ .SourceLink }}">{{ .SourceTitle }}</a>
+	<div>{{ .Summary }}
   </li>
   {{ end }}
 </ul>
 
-<p>
-  <a href="https://git.sr.ht/~sircmpwn/openring">Generated with openring.</a>
-</p>
+<p>Generated with <a href="https://git.sr.ht/~sircmpwn/openring" target="_blank" rel="noopener">openring</a>.</p>

@@ -16,7 +16,7 @@ Example of parsing RSS feeds with Lua. Before running the script install:
 local http = require("socket.http")
 local feedparser = require("feedparser")
 
-local feed_url = "https://mitjafelicijan.com/feed.rss"
+local feed_url = "https://mitjafelicijan.com/index.xml"
 
 local response, status, _ = http.request(feed_url)
 if status == 200 then
@@ -38,4 +38,3 @@ else
   print("! Request failed. Status:", status)
 end
 ```
-

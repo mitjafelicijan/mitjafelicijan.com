@@ -633,8 +633,8 @@ available online at the University of Texas at Austin website, but I also found
 MOBI version. I converted it into ePub as well.&lt;/p&gt;
 &lt;p&gt;Downloads:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://files.mitjafelicijan.com/haphazard/ewd-manuscripts.mobi&#34;&gt;MOBI version of all Manuscripts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://files.mitjafelicijan.com/haphazard/ewd-manuscripts.epub&#34;&gt;ePub version of all Manuscripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ewd-manuscripts.mobi&#34;&gt;MOBI version of all Manuscripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ewd-manuscripts.epub&#34;&gt;ePub version of all Manuscripts&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Sources and credits:&lt;/p&gt;
 &lt;ul&gt;
@@ -986,9 +986,9 @@ don&#39;t hold back!&lt;/li&gt;
 	  
 	  <item>
 	    <title>Display xterm color palette</title>
-	    <link>https://mitjafelicijan.com/write-iso-usb.html</link>
+	    <link>https://mitjafelicijan.com/xterm-color-palette.html</link>
 	    <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
-	    <guid>https://mitjafelicijan.com/write-iso-usb.html</guid>
+	    <guid>https://mitjafelicijan.com/xterm-color-palette.html</guid>
 	    <description>bash xterm-palette.</description>
 	    <content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;bash xterm-palette.sh&lt;/code&gt; - will show you number of max colors available&lt;/li&gt;
@@ -1139,7 +1139,7 @@ my desktop looks like.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; http = require(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;socket.http&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; feedparser = require(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;feedparser&amp;#34;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; feed_url = &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;https://mitjafelicijan.com/feed.rss&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; feed_url = &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;https://mitjafelicijan.com/index.xml&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;local&lt;/span&gt; response, status, _ = http.request(feed_url)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt; status == 200 &lt;span style=&#34;color:#00f&#34;&gt;then&lt;/span&gt;

@@ -27,9 +27,9 @@ elements.
 So, the natural way to go would be some sort of SPA (single page application)
 with basic routing and some state management. Nothing crazy.
 
-> **Before we move on**, I have to be transparent. Take my views on this with 
-> a grain of salt. I have only scratched the surface with these technologies, 
-> and my knowledge is full of gaps. This is my experience using some of these 
+> **Before we move on**, I have to be transparent. Take my views on this with
+> a grain of salt. I have only scratched the surface with these technologies,
+> and my knowledge is full of gaps. This is my experience using some of these
 > products for the first time or in a limited capacity.
 
 Having this out of the way, I got myself a fresh pot of coffee and down the
@@ -61,11 +61,6 @@ but at the end of the day, I truly believe it’s worth it.
 I still reject calling [Typescript](https://www.typescriptlang.org/) to
 [JavaScript](https://www.javascript.com/) conversion a "compilation process".  I
 call them [transpilers](https://devopedia.org/transpiler), and I don’t care! 😈
-
-And if you want to fight this, take a look at this little chart and be mad at
-it!
-
-![Compiling vs Transpiling](/posts/state-of-web/compiling-vs-transpiling.png)
 
 The first one that I ever used was [webpack](https://webpack.js.org/), and it
 was an absolute horrific experience. Saying this, it is an absolutely fantastic
@@ -195,14 +190,12 @@ All of these options end up creating a fatigue. What to choose, what not to
 choose. Unnecessary worrying about if the stack will still be deemed worthy in
 six months. There is elegance in simplicity.
 
-> JavaScript UI frameworks and libraries work in cycles. Every six months or 
-> so, a new one pops up, claiming that it has revolutionized UI development. 
-> Thousands of developers adopt it into their new projects, blog posts are 
-> written, Stack Overflow questions are asked and answered, and then a newer 
+> JavaScript UI frameworks and libraries work in cycles. Every six months or
+> so, a new one pops up, claiming that it has revolutionized UI development.
+> Thousands of developers adopt it into their new projects, blog posts are
+> written, Stack Overflow questions are asked and answered, and then a newer
 > (and even more revolutionary) framework pops up to usurp the throne.
 > — Ian Allen
-
-![To many options](/posts/state-of-web/2008-vs-2020.png)
 
 And this jab at these libraries and cloud providers is not done out of malice.
 It is a real concern that I have about them. In my life, I have seen
@@ -301,4 +294,3 @@ tools like Vite. But I will not waste my time on this anymore.
 It was a good exercise to get in touch with what’s new now. Nothing really
 changed that much. FOMO is now cured! Now I have to get my ass back to actually
 code and make the project that I wanted to make in the first place.
-

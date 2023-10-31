@@ -23,7 +23,7 @@ Really worth a read.
 If we compare a normal operating system to a unikernel side by side, they would
 look something like this.
 
-![Virtual machines vs Containers vs Unikernels](/posts/pid1/unikernels.png)
+![Virtual machines vs Containers vs Unikernels](/posts/pid1/unikernels.webp)
 
 From this image, we can see how the complexity significantly decreases with
 the use of Unikernels. This comes with a price, of course. Unikernels are hard

@@ -367,10 +367,10 @@ First we generate some binary sample data with dd.
 dd if=<(openssl enc -aes-256-ctr  -pass pass:"$(dd if=/dev/urandom bs=128 count=1 2>/dev/null | base64)" -nosalt < /dev/zero) of=1KB.bin bs=1KB count=1 iflag=fullblock
 ```
 
-Our freshly generated 1KB file looks something like this (its full of garbage
-data as intended).
 
 ![Sample binary file 1KB](/posts/dna-sequence/sample-binary-file.png)
+Our freshly generated 1KB file looks something like this (its full of
+garbage data as intended).
 
 We create following binary files:
 

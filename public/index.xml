@@ -1027,11 +1027,6 @@ but at the end of the day, I truly believe it’s worth it.&lt;/p&gt;
 &lt;p&gt;I still reject calling &lt;a href=&#34;https://www.typescriptlang.org/&#34;&gt;Typescript&lt;/a&gt; to
 &lt;a href=&#34;https://www.javascript.com/&#34;&gt;JavaScript&lt;/a&gt; conversion a &amp;quot;compilation process&amp;quot;.  I
 call them &lt;a href=&#34;https://devopedia.org/transpiler&#34;&gt;transpilers&lt;/a&gt;, and I don’t care! 😈&lt;/p&gt;
-&lt;p&gt;And if you want to fight this, take a look at this little chart and be mad at
-it!&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src=&#34;/posts/state-of-web/compiling-vs-transpiling.png&#34; alt=&#34;Compiling vs Transpiling&#34; /&gt;
-&lt;/figure&gt;
 &lt;p&gt;The first one that I ever used was &lt;a href=&#34;https://webpack.js.org/&#34;&gt;webpack&lt;/a&gt;, and it
 was an absolute horrific experience. Saying this, it is an absolutely fantastic
 tool. I felt more like a config editor than actually a programmer.  To be fair,
@@ -1148,9 +1143,6 @@ written, Stack Overflow questions are asked and answered, and then a newer
 (and even more revolutionary) framework pops up to usurp the throne.
 — Ian Allen&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;figure&gt;
-&lt;img src=&#34;/posts/state-of-web/2008-vs-2020.png&#34; alt=&#34;To many options&#34; /&gt;
-&lt;/figure&gt;
 &lt;p&gt;And this jab at these libraries and cloud providers is not done out of malice.
 It is a real concern that I have about them. In my life, I have seen
 technologies come and go, but the basics always stick around. So surrendering
@@ -1838,7 +1830,7 @@ Really worth a read.&lt;/p&gt;
 &lt;p&gt;If we compare a normal operating system to a unikernel side by side, they would
 look something like this.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&#34;/posts/pid1/unikernels.png&#34; alt=&#34;Virtual machines vs Containers vs Unikernels&#34; /&gt;
+&lt;img src=&#34;/posts/pid1/unikernels.webp&#34; alt=&#34;Virtual machines vs Containers vs Unikernels&#34; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;From this image, we can see how the complexity significantly decreases with
 the use of Unikernels. This comes with a price, of course. Unikernels are hard
@@ -4491,10 +4483,10 @@ like&lt;/a&gt;.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;benchmarks&#34;&gt;Benchmarks&lt;/h2&gt;
 &lt;p&gt;First we generate some binary sample data with dd.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dd &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt;=&amp;lt;(openssl enc -aes-256-ctr  -pass pass:&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#00f&#34;&gt;$(&lt;/span&gt;dd &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt;=/dev/urandom bs=128 count=1 2&amp;gt;/dev/null | base64&lt;span style=&#34;color:#00f&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; -nosalt &amp;lt; /dev/zero) of=1KB.bin bs=1KB count=1 iflag=fullblock
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Our freshly generated 1KB file looks something like this (its full of garbage
-data as intended).&lt;/p&gt;
-&lt;figure&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;figure&gt;
 &lt;img src=&#34;/posts/dna-sequence/sample-binary-file.png&#34; alt=&#34;Sample binary file 1KB&#34; /&gt;
+&lt;figcaption&gt;&lt;p&gt;Our freshly generated 1KB file looks something like this (its full of
+garbage data as intended).&lt;/p&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;We create following binary files:&lt;/p&gt;
 &lt;ul&gt;

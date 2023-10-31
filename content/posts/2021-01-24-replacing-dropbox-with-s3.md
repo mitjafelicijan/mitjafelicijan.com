@@ -31,9 +31,9 @@ so good. I haven't felt this way for a long time.
 Before you continue you should read my post about [syncing to
 Dropbox](/digitalocean-spaces-to-sync-between-computers.html).
 
-> Also to note, I am using Linux on my machine with Gnome desktop environment. 
-This should work on MacOS too. To use this on Windows I suggest using 
-[Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) 
+> Also to note, I am using Linux on my machine with Gnome desktop environment.
+This should work on MacOS too. To use this on Windows I suggest using
+[Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 or [Cygwin](https://www.cygwin.com/).
 
 ## Folder structure
@@ -93,12 +93,12 @@ This script also backups some of the dotfiles I use and sends notification to
 Gnome notification center. It is a straightforward solution. Nothing special
 going on.
 
-> One obvious benefit of this is that I can omit syncing Node's `node_modules` 
+> One obvious benefit of this is that I can omit syncing Node's `node_modules`
 > or Python's `.venv` and `.git` folders.
 
 You can use this script in a combination with [Cron](https://en.wikipedia.org/wiki/Cron).
 
-```
+```txt
 0 2 * * * sh ~/Vault/bin/vault-backup.sh
 ```
 

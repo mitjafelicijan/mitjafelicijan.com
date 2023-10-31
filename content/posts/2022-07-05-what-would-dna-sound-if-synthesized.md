@@ -156,8 +156,8 @@ WAV files here are using short, 16 bit, signed integers for the sample size.
 So, we multiply the floating-point data we have by 32767, the maximum value for
 a short integer.
 
-> It is theoretically possible to use the floating point -1.0 to 1.0 data 
-> directly in a WAV file, but not obvious how to do that using the wave module 
+> It is theoretically possible to use the floating point -1.0 to 1.0 data
+> directly in a WAV file, but not obvious how to do that using the wave module
 > in Python.
 
 ## Generating Spectograms
@@ -192,7 +192,7 @@ gnuplot audio.gpi
 And input file `audio.gpi` that would be passed to gnuplot looks something like
 this.
 
-```
+```txt
 # set output format and size
 set term png size 1000,280
 
@@ -358,7 +358,7 @@ if done properly. It could replace random note generator with something more
 intriguing, biological, natural.
 
 I actually find the results fascinating. I took some time and listened to this
-music of nature. Even though it's quite the same, it's also quite different. 
+music of nature. Even though it's quite the same, it's also quite different.
 The subtle differences on repeat kind of creates music on its own. Makes you
 wonder. It kind of puts Occam’s Razor in its place. Nature for sure loves to
 make things as energy efficient as possible.

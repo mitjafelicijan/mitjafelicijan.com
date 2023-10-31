@@ -11,7 +11,7 @@ under Debian 12 with Xorg and i3. Using `picom` compositor didn't help. To fix
 this issue create new file `/etc/X11/xorg.conf.d/20-intel.conf` as root and put
 the following in the file.
 
-```
+```txt
 Section "Device"
   Identifier "Intel Graphics"
   Driver "intel"

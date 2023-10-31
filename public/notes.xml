@@ -164,13 +164,12 @@ this feature under i3wm. This can be done with
 under Debian 12 with Xorg and i3. Using &lt;code&gt;picom&lt;/code&gt; compositor didn&#39;t help. To fix
 this issue create new file &lt;code&gt;/etc/X11/xorg.conf.d/20-intel.conf&lt;/code&gt; as root and put
 the following in the file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Section &amp;quot;Device&amp;quot;
-  Identifier &amp;quot;Intel Graphics&amp;quot;
-  Driver &amp;quot;intel&amp;quot;
-  Option &amp;quot;TearFree&amp;quot; &amp;quot;true&amp;quot;
-EndSection
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Reboot the system and that should be it.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Section &amp;#34;Device&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Identifier &amp;#34;Intel Graphics&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Driver &amp;#34;intel&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Option &amp;#34;TearFree&amp;#34; &amp;#34;true&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;EndSection
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Reboot the system and that should be it.&lt;/p&gt;
 </content:encoded>
 	  </item>
 	  

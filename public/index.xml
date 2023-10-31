@@ -2629,9 +2629,8 @@ Zero&lt;/a&gt;.&lt;/p&gt;
 refreshing only once a minute, this can be done through cronjob.&lt;/p&gt;
 &lt;p&gt;Before we add this job to cron we need to make &lt;code&gt;clock.py&lt;/code&gt; executable with &lt;code&gt;chmod &#43;x clock.py&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Then we add a cronjob with &lt;code&gt;crontab -e&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;* * * * * /home/pi/clock.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;So, we end up with a result like this.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* * * * * /home/pi/clock.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;So, we end up with a result like this.&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src=&#34;/posts/world-clock/world-clock.jpg&#34; alt=&#34;World Clock&#34; /&gt;
 &lt;/figure&gt;
@@ -2683,11 +2682,11 @@ all the functionalities I need, and it&#39;s a single binary. Written in Go.&lt;
 &lt;figure&gt;
 &lt;img src=&#34;/posts/goaccess/goaccess-dash-term.png&#34; alt=&#34;GoAccess Terminal&#34; /&gt;
 &lt;/figure&gt;
-&lt;center&gt;&lt;i&gt;Running in a terminal&lt;/i&gt;&lt;/center&gt;
+&lt;p&gt;&lt;em&gt;Running in a terminal&lt;/em&gt;&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src=&#34;/posts/goaccess/goaccess-dash-html.png&#34; alt=&#34;GoAccess HTML&#34; /&gt;
 &lt;/figure&gt;
-&lt;center&gt;&lt;i&gt;Running in a browser&lt;/i&gt;&lt;/center&gt;
+&lt;p&gt;&lt;em&gt;Running in a browser&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I, however, need this to run in a browser. So, the second option is the way to
 go. The Idea is to periodically run cronjob and export this report into a folder
 that gets then server by Nginx behind a Basic authentication.&lt;/p&gt;
@@ -3129,8 +3128,7 @@ that will make this whole experience a little more bearable.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# installing ampy&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo pip3 install adafruit-ampy
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Listed below are some common commands I used.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# uploads file to flash&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# uploads file to flash&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ampy --delay 2 --port /dev/ttyUSB0 put boot.py
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# lists file on flash&lt;/span&gt;

@@ -9,6 +9,7 @@
 
 	  <title>{{ block "title" . }}{{ .Config.Title }}{{ end }}</title>
 	  <meta name="description" content="{{ block "description" . }}{{ .Config.Description }}{{ end }}">
+    <meta name="author" content="{{ .Config.Title }}">
 
 	  <link rel="alternate" type="application/rss+xml" title="Mitja Felicijan's posts" href="{{ .Config.BaseURL }}/index.xml">
 	  <link rel="alternate" type="application/rss+xml" title="Mitja Felicijan's notes" href="{{ .Config.BaseURL }}/notes.xml">
@@ -113,6 +114,9 @@
 		    margin-inline-end: 0;
 	    }
 
+      figure img {
+      }
+
 	    figcaption {
 		    text-align: center;
 	    }
@@ -124,12 +128,18 @@
 	    img, video, audio {
 		    width: 800px;
 		    max-width: 100%;
+        border: var(--border-size) solid var(--border-color);
+        padding: 0.5em;
 	    }
 
       header nav {
         display: flex;
         gap: 0.9rem;
 	    }
+
+      article iframe { /* fixes embeds going to center */
+        margin: 0!important;
+      }
 
       audio::-webkit-media-controls-enclosure {
         border-radius: 0;

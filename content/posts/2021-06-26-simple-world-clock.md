@@ -88,7 +88,7 @@ Before we add this job to cron we need to make `clock.py` executable with `chmod
 
 Then we add a cronjob with `crontab -e`.
 
-```
+```txt
 * * * * * /home/pi/clock.py
 ```
 
@@ -105,4 +105,3 @@ You can download my [STL file for the enclosure
 here](/posts/world-clock/enclosure.stl), but make sure that dimensions make
 sense and also opening for USB port should be added or just use a drill and some
 hot glue to make it stick in the enclosure.
-

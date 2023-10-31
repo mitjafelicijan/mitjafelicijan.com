@@ -38,7 +38,7 @@ executing `dmesg | grep ch341-uart`.
 Then check if the device is available under `/dev/` by running `ls
 /dev/ttyUSB*`.
 
-> **Linux users**: if a device is not available be sure you are in `dialout` 
+> **Linux users**: if a device is not available be sure you are in `dialout`
 > group. You can check this by executing `groups $USER`. You can add a user to
 > `dialout` group with `sudo adduser $USER dialout`.
 
@@ -79,7 +79,7 @@ esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 e
 If everything went ok you can try accessing MicroPython REPL with ` screen
 /dev/ttyUSB0 115200` or `picocom /dev/ttyUSB0 -b115200`.
 
-> Sometimes you will need to press `ENTER` in `screen` or `picocom` to access 
+> Sometimes you will need to press `ENTER` in `screen` or `picocom` to access
 > REPL.
 
 When you are in REPL you can test if all is working properly following steps.
@@ -121,7 +121,6 @@ sudo pip3 install adafruit-ampy
 Listed below are some common commands I used.
 
 ```bash
-
 # uploads file to flash
 ampy --delay 2 --port /dev/ttyUSB0 put boot.py
 
@@ -177,7 +176,7 @@ boards  cd   cp       echo  exit  filetype  ls    repl   rsync
 Use Control-D (or the exit command) to exit rshell.
 ```
 
-> Inside a shell `ls` will display list of files on your machine. To get list 
+> Inside a shell `ls` will display list of files on your machine. To get list
 > of files on flash folder `/pyboard` is remapped inside the shell. To list files
 > on flash you must perform `ls /pyboard`.
 

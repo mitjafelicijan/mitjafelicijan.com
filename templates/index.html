@@ -1,110 +1,40 @@
 {{ template "base.html" . }}
 
-{{ define "add-navigation" }}
-<nav class="additional">
-  <a href="#current">Current</a>
-  <a href="#posts">Posts</a>
-  <a href="#notes">Notes</a>
-  <a href="#sideprojects">Side projects</a>
-</nav>
-{{ end }}
-
 {{ define "content" }}
 <div>
   <p>{{ .Config.Description }}</p>
-  
-  <h2><a name="current"></a>What I am currently working on</h2>
-  <p>Semi-live status of things to keep myself honest!</p>
-  <table>
-	<thead>
-	  <tr>
-		<th width="5"></th>
-		<th>Project name</th>
-		<th>What is being worked on?</th>
-		<th>Last update</th>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr>
-		<td class="pstatus-green" title="Kinda works"></td>
-		<td><a href="https://github.com/mitjafelicijan/i3blocks" target="_blank">i3blocks</a></td>
-		<td>Testing blocks: cpu, ram, disk and nvidia gpu.</td>
-		<td>12th of July, 2023</td>
-	  </tr>
-	  <tr>
-		<td class="pstatus-orange" title="Somewhat works"></td>
-		<td><a href="https://github.com/mitjafelicijan/errand" target="_blank">Errand</a></td>
-		<td>Working on re-implementating the whole thing in C.</td>
-		<td>7th of July, 2023</td>
-	  </tr>
-	  <tr>
-		<td class="pstatus-green" title="Kinda works"></td>
-		<td><a href="https://github.com/mitjafelicijan/jbmafp" target="_blank">JBMAFP</a></td>
-		<td>Fixing minor issues and writing docs.</td>
-		<td>8th of July, 2023</td>
-	  </tr>
-	  <tr>
-		<td class="pstatus-red" title="Still in initial stage"></td>
-		<td><a href="https://github.com/mitjafelicijan/marionette" target="_blank">Marionette</a></td>
-		<td>Implementing HTTP server for viewing reports.</td>
-		<td>6th of July, 2023</td>
-	  </tr>
-	</tbody>
-  </table>
-  
+
   <h2><a name="posts"></a>More long form, ramblings etc</h2>
   <ul itemscope itemtype="https://schema.org/SiteNavigationElement" class="list">
-	<meta itemprop="name" content="Article list">
-	{{ range .Pages }}
-	{{ if eq .Type "post" }}
-	<li><a href="/{{ .RelPermalink }}">{{ .Title }}</a></li>
-	{{ end }}
-	{{ end }}
+	  <meta itemprop="name" content="Article list">
+	  {{ range .Pages }}
+	  {{ if eq .Type "post" }}
+	  <li><a href="/{{ .RelPermalink }}">{{ .Title }}</a></li>
+	  {{ end }}
+	  {{ end }}
   </ul>
 
   <h2><a name="notes"></a>Notes?! Maybe useful</h2>
   <h2></h2>
   <ul itemscope itemtype="https://schema.org/SiteNavigationElement" class="list">
-	<meta itemprop="name" content="Note list">
-	{{ range .Pages }}
-	{{ if eq .Type "note" }}
-	<li><a href="/{{ .RelPermalink }}">{{ .Title }}</a></li>
-	{{ end }}
-	{{ end }}
+	  <meta itemprop="name" content="Note list">
+	  {{ range .Pages }}
+	  {{ if eq .Type "note" }}
+	  <li><a href="/{{ .RelPermalink }}">{{ .Title }}</a></li>
+	  {{ end }}
+	  {{ end }}
   </ul>
 
   <h2><a name="sideprojects"></a>Side projects I work/worked on</h2>
-  <table>
-	<tbody>
-	  <tr>
-		<td><a href="https://git.mitjafelicijan.com/cord.h.git/" target="_blank">cord.h</a></td>
-		<td>Small C library for handling strings</td>
-	  </tr>	  
-	  <tr>
-		<td><a href="https://git.mitjafelicijan.com/mprogress.git/" target="_blank">mprogress</a></td>
-		<td>Tiny utility that displays progress bar in terminal</td>
-	  </tr>
-	  <tr>
-		<td><a href="https://git.mitjafelicijan.com/journalctl-proxy.git/" target="_blank">journalctl-proxy</a></td>
-		<td>Exposes your systemd logs to web via web interface</td>
-	  </tr>
-	  <tr>
-		<td><a href="https://git.mitjafelicijan.com/redis-marshal.git/" target="_blank">redis-marshal</a></td>
-		<td>Lightweight Redis data exploration tool</td>
-	  </tr>
-	  <tr>
-		<td><a href="https://git.mitjafelicijan.com/dna-encoding.git/" target="_blank">dna-encoding</a></td>
-		<td>Tools for encoding files to DNA sequence</td>
-	  </tr>
-	  <tr>
-		<td><a href="https://git.mitjafelicijan.com/vertex.git/" target="_blank">vertex</a></td>
-		<td>Create mock API's and add basic logic to simplify prototyping</td>
-	  </tr>
-	  <tr>
-		<td><a href="https://git.mitjafelicijan.com/scarecrow.git/" target="_blank">scarecrow</a></td>
-		<td>Minimal configuration reverse proxy</td>
-	  </tr>
-	</tbody>
-  </table>
+  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" class="list">
+	  <meta itemprop="name" content="Note list">
+    <li><a href="https://git.mitjafelicijan.com/cord.h.git/" target="_blank">cord.h</a> — Small C library for handling strings</li>
+		<li><a href="https://git.mitjafelicijan.com/mprogress.git/" target="_blank">mprogress</a> — Tiny utility that displays progress bar in terminal</li>
+		<li><a href="https://git.mitjafelicijan.com/journalctl-proxy.git/" target="_blank">journalctl-proxy</a> — Exposes your systemd logs to web via web interface</li>
+		<li><a href="https://git.mitjafelicijan.com/redis-marshal.git/" target="_blank">redis-marshal</a> — Lightweight Redis data exploration tool</li>
+		<li><a href="https://git.mitjafelicijan.com/vertex.git/" target="_blank">vertex</a> — Create mock API's and add basic logic to simplify prototyping</li>
+		<li><a href="https://git.mitjafelicijan.com/dna-encoding.git/" target="_blank">dna-encoding</a> — Tools for encoding files to DNA sequence</li>
+		<li><a href="https://git.mitjafelicijan.com/scarecrow.git/" target="_blank">scarecrow</a> — Minimal configuration reverse proxy</li>
+  </ul>
 </div>
 {{ end }}

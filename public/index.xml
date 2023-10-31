@@ -1,33 +1,33 @@
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-	<title>Mitja Felicijan's posts</title>
-	<link>https://mitjafelicijan.com</link>
-	<description>You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.</description>
-	<language>en-us</language>
+	  <title>Mitja Felicijan's posts</title>
+	  <link>https://mitjafelicijan.com</link>
+	  <description>You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.</description>
+	  <language>en-us</language>
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<item>
-	  <title>Who knows what the world will look like tomorrow</title>
-	  <link>https://mitjafelicijan.com/who-knows-what-the-world-will-look-like-tomorrow.html</link>
-	  <pubDate>Sat, 08 Jul 2023 18:49:07 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/who-knows-what-the-world-will-look-like-tomorrow.html</guid>
-	  <description>This site has gone through a lot of changes over the years.</description>
-	  <content:encoded>&lt;p&gt;This site has gone through a lot of changes over the years. From being written
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>Who knows what the world will look like tomorrow</title>
+	    <link>https://mitjafelicijan.com/who-knows-what-the-world-will-look-like-tomorrow.html</link>
+	    <pubDate>Sat, 08 Jul 2023 18:49:07 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/who-knows-what-the-world-will-look-like-tomorrow.html</guid>
+	    <description>This site has gone through a lot of changes over the years.</description>
+	    <content:encoded>&lt;p&gt;This site has gone through a lot of changes over the years. From being written
 in Flask and Bottle to moving on to static site generators. I have used and
 tested probably 10s of them my now. From homebrew solutions to the biggest and
 the baddest. From Bash scripts to Node.js disasters. I&#39;ve seen some things, no
@@ -106,17 +106,17 @@ happen. And you feel yourself to be too certain, stop and check how deep in the
 shit you are already. Strong opinions are a sign of a weak and uneducated
 mind. Hate and disdain is for the weak.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Bringing all of my projects together under one umbrella</title>
-	  <link>https://mitjafelicijan.com/bringing-all-of-my-projects-together-under-one-umbrella.html</link>
-	  <pubDate>Sat, 01 Jul 2023 18:49:07 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/bringing-all-of-my-projects-together-under-one-umbrella.html</guid>
-	  <description>What is the issue anyway?</description>
-	  <content:encoded>&lt;h2 id=&#34;what-is-the-issue-anyway&#34;&gt;What is the issue anyway?&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Bringing all of my projects together under one umbrella</title>
+	    <link>https://mitjafelicijan.com/bringing-all-of-my-projects-together-under-one-umbrella.html</link>
+	    <pubDate>Sat, 01 Jul 2023 18:49:07 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/bringing-all-of-my-projects-together-under-one-umbrella.html</guid>
+	    <description>What is the issue anyway?</description>
+	    <content:encoded>&lt;h2 id=&#34;what-is-the-issue-anyway&#34;&gt;What is the issue anyway?&lt;/h2&gt;
 &lt;p&gt;Over the years, I have accumulated a bunch of virtual servers on my
 &lt;a href=&#34;https://www.digitalocean.com/&#34;&gt;DigitalOcean&lt;/a&gt; account for small experimental
 projects I dabble in. And this has resulted in quite a bill. I mean, I wouldn&#39;t
@@ -346,33 +346,33 @@ in the file.&lt;/li&gt;
 new subdomains and domains to the main configuration file and be done with
 it. No manual Let&#39;s Encrypt shenanigans needed.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<item>
-	  <title>Re-Inventing Task Runner That I Actually Used Daily</title>
-	  <link>https://mitjafelicijan.com/re-inventing-task-runner-that-i-actually-used-daily.html</link>
-	  <pubDate>Wed, 31 May 2023 12:21:10 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/re-inventing-task-runner-that-i-actually-used-daily.html</guid>
-	  <description>Couple of months ago I had this brilliant idea of re-inventing the wheel bymaking an alternative for make.</description>
-	  <content:encoded>&lt;p&gt;Couple of months ago I had this brilliant idea of re-inventing the wheel by
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>Re-Inventing Task Runner That I Actually Used Daily</title>
+	    <link>https://mitjafelicijan.com/re-inventing-task-runner-that-i-actually-used-daily.html</link>
+	    <pubDate>Wed, 31 May 2023 12:21:10 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/re-inventing-task-runner-that-i-actually-used-daily.html</guid>
+	    <description>Couple of months ago I had this brilliant idea of re-inventing the wheel bymaking an alternative for make.</description>
+	    <content:encoded>&lt;p&gt;Couple of months ago I had this brilliant idea of re-inventing the wheel by
 making an alternative for make. And so I went. Boldly into the battle. And to my
 big surprise my attempt resulted in not a completely useless piece of software.&lt;/p&gt;
 &lt;p&gt;My initial requirements were quite simple but soon grow into something more
@@ -509,37 +509,37 @@ actually is. Quite surprised at myself.&lt;/p&gt;
 tokeniser. Its atrocious right now. Site to behold! But that is an issue for
 another time.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<item>
-	  <title>I think I was completely wrong about Git workflows</title>
-	  <link>https://mitjafelicijan.com/i-was-wrong-about-git-workflows.html</link>
-	  <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/i-was-wrong-about-git-workflows.html</guid>
-	  <description>I have been using some approximation of GitFlow for years now and never reallyquestioned it to be honest.</description>
-	  <content:encoded>&lt;p&gt;I have been using some approximation of &lt;a href=&#34;https://jeffkreeftmeijer.com/git-flow/&#34;&gt;Git
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>I think I was completely wrong about Git workflows</title>
+	    <link>https://mitjafelicijan.com/i-was-wrong-about-git-workflows.html</link>
+	    <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/i-was-wrong-about-git-workflows.html</guid>
+	    <description>I have been using some approximation of GitFlow for years now and never reallyquestioned it to be honest.</description>
+	    <content:encoded>&lt;p&gt;I have been using some approximation of &lt;a href=&#34;https://jeffkreeftmeijer.com/git-flow/&#34;&gt;Git
 Flow&lt;/a&gt; for years now and never really
 questioned it to be honest. When I create a repo I create develop branch and set
 it as default one and then merge to master from there. Seems reasonable enough.&lt;/p&gt;
@@ -591,25 +591,25 @@ see if they still make sense and if there are better alternatives available.
 Long-living branches can be problematic, and using tags to mark important
 milestones can simplify the development process.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<item>
-	  <title>Rekindling my love for programming and enjoying the act of creating</title>
-	  <link>https://mitjafelicijan.com/rekindling-my-love-for-programming.html</link>
-	  <pubDate>Tue, 16 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/rekindling-my-love-for-programming.html</guid>
-	  <description>Programming can be a challenging and rewarding experience, but sometimes it&amp;#39;seasy to feel burnt out or disinterested.</description>
-	  <content:encoded>&lt;p&gt;Programming can be a challenging and rewarding experience, but sometimes it&#39;s
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>Rekindling my love for programming and enjoying the act of creating</title>
+	    <link>https://mitjafelicijan.com/rekindling-my-love-for-programming.html</link>
+	    <pubDate>Tue, 16 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/rekindling-my-love-for-programming.html</guid>
+	    <description>Programming can be a challenging and rewarding experience, but sometimes it&amp;#39;seasy to feel burnt out or disinterested.</description>
+	    <content:encoded>&lt;p&gt;Programming can be a challenging and rewarding experience, but sometimes it&#39;s
 easy to feel burnt out or disinterested. I have lost the passion for coding over
 the past couple of months and it looked like I will never enjoy the coding as
 much as I did.&lt;/p&gt;
@@ -664,41 +664,41 @@ off in the last 10 years.&lt;/p&gt;
 projects. It doesn&#39;t feel like a chore at all. Who knew I needed WoW to
 kickstart everything. Inspiration really does come from the strangest places.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<item>
-	  <title>Trying to build a New kind of terminal emulator for the modern age</title>
-	  <link>https://mitjafelicijan.com/trying-to-build-a-new-kind-of-terminal-emulator.html</link>
-	  <pubDate>Thu, 26 Jan 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/trying-to-build-a-new-kind-of-terminal-emulator.html</guid>
-	  <description>Over the past few weeks, I have been really thinking about terminal emulators,how we interact with computers, the separation of text-based programs and GUIones.</description>
-	  <content:encoded>&lt;p&gt;Over the past few weeks, I have been really thinking about terminal emulators,
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>Trying to build a New kind of terminal emulator for the modern age</title>
+	    <link>https://mitjafelicijan.com/trying-to-build-a-new-kind-of-terminal-emulator.html</link>
+	    <pubDate>Thu, 26 Jan 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/trying-to-build-a-new-kind-of-terminal-emulator.html</guid>
+	    <description>Over the past few weeks, I have been really thinking about terminal emulators,how we interact with computers, the separation of text-based programs and GUIones.</description>
+	    <content:encoded>&lt;p&gt;Over the past few weeks, I have been really thinking about terminal emulators,
 how we interact with computers, the separation of text-based programs and GUI
 ones. To be perfectly honest, I got pissed off one evening when I was cleaning
 up files on my computer. Normally, I go into console and do &lt;code&gt;ncdu&lt;/code&gt; and check
@@ -921,17 +921,17 @@ prohibits me to work on these things full time. But I should probably get back
 and finish this. At least have a simple version working out, so I can start
 testing it on my machines. Fingers crossed. 🕵️‍♂️&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Microsoundtrack — That sound that machine makes when struggling</title>
-	  <link>https://mitjafelicijan.com/that-sound-that-machine-makes-when-struggling.html</link>
-	  <pubDate>Sun, 16 Oct 2022 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/that-sound-that-machine-makes-when-struggling.html</guid>
-	  <description>A couple of months ago, I got an idea about micro soundtracks.</description>
-	  <content:encoded>&lt;p&gt;A couple of months ago, I got an idea about micro soundtracks. In this concept,
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Microsoundtrack — That sound that machine makes when struggling</title>
+	    <link>https://mitjafelicijan.com/that-sound-that-machine-makes-when-struggling.html</link>
+	    <pubDate>Sun, 16 Oct 2022 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/that-sound-that-machine-makes-when-struggling.html</guid>
+	    <description>A couple of months ago, I got an idea about micro soundtracks.</description>
+	    <content:encoded>&lt;p&gt;A couple of months ago, I got an idea about micro soundtracks. In this concept,
 you are the observer, director, and audience in this tiny movies.&lt;/p&gt;
 &lt;p&gt;What you do is to attempt to imagine what would be happening around you based on
 a title of the song and let the song help you fill the void in your story.&lt;/p&gt;
@@ -971,17 +971,17 @@ procedure. You can feel your sanity breaking down.&lt;/p&gt;
 more details.&lt;/p&gt;
 &lt;p&gt;&lt;video src=&#34;/posts/microsoundtrack/cow.m4v&#34; controls loop&gt;&lt;/video&gt;&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>State of Web Technologies and Web development in year 2022</title>
-	  <link>https://mitjafelicijan.com/state-of-web-technologies-and-web-development-in-year-2022.html</link>
-	  <pubDate>Thu, 06 Oct 2022 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/state-of-web-technologies-and-web-development-in-year-2022.html</guid>
-	  <description>Initial thoughtsThis post is a critique on the current state of web development.</description>
-	  <content:encoded>&lt;h2 id=&#34;initial-thoughts&#34;&gt;Initial thoughts&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>State of Web Technologies and Web development in year 2022</title>
+	    <link>https://mitjafelicijan.com/state-of-web-technologies-and-web-development-in-year-2022.html</link>
+	    <pubDate>Thu, 06 Oct 2022 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/state-of-web-technologies-and-web-development-in-year-2022.html</guid>
+	    <description>Initial thoughtsThis post is a critique on the current state of web development.</description>
+	    <content:encoded>&lt;h2 id=&#34;initial-thoughts&#34;&gt;Initial thoughts&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;This post is a critique on the current state of web development. It is an
 opinionated post! I will learn more about this in the future, and probably
 slightly change my mind about some of the things I criticize.&lt;/em&gt;&lt;/p&gt;
@@ -1229,21 +1229,21 @@ tools like Vite. But I will not waste my time on this anymore.&lt;/p&gt;
 changed that much. FOMO is now cured! Now I have to get my ass back to actually
 code and make the project that I wanted to make in the first place.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	
-	
-	<item>
-	  <title>Aerial photography of algae spotted on river Sava</title>
-	  <link>https://mitjafelicijan.com/aerial-photography-of-algae-spotted-on-river-sava.html</link>
-	  <pubDate>Sat, 13 Aug 2022 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/aerial-photography-of-algae-spotted-on-river-sava.html</guid>
-	  <description>This is a bit of a different post than I usually write, but quite interestingone to me.</description>
-	  <content:encoded>&lt;p&gt;This is a bit of a different post than I usually write, but quite interesting
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>Aerial photography of algae spotted on river Sava</title>
+	    <link>https://mitjafelicijan.com/aerial-photography-of-algae-spotted-on-river-sava.html</link>
+	    <pubDate>Sat, 13 Aug 2022 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/aerial-photography-of-algae-spotted-on-river-sava.html</guid>
+	    <description>This is a bit of a different post than I usually write, but quite interestingone to me.</description>
+	    <content:encoded>&lt;p&gt;This is a bit of a different post than I usually write, but quite interesting
 one to me. River Sava has plenty of hydropower plants located down the stream.
 This makes regulating the strength of a current easier than normally. Because of
 lower stream strength and high temperatures, algae has formed on the river.
@@ -1270,17 +1270,17 @@ This is the first time I&#39;ve seen something like this in my whole life.&lt;/p
 &lt;p&gt;I will try to get more photos of this in the future days and if something
 intriguing shows up will post it again on the blog.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>What would DNA sound if synthesized to an audio file</title>
-	  <link>https://mitjafelicijan.com/what-would-dna-sound-if-synthesized.html</link>
-	  <pubDate>Tue, 05 Jul 2022 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/what-would-dna-sound-if-synthesized.html</guid>
-	  <description>IntroductionLately, I have been thinking a lot about the nature of life, what are thefoundation blocks of life and things like that.</description>
-	  <content:encoded>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>What would DNA sound if synthesized to an audio file</title>
+	    <link>https://mitjafelicijan.com/what-would-dna-sound-if-synthesized.html</link>
+	    <pubDate>Tue, 05 Jul 2022 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/what-would-dna-sound-if-synthesized.html</guid>
+	    <description>IntroductionLately, I have been thinking a lot about the nature of life, what are thefoundation blocks of life and things like that.</description>
+	    <content:encoded>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Lately, I have been thinking a lot about the nature of life, what are the
 foundation blocks of life and things like that. It&#39;s remarkable how complex and
 on the other hand simple the creation is when you look at it. The miracle of
@@ -1599,17 +1599,17 @@ The subtle differences on repeat kind of creates music on its own. Makes you
 wonder. It kind of puts Occam’s Razor in its place. Nature for sure loves to
 make things as energy efficient as possible.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Trying out Helix code editor as my main editor</title>
-	  <link>https://mitjafelicijan.com/tying-out-helix-code-editor.html</link>
-	  <pubDate>Thu, 30 Jun 2022 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/tying-out-helix-code-editor.html</guid>
-	  <description>I have been searching for a lightweight code editor for quite some time.</description>
-	  <content:encoded>&lt;p&gt;I have been searching for a lightweight code editor for quite some time. One of
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Trying out Helix code editor as my main editor</title>
+	    <link>https://mitjafelicijan.com/tying-out-helix-code-editor.html</link>
+	    <pubDate>Thu, 30 Jun 2022 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/tying-out-helix-code-editor.html</guid>
+	    <description>I have been searching for a lightweight code editor for quite some time.</description>
+	    <content:encoded>&lt;p&gt;I have been searching for a lightweight code editor for quite some time. One of
 the main reasons was that I wanted something that doesn&#39;t burn through CPU and
 RAM usage is not through the roof. I have been mostly using Visual Studio Code.
 It&#39;s been an outstanding editor. I have no quarrel with it at all. It&#39;s just
@@ -1647,17 +1647,17 @@ popups that show you what the keyboard shortcuts are.&lt;/p&gt;
 &lt;p&gt;It&#39;s still young but has this mature feeling to it. It has sane defaults and
 mimics Vim (works a bit differently, but the overall idea is similar).&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Wireless Application Protocol and the mobile web before the web</title>
-	  <link>https://mitjafelicijan.com/wap-mobile-web-before-the-web.html</link>
-	  <pubDate>Thu, 30 Dec 2021 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/wap-mobile-web-before-the-web.html</guid>
-	  <description>A little stroll down the history laneAbout two weeks ago, I watched this outstanding documentary on YouTubeSpringboard: the secret history of the first realsmartphone about the history ofsmartphones and phones in general.</description>
-	  <content:encoded>&lt;h2 id=&#34;a-little-stroll-down-the-history-lane&#34;&gt;A little stroll down the history lane&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Wireless Application Protocol and the mobile web before the web</title>
+	    <link>https://mitjafelicijan.com/wap-mobile-web-before-the-web.html</link>
+	    <pubDate>Thu, 30 Dec 2021 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/wap-mobile-web-before-the-web.html</guid>
+	    <description>A little stroll down the history laneAbout two weeks ago, I watched this outstanding documentary on YouTubeSpringboard: the secret history of the first realsmartphone about the history ofsmartphones and phones in general.</description>
+	    <content:encoded>&lt;h2 id=&#34;a-little-stroll-down-the-history-lane&#34;&gt;A little stroll down the history lane&lt;/h2&gt;
 &lt;p&gt;About two weeks ago, I watched this outstanding documentary on YouTube
 &lt;a href=&#34;https://www.youtube.com/watch?v=b9_Vh9h3Ohw&#34;&gt;Springboard: the secret history of the first real
 smartphone&lt;/a&gt; about the history of
@@ -1813,17 +1813,17 @@ that will automatically server &lt;code&gt;index.wml&lt;/code&gt; file.&lt;/p&gt
 I will try to find an old phone to test it on. If you have any questions, feel
 free to ask in the comments.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Running Golang application as PID 1 with Linux kernel</title>
-	  <link>https://mitjafelicijan.com/running-golang-application-as-pid1.html</link>
-	  <pubDate>Sat, 25 Dec 2021 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/running-golang-application-as-pid1.html</guid>
-	  <description>Unikernels, kernels, and alikeI have been reading a lot aboutunikernernels lately and found themvery intriguing.</description>
-	  <content:encoded>&lt;h2 id=&#34;unikernels-kernels-and-alike&#34;&gt;Unikernels, kernels, and alike&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Running Golang application as PID 1 with Linux kernel</title>
+	    <link>https://mitjafelicijan.com/running-golang-application-as-pid1.html</link>
+	    <pubDate>Sat, 25 Dec 2021 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/running-golang-application-as-pid1.html</guid>
+	    <description>Unikernels, kernels, and alikeI have been reading a lot aboutunikernernels lately and found themvery intriguing.</description>
+	    <content:encoded>&lt;h2 id=&#34;unikernels-kernels-and-alike&#34;&gt;Unikernels, kernels, and alike&lt;/h2&gt;
 &lt;p&gt;I have been reading a lot about
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Unikernel&#34;&gt;unikernernels&lt;/a&gt; lately and found them
 very intriguing. When you push away all the marketing speak and look at the
@@ -2076,17 +2076,17 @@ run on a separate EC2 that would check if other EC2 instances are running
 properly. Remember that if your application fails, kernel panics and the
 whole machine is inoperable in this case.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Debian based riced up distribution for Developers and DevOps folks</title>
-	  <link>https://mitjafelicijan.com/debian-based-riced-up-distribution-for-developers-and-devops-folks.html</link>
-	  <pubDate>Fri, 03 Dec 2021 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/debian-based-riced-up-distribution-for-developers-and-devops-folks.html</guid>
-	  <description>IntroductionI have been using Ubuntu for quite a longtime now.</description>
-	  <content:encoded>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Debian based riced up distribution for Developers and DevOps folks</title>
+	    <link>https://mitjafelicijan.com/debian-based-riced-up-distribution-for-developers-and-devops-folks.html</link>
+	    <pubDate>Fri, 03 Dec 2021 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/debian-based-riced-up-distribution-for-developers-and-devops-folks.html</guid>
+	    <description>IntroductionI have been using Ubuntu for quite a longtime now.</description>
+	    <content:encoded>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I have been using &lt;a href=&#34;https://ubuntu.com/&#34;&gt;Ubuntu&lt;/a&gt; for quite a longtime now. I have
 used &lt;a href=&#34;https://www.debian.org/&#34;&gt;Debian&lt;/a&gt; in the past and
 &lt;a href=&#34;https://manjaro.org/&#34;&gt;Manjaro&lt;/a&gt;.  Also had &lt;a href=&#34;https://archlinux.org/&#34;&gt;Arch&lt;/a&gt; for
@@ -2313,17 +2313,17 @@ but I really do like the results.&lt;/p&gt;
 &lt;img src=&#34;/posts/dfd-rice/desktop.png&#34; alt=&#34;&#34; /&gt;
 &lt;/figure&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>List of essential Linux commands for server management</title>
-	  <link>https://mitjafelicijan.com/linux-cheatsheet.html</link>
-	  <pubDate>Sun, 01 Aug 2021 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/linux-cheatsheet.html</guid>
-	  <description>Generate SSH keyssh-keygen -t ed25519 -C &amp;#34;your_email@example.</description>
-	  <content:encoded>&lt;p&gt;&lt;strong&gt;Generate SSH key&lt;/strong&gt;&lt;/p&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>List of essential Linux commands for server management</title>
+	    <link>https://mitjafelicijan.com/linux-cheatsheet.html</link>
+	    <pubDate>Sun, 01 Aug 2021 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/linux-cheatsheet.html</guid>
+	    <description>Generate SSH keyssh-keygen -t ed25519 -C &amp;#34;your_email@example.</description>
+	    <content:encoded>&lt;p&gt;&lt;strong&gt;Generate SSH key&lt;/strong&gt;&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t ed25519 -C &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;your_email@example.com&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# when no support for Ed25519 present&lt;/span&gt;
@@ -2461,17 +2461,17 @@ but I really do like the results.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# -n 1 means every second&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;watch -n 1 df -h
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>My journey from being an internet über consumer to being a full hominum again</title>
-	  <link>https://mitjafelicijan.com/from-internet-consumer-to-full-hominum-again.html</link>
-	  <pubDate>Fri, 30 Jul 2021 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/from-internet-consumer-to-full-hominum-again.html</guid>
-	  <description>It&amp;#39;s been almost a year since I started purging all my online accounts andgoing down this rabbit hole of being almost independent of the current internetmachine.</description>
-	  <content:encoded>&lt;p&gt;It&#39;s been almost a year since I started purging all my online accounts and
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>My journey from being an internet über consumer to being a full hominum again</title>
+	    <link>https://mitjafelicijan.com/from-internet-consumer-to-full-hominum-again.html</link>
+	    <pubDate>Fri, 30 Jul 2021 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/from-internet-consumer-to-full-hominum-again.html</guid>
+	    <description>It&amp;#39;s been almost a year since I started purging all my online accounts andgoing down this rabbit hole of being almost independent of the current internetmachine.</description>
+	    <content:encoded>&lt;p&gt;It&#39;s been almost a year since I started purging all my online accounts and
 going down this rabbit hole of being almost independent of the current internet
 machine. Even though I initially thought that I will have problems adapting,
 I was pleasantly surprised that the transition went so smoothly. Even better,
@@ -2554,17 +2554,17 @@ forget in an hour. Enrich your life instead of wasting it. It only requires a
 small step. And you will feel the benefits immediately. Lose the weight of the
 world that is crushing you without your consent.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Simple world clock with eInk display and Raspberry Pi Zero</title>
-	  <link>https://mitjafelicijan.com/simple-world-clock-with-eiink-display-and-raspberry-pi-zero.html</link>
-	  <pubDate>Sat, 26 Jun 2021 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/simple-world-clock-with-eiink-display-and-raspberry-pi-zero.html</guid>
-	  <description>Our team is spread across the world, from the USA all the way to Australia, sohaving some sort of world clock makes sense.</description>
-	  <content:encoded>&lt;p&gt;Our team is spread across the world, from the USA all the way to Australia, so
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Simple world clock with eInk display and Raspberry Pi Zero</title>
+	    <link>https://mitjafelicijan.com/simple-world-clock-with-eiink-display-and-raspberry-pi-zero.html</link>
+	    <pubDate>Sat, 26 Jun 2021 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/simple-world-clock-with-eiink-display-and-raspberry-pi-zero.html</guid>
+	    <description>Our team is spread across the world, from the USA all the way to Australia, sohaving some sort of world clock makes sense.</description>
+	    <content:encoded>&lt;p&gt;Our team is spread across the world, from the USA all the way to Australia, so
 having some sort of world clock makes sense.&lt;/p&gt;
 &lt;p&gt;Currently, I am using an extension for Gnome called &lt;a href=&#34;https://extensions.gnome.org/extension/2657/timezones-extension/&#34;&gt;Timezone
 extension&lt;/a&gt;,
@@ -2646,17 +2646,17 @@ here&lt;/a&gt;, but make sure that dimensions make
 sense and also opening for USB port should be added or just use a drill and some
 hot glue to make it stick in the enclosure.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Using GoAccess with Nginx to replace Google Analytics</title>
-	  <link>https://mitjafelicijan.com/using-goaccess-with-nginx-to-replace-google-analytics.html</link>
-	  <pubDate>Mon, 25 Jan 2021 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/using-goaccess-with-nginx-to-replace-google-analytics.html</guid>
-	  <description>IntroductionI know!</description>
-	  <content:encoded>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Using GoAccess with Nginx to replace Google Analytics</title>
+	    <link>https://mitjafelicijan.com/using-goaccess-with-nginx-to-replace-google-analytics.html</link>
+	    <pubDate>Mon, 25 Jan 2021 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/using-goaccess-with-nginx-to-replace-google-analytics.html</guid>
+	    <description>IntroductionI know!</description>
+	    <content:encoded>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;I know! You cannot simply replace Google Analytics with parsing access logs and
 displaying a couple of charts. But to be honest, I actually never used Google
 Analytics to the fullest extent and was usually interested in seeing page hits
@@ -2790,17 +2790,17 @@ and password. If not, try reopening your browser.&lt;/p&gt;
 &lt;p&gt;That is all. You now have analytics for your server that gets refreshed every 10
 minutes.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Replacing Dropbox in favor of DigitalOcean spaces</title>
-	  <link>https://mitjafelicijan.com/replacing-dropbox-in-favor-of-digitalocean-spaces.html</link>
-	  <pubDate>Sun, 24 Jan 2021 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/replacing-dropbox-in-favor-of-digitalocean-spaces.html</guid>
-	  <description>A few months ago I experimented with DigitalOcean spaces as my backup solutionthat could replace Dropboxeventually.</description>
-	  <content:encoded>&lt;p&gt;A few months ago I experimented with DigitalOcean spaces as my backup solution
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Replacing Dropbox in favor of DigitalOcean spaces</title>
+	    <link>https://mitjafelicijan.com/replacing-dropbox-in-favor-of-digitalocean-spaces.html</link>
+	    <pubDate>Sun, 24 Jan 2021 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/replacing-dropbox-in-favor-of-digitalocean-spaces.html</guid>
+	    <description>A few months ago I experimented with DigitalOcean spaces as my backup solutionthat could replace Dropboxeventually.</description>
+	    <content:encoded>&lt;p&gt;A few months ago I experimented with DigitalOcean spaces as my backup solution
 that could &lt;a href=&#34;/digitalocean-spaces-to-sync-between-computers.html&#34;&gt;replace Dropbox
 eventually&lt;/a&gt;.  That solution
 worked quite nicely, and I was amazed how smashing together a couple of existing
@@ -2888,17 +2888,17 @@ flawlessly. I also uninstalled Dropbox and stopped using it completely.&lt;/p&gt
 &lt;p&gt;All I need to do is write a Bash script that does the reverse and downloads from
 remote server to local folder. This could be another post.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Using Digitalocean Spaces to sync between computers</title>
-	  <link>https://mitjafelicijan.com/digitalocean-spaces-to-sync-between-computers.html</link>
-	  <pubDate>Wed, 09 Sep 2020 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/digitalocean-spaces-to-sync-between-computers.html</guid>
-	  <description>I&amp;#39;ve been using Dropbox for probably 10&#43; yearsnow and I-ve became so used to it that it runs in the background that I don&amp;#39;teven imagine a world without it.</description>
-	  <content:encoded>&lt;p&gt;I&#39;ve been using &lt;a href=&#34;https://www.dropbox.com/&#34;&gt;Dropbox&lt;/a&gt; for probably &lt;strong&gt;10&#43; years&lt;/strong&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Using Digitalocean Spaces to sync between computers</title>
+	    <link>https://mitjafelicijan.com/digitalocean-spaces-to-sync-between-computers.html</link>
+	    <pubDate>Wed, 09 Sep 2020 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/digitalocean-spaces-to-sync-between-computers.html</guid>
+	    <description>I&amp;#39;ve been using Dropbox for probably 10&#43; yearsnow and I-ve became so used to it that it runs in the background that I don&amp;#39;teven imagine a world without it.</description>
+	    <content:encoded>&lt;p&gt;I&#39;ve been using &lt;a href=&#34;https://www.dropbox.com/&#34;&gt;Dropbox&lt;/a&gt; for probably &lt;strong&gt;10&#43; years&lt;/strong&gt;
 now and I-ve became so used to it that it runs in the background that I don&#39;t
 even imagine a world without it. But it&#39;s not without problems.&lt;/p&gt;
 &lt;p&gt;At first I had problems with &lt;code&gt;.venv&lt;/code&gt; environments for Python and the only
@@ -2983,17 +2983,17 @@ now when I am testing how this whole thing works and how it all will turn out.&l
 &lt;p&gt;I have also created a small Gnome extension which is still very unstable, but
 when/if this whole experiment pays of I will share on Github.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Fix bind warning in .profile on login in Ubuntu</title>
-	  <link>https://mitjafelicijan.com/bind-warning-on-login-in-ubuntu.html</link>
-	  <pubDate>Tue, 08 Sep 2020 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/bind-warning-on-login-in-ubuntu.html</guid>
-	  <description>Recently I moved back to bash as mydefault shell.</description>
-	  <content:encoded>&lt;p&gt;Recently I moved back to &lt;a href=&#34;https://www.gnu.org/software/bash/&#34;&gt;bash&lt;/a&gt; as my
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Fix bind warning in .profile on login in Ubuntu</title>
+	    <link>https://mitjafelicijan.com/bind-warning-on-login-in-ubuntu.html</link>
+	    <pubDate>Tue, 08 Sep 2020 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/bind-warning-on-login-in-ubuntu.html</guid>
+	    <description>Recently I moved back to bash as mydefault shell.</description>
+	    <content:encoded>&lt;p&gt;Recently I moved back to &lt;a href=&#34;https://www.gnu.org/software/bash/&#34;&gt;bash&lt;/a&gt; as my
 default shell. I was previously using &lt;a href=&#34;https://fishshell.com/&#34;&gt;fish&lt;/a&gt; and got
 used to the cool features it has. But, regardless of that, I wanted to move to a
 more standard shell because I was hopping back and forth with exporting
@@ -3029,17 +3029,17 @@ commands that presume the session is interactive when it isn&#39;t.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;fi&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After logging out and back in the problem was gone.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Getting started with MicroPython and ESP8266</title>
-	  <link>https://mitjafelicijan.com/esp8266-and-micropython-guide.html</link>
-	  <pubDate>Sun, 06 Sep 2020 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/esp8266-and-micropython-guide.html</guid>
-	  <description>IntroductionA while ago I bought someESP8266 andESP32 dev boards to playaround with and I finally found a project to try it out.</description>
-	  <content:encoded>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Getting started with MicroPython and ESP8266</title>
+	    <link>https://mitjafelicijan.com/esp8266-and-micropython-guide.html</link>
+	    <pubDate>Sun, 06 Sep 2020 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/esp8266-and-micropython-guide.html</guid>
+	    <description>IntroductionA while ago I bought someESP8266 andESP32 dev boards to playaround with and I finally found a project to try it out.</description>
+	    <content:encoded>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;A while ago I bought some
 &lt;a href=&#34;https://www.espressif.com/en/products/socs/esp8266&#34;&gt;ESP8266&lt;/a&gt; and
 &lt;a href=&#34;https://www.espressif.com/en/products/socs/esp32&#34;&gt;ESP32&lt;/a&gt; dev boards to play
@@ -3210,17 +3210,17 @@ device.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.micropython.org/en/latest/esp8266/quickref.html&#34;&gt;http://docs.micropython.org/en/latest/esp8266/quickref.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Disable mouse wake from suspend with systemd service</title>
-	  <link>https://mitjafelicijan.com/disable-mouse-wake-from-suspend-with-systemd-service.html</link>
-	  <pubDate>Sat, 15 Aug 2020 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/disable-mouse-wake-from-suspend-with-systemd-service.html</guid>
-	  <description>I recently bought ThinkPadX220 just as ajoke on eBay to test Linux distributions and play around with things and notdestroy my main machine.</description>
-	  <content:encoded>&lt;p&gt;I recently bought &lt;a href=&#34;https://www.laptopmag.com/reviews/laptops/lenovo-thinkpad-x220&#34;&gt;ThinkPad
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Disable mouse wake from suspend with systemd service</title>
+	    <link>https://mitjafelicijan.com/disable-mouse-wake-from-suspend-with-systemd-service.html</link>
+	    <pubDate>Sat, 15 Aug 2020 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/disable-mouse-wake-from-suspend-with-systemd-service.html</guid>
+	    <description>I recently bought ThinkPadX220 just as ajoke on eBay to test Linux distributions and play around with things and notdestroy my main machine.</description>
+	    <content:encoded>&lt;p&gt;I recently bought &lt;a href=&#34;https://www.laptopmag.com/reviews/laptops/lenovo-thinkpad-x220&#34;&gt;ThinkPad
 X220&lt;/a&gt; just as a
 joke on eBay to test Linux distributions and play around with things and not
 destroy my main machine. Little to my knowledge I felt in love with it.  Man,
@@ -3270,17 +3270,17 @@ If you have many devices you would like to surpress from waking up your machine
 I would create a shell script and call that instead of direclty doing it in
 service file.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Remote work and how it affects the daily lives of people</title>
-	  <link>https://mitjafelicijan.com/remote-work.html</link>
-	  <pubDate>Tue, 05 May 2020 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/remote-work.html</guid>
-	  <description>I have been working remotely for the past 5 years.</description>
-	  <content:encoded>&lt;p&gt;I have been working remotely for the past 5 years. I love it. Love the freedom
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Remote work and how it affects the daily lives of people</title>
+	    <link>https://mitjafelicijan.com/remote-work.html</link>
+	    <pubDate>Tue, 05 May 2020 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/remote-work.html</guid>
+	    <description>I have been working remotely for the past 5 years.</description>
+	    <content:encoded>&lt;p&gt;I have been working remotely for the past 5 years. I love it. Love the freedom
 and make your schedule thingy.&lt;/p&gt;
 &lt;h2 id=&#34;you-work-more-not-less&#34;&gt;You work more not less&lt;/h2&gt;
 &lt;p&gt;I&#39;ve heard from people things like: &amp;quot;Oh, you are so lucky, working from home,
@@ -3336,17 +3336,17 @@ weekly not daily. You hired them and give them the benefit of the doubt that
 they will deliver what you agreed upon.&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>My love and hate relationship with Node.js</title>
-	  <link>https://mitjafelicijan.com/my-love-and-hate-relationship-with-nodejs.html</link>
-	  <pubDate>Mon, 30 Mar 2020 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/my-love-and-hate-relationship-with-nodejs.html</guid>
-	  <description>Previous project I was working on was being coded inGolang.</description>
-	  <content:encoded>&lt;p&gt;Previous project I was working on was being coded in
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>My love and hate relationship with Node.js</title>
+	    <link>https://mitjafelicijan.com/my-love-and-hate-relationship-with-nodejs.html</link>
+	    <pubDate>Mon, 30 Mar 2020 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/my-love-and-hate-relationship-with-nodejs.html</guid>
+	    <description>Previous project I was working on was being coded inGolang.</description>
+	    <content:encoded>&lt;p&gt;Previous project I was working on was being coded in
 &lt;a href=&#34;https://golang.org/&#34;&gt;Golang&lt;/a&gt;. Also was my first project using it. And damn,
 that was an awesome experience. The whole thing is just superb. From how errors
 are handled. The C-like way you handle compiling. The way the language is
@@ -3436,17 +3436,17 @@ quickly and do impossible things in crazy limited time.&lt;/p&gt;
 &lt;p&gt;I hate to admit it. But I love Node.js. Dammit, I love it :)&lt;/p&gt;
 &lt;p&gt;2023 Update: I hate Node.js!&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>The strange case of Elasticsearch allocation failure</title>
-	  <link>https://mitjafelicijan.com/the-strange-case-of-elasticsearch-allocation-failure.html</link>
-	  <pubDate>Sun, 29 Mar 2020 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/the-strange-case-of-elasticsearch-allocation-failure.html</guid>
-	  <description>I&amp;#39;ve been using Elasticsearch in production for 5 years now and never had asingle problem with it.</description>
-	  <content:encoded>&lt;p&gt;I&#39;ve been using Elasticsearch in production for 5 years now and never had a
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>The strange case of Elasticsearch allocation failure</title>
+	    <link>https://mitjafelicijan.com/the-strange-case-of-elasticsearch-allocation-failure.html</link>
+	    <pubDate>Sun, 29 Mar 2020 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/the-strange-case-of-elasticsearch-allocation-failure.html</guid>
+	    <description>I&amp;#39;ve been using Elasticsearch in production for 5 years now and never had asingle problem with it.</description>
+	    <content:encoded>&lt;p&gt;I&#39;ve been using Elasticsearch in production for 5 years now and never had a
 single problem with it. Hell, never even known there could be a problem. Just
 worked. All this time. The first node that I deployed is still being used in
 production, never updated, upgraded, touched in anyway.&lt;/p&gt;
@@ -3516,17 +3516,17 @@ mode but I am also getting a notification that the cluster has processing status
 which could mean million of things.&lt;/p&gt;
 &lt;p&gt;Godspeed!&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Create placeholder images with sharp Node.js image processing library</title>
-	  <link>https://mitjafelicijan.com/create-placeholder-images-with-sharp.html</link>
-	  <pubDate>Fri, 27 Mar 2020 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/create-placeholder-images-with-sharp.html</guid>
-	  <description>I have been searching for a solution to pre-generate some placeholder images forimage server I needed to develop that resizes images on S3.</description>
-	  <content:encoded>&lt;p&gt;I have been searching for a solution to pre-generate some placeholder images for
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Create placeholder images with sharp Node.js image processing library</title>
+	    <link>https://mitjafelicijan.com/create-placeholder-images-with-sharp.html</link>
+	    <pubDate>Fri, 27 Mar 2020 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/create-placeholder-images-with-sharp.html</guid>
+	    <description>I have been searching for a solution to pre-generate some placeholder images forimage server I needed to develop that resizes images on S3.</description>
+	    <content:encoded>&lt;p&gt;I have been searching for a solution to pre-generate some placeholder images for
 image server I needed to develop that resizes images on S3. I though this would
 be a 15min job and quickly found out how very mistaken I was.&lt;/p&gt;
 &lt;p&gt;Even though Node.js is not really the best way to do this kind of things (surely
@@ -3609,17 +3609,17 @@ the center and adds &lt;code&gt;20px&lt;/code&gt; padding on all sides. If text 
 image it will get cut.&lt;/p&gt;
 &lt;/blockquote&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Simple Server-Sent Events based PubSub Server</title>
-	  <link>https://mitjafelicijan.com/simple-server-sent-events-based-pubsub-server.html</link>
-	  <pubDate>Sun, 22 Mar 2020 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/simple-server-sent-events-based-pubsub-server.html</guid>
-	  <description>Before we continue .</description>
-	  <content:encoded>&lt;h2 id=&#34;before-we-continue-&#34;&gt;Before we continue ...&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Simple Server-Sent Events based PubSub Server</title>
+	    <link>https://mitjafelicijan.com/simple-server-sent-events-based-pubsub-server.html</link>
+	    <pubDate>Sun, 22 Mar 2020 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/simple-server-sent-events-based-pubsub-server.html</guid>
+	    <description>Before we continue .</description>
+	    <content:encoded>&lt;h2 id=&#34;before-we-continue-&#34;&gt;Before we continue ...&lt;/h2&gt;
 &lt;p&gt;Publisher Subscriber model is nothing new and there are many amazing solutions
 out there, so writing a new one would be a waste of time if other solutions
 wouldn&#39;t have quite complex install procedures and weren&#39;t so hard to maintain.
@@ -4009,17 +4009,17 @@ setting can be adjusted in &lt;code&gt;server.js&lt;/code&gt; file; search for t
 &lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API&#34;&gt;The WebSocket API (WebSockets)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Using sentiment analysis for clickbait detection in RSS feeds</title>
-	  <link>https://mitjafelicijan.com/using-sentiment-analysis-for-clickbait-detection-in-rss-feeds.html</link>
-	  <pubDate>Sat, 19 Oct 2019 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/using-sentiment-analysis-for-clickbait-detection-in-rss-feeds.html</guid>
-	  <description>Initial thoughtsOne of the things that interested me for a while now is if major wellestablished news sites use click bait titles to drive additional traffic totheir sites and generate additional impressions.</description>
-	  <content:encoded>&lt;h2 id=&#34;initial-thoughts&#34;&gt;Initial thoughts&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Using sentiment analysis for clickbait detection in RSS feeds</title>
+	    <link>https://mitjafelicijan.com/using-sentiment-analysis-for-clickbait-detection-in-rss-feeds.html</link>
+	    <pubDate>Sat, 19 Oct 2019 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/using-sentiment-analysis-for-clickbait-detection-in-rss-feeds.html</guid>
+	    <description>Initial thoughtsOne of the things that interested me for a while now is if major wellestablished news sites use click bait titles to drive additional traffic totheir sites and generate additional impressions.</description>
+	    <content:encoded>&lt;h2 id=&#34;initial-thoughts&#34;&gt;Initial thoughts&lt;/h2&gt;
 &lt;p&gt;One of the things that interested me for a while now is if major well
 established news sites use click bait titles to drive additional traffic to
 their sites and generate additional impressions.&lt;/p&gt;
@@ -4099,17 +4099,17 @@ specific RSS feed item. 1 means positive and -1 means negative sentiment.&lt;/p&
 &lt;li&gt;&lt;a href=&#34;https://github.com/abdulfatir/twitter-sentiment-analysis&#34;&gt;Sentiment analysis on tweets using Naive Bayes, SVM, CNN, LSTM, etc. by Abdul Fatir&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Simplifying and reducing clutter in my life and work</title>
-	  <link>https://mitjafelicijan.com/simplifying-and-reducing-clutter.html</link>
-	  <pubDate>Mon, 14 Oct 2019 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/simplifying-and-reducing-clutter.html</guid>
-	  <description>I recently moved my main working machine back from Hachintosh to Linux.</description>
-	  <content:encoded>&lt;p&gt;I recently moved my main working machine back from Hachintosh to Linux. Well the
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Simplifying and reducing clutter in my life and work</title>
+	    <link>https://mitjafelicijan.com/simplifying-and-reducing-clutter.html</link>
+	    <pubDate>Mon, 14 Oct 2019 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/simplifying-and-reducing-clutter.html</guid>
+	    <description>I recently moved my main working machine back from Hachintosh to Linux.</description>
+	    <content:encoded>&lt;p&gt;I recently moved my main working machine back from Hachintosh to Linux. Well the
 experiment was interesting and I have done some great work on macOS but it was
 time to move back.&lt;/p&gt;
 &lt;p&gt;I actually really missed Linux. The simplicity of &lt;code&gt;apt-get&lt;/code&gt; or just the amount
@@ -4154,17 +4154,17 @@ the overhead was just too insane. There comes a point when you stretch yourself
 too much and then you stop progressing and with that comes dissatisfaction.&lt;/p&gt;
 &lt;p&gt;So that&#39;s about it. Moving forward minimal style.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Encoding binary data into DNA sequence</title>
-	  <link>https://mitjafelicijan.com/encoding-binary-data-into-dna-sequence.html</link>
-	  <pubDate>Thu, 03 Jan 2019 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/encoding-binary-data-into-dna-sequence.html</guid>
-	  <description>Initial thoughtsImagine a world where you could go outside and take a leaf from a tree and putit through your personal DNA sequencer and get data like music, videos orcomputer programs from it.</description>
-	  <content:encoded>&lt;h2 id=&#34;initial-thoughts&#34;&gt;Initial thoughts&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Encoding binary data into DNA sequence</title>
+	    <link>https://mitjafelicijan.com/encoding-binary-data-into-dna-sequence.html</link>
+	    <pubDate>Thu, 03 Jan 2019 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/encoding-binary-data-into-dna-sequence.html</guid>
+	    <description>Initial thoughtsImagine a world where you could go outside and take a leaf from a tree and putit through your personal DNA sequencer and get data like music, videos orcomputer programs from it.</description>
+	    <content:encoded>&lt;h2 id=&#34;initial-thoughts&#34;&gt;Initial thoughts&lt;/h2&gt;
 &lt;p&gt;Imagine a world where you could go outside and take a leaf from a tree and put
 it through your personal DNA sequencer and get data like music, videos or
 computer programs from it. Well, this is all possible now. It was not done on a
@@ -4537,17 +4537,17 @@ into DNA sequence.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/FASTA_format&#34;&gt;https://en.wikipedia.org/wiki/FASTA_format&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Using DigitalOcean Spaces Object Storage with FUSE</title>
-	  <link>https://mitjafelicijan.com/using-digitalocean-spaces-object-storage-with-fuse.html</link>
-	  <pubDate>Tue, 16 Jan 2018 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/using-digitalocean-spaces-object-storage-with-fuse.html</guid>
-	  <description>Couple of months ago DigitalOcean introduced newproduct calledSpaces whichis Object Storage very similar to Amazon&amp;#39;s S3.</description>
-	  <content:encoded>&lt;p&gt;Couple of months ago &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt; introduced new
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Using DigitalOcean Spaces Object Storage with FUSE</title>
+	    <link>https://mitjafelicijan.com/using-digitalocean-spaces-object-storage-with-fuse.html</link>
+	    <pubDate>Tue, 16 Jan 2018 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/using-digitalocean-spaces-object-storage-with-fuse.html</guid>
+	    <description>Couple of months ago DigitalOcean introduced newproduct calledSpaces whichis Object Storage very similar to Amazon&amp;#39;s S3.</description>
+	    <content:encoded>&lt;p&gt;Couple of months ago &lt;a href=&#34;https://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt; introduced new
 product called
 &lt;a href=&#34;https://blog.digitalocean.com/introducing-spaces-object-storage/&#34;&gt;Spaces&lt;/a&gt; which
 is Object Storage very similar to Amazon&#39;s S3. This really peaked my interest,
@@ -4839,17 +4839,17 @@ minutes old data this would be very interesting. If any of you find this
 proposal interesting please write in a comment box below or shoot me an email
 and I will keep you posted.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Simple IOT application supported by real-time monitoring and data history</title>
-	  <link>https://mitjafelicijan.com/simple-iot-application.html</link>
-	  <pubDate>Fri, 11 Aug 2017 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/simple-iot-application.html</guid>
-	  <description>Initial thoughtsI have been developing these kind of application for the better part of my last5 years and people keep asking me how to approach developing such applicationand I will give a try explaining it here.</description>
-	  <content:encoded>&lt;h2 id=&#34;initial-thoughts&#34;&gt;Initial thoughts&lt;/h2&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Simple IOT application supported by real-time monitoring and data history</title>
+	    <link>https://mitjafelicijan.com/simple-iot-application.html</link>
+	    <pubDate>Fri, 11 Aug 2017 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/simple-iot-application.html</guid>
+	    <description>Initial thoughtsI have been developing these kind of application for the better part of my last5 years and people keep asking me how to approach developing such applicationand I will give a try explaining it here.</description>
+	    <content:encoded>&lt;h2 id=&#34;initial-thoughts&#34;&gt;Initial thoughts&lt;/h2&gt;
 &lt;p&gt;I have been developing these kind of application for the better part of my last
 5 years and people keep asking me how to approach developing such application
 and I will give a try explaining it here.&lt;/p&gt;
@@ -5376,17 +5376,17 @@ resources for you to examine:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Any comment or additional ideas are welcomed in comments below.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Profiling Python web applications with visual tools</title>
-	  <link>https://mitjafelicijan.com/profiling-python-web-applications-with-visual-tools.html</link>
-	  <pubDate>Fri, 21 Apr 2017 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/profiling-python-web-applications-with-visual-tools.html</guid>
-	  <description>I have been profiling my software with KCachegrind for a long time now and I wasmissing this option when I am developing API&amp;#39;s or other web services.</description>
-	  <content:encoded>&lt;p&gt;I have been profiling my software with KCachegrind for a long time now and I was
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Profiling Python web applications with visual tools</title>
+	    <link>https://mitjafelicijan.com/profiling-python-web-applications-with-visual-tools.html</link>
+	    <pubDate>Fri, 21 Apr 2017 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/profiling-python-web-applications-with-visual-tools.html</guid>
+	    <description>I have been profiling my software with KCachegrind for a long time now and I wasmissing this option when I am developing API&amp;#39;s or other web services.</description>
+	    <content:encoded>&lt;p&gt;I have been profiling my software with KCachegrind for a long time now and I was
 missing this option when I am developing API&#39;s or other web services. I always
 knew that this is possible but never really took the time and dive into it.&lt;/p&gt;
 &lt;p&gt;Before we begin there are some requirements. We will need to:&lt;/p&gt;
@@ -5558,17 +5558,17 @@ way for installing pip software by targeting user level instead of using sudo.&l
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Or as suggested by &lt;a href=&#34;https://www.reddit.com/user/mvt&#34;&gt;mvt&lt;/a&gt; you can
 use &lt;a href=&#34;https://github.com/mitsuhiko/pipsi&#34;&gt;pipsi&lt;/a&gt;.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>What I&#39;ve learned developing ad server</title>
-	  <link>https://mitjafelicijan.com/what-i-ve-learned-developing-ad-server.html</link>
-	  <pubDate>Mon, 17 Apr 2017 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/what-i-ve-learned-developing-ad-server.html</guid>
-	  <description>For the past year and half I have been developing native advertising server thatcontextually matches ads and displays them in different template forms onvariety of websites.</description>
-	  <content:encoded>&lt;p&gt;For the past year and half I have been developing native advertising server that
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>What I&#39;ve learned developing ad server</title>
+	    <link>https://mitjafelicijan.com/what-i-ve-learned-developing-ad-server.html</link>
+	    <pubDate>Mon, 17 Apr 2017 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/what-i-ve-learned-developing-ad-server.html</guid>
+	    <description>For the past year and half I have been developing native advertising server thatcontextually matches ads and displays them in different template forms onvariety of websites.</description>
+	    <content:encoded>&lt;p&gt;For the past year and half I have been developing native advertising server that
 contextually matches ads and displays them in different template forms on
 variety of websites. This project grew from serving thousands of ads per day to
 millions.&lt;/p&gt;
@@ -5725,17 +5725,17 @@ of the box. But all this can be achieved with Memcached.&lt;/p&gt;
 in here deserves it&#39;s own post but you probably got the idea about the problems
 we faced.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Golang profiling simplified</title>
-	  <link>https://mitjafelicijan.com/golang-profiling-simplified.html</link>
-	  <pubDate>Tue, 07 Mar 2017 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/golang-profiling-simplified.html</guid>
-	  <description>Many posts have been written regarding profiling in Golang and I haven’t foundproper tutorial regarding this.</description>
-	  <content:encoded>&lt;p&gt;Many posts have been written regarding profiling in Golang and I haven’t found
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Golang profiling simplified</title>
+	    <link>https://mitjafelicijan.com/golang-profiling-simplified.html</link>
+	    <pubDate>Tue, 07 Mar 2017 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/golang-profiling-simplified.html</guid>
+	    <description>Many posts have been written regarding profiling in Golang and I haven’t foundproper tutorial regarding this.</description>
+	    <content:encoded>&lt;p&gt;Many posts have been written regarding profiling in Golang and I haven’t found
 proper tutorial regarding this. Almost all of them are missing some part of
 important information and it gets pretty frustrating when you have a deadline
 and are not finding simple distilled solution.&lt;/p&gt;
@@ -5833,17 +5833,17 @@ folder as our program.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;/posts/go-profiling/golang-profiling-cpu.pdf&#34;&gt;CPU PDF profile example&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Software development and my favorite pitfalls</title>
-	  <link>https://mitjafelicijan.com/software-development-pitfalls.html</link>
-	  <pubDate>Tue, 10 Nov 2015 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/software-development-pitfalls.html</guid>
-	  <description>Over the years I had the privilege to work on some very excited projects both insoftware development field and also in electronics field and every experiencetaught me some invaluable lessons about how NOT TO approach development.</description>
-	  <content:encoded>&lt;p&gt;Over the years I had the privilege to work on some very excited projects both in
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Software development and my favorite pitfalls</title>
+	    <link>https://mitjafelicijan.com/software-development-pitfalls.html</link>
+	    <pubDate>Tue, 10 Nov 2015 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/software-development-pitfalls.html</guid>
+	    <description>Over the years I had the privilege to work on some very excited projects both insoftware development field and also in electronics field and every experiencetaught me some invaluable lessons about how NOT TO approach development.</description>
+	    <content:encoded>&lt;p&gt;Over the years I had the privilege to work on some very excited projects both in
 software development field and also in electronics field and every experience
 taught me some invaluable lessons about how NOT TO approach development. And
 through this post I will try to point out some absurd, outdated techniques I
@@ -5985,17 +5985,17 @@ explanation why I do these things. There is always space for growth. And maybe
 you will also find some of yourself in this post and realize what needs to
 change for you to evolve.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Wireless sensor networks</title>
-	  <link>https://mitjafelicijan.com/wireless-sensor-networks.html</link>
-	  <pubDate>Thu, 24 Oct 2013 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/wireless-sensor-networks.html</guid>
-	  <description>Zigbee networks have this wonderful capability to self-heal, which means theycan reorder connections between them if one of them is inoperable.</description>
-	  <content:encoded>&lt;p&gt;Zigbee networks have this wonderful capability to self-heal, which means they
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Wireless sensor networks</title>
+	    <link>https://mitjafelicijan.com/wireless-sensor-networks.html</link>
+	    <pubDate>Thu, 24 Oct 2013 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/wireless-sensor-networks.html</guid>
+	    <description>Zigbee networks have this wonderful capability to self-heal, which means theycan reorder connections between them if one of them is inoperable.</description>
+	    <content:encoded>&lt;p&gt;Zigbee networks have this wonderful capability to self-heal, which means they
 can reorder connections between them if one of them is inoperable. This works
 our of the box when you deploy them. But you have to have in mind that achieving
 this is not as easy as you would think. None of it is plug&amp;amp;play.  So to make
@@ -6041,17 +6041,17 @@ good starting point for everybody who wants to build wireless networks.&lt;/p&gt
 &lt;li&gt;&lt;a href=&#34;http://www.bis.doc.gov/licensing/exportingbasics.htm&#34;&gt;http://www.bis.doc.gov/licensing/exportingbasics.htm&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>LED technology might not be as eco-friendly as you think</title>
-	  <link>https://mitjafelicijan.com/led-technology-not-so-eco.html</link>
-	  <pubDate>Fri, 09 Mar 2012 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/led-technology-not-so-eco.html</guid>
-	  <description>There is a lot of talk about LED technology.</description>
-	  <content:encoded>&lt;p&gt;There is a lot of talk about LED technology. It is beginning to infiltrate
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>LED technology might not be as eco-friendly as you think</title>
+	    <link>https://mitjafelicijan.com/led-technology-not-so-eco.html</link>
+	    <pubDate>Fri, 09 Mar 2012 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/led-technology-not-so-eco.html</guid>
+	    <description>There is a lot of talk about LED technology.</description>
+	    <content:encoded>&lt;p&gt;There is a lot of talk about LED technology. It is beginning to infiltrate
 industry at a fast rate, and it’s a challenge for designers and also engineers.
 I wondered when a weakness will be revealed. Then I stomped on an article
 talking about harm in using LED technology. It looks like this magical
@@ -6073,17 +6073,17 @@ hope I will be reading documents regarding solution for this concern soon.&lt;/p
 &lt;li&gt;&lt;a href=&#34;http://www.ehow.com/how_7483442_dispose-lowenergy-light-bulb.html&#34;&gt;How to Dispose of a Low-Energy Light Bulb&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Most likely to succeed in the year of 2011</title>
-	  <link>https://mitjafelicijan.com/most-likely-to-succeed-in-year-of-2011.html</link>
-	  <pubDate>Thu, 13 Jan 2011 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/most-likely-to-succeed-in-year-of-2011.html</guid>
-	  <description>The year of 2010 was definitely the year of Geo-location.</description>
-	  <content:encoded>&lt;p&gt;The year of 2010 was definitely the year of Geo-location. The market responded
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Most likely to succeed in the year of 2011</title>
+	    <link>https://mitjafelicijan.com/most-likely-to-succeed-in-year-of-2011.html</link>
+	    <pubDate>Thu, 13 Jan 2011 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/most-likely-to-succeed-in-year-of-2011.html</guid>
+	    <description>The year of 2010 was definitely the year of Geo-location.</description>
+	    <content:encoded>&lt;p&gt;The year of 2010 was definitely the year of Geo-location. The market responded
 beautifully and lots of very cool services were launched. We all have to thank
 the mobile market for such extensive adoption. With new generations of mobile
 phones that are not only buffed with high-tech hardware but are also affordable.
@@ -6113,8 +6113,8 @@ is everything now.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Embedded_system&#34;&gt;Embedded system&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
+	  </item>
+	  
+	  
   </channel>
 </rss>

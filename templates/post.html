@@ -8,7 +8,7 @@
   <h1 itemtype="headline">{{ .Page.Title }}</h1>
   <p><cap>{{ .Page.Type }}</cap>, {{ .Page.Created.Format "Jan 2, 2006" }} on <a href="{{ .Config.BaseURL }}">{{ .Config.Title }}'s blog</a></p>
   <div>
-	{{ .Page.HTML }}
+	  {{ .Page.HTML }}
   </div>
 </article>
 {{ end }}

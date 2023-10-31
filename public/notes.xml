@@ -1,19 +1,19 @@
 <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-	<title>Mitja Felicijan's notes</title>
-	<link>https://mitjafelicijan.com</link>
-	<description>You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.</description>
-	<language>en-us</language>
+	  <title>Mitja Felicijan's notes</title>
+	  <link>https://mitjafelicijan.com</link>
+	  <description>You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.</description>
+	  <language>en-us</language>
 
-	
-	
-	<item>
-	  <title>Compile drawterm on Fedora 38</title>
-	  <link>https://mitjafelicijan.com/compile-drawterm-on-fedora-38.html</link>
-	  <pubDate>Mon, 25 Sep 2023 09:04:28 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/compile-drawterm-on-fedora-38.html</guid>
-	  <description>First install two dependencies:sudo dnf install libX11-devel libXt-develClone the repo and compile it:git clone git://git.</description>
-	  <content:encoded>&lt;p&gt;First install two dependencies:&lt;/p&gt;
+	  
+	  
+	  <item>
+	    <title>Compile drawterm on Fedora 38</title>
+	    <link>https://mitjafelicijan.com/compile-drawterm-on-fedora-38.html</link>
+	    <pubDate>Mon, 25 Sep 2023 09:04:28 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/compile-drawterm-on-fedora-38.html</guid>
+	    <description>First install two dependencies:sudo dnf install libX11-devel libXt-develClone the repo and compile it:git clone git://git.</description>
+	    <content:encoded>&lt;p&gt;First install two dependencies:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dnf install libX11-devel libXt-devel
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Clone the repo and compile it:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone git://git.9front.org/plan9front/drawterm
@@ -21,17 +21,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CONF=unix make
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That should produce &lt;code&gt;drawterm&lt;/code&gt; binary.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>AWS EB PyYAML fix</title>
-	  <link>https://mitjafelicijan.com/aws-eb-pyyaml-fix.html</link>
-	  <pubDate>Mon, 18 Sep 2023 07:27:29 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/aws-eb-pyyaml-fix.html</guid>
-	  <description>Recent update of my system completely borked EB CLIon my machine.</description>
-	  <content:encoded>&lt;p&gt;Recent update of my system completely borked &lt;a href=&#34;https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-advanced.html&#34;&gt;EB CLI&lt;/a&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>AWS EB PyYAML fix</title>
+	    <link>https://mitjafelicijan.com/aws-eb-pyyaml-fix.html</link>
+	    <pubDate>Mon, 18 Sep 2023 07:27:29 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/aws-eb-pyyaml-fix.html</guid>
+	    <description>Recent update of my system completely borked EB CLIon my machine.</description>
+	    <content:encoded>&lt;p&gt;Recent update of my system completely borked &lt;a href=&#34;https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-advanced.html&#34;&gt;EB CLI&lt;/a&gt;
 on my machine.&lt;/p&gt;
 &lt;p&gt;I tried installing it with &lt;code&gt;pip install awsebcli --upgrade --user&lt;/code&gt; and it failed.&lt;/p&gt;
 &lt;p&gt;The error was the following.&lt;/p&gt;
@@ -49,17 +49,17 @@ on my machine.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;Cython &amp;lt; 3.0&amp;#39;&lt;/span&gt; &amp;gt; /tmp/constraint.txt
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PIP_CONSTRAINT=/tmp/constraint.txt pip install &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;PyYAML==5.4.1&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Floods in Slovenia up close</title>
-	  <link>https://mitjafelicijan.com/floods-in-slovenia.html</link>
-	  <pubDate>Sat, 05 Aug 2023 07:06:50 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/floods-in-slovenia.html</guid>
-	  <description></description>
-	  <content:encoded>&lt;p&gt;&lt;video src=&#34;/notes/floods/IMG_1471.mp4&#34; controls&gt;&lt;/video&gt;&lt;/p&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Floods in Slovenia up close</title>
+	    <link>https://mitjafelicijan.com/floods-in-slovenia.html</link>
+	    <pubDate>Sat, 05 Aug 2023 07:06:50 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/floods-in-slovenia.html</guid>
+	    <description></description>
+	    <content:encoded>&lt;p&gt;&lt;video src=&#34;/notes/floods/IMG_1471.mp4&#34; controls&gt;&lt;/video&gt;&lt;/p&gt;
 &lt;p&gt;&lt;video src=&#34;/notes/floods/IMG_1474.mp4&#34; controls&gt;&lt;/video&gt;&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src=&#34;/notes/floods/IMG_1469.webp&#34; alt=&#34;&#34; /&gt;
@@ -70,17 +70,17 @@ on my machine.&lt;/p&gt;
 &lt;p&gt;&lt;video src=&#34;/notes/floods/IMG_1461.mp4&#34; controls&gt;&lt;/video&gt;&lt;/p&gt;
 &lt;p&gt;&lt;video src=&#34;/notes/floods/IMG_1466.mp4&#34; controls&gt;&lt;/video&gt;&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Make B/W SVG charts with matplotlib</title>
-	  <link>https://mitjafelicijan.com/make-b-w-svg-charts-with-matplotlib.html</link>
-	  <pubDate>Tue, 01 Aug 2023 17:04:10 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/make-b-w-svg-charts-with-matplotlib.html</guid>
-	  <description>Install pip requirements.</description>
-	  <content:encoded>&lt;p&gt;Install pip requirements.&lt;/p&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Make B/W SVG charts with matplotlib</title>
+	    <link>https://mitjafelicijan.com/make-b-w-svg-charts-with-matplotlib.html</link>
+	    <pubDate>Tue, 01 Aug 2023 17:04:10 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/make-b-w-svg-charts-with-matplotlib.html</guid>
+	    <description>Install pip requirements.</description>
+	    <content:encoded>&lt;p&gt;Install pip requirements.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install matplotlib
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install pandas
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Example of data being used.&lt;/p&gt;
@@ -131,17 +131,17 @@ This is how you get a column data with pandas.&lt;/p&gt;
 &lt;/figure&gt;
 &lt;p&gt;The image above is SVG and you can zoom in and out and check that the image is vector.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Set color temperature of displays on i3</title>
-	  <link>https://mitjafelicijan.com/set-color-temperature-of-displays-on-i3.html</link>
-	  <pubDate>Fri, 14 Jul 2023 09:19:31 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/set-color-temperature-of-displays-on-i3.html</guid>
-	  <description>I have been using Gnome&amp;#39;s night shift for a while now and I have been missingthis feature under i3wm.</description>
-	  <content:encoded>&lt;p&gt;I have been using Gnome&#39;s night shift for a while now and I have been missing
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Set color temperature of displays on i3</title>
+	    <link>https://mitjafelicijan.com/set-color-temperature-of-displays-on-i3.html</link>
+	    <pubDate>Fri, 14 Jul 2023 09:19:31 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/set-color-temperature-of-displays-on-i3.html</guid>
+	    <description>I have been using Gnome&amp;#39;s night shift for a while now and I have been missingthis feature under i3wm.</description>
+	    <content:encoded>&lt;p&gt;I have been using Gnome&#39;s night shift for a while now and I have been missing
 this feature under i3wm. This can be done with
 &lt;a href=&#34;https://linux.die.net/man/1/redshift&#34;&gt;redshift&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
@@ -150,17 +150,17 @@ this feature under i3wm. This can be done with
 &lt;li&gt;Reset the current settings with &lt;code&gt;redshift -x&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Fix screen tearing on Debian 12 Xorg and i3</title>
-	  <link>https://mitjafelicijan.com/fix-screen-tearing-on-debian-12-xorg-and-i3.html</link>
-	  <pubDate>Mon, 10 Jul 2023 04:21:48 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/fix-screen-tearing-on-debian-12-xorg-and-i3.html</guid>
-	  <description>I have been experiencing some issues with Intel® Integrated HD Graphics 3000under Debian 12 with Xorg and i3.</description>
-	  <content:encoded>&lt;p&gt;I have been experiencing some issues with Intel® Integrated HD Graphics 3000
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Fix screen tearing on Debian 12 Xorg and i3</title>
+	    <link>https://mitjafelicijan.com/fix-screen-tearing-on-debian-12-xorg-and-i3.html</link>
+	    <pubDate>Mon, 10 Jul 2023 04:21:48 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/fix-screen-tearing-on-debian-12-xorg-and-i3.html</guid>
+	    <description>I have been experiencing some issues with Intel® Integrated HD Graphics 3000under Debian 12 with Xorg and i3.</description>
+	    <content:encoded>&lt;p&gt;I have been experiencing some issues with Intel® Integrated HD Graphics 3000
 under Debian 12 with Xorg and i3. Using &lt;code&gt;picom&lt;/code&gt; compositor didn&#39;t help. To fix
 this issue create new file &lt;code&gt;/etc/X11/xorg.conf.d/20-intel.conf&lt;/code&gt; as root and put
 the following in the file.&lt;/p&gt;
@@ -172,37 +172,37 @@ EndSection
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Reboot the system and that should be it.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Online radio streaming with MPV from terminal</title>
-	  <link>https://mitjafelicijan.com/online-radio-streaming-with-mpv-from-terminal.html</link>
-	  <pubDate>Mon, 10 Jul 2023 03:34:45 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/online-radio-streaming-with-mpv-from-terminal.html</guid>
-	  <description>Recently I have been using my Thinkpad x220 more and there are some constraintsI have faced with it.</description>
-	  <content:encoded>&lt;p&gt;Recently I have been using my Thinkpad x220 more and there are some constraints
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Online radio streaming with MPV from terminal</title>
+	    <link>https://mitjafelicijan.com/online-radio-streaming-with-mpv-from-terminal.html</link>
+	    <pubDate>Mon, 10 Jul 2023 03:34:45 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/online-radio-streaming-with-mpv-from-terminal.html</guid>
+	    <description>Recently I have been using my Thinkpad x220 more and there are some constraintsI have faced with it.</description>
+	    <content:encoded>&lt;p&gt;Recently I have been using my Thinkpad x220 more and there are some constraints
 I have faced with it. CPU is not as powerful as on my main machine and I really
 want to listen to some music while using the machine. Browsers really are bloat.&lt;/p&gt;
 &lt;p&gt;Check out this site &lt;a href=&#34;https://streamurl.link/&#34;&gt;https://streamurl.link/&lt;/a&gt; and copy the stream url and then do
 &lt;code&gt;mpv streamlink&lt;/code&gt;.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	
-	
-	<item>
-	  <title>60&#39;s IBM Computers Commercial</title>
-	  <link>https://mitjafelicijan.com/60s-ibm-computers-commercial.html</link>
-	  <pubDate>Thu, 29 Jun 2023 22:13:45 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/60s-ibm-computers-commercial.html</guid>
-	  <description>Likely aired during an hour-long program during the 1960s, long commercials suchas this typically aired during hour-long programs.</description>
-	  <content:encoded>&lt;p&gt;Likely aired during an hour-long program during the 1960s, long commercials such
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>60&#39;s IBM Computers Commercial</title>
+	    <link>https://mitjafelicijan.com/60s-ibm-computers-commercial.html</link>
+	    <pubDate>Thu, 29 Jun 2023 22:13:45 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/60s-ibm-computers-commercial.html</guid>
+	    <description>Likely aired during an hour-long program during the 1960s, long commercials suchas this typically aired during hour-long programs.</description>
+	    <content:encoded>&lt;p&gt;Likely aired during an hour-long program during the 1960s, long commercials such
 as this typically aired during hour-long programs. They would &lt;em&gt;not&lt;/em&gt; have aired
 during a half-hour program.&lt;/p&gt;
 &lt;p&gt;&lt;video
@@ -210,17 +210,17 @@ poster=&#34;/notes/60s-ibm-computers-commercial.jpg&#34;
 src=&#34;/notes/60s-ibm-computers-commercial.mp4&#34;
 controls&gt;&lt;/video&gt;&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>10/GUI 10 Finger Multitouch User Interface</title>
-	  <link>https://mitjafelicijan.com/10gui-10-finger-multitouch-user-interface.html</link>
-	  <pubDate>Thu, 29 Jun 2023 14:51:39 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/10gui-10-finger-multitouch-user-interface.html</guid>
-	  <description>Message from 10/GUI team (page 10gui.</description>
-	  <content:encoded>&lt;p&gt;Message from 10/GUI team (page 10gui.com does not exist anymore):&lt;/p&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>10/GUI 10 Finger Multitouch User Interface</title>
+	    <link>https://mitjafelicijan.com/10gui-10-finger-multitouch-user-interface.html</link>
+	    <pubDate>Thu, 29 Jun 2023 14:51:39 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/10gui-10-finger-multitouch-user-interface.html</guid>
+	    <description>Message from 10/GUI team (page 10gui.</description>
+	    <content:encoded>&lt;p&gt;Message from 10/GUI team (page 10gui.com does not exist anymore):&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Over a quarter-century ago, Xerox introduced the modern graphical user
 interface paradigm we today take for granted.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;That it has endured is a testament to the genius of its design. But the
@@ -233,17 +233,17 @@ poster=&#34;/notes/10gui-10-finger-multitouch-user-interface.jpg&#34;
 src=&#34;/notes/10gui-10-finger-multitouch-user-interface.mp4&#34;
 controls&gt;&lt;/video&gt;&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Alacritty open links with modifier</title>
-	  <link>https://mitjafelicijan.com/alacritty-open-links-with-modifier.html</link>
-	  <pubDate>Sun, 25 Jun 2023 17:17:16 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/alacritty-open-links-with-modifier.html</guid>
-	  <description>Alacritty by default makes all links in the terminal output clickable and thisgets annoying rather quickly.</description>
-	  <content:encoded>&lt;p&gt;Alacritty by default makes all links in the terminal output clickable and this
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Alacritty open links with modifier</title>
+	    <link>https://mitjafelicijan.com/alacritty-open-links-with-modifier.html</link>
+	    <pubDate>Sun, 25 Jun 2023 17:17:16 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/alacritty-open-links-with-modifier.html</guid>
+	    <description>Alacritty by default makes all links in the terminal output clickable and thisgets annoying rather quickly.</description>
+	    <content:encoded>&lt;p&gt;Alacritty by default makes all links in the terminal output clickable and this
 gets annoying rather quickly. I liked the default behavior of Gnome terminal
 where you needed to hold Control key and then you could click and open links.&lt;/p&gt;
 &lt;p&gt;To achieve this in Alacritty you need to provide a &lt;code&gt;hint&lt;/code&gt; in the configuration
@@ -263,17 +263,17 @@ change &lt;code&gt;command: xdg-open&lt;/code&gt; to something else.&lt;/p&gt;
 pressed.&lt;/p&gt;
 &lt;p&gt;Source: &lt;a href=&#34;https://github.com/alacritty/alacritty/issues/5246&#34;&gt;https://github.com/alacritty/alacritty/issues/5246&lt;/a&gt;&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Development environments with Nix</title>
-	  <link>https://mitjafelicijan.com/development-environments-with-nix.html</link>
-	  <pubDate>Sun, 25 Jun 2023 16:38:10 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/development-environments-with-nix.html</guid>
-	  <description>Nix is amazing for making reproducible cross OS development environment.</description>
-	  <content:encoded>&lt;p&gt;Nix is amazing for making reproducible cross OS development environment.&lt;/p&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Development environments with Nix</title>
+	    <link>https://mitjafelicijan.com/development-environments-with-nix.html</link>
+	    <pubDate>Sun, 25 Jun 2023 16:38:10 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/development-environments-with-nix.html</guid>
+	    <description>Nix is amazing for making reproducible cross OS development environment.</description>
+	    <content:encoded>&lt;p&gt;Nix is amazing for making reproducible cross OS development environment.&lt;/p&gt;
 &lt;p&gt;First you need to &lt;a href=&#34;https://nixos.org/download.html&#34;&gt;install Nix package
 manager&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
@@ -324,17 +324,17 @@ of prompt is omitted&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://mynixos.com/&#34;&gt;https://mynixos.com/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Making cgit look nicer</title>
-	  <link>https://mitjafelicijan.com/making-cgit-look-nicer.html</link>
-	  <pubDate>Sat, 24 Jun 2023 13:33:58 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/making-cgit-look-nicer.html</guid>
-	  <description>For personal use I have a private Git serverset up and I use GitHub just as a mirror.</description>
-	  <content:encoded>&lt;p&gt;For personal use I have a &lt;a href=&#34;https://git.mitjafelicijan.com&#34;&gt;private Git server&lt;/a&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Making cgit look nicer</title>
+	    <link>https://mitjafelicijan.com/making-cgit-look-nicer.html</link>
+	    <pubDate>Sat, 24 Jun 2023 13:33:58 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/making-cgit-look-nicer.html</guid>
+	    <description>For personal use I have a private Git serverset up and I use GitHub just as a mirror.</description>
+	    <content:encoded>&lt;p&gt;For personal use I have a &lt;a href=&#34;https://git.mitjafelicijan.com&#34;&gt;private Git server&lt;/a&gt;
 set up and I use GitHub just as a mirror. By default the cgit theme looks a bit
 dated so I made the flowing theme.&lt;/p&gt;
 &lt;ul&gt;
@@ -527,17 +527,17 @@ dated so I made the flowing theme.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#00f&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#00f&#34;&gt;red&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Simple presentations with Markdown</title>
-	  <link>https://mitjafelicijan.com/presentations-with-markdown.html</link>
-	  <pubDate>Wed, 21 Jun 2023 08:54:48 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/presentations-with-markdown.html</guid>
-	  <description>A simple way to make presentations without using desktop apps or using onlineservices is https://github.</description>
-	  <content:encoded>&lt;p&gt;A simple way to make presentations without using desktop apps or using online
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Simple presentations with Markdown</title>
+	    <link>https://mitjafelicijan.com/presentations-with-markdown.html</link>
+	    <pubDate>Wed, 21 Jun 2023 08:54:48 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/presentations-with-markdown.html</guid>
+	    <description>A simple way to make presentations without using desktop apps or using onlineservices is https://github.</description>
+	    <content:encoded>&lt;p&gt;A simple way to make presentations without using desktop apps or using online
 services is &lt;a href=&#34;https://github.com/remarkjs/remark&#34;&gt;https://github.com/remarkjs/remark&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;First create &lt;code&gt;index.html&lt;/code&gt; and be sure you make changes to &lt;code&gt;config&lt;/code&gt; variable.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
@@ -599,17 +599,17 @@ separate slides. Other stuff is just pure markdown.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;-&lt;/span&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;-&lt;/span&gt; Vestibulum eget leo ac dolor venenatis pulvinar.
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Bulk thumbnails</title>
-	  <link>https://mitjafelicijan.com/bulk-make-thumbnails.html</link>
-	  <pubDate>Sun, 04 Jun 2023 20:46:56 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/bulk-make-thumbnails.html</guid>
-	  <description>Make bulk thumbnails of JPGs with ImageMagick.</description>
-	  <content:encoded>&lt;p&gt;Make bulk thumbnails of JPGs with ImageMagick.&lt;/p&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Bulk thumbnails</title>
+	    <link>https://mitjafelicijan.com/bulk-make-thumbnails.html</link>
+	    <pubDate>Sun, 04 Jun 2023 20:46:56 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/bulk-make-thumbnails.html</guid>
+	    <description>Make bulk thumbnails of JPGs with ImageMagick.</description>
+	    <content:encoded>&lt;p&gt;Make bulk thumbnails of JPGs with ImageMagick.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;directory=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;./images/&amp;#34;&lt;/span&gt;
@@ -619,17 +619,17 @@ separate slides. Other stuff is just pure markdown.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  convert &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$file&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; -resize $dimensions &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;$file&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;${&lt;/span&gt;file%.*&lt;span style=&#34;color:#a31515&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;-thumbnail.jpg&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Edsger W. Dijkstra Manuscripts ebook</title>
-	  <link>https://mitjafelicijan.com/ewd-manuscripts-ebook.html</link>
-	  <pubDate>Thu, 01 Jun 2023 22:47:56 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/ewd-manuscripts-ebook.html</guid>
-	  <description>I love reading the original manuscripts of Edsger W.</description>
-	  <content:encoded>&lt;p&gt;I love reading the original manuscripts of Edsger W. Dijkstra. They are
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Edsger W. Dijkstra Manuscripts ebook</title>
+	    <link>https://mitjafelicijan.com/ewd-manuscripts-ebook.html</link>
+	    <pubDate>Thu, 01 Jun 2023 22:47:56 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/ewd-manuscripts-ebook.html</guid>
+	    <description>I love reading the original manuscripts of Edsger W.</description>
+	    <content:encoded>&lt;p&gt;I love reading the original manuscripts of Edsger W. Dijkstra. They are
 available online at the University of Texas at Austin website, but I also found
 MOBI version. I converted it into ePub as well.&lt;/p&gt;
 &lt;p&gt;Downloads:&lt;/p&gt;
@@ -643,19 +643,19 @@ MOBI version. I converted it into ePub as well.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/evmn/The-Manuscripts-of-Edsger-W.-Dijkstra&#34;&gt;Original repository of MOBI version&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	<item>
-	  <title>Extending dte editor</title>
-	  <link>https://mitjafelicijan.com/extending-dte-editor.html</link>
-	  <pubDate>Wed, 31 May 2023 08:12:45 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/extending-dte-editor.html</guid>
-	  <description>dte is an interesting editor I startedusing lately more and more.</description>
-	  <content:encoded>&lt;p&gt;&lt;a href=&#34;https://craigbarnes.gitlab.io/dte/&#34;&gt;&lt;code&gt;dte&lt;/code&gt;&lt;/a&gt; is an interesting editor I started
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>Extending dte editor</title>
+	    <link>https://mitjafelicijan.com/extending-dte-editor.html</link>
+	    <pubDate>Wed, 31 May 2023 08:12:45 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/extending-dte-editor.html</guid>
+	    <description>dte is an interesting editor I startedusing lately more and more.</description>
+	    <content:encoded>&lt;p&gt;&lt;a href=&#34;https://craigbarnes.gitlab.io/dte/&#34;&gt;&lt;code&gt;dte&lt;/code&gt;&lt;/a&gt; is an interesting editor I started
 using lately more and more. Since it is using
 &lt;a href=&#34;https://linux.die.net/man/3/execvp&#34;&gt;&lt;code&gt;execvp()&lt;/code&gt;&lt;/a&gt; it can be easily extended. I
 needed comment/uncomment feature so I created a small utility that does this for
@@ -694,17 +694,17 @@ above.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hi linenumber blue;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hi comment cyan;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Grep to Less that maintain colors</title>
-	  <link>https://mitjafelicijan.com/grep-to-less-maintain-colors.html</link>
-	  <pubDate>Mon, 29 May 2023 21:27:07 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/grep-to-less-maintain-colors.html</guid>
-	  <description>I often use grep to search for todo&amp;#39;s in my code and other people&amp;#39;s code andthen pipe them in less and I missed having colors that grep outputs in less.</description>
-	  <content:encoded>&lt;p&gt;I often use &lt;code&gt;grep&lt;/code&gt; to search for todo&#39;s in my code and other people&#39;s code and
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Grep to Less that maintain colors</title>
+	    <link>https://mitjafelicijan.com/grep-to-less-maintain-colors.html</link>
+	    <pubDate>Mon, 29 May 2023 21:27:07 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/grep-to-less-maintain-colors.html</guid>
+	    <description>I often use grep to search for todo&amp;#39;s in my code and other people&amp;#39;s code andthen pipe them in less and I missed having colors that grep outputs in less.</description>
+	    <content:encoded>&lt;p&gt;I often use &lt;code&gt;grep&lt;/code&gt; to search for todo&#39;s in my code and other people&#39;s code and
 then pipe them in &lt;code&gt;less&lt;/code&gt; and I missed having colors that grep outputs in &lt;code&gt;less&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Grep&#39;s &lt;code&gt;--color=always&lt;/code&gt; use markers to highlight the matching strings.&lt;/li&gt;
@@ -719,17 +719,17 @@ string.&lt;/p&gt;
 &lt;img src=&#34;/notes/grep-less.png&#34; alt=&#34;Less and grep&#34; /&gt;
 &lt;/figure&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Easy measure time took in a bash script</title>
-	  <link>https://mitjafelicijan.com/easy-time-took-in-bash.html</link>
-	  <pubDate>Sun, 28 May 2023 17:53:20 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/easy-time-took-in-bash.html</guid>
-	  <description>In Bash, the $SECONDS variable is a special variable that automatically keepstrack of the number of seconds since the current shell or script startedexecuting.</description>
-	  <content:encoded>&lt;p&gt;In Bash, the &lt;code&gt;$SECONDS&lt;/code&gt; variable is a special variable that automatically keeps
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Easy measure time took in a bash script</title>
+	    <link>https://mitjafelicijan.com/easy-time-took-in-bash.html</link>
+	    <pubDate>Sun, 28 May 2023 17:53:20 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/easy-time-took-in-bash.html</guid>
+	    <description>In Bash, the $SECONDS variable is a special variable that automatically keepstrack of the number of seconds since the current shell or script startedexecuting.</description>
+	    <content:encoded>&lt;p&gt;In Bash, the &lt;code&gt;$SECONDS&lt;/code&gt; variable is a special variable that automatically keeps
 track of the number of seconds since the current shell or script started
 executing. It starts counting from the moment the script begins running.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;#!/bin/bash
@@ -743,17 +743,17 @@ executing. It starts counting from the moment the script begins running.&lt;/p&g
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Print the time elapsed.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;Time taken: &lt;/span&gt;$SECONDS&lt;span style=&#34;color:#a31515&#34;&gt; seconds&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Make DCSS playable on 4k displays</title>
-	  <link>https://mitjafelicijan.com/dcss-on-4k-display.html</link>
-	  <pubDate>Sat, 27 May 2023 19:35:11 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/dcss-on-4k-display.html</guid>
-	  <description>Dungeon Crawl Stone Soup has a a very small font by default.</description>
-	  <content:encoded>&lt;p&gt;Dungeon Crawl Stone Soup has a a very small font by default. On a 4k display, it
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Make DCSS playable on 4k displays</title>
+	    <link>https://mitjafelicijan.com/dcss-on-4k-display.html</link>
+	    <pubDate>Sat, 27 May 2023 19:35:11 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/dcss-on-4k-display.html</guid>
+	    <description>Dungeon Crawl Stone Soup has a a very small font by default.</description>
+	    <content:encoded>&lt;p&gt;Dungeon Crawl Stone Soup has a a very small font by default. On a 4k display, it
 is barely readable. This is how I made it playable.&lt;/p&gt;
 &lt;p&gt;Make a file &lt;code&gt;~/.crawlrc&lt;/code&gt; with the following content:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Adjust the sizes to your liking.&lt;/span&gt;
@@ -769,17 +769,17 @@ is barely readable. This is how I made it playable.&lt;/p&gt;
 Guide&lt;/a&gt;
 file.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Drawing Pixels in Plan9</title>
-	  <link>https://mitjafelicijan.com/drawing-pixels-in-plan9.html</link>
-	  <pubDate>Sat, 27 May 2023 17:41:33 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/drawing-pixels-in-plan9.html</guid>
-	  <description>I have started exploring Plan9&amp;#39;s graphics capabilities.</description>
-	  <content:encoded>&lt;p&gt;I have started exploring Plan9&#39;s graphics capabilities. This is a hello world
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Drawing Pixels in Plan9</title>
+	    <link>https://mitjafelicijan.com/drawing-pixels-in-plan9.html</link>
+	    <pubDate>Sat, 27 May 2023 17:41:33 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/drawing-pixels-in-plan9.html</guid>
+	    <description>I have started exploring Plan9&amp;#39;s graphics capabilities.</description>
+	    <content:encoded>&lt;p&gt;I have started exploring Plan9&#39;s graphics capabilities. This is a hello world
 alternative for drawing that draws a yellow square on a blue background.&lt;/p&gt;
 &lt;p&gt;More information:&lt;/p&gt;
 &lt;ul&gt;
@@ -846,17 +846,17 @@ can be a valuable resource for learning about the system&lt;/li&gt;
 is the alternative for Ctrl&#43;C).&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This is &lt;strong&gt;very cool&lt;/strong&gt; indeed!&lt;/em&gt;&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Cronjobs on Github with Github Actions</title>
-	  <link>https://mitjafelicijan.com/cronjobs-github-with-actions.html</link>
-	  <pubDate>Sat, 27 May 2023 00:35:36 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/cronjobs-github-with-actions.html</guid>
-	  <description>In the root of your repository create a folder .</description>
-	  <content:encoded>&lt;p&gt;In the root of your repository create a folder &lt;code&gt;.github/workflows&lt;/code&gt; and in that
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Cronjobs on Github with Github Actions</title>
+	    <link>https://mitjafelicijan.com/cronjobs-github-with-actions.html</link>
+	    <pubDate>Sat, 27 May 2023 00:35:36 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/cronjobs-github-with-actions.html</guid>
+	    <description>In the root of your repository create a folder .</description>
+	    <content:encoded>&lt;p&gt;In the root of your repository create a folder &lt;code&gt;.github/workflows&lt;/code&gt; and in that
 folder create a file a file &lt;code&gt;cron.yaml&lt;/code&gt;. This file can be named whatever you
 wish. But it has to be a &lt;code&gt;yaml&lt;/code&gt; file.&lt;/p&gt;
 &lt;p&gt;File below (&lt;code&gt;.github/workflows/cron.yaml&lt;/code&gt;) describes an action that will trigger
@@ -876,17 +876,17 @@ on their website &lt;a href=&#34;https://docs.github.com/en/actions&#34;&gt;http
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - name: Call some url
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        run: curl &amp;#39;https://example.com&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Dungeon Crawl Stone Soup - New player guide</title>
-	  <link>https://mitjafelicijan.com/dcss-new-player-guide.html</link>
-	  <pubDate>Thu, 25 May 2023 22:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/dcss-new-player-guide.html</guid>
-	  <description>An amazing game deserves an amazing guide.</description>
-	  <content:encoded>&lt;p&gt;An amazing game deserves an amazing guide. All this material can be find in some
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Dungeon Crawl Stone Soup - New player guide</title>
+	    <link>https://mitjafelicijan.com/dcss-new-player-guide.html</link>
+	    <pubDate>Thu, 25 May 2023 22:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/dcss-new-player-guide.html</guid>
+	    <description>An amazing game deserves an amazing guide.</description>
+	    <content:encoded>&lt;p&gt;An amazing game deserves an amazing guide. All this material can be find in some
 form on another on &lt;a href=&#34;https://github.com/crawl/crawl&#34;&gt;craw&#39;s&lt;/a&gt; official repository.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;/notes/dcss-quickstart.pdf&#34;&gt;DCSS Quickstart&lt;/a&gt; - Very short introduction to the
@@ -981,17 +981,17 @@ don&#39;t hold back!&lt;/li&gt;
 &lt;li&gt;Pressing &lt;code&gt;^&lt;/code&gt; will let you view your current god, abilities, and piety.&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Display xterm color palette</title>
-	  <link>https://mitjafelicijan.com/write-iso-usb.html</link>
-	  <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/write-iso-usb.html</guid>
-	  <description>bash xterm-palette.</description>
-	  <content:encoded>&lt;ul&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Display xterm color palette</title>
+	    <link>https://mitjafelicijan.com/write-iso-usb.html</link>
+	    <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/write-iso-usb.html</guid>
+	    <description>bash xterm-palette.</description>
+	    <content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;bash xterm-palette.sh&lt;/code&gt; - will show you number of max colors available&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;bash xterm-palette.sh -v&lt;/code&gt; - will create a list of all colors with codes&lt;/li&gt;
 &lt;/ul&gt;
@@ -1067,17 +1067,17 @@ don&#39;t hold back!&lt;/li&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;esac&lt;/span&gt; | less --raw-control-chars --QUIT-AT-EOF --no-init
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Sane defaults for tmux with more visible statusbar</title>
-	  <link>https://mitjafelicijan.com/tmux-sane-defaults.html</link>
-	  <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/tmux-sane-defaults.html</guid>
-	  <description># Remap prefix from &amp;#39;C-b&amp;#39; to &amp;#39;M-a&amp;#39;.</description>
-	  <content:encoded>&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;# Remap prefix from &#39;C-b&#39; to &#39;M-a&#39;.
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Sane defaults for tmux with more visible statusbar</title>
+	    <link>https://mitjafelicijan.com/tmux-sane-defaults.html</link>
+	    <pubDate>Thu, 25 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/tmux-sane-defaults.html</guid>
+	    <description># Remap prefix from &amp;#39;C-b&amp;#39; to &amp;#39;M-a&amp;#39;.</description>
+	    <content:encoded>&lt;pre&gt;&lt;code class=&#34;language-conf&#34;&gt;# Remap prefix from &#39;C-b&#39; to &#39;M-a&#39;.
 unbind C-b
 set-option -g prefix M-a
 bind-key M-a send-prefix
@@ -1104,35 +1104,35 @@ set -g window-status-current-format &amp;quot;#[fg=#ffffff]#[bg=#111111]#[fg=#ff
 set -g mouse off
 &lt;/code&gt;&lt;/pre&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>My brand new Plan9/9front desktop</title>
-	  <link>https://mitjafelicijan.com/fresh-9front-desktop.html</link>
-	  <pubDate>Wed, 24 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/fresh-9front-desktop.html</guid>
-	  <description>I have been experimenting with Plan9/9front for a week now.</description>
-	  <content:encoded>&lt;p&gt;I have been experimenting with Plan9/9front for a week now. Noice! This is how
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>My brand new Plan9/9front desktop</title>
+	    <link>https://mitjafelicijan.com/fresh-9front-desktop.html</link>
+	    <pubDate>Wed, 24 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/fresh-9front-desktop.html</guid>
+	    <description>I have been experimenting with Plan9/9front for a week now.</description>
+	    <content:encoded>&lt;p&gt;I have been experimenting with Plan9/9front for a week now. Noice! This is how
 my desktop looks like.&lt;/p&gt;
 &lt;figure&gt;
 &lt;img src=&#34;/notes/9front-desktop.png&#34; alt=&#34;9front desktop&#34; /&gt;
 &lt;/figure&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	<item>
-	  <title>Parse RSS feeds with Lua</title>
-	  <link>https://mitjafelicijan.com/parse-rss-with-lua.html</link>
-	  <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/parse-rss-with-lua.html</guid>
-	  <description>Example of parsing RSS feeds with Lua.</description>
-	  <content:encoded>&lt;p&gt;Example of parsing RSS feeds with Lua. Before running the script install:&lt;/p&gt;
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>Parse RSS feeds with Lua</title>
+	    <link>https://mitjafelicijan.com/parse-rss-with-lua.html</link>
+	    <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/parse-rss-with-lua.html</guid>
+	    <description>Example of parsing RSS feeds with Lua.</description>
+	    <content:encoded>&lt;p&gt;Example of parsing RSS feeds with Lua. Before running the script install:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;feedparser with &lt;code&gt;luarocks install feedparser&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;luasocket with &lt;code&gt;luarocks install luasocket&lt;/code&gt;&lt;/li&gt;
@@ -1162,17 +1162,17 @@ my desktop looks like.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  print(&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;! Request failed. Status:&amp;#34;&lt;/span&gt;, status)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;end&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Extend Lua with custom C functions using Clang</title>
-	  <link>https://mitjafelicijan.com/extend-lua-with-custom-c.html</link>
-	  <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/extend-lua-with-custom-c.html</guid>
-	  <description>Here is a boilerplate for extending Lua with custom C functions.</description>
-	  <content:encoded>&lt;p&gt;Here is a boilerplate for extending Lua with custom C functions. This requires
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Extend Lua with custom C functions using Clang</title>
+	    <link>https://mitjafelicijan.com/extend-lua-with-custom-c.html</link>
+	    <pubDate>Tue, 23 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/extend-lua-with-custom-c.html</guid>
+	    <description>Here is a boilerplate for extending Lua with custom C functions.</description>
+	    <content:encoded>&lt;p&gt;Here is a boilerplate for extending Lua with custom C functions. This requires
 Clang and Lua 5.1 to be installed. GCC can be used instead of Clang, but the
 Makefile will need to be modified.&lt;/p&gt;
 &lt;ul&gt;
@@ -1213,17 +1213,17 @@ Makefile will need to be modified.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Execute not blocking async shell command in C#</title>
-	  <link>https://mitjafelicijan.com/non-blocking-shell-exec-csharp.html</link>
-	  <pubDate>Mon, 22 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/non-blocking-shell-exec-csharp.html</guid>
-	  <description>Execute a shell command in async in C# while not blocking the UI thread.</description>
-	  <content:encoded>&lt;p&gt;Execute a shell command in async in C# while not blocking the UI thread.&lt;/p&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Execute not blocking async shell command in C#</title>
+	    <link>https://mitjafelicijan.com/non-blocking-shell-exec-csharp.html</link>
+	    <pubDate>Mon, 22 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/non-blocking-shell-exec-csharp.html</guid>
+	    <description>Execute a shell command in async in C# while not blocking the UI thread.</description>
+	    <content:encoded>&lt;p&gt;Execute a shell command in async in C# while not blocking the UI thread.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00f&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;async&lt;/span&gt; Task executeCopyCommand()
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;await&lt;/span&gt; Task.Run(() =&amp;gt;
@@ -1251,33 +1251,33 @@ in the method that calls &lt;code&gt;executeCopyCommand()&lt;/code&gt;.&lt;/p&gt
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#00f&#34;&gt;await&lt;/span&gt; executeCopyCommand();
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Change permissions of matching files recursively</title>
-	  <link>https://mitjafelicijan.com/mass-set-permission.html</link>
-	  <pubDate>Tue, 16 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/mass-set-permission.html</guid>
-	  <description>Replace *.</description>
-	  <content:encoded>&lt;p&gt;Replace &lt;code&gt;*.xml&lt;/code&gt; with your pattern. This will remove executable bit from all
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Change permissions of matching files recursively</title>
+	    <link>https://mitjafelicijan.com/mass-set-permission.html</link>
+	    <pubDate>Tue, 16 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/mass-set-permission.html</guid>
+	    <description>Replace *.</description>
+	    <content:encoded>&lt;p&gt;Replace &lt;code&gt;*.xml&lt;/code&gt; with your pattern. This will remove executable bit from all
 files matching the pattern. Change &lt;code&gt;&#43;&lt;/code&gt; to &lt;code&gt;-&lt;/code&gt; to add executable bit.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find . -type f -name &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;*.xml&amp;#34;&lt;/span&gt; -exec chmod -x {} &#43;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	<item>
-	  <title>Previews how man page written in Troff will look like</title>
-	  <link>https://mitjafelicijan.com/preview-troff-man-pages.html</link>
-	  <pubDate>Mon, 15 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/preview-troff-man-pages.html</guid>
-	  <description>Troff is used to write man pages and it is difficult to read it so this willpreview how it will look like when it is rendered.</description>
-	  <content:encoded>&lt;p&gt;Troff is used to write man pages and it is difficult to read it so this will
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  <item>
+	    <title>Previews how man page written in Troff will look like</title>
+	    <link>https://mitjafelicijan.com/preview-troff-man-pages.html</link>
+	    <pubDate>Mon, 15 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/preview-troff-man-pages.html</guid>
+	    <description>Troff is used to write man pages and it is difficult to read it so this willpreview how it will look like when it is rendered.</description>
+	    <content:encoded>&lt;p&gt;Troff is used to write man pages and it is difficult to read it so this will
 preview how it will look like when it is rendered.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# On Linux system.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;groff -man -Tascii filename
@@ -1285,34 +1285,34 @@ preview how it will look like when it is rendered.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# On Plan9 system.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;man 1 filename
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Convert all MKV files into other formats</title>
-	  <link>https://mitjafelicijan.com/convert-mkv.html</link>
-	  <pubDate>Sun, 14 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/convert-mkv.html</guid>
-	  <description>You will need ffmpeg installed on your system.</description>
-	  <content:encoded>&lt;p&gt;You will need &lt;code&gt;ffmpeg&lt;/code&gt; installed on your system. This will convert all MKV files
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Convert all MKV files into other formats</title>
+	    <link>https://mitjafelicijan.com/convert-mkv.html</link>
+	    <pubDate>Sun, 14 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/convert-mkv.html</guid>
+	    <description>You will need ffmpeg installed on your system.</description>
+	    <content:encoded>&lt;p&gt;You will need &lt;code&gt;ffmpeg&lt;/code&gt; installed on your system. This will convert all MKV files
 into WebM format.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Convert all MKV files into WebM format.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find ./ -name &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;*.mkv&amp;#39;&lt;/span&gt; -exec bash -c &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;ffmpeg -i &amp;#34;$0&amp;#34; -vcodec libvpx -acodec libvorbis -cpu-used 5 -threads 8 &amp;#34;${0%%.mp4}.webm&amp;#34;&amp;#39;&lt;/span&gt; {} &lt;span style=&#34;color:#a31515&#34;&gt;\;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Convert all MKV files into MP4 format.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find ./ -name &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;*.mkv&amp;#39;&lt;/span&gt; -exec bash -c &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;ffmpeg -i &amp;#34;$0&amp;#34; c:a copy -c:v copy -cpu-used 5 -threads 8 &amp;#34;${0%%.mp4}.mp4&amp;#34;&amp;#39;&lt;/span&gt; {} &lt;span style=&#34;color:#a31515&#34;&gt;\;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Download list of YouTube files</title>
-	  <link>https://mitjafelicijan.com/download-youtube-videos.html</link>
-	  <pubDate>Sat, 13 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/download-youtube-videos.html</guid>
-	  <description>If you need to download a list of YouTube videos and don&amp;#39;t want to download theactual YouTube list (which yt-dlp supports), you can use the following method.</description>
-	  <content:encoded>&lt;p&gt;If you need to download a list of YouTube videos and don&#39;t want to download the
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Download list of YouTube files</title>
+	    <link>https://mitjafelicijan.com/download-youtube-videos.html</link>
+	    <pubDate>Sat, 13 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/download-youtube-videos.html</guid>
+	    <description>If you need to download a list of YouTube videos and don&amp;#39;t want to download theactual YouTube list (which yt-dlp supports), you can use the following method.</description>
+	    <content:encoded>&lt;p&gt;If you need to download a list of YouTube videos and don&#39;t want to download the
 actual YouTube list (which &lt;code&gt;yt-dlp&lt;/code&gt; supports), you can use the following method.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;// Used to get list of raw URL&amp;#39;s from YouTube&amp;#39;s video tab&amp;#39;.
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;// Copy them into videos.txt.
@@ -1321,17 +1321,17 @@ actual YouTube list (which &lt;code&gt;yt-dlp&lt;/code&gt; supports), you can us
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# This will download all videos in videos.txt.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yt-dlp --batch-file videos.txt -N &lt;span style=&#34;color:#a31515&#34;&gt;`&lt;/span&gt;nproc&lt;span style=&#34;color:#a31515&#34;&gt;`&lt;/span&gt; -f webm
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Install Plan9port on Linux</title>
-	  <link>https://mitjafelicijan.com/install-plan9port-linux.html</link>
-	  <pubDate>Fri, 12 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/install-plan9port-linux.html</guid>
-	  <description>Install Plan9port on Linux.</description>
-	  <content:encoded>&lt;p&gt;Install Plan9port on Linux. This applies to
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Install Plan9port on Linux</title>
+	    <link>https://mitjafelicijan.com/install-plan9port-linux.html</link>
+	    <pubDate>Fri, 12 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/install-plan9port-linux.html</guid>
+	    <description>Install Plan9port on Linux.</description>
+	    <content:encoded>&lt;p&gt;Install Plan9port on Linux. This applies to
 &lt;a href=&#34;https://9fans.github.io/plan9port/&#34;&gt;Plan9port&lt;/a&gt;. This is a port of many Plan 9
 programs to Unix-like operating systems. Useful for programs like &lt;code&gt;9term&lt;/code&gt; and
 &lt;code&gt;rc&lt;/code&gt;.&lt;/p&gt;
@@ -1340,17 +1340,17 @@ programs to Unix-like operating systems. Useful for programs like &lt;code&gt;9t
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd $HOME/plan9/plan9port
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./INSTALL -r $HOME/plan9
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Fix bootloader not being written in Plan9</title>
-	  <link>https://mitjafelicijan.com/fix-plan9-bootloader.html</link>
-	  <pubDate>Thu, 11 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/fix-plan9-bootloader.html</guid>
-	  <description>If the bootloader is not being written to a disk when installing 9front on realharware try clearing first sector of the disk with the following command.</description>
-	  <content:encoded>&lt;p&gt;If the bootloader is not being written to a disk when installing 9front on real
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Fix bootloader not being written in Plan9</title>
+	    <link>https://mitjafelicijan.com/fix-plan9-bootloader.html</link>
+	    <pubDate>Thu, 11 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/fix-plan9-bootloader.html</guid>
+	    <description>If the bootloader is not being written to a disk when installing 9front on realharware try clearing first sector of the disk with the following command.</description>
+	    <content:encoded>&lt;p&gt;If the bootloader is not being written to a disk when installing 9front on real
 harware try clearing first sector of the disk with the following command.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dd &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt;=/dev/zero of=/dev/sdX bs=512 count=1
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -1358,17 +1358,17 @@ harware try clearing first sector of the disk with the following command.&lt;/p&
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# press delete key to stop the command.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat &amp;lt;/dev/zero &amp;gt;/dev/sd*/data
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Take a screenshot in Plan9</title>
-	  <link>https://mitjafelicijan.com/plan9-screenshot.html</link>
-	  <pubDate>Wed, 10 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/plan9-screenshot.html</guid>
-	  <description>Take a screenshot in Plan9.</description>
-	  <content:encoded>&lt;p&gt;Take a screenshot in Plan9. This applies to &lt;a href=&#34;https://9p.io/plan9/&#34;&gt;Plan9&lt;/a&gt; and
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Take a screenshot in Plan9</title>
+	    <link>https://mitjafelicijan.com/plan9-screenshot.html</link>
+	    <pubDate>Wed, 10 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/plan9-screenshot.html</guid>
+	    <description>Take a screenshot in Plan9.</description>
+	    <content:encoded>&lt;p&gt;Take a screenshot in Plan9. This applies to &lt;a href=&#34;https://9p.io/plan9/&#34;&gt;Plan9&lt;/a&gt; and
 &lt;a href=&#34;https://9front.org/&#34;&gt;9front&lt;/a&gt;. This will take a screenshot of the screen and
 output it to &lt;code&gt;/dev/screen&lt;/code&gt;. You can then use &lt;code&gt;topng&lt;/code&gt; to convert it to a png
 image.&lt;/p&gt;
@@ -1378,17 +1378,17 @@ image.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Delayed screenshot (5 seconds).&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sleep 5; cat /dev/screen | topng &amp;gt; screen.png
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>#cat-v on weechat configuration</title>
-	  <link>https://mitjafelicijan.com/catv-weechat-config.html</link>
-	  <pubDate>Tue, 09 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/catv-weechat-config.html</guid>
-	  <description>Set up weechat to connect to #cat-v on oftc.</description>
-	  <content:encoded>&lt;p&gt;Set up weechat to connect to #cat-v on oftc. This applies to
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>#cat-v on weechat configuration</title>
+	    <link>https://mitjafelicijan.com/catv-weechat-config.html</link>
+	    <pubDate>Tue, 09 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/catv-weechat-config.html</guid>
+	    <description>Set up weechat to connect to #cat-v on oftc.</description>
+	    <content:encoded>&lt;p&gt;Set up weechat to connect to #cat-v on oftc. This applies to
 &lt;a href=&#34;https://weechat.org/&#34;&gt;weechat&lt;/a&gt; but should be similar for other irc clients.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Install weechat and launch it and execute the following commands.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -1397,30 +1397,30 @@ image.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/set irc.server.oftc.autojoin &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;#cat-v&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/set irc.server.oftc.nicks &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;nick1,nick2,nick3&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Write ISO to USB Key</title>
-	  <link>https://mitjafelicijan.com/write-iso-usb.html</link>
-	  <pubDate>Mon, 08 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/write-iso-usb.html</guid>
-	  <description>Write ISO to USB key.</description>
-	  <content:encoded>&lt;p&gt;Write ISO to USB key. Nothing fancy here.&lt;/p&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Write ISO to USB Key</title>
+	    <link>https://mitjafelicijan.com/write-iso-usb.html</link>
+	    <pubDate>Mon, 08 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/write-iso-usb.html</guid>
+	    <description>Write ISO to USB key.</description>
+	    <content:encoded>&lt;p&gt;Write ISO to USB key. Nothing fancy here.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dd &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt;=iso_file.iso of=/dev/sdX bs=4M status=progress conv=fdatasync
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Mount Plan9 over network</title>
-	  <link>https://mitjafelicijan.com/mount-plan9-over-network.html</link>
-	  <pubDate>Sun, 07 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/mount-plan9-over-network.html</guid>
-	  <description>First install libfuse with sudo apt install libfuse-dev.</description>
-	  <content:encoded>&lt;ul&gt;
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Mount Plan9 over network</title>
+	    <link>https://mitjafelicijan.com/mount-plan9-over-network.html</link>
+	    <pubDate>Sun, 07 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/mount-plan9-over-network.html</guid>
+	    <description>First install libfuse with sudo apt install libfuse-dev.</description>
+	    <content:encoded>&lt;ul&gt;
 &lt;li&gt;First install libfuse with sudo apt install libfuse-dev.&lt;/li&gt;
 &lt;li&gt;Then clone &lt;a href=&#34;https://github.com/ftrvxmtrx/9pfs&#34;&gt;https://github.com/ftrvxmtrx/9pfs&lt;/a&gt; and compile it with make.&lt;/li&gt;
 &lt;li&gt;Copy 9pfs to your path.&lt;/li&gt;
@@ -1433,32 +1433,32 @@ image.&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;9pfs 172.18.0.1 -p 9999 local_folder &lt;span style=&#34;color:#008000&#34;&gt;# mount&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;umount local_folder &lt;span style=&#34;color:#008000&#34;&gt;# unmount&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Push to multiple origins at once in Git</title>
-	  <link>https://mitjafelicijan.com/git-push-multiple-origins.html</link>
-	  <pubDate>Sat, 06 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/git-push-multiple-origins.html</guid>
-	  <description>Sometimes you want to push to multiple origins at once.</description>
-	  <content:encoded>&lt;p&gt;Sometimes you want to push to multiple origins at once. This is useful if you
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Push to multiple origins at once in Git</title>
+	    <link>https://mitjafelicijan.com/git-push-multiple-origins.html</link>
+	    <pubDate>Sat, 06 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/git-push-multiple-origins.html</guid>
+	    <description>Sometimes you want to push to multiple origins at once.</description>
+	    <content:encoded>&lt;p&gt;Sometimes you want to push to multiple origins at once. This is useful if you
 have a mirror of your repository on another server. You can do this by adding
 multiple push urls to your git config. This is a shorthand for command above.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global alias.pushall &lt;span style=&#34;color:#a31515&#34;&gt;&amp;#39;!sh -c &amp;#34;git remote | xargs -L1 git push --all&amp;#34;&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Run 9front in Qemu</title>
-	  <link>https://mitjafelicijan.com/run-9front-in-qemu.html</link>
-	  <pubDate>Fri, 05 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/run-9front-in-qemu.html</guid>
-	  <description>Run 9front in Qemu.</description>
-	  <content:encoded>&lt;p&gt;Run 9front in Qemu. This applies to &lt;a href=&#34;https://9p.io/plan9/&#34;&gt;Plan9&lt;/a&gt; and
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Run 9front in Qemu</title>
+	    <link>https://mitjafelicijan.com/run-9front-in-qemu.html</link>
+	    <pubDate>Fri, 05 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/run-9front-in-qemu.html</guid>
+	    <description>Run 9front in Qemu.</description>
+	    <content:encoded>&lt;p&gt;Run 9front in Qemu. This applies to &lt;a href=&#34;https://9p.io/plan9/&#34;&gt;Plan9&lt;/a&gt; and
 &lt;a href=&#34;https://9front.org/&#34;&gt;9front&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Download from here &lt;a href=&#34;http://9front.org/iso/&#34;&gt;http://9front.org/iso/&lt;/a&gt;.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#008000&#34;&gt;# Create a qcow2 image.&lt;/span&gt;
@@ -1473,98 +1473,98 @@ multiple push urls to your git config. This is a shorthand for command above.&lt
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&lt;/span&gt;    -drive &lt;span style=&#34;color:#00f&#34;&gt;if&lt;/span&gt;=none,id=vd1,file=$HOME/VM/ISO/9front.386.iso &lt;span style=&#34;color:#a31515&#34;&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a31515&#34;&gt;&lt;/span&gt;    -device scsi-cd,drive=vd1,bootindex=0
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</content:encoded>
-	</item>
-	
-	
-	
-	<item>
-	  <title>Cache busting in Hugo</title>
-	  <link>https://mitjafelicijan.com/cachebusting-in-hugo.html</link>
-	  <pubDate>Mon, 01 May 2023 12:00:00 &#43;0200</pubDate>
-	  <guid>https://mitjafelicijan.com/cachebusting-in-hugo.html</guid>
-	  <description>{{ $cachebuster := delimit (shuffle (split (md5 &amp;#34;6fab11c6669976d759d2992eff1dd5be&amp;#34;) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }}&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;/style.</description>
-	  <content:encoded>&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ $cachebuster := delimit (shuffle (split (md5 &amp;#34;6fab11c6669976d759d2992eff1dd5be&amp;#34;) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }}
+	  </item>
+	  
+	  
+	  
+	  <item>
+	    <title>Cache busting in Hugo</title>
+	    <link>https://mitjafelicijan.com/cachebusting-in-hugo.html</link>
+	    <pubDate>Mon, 01 May 2023 12:00:00 &#43;0200</pubDate>
+	    <guid>https://mitjafelicijan.com/cachebusting-in-hugo.html</guid>
+	    <description>{{ $cachebuster := delimit (shuffle (split (md5 &amp;#34;6fab11c6669976d759d2992eff1dd5be&amp;#34;) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }}&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;/style.</description>
+	    <content:encoded>&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;&#34;&gt;&lt;code&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{ $cachebuster := delimit (shuffle (split (md5 &amp;#34;6fab11c6669976d759d2992eff1dd5be&amp;#34;) &amp;#34;&amp;#34; )) &amp;#34;&amp;#34; }}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;link rel=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; href=&lt;span style=&#34;color:#a31515&#34;&gt;&amp;#34;/style.css?v={{ $cachebuster }}&amp;#34;&lt;/span&gt;&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This &lt;code&gt;6fab11c6669976d759d2992eff1dd5be&lt;/code&gt; can be random string you generate use.
 You can use whatever you want.&lt;/p&gt;
 </content:encoded>
-	</item>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	  </item>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
   </channel>
 </rss>

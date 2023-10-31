@@ -22,7 +22,7 @@ Events</a>
 to all the subscribers.</ul><h2 id=how-exactly-does-the-pubsub-model-work>How exactly does the pub/sub model work?</h2><p>The easiest way to explain this is with diagram bellow. Basic function is
 simple. We have subscribers that receive messages, and we have publishers that
 create and post messages. Similar model is also well know pattern that works on
-a premise of consumers and producers, and they take similar roles.<figure><img src=/posts/simple-pubsub-server/pubsub-overview.png alt="How PubSub works"></figure><p><strong>These are some naive characteristics we want to achieve:</strong><ul><li>producer is publishing messages to subscribe topic,<li>consumer is receiving messages from subscribed topic,<li>servers is also known as Broker,<li>broker does not store messages or tracks success,<li>broker uses
+a premise of consumers and producers, and they take similar roles.<figure><img loading="lazy" src=/posts/simple-pubsub-server/pubsub-overview.png alt="How PubSub works"></figure><p><strong>These are some naive characteristics we want to achieve:</strong><ul><li>producer is publishing messages to subscribe topic,<li>consumer is receiving messages from subscribed topic,<li>servers is also known as Broker,<li>broker does not store messages or tracks success,<li>broker uses
 <a href=https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)>FIFO</a> method
 for delivering messages,<li>if consumer wants to receive messages from a topic, producer and consumer
 topics must match,<li>consumer can subscribe to multiple topics,<li>producer can publish to multiple topics,<li>each message has a messageId.</ul><p><strong>Known drawbacks:</strong><ul><li>messages will not be stored in a persistent queue or unreceived messages like
@@ -32,7 +32,7 @@ Events</a>
 opens a long-running connection between the client and the server so make sure
 if your setup is load balanced that the load balancer in this case can have
 long opened connection,<li>no system moderation due to the dynamic nature of creating queues.</ul><h2 id=server-sent-events>Server-Sent Events</h2><p>Read more about it on <a href=https://html.spec.whatwg.org/multipage/server-sent-events.html>official specification
-page</a>.<h3 id=current-browser-support>Current browser support</h3><figure><img src=/posts/simple-pubsub-server/caniuse.png alt="Browser support"></figure><p>Check
+page</a>.<h3 id=current-browser-support>Current browser support</h3><figure><img loading="lazy" src=/posts/simple-pubsub-server/caniuse.png alt="Browser support"></figure><p>Check
 <a href="https://caniuse.com/#feat=eventsource">https://caniuse.com/#feat=eventsource</a>
 for latest information about browser support.<h3 id=known-issues>Known issues</h3><ul><li>Firefox 52 and below do not support EventSource in web/shared workers<li>In Firefox prior to version 36 server-sent events do not reconnect
 automatically in case of a connection interrupt (bug)<li>Reportedly, CORS in EventSource is currently supported in Firefox 10+, Opera
@@ -55,7 +55,7 @@ server that triggers browser to threat response as a EventStream.<p>Headers resp
 Events</a>
 which is quite nice and available from Developer Tools under Network tab.<blockquote><p>You can debug only client side events that get received and not the server
 ones. For debugging server events add <code>console.log</code> to <code>server.js</code> code and
-print out events.</blockquote><figure><img src=/posts/simple-pubsub-server/chrome-debugging.png alt="Google Chrome Developer Tools EventStream"></figure><h2 id=server-implementation>Server implementation</h2><p>For the sake of this example we will use <a href=https://nodejs.org/en/>Node.js</a> with
+print out events.</blockquote><figure><img loading="lazy" src=/posts/simple-pubsub-server/chrome-debugging.png alt="Google Chrome Developer Tools EventStream"></figure><h2 id=server-implementation>Server implementation</h2><p>For the sake of this example we will use <a href=https://nodejs.org/en/>Node.js</a> with
 <a href=https://expressjs.com>Express</a> as our router since this is the easiest way to
 get started and we will use already written SSE library for node
 <a href=https://www.npmjs.com/package/sse-pubsub>sse-pubsub</a> so we don't reinvent the
@@ -305,11 +305,11 @@ setting can be adjusted in <code>server.js</code> file; search for the
 </span></span><span style=display:flex><span>  &lt;/body&gt;
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>&lt;/html&gt;
-</span></span></code></pre><h2 id=reading-further>Reading further</h2><ul><li><a href=https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events>Using server-sent events</a><li><a href=https://www.smashingmagazine.com/2018/02/sse-websockets-data-flow-http2/>Using SSE Instead Of WebSockets For Unidirectional Data Flow Over HTTP/2</a><li><a href=https://apifriends.com/api-streaming/server-sent-events/>What is Server-Sent Events?</a><li><a href=https://tools.ietf.org/id/draft-xie-bidirectional-messaging-01.html>An HTTP/2 extension for bidirectional messaging communication</a><li><a href=https://developers.google.com/web/fundamentals/performance/http2>Introduction to HTTP/2</a><li><a href=https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API>The WebSocket API (WebSockets)</a></ul></div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/solaris/ZFSWhyNotDirectoryToFilesystem target=_blank rel=noopener>One reason that ZFS can't turn a directory into a filesystem</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>One of the wishes that I and other people frequently have for ZFS
-is the ability to take an existing directory (and everything
-underneath it) in a ZFS filesystem and turn it into a sub-filesystem
-of its own. One reason for wanting this is that a number of things
-are set and controlled on a per-filesyst…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
+</span></span></code></pre><h2 id=reading-further>Reading further</h2><ul><li><a href=https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events>Using server-sent events</a><li><a href=https://www.smashingmagazine.com/2018/02/sse-websockets-data-flow-http2/>Using SSE Instead Of WebSockets For Unidirectional Data Flow Over HTTP/2</a><li><a href=https://apifriends.com/api-streaming/server-sent-events/>What is Server-Sent Events?</a><li><a href=https://tools.ietf.org/id/draft-xie-bidirectional-messaging-01.html>An HTTP/2 extension for bidirectional messaging communication</a><li><a href=https://developers.google.com/web/fundamentals/performance/http2>Introduction to HTTP/2</a><li><a href=https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API>The WebSocket API (WebSockets)</a></ul></div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/linux/NFSv4ServerLockClients target=_blank rel=noopener>Finding which NFSv4 client owns a lock on a Linux NFS(v4) server</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>A while back I wrote an entry about finding which NFS client owns
+a lock on a Linux NFS server, which turned
+out to be specific to NFS v3 (which I really should have seen coming,
+since it involved NLM and lockd). Finding the NFS v4 client that
+owns a lock is, depending on your perspective, either simpl…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
 and Bradley Kuhn, are interacting on the OSI's license-discuss
 list where the're doing
 bad computer history and insisting that a guy Larry Rosen

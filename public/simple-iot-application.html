@@ -28,7 +28,7 @@ and not well optimized and there are much better ways in handling some aspects
 of the application but that requires much deeper knowledge of technology that is
 not needed for an example like this.<p><strong>Development steps</strong><ol><li>Simple Python API that will receive and store incoming data.<li>Prototype C++ code that will read "sensor data" and transmit it to API.<li>Data visualization with charts → extends Python web application.</ol><p>Step 1. and 3. will share the same web application. One route will be dedicated
 to API and another to serving HTML with chart.<p>Schema below represents what we will try to achieve and how different parts
-correlates to each other.<figure><img src=/posts/iot-application/simple-iot-application-overview.svg alt=Overview></figure><h2 id=simple-python-api>Simple Python API</h2><p>I have always been a fan of simplicity so we will be using <a href=https://bottlepy.org/docs/dev/>Bottle: Python Web
+correlates to each other.<figure><img loading="lazy" src=/posts/iot-application/simple-iot-application-overview.svg alt=Overview></figure><h2 id=simple-python-api>Simple Python API</h2><p>I have always been a fan of simplicity so we will be using <a href=https://bottlepy.org/docs/dev/>Bottle: Python Web
 Framework</a>. It is a single file web framework
 that seriously simplifies working with routes, templating and has built-in web
 server that satisfies our need in this case.<p>First we need to install bottle package. This can be done by downloading
@@ -144,8 +144,8 @@ This software also allows you to set headers → for basic security with API_KEY
 </span></span><span style=display:flex><span>  )
 </span></span></code></pre><p>To run this simply go to folder containing python file and run <code>python webapp.py</code> from terminal. If everything goes ok you should have simple API
 available via POST method on /api route.<p>After testing the service with Restlet Client you should be able to view your
-data in a database file <code>data.db</code>.<figure><img src=/posts/iot-application/iot-rest-example.png alt="REST settings example"></figure><p>You can also check the contents of new database file by using desktop client
-for SQLite → <a href=http://sqlitebrowser.org/>DB Browser for SQLite</a>.<figure><img src=/posts/iot-application/iot-sqlite-db.png alt="SQLite database example"></figure><p>Table structure is as simple as it can be. We have ts (timestamp) and value
+data in a database file <code>data.db</code>.<figure><img loading="lazy" src=/posts/iot-application/iot-rest-example.png alt="REST settings example"></figure><p>You can also check the contents of new database file by using desktop client
+for SQLite → <a href=http://sqlitebrowser.org/>DB Browser for SQLite</a>.<figure><img loading="lazy" src=/posts/iot-application/iot-sqlite-db.png alt="SQLite database example"></figure><p>Table structure is as simple as it can be. We have ts (timestamp) and value
 (value from Arduino). As you can see timestamp is generated on API side. If you
 would happen to have atomic clock on Arduino it would be then better to generate
 and send timestamp with the value. This would be particularity useful if we
@@ -430,15 +430,15 @@ this part are listed below the code.<pre tabindex=0 style=background-color:#fff>
 </span></span><span style=display:flex><span>&lt;/html&gt;
 </span></span></code></pre><p>Now the folder structure should look like:<p><em>simple-iot-app/</em><ul><li><em>webapp.py</em><li><em>data.db</em><li><em>frontend.html</em></ul><p>Ok, lets now start application and start feeding it data.<ol><li><code>python webapp.py</code><li>connect Arduino MKR1000 to power source<li>open browser and go to <code>http://0.0.0.0:5000</code></ol><p>If everything goes well you should be seeing new data-points rendered on chart
 every 5 seconds.<p>If you navigate to <code>http://0.0.0.0:5000</code> you should see rendered chart as
-shown on picture below.<figure><img src=/posts/iot-application/iot-app-output.png alt="Application output"></figure><p>Complete application with all the code is available for
+shown on picture below.<figure><img loading="lazy" src=/posts/iot-application/iot-app-output.png alt="Application output"></figure><p>Complete application with all the code is available for
 <a href=/posts/iot-application/simple-iot-application.zip>download</a>.<h2 id=conclusion>Conclusion</h2><p>I hope this clarifies some aspects of IOT application development. Of course
 this is a minimal example and is far from what can be done in real life with
 some further dive into other technologies.<p>If you would like to continue exploring IOT world here are some interesting
-resources for you to examine:<ul><li><a href=https://www.allaboutcircuits.com/projects/reading-sensors-with-an-arduino/>Reading Sensors with an Arduino</a><li><a href=http://www.hivemq.com/blog/how-to-get-started-with-mqtt>MQTT 101 – How to Get Started with the lightweight IoT Protocol</a><li><a href=https://www.html5rocks.com/en/tutorials/eventsource/basics/>Stream Updates with Server-Sent Events</a><li><a href=http://www.tutorialspoint.com/internet_of_things/>Internet of Things (IoT) Tutorials</a></ul><p>Any comment or additional ideas are welcomed in comments below.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/solaris/ZFSWhyNotDirectoryToFilesystem target=_blank rel=noopener>One reason that ZFS can't turn a directory into a filesystem</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>One of the wishes that I and other people frequently have for ZFS
-is the ability to take an existing directory (and everything
-underneath it) in a ZFS filesystem and turn it into a sub-filesystem
-of its own. One reason for wanting this is that a number of things
-are set and controlled on a per-filesyst…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
+resources for you to examine:<ul><li><a href=https://www.allaboutcircuits.com/projects/reading-sensors-with-an-arduino/>Reading Sensors with an Arduino</a><li><a href=http://www.hivemq.com/blog/how-to-get-started-with-mqtt>MQTT 101 – How to Get Started with the lightweight IoT Protocol</a><li><a href=https://www.html5rocks.com/en/tutorials/eventsource/basics/>Stream Updates with Server-Sent Events</a><li><a href=http://www.tutorialspoint.com/internet_of_things/>Internet of Things (IoT) Tutorials</a></ul><p>Any comment or additional ideas are welcomed in comments below.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/linux/NFSv4ServerLockClients target=_blank rel=noopener>Finding which NFSv4 client owns a lock on a Linux NFS(v4) server</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>A while back I wrote an entry about finding which NFS client owns
+a lock on a Linux NFS server, which turned
+out to be specific to NFS v3 (which I really should have seen coming,
+since it involved NLM and lockd). Finding the NFS v4 client that
+owns a lock is, depending on your perspective, either simpl…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
 and Bradley Kuhn, are interacting on the OSI's license-discuss
 list where the're doing
 bad computer history and insisting that a guy Larry Rosen

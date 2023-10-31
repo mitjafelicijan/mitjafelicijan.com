@@ -10,7 +10,7 @@
 missing this option when I am developing API's or other web services. I always
 knew that this is possible but never really took the time and dive into it.<p>Before we begin there are some requirements. We will need to:<ul><li>implement <a href=https://docs.python.org/2/library/profile.html#module-cProfile>cProfile</a> into our web app,<li>convert output to <a href=http://valgrind.org/docs/manual/cl-manual.html>callgrind</a> format with <a href=https://pypi.python.org/pypi/pyprof2calltree/>pyprof2calltree</a>,<li>visualize data with <a href=http://kcachegrind.sourceforge.net/html/Home.html>KCachegrind</a> or <a href=http://www.profilingviewer.com/>Profiling Viewer</a>.</ul><p>If you are using MacOS you should check out <a href=http://www.profilingviewer.com/>Profiling
 Viewer</a> or
-<a href=http://www.maccallgrind.com/>MacCallGrind</a>.<figure><img src=/posts/python-profiling/kcachegrind.png alt=KCachegrind></figure><p>We will be dividing this post into two main categories:<ul><li>writing simple web-service,<li>visualize profile of this web-service.</ul><h2 id=simple-web-service>Simple web-service</h2><p>Let's use virtualenv so we won't pollute our base system. If you don't have
+<a href=http://www.maccallgrind.com/>MacCallGrind</a>.<figure><img loading="lazy" src=/posts/python-profiling/kcachegrind.png alt=KCachegrind></figure><p>We will be dividing this post into two main categories:<ul><li>writing simple web-service,<li>visualize profile of this web-service.</ul><h2 id=simple-web-service>Simple web-service</h2><p>Let's use virtualenv so we won't pollute our base system. If you don't have
 virtualenv installed on your system you can install it with pip command.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># let&#39;s install virtualenv globally</span>
 </span></span><span style=display:flex><span>$ sudo pip install virtualenv
 </span></span><span style=display:flex><span>
@@ -105,7 +105,7 @@ subfolder.<h2 id=visualize-profile>Visualize profile</h2><p>Now let's create cal
 </span></span></code></pre><p>This file can be opened with visualizing tools listed above. In this case we
 will be using Profilling Viewer under MacOS. You can open image in new tab. As
 you can see from this example there is hierarchy of execution order of your
-code.<figure><img src=/posts/python-profiling/profiling-viewer.png alt="Profilling Viewer"></figure><blockquote><p>Make sure you convert output of the cProfile output every time you want to
+code.<figure><img loading="lazy" src=/posts/python-profiling/profiling-viewer.png alt="Profilling Viewer"></figure><blockquote><p>Make sure you convert output of the cProfile output every time you want to
 refresh and take a look at your possible optimizations because cProfile updates
 .prof file every time browser hits the function.</blockquote><p>This is just a simple example but when you are developing real-life applications
 this can be very illuminating, especially to see which parts of your code are
@@ -121,7 +121,7 @@ module.<div class=reddit-embed data-embed-media=www.redditmedia.com data-embed-p
 </span></span><span style=display:flex><span>$ snakeviz awesome_random_number.prof
 </span></span><span style=display:flex><span><span style=color:green># this automatically opens browser window and</span>
 </span></span><span style=display:flex><span><span style=color:green># shows visualized profile</span>
-</span></span></code></pre><figure><img src=/posts/python-profiling/snakeviz.png alt=SnakeViz></figure><p>Reddit user <a href=https://www.reddit.com/user/ccharles>ccharles</a> suggested a better
+</span></span></code></pre><figure><img loading="lazy" src=/posts/python-profiling/snakeviz.png alt=SnakeViz></figure><p>Reddit user <a href=https://www.reddit.com/user/ccharles>ccharles</a> suggested a better
 way for installing pip software by targeting user level instead of using sudo.<div class=reddit-embed data-embed-media=www.redditmedia.com data-embed-parent=false data-embed-live=false data-embed-uuid=f4f0459e-684d-441e-bebe-eb49b2f0a31d data-embed-created=2017-04-22T19:46:10.874Z><a href=https://www.reddit.com/r/Python/comments/66v373/profiling_python_web_applications_with_visual/dglpzkx/>Comment</a> from discussion <a href=https://www.reddit.com/r/Python/comments/66v373/profiling_python_web_applications_with_visual/>Profiling Python web applications with visual tools</a>.</div><script async src=https://www.redditstatic.com/comment-embed.js></script><pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># now we need to add this path to our $PATH variable</span>
 </span></span><span style=display:flex><span><span style=color:green># we do this my adding this line at the end of your</span>
 </span></span><span style=display:flex><span><span style=color:green># ~/.bashrc file</span>
@@ -138,11 +138,11 @@ way for installing pip software by targeting user level instead of using sudo.<d
 </span></span><span style=display:flex><span><span style=color:green># without use of sudo</span>
 </span></span><span style=display:flex><span>$ pip install snakeviz --user
 </span></span></code></pre><p>Or as suggested by <a href=https://www.reddit.com/user/mvt>mvt</a> you can
-use <a href=https://github.com/mitsuhiko/pipsi>pipsi</a>.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/solaris/ZFSWhyNotDirectoryToFilesystem target=_blank rel=noopener>One reason that ZFS can't turn a directory into a filesystem</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>One of the wishes that I and other people frequently have for ZFS
-is the ability to take an existing directory (and everything
-underneath it) in a ZFS filesystem and turn it into a sub-filesystem
-of its own. One reason for wanting this is that a number of things
-are set and controlled on a per-filesyst…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
+use <a href=https://github.com/mitsuhiko/pipsi>pipsi</a>.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/linux/NFSv4ServerLockClients target=_blank rel=noopener>Finding which NFSv4 client owns a lock on a Linux NFS(v4) server</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>A while back I wrote an entry about finding which NFS client owns
+a lock on a Linux NFS server, which turned
+out to be specific to NFS v3 (which I really should have seen coming,
+since it involved NLM and lockd). Finding the NFS v4 client that
+owns a lock is, depending on your perspective, either simpl…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
 and Bradley Kuhn, are interacting on the OSI's license-discuss
 list where the're doing
 bad computer history and insisting that a guy Larry Rosen

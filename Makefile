@@ -5,6 +5,7 @@ MAKEFLAGS=-j4
 build: openring
 	python3 vault.py
 	jbmafp --build
+	cd public; find . -type f -name '*.html' -exec sed -i 's/<img /<img loading="lazy" /g' {} \;
 
 dev:
 	jbmafp --build --server

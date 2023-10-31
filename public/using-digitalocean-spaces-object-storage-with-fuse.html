@@ -34,14 +34,14 @@ smallest VM option.<ul><li>Please be sure to add you SSH key, because we will lo
 remotely.<li>If you change your region please remember which one you choose because we will
 need this information when we try to mount space to our machine.</ul><p>Instuctions on how to use SSH keys and how to setup them are available in
 article <a href=https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets>How To Use SSH Keys with DigitalOcean
-Droplets</a>.<figure><img src=/posts/do-fuse/fuse-droplets.png alt="DigitalOcean Droplets"></figure><p>After we created Droplet it's time to create new Space. This is done by clicking
+Droplets</a>.<figure><img loading="lazy" src=/posts/do-fuse/fuse-droplets.png alt="DigitalOcean Droplets"></figure><p>After we created Droplet it's time to create new Space. This is done by clicking
 on a button <a href=https://cloud.digitalocean.com/spaces/new>Create</a> (right top
 corner) and selecting Spaces. Choose pronounceable <code>Unique name</code> because we
 will use it in examples below. You can either choose Private or Public, it
 doesn't matter in our case. And you can always change that in the future.<p>When you have created new Space we should <a href=https://cloud.digitalocean.com/settings/api/tokens>generate Access
 key</a>. This link will guide
 to the page when you can generate this key. After you create new one, please
-save provided Key and Secret because Secret will not be shown again.<figure><img src=/posts/do-fuse/fuse-spaces.png alt="DigitalOcean Spaces"></figure><p>Now that we have new Space and Access key we should SSH into our machine.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># replace IP with the ip of your newly created droplet</span>
+save provided Key and Secret because Secret will not be shown again.<figure><img loading="lazy" src=/posts/do-fuse/fuse-spaces.png alt="DigitalOcean Spaces"></figure><p>Now that we have new Space and Access key we should SSH into our machine.<pre tabindex=0 style=background-color:#fff><code><span style=display:flex><span><span style=color:green># replace IP with the ip of your newly created droplet</span>
 </span></span><span style=display:flex><span>ssh root@IP
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:green># this will install utilities for mounting storage objects as FUSE</span>
@@ -242,11 +242,11 @@ SQLite, so data can be stored on Spaces and accessed by many VM's. For a project
 where data doesn't need to be accessible in real-time and can have couple of
 minutes old data this would be very interesting. If any of you find this
 proposal interesting please write in a comment box below or shoot me an email
-and I will keep you posted.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/solaris/ZFSWhyNotDirectoryToFilesystem target=_blank rel=noopener>One reason that ZFS can't turn a directory into a filesystem</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>One of the wishes that I and other people frequently have for ZFS
-is the ability to take an existing directory (and everything
-underneath it) in a ZFS filesystem and turn it into a sub-filesystem
-of its own. One reason for wanting this is that a number of things
-are set and controlled on a per-filesyst…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
+and I will keep you posted.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/linux/NFSv4ServerLockClients target=_blank rel=noopener>Finding which NFSv4 client owns a lock on a Linux NFS(v4) server</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>A while back I wrote an entry about finding which NFS client owns
+a lock on a Linux NFS server, which turned
+out to be specific to NFS v3 (which I really should have seen coming,
+since it involved NLM and lockd). Finding the NFS v4 client that
+owns a lock is, depending on your perspective, either simpl…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
 and Bradley Kuhn, are interacting on the OSI's license-discuss
 list where the're doing
 bad computer history and insisting that a guy Larry Rosen

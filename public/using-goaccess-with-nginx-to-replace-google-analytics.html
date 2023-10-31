@@ -19,7 +19,7 @@ fantastic but would require installation of databases and something like PHP or
 Node. And I was not ready to put those things on my fresh server. Also having
 Docker installed is out of the question.<h2 id=opting-for-log-parsing>Opting for log parsing</h2><p>So, I defaulted to parsing already existing logs and generating HTML reports
 from this data.<p>I found this amazing software <a href=https://goaccess.io/>GoAccess</a> which provides
-all the functionalities I need, and it's a single binary. Written in Go.<p>GoAccess can be used in two different modes.<figure><img src=/posts/goaccess/goaccess-dash-term.png alt="GoAccess Terminal"></figure><center><i>Running in a terminal</i></center><figure><img src=/posts/goaccess/goaccess-dash-html.png alt="GoAccess HTML"></figure><center><i>Running in a browser</i></center><p>I, however, need this to run in a browser. So, the second option is the way to
+all the functionalities I need, and it's a single binary. Written in Go.<p>GoAccess can be used in two different modes.<figure><img loading="lazy" src=/posts/goaccess/goaccess-dash-term.png alt="GoAccess Terminal"></figure><center><i>Running in a terminal</i></center><figure><img loading="lazy" src=/posts/goaccess/goaccess-dash-html.png alt="GoAccess HTML"></figure><center><i>Running in a browser</i></center><p>I, however, need this to run in a browser. So, the second option is the way to
 go. The Idea is to periodically run cronjob and export this report into a folder
 that gets then server by Nginx behind a Basic authentication.<h2 id=getting-nginx-ready>Getting Nginx ready</h2><p>I choose Ubuntu on <a href=https://www.digitalocean.com/>DigitalOcean</a>. First I
 installed <a href=https://nginx.org/en/>Nginx</a>, and
@@ -91,11 +91,11 @@ additional rules for SSL.<p>Your location portion the config file should now loo
 </span></span></code></pre><p>Test if config is still ok with <code>nginx -t</code> and if it is you can restart Nginx
 with <code>service nginx restart</code>.<p>If you now visit <code>https://stats.domain.com</code> you should be prompted for username
 and password. If not, try reopening your browser.<p>That is all. You now have analytics for your server that gets refreshed every 10
-minutes.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/solaris/ZFSWhyNotDirectoryToFilesystem target=_blank rel=noopener>One reason that ZFS can't turn a directory into a filesystem</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>One of the wishes that I and other people frequently have for ZFS
-is the ability to take an existing directory (and everything
-underneath it) in a ZFS filesystem and turn it into a sub-filesystem
-of its own. One reason for wanting this is that a number of things
-are set and controlled on a per-filesyst…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
+minutes.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/linux/NFSv4ServerLockClients target=_blank rel=noopener>Finding which NFSv4 client owns a lock on a Linux NFS(v4) server</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>A while back I wrote an entry about finding which NFS client owns
+a lock on a Linux NFS server, which turned
+out to be specific to NFS v3 (which I really should have seen coming,
+since it involved NLM and lockd). Finding the NFS v4 client that
+owns a lock is, depending on your perspective, either simpl…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
 and Bradley Kuhn, are interacting on the OSI's license-discuss
 list where the're doing
 bad computer history and insisting that a guy Larry Rosen

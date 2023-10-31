@@ -19,7 +19,7 @@ autosuggestion and autocomplete so I added the following to my <code>.bashrc</co
 </span></span><span style=display:flex><span>bind <span style=color:#a31515>&#34;set menu-complete-display-prefix on&#34;</span>
 </span></span><span style=display:flex><span>bind <span style=color:#a31515>&#39;&#34;\e[Z&#34;:menu-complete-backward&#39;</span>
 </span></span></code></pre><p>I haven't noticed anything wrong with this and all was working fine until I
-restarted my machine and then I got this error.<figure><img src=/posts/profile-bind-error/error.jpg alt="Profile bind error"></figure><p>When I pressed OK, I got into the <a href=https://wiki.gnome.org/Projects/GnomeShell>Gnome
+restarted my machine and then I got this error.<figure><img loading="lazy" src=/posts/profile-bind-error/error.jpg alt="Profile bind error"></figure><p>When I pressed OK, I got into the <a href=https://wiki.gnome.org/Projects/GnomeShell>Gnome
 shell</a> and all was working fine, but
 the error was still bugging me. I started looking for the reason why this is
 happening and found a solution to this error on <a href=https://superuser.com/a/892682>Remote SSH Commands - bash bind
@@ -31,11 +31,11 @@ commands that presume the session is interactive when it isn't.<pre tabindex=0 s
 </span></span><span style=display:flex><span>  bind <span style=color:#a31515>&#34;set menu-complete-display-prefix on&#34;</span>
 </span></span><span style=display:flex><span>  bind <span style=color:#a31515>&#39;&#34;\e[Z&#34;:menu-complete-backward&#39;</span>
 </span></span><span style=display:flex><span><span style=color:#00f>fi</span>
-</span></span></code></pre><p>After logging out and back in the problem was gone.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/solaris/ZFSWhyNotDirectoryToFilesystem target=_blank rel=noopener>One reason that ZFS can't turn a directory into a filesystem</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>One of the wishes that I and other people frequently have for ZFS
-is the ability to take an existing directory (and everything
-underneath it) in a ZFS filesystem and turn it into a sub-filesystem
-of its own. One reason for wanting this is that a number of things
-are set and controlled on a per-filesyst…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
+</span></span></code></pre><p>After logging out and back in the problem was gone.</div></article></main><section><hr><h2>Posts from blogs I follow around the net</h2><ul><li><a href=https://utcc.utoronto.ca/~cks/space/blog/linux/NFSv4ServerLockClients target=_blank rel=noopener>Finding which NFSv4 client owns a lock on a Linux NFS(v4) server</a> — <a href=https://utcc.utoronto.ca/~cks/space/blog/>Chris's Wiki :: blog</a><div>A while back I wrote an entry about finding which NFS client owns
+a lock on a Linux NFS server, which turned
+out to be specific to NFS v3 (which I really should have seen coming,
+since it involved NLM and lockd). Finding the NFS v4 client that
+owns a lock is, depending on your perspective, either simpl…<li><a href=http://www.landley.net/notes-2023.html#28-10-2023 target=_blank rel=noopener>October 28, 2023</a> — <a href=http://www.landley.net/notes-2023.html>Rob Landley's Blog Thing for 2023</a><div>Oh good grief, two of my least favorite licensing people, Larry Rosen
 and Bradley Kuhn, are interacting on the OSI's license-discuss
 list where the're doing
 bad computer history and insisting that a guy Larry Rosen

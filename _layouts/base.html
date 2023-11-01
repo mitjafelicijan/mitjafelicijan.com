@@ -11,8 +11,7 @@
       {% else %}{{ site.title | escape }}{% endif %}
     </title>
 
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    <meta name="author" content="{{ site.author }}">
+    {% seo title=false %}
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="/feed.xml">
 

@@ -6,17 +6,6 @@ layout: page
 type: page
 ---
 
-<script>
-  window.addEventListener('load', async () => {
-    const cvImage = document.querySelector('.cv-picture img');
-    if (cvImage) {
-      setInterval(() => {
-        cvImage.style.transform = cvImage.style.transform === 'scaleX(1)' ? 'scaleX(-1)' : 'scaleX(1)';
-      }, 1000);
-    }
-  });
-</script>
-
 **Mitja Felicijan**
 
 Email me at *[m@mitjafelicijan.com](mailto:m@mitjafelicijan.com?subject=Website+CV+Contact)*
@@ -81,4 +70,3 @@ Email me at *[m@mitjafelicijan.com](mailto:m@mitjafelicijan.com?subject=Website+
 - Development and maintenance of the project.
 - Code revision, testing and output.
 - Work on the enhancement suggested by the customers and fixes the bugs reported.
-

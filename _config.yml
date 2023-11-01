@@ -13,3 +13,10 @@ highlighter: rouge
 
 plugins:
   - jekyll-feed
+  - jekyll-minifier
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true

@@ -3,7 +3,7 @@ require "htmlentities"
 require "open-uri"
 require "simple-rss"
 
-summary_max_length = 360
+summary_max_length = 320
 
 feeds = [
    "https://landley.net/rss.xml",

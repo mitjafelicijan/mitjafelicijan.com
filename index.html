@@ -5,14 +5,27 @@ layout: index
 <p>You do not learn by relaxing. You learn by violently assaulting your problem
 until it surrenders its mysteries to you.</p>
 
-<h2>Articles, notes, ramblings etc</h2>
-
+<h2>More long form, ramblings etc</h2>
 <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Articles" class="list">
   <meta itemprop="name" content="Article list">
   {% for post in site.posts %}
+  {% if post.type == "post" %}
 	<li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Notes?! Maybe useful</h2>
+<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Notes" class="list">
+  <meta itemprop="name" content="Note list">
+  {% for post in site.posts %}
+  {% if post.type == "note" %}
+	<li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endif %}
   {% endfor %}
 </ul>
 

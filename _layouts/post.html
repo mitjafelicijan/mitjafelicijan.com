@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+<article itemtype="http://schema.org/Article">
+  <h1 itemtype="headline">{{ page.title }}</h1>
+  <p><cap><u>{{ page.type }}</u></cap>, {{ page.date | date: '%B %d, %Y' }} on <a href="{{ site.url }}">{{ site.author }}'s blog</a></p>
+  <div>
+    {{ content }}
+  </div>
+</article>
+
+<hr>
+{% include webring.html %}

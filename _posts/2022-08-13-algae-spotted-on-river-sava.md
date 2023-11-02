@@ -3,7 +3,7 @@ title: Aerial photography of algae spotted on river Sava
 permalink: /aerial-photography-of-algae-spotted-on-river-sava.html
 date: 2022-08-13T12:00:00+02:00
 layout: post
-type: post
+type: note
 draft: false
 ---
 
@@ -29,4 +29,3 @@ Below are some photographs taken from a DJI drone capturing the event.
 
 I will try to get more photos of this in the future days and if something
 intriguing shows up will post it again on the blog.
-

@@ -23,6 +23,7 @@ jekyll-minifier:
 
 exclude:
   - bin/
+  - Makefile
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/

@@ -6,15 +6,15 @@ require "simple-rss"
 summary_max_length = 320
 
 feeds = [
-   "https://landley.net/rss.xml",
-   "https://drewdevault.com/feed.xml",
-   "https://offbeatpursuit.com/blog/index.rss",
-   "https://mirzapandzo.com/rss.xml",
-   "https://journal.valeriansaliou.name/rss/",
-   "https://neil.computer/rss/",
-   "https://michael.stapelberg.ch/feed.xml",
-   "https://utcc.utoronto.ca/~cks/space/blog/?atom",
-   "https://szymonkaliski.com/feed.xml"
+  "https://landley.net/rss.xml",
+  "https://drewdevault.com/feed.xml",
+  "https://offbeatpursuit.com/blog/index.rss",
+  "https://mirzapandzo.com/rss.xml",
+  "https://journal.valeriansaliou.name/rss/",
+  "https://neil.computer/rss/",
+  "https://michael.stapelberg.ch/feed.xml",
+  "https://utcc.utoronto.ca/~cks/space/blog/?atom",
+  "https://szymonkaliski.com/feed.xml"
 ]
 
 out_html = ""
@@ -41,9 +41,9 @@ feeds.each do |feed_url|
 
     summary.force_encoding("UTF-8")
     summary = decoder.decode(summary)
-                    .gsub(%r{</?[^>]+?>}, '')
-                    .gsub(/\s{2,}/, ' ')
-                    .gsub("\n", ' ')
+                .gsub(%r{</?[^>]+?>}, '')
+                .gsub(/\s{2,}/, ' ')
+                .gsub("\n", ' ')
 
     if summary.length > summary_max_length
       summary = "#{summary[0...summary_max_length]}..."
@@ -72,7 +72,6 @@ feeds.each do |feed_url|
     puts "Failed to parse #{url}: #{e.message}"
   end
 end
-
 
 template = ERB.new <<-EOF
   <h2>Posts from blogs I follow around the net</h2>

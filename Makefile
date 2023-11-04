@@ -3,7 +3,7 @@ MAKEFLAGS+=-j3
 dev: watch server
 
 webring:
-	ruby bin/webring.py
+	ruby bin/webring.rb
 
 watch:
 	jekyll b --watch

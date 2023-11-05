@@ -58,16 +58,20 @@ Windows, I would find a way to love it too. Why not? There is enough love to go
 around where you are not being elitist and a shithead.
 
 Programming should be fun. Not going through a checklist before you even start,
-to see if you are using what is considered the "cool" thing. If you are doing
+to see if you are using what is considered the “cool” thing. If you are doing
 this, you already failed in my opinion.
 
-Oh, you are not using this "insert here" algorithm? Such a pleb. Don't you know
+Oh, you are not using this “insert here” algorithm? Such a pleb. Don't you know
 about O(2) complexity? OMG, such a noob. He doesn't know. Uneducated pleb. 2017
 called, and they want their stack back.
 
+Yes, there is a place for all of those things. But not everything needs to be
+perfect. There is an awesome quote in Uncharted: Sic Parvis Magna. “greatness,
+from small beginnings.”
+
 I would laugh if it wasn't sad. And in the end, who cares. Let these people
 worry about making the perfect solutions that will never ship or take years to
-finish because "Early optimization is the root of all evil." Everybody has their
+finish because “Early optimization is the root of all evil.” Everybody has their
 definition of fun. I just don't want to listen to people preaching to others how
 to do stuff. If people would just shut up and think before they speak 5% of the
 time, the world would be a different place. But that will never happen. So the
@@ -85,5 +89,9 @@ anyway. You will never get their approval. So why even bother. Just go for
 it. Use C, Rust, OCaml, whatever floats your boat. If it tickles you, just do
 it. To hell with everybody else. And if somebody says O(n) complexity, dude? You
 can say, OOOOO, fuck the fuck off.
+
+If this post triggered you, then you are the asshole. Probably. Then you
+probably are that guy preaching about O(n) or this language is soo slow
+haha. Stop it. Nobody cares! Touch grass.
 
 Anyway, back to having fun. Cheers!

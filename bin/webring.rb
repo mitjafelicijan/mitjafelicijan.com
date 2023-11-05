@@ -52,9 +52,7 @@ feeds.each do |feed_url|
 
     template = ERB.new <<-EOF
       <li>
-        <a href="<%= link %>" target="_blank" rel="noopener"><%= title %></a>
-        —
-        <a href="<%= website %>" target="_blank" rel="noopener"><%= author %></a>
+        <div><a href="<%= link %>" target="_blank" rel="noopener"><%= title %></a> — <%= author %></div>
         <div><%= summary %></div>
       </li>
     EOF
@@ -63,7 +61,6 @@ feeds.each do |feed_url|
     out_html.concat(partial)
 
     puts "Feed: #{author}"
-    puts "Website: #{website}"
     puts "Title: #{title}"
     puts "Link: #{link}"
     puts "Summary: #{summary}"

@@ -28,7 +28,7 @@ feeds.each do |feed_url|
 
     first = rss.items.first
     author = rss.channel.title
-    website = rss.channel.link
+    website = rss.channel.link.gsub(%r{</?[^>]+?>}, '')
     title = first.title
     link = first.link
 
@@ -63,6 +63,7 @@ feeds.each do |feed_url|
     out_html.concat(partial)
 
     puts "Feed: #{author}"
+    puts "Website: #{website}"
     puts "Title: #{title}"
     puts "Link: #{link}"
     puts "Summary: #{summary}"

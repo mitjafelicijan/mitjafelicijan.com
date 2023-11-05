@@ -2,8 +2,13 @@ MAKEFLAGS+=-j3
 
 dev: watch server
 
+build: webring vault
+
 webring:
 	ruby bin/webring.rb
+
+vault:
+	ruby bin/vault.rb
 
 watch:
 	jekyll b --watch

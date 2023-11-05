@@ -7,7 +7,7 @@ summary_max_length = 320
 
 feeds = [
   "https://blog.regehr.org/feed",
-  "https://landley.net/rss.xml",
+  "https://www.neilhenning.dev/index.xml",
   "https://drewdevault.com/feed.xml",
   "https://offbeatpursuit.com/blog/index.rss",
   "https://mirzapandzo.com/rss.xml",

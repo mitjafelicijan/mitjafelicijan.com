@@ -1,0 +1,406 @@
+---
+title: Personal vault
+date: 2022-08-27T12:00:00+02:00
+permalink: /vault.html
+layout: page
+type: page
+draft: false
+---
+
+## Hi traveler!
+
+This is a repository of interesting things I have gathered over time and it also
+stores binaries etc of my personal projects.
+
+Be kind, this server is bandwidth limited.
+
+*Good luck!*
+
+---
+
+- audiobooks
+  - [h-g-wells-the-time-machine.ogg](https://mitjafelicijan.fra1.digitaloceanspaces.com/audiobooks/h-g-wells-the-time-machine.ogg)
+  - [philip-francis-nowlan-armageddon-2419-a-d.mp3](https://mitjafelicijan.fra1.digitaloceanspaces.com/audiobooks/philip-francis-nowlan-armageddon-2419-a-d.mp3)
+  - [philip-francis-nowlan-the-airlords-of-han.mp3](https://mitjafelicijan.fra1.digitaloceanspaces.com/audiobooks/philip-francis-nowlan-the-airlords-of-han.mp3)
+- books
+  - [Civilized to Death.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/Civilized to Death.pdf)
+  - [Common Sense.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/Common Sense.pdf)
+  - [History of UNIX programs, sycalls, etc.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/History of UNIX programs, sycalls, etc.pdf)
+  - [The Maiden Who Travels The Planet.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/The Maiden Who Travels The Planet.pdf)
+  - [The UNIX-HATERS Handbook.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/The UNIX-HATERS Handbook.pdf)
+- essays
+  - [Bumbleton.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/essays/Bumbleton.pdf)
+  - [Bumbleton.tex](https://mitjafelicijan.fra1.digitaloceanspaces.com/essays/Bumbleton.tex)
+  - [Lorna the geologist.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/essays/Lorna the geologist.pdf)
+  - [Lorna the geologist.tex](https://mitjafelicijan.fra1.digitaloceanspaces.com/essays/Lorna the geologist.tex)
+- haphazard
+  - [acme.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/acme.pdf)
+  - [antfarm.jpg](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/antfarm.jpg)
+  - [ape.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ape.pdf)
+  - [asciitable.txt](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/asciitable.txt)
+  - [bakingonagrill.jpg](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/bakingonagrill.jpg)
+  - [carules.png](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/carules.png)
+  - [ccompiler.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ccompiler.pdf)
+  - [cellularintro.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/cellularintro.pdf)
+  - [changeresolution.txt](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/changeresolution.txt)
+  - [cord.h](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/cord.h)
+  - [dunescrescent.mp4](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/dunescrescent.mp4)
+  - [elisp.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/elisp.pdf)
+  - [ewd-manuscripts.epub](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ewd-manuscripts.epub)
+  - [ewd-manuscripts.mobi](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ewd-manuscripts.mobi)
+  - [ewd831.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ewd831.pdf)
+  - [graphca.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/graphca.pdf)
+  - [inspectorclay.jpg](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/inspectorclay.jpg)
+  - [kaczynski2.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/kaczynski2.pdf)
+  - [marionette.gif](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/marionette.gif)
+  - [mk.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/mk.pdf)
+  - [ncc-1701-a-engine-noise.ogg](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ncc-1701-a-engine-noise.ogg)
+  - [ownership-check-for-c.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ownership-check-for-c.pdf)
+  - [p9assembler.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/p9assembler.pdf)
+  - [p9fileserver.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/p9fileserver.pdf)
+  - [p9mkfiles.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/p9mkfiles.pdf)
+  - [p9whub.go](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/p9whub.go)
+  - [plan9.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/plan9.pdf)
+  - [plantsystems.jpg](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/plantsystems.jpg)
+  - [rcshell.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/rcshell.pdf)
+  - [rule126.png](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/rule126.png)
+  - [runonqemu.txt](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/runonqemu.txt)
+  - [shred.go](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/shred.go)
+  - [simulator.go](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/simulator.go)
+  - [standard-ml.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/standard-ml.pdf)
+  - [staticserver.txt](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/staticserver.txt)
+- papers
+  - affective-computing
+    - [Theories-Methods-and-Current-Research-on-Emotions.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/affective-computing/Theories-Methods-and-Current-Research-on-Emotions.pdf)
+    - [affective-computing.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/affective-computing/affective-computing.pdf)
+  - api_design
+    - [api-design.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/api_design/api-design.pdf)
+  - artificial-intelligence
+    - [3-bayesian-network-inference-algorithm.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/artificial-intelligence/3-bayesian-network-inference-algorithm.pdf)
+    - [efficient-selectivity-and-backup-operators-in-monte-carlo-tree-search.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/artificial-intelligence/efficient-selectivity-and-backup-operators-in-monte-carlo-tree-search.pdf)
+  - audio-comp-sci
+    - [an-ethnographic-and-technological-study-of-breakbeats.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/audio-comp-sci/an-ethnographic-and-technological-study-of-breakbeats.pdf)
+    - [essentia.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/audio-comp-sci/essentia.pdf)
+    - [marsyas.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/audio-comp-sci/marsyas.pdf)
+    - [real-time-chord-detection.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/audio-comp-sci/real-time-chord-detection.pdf)
+    - [shazam-audio-search-algorithm.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/audio-comp-sci/shazam-audio-search-algorithm.pdf)
+  - caching
+    - [2q-a-low-overhead-high-performance-buffer-management-replacement-algorithm.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/caching/2q-a-low-overhead-high-performance-buffer-management-replacement-algorithm.pdf)
+    - [a-constant-algorithm-for-implementing-the-lfu-cache-eviction-scheme.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/caching/a-constant-algorithm-for-implementing-the-lfu-cache-eviction-scheme.pdf)
+    - [a-program-optimization-for-automatic-database-result-caching.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/caching/a-program-optimization-for-automatic-database-result-caching.pdf)
+  - comp-sci-fundamentals-and-history
+    - [axiomatic-basis-computer-programming.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/comp-sci-fundamentals-and-history/axiomatic-basis-computer-programming.pdf)
+    - [early-lisp-history-1956-1959-herbert-stoyan-html-rendering.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/comp-sci-fundamentals-and-history/early-lisp-history-1956-1959-herbert-stoyan-html-rendering.pdf)
+    - [hints-for-computer-system-design.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/comp-sci-fundamentals-and-history/hints-for-computer-system-design.pdf)
+    - [recursive-functions-of-symbolic-expressions-and-their-computation-by-machine-parti.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/comp-sci-fundamentals-and-history/recursive-functions-of-symbolic-expressions-and-their-computation-by-machine-parti.pdf)
+    - [story-of-squeak-a-practical-smalltalk-written-in-itself.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/comp-sci-fundamentals-and-history/story-of-squeak-a-practical-smalltalk-written-in-itself.pdf)
+  - computational-creativity
+    - [mexica-a-computer-model-of-a-cognitive-account-of-creativing-writing.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/computational-creativity/mexica-a-computer-model-of-a-cognitive-account-of-creativing-writing.pdf)
+  - computer-education
+    - [framework-for-automated-generation-of-questions-across-formal-domains.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/computer-education/framework-for-automated-generation-of-questions-across-formal-domains.pdf)
+  - computer-graphics
+    - [digital_video_stabilization_and_rolling_shutter_correction_using_gyroscopes.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/computer-graphics/digital_video_stabilization_and_rolling_shutter_correction_using_gyroscopes.pdf)
+    - [imaging_vector_fields_using_line_integral_convolution.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/computer-graphics/imaging_vector_fields_using_line_integral_convolution.pdf)
+    - [pushpull++.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/computer-graphics/pushpull++.pdf)
+  - cryptography
+    - [communication-theory-of-secrecy-systems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/cryptography/communication-theory-of-secrecy-systems.pdf)
+    - [ntru-prime.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/cryptography/ntru-prime.pdf)
+  - data-compression
+    - [Error-Controlled_Lossy_Compression_Optimized_for_High_Compression_Ratios_of_Scientific_Datasets.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-compression/Error-Controlled_Lossy_Compression_Optimized_for_High_Compression_Ratios_of_Scientific_Datasets.pdf)
+    - [Significantly_Improving_Lossy_Compression_for_Scientific_Data_Sets_Based_on_Multidimensional_Prediction_and_Error-Controlled_Quantization.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-compression/Significantly_Improving_Lossy_Compression_for_Scientific_Data_Sets_Based_on_Multidimensional_Prediction_and_Error-Controlled_Quantization.pdf)
+    - [data-compression.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-compression/data-compression.pdf)
+    - [fast_error_bounded_Lossy_hpc_data_compression_with_sz.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-compression/fast_error_bounded_Lossy_hpc_data_compression_with_sz.pdf)
+    - [fixed-rate_compressed_floating_point_arrays.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-compression/fixed-rate_compressed_floating_point_arrays.pdf)
+    - [fpc_a_high_speed_compressor_for_double_precision_floating_point_data.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-compression/fpc_a_high_speed_compressor_for_double_precision_floating_point_data.pdf)
+  - data-fusion
+    - [a-new-approach-to-linear-filtering-and-prediction-problems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-fusion/a-new-approach-to-linear-filtering-and-prediction-problems.pdf)
+  - data-replication
+    - [a-comprehensive-study-of-convergent-and-communative-replicated-data-types.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-replication/a-comprehensive-study-of-convergent-and-communative-replicated-data-types.pdf)
+  - data-science
+    - [tidy_data.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-science/tidy_data.pdf)
+  - data-structures
+    - [b-trees-write-optimization.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-structures/b-trees-write-optimization.pdf)
+    - [epidemic-broadcast-trees.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-structures/epidemic-broadcast-trees.pdf)
+    - [ideal-hash-trees.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-structures/ideal-hash-trees.pdf)
+    - [lca-revisited.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-structures/lca-revisited.pdf)
+    - [level-ancestor-simplified.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/data-structures/level-ancestor-simplified.pdf)
+  - datastores
+    - [bigtable-a-distributed-storage-system-for-structured-data.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/bigtable-a-distributed-storage-system-for-structured-data.pdf)
+    - [database-metatheory--asking-the-big-queries.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/database-metatheory--asking-the-big-queries.pdf)
+    - [dynamo-amazons-highly-available-key-value-store.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/dynamo-amazons-highly-available-key-value-store.pdf)
+    - [elle-inferring-isolation-anomalies-from-experimental-observations.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/elle-inferring-isolation-anomalies-from-experimental-observations.pdf)
+    - [flat-datacenter-storage.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/flat-datacenter-storage.pdf)
+    - [freenet-a-distributed-anonymous-information-and-retrieval-system.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/freenet-a-distributed-anonymous-information-and-retrieval-system.pdf)
+    - [megastore-providing-scalable-highly-available-storage-for-interactive-services.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/megastore-providing-scalable-highly-available-storage-for-interactive-services.pdf)
+    - [network-challenges-of-data-recovery-in-erasure-coded-distributed-storage-systems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/network-challenges-of-data-recovery-in-erasure-coded-distributed-storage-systems.pdf)
+    - [rados-a-scalable-reliable-storage-service-for-petabyte-scale-storage-clusters.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/rados-a-scalable-reliable-storage-service-for-petabyte-scale-storage-clusters.pdf)
+    - [spanner-google's-globally-distributed-database.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/spanner-google's-globally-distributed-database.pdf)
+    - [spartan-a-distributed-array-framework-with-smart-tiling.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/spartan-a-distributed-array-framework-with-smart-tiling.pdf)
+    - [stasis-flexible-transactional-storage.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/stasis-flexible-transactional-storage.pdf)
+    - [tao-facebook-distributed-datastore.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/tao-facebook-distributed-datastore.pdf)
+    - [the-google-file-system.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/the-google-file-system.pdf)
+    - [transactional-storage-for-geo-replicated-systems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/transactional-storage-for-geo-replicated-systems.pdf)
+    - [warp-multi-key-transactions-for-key-value-stores.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/datastores/warp-multi-key-transactions-for-key-value-stores.pdf)
+  - design
+    - [out-of-the-tar-pit.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/design/out-of-the-tar-pit.pdf)
+  - digital-currency
+    - [bitcoin.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/digital-currency/bitcoin.pdf)
+    - [peercoin.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/digital-currency/peercoin.pdf)
+    - [primecoin.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/digital-currency/primecoin.pdf)
+  - distributed-systems
+    - [a-history-of-the-virtual-synchrony-replication-model.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/a-history-of-the-virtual-synchrony-replication-model.pdf)
+    - [a-hundred-impossibility-proofs-for-distributed-computing.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/a-hundred-impossibility-proofs-for-distributed-computing.pdf)
+    - [a-note-on-distributed-computing.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/a-note-on-distributed-computing.pdf)
+    - [a-response-to-cheriton-and-skeens-criticism-of-causal-and-totally-ordered-communication.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/a-response-to-cheriton-and-skeens-criticism-of-causal-and-totally-ordered-communication.pdf)
+    - [a-universal-modular-actor-formalism-for-artificial-intelligence.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/a-universal-modular-actor-formalism-for-artificial-intelligence.pdf)
+    - [a-versatile-scheme-for-routing-highly-variable-traffic-in-service-overlays-and-ip.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/a-versatile-scheme-for-routing-highly-variable-traffic-in-service-overlays-and-ip.pdf)
+    - [beehive-lookup-performance-for-power-law-query-distributions-in-peer-to-peer-overlays.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/beehive-lookup-performance-for-power-law-query-distributions-in-peer-to-peer-overlays.pdf)
+    - [brewers-conjecture.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/brewers-conjecture.pdf)
+    - [byzantine-chain-replication.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/byzantine-chain-replication.pdf)
+    - [byzantine-fault-tolerant-distributed-commit-protocol.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/byzantine-fault-tolerant-distributed-commit-protocol.pdf)
+    - [chain-replication-for-supporting-high-throughput-and-availability.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/chain-replication-for-supporting-high-throughput-and-availability.pdf)
+    - [commodifying-replicated-state-machines-with-openreplica.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/commodifying-replicated-state-machines-with-openreplica.pdf)
+    - [consensus-in-presence-of-partial-synchrony.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/consensus-in-presence-of-partial-synchrony.pdf)
+    - [consistent-global-states-of-distributed-systems-fundamental-concepts-and-mechanisms.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/consistent-global-states-of-distributed-systems-fundamental-concepts-and-mechanisms.pdf)
+    - [consistent-hashing-and-random-trees.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/consistent-hashing-and-random-trees.pdf)
+    - [copysets-reducing-the-frequency-of-data-loss-in-cloud-storage.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/copysets-reducing-the-frequency-of-data-loss-in-cloud-storage.pdf)
+    - [dapper-a-large-scale-distributed-tracing-infrastructure.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/dapper-a-large-scale-distributed-tracing-infrastructure.pdf)
+    - [distributed-snapshots-determining-global-states-of-distributed-systems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/distributed-snapshots-determining-global-states-of-distributed-systems.pdf)
+    - [eluding-carnivores-file-sharing-with-strong-anonymity.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/eluding-carnivores-file-sharing-with-strong-anonymity.pdf)
+    - [end-to-end-arguments-in-system-design.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/end-to-end-arguments-in-system-design.pdf)
+    - [epidemic-algorithms-for-replicated-database-maintenance.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/epidemic-algorithms-for-replicated-database-maintenance.pdf)
+    - [harvest-yield-and-scalable-tolerant-systems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/harvest-yield-and-scalable-tolerant-systems.pdf)
+    - [herbivore-a-scalable-and-efficient-protocol-for-anonymous.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/herbivore-a-scalable-and-efficient-protocol-for-anonymous.pdf)
+    - [high-level-specifications--lessons-from-industry.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/high-level-specifications--lessons-from-industry.pdf)
+    - [how-the-hidden-hand-shapes-the-market-for-software-reliability.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/how-the-hidden-hand-shapes-the-market-for-software-reliability.pdf)
+    - [implementing-the-omega-failure-detector-in-crash-recovery-failure-model.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/implementing-the-omega-failure-detector-in-crash-recovery-failure-model.pdf)
+    - [impossibility-of-consensus-with-one-faulty-process.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/impossibility-of-consensus-with-one-faulty-process.pdf)
+    - [in-search-of-an-understandable-consensus-algorithm.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/in-search-of-an-understandable-consensus-algorithm.pdf)
+    - [ironFleet-proving-practical-distributed-systems-correct.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/ironFleet-proving-practical-distributed-systems-correct.pdf)
+    - [join-calculus.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/join-calculus.pdf)
+    - [kelips-building-an-efficient-and-stable-p2p-dht-through-increased-memory-and-background-overhead.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/kelips-building-an-efficient-and-stable-p2p-dht-through-increased-memory-and-background-overhead.pdf)
+    - [large-scale-incremental-processing-using-distributed-transactions-and-notifications.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/large-scale-incremental-processing-using-distributed-transactions-and-notifications.pdf)
+    - [life-beyond-distributed-transactions-an-apostates-opinion.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/life-beyond-distributed-transactions-an-apostates-opinion.pdf)
+    - [mapreduce-simplified-data-processing-on-large-clusters.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/mapreduce-simplified-data-processing-on-large-clusters.pdf)
+    - [mesos-a-platform-for-fine-grained-resource-sharing-in-the-data-center.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/mesos-a-platform-for-fine-grained-resource-sharing-in-the-data-center.pdf)
+    - [oblivious-routing-of-highly-variable-traffic-in-service-overlays-and-ip-backbones.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/oblivious-routing-of-highly-variable-traffic-in-service-overlays-and-ip-backbones.pdf)
+    - [on-proof-and-progress-in-mathematics.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/on-proof-and-progress-in-mathematics.pdf)
+    - [p5-a-protocal-for-scalable-anonymous-communication.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/p5-a-protocal-for-scalable-anonymous-communication.pdf)
+    - [pastry-scalable-decentralized-object-location-and-routing-for-large-scale-peer-to-peer-systems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/pastry-scalable-decentralized-object-location-and-routing-for-large-scale-peer-to-peer-systems.pdf)
+    - [paxos-made-moderately-complex.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/paxos-made-moderately-complex.pdf)
+    - [paxos-made-simple.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/paxos-made-simple.pdf)
+    - [self-stabilizing-systems-in-spite-of-distributed-control.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/self-stabilizing-systems-in-spite-of-distributed-control.pdf)
+    - [sift-design-and-analysis-of-a-fault-tolerant-computer-for-aircraft-contro.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/sift-design-and-analysis-of-a-fault-tolerant-computer-for-aircraft-contro.pdf)
+    - [signal-&-collect-graph-algorithms-for-the-(semantic)-web.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/signal-&-collect-graph-algorithms-for-the-(semantic)-web.pdf)
+    - [simple-testing-can-prevent-most-critical-failures.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/simple-testing-can-prevent-most-critical-failures.pdf)
+    - [solution-of-a-problem-in-concurrent-programming-control.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/solution-of-a-problem-in-concurrent-programming-control.pdf)
+    - [sparse-partitions.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/sparse-partitions.pdf)
+    - [stronger-semantics-for-low-latency-geo-replicated-storage.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/stronger-semantics-for-low-latency-geo-replicated-storage.pdf)
+    - [the-akamai-network.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/the-akamai-network.pdf)
+    - [the-chubby-lock-service-for-loosely-coupled-distributed-systems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/the-chubby-lock-service-for-loosely-coupled-distributed-systems.pdf)
+    - [the-dining-cryptographers-problem.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/the-dining-cryptographers-problem.pdf)
+    - [tiered-replication-a-cost-effective-alternative-to-full-cluster-geo-replication.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/tiered-replication-a-cost-effective-alternative-to-full-cluster-geo-replication.pdf)
+    - [tor-the-second-generation-onion-router.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/tor-the-second-generation-onion-router.pdf)
+    - [towards-a-cloud-computing-research-agenda.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/towards-a-cloud-computing-research-agenda.pdf)
+    - [understanding-the-limitations-of-causally-and-totally-ordered-communication.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/understanding-the-limitations-of-causally-and-totally-ordered-communication.pdf)
+    - [viewing-control-structures-as-patterns-of-passing-messages.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/viewing-control-structures-as-patterns-of-passing-messages.pdf)
+    - [zab-high-performance-broadcast-for-primary-backup-systems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/zab-high-performance-broadcast-for-primary-backup-systems.pdf)
+    - [zookeeper-wait-free-coordination-for-internet-scale-systems.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/distributed-systems/zookeeper-wait-free-coordination-for-internet-scale-systems.pdf)
+  - economics
+    - [online-ad-auctions.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/economics/online-ad-auctions.pdf)
+  - experimental-algorithmics
+    - [a-theoreticians-guide-to-the-experimental-analysis-of-algorithms.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/experimental-algorithmics/a-theoreticians-guide-to-the-experimental-analysis-of-algorithms.pdf)
+  - faults-and-verification
+    - [epitaxis-a-system-for-syntactic-and-semantic-software-queries.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/faults-and-verification/epitaxis-a-system-for-syntactic-and-semantic-software-queries.pdf)
+  - gamification
+    - [gamification-in-education-what-how-why-bother.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/gamification/gamification-in-education-what-how-why-bother.pdf)
+    - [why-students-engage-in-gaming-the-system-behavior-in-interactive-learning-environments.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/gamification/why-students-engage-in-gaming-the-system-behavior-in-interactive-learning-environments.pdf)
+  - garbage-collection
+    - [incremental_mature_garbage_collection_using_the_train_algorithm.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/garbage-collection/incremental_mature_garbage_collection_using_the_train_algorithm.pdf)
+    - [parallel_generational_copying_garbage_collection_with_a_block_structured_heap.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/garbage-collection/parallel_generational_copying_garbage_collection_with_a_block_structured_heap.pdf)
+    - [the_lisp_ii_garbage_collector.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/garbage-collection/the_lisp_ii_garbage_collector.pdf)
+  - information-retrieval
+    - [authoritative-sources-in-a-hyperlinked-environment.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/information-retrieval/authoritative-sources-in-a-hyperlinked-environment.pdf)
+    - [graph_of_word_and_tw_idf.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/information-retrieval/graph_of_word_and_tw_idf.pdf)
+    - [okapi-at-trec3.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/information-retrieval/okapi-at-trec3.pdf)
+    - [the-pagerank-citation-ranking-bringing-order-to-the-web.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/information-retrieval/the-pagerank-citation-ranking-bringing-order-to-the-web.pdf)
+  - information-theory
+    - [a-mathematical-theory-of-communication-1948.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/information-theory/a-mathematical-theory-of-communication-1948.pdf)
+  - languages-paradigms
+    - functional_programming
+      - [concatenative-programming-an-overlooked-paradigm.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_programming/concatenative-programming-an-overlooked-paradigm.pdf)
+      - [equal-rights-for-functional-objects.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_programming/equal-rights-for-functional-objects.pdf)
+      - [functional-programming-with-bananas-lenses-envelops-and-barbed-wire.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_programming/functional-programming-with-bananas-lenses-envelops-and-barbed-wire.pdf)
+      - [optimal-purely-functional-priority-queues.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_programming/optimal-purely-functional-priority-queues.pdf)
+      - [organizing-programs-without-classes.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_programming/organizing-programs-without-classes.pdf)
+      - [purely-functional-data-structures.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_programming/purely-functional-data-structures.pdf)
+      - [why-functional-programming-matters.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_programming/why-functional-programming-matters.pdf)
+    - functional_reactive_programming
+      - [a-survey-of-functional-reactive-programming.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_reactive_programming/a-survey-of-functional-reactive-programming.pdf)
+      - [deprecating-the observer-pattern.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_reactive_programming/deprecating-the observer-pattern.pdf)
+      - [frp-in-plt-scheme.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_reactive_programming/frp-in-plt-scheme.pdf)
+      - [functional-reactive-animation.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_reactive_programming/functional-reactive-animation.pdf)
+      - [ray-integrating-rx-and-async-for-direct-style-reactive-streams.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/functional_reactive_programming/ray-integrating-rx-and-async-for-direct-style-reactive-streams.pdf)
+    - new_paradigms
+      - [cognitive-computing-programming-paradigm-corelet-language.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-paradigms/new_paradigms/cognitive-computing-programming-paradigm-corelet-language.pdf)
+  - languages-theory
+    - [composable-and-compilable-macros-you-want-it-when.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-theory/composable-and-compilable-macros-you-want-it-when.pdf)
+    - [fundamental-concepts-in-programming-languages.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-theory/fundamental-concepts-in-programming-languages.pdf)
+    - [on-understanding-types-data-abstraction-polymorphism.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-theory/on-understanding-types-data-abstraction-polymorphism.pdf)
+    - [predicate-dispatching.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-theory/predicate-dispatching.pdf)
+    - [principal-type-schemes-for-functional-programs.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-theory/principal-type-schemes-for-functional-programs.pdf)
+    - [programming-languages-application-and-interpretation.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-theory/programming-languages-application-and-interpretation.pdf)
+    - [propositions-as-types.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-theory/propositions-as-types.pdf)
+    - [the-derivative-of-a-regular-type-one-hole-contexts.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-theory/the-derivative-of-a-regular-type-one-hole-contexts.pdf)
+    - [theory-in-programming-practice.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages-theory/theory-in-programming-practice.pdf)
+  - languages
+    - clojure
+      - [a-practical-optional-type-system-for-clojure.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages/clojure/a-practical-optional-type-system-for-clojure.pdf)
+    - haskell
+      - [a-poor-mans-concurrency-monad.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages/haskell/a-poor-mans-concurrency-monad.pdf)
+      - [making-a-fast-curry-push-enter-versus-eval-apply-for-higher-order-languages.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages/haskell/making-a-fast-curry-push-enter-versus-eval-apply-for-higher-order-languages.pdf)
+      - [tackling-the-awkward-squad-monadic-input-output-concurrency-exceptions-and-foreign-language-calls-in-haskell.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages/haskell/tackling-the-awkward-squad-monadic-input-output-concurrency-exceptions-and-foreign-language-calls-in-haskell.pdf)
+    - [scp91-felleisen.ps.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages/scp91-felleisen.ps.gz)
+    - smalltalk
+      - [Design-Principles-Behind-Smalltalk.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages/smalltalk/Design-Principles-Behind-Smalltalk.pdf)
+      - [The-Early-History-Of-Smalltalk.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/languages/smalltalk/The-Early-History-Of-Smalltalk.pdf)
+  - logic-and-programming
+    - [event-calculus.txt](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/logic-and-programming/event-calculus.txt)
+    - [on-the-meanings-of-the-logical-constants.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/logic-and-programming/on-the-meanings-of-the-logical-constants.pdf)
+    - [representing-game-dialogue-as-expressions-in-first-order-logic.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/logic-and-programming/representing-game-dialogue-as-expressions-in-first-order-logic.pdf)
+  - machine-learning
+    - [General-self-similarity--an-overview.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/machine-learning/General-self-similarity--an-overview.pdf)
+    - [Understanding-Deep-Convolutional-Networks.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/machine-learning/Understanding-Deep-Convolutional-Networks.pdf)
+    - dimensionality_reduction
+      - [a-sparse-johnson-lindenstrauss-transform.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/machine-learning/dimensionality_reduction/a-sparse-johnson-lindenstrauss-transform.pdf)
+      - [toward-a-unified-theory-of-sparse-dimensionality-reduction-in-euclidean-space.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/machine-learning/dimensionality_reduction/toward-a-unified-theory-of-sparse-dimensionality-reduction-in-euclidean-space.pdf)
+  - mathematics
+    - [from-dominoes-to-hexagons.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/mathematics/from-dominoes-to-hexagons.pdf)
+    - [graph-isomorphism-and-representation-theory.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/mathematics/graph-isomorphism-and-representation-theory.pdf)
+    - [intro-to-tropical-algebraic-geometry.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/mathematics/intro-to-tropical-algebraic-geometry.pdf)
+    - [tilings.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/mathematics/tilings.pdf)
+    - [transcendence-of-pi.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/mathematics/transcendence-of-pi.pdf)
+  - memory-management
+    - [making-lockless-synchronization-fast.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/memory-management/making-lockless-synchronization-fast.pdf)
+    - [scatteralloc-massively-parallel-dynamic-memory-allocation-for-the-gpu.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/memory-management/scatteralloc-massively-parallel-dynamic-memory-allocation-for-the-gpu.pdf)
+  - non-blocking-algorithms
+    - [a-wait-free-queue-as-fast-as-fetch-and-add.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/non-blocking-algorithms/a-wait-free-queue-as-fast-as-fetch-and-add.pdf)
+    - [a-wait-free-stack.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/non-blocking-algorithms/a-wait-free-stack.pdf)
+    - [efficient-lock-free-b+trees.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/non-blocking-algorithms/efficient-lock-free-b+trees.pdf)
+  - operating-systems
+    - [jails-confining-the-omnipotent-root..pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/operating-systems/jails-confining-the-omnipotent-root..pdf)
+    - [solaris-zones-operating-system-support-for-consolidating-commercial-workloads.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/operating-systems/solaris-zones-operating-system-support-for-consolidating-commercial-workloads.pdf)
+    - [therac.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/operating-systems/therac.pdf)
+    - [unix-time-sharing-system.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/operating-systems/unix-time-sharing-system.pdf)
+  - pattern-matching
+    - [aho-corasick-string-matching.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/pattern-matching/aho-corasick-string-matching.pdf)
+    - [compiling-pattern-matching-to-good-decision-trees.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/pattern-matching/compiling-pattern-matching-to-good-decision-trees.pdf)
+    - [extensible-pattern-matching-extensible-language.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/pattern-matching/extensible-pattern-matching-extensible-language.pdf)
+    - [warnings-for-pattern-matching.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/pattern-matching/warnings-for-pattern-matching.pdf)
+  - physics
+    - [buridans-principle.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/physics/buridans-principle.pdf)
+    - [on-the-attraction-of-two-perfectly-conducting-plates.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/physics/on-the-attraction-of-two-perfectly-conducting-plates.pdf)
+    - [on-the-electrodynamics-of-moving-bodies.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/physics/on-the-electrodynamics-of-moving-bodies.pdf)
+  - processes
+    - [communicating-sequential-processes-paper.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/processes/communicating-sequential-processes-paper.pdf)
+    - [communicating-sequential-processes.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/processes/communicating-sequential-processes.pdf)
+  - quantum-computing
+    - [advance_in_quantum_machine_learning.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/quantum-computing/advance_in_quantum_machine_learning.pdf)
+    - [grovers_algorithm.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/quantum-computing/grovers_algorithm.pdf)
+    - [shors_algorithm.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/quantum-computing/shors_algorithm.pdf)
+  - security
+    - [ids-evasion-ptacek-newsham.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/security/ids-evasion-ptacek-newsham.pdf)
+    - [macaroons-cookies-with-contextual-caveats.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/security/macaroons-cookies-with-contextual-caveats.pdf)
+    - [sok-eternal-war-in-memory.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/security/sok-eternal-war-in-memory.pdf)
+  - software-engineering-orgs
+    - [common-ground-and-coordination-in-joint-activity.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/software-engineering-orgs/common-ground-and-coordination-in-joint-activity.pdf)
+  - sports-analytics
+    - [2014-ssac-pointwise-predicting-points-and-valuing-decisions-in-real-time.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/sports-analytics/2014-ssac-pointwise-predicting-points-and-valuing-decisions-in-real-time.pdf)
+  - sublinear-algorithms
+    - [1985-Flajolet-Probabilistic-counting.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/sublinear-algorithms/1985-Flajolet-Probabilistic-counting.pdf)
+    - [An-Elementary-Proof-of-a-Theorem-of-Johnson-and-Lindenstrauss.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/sublinear-algorithms/An-Elementary-Proof-of-a-Theorem-of-Johnson-and-Lindenstrauss.pdf)
+  - systematic-review
+    - [systematic-review-in-software-engineering.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/systematic-review/systematic-review-in-software-engineering.pdf)
+  - time-series
+    - [operators-on-inhomogeneous-time-series.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/time-series/operators-on-inhomogeneous-time-series.pdf)
+    - [ts-asap.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/time-series/ts-asap.pdf)
+  - virtual-machines
+    - [kvm-linux-virtual-machines-monitor.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/virtual-machines/kvm-linux-virtual-machines-monitor.pdf)
+    - [live-migration-of-virtual-machines.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/virtual-machines/live-migration-of-virtual-machines.pdf)
+- public-projects
+  - alternator
+    - [alternator-1.0.0-linux-amd64.md](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/alternator/alternator-1.0.0-linux-amd64.md)
+    - [alternator-1.0.0-linux-amd64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/alternator/alternator-1.0.0-linux-amd64.tar.gz)
+    - [alternator-1.0.0-linux-arm64.md](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/alternator/alternator-1.0.0-linux-arm64.md)
+    - [alternator-1.0.0-linux-arm64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/alternator/alternator-1.0.0-linux-arm64.tar.gz)
+  - errand
+    - [errand-0.1.0-darwin-arm64.md5](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/errand/errand-0.1.0-darwin-arm64.md5)
+    - [errand-0.1.0-darwin-arm64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/errand/errand-0.1.0-darwin-arm64.tar.gz)
+    - [errand-0.1.0-linux-amd64.md5](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/errand/errand-0.1.0-linux-amd64.md5)
+    - [errand-0.1.0-linux-amd64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/errand/errand-0.1.0-linux-amd64.tar.gz)
+    - [errand-0.1.0-linux-arm64.md5](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/errand/errand-0.1.0-linux-arm64.md5)
+    - [errand-0.1.0-linux-arm64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/errand/errand-0.1.0-linux-arm64.tar.gz)
+  - jbmafp
+    - [jbmafp-v0.1.tar.xz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/jbmafp/jbmafp-v0.1.tar.xz)
+    - [jbmafp-v0.1.zip](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/jbmafp/jbmafp-v0.1.zip)
+  - simpleapi
+    - [sapi-0.1.0-darwin-amd64.md5](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-darwin-amd64.md5)
+    - [sapi-0.1.0-darwin-amd64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-darwin-amd64.tar.gz)
+    - [sapi-0.1.0-darwin-arm64.md5](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-darwin-arm64.md5)
+    - [sapi-0.1.0-darwin-arm64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-darwin-arm64.tar.gz)
+    - [sapi-0.1.0-linux-amd64.md5](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-linux-amd64.md5)
+    - [sapi-0.1.0-linux-amd64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-linux-amd64.tar.gz)
+    - [sapi-0.1.0-linux-arm64.md5](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-linux-arm64.md5)
+    - [sapi-0.1.0-linux-arm64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-linux-arm64.tar.gz)
+- video
+  - [Building the Simplest Possible Linux System - Rob Landley.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/Building the Simplest Possible Linux System - Rob Landley.webm)
+  - [Go webserver, HTMX Integration, Template Fragments.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/Go webserver, HTMX Integration, Template Fragments.webm)
+  - [Toybox vs BusyBox - Rob Landley, hobbyist.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/Toybox vs BusyBox - Rob Landley, hobbyist.webm)
+  - plan9-videos
+    - [9Front Basic Install.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/9Front Basic Install.webm)
+    - [9Front on the Desktop; IRC, web, and video in plan9 terminals.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/9Front on the Desktop; IRC, web, and video in plan9 terminals.webm)
+    - [A Quick Intro to C Programming, for Plan 9 and 9 Front.mp4](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/A Quick Intro to C Programming, for Plan 9 and 9 Front.mp4)
+    - [Adding to the Grid; Listening to CO2 Levels and Speaking to Light Bulbs with Plan9.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Adding to the Grid; Listening to CO2 Levels and Speaking to Light Bulbs with Plan9.webm)
+    - [Alternative 9Front Partition Schemes.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Alternative 9Front Partition Schemes.webm)
+    - [Auth & File Server Setup, using 9Front.mp4](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Auth & File Server Setup, using 9Front.mp4)
+    - [Bonus Pipe Video; funny things you can do locally with named pipes in 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Bonus Pipe Video; funny things you can do locally with named pipes in 9Front.webm)
+    - [Booting a Terminal off a USB drive, New User set up, and Disaster recover, for Plan9 using 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Booting a Terminal off a USB drive, New User set up, and Disaster recover, for Plan9 using 9Front.webm)
+    - [Building a Better Grid with 9Front.mp4](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Building a Better Grid with 9Front.mp4)
+    - [Consorting With Daemons! Running 9Front in bhyve on FreeBSD.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Consorting With Daemons! Running 9Front in bhyve on FreeBSD.webm)
+    - [Doing Custom Work. Basic Configuration Files in Plan9 ⧸ 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Doing Custom Work. Basic Configuration Files in Plan9 ⧸ 9Front.webm)
+    - [Drivers Part 2; Doing some initial reads and writes to a USB device in 9Front.mp4](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Drivers Part 2; Doing some initial reads and writes to a USB device in 9Front.mp4)
+    - [Getting 9 Front to run on an Arm SBC, featuring the Pine A64 LTS.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Getting 9 Front to run on an Arm SBC, featuring the Pine A64 LTS.webm)
+    - [Getting Plan9 and Linux to play (audio) together & Bonus Rant!.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Getting Plan9 and Linux to play (audio) together & Bonus Rant!.webm)
+    - [Grave Robbing my way out of The Global Chip Shortage, feat; 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Grave Robbing my way out of The Global Chip Shortage, feat; 9Front.webm)
+    - [Hot Time with 9Front on Arm.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Hot Time with 9Front on Arm.webm)
+    - [Intro to USB drivers for Plan9 and 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Intro to USB drivers for Plan9 and 9Front.webm)
+    - [Introduction to Grids; or, what can I do with all these Plan9 machines?.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Introduction to Grids; or, what can I do with all these Plan9 machines?.webm)
+    - [Introduction to getting around. The User Interface of Plan9 ⧸ 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Introduction to getting around. The User Interface of Plan9 ⧸ 9Front.webm)
+    - [MIPS Rides Again; my presentation for the International Workshop on Plan 9.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/MIPS Rides Again; my presentation for the International Workshop on Plan 9.webm)
+    - [Making New Namespaces in Plan9 with auth⧸newns.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Making New Namespaces in Plan9 with auth⧸newns.webm)
+    - [Making Your Server Do More; Hosting services on your Plan9 server.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Making Your Server Do More; Hosting services on your Plan9 server.webm)
+    - [Making a sythetic filesystem: making fake files for fun and profit on Plan9 and 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Making a sythetic filesystem: making fake files for fun and profit on Plan9 and 9Front.webm)
+    - [Meanwhile, In the Laboratory; finishing house chores and starting computer projects.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Meanwhile, In the Laboratory; finishing house chores and starting computer projects.webm)
+    - [PXE Boot 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/PXE Boot 9Front.webm)
+    - [Plan9 File Server, pt. 1; Installing 9Front.mp4](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Plan9 File Server, pt. 1; Installing 9Front.mp4)
+    - [Plan9's rio, and how to modify it.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Plan9's rio, and how to modify it.webm)
+    - [Plan9, gpsfs & Raspberry Pi; Using 9Front to get the most out of Soviet Technology.mp4](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Plan9, gpsfs & Raspberry Pi; Using 9Front to get the most out of Soviet Technology.mp4)
+    - [Planning a Plan9 Ethernet switch filesystem, feat: a stream of consciousness.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Planning a Plan9 Ethernet switch filesystem, feat: a stream of consciousness.webm)
+    - [Raspberry Pi Plan9 Server; Using a Pi and 9Front to serve up sensor data.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Raspberry Pi Plan9 Server; Using a Pi and 9Front to serve up sensor data.webm)
+    - [Raspberry Pi on your Plan9 Network, featuring 9Front on a Pi 3B.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Raspberry Pi on your Plan9 Network, featuring 9Front on a Pi 3B.webm)
+    - [Reading from a USB Device with 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Reading from a USB Device with 9Front.webm)
+    - [Show and Tell; some stuff to throw 9Front at.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Show and Tell; some stuff to throw 9Front at.webm)
+    - [Some Useful Tools in Plan9. Mouse Chording, VT, and Acme.mp4](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Some Useful Tools in Plan9. Mouse Chording, VT, and Acme.mp4)
+    - [Still poking around a USB Device with 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Still poking around a USB Device with 9Front.webm)
+    - [Using Bridges and Network Aliasing in Plan9 & 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Using Bridges and Network Aliasing in Plan9 & 9Front.webm)
+    - [Using Drawterm to access your Plan9 server.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Using Drawterm to access your Plan9 server.webm)
+    - [Using Listen1 on Plan9 to Debug Networking Code.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Using Listen1 on Plan9 to Debug Networking Code.webm)
+    - [Using vmx; Running Linux Mint in a virtual machine on 9Front.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Using vmx; Running Linux Mint in a virtual machine on 9Front.webm)
+    - [When Tech Bubbles Burst & Other Strange Tales.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/When Tech Bubbles Burst & Other Strange Tales.webm)
+    - [Where to Find Kernel Code in 9front and Plan9.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Where to Find Kernel Code in 9front and Plan9.webm)
+    - [Why is Plan9 like this? An intermediate guide to namespaces with rio.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Why is Plan9 like this? An intermediate guide to namespaces with rio.webm)
+    - [Why is Plan9 like this? An introduction to Namespaces.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Why is Plan9 like this? An introduction to Namespaces.webm)
+    - [Working with Kernels; Modifying and Installing a Kernel in 9Front.mp4](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Working with Kernels; Modifying and Installing a Kernel in 9Front.mp4)
+    - [Writing Plan9 Kernels; 9Front on the MT7688.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/Writing Plan9 Kernels; 9Front on the MT7688.webm)
+    - [wizfs: A 9Front file server for Wiz light bulbs.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/plan9-videos/wizfs: A 9Front file server for Wiz light bulbs.webm)
+

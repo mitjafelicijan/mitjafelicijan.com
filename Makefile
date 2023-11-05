@@ -10,3 +10,8 @@ watch:
 
 server:
 	mkdir -p _site && cd _site && python3 -m http.server 6969
+
+provision:
+	gem install nokogiri
+	gem install htmlentities
+	gem install simple-rss

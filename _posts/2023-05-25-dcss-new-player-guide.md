@@ -15,7 +15,7 @@ form on another on [craw's](https://github.com/crawl/crawl) official repository.
   game
 - [DCSS Manual](/assets/notes/dcss_manual.pdf) - Extensive manual about the game
 
-![Dungeon Crawl Stone Soup](/assets/notes/dcss.jpg)
+![Dungeon Crawl Stone Soup](/assets/notes/dcss.jpg){:loading="lazy"}
 
 **Movement and Exploration**
 

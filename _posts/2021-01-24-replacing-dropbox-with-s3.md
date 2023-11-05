@@ -106,7 +106,7 @@ You can use this script in a combination with [Cron](https://en.wikipedia.org/wi
 When you start syncing your local stuff with a remote server you can review your
 items on DigitalOcean.
 
-![Dropbox Spaces](/assets/posts/dropbox-sync/dropbox-spaces.png)
+![Dropbox Spaces](/assets/posts/dropbox-sync/dropbox-spaces.png){:loading="lazy"}
 
 I have been using this script now for quite some time, and it's working
 flawlessly. I also uninstalled Dropbox and stopped using it completely.

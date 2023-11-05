@@ -23,4 +23,4 @@ string.
 grep --color=always -rni "TODO:" | less -R
 ```
 
-![Less and grep](/assets/notes/grep-less.png)
+![Less and grep](/assets/notes/grep-less.png){:loading="lazy"}

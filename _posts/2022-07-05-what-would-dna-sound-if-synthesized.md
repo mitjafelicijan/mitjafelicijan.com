@@ -178,7 +178,7 @@ An example spectrogram of Ludwig van Beethoven Symphony No. 6 First movement.
   <source src="/assets/posts/dna-synthesized/symphony-no6-1st-movement.mp3" type="audio/mpeg">
 </audio>
 
-![Ludwig van Beethoven Symphony No. 6 First movement](/assets/posts/dna-synthesized/symphony-no6-1st-movement.png)
+![Ludwig van Beethoven Symphony No. 6 First movement](/assets/posts/dna-synthesized/symphony-no6-1st-movement.png){:loading="lazy"}
 
 The other option could also be in combination with
 [gnuplot](http://www.gnuplot.info/).  This would require an intermediary step,
@@ -233,7 +233,7 @@ spectrogram based on a WAV file.
   <source src="/assets/posts/dna-synthesized/quote/out.mp3" type="audio/mpeg">
 </audio>
 
-![Spectogram](/assets/posts/dna-synthesized/quote/spectogram.png)
+![Spectogram](/assets/posts/dna-synthesized/quote/spectogram.png){:loading="lazy"}
 
 ### Mouse
 
@@ -245,7 +245,7 @@ here](http://ftp.ensembl.org/pub/release-106/fasta/mus_musculus/dna/).
   <source src="/assets/posts/dna-synthesized/mouse/out.mp3" type="audio/mpeg">
 </audio>
 
-![Spectogram](/assets/posts/dna-synthesized/mouse/spectogram.png)
+![Spectogram](/assets/posts/dna-synthesized/mouse/spectogram.png){:loading="lazy"}
 
 ### Bison
 
@@ -257,7 +257,7 @@ here](http://ftp.ensembl.org/pub/release-106/fasta/bison_bison_bison/cdna/).
   <source src="/assets/posts/dna-synthesized/bison/out.mp3" type="audio/mpeg">
 </audio>
 
-![Spectogram](/assets/posts/dna-synthesized/bison/spectogram.png)
+![Spectogram](/assets/posts/dna-synthesized/bison/spectogram.png){:loading="lazy"}
 
 ### Taurus
 
@@ -269,7 +269,7 @@ here](http://ftp.ensembl.org/pub/release-106/fasta/bos_taurus/cdna/).
   <source src="/assets/posts/dna-synthesized/taurus/out.mp3" type="audio/mpeg">
 </audio>
 
-![Spectogram](/assets/posts/dna-synthesized/taurus/spectogram.png)
+![Spectogram](/assets/posts/dna-synthesized/taurus/spectogram.png){:loading="lazy"}
 
 ## Making a drummer out of a DNA sequence
 
@@ -282,11 +282,11 @@ Elektron is connected to my MacBook via USB cable and audio out is patched to a
 Sony Bluetooth speaker I have that supports 3.5 mm audio in. Elektron doesn't
 have internal speakers.
 
-![](/assets/posts/dna-synthesized/elektron/IMG_0619.jpg)
+![](/assets/posts/dna-synthesized/elektron/IMG_0619.jpg){:loading="lazy"}
 
-![](/assets/posts/dna-synthesized/elektron/IMG_0620.jpg)
+![](/assets/posts/dna-synthesized/elektron/IMG_0620.jpg){:loading="lazy"}
 
-![](/assets/posts/dna-synthesized/elektron/IMG_0622.jpg)
+![](/assets/posts/dna-synthesized/elektron/IMG_0622.jpg){:loading="lazy"}
 
 For communicating with Elektron, I choose `pygame` Python module that has MIDI
 built in. With this, it was rather simple to send notes to the device. All I did
@@ -295,7 +295,7 @@ was map MIDI notes to the actual Nucleotides.
 Before all of this I also checked Audio MIDI Setup app under MacOS and checked
 MIDI Studio by pressing ⌘-2.
 
-![](/assets/posts/dna-synthesized/elektron/midi-studio.jpg)
+![](/assets/posts/dna-synthesized/elektron/midi-studio.jpg){:loading="lazy"}
 
 The whole script that parses and send notes to the Elektron looks like this.
 

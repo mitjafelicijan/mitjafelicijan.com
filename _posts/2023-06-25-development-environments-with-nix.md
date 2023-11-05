@@ -59,7 +59,7 @@ export PS1="[\033[38;5;9m\]\u@\h\[$(tput sgr0)\]]$(is_inside_nix_shell)\[\033[33
 And this is what it looks like when you are in a Nix shell. Otherwise that part
 of prompt is omitted
 
-![PS1 Prompt](/assets/notes/ps1-prompt.png)
+![PS1 Prompt](/assets/notes/ps1-prompt.png){:loading="lazy"}
 
 More resources:
 

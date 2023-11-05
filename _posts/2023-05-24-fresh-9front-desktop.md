@@ -11,5 +11,5 @@ tags: [plan9]
 I have been experimenting with Plan9/9front for a week now. Noice! This is how
 my desktop looks like.
 
-![9front desktop](/assets/notes/9front-desktop.png)
+![9front desktop](/assets/notes/9front-desktop.png){:loading="lazy"}
 

@@ -11,7 +11,7 @@ tags: [linux]
 - `bash xterm-palette.sh` - will show you number of max colors available
 - `bash xterm-palette.sh -v` - will create a list of all colors with codes
 
-![xterm color palette](/assets/notes/xterm-palette.png)
+![xterm color palette](/assets/notes/xterm-palette.png){:loading="lazy"}
 
 ```sh
 #!/usr/bin/env bash

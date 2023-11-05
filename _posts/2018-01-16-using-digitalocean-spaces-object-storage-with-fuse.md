@@ -56,7 +56,7 @@ Instuctions on how to use SSH keys and how to setup them are available in
 article [How To Use SSH Keys with DigitalOcean
 Droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets).
 
-![DigitalOcean Droplets](/assets/posts/do-fuse/fuse-droplets.png)
+![DigitalOcean Droplets](/assets/posts/do-fuse/fuse-droplets.png){:loading="lazy"}
 
 After we created Droplet it's time to create new Space. This is done by clicking
 on a button [Create](https://cloud.digitalocean.com/spaces/new) (right top
@@ -69,7 +69,7 @@ key](https://cloud.digitalocean.com/settings/api/tokens).  This link will guide
 to the page when you can generate this key. After you create new one, please
 save provided Key and Secret because Secret will not be shown again.
 
-![DigitalOcean Spaces](/assets/posts/do-fuse/fuse-spaces.png)
+![DigitalOcean Spaces](/assets/posts/do-fuse/fuse-spaces.png){:loading="lazy"}
 
 Now that we have new Space and Access key we should SSH into our machine.
 

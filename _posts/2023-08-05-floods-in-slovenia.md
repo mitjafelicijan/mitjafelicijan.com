@@ -11,9 +11,9 @@ draft: false
 
 <video src="/assets/notes/floods/IMG_1474.mp4" controls></video>
 
-![](/assets/notes/floods/IMG_1469.webp)
+![](/assets/notes/floods/IMG_1469.webp){:loading="lazy"}
 
-![](/assets/notes/floods/IMG_1470.webp)
+![](/assets/notes/floods/IMG_1470.webp){:loading="lazy"}
 
 <video src="/assets/notes/floods/IMG_1461.mp4" controls></video>
 

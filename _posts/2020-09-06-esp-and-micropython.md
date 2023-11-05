@@ -20,7 +20,7 @@ but I could easily choose
 contains which tools I use and how I prepared my workspace to code for
 [ESP8266](https://www.espressif.com/en/products/socs/esp8266).
 
-![ESP8266 and ESP32 boards](/assets/posts/esp8366-micropython/boards.jpg)
+![ESP8266 and ESP32 boards](/assets/posts/esp8366-micropython/boards.jpg){:loading="lazy"}
 
 This guide covers:
 

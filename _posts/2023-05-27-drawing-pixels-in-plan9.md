@@ -22,7 +22,7 @@ More information:
 - [all man pages](https://9fans.github.io/plan9port/man/man3/)
   can be a valuable resource for learning about the system
 
-![Plan9 Howdy World!](/assets/notes/plan9-pixels.png)
+![Plan9 Howdy World!](/assets/notes/plan9-pixels.png){:loading="lazy"}
 
 ```c
 // main.c

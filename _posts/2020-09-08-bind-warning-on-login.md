@@ -31,7 +31,7 @@ bind '"\e[Z":menu-complete-backward'
 I haven't noticed anything wrong with this and all was working fine until I
 restarted my machine and then I got this error.
 
-![Profile bind error](/assets/posts/profile-bind-error/error.jpg)
+![Profile bind error](/assets/posts/profile-bind-error/error.jpg){:loading="lazy"}
 
 When I pressed OK, I got into the [Gnome
 shell](https://wiki.gnome.org/Projects/GnomeShell) and all was working fine, but

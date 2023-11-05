@@ -93,7 +93,7 @@ plt.show()
    longer period of time and then perform analysis again and use either machine
    learning or deep learning on top of it.
 
-![Relationship between title and description](/assets/posts/sentiment-analysis/guardian-sa-title-desc-relationship.png)
+![Relationship between title and description](/assets/posts/sentiment-analysis/guardian-sa-title-desc-relationship.png){:loading="lazy"}
 
 Figure above displays difference between title and description sentiment for
 specific RSS feed item. 1 means positive and -1 means negative sentiment.

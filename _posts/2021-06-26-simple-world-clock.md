@@ -24,7 +24,7 @@ have a bunch of [Raspberry Pi's
 Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/) lying around that
 I really need to use.
 
-![Inky pHAT, Raspberry Pi Zero](/assets/posts/world-clock/hardware.jpg)
+![Inky pHAT, Raspberry Pi Zero](/assets/posts/world-clock/hardware.jpg){:loading="lazy"}
 
 Since the Inky [Inky
 pHAT](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811) is
@@ -95,7 +95,7 @@ Then we add a cronjob with `crontab -e`.
 
 So, we end up with a result like this.
 
-![World Clock](/assets/posts/world-clock/world-clock.jpg)
+![World Clock](/assets/posts/world-clock/world-clock.jpg){:loading="lazy"}
 
 And for the enclosure that can be 3D printed, but I haven't yet something like
 this can be used.

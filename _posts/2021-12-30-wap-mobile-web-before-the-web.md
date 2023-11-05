@@ -33,7 +33,7 @@ These phones were rocking:
 
 Let's take a look at these beauties.
 
-![Old phones](/assets/posts/wap/phones.gif)
+![Old phones](/assets/posts/wap/phones.gif){:loading="lazy"}
 
 ## WAP - Wireless Application Protocol
 

@@ -66,6 +66,6 @@ legend.get_frame().set_linewidth(0)
 plt.savefig("plot.svg", format="svg")
 ```
 
-![SVG Chart](/assets/notes/plot.svg)
+![SVG Chart](/assets/notes/plot.svg){:loading="lazy"}
 
 The image above is SVG and you can zoom in and out and check that the image is vector.

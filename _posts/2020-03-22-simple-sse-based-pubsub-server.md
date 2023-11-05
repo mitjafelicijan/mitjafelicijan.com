@@ -39,7 +39,7 @@ simple. We have subscribers that receive messages, and we have publishers that
 create and post messages. Similar model is also well know pattern that works on
 a premise of consumers and producers, and they take similar roles.
 
-![How PubSub works](/assets/posts/simple-pubsub-server/pubsub-overview.png)
+![How PubSub works](/assets/posts/simple-pubsub-server/pubsub-overview.png){:loading="lazy"}
 
 **These are some naive characteristics we want to achieve:**
 
@@ -75,7 +75,7 @@ page](https://html.spec.whatwg.org/multipage/server-sent-events.html).
 
 ### Current browser support
 
-![Browser support](/assets/posts/simple-pubsub-server/caniuse.png)
+![Browser support](/assets/posts/simple-pubsub-server/caniuse.png){:loading="lazy"}
 
 Check
 [https://caniuse.com/#feat=eventsource](https://caniuse.com/#feat=eventsource)
@@ -143,7 +143,7 @@ which is quite nice and available from Developer Tools under Network tab.
 > ones. For debugging server events add `console.log` to `server.js` code and
 > print out events.
 
-![Google Chrome Developer Tools EventStream](/assets/posts/simple-pubsub-server/chrome-debugging.png)
+![Google Chrome Developer Tools EventStream](/assets/posts/simple-pubsub-server/chrome-debugging.png){:loading="lazy"}
 
 ## Server implementation
 

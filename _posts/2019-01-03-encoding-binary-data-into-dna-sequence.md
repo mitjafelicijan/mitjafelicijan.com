@@ -110,7 +110,7 @@ The nucleotide in DNA consists of a sugar (deoxyribose), one of four bases
 Cytosine and thymine are pyrimidine bases, while adenine and guanine are purine
 bases. The sugar and the base together are called a nucleoside.
 
-![DNA](/assets/posts/dna-sequence/dna-basics.jpg)
+![DNA](/assets/posts/dna-sequence/dna-basics.jpg){:loading="lazy"}
 *DNA (a) forms a double stranded helix, and (b) adenine pairs with thymine and
 cytosine pairs with guanine. (credit a: modification of work by Jerome Walker,
 Dennis Myts)*
@@ -300,7 +300,7 @@ Then we encode FASTA file from previous operation to encode this data into PNG.
 
 After encoding into PNG format this file looks like this.
 
-![Encoded Quote in PNG format](/assets/posts/dna-sequence/quote.png)
+![Encoded Quote in PNG format](/assets/posts/dna-sequence/quote.png){:loading="lazy"}
 The larger the input stream is the larger the PNG file would be.
 
 Compiled basic Hello World C program with
@@ -369,7 +369,7 @@ dd if=<(openssl enc -aes-256-ctr  -pass pass:"$(dd if=/dev/urandom bs=128 count=
 ```
 
 
-![Sample binary file 1KB](/assets/posts/dna-sequence/sample-binary-file.png)
+![Sample binary file 1KB](/assets/posts/dna-sequence/sample-binary-file.png){:loading="lazy"}
 Our freshly generated 1KB file looks something like this (its full of
 garbage data as intended).
 
@@ -395,10 +395,10 @@ Then we GZIP all the FASTA files to see how much the can be compressed.
 gzip -9 < 10MB.fa > 10MB.fa.gz
 ```
 
-![Encode to FASTA](/assets/posts/dna-sequence/chart-speed.svg)
+![Encode to FASTA](/assets/posts/dna-sequence/chart-speed.svg){:loading="lazy"}
 The speed increase that occurs when encoding to FASTA format.
 
-![File sizes](/assets/posts/dna-sequence/chart-size.svg)
+![File sizes](/assets/posts/dna-sequence/chart-size.svg){:loading="lazy"}
 Size of the out file after encoding.
 
 [Download CSV file with benchmarks](/assets/posts/dna-sequence/benchmarks.csv).

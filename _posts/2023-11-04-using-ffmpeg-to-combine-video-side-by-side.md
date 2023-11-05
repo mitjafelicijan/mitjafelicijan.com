@@ -38,4 +38,4 @@ ffmpeg -y \
 - This will also cap frame rate to 6 (refer to `fps=6`) since that is enough and
   this makes playback of GIFs smoother in a browser.
 
-![Result](./assets/notes/trigraphs.gif)
+![Result](./assets/notes/trigraphs.gif){:loading="lazy"}

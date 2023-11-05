@@ -6,6 +6,7 @@ require "simple-rss"
 summary_max_length = 320
 
 feeds = [
+  "https://blog.regehr.org/feed",
   "https://landley.net/rss.xml",
   "https://drewdevault.com/feed.xml",
   "https://offbeatpursuit.com/blog/index.rss",

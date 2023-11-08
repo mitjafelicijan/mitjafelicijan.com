@@ -9,8 +9,12 @@ draft: false
 
 ## Hi traveler!
 
-This is a repository of interesting things I have gathered over time and it also
-stores binaries etc of my personal projects.
+This curated compilation functions as a dedicated repository where I house an
+assortment of captivating and noteworthy items I've amassed over the years.
+
+Additionally, it serves as a secure haven for preserving binaries and assorted
+assets associated with my personal projects, ensuring easy access and
+organization.
 
 Be kind, this server is bandwidth limited.
 

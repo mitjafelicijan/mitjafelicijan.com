@@ -8,7 +8,7 @@ type: page
 
 **Mitja Felicijan**
 
-Email me at *[m@mitjafelicijan.com](mailto:m@mitjafelicijan.com?subject=Website+CV+Contact)*
+Email me at *[mitja.felicijan@gmail.com](mailto:mitja.felicijan@gmail.com?subject=Website+CV+Contact)*
 
 ## Technical experience
 

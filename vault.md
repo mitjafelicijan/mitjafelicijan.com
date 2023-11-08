@@ -23,9 +23,12 @@ Be kind, this server is bandwidth limited.
   - [philip-francis-nowlan-armageddon-2419-a-d.mp3](https://mitjafelicijan.fra1.digitaloceanspaces.com/audiobooks/philip-francis-nowlan-armageddon-2419-a-d.mp3)
   - [philip-francis-nowlan-the-airlords-of-han.mp3](https://mitjafelicijan.fra1.digitaloceanspaces.com/audiobooks/philip-francis-nowlan-the-airlords-of-han.mp3)
 - books
+  - [An Introduction to Emacs Lisp Programming.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/An Introduction to Emacs Lisp Programming.pdf)
   - [Civilized to Death.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/Civilized to Death.pdf)
   - [Common Sense.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/Common Sense.pdf)
+  - [GNU C Language Introduction.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/GNU C Language Introduction.pdf)
   - [History of UNIX programs, sycalls, etc.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/History of UNIX programs, sycalls, etc.pdf)
+  - [Ragel State Machine Compiler - User Guide.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/Ragel State Machine Compiler - User Guide.pdf)
   - [The Maiden Who Travels The Planet.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/The Maiden Who Travels The Planet.pdf)
   - [The UNIX-HATERS Handbook.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/books/The UNIX-HATERS Handbook.pdf)
 - essays

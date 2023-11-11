@@ -34,30 +34,12 @@ set expandtab
 set autoread
 set scrolloff=4
 set spelllang=en_us
-
-" Disable :q
 nnoremap q: <nop>
 
 " Status Line enhancements.
 " https://tomdaly.dev/projects/vim-statusline-generator/
 set laststatus=2
-set statusline=
-set statusline+=%f
-set statusline+=%m
-set statusline+=\ 
-set statusline+=%=
-set statusline+=%y
-set statusline+=\ 
-set statusline+=%{strlen(&fenc)?&fenc:'none'}
-set statusline+=\ 
-set statusline+=%l
-set statusline+=:
-set statusline+=%c
-set statusline+=\ 
-set statusline+=%L
-set statusline+=\ 
-set statusline+=%P
-
+set statusline=%f%m%=%y\ %{strlen(&fenc)?&fenc:'none'}\ %l:%c\ %L\ %P
 hi StatusLine cterm=NONE ctermbg=black ctermfg=brown
 hi StatusLineNC cterm=NONE ctermbg=black ctermfg=darkgray
 

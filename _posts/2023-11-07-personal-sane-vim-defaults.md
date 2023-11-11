@@ -31,13 +31,11 @@ set backspace=2
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set autoread
 set scrolloff=4
 set spelllang=en_us
 nnoremap q: <nop>
 
 " Status Line enhancements.
-" https://tomdaly.dev/projects/vim-statusline-generator/
 set laststatus=2
 set statusline=%f%m%=%y\ %{strlen(&fenc)?&fenc:'none'}\ %l:%c\ %L\ %P
 hi StatusLine cterm=NONE ctermbg=black ctermfg=brown

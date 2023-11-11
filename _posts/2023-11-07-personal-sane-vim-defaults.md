@@ -16,15 +16,15 @@ syntax enable
 colorscheme sorbet
 set nocompatible
 set relativenumber
-set hlsearch
+set nohlsearch
 set smartcase
 set ignorecase
 set incsearch
 set autoindent
 set nowrap
 set nobackup
-set autoread
 set noswapfile
+set autoread
 set wildmenu
 set encoding=utf8
 set backspace=2
@@ -33,9 +33,33 @@ set shiftwidth=2
 set expandtab
 set autoread
 set scrolloff=4
+set spelllang=en_us
 
-" Format current paragraph to 80 rows.
-noremap <C-f> vipgq
+" Disable :q
+nnoremap q: <nop>
+
+" Status Line enhancements.
+" https://tomdaly.dev/projects/vim-statusline-generator/
+set laststatus=2
+set statusline=
+set statusline+=%f
+set statusline+=%m
+set statusline+=\ 
+set statusline+=%=
+set statusline+=%y
+set statusline+=\ 
+set statusline+=%{strlen(&fenc)?&fenc:'none'}
+set statusline+=\ 
+set statusline+=%l
+set statusline+=:
+set statusline+=%c
+set statusline+=\ 
+set statusline+=%L
+set statusline+=\ 
+set statusline+=%P
+
+hi StatusLine cterm=NONE ctermbg=black ctermfg=brown
+hi StatusLineNC cterm=NONE ctermbg=black ctermfg=darkgray
 
 " Commenting blocks of code.
 augroup commenting_blocks_of_code
@@ -48,26 +72,6 @@ augroup commenting_blocks_of_code
 augroup END
 noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
-
-" Status Line enhancements.
-set laststatus=2
-
-hi User1 ctermfg=green  ctermbg=black
-hi User2 ctermfg=yellow ctermbg=black
-hi User3 ctermfg=red    ctermbg=black
-hi User4 ctermfg=blue   ctermbg=black
-hi User5 ctermfg=white  ctermbg=black
-
-set statusline=
-set statusline +=%1*\ %n\ %*    "buffer number
-set statusline +=%5*%{&ff}%*    "file format
-set statusline +=%3*%y%*        "file type
-set statusline +=%4*\ %<%F%*    "full path
-set statusline +=%2*%m%*        "modified flag
-set statusline +=%1*%=%5l%*     "current line
-set statusline +=%2*/%L%*       "total lines
-set statusline +=%1*%4v\ %*     "virtual column number
-set statusline +=%2*0x%04B\ %*  "character under cursor
 ```
 
 I keep it pretty vanilla so this is about everything I have in the file.

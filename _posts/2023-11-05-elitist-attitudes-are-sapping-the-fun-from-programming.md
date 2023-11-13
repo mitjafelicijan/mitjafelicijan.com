@@ -62,7 +62,7 @@ to see if you are using what is considered the “cool” thing. If you are doin
 this, you already failed in my opinion.
 
 Oh, you are not using this “insert here” algorithm? Such a pleb. Don't you know
-about O(2) complexity? OMG, such a noob. He doesn't know. Uneducated pleb. 2017
+about O(N) complexity? OMG, such a noob. He doesn't know. Uneducated pleb. 2017
 called, and they want their stack back.
 
 Yes, there is a place for all of those things. But not everything needs to be
@@ -87,11 +87,11 @@ Code or Vim or Emacs or even Notepad if you wish. If you are having fun, then
 just do it. Don't worry about these elitist pricks. They will never be satisfied
 anyway. You will never get their approval. So why even bother. Just go for
 it. Use C, Rust, OCaml, whatever floats your boat. If it tickles you, just do
-it. To hell with everybody else. And if somebody says O(n) complexity, dude? You
+it. To hell with everybody else. And if somebody says O(N) complexity, dude? You
 can say, OOOOO, fuck the fuck off.
 
 If this post triggered you, then you are the asshole. Probably. Then you
-probably are that guy preaching about O(n) or this language is soo slow
+probably are that guy preaching about O(N) or this language is soo slow
 haha. Stop it. Nobody cares! Touch grass.
 
 Anyway, back to having fun. Cheers!

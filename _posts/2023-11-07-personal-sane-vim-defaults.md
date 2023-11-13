@@ -50,7 +50,7 @@ augroup END
 noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
-" Language specific intentation.
+" Language specific indentation.
 filetype plugin indent on
 autocmd Filetype make,go,c,cpp setlocal noexpandtab tabstop=4 shiftwidth=4
 autocmd Filetype html,js,css setlocal expandtab tabstop=2 shiftwidth=2

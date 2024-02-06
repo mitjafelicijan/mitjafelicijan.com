@@ -359,6 +359,8 @@ Be kind, this server is bandwidth limited.
     - [sapi-0.1.0-linux-amd64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-linux-amd64.tar.gz)
     - [sapi-0.1.0-linux-arm64.md5](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-linux-arm64.md5)
     - [sapi-0.1.0-linux-arm64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-linux-arm64.tar.gz)
+- sandbox
+  - [data.json](https://mitjafelicijan.fra1.digitaloceanspaces.com/sandbox/data.json)
 - video
   - [Building the Simplest Possible Linux System - Rob Landley.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/Building the Simplest Possible Linux System - Rob Landley.webm)
   - [Go webserver, HTMX Integration, Template Fragments.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/Go webserver, HTMX Integration, Template Fragments.webm)

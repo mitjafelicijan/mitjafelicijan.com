@@ -8,7 +8,7 @@ summary_max_length = 320
 feeds = [
   "https://blog.regehr.org/feed",
   "https://www.neilhenning.dev/index.xml",
-  "https://drewdevault.com/feed.xml",
+  "https://drewdevault.com/blog/index.xml",
   "https://offbeatpursuit.com/blog/index.rss",
   "https://mirzapandzo.com/rss.xml",
   "https://journal.valeriansaliou.name/rss/",
@@ -66,9 +66,9 @@ feeds.each do |feed_url|
     puts "Summary: #{summary}"
     puts
   rescue OpenURI::HTTPError => e
-    puts "Failed to fetch #{url}: #{e.message}"
+    puts "Failed to fetch #{feed_url}: #{e.message}"
   rescue SimpleRSSError => e
-    puts "Failed to parse #{url}: #{e.message}"
+    puts "Failed to parse #{feed_url}: #{e.message}"
   end
 end
 

@@ -36,7 +36,8 @@ One thing to do before you are able to use autocompletion and make use Language
 Server support is to install the language server with NPM.
 
 ```sh
-npm install -g typescript typescript-language-server
+# For C development this installs C LSP.
+sudo dnf install clang-tools-extra
 ```
 
 I am still getting used to the keyboard shortcuts and getting better. What Helix

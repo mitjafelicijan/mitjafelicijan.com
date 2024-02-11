@@ -15,7 +15,7 @@ until it surrenders its mysteries to you.</i></p>
 <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Articles" class="list">
   <meta itemprop="name" content="Article list">
   {% for post in site.posts %}
-  {% if post.type == "post" %}
+  {% if post.type == "post" and post.draft == false %}
 	<li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
@@ -27,7 +27,7 @@ until it surrenders its mysteries to you.</i></p>
 <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Notes" class="list">
   <meta itemprop="name" content="Note list">
   {% for post in site.posts %}
-  {% if post.type == "note" %}
+  {% if post.type == "note" and post.draft == false %}
 	<li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>

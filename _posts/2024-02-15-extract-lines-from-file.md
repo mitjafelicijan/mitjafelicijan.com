@@ -1,7 +1,7 @@
 ---
 title: "Extract lines from a file with sed"
 permalink: /extract-lines-from-file-with-sed.html
-date: 2024-02-14T01:04:28+02:00
+date: 2024-02-15T10:04:28+02:00
 layout: post
 type: note
 draft: false

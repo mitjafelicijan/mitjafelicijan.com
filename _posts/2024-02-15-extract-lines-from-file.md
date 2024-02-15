@@ -7,7 +7,7 @@ type: note
 draft: false
 ---
 
-Easy way to extract line ranges (like from line 200 to line 210) with sed.
+Easy way to extract line ranges (from line 200 to line 210) with sed.
 
 ```sh
 sed -n '200,210p' data/Homo_sapiens.GRCh38.dna.chromosome.18.fa

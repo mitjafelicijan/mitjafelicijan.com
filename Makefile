@@ -2,7 +2,10 @@ MAKEFLAGS+=-j3
 
 dev: watch server
 
-build: webring vault
+build: newsboat webring vault
+
+newsboat:
+	cp ~/.newsboat/urls assets/urls.txt
 
 webring:
 	ruby bin/webring.rb

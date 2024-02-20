@@ -1,0 +1,42 @@
+# Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrqM0Ym_NbK1fqeQG2VIohg Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUzQJ3JBuQ9w-po4TXRJHiA Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUyeluBRhGPCW4rPe_UvBZQ Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCS0N5baNlQWJCUrhCEo8WlA Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA Videos
+
+# Announcements
+https://harelang.org/index.xml Announcements
+https://emacsredux.com/atom.xml Announcements
+https://crawl.develz.org/wordpress/feed Announcements
+
+# Comics
+https://workchronicles.com/feed/ Comics
+https://www.monkeyuser.com/index.xml Comics
+https://turnoff.us/feed.xml Comics
+
+# Blogs
+https://www.andreinc.net/feed.xml Blogs
+https://blog.regehr.org/feed Blogs
+https://szymonkaliski.com/feed.xml Blogs
+https://world.hey.com/dhh/feed.atom Blogs
+https://mitchellh.com/feed.xml Blogs
+https://matt-rickard.com/rss Blogs
+https://solar.lowtechmagazine.com/posts/index.xml Blogs
+https://utcc.utoronto.ca/~cks/space/blog/?atom Blogs
+https://neil.computer/rss/ Blogs
+https://matduggan.com/rss/ Blogs
+https://michael.stapelberg.ch/feed.xml Blogs
+https://offbeatpursuit.com/blog/index.rss Blogs "~Offbeatpursuit - Blog"
+https://offbeatpursuit.com/paste/index.rss Blogs "~Offbeatpursuit - Paste"
+https://offbeatpursuit.com/notes/index.rss Blogs "~Offbeatpursuit - Notes"
+https://journal.valeriansaliou.name/rss/ Blogs
+https://www.taniarascia.com/rss.xml Blogs
+https://snarky.ca/rss/ Blogs
+https://www.jeffgeerling.com/blog.xml Blogs
+https://serokell.io/blog.rss.xml Blogs
+https://www.duskborn.com/index.xml Blogs
+https://mirzapandzo.com/rss.xml Blogs
+https://mitjafelicijan.com/feed.xml Blogs
+https://blog.boot.dev/index.xml Blogs
+

@@ -1,0 +1,14 @@
+---
+layout: index
+---
+
+<h2>Thoughts in microbloging style</h2>
+{% for post in site.posts %}
+{% if post.type == "though" %}
+<article>
+  <div><strong>{{ post.title }}</strong></div>
+  <p><small><i>{{ post.date | date: '%B %d, %Y' }}</i></small></p>
+  <div>{{ post.content }}</div>
+</article>
+{% endif %}
+{% endfor %}

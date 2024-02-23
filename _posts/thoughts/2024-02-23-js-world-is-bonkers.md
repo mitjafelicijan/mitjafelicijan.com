@@ -1,5 +1,6 @@
 ---
 title: JS world is bonkers
+date: 2024-02-23T10:39:00+01:00
 published: true
 type: thought
 ---

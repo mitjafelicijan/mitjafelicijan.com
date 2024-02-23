@@ -23,9 +23,11 @@ content:
         label: Draft
         type: boolean
         default: true
-      - name: tags
-        label: Tags
-        type: string
+      - name: type
+        label: Type
+        type: select
+        options:
+          values: [ post, note ]
       - name: body
         label: Body
         type: rich-text

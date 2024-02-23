@@ -22,4 +22,4 @@ I have had some issues with Ollama not being up-to-date. If Ollama is installed 
     sudo rm -rf /usr/share/ollama
     
 
-That is about it
+That is about it.

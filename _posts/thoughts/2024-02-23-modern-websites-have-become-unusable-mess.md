@@ -1,5 +1,6 @@
 ---
 title: Modern websites have become unusable mess
+date: 2024-02-23T11:40:00+01:00
 published: true
 type: thought
 ---

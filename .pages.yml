@@ -14,6 +14,9 @@ content:
       - name: date
         label: Date
         type: date
+        options:
+          time: true
+          format: YYYY-MM-DDTHH:mm:ssZ
       - name: layout
         label: Layout
         type: string
@@ -49,6 +52,9 @@ content:
       - name: date
         label: Date
         type: date
+        options:
+          time: true
+          format: YYYY-MM-DDTHH:mm:ssZ
       - name: layout
         label: Layout
         type: string
@@ -78,6 +84,12 @@ content:
       - name: title
         label: Title
         type: string
+      - name: date
+        label: Date
+        type: date
+        options:
+          time: true
+          format: YYYY-MM-DDTHH:mm:ssZ
       - name: published
         label: Published
         type: boolean

@@ -9,7 +9,7 @@ content:
       - { name: permalink, label: Permalink, type: string }
       - { name: date, label: Date, type: date }
       - { name: layout, label: Layout, type: string, hidden: true }
-      - { name: type, label: Type, type: string }
+      - { name: type, label: Type, type: select, [ { value: post, label: 'Post' }, { value: note, label: 'Note' } ] }
       - { name: draft, label: Draft, type: boolean, default: true }
       - { name: tags, label: Tags, type: string }
       - { name: body, label: Body, type: rich-text }

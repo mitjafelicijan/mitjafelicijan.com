@@ -5,11 +5,27 @@ content:
     type: collection
     path: _posts
     fields:
-      - { name: title, label: Title, type: string }
-      - { name: permalink, label: Permalink, type: string }
-      - { name: date, label: Date, type: date }
-      - { name: layout, label: Layout, type: string, hidden: true }
-      - { name: type, label: Type, type: select, [ { value: post, label: 'Post' }, { value: note, label: 'Note' } ] }
-      - { name: draft, label: Draft, type: boolean, default: true }
-      - { name: tags, label: Tags, type: string }
-      - { name: body, label: Body, type: rich-text }
+      - name: title
+        label: Title
+        type: string
+      - name: permalink
+        label: Permalink
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: layout
+        label: Layout
+        type: string
+        default: post
+        hidden: true
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+      - name: tags
+        label: Tags
+        type: string
+      - name: body
+        label: Body
+        type: rich-text

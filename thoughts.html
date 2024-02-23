@@ -4,10 +4,10 @@ layout: index
 
 <h2>Thoughts in microbloging style</h2>
 {% for post in site.posts %}
-{% if post.type == "though" %}
+{% if post.type == "thought" %}
 <article>
   <div><strong>{{ post.title }}</strong></div>
-  <p><small><i>{{ post.date | date: '%B %d, %Y' }}</i></small></p>
+  <div><small><i>{{ post.date | date: '%B %d, %Y' }}</i></small></div>
   <div>{{ post.content }}</div>
 </article>
 {% endif %}

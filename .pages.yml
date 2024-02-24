@@ -76,10 +76,10 @@ content:
       - name: body
         label: Body
         type: rich-text
-  - name: thoughts
-    label: Thoughts
+  - name: journal
+    label: Journal
     type: collection
-    path: _posts/thoughts
+    path: _posts/journal
     fields:
       - name: title
         label: Title
@@ -97,7 +97,7 @@ content:
       - name: type
         label: Type
         type: string
-        default: thought
+        default: journal
         hidden: true
       - name: body
         label: Body

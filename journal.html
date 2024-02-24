@@ -2,9 +2,9 @@
 layout: index
 ---
 
-<h2>Thoughts in microbloging style</h2>
+<h2>Journal in microbloging style</h2>
 {% for post in site.posts %}
-{% if post.type == "thought" %}
+{% if post.type == "journal" %}
 <article>
   <div><strong>{{ post.title }}</strong></div>
   <div><small><i>{{ post.date | date: '%B %d, %Y' }}</i></small></div>

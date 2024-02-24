@@ -7,7 +7,7 @@ layout: index
 {% if post.type == "journal" %}
 <article>
   <div><strong>{{ post.title }}</strong></div>
-  <div><small><i>{{ post.date | date: '%B %d, %Y' }}</i></small></div>
+  <div><small><i>{{ post.date | date: '%B %d, %Y' }} at {{ post.date | date: '%I:%m %p' }}</i></small></div>
   <div>{{ post.content }}</div>
 </article>
 {% endif %}

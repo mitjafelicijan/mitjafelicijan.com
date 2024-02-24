@@ -4,6 +4,9 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCUzQJ3JBuQ9w-po4TXRJHiA Vid
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUyeluBRhGPCW4rPe_UvBZQ Videos
 https://www.youtube.com/feeds/videos.xml?channel_id=UCS0N5baNlQWJCUrhCEo8WlA Videos
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3ts8coMP645hZw9JSD3pqQ Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCaTznQhurW5AaiYPbhEA-KA Videos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA Videos
 
 # Announcements
 https://harelang.org/index.xml Announcements
@@ -16,6 +19,7 @@ https://www.monkeyuser.com/index.xml Comics
 https://turnoff.us/feed.xml Comics
 
 # Blogs
+https://danluu.com/atom.xml Blogs "~Dan Luu"
 https://www.andreinc.net/feed.xml Blogs
 https://blog.regehr.org/feed Blogs
 https://szymonkaliski.com/feed.xml Blogs
@@ -39,4 +43,3 @@ https://www.duskborn.com/index.xml Blogs
 https://mirzapandzo.com/rss.xml Blogs
 https://mitjafelicijan.com/feed.xml Blogs
 https://blog.boot.dev/index.xml Blogs
-

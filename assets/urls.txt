@@ -1,13 +1,3 @@
-# Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCrqM0Ym_NbK1fqeQG2VIohg Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCUzQJ3JBuQ9w-po4TXRJHiA Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCUyeluBRhGPCW4rPe_UvBZQ Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCS0N5baNlQWJCUrhCEo8WlA Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UC3ts8coMP645hZw9JSD3pqQ Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCaTznQhurW5AaiYPbhEA-KA Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA Videos
-
 # Announcements
 https://harelang.org/index.xml Announcements
 https://emacsredux.com/atom.xml Announcements
@@ -21,9 +11,11 @@ https://turnoff.us/feed.xml Comics
 # Blogs
 https://danluu.com/atom.xml Blogs "~Dan Luu"
 https://www.andreinc.net/feed.xml Blogs
+https://voussoir.net/writing/writing.atom Blogs "~Ethan Dalool / Voussoir"
 https://blog.regehr.org/feed Blogs
 https://szymonkaliski.com/feed.xml Blogs
 https://world.hey.com/dhh/feed.atom Blogs
+https://world.hey.com/jason/feed.atom Blogs
 https://mitchellh.com/feed.xml Blogs
 https://matt-rickard.com/rss Blogs
 https://solar.lowtechmagazine.com/posts/index.xml Blogs

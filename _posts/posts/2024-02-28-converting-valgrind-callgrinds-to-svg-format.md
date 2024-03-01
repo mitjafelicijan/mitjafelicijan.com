@@ -94,7 +94,7 @@ cat out.zig.dot | dot -Tsvg > out.zig.svg
 ![SVG callgrind for Zig program](/assets/posts/valgrind-callgrind-svg/out.zig.svg)
 
 Now, to be fair
-[Kcachegrind](https://kcachegrind.github.io/html/Home.html) is much nices
+[Kcachegrind](https://kcachegrind.github.io/html/Home.html) is much nicer
 for local exploration and digging deep into the callgraphs, but the SVG
 format can still provide valid information for documentation and things
 of that nature.

@@ -22,7 +22,7 @@ jekyll-minifier:
     harmony: true
 
 feed:
-  posts_limit: 100
+  posts_limit: 200
 
 exclude:
   - bin/

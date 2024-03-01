@@ -13,6 +13,7 @@ https://danluu.com/atom.xml Blogs "~Dan Luu"
 https://www.andreinc.net/feed.xml Blogs
 https://voussoir.net/writing/writing.atom Blogs "~Ethan Dalool / Voussoir"
 https://blog.regehr.org/feed Blogs
+https://richiejp.com/atom.xml Blogs "~Richard Palethorpe"
 https://szymonkaliski.com/feed.xml Blogs
 https://world.hey.com/dhh/feed.atom Blogs
 https://world.hey.com/jason/feed.atom Blogs
@@ -34,4 +35,3 @@ https://serokell.io/blog.rss.xml Blogs
 https://www.duskborn.com/index.xml Blogs
 https://mirzapandzo.com/rss.xml Blogs
 https://mitjafelicijan.com/feed.xml Blogs
-https://blog.boot.dev/index.xml Blogs

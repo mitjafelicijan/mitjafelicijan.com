@@ -21,6 +21,9 @@ jekyll-minifier:
   uglifier_args:
     harmony: true
 
+feed:
+  posts_limit: 100
+
 exclude:
   - bin/
   - Makefile

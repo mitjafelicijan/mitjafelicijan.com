@@ -76,29 +76,3 @@ content:
       - name: body
         label: Body
         type: rich-text
-  - name: journal
-    label: Journal
-    type: collection
-    path: _posts/journal
-    fields:
-      - name: title
-        label: Title
-        type: string
-      - name: date
-        label: Date
-        type: date
-        options:
-          time: true
-          format: YYYY-MM-DDTHH:mm:ssZ
-      - name: published
-        label: Published
-        type: boolean
-        default: false
-      - name: type
-        label: Type
-        type: string
-        default: journal
-        hidden: true
-      - name: body
-        label: Body
-        type: rich-text

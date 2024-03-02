@@ -17,7 +17,7 @@
 
     <style>
       :root {
-        --body-max-width: 1200px;
+        --body-max-width: 860px;
         --border-color: gainsboro;
         --border-size: 1px;
         --border-style: solid;
@@ -47,6 +47,7 @@
         font-family: sans-serif;
         line-height: 1.4rem;
         font-size: 16px;
+        margin: 0 auto;
       }
 
       hr {
@@ -134,7 +135,7 @@
       }
 
       figcaption {
-        width: 800px;
+        width: var(--body-max-width);
         max-width: 100%;
         text-align: center;
       }
@@ -145,7 +146,7 @@
       }
 
       img, video, audio {
-        width: 800px;
+        width: var(--body-max-width);
         max-width: 100%;
       }
 

@@ -76,6 +76,7 @@ Be kind, this server is bandwidth limited.
   - [simulator.go](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/simulator.go)
   - [standard-ml.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/standard-ml.pdf)
   - [staticserver.txt](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/staticserver.txt)
+- [neptune](https://mitjafelicijan.fra1.digitaloceanspaces.com/neptune)
 - papers
   - affective-computing
     - [Theories-Methods-and-Current-Research-on-Emotions.pdf](https://mitjafelicijan.fra1.digitaloceanspaces.com/papers/affective-computing/Theories-Methods-and-Current-Research-on-Emotions.pdf)
@@ -361,6 +362,7 @@ Be kind, this server is bandwidth limited.
     - [sapi-0.1.0-linux-arm64.tar.gz](https://mitjafelicijan.fra1.digitaloceanspaces.com/public-projects/simpleapi/sapi-0.1.0-linux-arm64.tar.gz)
 - sandbox
   - [data.json](https://mitjafelicijan.fra1.digitaloceanspaces.com/sandbox/data.json)
+- [tarballs](https://mitjafelicijan.fra1.digitaloceanspaces.com/tarballs)
 - video
   - [Building the Simplest Possible Linux System - Rob Landley.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/Building the Simplest Possible Linux System - Rob Landley.webm)
   - [Go webserver, HTMX Integration, Template Fragments.webm](https://mitjafelicijan.fra1.digitaloceanspaces.com/video/Go webserver, HTMX Integration, Template Fragments.webm)

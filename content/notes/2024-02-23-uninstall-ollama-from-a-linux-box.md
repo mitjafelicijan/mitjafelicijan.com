@@ -2,7 +2,7 @@
 title: Uninstall Ollama from a Linux box
 url: uninstall-ollama-from-a-linux-box.html
 type: note
-date: 2024-02-23
+date: 2024-02-23T06:35:11+02:00
 draft: false
 ---
 I have had some issues with Ollama not being up-to-date. If Ollama is installed with a curl command, it adds a systemd service.

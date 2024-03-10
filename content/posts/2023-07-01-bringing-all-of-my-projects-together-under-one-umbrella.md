@@ -1,6 +1,6 @@
 ---
 title: "Bringing all of my projects together under one umbrella"
-url: /bringing-all-of-my-projects-together-under-one-umbrella.html
+url: bringing-all-of-my-projects-together-under-one-umbrella.html
 date: 2023-07-01T18:49:07+02:00
 type: post
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: Using sentiment analysis for clickbait detection in RSS feeds
-url: /using-sentiment-analysis-for-clickbait-detection-in-rss-feeds.html
+url: using-sentiment-analysis-for-clickbait-detection-in-rss-feeds.html
 date: 2019-10-19T12:00:00+02:00
 type: post
 draft: false

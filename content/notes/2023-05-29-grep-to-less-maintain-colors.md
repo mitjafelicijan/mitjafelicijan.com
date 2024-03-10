@@ -1,6 +1,6 @@
 ---
 title: "Grep to Less that maintain colors"
-url: /grep-to-less-maintain-colors.html
+url: grep-to-less-maintain-colors.html
 date: 2023-05-29T21:27:07+02:00
 type: note
 draft: false

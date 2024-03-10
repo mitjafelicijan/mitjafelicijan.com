@@ -1,6 +1,6 @@
 ---
 title: Using Digitalocean Spaces to sync between computers
-url: /digitalocean-spaces-to-sync-between-computers.html
+url: digitalocean-spaces-to-sync-between-computers.html
 date: 2020-09-09T12:00:00+02:00
 type: post
 draft: false

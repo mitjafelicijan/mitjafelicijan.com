@@ -1,6 +1,6 @@
 ---
 title: Running Golang application as PID 1 with Linux kernel
-url: /running-golang-application-as-pid1.html
+url: running-golang-application-as-pid1.html
 date: 2021-12-25T12:00:00+02:00
 type: post
 draft: false

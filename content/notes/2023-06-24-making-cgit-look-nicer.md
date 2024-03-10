@@ -1,6 +1,6 @@
 ---
 title: "Making cgit look nicer"
-url: /making-cgit-look-nicer.html
+url: making-cgit-look-nicer.html
 date: 2023-06-24T13:33:58+02:00
 type: note
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Cronjobs on Github with Github Actions"
-url: /cronjobs-github-with-actions.html
+url: cronjobs-github-with-actions.html
 date: 2023-05-27T00:35:36+02:00
 type: note
 draft: false

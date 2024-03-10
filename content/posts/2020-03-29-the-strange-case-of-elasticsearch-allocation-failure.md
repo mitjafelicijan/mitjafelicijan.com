@@ -1,6 +1,6 @@
 ---
 title: The strange case of Elasticsearch allocation failure
-url: /the-strange-case-of-elasticsearch-allocation-failure.html
+url: the-strange-case-of-elasticsearch-allocation-failure.html
 date: 2020-03-29T12:00:00+02:00
 type: post
 draft: false

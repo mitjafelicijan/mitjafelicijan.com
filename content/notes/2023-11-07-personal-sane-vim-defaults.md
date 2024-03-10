@@ -1,6 +1,6 @@
 ---
 title: "Personal sane Vim defaults"
-url: /apersonal-sane-vim-defaults.html
+url: apersonal-sane-vim-defaults.html
 date: 2023-11-07T01:04:28+02:00
 type: note
 draft: false

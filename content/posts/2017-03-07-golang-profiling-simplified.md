@@ -1,6 +1,6 @@
 ---
 title: Golang profiling simplified
-url: /golang-profiling-simplified.html
+url: golang-profiling-simplified.html
 date: 2017-03-07T12:00:00+02:00
 type: post
 draft: false

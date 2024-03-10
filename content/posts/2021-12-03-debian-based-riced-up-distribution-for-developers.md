@@ -1,6 +1,6 @@
 ---
 title: Debian based riced up distribution for Developers and DevOps folks
-url: /debian-based-riced-up-distribution-for-developers-and-devops-folks.html
+url: debian-based-riced-up-distribution-for-developers-and-devops-folks.html
 date: 2021-12-03T12:00:00+02:00
 type: post
 draft: false

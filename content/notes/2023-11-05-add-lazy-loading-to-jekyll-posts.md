@@ -1,6 +1,6 @@
 ---
 title: "Add lazy loading of images in Jekyll posts"
-url: /add-lazy-loading-to-jekyll-posts.html
+url: add-lazy-loading-to-jekyll-posts.html
 date: 2023-11-05T09:04:28+02:00
 type: note
 draft: false

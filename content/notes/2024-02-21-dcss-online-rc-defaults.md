@@ -1,6 +1,6 @@
 ---
 title: "Sane default for Dungeon Crawl Stone Soup Online edition"
-url: /dcss-online-rc-defaults.html
+url: dcss-online-rc-defaults.html
 date: 2024-02-21T06:35:11+02:00
 type: note
 draft: false

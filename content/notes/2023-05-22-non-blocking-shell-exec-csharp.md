@@ -1,6 +1,6 @@
 ---
 title: Execute not blocking async shell command in C#
-url: /non-blocking-shell-exec-csharp.html
+url: non-blocking-shell-exec-csharp.html
 date: 2023-05-22T12:00:00+02:00
 type: note
 draft: false

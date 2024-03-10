@@ -1,6 +1,6 @@
 ---
 title: Trying out Helix code editor as my main editor
-url: /tying-out-helix-code-editor.html
+url: tying-out-helix-code-editor.html
 date: 2022-06-30T12:00:00+02:00
 type: post
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Extract lines from a file with sed"
-url: /extract-lines-from-file-with-sed.html
+url: extract-lines-from-file-with-sed.html
 date: 2024-02-15T10:04:28+02:00
 type: note
 draft: false

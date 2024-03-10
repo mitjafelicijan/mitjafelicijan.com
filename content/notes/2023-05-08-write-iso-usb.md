@@ -1,6 +1,6 @@
 ---
 title: Write ISO to USB Key
-url: /write-iso-usb.html
+url: write-iso-usb.html
 date: 2023-05-08T12:00:00+02:00
 type: note
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Who knows what the world will look like tomorrow"
-url: /who-knows-what-the-world-will-look-like-tomorrow.html
+url: who-knows-what-the-world-will-look-like-tomorrow.html
 date: 2023-07-08T18:49:07+02:00
 type: post
 draft: false

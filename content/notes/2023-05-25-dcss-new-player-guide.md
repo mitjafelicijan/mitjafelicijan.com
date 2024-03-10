@@ -1,6 +1,6 @@
 ---
 title: Dungeon Crawl Stone Soup - New player guide
-url: /dcss-new-player-guide.html
+url: dcss-new-player-guide.html
 date: 2023-05-25T22:00:00+02:00
 type: note
 draft: false

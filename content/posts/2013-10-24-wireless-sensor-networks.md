@@ -1,6 +1,6 @@
 ---
 title: Wireless sensor networks
-url: /wireless-sensor-networks.html
+url: wireless-sensor-networks.html
 date: 2013-10-24T12:00:00+02:00
 type: post
 draft: false

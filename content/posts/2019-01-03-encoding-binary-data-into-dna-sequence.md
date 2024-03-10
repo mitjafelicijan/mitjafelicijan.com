@@ -1,6 +1,6 @@
 ---
 title: Encoding binary data into DNA sequence
-url: /encoding-binary-data-into-dna-sequence.html
+url: encoding-binary-data-into-dna-sequence.html
 date: 2019-01-03T12:00:00+02:00
 type: post
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: Using DigitalOcean Spaces Object Storage with FUSE
-url: /using-digitalocean-spaces-object-storage-with-fuse.html
+url: using-digitalocean-spaces-object-storage-with-fuse.html
 date: 2018-01-16T12:00:00+02:00
 type: post
 draft: false

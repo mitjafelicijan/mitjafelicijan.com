@@ -1,6 +1,6 @@
 ---
 title: "Development environments with Nix"
-url: /development-environments-with-nix.html
+url: development-environments-with-nix.html
 date: 2023-06-25T16:38:10+02:00
 type: note
 draft: false

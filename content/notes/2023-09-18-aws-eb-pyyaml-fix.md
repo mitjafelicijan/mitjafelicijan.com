@@ -1,6 +1,6 @@
 ---
 title: "AWS EB PyYAML fix"
-url: /aws-eb-pyyaml-fix.html
+url: aws-eb-pyyaml-fix.html
 date: 2023-09-18T07:27:29+02:00
 type: note
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: Wireless Application Protocol and the mobile web before the web
-url: /wap-mobile-web-before-the-web.html
+url: wap-mobile-web-before-the-web.html
 date: 2021-12-30T12:00:00+02:00
 type: post
 draft: false

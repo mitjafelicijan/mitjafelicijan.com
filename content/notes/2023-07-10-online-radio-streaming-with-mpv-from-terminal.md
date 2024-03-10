@@ -1,6 +1,6 @@
 ---
 title: "Online radio streaming with MPV from terminal"
-url: /online-radio-streaming-with-mpv-from-terminal.html
+url: online-radio-streaming-with-mpv-from-terminal.html
 date: 2023-07-10T03:34:45+02:00
 type: note
 draft: false

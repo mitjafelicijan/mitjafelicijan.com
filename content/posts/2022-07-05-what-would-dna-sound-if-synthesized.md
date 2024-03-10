@@ -1,6 +1,6 @@
 ---
 title: What would DNA sound if synthesized to an audio file
-url: /what-would-dna-sound-if-synthesized.html
+url: what-would-dna-sound-if-synthesized.html
 date: 2022-07-05T12:00:00+02:00
 type: post
 draft: false

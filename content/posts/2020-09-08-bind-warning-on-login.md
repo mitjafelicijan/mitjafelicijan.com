@@ -1,6 +1,6 @@
 ---
 title: Fix bind warning in .profile on login in Ubuntu
-url: /bind-warning-on-login-in-ubuntu.html
+url: bind-warning-on-login-in-ubuntu.html
 date: 2020-09-08T12:00:00+02:00
 type: post
 draft: false

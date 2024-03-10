@@ -1,6 +1,6 @@
 ---
 title: "Make B/W SVG charts with matplotlib"
-url: /make-b-w-svg-charts-with-matplotlib.html
+url: make-b-w-svg-charts-with-matplotlib.html
 date: 2023-08-01T17:04:10+02:00
 type: note
 draft: false

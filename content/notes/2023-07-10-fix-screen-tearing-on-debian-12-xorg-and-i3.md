@@ -1,6 +1,6 @@
 ---
 title: "Fix screen tearing on Debian 12 Xorg and i3"
-url: /fix-screen-tearing-on-debian-12-xorg-and-i3.html
+url: fix-screen-tearing-on-debian-12-xorg-and-i3.html
 date: 2023-07-10T04:21:48+02:00
 type: note
 draft: false

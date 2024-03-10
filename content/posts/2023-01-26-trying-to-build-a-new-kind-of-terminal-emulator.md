@@ -1,6 +1,6 @@
 ---
 title: Trying to build a New kind of terminal emulator for the modern age
-url: /trying-to-build-a-new-kind-of-terminal-emulator.html
+url: trying-to-build-a-new-kind-of-terminal-emulator.html
 date: 2023-01-26T12:00:00+02:00
 type: post
 draft: false

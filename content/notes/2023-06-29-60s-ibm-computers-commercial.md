@@ -1,6 +1,6 @@
 ---
 title: "60's IBM Computers Commercial"
-url: /60s-ibm-computers-commercial.html
+url: 60s-ibm-computers-commercial.html
 date: 2023-06-29T22:13:45+02:00
 type: note
 draft: false

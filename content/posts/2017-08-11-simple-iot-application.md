@@ -1,6 +1,6 @@
 ---
 title: Simple IOT application supported by real-time monitoring and data history
-url: /simple-iot-application.html
+url: simple-iot-application.html
 date: 2017-08-11T12:00:00+02:00
 type: post
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: My journey from being an internet über consumer to being a full hominum again
-url: /from-internet-consumer-to-full-hominum-again.html
+url: from-internet-consumer-to-full-hominum-again.html
 date: 2021-07-30T12:00:00+02:00
 type: post
 draft: false

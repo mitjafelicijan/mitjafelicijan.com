@@ -1,6 +1,6 @@
 ---
 title: Aerial photography of algae spotted on river Sava
-url: /aerial-photography-of-algae-spotted-on-river-sava.html
+url: aerial-photography-of-algae-spotted-on-river-sava.html
 date: 2022-08-13T12:00:00+02:00
 type: note
 draft: false

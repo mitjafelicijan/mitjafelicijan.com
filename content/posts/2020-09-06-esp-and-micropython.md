@@ -1,6 +1,6 @@
 ---
 title: Getting started with MicroPython and ESP8266
-url: /esp8266-and-micropython-guide.html
+url: esp8266-and-micropython-guide.html
 date: 2020-09-06T12:00:00+02:00
 type: post
 draft: false

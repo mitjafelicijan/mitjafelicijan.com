@@ -1,6 +1,6 @@
 ---
 title: Simple Server-Sent Events based PubSub Server
-url: /simple-server-sent-events-based-pubsub-server.html
+url: simple-server-sent-events-based-pubsub-server.html
 date: 2020-03-22T12:00:00+02:00
 type: post
 draft: false

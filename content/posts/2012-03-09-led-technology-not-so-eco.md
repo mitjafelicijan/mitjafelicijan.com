@@ -1,6 +1,6 @@
 ---
 title: LED technology might not be as eco-friendly as you think
-url: /led-technology-not-so-eco.html
+url: led-technology-not-so-eco.html
 date: 2012-03-09T12:00:00+02:00
 type: post
 draft: false

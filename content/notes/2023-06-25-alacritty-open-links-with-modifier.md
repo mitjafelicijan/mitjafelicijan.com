@@ -1,6 +1,6 @@
 ---
 title: "Alacritty open links with modifier"
-url: /alacritty-open-links-with-modifier.html
+url: alacritty-open-links-with-modifier.html
 date: 2023-06-25T17:17:16+02:00
 type: note
 draft: false

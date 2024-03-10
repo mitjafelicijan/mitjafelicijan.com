@@ -1,6 +1,6 @@
 ---
 title: "Edsger W. Dijkstra Manuscripts ebook"
-url: /ewd-manuscripts-ebook.html
+url: ewd-manuscripts-ebook.html
 date: 2023-06-01T22:47:56+02:00
 type: note
 draft: false

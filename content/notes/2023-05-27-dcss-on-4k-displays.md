@@ -1,6 +1,6 @@
 ---
 title: "Make DCSS playable on 4k displays"
-url: /dcss-on-4k-display.html
+url: dcss-on-4k-display.html
 date: 2023-05-27T19:35:11+02:00
 type: note
 draft: false

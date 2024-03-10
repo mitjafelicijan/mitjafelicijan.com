@@ -1,6 +1,6 @@
 ---
 title: "Using ffmpeg to combine videos side by side"
-url: /using-ffmpeg-to-combine-video-side-by-side.html
+url: using-ffmpeg-to-combine-video-side-by-side.html
 date: 2023-11-04T09:04:28+02:00
 type: note
 draft: false

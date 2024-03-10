@@ -10,9 +10,9 @@
       {{ if not .Draft }}
       	<item>
       	  <title>{{ $page.Title }}</title>
-      	  <link>{{ $.Config.BaseURL }}{{ $page.RelPermalink }}</link>
+      	  <link>{{ $.Config.BaseURL }}/{{ $page.RelPermalink }}</link>
       	  <pubDate>{{ $page.Created.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
-      	  <guid>{{ $.Config.BaseURL }}{{ $page.RelPermalink }}</guid>
+      	  <guid>{{ $.Config.BaseURL }}/{{ $page.RelPermalink }}</guid>
       	  <description>{{ $page.Summary }}</description>
       	  <content:encoded>{{ $page.Raw }}</content:encoded>
       	</item>

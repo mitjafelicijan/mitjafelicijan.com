@@ -1,6 +1,6 @@
 ---
 title: Remote work and how it affects the daily lives of people
-url: /remote-work.html
+url: remote-work.html
 date: 2020-05-05T12:00:00+02:00
 type: post
 draft: false

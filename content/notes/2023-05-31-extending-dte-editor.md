@@ -1,6 +1,6 @@
 ---
 title: "Extending dte editor"
-url: /extending-dte-editor.html
+url: extending-dte-editor.html
 date: 2023-05-31T08:12:45+02:00
 type: note
 draft: false

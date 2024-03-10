@@ -1,6 +1,6 @@
 ---
 title: My love and hate relationship with Node.js
-url: /my-love-and-hate-relationship-with-nodejs.html
+url: my-love-and-hate-relationship-with-nodejs.html
 date: 2020-03-30T12:00:00+02:00
 type: post
 draft: false

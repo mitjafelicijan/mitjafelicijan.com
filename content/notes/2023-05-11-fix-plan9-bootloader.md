@@ -1,6 +1,6 @@
 ---
 title: Fix bootloader not being written in Plan9
-url: /fix-plan9-bootloader.html
+url: fix-plan9-bootloader.html
 date: 2023-05-11T12:00:00+02:00
 type: note
 draft: false

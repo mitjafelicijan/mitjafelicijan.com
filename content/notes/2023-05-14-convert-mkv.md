@@ -1,6 +1,6 @@
 ---
 title: Convert all MKV files into other formats
-url: /convert-mkv.html
+url: convert-mkv.html
 date: 2023-05-14T12:00:00+02:00
 type: note
 draft: false

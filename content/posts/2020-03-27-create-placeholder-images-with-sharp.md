@@ -1,6 +1,6 @@
 ---
 title: Create placeholder images with sharp Node.js image processing library
-url: /create-placeholder-images-with-sharp.html
+url: create-placeholder-images-with-sharp.html
 date: 2020-03-27T12:00:00+02:00
 type: post
 draft: false

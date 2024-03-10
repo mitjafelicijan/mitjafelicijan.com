@@ -1,6 +1,6 @@
 ---
 title: "Bulk thumbnails"
-url: /bulk-make-thumbnails.html
+url: bulk-make-thumbnails.html
 date: 2023-06-04T20:46:56+02:00
 type: note
 draft: false

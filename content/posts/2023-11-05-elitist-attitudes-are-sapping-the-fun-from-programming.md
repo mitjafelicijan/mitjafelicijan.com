@@ -1,6 +1,6 @@
 ---
 title: "Elitist attitudes are sapping all the fun from programming"
-url: /elitist-attitudes-are-sapping-all-the-fun-from-programming.html
+url: elitist-attitudes-are-sapping-all-the-fun-from-programming.html
 date: 2023-11-05T09:04:28+02:00
 type: post
 draft: false

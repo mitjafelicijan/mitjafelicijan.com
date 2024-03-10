@@ -1,6 +1,6 @@
 ---
 title: Cache busting in Hugo
-url: /cachebusting-in-hugo.html
+url: cachebusting-in-hugo.html
 date: 2023-05-01T12:00:00+02:00
 type: note
 draft: false

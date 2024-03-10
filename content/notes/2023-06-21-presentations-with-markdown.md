@@ -1,6 +1,6 @@
 ---
 title: "Simple presentations with Markdown"
-url: /presentations-with-markdown.html
+url: presentations-with-markdown.html
 date: 2023-06-21T08:54:48+02:00
 type: note
 draft: false

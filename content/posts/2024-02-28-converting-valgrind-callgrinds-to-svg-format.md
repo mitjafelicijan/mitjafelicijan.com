@@ -1,6 +1,6 @@
 ---
 title: Converting Valgrind callgrinds to SVG format
-url: /converting-valgrind-callgrinds-to-svg-format.html
+url: converting-valgrind-callgrinds-to-svg-format.html
 date: 2024-02-28T03:23:00+01:00
 type: post
 draft: false

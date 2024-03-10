@@ -1,6 +1,6 @@
 ---
 title: Simple world clock with eInk display and Raspberry Pi Zero
-url: /simple-world-clock-with-eiink-display-and-raspberry-pi-zero.html
+url: simple-world-clock-with-eiink-display-and-raspberry-pi-zero.html
 date: 2021-06-26T12:00:00+02:00
 type: post
 draft: false

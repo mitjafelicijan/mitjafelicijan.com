@@ -1,6 +1,6 @@
 ---
 title: Profiling Python web applications with visual tools
-url: /profiling-python-web-applications-with-visual-tools.html
+url: profiling-python-web-applications-with-visual-tools.html
 date: 2017-04-21T12:00:00+02:00
 type: post
 draft: false

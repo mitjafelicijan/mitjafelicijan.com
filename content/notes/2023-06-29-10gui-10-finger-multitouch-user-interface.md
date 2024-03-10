@@ -1,6 +1,6 @@
 ---
 title: "10/GUI 10 Finger Multitouch User Interface"
-url: /10gui-10-finger-multitouch-user-interface.html
+url: 10gui-10-finger-multitouch-user-interface.html
 date: 2023-06-29T14:51:39+02:00
 type: note
 draft: false

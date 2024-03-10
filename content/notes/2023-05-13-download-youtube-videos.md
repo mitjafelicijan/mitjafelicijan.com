@@ -1,6 +1,6 @@
 ---
 title: Download list of YouTube files
-url: /download-youtube-videos.html
+url: download-youtube-videos.html
 date: 2023-05-13T12:00:00+02:00
 type: note
 draft: false

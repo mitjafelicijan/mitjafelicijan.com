@@ -1,6 +1,6 @@
 ---
 title: Uninstall Ollama from a Linux box
-url: /uninstall-ollama-from-a-linux-box.html
+url: uninstall-ollama-from-a-linux-box.html
 type: note
 date: 2024-02-23
 draft: false

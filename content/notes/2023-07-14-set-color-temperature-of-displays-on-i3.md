@@ -1,6 +1,6 @@
 ---
 title: "Set color temperature of displays on i3"
-url: /set-color-temperature-of-displays-on-i3.html
+url: set-color-temperature-of-displays-on-i3.html
 date: 2023-07-14T09:19:31+02:00
 type: note
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: Display xterm color palette
-url: /xterm-color-palette.html
+url: xterm-color-palette.html
 date: 2023-05-25T12:00:00+02:00
 type: note
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: List of essential Linux commands for server management
-url: /linux-cheatsheet.html
+url: linux-cheatsheet.html
 date: 2021-08-01T12:00:00+02:00
 type: post
 draft: false

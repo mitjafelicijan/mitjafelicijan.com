@@ -1,6 +1,6 @@
 ---
 title: What I've learned developing ad server
-url: /what-i-ve-learned-developing-ad-server.html
+url: what-i-ve-learned-developing-ad-server.html
 date: 2017-04-17T12:00:00+02:00
 type: post
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: Most likely to succeed in the year of 2011
-url: /most-likely-to-succeed-in-year-of-2011.html
+url: most-likely-to-succeed-in-year-of-2011.html
 date: 2011-01-13T12:00:00+02:00
 type: post
 draft: false

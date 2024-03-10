@@ -1,6 +1,6 @@
 ---
 title: Run 9front in Qemu
-url: /run-9front-in-qemu.html
+url: run-9front-in-qemu.html
 date: 2023-05-05T12:00:00+02:00
 type: note
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: Replacing Dropbox in favor of DigitalOcean spaces
-url: /replacing-dropbox-in-favor-of-digitalocean-spaces.html
+url: replacing-dropbox-in-favor-of-digitalocean-spaces.html
 date: 2021-01-24T12:00:00+02:00
 type: post
 draft: false

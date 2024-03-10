@@ -1,6 +1,6 @@
 ---
 title: "Re-Inventing Task Runner That I Actually Used Daily"
-url: /re-inventing-task-runner-that-i-actually-used-daily.html
+url: re-inventing-task-runner-that-i-actually-used-daily.html
 date: 2023-05-31T12:21:10+02:00
 type: post
 draft: false

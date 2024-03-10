@@ -1,6 +1,6 @@
 ---
 title: Rekindling my love for programming and enjoying the act of creating
-url: /rekindling-my-love-for-programming.html
+url: rekindling-my-love-for-programming.html
 date: 2023-05-16T12:00:00+02:00
 type: post
 draft: false

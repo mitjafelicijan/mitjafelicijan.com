@@ -1,6 +1,6 @@
 ---
 title: "Easy measure time took in a bash script"
-url: /easy-time-took-in-bash.html
+url: easy-time-took-in-bash.html
 date: 2023-05-28T17:53:20+02:00
 type: note
 draft: false

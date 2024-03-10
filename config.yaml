@@ -18,3 +18,5 @@ extras:
     url: robots.txt
   - template: sitemap.xml
     url: sitemap.xml
+  - template: 404.html
+    url: 404.html

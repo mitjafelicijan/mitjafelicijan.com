@@ -1,25 +1,9 @@
-MAKEFLAGS+=-j3
+MAKEFLAGS+=-j2
 
 dev: watch server
 
-build: newsboat webring vault
-
-newsboat:
-	cp ~/.newsboat/urls assets/urls.txt
-
-webring:
-	ruby bin/webring.rb
-
-vault:
-	ruby bin/vault.rb
-
 watch:
-	jekyll b --watch
+	find . -type f \( -name "*.html" -o -name "*.js" -o -name "*.md" -o -name "*.yaml" -o -name "*.css" -o -name "*.xml" \) | entr jbmafp -b
 
 server:
-	mkdir -p _site && cd _site && python3 -m http.server 6969
-
-provision:
-	gem install nokogiri
-	gem install htmlentities
-	gem install simple-rss
+	jbmafp -s

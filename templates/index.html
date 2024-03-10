@@ -1,0 +1,35 @@
+{{ template "base.html" . }}
+
+{{ define "content" }}
+<section>
+  <i>You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.</i>
+</section>
+
+<a class="promobox" href="https://mitjafelicijan.github.io/binary-visualization/" target="_blank">
+  Examine graphical representations of binary files using diagrams that
+  illustrate connections between pairs of bytes (digraphs) and triplets
+  of bytes (trigraphs).
+</a>
+
+<section>
+  <h2>More long form, ramblings etc</h2>
+  <ul>
+	{{ range .Pages }}
+  	{{ if and (eq .Type "post") (not .Draft) }}
+    	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  	{{ end }}
+	{{ end }}
+  </ul>
+</section>
+
+<section>
+  <h2>Notes?! Maybe useful</h2>
+  <ul>
+	{{ range .Pages }}
+  	{{ if and (eq .Type "note") (not .Draft) }}
+    	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  	{{ end }}
+	{{ end }}
+  </ul>
+</section>
+{{ end }}

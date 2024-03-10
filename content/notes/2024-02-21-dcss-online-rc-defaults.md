@@ -17,13 +17,15 @@ browser and it also adds a bit of delays in exploring and it stops at fight.
 autofight_stop = 80
 explore_auto_rest = true
 explore_delay = 20
+default_manual_training = true
+travel_open_doors = false
 
-tile_cell_pixels = 48
-tile_font_crt_size = 24
-tile_font_stat_size = 24
-tile_font_msg_size = 24
-tile_font_tip_size = 24
-tile_font_lbl_size = 24
+tile_cell_pixels = 64
+tile_font_crt_size = 32
+tile_font_stat_size = 32
+tile_font_msg_size = 32
+tile_font_tip_size = 32
+tile_font_lbl_size = 32
 tile_map_pixels = 0
 tile_filter_scaling = false
 ```

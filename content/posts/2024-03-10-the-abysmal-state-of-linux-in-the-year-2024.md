@@ -77,4 +77,3 @@ Some interesting talks and videos
 
 - [Jonathan Blow on how an operating system should work](https://www.youtube.com/watch?v=k0uE_chSnV8)
 - [The Thirty Million Line Problem by Casey Muratori](https://www.youtube.com/watch?v=kZRE7HIO3vk)
-- [Avoiding a Shared Library Nightmare by John Biron](https://www.youtube.com/watch?v=xPAGVT4Ctt4)

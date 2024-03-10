@@ -6,33 +6,6 @@ type: page
 draft: false
 ---
 
-<style>
-  img {
-    width: auto !important;
-    left: initial !important;
-    margin: initial !important;
-    border: 0 !important;
-  }
-</style>
-
-<div class="cv-picture">
-
-![](/posts/cv/avatar.gif)
-
-</div>
-
-<script>
-  window.addEventListener('load', async () => {
-    // flip CV image on mouse over
-    const cvImage = document.querySelector('.cv-picture img');
-    if (cvImage) {
-      setInterval(() => {
-        cvImage.style.transform = cvImage.style.transform === 'scaleX(1)' ? 'scaleX(-1)' : 'scaleX(1)';
-      }, 1000);
-    }
-  });
-</script>
-
 **Mitja Felicijan**
 
 Email me at *[mitja.felicijan@gmail.com](mailto:mitja.felicijan@gmail.com?subject=Website+CV+Contact)*

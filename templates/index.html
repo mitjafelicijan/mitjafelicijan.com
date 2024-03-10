@@ -14,22 +14,22 @@
 <section>
   <h2>More long form, ramblings etc</h2>
   <ul>
-	{{ range .Pages }}
-  	{{ if and (eq .Type "post") (not .Draft) }}
-    	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-  	{{ end }}
-	{{ end }}
+    {{ range .Pages }}
+      {{ if and (eq .Type "post") (not .Draft) }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    {{ end }}
   </ul>
 </section>
 
 <section>
   <h2>Notes?! Maybe useful</h2>
   <ul>
-	{{ range .Pages }}
-  	{{ if and (eq .Type "note") (not .Draft) }}
-    	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-  	{{ end }}
-	{{ end }}
+  {{ range .Pages }}
+    {{ if and (eq .Type "note") (not .Draft) }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  {{ end }}
   </ul>
 </section>
 {{ end }}

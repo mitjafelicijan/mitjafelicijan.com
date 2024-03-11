@@ -77,7 +77,7 @@ that is completely devoid of shared dependencies, we will still live in
 this purgatory.
 
 Let's compare these two distributions when it comes to packages sizes
-and shared object libraries and see they fair.
+and shared object libraries and see how they fair.
 
 ## Debian
 
@@ -306,9 +306,9 @@ maintenance an entirely different game.
 There is also this big elephant in the room, the users. They aren't
 concerned about package dependencies. They don't care if an application
 is 20 megabytes bigger. Nobody cares! But they certainly do care about
-borked systems and non-working dependencies and hunting for solutions why
-`libFlac` was not found even though they have it installed (allthough
-slightly different version).
+borked systems and non-working dependencies and hunting for solutions
+for why `libFlac` was not found even though they have it installed
+(allthough slightly different version).
 
 Operating systems should abstract these complexities away from the
 user. And I am not saying that the Linux kernel is at fault. I mean the

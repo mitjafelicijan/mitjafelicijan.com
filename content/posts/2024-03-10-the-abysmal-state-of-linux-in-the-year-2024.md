@@ -1,6 +1,6 @@
 ---
-title: "The abysmal state of Linux in the year 2024 and a case against shared object libraries"
-url: the-abysmal-state-of-linux-in-the-year-2024-and-a-case-against-shared-object-libraries.html
+title: "The abysmal state of GNU/Linux and a case against shared object libraries"
+url: the-abysmal-state-of-gnu-linux-and-a-case-against-shared-object-libraries.html
 date: 2024-03-10T21:41:52+01:00
 type: post
 draft: false
@@ -8,53 +8,66 @@ draft: false
 
 ## Personal critique
 
-This is in part difficult to write, but then I think it is necessary. How
-come Linux is worse than it was 10 years ago. This may very well be
-a subjective opinion, or maybe I am looking at the situation with
-rose-tinted glasses.
+This is in part difficult to write since I have been daily driving
+GNU/Linux for 20 years now, but I think it is necessary to be honest
+about this.  How come GNU/Linux is worse than it was 10 years ago? This
+may very well be a subjective opinion, or maybe I am looking at the
+situation with rose-tinted glasses.
 
-Sure, we now have PipeWire and Wayland. We enjoy many modern advances
-and yet, the practical use for me is worse than it was 10 years ago. Now
-all of a sudden, I can't rely on the system to be stable like it was. I
-don't remember the system bricking after an update, or the system becoming
-laggy after 10 days uptime. This may be the issue with Fedora, though.
+> A full disclaimer, this weekend my system that is pretty vanilla
+just decided to die after an update. And this was not a full version
+upgrade. Just a normal update that I do many times per week.
 
-Over the years, I have daily driven many distributions. From Gentoo,
-Arch, Fedora to Ubuntu. My best memories were always with Debian. Just
-pure Debian always proved to be the most stable system. I never had
-issue or system breaking after an update. I can't say the same for Fedora.
+Sure, we now have [PipeWire](https://www.pipewire.org/) and
+[Wayland](https://wayland.freedesktop.org/). We enjoy many modern
+advances and yet, the practical use for me is worse than it was 10 years
+ago. Now all of a sudden, I can't rely on the system to be stable like
+it was. I don't remember the system bricking after an update, or the
+system becoming laggy after 10 days of uptime. This may be the issue with
+[Fedora](https://fedoraproject.org/), though.
 
-From the get-go, I had issues. I have an Nvidia card and even booting
-presented issues sometime. This never happened on other distributions,
-though they had their problems. Updating the system was basically an
-exercise in gambling. How come an operating system that boasts with
-the stability is so instable? And this was not isolated to my main
-machine. This also happened on my X220 ThinkPad with Fedora on.
+Over the years, I have daily driven many
+distributions. From [Gentoo](https://www.gentoo.org/),
+[Arch](https://archlinux.org/), [Fedora](https://fedoraproject.org/)
+to [Ubuntu](https://www.debian.org/). My best memories were always with
+[Debian](https://www.debian.org/). Just pure Debian always proved to be
+the most stable system. I never had issue or system breaking after an
+update. I can't say the same for Fedora.
 
-Shared dependencies were a mistake! I understand that disk space was
-limited back then. But this has given me more grief than any other
-thing. I am all in for AppImages or something like that. I don't care
-if these images are 10x bigger. Disk space now is plenty, and they
-solve the issue with "libFlac.8.so is missing" and I have version 12
-installed. Which comes with unnecessary symlinking, downloading of older
-versions and hoping that this will resolve the issue.
+From the get-go, I had issues. I have an Nvidia card and even
+booting presented issues on occasion. This never happened on
+other distributions, though they had their problems. Updating the
+system was basically an exercise in gambling. How come an operating
+system that boasts with the stability is so unstable? And this was
+not isolated to my main machine. This also happened on my [X220
+ThinkPad](https://www.cnet.com/reviews/lenovo-thinkpad-x220-review/)
+with Fedora on.
 
-Now, the biggest apologist of Linux will never admit this and even saying
-something is wrong with this is considered a mortal sin. I, however, am
-not concerned with cultist behaviors. This is bullshit! Things should be
-better than 10 years ago, not worse. And I don't care how much lipstick
-you put on this pig. After more than 20 years of using Linux as my main
-system, I think I have earned a badge that gives me the right to say
-the truth.
+Shared dependencies were a mistake! There, I said it! I understand
+that disk space was limited back then and this was a legitimate
+constraint. But this has given me more grief than any other thing. I am
+all in for [AppImages](https://appimage.org/) or something like that. I
+don't care if these images are 10x bigger. Disk space now is plenty, and
+they solve the issue with "libFlac.8.so is missing" and I have version
+12 installed. Which comes with unnecessary symlinking, downloading of
+older versions and hoping that this will resolve the issue.
 
-Regardless of all this, I am still a massive fan. I still think Linux
+Now, the biggest apologist of GNU/Linux will never admit this and
+even saying something is wrong with this is considered a mortal sin. I,
+however, am not concerned with cultist behaviors. This is bullshit! Things
+should be better than 10 years ago, not worse. And I don't care how
+much lipstick you put on this pig. After more than 20 years of using
+Linux as my main system, I think I have earned a badge that gives me
+the right to say the truth.
+
+Regardless of all this, I am still a massive fan. I still think GNU/Linux
 is probably the most unobtrusive operating system, bar none. But the
 complexity has gotten the best of it. It's bloated and too complicated
 at this point. Understandably, you can't have a modern operating system
 that competes with alternatives without sacrificing simplicity. But I
 still think that there is another way.
 
-One of the best aspects of Linux must be outstanding package manager
+One of the best aspects of GNU/Linux must be outstanding package manager
 support. Nevertheless, they are essentially solving a problem that should
 have been solved and done with years ago. The number of gymnastics
 that happen in the background for you to install a software is just
@@ -280,7 +293,7 @@ find /lib /lib64 /usr/lib /usr/lib64 -type f -name "*.so.*" -exec du -h {} + | s
 
 These three packages are probably used by three different applications,
 and nothing else needs them. I could be mistaken, but in any case they
-should just be packages alongside the application that requires them
+should just be packaged alongside the application that requires them
 and be done with it.
 
 ## So, now what?
@@ -292,9 +305,10 @@ maintenance an entirely different game.
 
 There is also this big elephant in the room, the users. They aren't
 concerned about package dependencies. They don't care if an application
-is 20 MB bigger. Nobody cares! But they certainly do care about borked
-systems and non-working dependencies and hunting for solutions why
-`libFlac` was not found even though they have it installed.
+is 20 megabytes bigger. Nobody cares! But they certainly do care about
+borked systems and non-working dependencies and hunting for solutions why
+`libFlac` was not found even though they have it installed (allthough
+slightly different version).
 
 Operating systems should abstract these complexities away from the
 user. And I am not saying that the Linux kernel is at fault. I mean the
@@ -309,26 +323,32 @@ It would be an interesting exercise to make a prototype distribution
 that does not rely on shared objects, but has everything packed in
 AppImages. Probably a foolish endeavor, but maybe worth looking into. I
 sense this kind of distribution would be highly unusable. Interesting
-how far we have gotten.
+how far we have gotten that this kind of distribution is almost not
+possible anymore.
 
-The year of the Linux desktop? I have strong doubts. We are in a worse
-state than we were. This is very similar to The Paradox of Choice. The
-more options we have, the worse it gets. Wayland competing with X. So
-many window managers, you just get lost. So many choices. I have no idea
-if this is even salvageable, or something new must be invented.
+The year of the GNU/Linux desktop? I have strong doubts. We are in a
+worse state than we were. Not only that, but the sheer amount of choice
+is paralyzing at this point. This is very relatable to [The Paradox of
+Choice](https://en.wikipedia.org/wiki/The_Paradox_of_Choice). The
+more options we have, the worse it
+gets. [Wayland](https://wayland.freedesktop.org/) competing with
+[X](https://www.x.org/wiki/). So many window managers, you just get
+lost. So many choices. I have no idea if this is even salvageable,
+or something new must be made.
 
-Honorable mention goes to [AppImageHub](https://www.appimagehub.com/). If
+A quick shoutout to [AppImageHub](https://www.appimagehub.com/). If
 possible, I continually try to find applications there and take care of
 updating them myself. I don't need hand holding or a constant up-to date
 system. I just want my system to be stable and when some application has
 gotten some significant new features I can download that myself. It's
 about the choice and not being forced into this churn that requires
-constant updating and keeping up with things. At this point, using Linux
-is more like a second job, and I was so stoked when this was not a case
-anymore in the past. This is why I feel like the last 10 years were a
-regression disguised as progress.
+constant updating and keeping up with things. At this point, using
+GNU/Linux is more like a second job, and I was so stoked when this was
+not a case anymore in the past. This is why I feel like the last 10
+years were a regression disguised as progress.
 
 Some interesting talks and videos
 
 - [Jonathan Blow on how an operating system should work](https://www.youtube.com/watch?v=k0uE_chSnV8)
 - [The Thirty Million Line Problem by Casey Muratori](https://www.youtube.com/watch?v=kZRE7HIO3vk)
+- [GNU is Bloated! by Luke Smith](https://www.youtube.com/watch?v=nTCHapo8QFM)

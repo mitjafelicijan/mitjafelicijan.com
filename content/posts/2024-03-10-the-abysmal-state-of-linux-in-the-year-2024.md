@@ -124,7 +124,7 @@ dpkg-query -W --showformat='${Installed-Size}\t${Package}\n' | sort -nr | head -
 | 69.25 MB  | nvidia-kernel-dkms         |
 | 66.64 MB  | gcc-12                     |
 
-This is more or less fresh system that is being used daily for work.
+This is more or less a fresh system that is being used daily for work.
 
 ### Number of packages installed
 

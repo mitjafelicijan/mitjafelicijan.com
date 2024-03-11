@@ -11,7 +11,7 @@ draft: false
 This is in part difficult to write since I have been daily driving
 GNU/Linux for 20 years now, but I think it is necessary to be honest
 about this.  How come GNU/Linux is worse than it was 10 years ago? This
-may very well be a subjective opinion, Gnu/Linux being better in the past,
+may very well be a subjective opinion, GNU/Linux being better in the past,
 or maybe I am looking at the situation with rose-tinted glasses.
 
 > A full disclaimer, this weekend my system that is pretty vanilla

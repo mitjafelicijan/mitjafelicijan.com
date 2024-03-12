@@ -12,8 +12,8 @@ MOBI version. I converted it into ePub as well.
 
 Downloads:
 
-- [MOBI version of all Manuscripts](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ewd-manuscripts.mobi)
-- [ePub version of all Manuscripts](https://mitjafelicijan.fra1.digitaloceanspaces.com/haphazard/ewd-manuscripts.epub)
+- [MOBI version of all Manuscripts](/assets/posts/ewd/ewd-manuscripts.mobi)
+- [ePub version of all Manuscripts](/assets/posts/ewd/ewd-manuscripts.epub)
 
 Sources and credits:
 

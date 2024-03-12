@@ -5,7 +5,7 @@ language: "en-us"
 
 # Code highlighting.
 # https://swapoff.org/chroma/playground/
-highlighting: "vs"
+highlighting: abap
 
 # Minifies output HTML (including inline CSS, JS).
 minify: true

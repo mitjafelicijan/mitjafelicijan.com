@@ -133,11 +133,12 @@ it. I don't remap anything. I use the defaults. The only thing I did
 was change a default theme. And I choose one that is bundled with the
 editor. That was it!
 
-The same goes for [Tmux](https://github.com/tmux/tmux). I don't use it
-anymore, but I need a multiplexer. I am used to it. Old dog, new tricks
-kind of a thing. I've used it for years and years. And Zellij is a modern
-take on [Tmux](https://github.com/tmux/tmux). Batteries included and with
-sane defaults. No config file or plugins on my system to make it usable.
+The same goes for [Tmux](https://github.com/tmux/tmux). I
+don't use it anymore, but I need a multiplexer. I am used to
+it. Old dog, new tricks kind of a thing. I've used it for years
+and years. And [Zellij](https://zellij.dev/) is a modern take on
+[Tmux](https://github.com/tmux/tmux). Batteries included and with sane
+defaults. No config file or plugins on my system to make it usable.
 
 This elitism about personal setups is so exhausting. You should use
 your computer the way you want to use it, and I will use my the way I

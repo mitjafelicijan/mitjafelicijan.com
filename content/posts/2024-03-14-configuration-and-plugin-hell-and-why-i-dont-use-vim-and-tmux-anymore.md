@@ -22,17 +22,17 @@ concise and minimal. No unnecessary fat or configuration options. I am a
 massive proponent of [POSIX](https://en.wikipedia.org/wiki/POSIX)
 style of utilities. I still think the [`pipe
 operator`](https://www.geeksforgeeks.org/piping-in-unix-or-linux/) is
-one of the most amazing things every invented. I am still in awe when
-I use it today.
+one of the most amazing things ever invented. I am still in awe when I
+use it today.
 
 But when it comes to applications like text editors or terminal
 multiplexers, I have a bit of a different opinion. I think they need to
 have some basic batteries included. And I agree that basic batteries
 included is a loaded term and means different things to different
 people. I will try to make a case that takes in account things that
-matter to me and, by extension, also matter to others. Otherwise, they
-would not have configuration files for these applications that are bigger
-than some of their own projects.
+matter to me and, by extension, also may matter to others. Otherwise,
+they would not have configuration files for these applications that are
+bigger than some of their own projects.
 
 It is very naive to think that bare-bones [Vim](https://www.vim.org/)
 is enough for working on a larger codebase. For some it may
@@ -70,7 +70,7 @@ one. They will change your life. I did learn a lot of them. I think
 they are amazing. But my life wasn't changed at all. I can still
 hop into a normal notepad and do some coding there and be very
 productive. Nothing really changed for me. I suspect these are the
-things that people who have a very addictive personalities say because
+things that people who have very addictive personalities say because
 [Vim](https://www.vim.org/) motions bring joy to them. I can imagine
 they get a massive dopamine hit using it. For me, it does nothing. It
 is a convenient way to edit text. If I don't have them, I also don't
@@ -110,7 +110,7 @@ Now, if you like ricing your setup. Configuring things. And playing
 around with your environment, you go for it. I can understand. I was
 the same in my youth. It was fun and I loved every minute of it.
 
-The problematic thing that occurs is that Vim evangelists them go and
+The problematic thing that occurs is that Vim evangelists then go and
 preach the Vim gospel, making everybody not using it feel like shit and
 incompetent fools who do not care about "real" programming.
 
@@ -134,7 +134,7 @@ finding built-in. There is no plugin system in place, so they needed to
 include common things programmers need these days. For commenting a line,
 you don't need a plugin. Just press `ctrl+c` over the line and that's
 it. I don't remap anything. I use the defaults. The only thing I did
-was change a default theme. And I choose one that is bundled with the
+was change a default theme. And I choose one that was bundled with the
 editor. That was it!
 
 The same goes for [Tmux](https://github.com/tmux/tmux). I
@@ -144,7 +144,7 @@ and years. And [Zellij](https://zellij.dev/) is a modern take on
 [Tmux](https://github.com/tmux/tmux). Batteries included and with sane
 defaults. No config file or plugins on my system to make it usable.
 
-This elitism about personal setups is so exhausting. You should use
-your computer the way you want to use it, and I will use my the way I
-see fit. This herd mentality I see so often is so cringe. I'm so over
-taking people seriously when it comes to these topics.
+This elitism about personal setups is so exhausting. You should use your
+computer the way you want to use it, and I will use mine the way I see
+fit. This herd mentality I see so often is so cringe. I'm so over taking
+people seriously when it comes to these topics.

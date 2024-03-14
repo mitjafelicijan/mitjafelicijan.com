@@ -8,9 +8,13 @@ draft: false
 
 There are three tiers of CLI software as far as I am concerned:
 
-- tools like `ls`, `cat`, `ps` (you use flags to customize, and you pipe results through them),
-- tools like `htop`, `nvtop`, `midnight commander` (you can change the theme and maybe small things),
-- editors like `vim`, `helix`, `emacs` and multiplexers like `tmux`, `zellij`, `screen` (usually very customizable).
+- tools like `ls`, `cat`, `ps` (you use flags to customize, and you pipe
+results through them),
+- tools like `htop`, `nvtop`, `midnight commander`
+(you can change the theme and maybe small things),
+- editors like `vim`,
+`helix`, `emacs` and multiplexers like `tmux`, `zellij`, `screen`
+(usually very customizable).
 
 I understand that something like [GNU
 utils](https://www.gnu.org/software/coreutils/) need to be small and

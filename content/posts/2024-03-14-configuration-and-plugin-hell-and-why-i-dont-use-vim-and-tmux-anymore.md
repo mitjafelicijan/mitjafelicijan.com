@@ -19,7 +19,7 @@ massive proponent of [POSIX](https://en.wikipedia.org/wiki/POSIX)
 style of utilities. I still think the [`pipe
 operator`](https://www.geeksforgeeks.org/piping-in-unix-or-linux/) is
 one of the most amazing things every invented. I am still in awe when
-I use today.
+I use it today.
 
 But when it comes to applications like text editors or terminal
 multiplexers, I have a bit of a different opinion. I think they need to

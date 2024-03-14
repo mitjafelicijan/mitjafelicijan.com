@@ -126,12 +126,12 @@ doesn't mean shit. It's the quality of the work that matters.
 The reason why I switched to
 [Helix](https://helix-editor.com/) is simple. It has
 [LSP](https://en.wikipedia.org/wiki/Language_Server_Protocol) and fuzzy
-finding built-in. There is no plugin system in place, so they needed
-to include common things programmers need these days. For commenting
-a line, you don't need a plugin. Just press `ctrl+c` over the line and
-that's it. I don't remap anything. I use the defaults. The only thing
-I did was change a default theme. And I choose one who is bundled with
-the editor. That was it!
+finding built-in. There is no plugin system in place, so they needed to
+include common things programmers need these days. For commenting a line,
+you don't need a plugin. Just press `ctrl+c` over the line and that's
+it. I don't remap anything. I use the defaults. The only thing I did
+was change a default theme. And I choose one that is bundled with the
+editor. That was it!
 
 The same goes for [Tmux](https://github.com/tmux/tmux). I don't use it
 anymore, but I need a multiplexer. I am used to it. Old dog, new tricks

@@ -117,11 +117,11 @@ code they need to write. And my respect for them has nothing to do with
 the complexity of their setup. I respect them because the code they write
 is of high quality. How they come up with it is of no importance to me.
 
-Most of the software we use daily or runs our world was written
-by people who barely knew how to use a keyboard. Just watch [Brian
-Kernighan](https://en.wikipedia.org/wiki/Brian_Kernighan) type and you
-will see what I mean. And then look at his accomplishments. Slow typing
-doesn't mean shit. It's the quality of the work that matters.
+Most of the software we use daily or runs our world was written by
+people who barely knew how to use a keyboard. Just watch [Brian Kernighan
+type](https://www.youtube.com/watch?v=tc4ROCJYbm0) and you will see what
+I mean. And then look at his accomplishments. Slow typing doesn't mean
+shit. It's the quality of the work that matters.
 
 The reason why I switched to
 [Helix](https://helix-editor.com/) is simple. It has

@@ -2,13 +2,17 @@
 https://harelang.org/index.xml Announcements
 https://emacsredux.com/atom.xml Announcements
 https://crawl.develz.org/wordpress/feed Announcements
-
-# Comics
-https://workchronicles.com/feed/ Comics
-https://www.monkeyuser.com/index.xml Comics
-https://turnoff.us/feed.xml Comics
+https://go.dev/blog/feed.atom Announcements
 
 # Blogs
+https://tratt.net/laurie/news.rss Blogs
+https://willhbr.net/feed.xml Blogs
+https://andrewkelley.me/rss.xml Blogs
+https://env.fail/blog.rss Blogs
+https://beyondloom.com/blog/rss.xml Blogs
+https://blog.orhun.dev/rss.xml Blogs
+https://simonwillison.net/atom/entries/ Blogs
+https://til.simonwillison.net/tils/feed.atom Blogs
 https://danluu.com/atom.xml Blogs "~Dan Luu"
 https://www.andreinc.net/feed.xml Blogs
 https://voussoir.net/writing/writing.atom Blogs "~Ethan Dalool / Voussoir"

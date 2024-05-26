@@ -11,8 +11,8 @@
       :root {
         --body-max-width: 720px;
         --link-color: blue;
-        --code-background: #f8f8f8;
-        --inline-code-background: #f2f2f2;
+        --code-background: #fffcef;
+        --inline-code-background: #fffae5;
       }
 
       *::selection {
@@ -40,10 +40,12 @@
         display: flex;
         flex-direction: column;
         gap: 1em;
+        margin: 0 auto;
       }
 
       header nav {
         display: flex;
+        align-items: center;
         gap: 1em;
       }
 
@@ -76,7 +78,6 @@
         overflow-x: auto;
         padding: 1em;
         background: var(--code-background)!important;
-        border: 1px solid #dcdcdc;
       }
 
       code {
@@ -145,6 +146,18 @@
       }
       .promobox:hover { text-decoration: underline; }
 
+      .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .navigation .spinny img, .navigation .spinny a {
+        width: 30px;
+        height: 30px;
+        background: black;
+        display: block;
+      }
+
       @media only screen and (max-width: 600px) {
         body {
           padding: 0.5em;
@@ -153,7 +166,7 @@
 
         header nav {
           gap: 0.7rem;
-        }
+        
 
         a {
           word-wrap: break-word;
@@ -163,7 +176,7 @@
     <script defer src="https://app.tinyanalytics.io/pixel/isfRNEahfHiS2Ttp"></script>
   </head>
   <body>
-    <header>
+    <header class="navigation">
       <nav>
         <a href="/">Home</a>
         <a href="https://github.com/mitjafelicijan" target="_blank">Code</a>
@@ -171,6 +184,11 @@
         <a href="/assets/urls.txt">Newsboat</a>
         <a href="/curriculum-vitae.html">CV</a>
         <a href="/feed.xml">RSS</a>
+      </nav>
+      <nav>
+        <a class="spinny" href="https://link.springer.com/content/pdf/10.1007/s11229-020-02801-1.pdf" target="_blank">
+          <img src="/assets/general/first.gif">
+        </a>
       </nav>
     </header>
     <main>{{ block "content" . }}{{ end }}</main>

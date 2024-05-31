@@ -9,10 +9,9 @@
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA==" rel="icon" type="image/x-icon" />
     <style>
       :root {
-        --body-max-width: 720px;
         --link-color: blue;
-        --code-background: #fffcef;
-        --inline-code-background: #fffae5;
+        --code-background: #eee;
+        --inline-code-background: #eee;
       }
 
       *::selection {
@@ -31,16 +30,9 @@
       }
 
       body {
-        padding: 2rem;
-        max-width: var(--body-max-width);
+        padding: 1rem;
         background: white;
-        font-family: sans-serif;
-        line-height: 1.5rem;
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        margin: 0 auto;
+        line-height: 1.3;
       }
 
       header nav {
@@ -62,7 +54,11 @@
       }
 
       cap { text-transform: capitalize; }
-      ul li { padding: 0.2em 0; }
+      ul li { padding: 0.1em 0; }
+
+      table td, table th {
+        padding: 0.1em 0.3em;
+      }
 
       a {
         color: var(--link-color);
@@ -99,7 +95,6 @@
       }
 
       figcaption {
-        width: var(--body-max-width);
         max-width: 100%;
         text-align: center;
       }
@@ -109,8 +104,7 @@
         font-style: italic;
       }
 
-      img, video, audio {
-        width: var(--body-max-width);
+      img, video, audio, table {
         max-width: 100%;
       }
 
@@ -123,17 +117,6 @@
       }
 
       pre { margin-block-start: 1em; margin-block-end: 1em; }
-      
-      table {
-        width: 100%;
-        border: 1px solid gainsboro;
-        border-collapse: separate;
-        border-spacing: 0;
-        word-break: break-all;
-      }
-      
-      table th { border-bottom: 1px solid gainsboro; background: var(--code-background); }
-      table td, table th { padding: 0.3em 0.8em; text-align: left; }
 
       .promobox {        
         margin-top: 1em;
@@ -146,18 +129,6 @@
       }
       .promobox:hover { text-decoration: underline; }
 
-      .navigation {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .navigation .spinny img, .navigation .spinny a {
-        width: 30px;
-        height: 30px;
-        background: black;
-        display: block;
-      }
-
       @media only screen and (max-width: 600px) {
         body {
           padding: 0.5em;
@@ -166,7 +137,7 @@
 
         header nav {
           gap: 0.7rem;
-        
+        }        
 
         a {
           word-wrap: break-word;
@@ -176,7 +147,7 @@
     <script defer src="https://app.tinyanalytics.io/pixel/isfRNEahfHiS2Ttp"></script>
   </head>
   <body>
-    <header class="navigation">
+    <header>
       <nav>
         <a href="/">Home</a>
         <a href="https://github.com/mitjafelicijan" target="_blank">Code</a>
@@ -185,13 +156,12 @@
         <a href="/curriculum-vitae.html">CV</a>
         <a href="/feed.xml">RSS</a>
       </nav>
-      <nav>
-        <a class="spinny" href="https://link.springer.com/content/pdf/10.1007/s11229-020-02801-1.pdf" target="_blank">
-          <img src="/assets/general/first.gif">
-        </a>
-      </nav>
     </header>
+
+    <hr>
+    
     <main>{{ block "content" . }}{{ end }}</main>
+    
     <footer>
       <hr>
       <p><big><strong>Want to comment or have something to add?</strong></big></p>
@@ -208,5 +178,11 @@
         </small>
       </p>
     </footer>
+
+    <script>
+      document.querySelectorAll("table").forEach(table => {
+        table.setAttribute("border", 1);
+      });
+    </script>
   </body>
 </html>

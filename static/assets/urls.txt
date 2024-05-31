@@ -3,6 +3,7 @@ https://harelang.org/index.xml Announcements
 https://emacsredux.com/atom.xml Announcements
 https://crawl.develz.org/wordpress/feed Announcements
 https://go.dev/blog/feed.atom Announcements
+https://blog.gtk.org/feed/ Announcements
 
 # Blogs
 https://tratt.net/laurie/news.rss Blogs

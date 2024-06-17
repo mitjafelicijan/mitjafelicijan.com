@@ -20,7 +20,7 @@ though this is really not advisable.
 #include <unistd.h>
 
 void handle_signal(int signal) {
-    printf("Signal received %d\n", signal);
+    printf("Signal received: %d\n", signal);
 }
 
 int main() {
@@ -37,7 +37,7 @@ int main() {
 
 Compile with `gcc -o signal signal.c` and run the program with `./signal` and
 then from another terminal send the signal to the program with `kill -10
-$(pidof signal)` which should print out `Signal received 10`.
+$(pidof signal)` which should print out `Signal received: 10`.
 
 | Signal    | x86/ARM | Alpha/ | MIPS | PARISC | Notes         |
 |-----------|---------|--------|------|--------|---------------|

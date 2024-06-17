@@ -1,6 +1,6 @@
 ---
 title: "Sending signals to C programs"
-url: sending-signals-to-c-program
+url: sending-signals-to-c-program.html
 date: 2024-06-17T16:13:13+02:00
 type: note
 draft: false

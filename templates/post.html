@@ -15,7 +15,8 @@
 <section>
   <br><hr>
   <p><big><strong>Other posts</strong></big></p>
-  <ul>
+  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Other posts">
+    <meta itemprop="name" content="Other post">
     {{ range random 20 .Pages }}
       {{ if and (eq .Type "post") (not .Draft) }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>

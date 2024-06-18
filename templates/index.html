@@ -13,7 +13,8 @@
 
 <section>
   <h2>More long form, ramblings etc</h2>
-  <ul>
+  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="More long form, ramblings etc">
+    <meta itemprop="name" content="More long form, ramblings etc">
     {{ range .Pages }}
       {{ if and (eq .Type "post") (not .Draft) }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
@@ -24,20 +25,22 @@
 
 <section>
   <h2>Notes?! Maybe useful</h2>
-  <ul>
-  {{ range .Pages }}
-    {{ if and (eq .Type "note") (not .Draft) }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Notes?! Maybe useful">
+    <meta itemprop="name" content="Notes?! Maybe useful">
+    {{ range .Pages }}
+      {{ if and (eq .Type "note") (not .Draft) }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
     {{ end }}
-  {{ end }}
   </ul>
 </section>
 
 <section>
   <h2>Small side projects I work/worked on</h2>
-  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Side projects" class="list">
+  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Side projects">
     <meta itemprop="name" content="Side projects">
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/binary-visualization" target="_blank">binary-visualization </a> — Visualizations and exploration of binary files</li>
+    <li role="listitem"><a href="https://github.com/mitjafelicijan/makext" target="_blank">makext</a> — QOL Extensions for GNU Make</li>
+    <li role="listitem"><a href="https://github.com/mitjafelicijan/binary-visualization" target="_blank">binary-visualization</a> — Visualizations and exploration of binary files</li>
     <li role="listitem"><a href="https://github.com/mitjafelicijan/p9tree" target="_blank">p9tree</a> — Tree utility for 9front/Plan9 operating systems</li>
     <li role="listitem"><a href="https://github.com/mitjafelicijan/errand" target="_blank">errand</a> — Task runner for the command line</li>
     <li role="listitem"><a href="https://github.com/mitjafelicijan/i3blocks" target="_blank">i3blocks</a> — Minimal i3blocks indicators</li>

@@ -15,7 +15,8 @@
 <section>
   <br><hr>
   <p><big><strong>Other notes</strong></big></p>
-  <ul>
+  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Other notes">
+    <meta itemprop="name" content="Other notes">
     {{ range random 20 .Pages }}
       {{ if and (eq .Type "note") (not .Draft) }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
@@ -23,4 +24,9 @@
     {{ end }}
   </ul>
 </section>
+
+{{ if .Page.Meta.mathjax }}
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js" async></script>
+{{ end }}
+
 {{ end }}

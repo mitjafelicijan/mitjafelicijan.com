@@ -12,8 +12,20 @@
   </div>
 </section>
 
+<br><hr>
+
+<section>
+  <p><big><strong>Other posts</strong></big></p>
+  <ul>
+    {{ range random 20 .Pages }}
+      {{ if and (eq .Type "post") (not .Draft) }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+   {{ end }}
+  </ul>
+</section>
+
 {{ if .Page.Meta.mathjax }}
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js" async></script>
 {{ end }}
 

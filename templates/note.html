@@ -4,11 +4,24 @@
 {{ define "description" }}{{ .Page.Summary }}{{ end }}
 
 {{ define "content" }}
-<div>
+<section>
   <h1>{{ .Page.Title }}</h1>
   <p><cap>{{ .Page.Type }}</cap>, {{ .Page.Created.Format "Jan 2, 2006" }}, on <a href="{{ .Config.BaseURL }}">{{ .Config.Title }}'s blog</a></p>
   <div>
     {{ .Page.HTML }}
   </div>
-  </div>
+</section>
+
+<br><hr>
+
+<section>
+  <p><big><strong>Other notes</strong></big></p>
+  <ul>
+    {{ range random 20 .Pages }}
+      {{ if and (eq .Type "note") (not .Draft) }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</section>
 {{ end }}

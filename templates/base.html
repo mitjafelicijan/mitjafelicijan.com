@@ -85,7 +85,7 @@
 
       code {
         font-family: monospace;
-        font-size: 13px;
+        font-size: 14px;
         padding: 2px 4px;
         background: var(--inline-code-background)!important;
       }
@@ -112,7 +112,7 @@
       }
 
       img, video, audio, table {
-        width: 800px;
+        width: 100%;
         max-width: 100%;
       }
 
@@ -136,7 +136,10 @@
       }
       .promobox:hover { text-decoration: underline; }
 
-      @media only screen and (max-width: 600px) {
+      /* Fix desktop and mobile code when font sizes are all over the place. */
+      pre code span { display: initial!important; }
+
+      @media only screen and (max-width: 1024px) {
         body {
           word-wrap: break-word;
         }
@@ -149,7 +152,12 @@
           word-wrap: break-word;
         }
 
-        /* Responsive tables */
+        /* Fix mobile code when font sizes are all over the place. */
+        pre code span { display: initial!important; }
+      }
+
+      @media only screen and (max-width: 800px) {
+        /* Responsive tables. */
         table {
           display: block;
           overflow-y: auto;

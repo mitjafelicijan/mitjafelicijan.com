@@ -4,6 +4,7 @@ url: drawing-pixels-in-plan9.html
 date: 2023-05-27T17:41:33+02:00
 type: note
 draft: false
+tags: [plan9]
 ---
 
 I have started exploring Plan9's graphics capabilities. This is a hello world

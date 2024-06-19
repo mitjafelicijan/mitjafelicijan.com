@@ -4,6 +4,7 @@ url: compile-drawterm-on-fedora-38.html
 date: 2023-09-25T09:04:28+02:00
 type: note
 draft: false
+tags: [plan9]
 ---
 
 First install two dependencies:

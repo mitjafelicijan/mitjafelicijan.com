@@ -4,6 +4,7 @@ url: sending-signals-to-c-program.html
 date: 2024-06-17T16:13:13+02:00
 type: note
 draft: false
+tags: [c]
 ---
 
 For simple and easy IPC to the C program we can use signals.

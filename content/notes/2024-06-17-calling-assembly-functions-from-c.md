@@ -4,6 +4,7 @@ url: calling-assembly-functions-from-c.html
 date: 2024-06-17T16:12:13+02:00
 type: note
 draft: false
+tags: [c]
 ---
 
 This is using the portable GNU assembler and TinyCC compiler but GCC or Clang

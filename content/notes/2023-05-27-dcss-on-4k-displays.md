@@ -4,6 +4,7 @@ url: dcss-on-4k-display.html
 date: 2023-05-27T19:35:11+02:00
 type: note
 draft: false
+tags: [dcss]
 ---
 
 Dungeon Crawl Stone Soup has a a very small font by default. On a 4k display, it

@@ -4,6 +4,7 @@ url: extend-lua-with-custom-c.html
 date: 2023-05-23T12:00:00+02:00
 type: note
 draft: false
+tags: [c]
 ---
 
 Here is a boilerplate for extending Lua with custom C functions. This requires

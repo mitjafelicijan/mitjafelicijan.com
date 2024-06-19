@@ -4,6 +4,7 @@ url: apersonal-sane-vim-defaults.html
 date: 2023-11-07T01:04:28+02:00
 type: note
 draft: false
+tags: [vim]
 ---
 
 I have found many "sane" default configs on the net and this is my favorite

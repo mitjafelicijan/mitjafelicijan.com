@@ -4,6 +4,7 @@ url: dcss-online-rc-defaults.html
 date: 2024-02-21T06:35:11+02:00
 type: note
 draft: false
+tags: [dcss]
 ---
 
 I mostly play Dungeon Crawl Stone Soup online on Ohio, USA: cbro.berotato.org server and

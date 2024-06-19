@@ -10,6 +10,8 @@ tags: [vim]
 I have found many "sane" default configs on the net and this is my favorite
 personal list. This is how my `.vimrc` file looks like.
 
+[Updated version is available on GitHub.](https://github.com/mitjafelicijan/dotfiles/blob/master/vimrc)
+
 ```vimrc
 " General sane defaults.
 syntax enable

@@ -1,3 +1,5 @@
+# In Newsboat format - https://newsboat.org
+
 # Announcements
 https://harelang.org/index.xml Announcements
 https://emacsredux.com/atom.xml Announcements

@@ -11,9 +11,8 @@ tags: [c]
 preprocessor has been put into the C23 standard but has not yet been
 implemented by the compilers. 
 
-Until then a workaround with
-[`xxd`](https://en.cppreference.com/w/c/preprocessor/embed) is possible without
-spending time on rolling out your own.
+Until then a workaround with [`xxd`](https://linux.die.net/man/1/xxd) is
+possible without spending time on rolling out your own.
 
 `xxd` has an option to export to C header file which makes this much easier.
 This works for all files be that text files or binary ones such as images, etc.

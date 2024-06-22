@@ -49,7 +49,17 @@ int main(void) {
 }
 ```
 
-And reading and serializing back to a struct.
+If we check the contents of the `character.dat` file it should look like this.
+
+```txt
+$ xxd character.dat
+00000000: 4a6f 686e 2044 6f65 0000 0000 0000 0000  John Doe........
+00000010: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000030: 0000 0000 1e00 0000 cdcc bc40            ...........@
+```
+
+Reading and serializing back to a struct.
 
 ```c
 // read.c

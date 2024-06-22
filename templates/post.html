@@ -4,13 +4,6 @@
 {{ define "description" }}{{ .Page.Summary }}{{ end }}
 
 {{ define "content" }}
-
-<ul>
-  {{ range .Pages | filterbytype "post" | random 10 }}
-    <li><a href="{{ .RelPermalink }}">{{ .Type }} - {{ .Title }}</a></li>
-  {{ end }}
-</ul>
-
 <section>
   <h1>{{ .Page.Title }}</h1>
   <p><cap>{{ .Page.Type }}</cap>, {{ .Page.Created.Format "Jan 2, 2006" }}, on <a href="{{ .Config.BaseURL }}">{{ .Config.Title }}'s blog</a></p>

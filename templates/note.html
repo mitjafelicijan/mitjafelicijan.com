@@ -17,8 +17,8 @@
   <p><big><strong>Other notes</strong></big></p>
   <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Other notes">
     <meta itemprop="name" content="Other notes">
-    {{ range random 20 .Pages }}
-      {{ if and (eq .Type "note") (not .Draft) }}
+    {{ range .Pages | filterbytype "note" | random 15 }}
+      {{ if not .Draft }}
         <li>
           {{ range .Meta.tags }}
             <mark>{{ . }}</mark>

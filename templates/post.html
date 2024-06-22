@@ -4,6 +4,13 @@
 {{ define "description" }}{{ .Page.Summary }}{{ end }}
 
 {{ define "content" }}
+
+<ul>
+  {{ range .Pages | filterbytype "post" | random 10 }}
+    <li><a href="{{ .RelPermalink }}">{{ .Type }} - {{ .Title }}</a></li>
+  {{ end }}
+</ul>
+
 <section>
   <h1>{{ .Page.Title }}</h1>
   <p><cap>{{ .Page.Type }}</cap>, {{ .Page.Created.Format "Jan 2, 2006" }}, on <a href="{{ .Config.BaseURL }}">{{ .Config.Title }}'s blog</a></p>
@@ -17,8 +24,8 @@
   <p><big><strong>Other posts</strong></big></p>
   <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Other posts">
     <meta itemprop="name" content="Other post">
-    {{ range random 20 .Pages }}
-      {{ if and (eq .Type "post") (not .Draft) }}
+    {{ range .Pages | filterbytype "post" | random 15 }}
+      {{ if not .Draft }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
     {{ end }}

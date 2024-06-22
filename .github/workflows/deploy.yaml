@@ -27,7 +27,7 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Run a multi-line script
         run: |
-          wget https://github.com/mitjafelicijan/jbmafp/releases/download/v0.2/jbmafp.zip
+          wget https://github.com/mitjafelicijan/jbmafp/releases/download/v0.3/jbmafp.zip
           unzip jbmafp.zip
           chmod +x jbmafp
           ./jbmafp -b

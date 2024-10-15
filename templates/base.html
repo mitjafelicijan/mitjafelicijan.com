@@ -11,8 +11,9 @@
     <style>
       :root {
         --link-color: blue;
-        --code-background: #eee;
-        --inline-code-background: #eee;
+        --code-background: #efefef;
+        --code-border: #aaa;
+        --inline-code-background: #efefef;
       }
 
       *::selection {
@@ -58,7 +59,7 @@
 
       h1 {
         font-size: xx-large;
-		line-height: 110%;
+        line-height: 110%;
       }
 
       mark { padding: 0 0.3em; background-color: chartreuse; }
@@ -83,7 +84,7 @@
         overflow-x: auto;
         padding: 1em;
         background: var(--code-background)!important;
-		border: 1px solid black;
+        border: 1px solid var(--code-border);
       }
 
       code {
@@ -129,6 +130,8 @@
 
       pre { margin-block-start: 1em; margin-block-end: 1em; }
 
+      section.quick-jump { display: grid; gap: 1em; margin-top: 1em; grid-template-columns: 1fr 1fr; }
+      
       .promobox {        
         margin-top: 1em;
         text-decoration: none;
@@ -165,6 +168,8 @@
           display: block;
           overflow-y: auto;
         }
+
+        section.quick-jump { grid-template-columns: 1fr; }
       }
     </style>
     <script defer src="https://app.tinyanalytics.io/pixel/isfRNEahfHiS2Ttp"></script>
@@ -175,8 +180,8 @@
         <a href="/">Home</a>
         <a href="https://github.com/mitjafelicijan" target="_blank">Code</a>
         <a href="https://github.com/mitjafelicijan/probe" target="_blank">Probe</a>
+        <a href="https://github.com/mitjafelicijan/dotfiles" target="_blank">Dotfiles</a>
         <a href="/assets/mitjafelicijan.pgp.pub.txt">PGP</a>
-        <a href="/assets/urls.txt">Blogroll</a>
         <a href="/curriculum-vitae.html">CV</a>
         <a href="/feed.xml">RSS</a>
       </nav>

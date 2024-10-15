@@ -11,6 +11,40 @@
   bytes (trigraphs).
 </a>
 
+<section class="quick-jump">
+  <input list="qj-posts" placeholder="Search for posts">
+  <datalist id="qj-posts">
+    {{ range .Pages }}
+      {{ if and (eq .Type "post") (not .Draft) }}
+        <option data-url="{{ .RelPermalink }}">{{ .Title }}</option>
+      {{ end }}
+    {{ end }}
+  </datalist>
+  <input list="qj-notes"  placeholder="Search for notes">
+  <datalist id="qj-notes">
+    {{ range .Pages }}
+      {{ if and (eq .Type "note") (not .Draft) }}
+        <option data-url="{{ .RelPermalink }}">{{ .Title }}</option>
+      {{ end }}
+    {{ end }}
+  </datalist>
+</section>
+
+<script>
+document.querySelectorAll("section.quick-jump input[list]").forEach(s => {
+  s.addEventListener("change", e => {
+    const input = e.target;
+    const datalist = e.target.list;
+    for (var j = 0; j < datalist.options.length; j++) {
+      if (input.value == datalist.options[j].value) {
+        console.log(input.value, datalist.options[j].dataset.url);
+        window.location.href = `/${datalist.options[j].dataset.url}`;
+      }
+    }
+  });
+});
+</script>
+
 <section>
   <h2>More long form, ramblings etc</h2>
   <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="More long form, ramblings etc">

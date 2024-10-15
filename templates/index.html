@@ -12,7 +12,7 @@
 </a>
 
 <section class="quick-jump">
-  <input list="qj-posts" placeholder="Search for posts">
+  <input list="qj-posts" placeholder="Look for posts">
   <datalist id="qj-posts">
     {{ range .Pages }}
       {{ if and (eq .Type "post") (not .Draft) }}
@@ -20,7 +20,7 @@
       {{ end }}
     {{ end }}
   </datalist>
-  <input list="qj-notes"  placeholder="Search for notes">
+  <input list="qj-notes"  placeholder="Look for notes">
   <datalist id="qj-notes">
     {{ range .Pages }}
       {{ if and (eq .Type "note") (not .Draft) }}

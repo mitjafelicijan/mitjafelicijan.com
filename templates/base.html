@@ -163,14 +163,16 @@
         pre code span { display: initial!important; }
       }
 
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 720px) {
         /* Responsive tables. */
         table {
           display: block;
           overflow-y: auto;
         }
 
-        section.quick-jump { grid-template-columns: 1fr; }
+		.hide-on-mobile { display: none; }
+
+        section.quick-jump { display: none; }
       }
     </style>
     <script defer src="https://app.tinyanalytics.io/pixel/isfRNEahfHiS2Ttp"></script>
@@ -179,10 +181,11 @@
     <header>
       <nav>
         <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
         <a href="https://github.com/mitjafelicijan" target="_blank">Code</a>
-        <a href="https://github.com/mitjafelicijan/probe" target="_blank">Probe</a>
-        <a href="https://github.com/mitjafelicijan/dotfiles" target="_blank">Dotfiles</a>
-        <a href="/assets/mitjafelicijan.pgp.pub.txt">PGP</a>
+        <a href="https://github.com/mitjafelicijan/probe" target="_blank" class="hide-on-mobile">Probe</a>
+        <a href="https://github.com/mitjafelicijan/dotfiles" target="_blank" class="hide-on-mobile">Dotfiles</a>
+        <a href="/assets/mitjafelicijan.pgp.pub.txt" class="hide-on-mobile">PGP</a>
         <a href="/curriculum-vitae.html">CV</a>
         <a href="/feed.xml">RSS</a>
       </nav>

@@ -1,6 +1,6 @@
 ---
 title: Projects
-date: 2022-08-27T12:00:00+02:00
+date: 2024-10-21T12:00:00+02:00
 url: projects.html
 type: page
 draft: false
@@ -8,9 +8,10 @@ draft: false
 
 - [Simple snapshot manager](#simple-snapshot-manager)
 
-While most of my projects are hosted on GitHub, I wanted a centralized location
-to store them independently of GitHub and provide different versions in a bit
-clearer way.
+While most of my projects are hosted on
+[GitHub](https://github.com/mitjafelicijan), I wanted a centralized location to
+store them independently of GitHub and provide different versions in a bit
+cleaner way.
 
 ## Simple snapshot manager
 

@@ -7,6 +7,7 @@ draft: false
 ---
 
 - [Simple snapshot manager](#simple-snapshot-manager)
+- [QOL Extensions for GNU Make](#qol-extensions-for-gnu-make)
 - [Just build me a fucking page](#just-build-me-a-fucking-page)
 - [Clutch, nested X11 dwm sessions](#clutch-nested-x11-dwm-sessions)
 
@@ -24,6 +25,17 @@ Simple snapshot utility that uses TAR to compress current directory into a
 - Version 0.1 / 2024-10-21 ([sm-v0.1.tar](/snapshots/sm-v0.1.tar))
   - First release.
   - Able to tag and create tar snapshots.
+
+## QOL Extensions for GNU Make
+
+Makext is a collection of useful extensions for Makefiles, aimed at simplifying
+and enhancing the functionality of Make-based projects. These extensions
+provide additional features and convenience functions to improve the overall
+usage of GNU Make as a task runner.
+[GitHub repository](https://github.com/mitjafelicijan/makext).
+
+- Version 0.1 / 2024-05-15 ([makext-v0.1.tar](/snapshots/makext-v0.1.tar))
+  - First release.
 
 ## Clutch, nested X11 dwm sessions
 

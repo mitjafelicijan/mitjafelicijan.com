@@ -27,7 +27,7 @@ Simple snapshot utility that uses TAR to compress current directory into a
 ## Just build me a fucking page
 
 A simple static site generator that is semi compatible with
-[Hugo](https://gohugo.io/) that aims to be a simpler version of it getting out
+[Hugo](https://gohugo.io/) and aims to be a simpler version of it, getting out
 of your way when it comes to taxonomies. [GitHub
 repository](https://github.com/mitjafelicijan/jbmafp).
 

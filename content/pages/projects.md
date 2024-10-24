@@ -19,7 +19,8 @@ cleaner way.
 ## Simple snapshot manager
 
 Simple snapshot utility that uses TAR to compress current directory into a
-`.tar` file while ignoring some of the directories.
+`.tar` file while ignoring some of the directories. I use this tool to prepare
+releases for this page.
 [GitHub repository](https://github.com/mitjafelicijan/sm).
 
 - Version 0.1 / 2024-10-21 ([sm-v0.1.tar](/snapshots/sm-v0.1.tar))

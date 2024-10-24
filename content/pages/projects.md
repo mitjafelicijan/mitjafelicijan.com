@@ -8,6 +8,7 @@ draft: false
 
 - [Simple snapshot manager](#simple-snapshot-manager)
 - [Just build me a fucking page](#just-build-me-a-fucking-page)
+- [Clutch, nested X11 dwm sessions](#clutch-nested-x11-dwm-sessions)
 
 While most of my projects are hosted on
 [GitHub](https://github.com/mitjafelicijan), I wanted a centralized location to
@@ -23,6 +24,16 @@ Simple snapshot utility that uses TAR to compress current directory into a
 - Version 0.1 / 2024-10-21 ([sm-v0.1.tar](/snapshots/sm-v0.1.tar))
   - First release.
   - Able to tag and create tar snapshots.
+
+## Clutch, nested X11 dwm sessions
+
+Clutch allows you to run nested dwm session inside your existing X or Wayland
+session. This comes in handy when you already have a desktop environment
+running (like Gnome) but you want to have a tiling window manager as well.
+[GitHub repository](https://github.com/mitjafelicijan/clutch).
+
+- Version 0.1 / 2024-07-19 ([clutch-v0.1.tar](/snapshots/clutch-v0.1.tar))
+  - First release.
 
 ## Just build me a fucking page
 

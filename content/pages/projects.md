@@ -22,7 +22,9 @@ This tool converts BLP texture files used in many games such as World of
 Warcraft into PNG files. With support for DXT1, DXT3 and DXT5 compression.
 [GitHub repository](https://github.com/mitjafelicijan/blpconvert).
 
-- Version 0.1 / 2024-10-21 ([blpconvert-v1.0.tar](/snapshots/blpconvert-v1.0.tar))
+- Version 1.1 / 2025-02-05 ([blpconvert-v1.1.tar](/snapshots/blpconvert-v1.1.tar))
+  - Added support for custom output formats (png, bmp, jpg, tga).
+- Version 1.0 / 2025-02-04 ([blpconvert-v1.0.tar](/snapshots/blpconvert-v1.0.tar))
   - First release.
 
 ## Simple snapshot manager

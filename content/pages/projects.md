@@ -16,6 +16,15 @@ While most of my projects are hosted on
 store them independently of GitHub and provide different versions in a bit
 cleaner way.
 
+## BLP to PNG converter
+
+This tool converts BLP texture files used in many games such as World of
+Warcraft into PNG files. With support for DXT1, DXT3 and DXT5 compression.
+[GitHub repository](https://github.com/mitjafelicijan/blpconvert).
+
+- Version 0.1 / 2024-10-21 ([blpconvert-v1.0.tar](/snapshots/blpconvert-v1.0.tar))
+  - First release.
+
 ## Simple snapshot manager
 
 Simple snapshot utility that uses TAR to compress current directory into a

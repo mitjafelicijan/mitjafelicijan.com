@@ -6,7 +6,8 @@ type: page
 draft: false
 ---
 
-- [Simple snapshot manager](#simple-snapshot-manager)
+- [BLP Texture Converter](#blp-texture-converter)
+- [Simple Snapshot Manager](#simple-snapshot-manager)
 - [QOL Extensions for GNU Make](#qol-extensions-for-gnu-make)
 - [Just build me a fucking page](#just-build-me-a-fucking-page)
 - [Clutch, nested X11 dwm sessions](#clutch-nested-x11-dwm-sessions)
@@ -16,7 +17,7 @@ While most of my projects are hosted on
 store them independently of GitHub and provide different versions in a bit
 cleaner way.
 
-## BLP to PNG converter
+## BLP Texture Converter
 
 This tool converts BLP texture files used in many games such as World of
 Warcraft into PNG files. With support for DXT1, DXT3 and DXT5 compression.
@@ -27,7 +28,7 @@ Warcraft into PNG files. With support for DXT1, DXT3 and DXT5 compression.
 - Version 1.0 / 2025-02-04 ([blpconvert-v1.0.tar](/snapshots/blpconvert-v1.0.tar))
   - First release.
 
-## Simple snapshot manager
+## Simple Snapshot Manager
 
 Simple snapshot utility that uses TAR to compress current directory into a
 `.tar` file while ignoring some of the directories. I use this tool to prepare

@@ -4,10 +4,8 @@
 {{ define "description" }}{{ .Page.Summary }}{{ end }}
 
 {{ define "content" }}
-<div>
-  <h1>{{ .Page.Title }}</h1>
-  <div>
-    {{ .Page.HTML }}
-  </div>
-</div>
+<article>
+	<h1>{{ .Page.Title }}</h1>
+	<div>{{ .Page.HTML }}</div>
+</article>
 {{ end }}

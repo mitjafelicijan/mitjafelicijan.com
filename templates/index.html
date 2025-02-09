@@ -1,60 +1,61 @@
 {{ template "base.html" . }}
 
 {{ define "content" }}
-<section>
-  <mark><small><i>You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.</i></small></mark>
-</section>
+<div>
+	<h2>Visualizations and exploration of binary files</h2>
+	<p>
+		Examine graphical representations of binary files using diagrams that illustrate connections between pairs of bytes (digraphs) and triplets of bytes (trigraphs).
+		Check out the <a href="https://mitjafelicijan.github.io/binary-visualization/" target="_blank">project page<a>.
+	</p>
+	<div>
+		<a href="https://mitjafelicijan.github.io/binary-visualization/" target="_blank">
+			<img src="/assets/general/trigraphs.gif">
+		</a>
+	</div>
+</div>
 
-<a class="promobox" href="https://mitjafelicijan.github.io/binary-visualization/" target="_blank">
-  Examine graphical representations of binary files using diagrams that
-  illustrate connections between pairs of bytes (digraphs) and triplets of
-  bytes (trigraphs).
-</a>
+<div>
+	<h2>More long form, ramblings etc</h2>
+	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="More long form, ramblings etc">
+		<meta itemprop="name" content="More long form, ramblings etc">
+		{{ range .Pages }}
+			{{ if and (eq .Type "post") (not .Draft) }}
+				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+			{{ end }}
+		{{ end }}
+	</ul>
+</div>
 
-<section>
-  <h2>More long form, ramblings etc</h2>
-  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="More long form, ramblings etc">
-    <meta itemprop="name" content="More long form, ramblings etc">
-    {{ range .Pages }}
-      {{ if and (eq .Type "post") (not .Draft) }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    {{ end }}
-  </ul>
-</section>
+<div>
+	<h2>Notes?! Maybe useful</h2>
+	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Notes?! Maybe useful">
+		<meta itemprop="name" content="Notes?! Maybe useful">
+		{{ range .Pages }}
+			{{ if and (eq .Type "note") (not .Draft) }}
+				<li>
+					{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
+					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+				</li>
+			{{ end }}
+		{{ end }}
+	</ul>
+</div>
 
-<section>
-  <h2>Notes?! Maybe useful</h2>
-  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Notes?! Maybe useful">
-    <meta itemprop="name" content="Notes?! Maybe useful">
-    {{ range .Pages }}
-      {{ if and (eq .Type "note") (not .Draft) }}
-        <li>
-          {{ range .Meta.tags }}
-            <mark>{{ . }}</mark>
-          {{ end }}
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </li>
-      {{ end }}
-    {{ end }}
-  </ul>
-</section>
-
-<section>
-  <h2>Small side projects I work/worked on</h2>
-  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Side projects">
-    <meta itemprop="name" content="Side projects">
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/makext" target="_blank">makext</a> — QOL Extensions for GNU Make</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/binary-visualization" target="_blank">binary-visualization</a> — Visualizations and exploration of binary files</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/p9tree" target="_blank">p9tree</a> — Tree utility for 9front/Plan9 operating systems</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/errand" target="_blank">errand</a> — Task runner for the command line</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/i3blocks" target="_blank">i3blocks</a> — Minimal i3blocks indicators</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/cord.h" target="_blank">cord.h</a> — Small C library for handling strings</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/mprogress" target="_blank">mprogress</a> — Tiny utility that displays progress bar in terminal</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/qli" target="_blank">qli</a> — Quantum Lorem Ipsum generator for command line</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/journalctl-proxy" target="_blank">journalctl-proxy</a> — Exposes your systemd logs to web via web interface</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/redis-marshal" target="_blank">redis-marshal</a> — Lightweight Redis UI tool</li>
-    <li role="listitem"><a href="https://github.com/mitjafelicijan/dna-encoding" target="_blank">dna-encoding</a> — Tools for encoding files to DNA sequences</li>
-  </ul>
-</section>
+<div>
+	<h2>Small side projects I work/worked on</h2>
+	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Side projects">
+		<meta itemprop="name" content="Side projects">
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/makext" target="_blank">makext</a> — QOL Extensions for GNU Make</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/binary-visualization" target="_blank">binary-visualization</a> — Visualizations and exploration of binary files</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/p9tree" target="_blank">p9tree</a> — Tree utility for 9front/Plan9 operating systems</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/errand" target="_blank">errand</a> — Task runner for the command line</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/i3blocks" target="_blank">i3blocks</a> — Minimal i3blocks indicators</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/cord.h" target="_blank">cord.h</a> — Small C library for handling strings</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/mprogress" target="_blank">mprogress</a> — Tiny utility that displays progress bar in terminal</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/qli" target="_blank">qli</a> — Quantum Lorem Ipsum generator for command line</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/journalctl-proxy" target="_blank">journalctl-proxy</a> — Exposes your systemd logs to web via web interface</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/redis-marshal" target="_blank">redis-marshal</a> — Lightweight Redis UI tool</li>
+		<li role="listitem"><a href="https://github.com/mitjafelicijan/dna-encoding" target="_blank">dna-encoding</a> — Tools for encoding files to DNA sequences</li>
+	</ul>
+</div>
 {{ end }}

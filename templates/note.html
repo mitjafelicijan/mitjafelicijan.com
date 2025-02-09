@@ -4,34 +4,30 @@
 {{ define "description" }}{{ .Page.Summary }}{{ end }}
 
 {{ define "content" }}
-<section>
-  <h1>{{ .Page.Title }}</h1>
-  <p><cap>{{ .Page.Type }}</cap>, {{ .Page.Created.Format "Jan 2, 2006" }}, on <a href="{{ .Config.BaseURL }}">{{ .Config.Title }}'s blog</a></p>
-  <div>
-    {{ .Page.HTML }}
-  </div>
-</section>
+<article>
+	<h1>{{ .Page.Title }}</h1>
+	<p><cap>{{ .Page.Type }}</cap>, {{ .Page.Created.Format "Jan 2, 2006" }}, on <a href="{{ .Config.BaseURL }}">{{ .Config.Title }}'s blog</a></p>
+	<div>{{ .Page.HTML }}</div>
+</article>
 
-<section>
-  <br><hr>
-  <p><big><strong>Other notes</strong></big></p>
-  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Other notes">
-    <meta itemprop="name" content="Other notes">
-    {{ range .Pages | filterbytype "note" | random 15 }}
-      {{ if not .Draft }}
-        <li>
-          {{ range .Meta.tags }}
-            <mark>{{ . }}</mark>
-          {{ end }}
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </li>
-      {{ end }}
-    {{ end }}
-  </ul>
-</section>
+<div>
+	<br><hr>
+	<p><big><strong>Other notes</strong></big></p>
+	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Other notes">
+		<meta itemprop="name" content="Other notes">
+		{{ range .Pages | filterbytype "note" | random 15 }}
+			{{ if not .Draft }}
+				<li>
+					{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
+					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+				</li>
+			{{ end }}
+		{{ end }}
+	</ul>
+</div>
 
 {{ if .Page.Meta.mathjax }}
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js" async></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js" async></script>
 {{ end }}
 
 {{ end }}

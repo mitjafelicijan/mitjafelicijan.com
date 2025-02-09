@@ -1,215 +1,68 @@
 <!doctype html>
 <html lang="{{ .Config.Language }}">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{ block "title" . }}{{ .Config.Title }}{{ end }}</title>
-    <meta name="description" content="{{ block "description" . }}{{ .Config.Description }}{{ end }}"/>
-    <link rel="alternate" type="application/rss+xml" href="{{ .Config.BaseURL }}/index.xml" />
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA==" rel="icon" type="image/x-icon" />
-    <meta name="theme-color" content="#0000ff">
-    <style>
-      :root {
-        --link-color: blue;
-        --code-background: #fafafa;
-        --code-border: #aaa;
-        --inline-code-background: #efefef;
-      }
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-      *::selection {
-        background: var(--link-color);
-        color: #ffffff;
-      }
+		<title>{{ block "title" . }}{{ .Config.Title }}{{ end }}</title>
+		<meta name="description" content="{{ block "description" . }}{{ .Config.Description }}{{ end }}"/>
+		
+		<link rel="alternate" type="application/rss+xml" href="{{ .Config.BaseURL }}/index.xml" />
+		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL69vf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv76+/8LBwQkAAAAAAAAAAAAAAAC+vb3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL+9vf/Bv78JAAAAAAAAAAAAAAAAu7q6/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC7ubr/vr29CAAAAAAAAAAAy8nJAZ6foP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnqGj/6GipAoAAAAAHLjU/xcXHf/BwsL/I8XY/yPK3v8XGiD/IbjL/yPF2f8XGiD/Fxkf/yLF2f8gnK3/Fxog/62ztv8fwNf/FRcd/x271v8mz93/GRsi/xkXHf8p097/GiIp/xobIv8p0t3/KdPe/xocIv8fYmr/KNPe/xoZH/8aHCL/J87c/xy81/8VFxz/IsPZ/8zS0/8XGiD/Ir/R/yPH2/8XGiD/Fxkf/yPH2/8dd4T/GBog/yPJ3f8jyNr/uru9/xcUGv8cudb/EhITDKi5vRKlvMP/RUpOERwcHRAdOj4QHTk8EBwdHRAdNTgQHTo/EBwcHRAcHB0QSGduEKW4vf+koqQfHzg+EBqz0ewSFRv7EyMr/xq51vsTERb7ExUb+xq41fsau9j7ExUb+xiPp/sZudb7ExUb+xMVG/sZuNX/GKvI/BIUGfMdvdn/IrfL/xcaIP8n1eb/J9Dh/xkcIf8ZGR7/J8/f/xxCSv8ZGyH/J9Dg/ybQ4P8ZHCL/FSQs/yPK3/8UExj/GE1b/ybS5P8ZGB7/Ghwj/ynW5P8p2Ob/Ghwi/yWrtv8p1eH/Ghwi/xocIv8p1uT/J8XT/xkcIv8m1un/Hb7d/xUYH/8hzOr/HtHu/xcaIf8XGB//I8vi/xgxOv8XGSD/I8rg/yPK4P8XGiD/GUFL/yPP6f8SERj/Fhkh/x3A4f8AAAAAJ2f9/ydr//8mZPH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlYu38J2v//ydo/f8AAAAAAAAAAAd8/fkFqf//Iob8sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMY39awWr//8FfP3/AAAAAAAAAAAFm/7/SfD//wR+/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/f9B7v//BaX+/wAAAAAAAAAAQ878SAyZ/v9n1v4KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADu9v8DDJb+/z3N/XgAAAAA3/sAAN/7AADf+wAA3/sAAAAAAAAAAAAAAAAAAN/7AAAAAAAAAAAAAAAAAAAAAAAAj/EAAI/5AACP8QAA3/sAAA==" rel="icon" type="image/x-icon" />
 
-      *::-moz-selection {
-        background: var(--link-color);
-        color: #ffffff;
-      }
+		<style>
+			html { scroll-padding: 2rem; }
+			body { display: grid; gap: 2em; grid-template-columns: 14em auto; max-width: 100vw; line-height: 130%; }
+			h1, h2, h3, h4, h5, h6 { line-height: 120%; }
+			img, video, audio { max-width: 100%; }
+			pre { background: #f5f5f5 !important; text-wrap: wrap; padding: 0.5em; }
+			code { background: #f5f5f5; }
+			table { width: 100%; }
+			@media only screen and (max-width: 720px) {
+				body { display: block; }
+				main { margin: 1em 0; }
+				.hide-on-mobile { display: none; }
+			}
+			/* Fixes embeds going to center. */
+			article iframe { margin: 0!important; }
+			/* Fix desktop and mobile code when font sizes are all over the place. */
+			pre code span { display: initial !important; }
+		</style>
+		<script defer src="https://app.tinyanalytics.io/pixel/isfRNEahfHiS2Ttp"></script>
+	</head>
 
-      *::-webkit-selection {
-        background: var(--link-color);
-        color: #ffffff;
-      }
+	<body>
+		<aside>
+			<p>You do not learn by relaxing. You learn by violently assaulting your problem until it surrenders its mysteries to you.</p>
+			<strong>About</strong>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/projects.html">Recent projects</a></li>
+				<li><a href="https://github.com/mitjafelicijan" target="_blank">Code on GitHub</a></li>
+				<li><a href="https://github.com/mitjafelicijan/probe" target="_blank">Probe repository</a></li>
+				<li><a href="https://github.com/mitjafelicijan/dotfiles" target="_blank">My dotfiles</a></li>
+				<li><a href="/curriculum-vitae.html">CV</a></li>
+				<li><a href="/feed.xml">RSS</a></li>
+			</ul>
+		</aside>
 
-	  html {
-        scroll-padding: 2rem;
-	  }
+		<main>
+			<div>
+				{{ block "content" . }}{{ end }}
+			</div>
 
-      body {
-        padding: 1em;
-        background: white;
-        line-height: 1.3;
-        font-family: sans-serif;
-        max-width: 700px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-      }
+			<footer>
+				<hr>
+				<p><big><strong>Want to comment or have something to add?</strong></big></p>
+				<p>You can write me an email at <a href="mailto:mitja.felicijan@gmail.com">mitja.felicijan@gmail.com</a> or catch up with me <a href="https://telegram.me/mitjafelicijan" target="_blank">on Telegram</a>.</p>
+				<hr>
+				<p><small>This page's is also available as <a href="/feed.xml" target="_blank">RSS feed</a>. Page was built with <a href="https://github.com/mitjafelicijan/jbmafp" target="_blank">jbmafp</a>.</small></p>
+			</footer>
+		</main>
 
-      header nav {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-      }
-
-      h1, h2, h3 {
-        line-height: initial;
-      }
-
-      h2, h3 {
-        margin-block-start: 1em;
-      }
-
-      h1 {
-        font-size: xx-large;
-        line-height: 110%;
-      }
-
-      mark { padding: 0 0.3em; background-color: chartreuse; }
-      cap { text-transform: capitalize; }
-      ul li { padding: 0.1em 0; }
-
-      table td, table th {
-        padding: 0.1em 0.3em;
-      }
-
-      a {
-        color: var(--link-color);
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      pre {
-        text-wrap: nowrap;
-        overflow-x: auto;
-        padding: 1em;
-        background: var(--code-background)!important;
-        border: 1px solid var(--code-border);
-      }
-
-      code {
-        font-family: monospace;
-        font-size: 13px;
-        padding: 2px 4px;
-        background: var(--inline-code-background)!important;
-      }
-
-      pre code {
-        background: transparent!important;
-        padding: initial;
-        border: none;
-      }
-
-      figure {
-        margin-inline-start: 0;
-        margin-inline-end: 0;
-      }
-
-      figcaption {
-        max-width: 100%;
-        text-align: center;
-      }
-
-      figcaption p {
-        margin: 0.3em 0 1.5em 0;
-        font-style: italic;
-      }
-
-      img, video, audio, table {
-        width: 100%;
-        max-width: 100%;
-      }
-
-      article iframe { /* fixes embeds going to center */
-        margin: 0!important;
-      }
-
-      audio::-webkit-media-controls-enclosure {
-        border-radius: 0;
-      }
-
-      pre { margin-block-start: 1em; margin-block-end: 1em; }
-      
-      .promobox {        
-        margin-top: 1em;
-        text-decoration: none;
-        display: inline-block;
-        background: blue;
-        color: white;
-        padding: 1em;
-      }
-      .promobox:hover { text-decoration: underline; }
-
-      /* Fix desktop and mobile code when font sizes are all over the place. */
-      pre code span { display: initial!important; }
-
-      @media only screen and (max-width: 1024px) {
-        body {
-          word-wrap: break-word;
-        }
-
-        header nav {
-          gap: 0.7rem;
-        }        
-
-        a {
-          word-wrap: break-word;
-        }
-
-        /* Fix mobile code when font sizes are all over the place. */
-        pre code span { display: initial!important; }
-      }
-
-      @media only screen and (max-width: 720px) {
-        /* Responsive tables. */
-        table {
-          display: block;
-          overflow-y: auto;
-        }
-
-		.hide-on-mobile { display: none; }
-      }
-    </style>
-    <script defer src="https://app.tinyanalytics.io/pixel/isfRNEahfHiS2Ttp"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/projects.html">Projects</a>
-        <a href="https://github.com/mitjafelicijan" target="_blank">Code</a>
-        <a href="https://github.com/mitjafelicijan/probe" target="_blank" class="hide-on-mobile">Probe</a>
-        <a href="https://github.com/mitjafelicijan/dotfiles" target="_blank" class="hide-on-mobile">Dotfiles</a>
-        <a href="/curriculum-vitae.html">CV</a>
-        <a href="/feed.xml">RSS</a>
-      </nav>
-    </header>
-    
-    <main>{{ block "content" . }}{{ end }}</main>
-    
-    <footer>
-      <hr>
-      <p><big><strong>Want to comment or have something to add?</strong></big></p>
-      <p>
-        You can write me an email
-        at <a href="mailto:mitja.felicijan@gmail.com">mitja.felicijan@gmail.com</a> or
-        catch up with me <a href="https://telegram.me/mitjafelicijan" target="_blank">on Telegram</a>.
-      </p>
-      <hr>
-      <p>
-        <small>
-          This page's is also available as <a href="/feed.xml" target="_blank">RSS feed</a>.
-          Page was built with <a href="https://github.com/mitjafelicijan/jbmafp" target="_blank">jbmafp</a>.
-        </small>
-      </p>
-    </footer>
-
-    <script>
-      document.querySelectorAll("table").forEach(t => t.setAttribute("border", 1));
-    </script>
-  </body>
+		<script>
+			document.querySelectorAll("table").forEach(t => t.setAttribute("border", 1));
+		</script>
+	</body>
 </html>
+

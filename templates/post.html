@@ -4,29 +4,26 @@
 {{ define "description" }}{{ .Page.Summary }}{{ end }}
 
 {{ define "content" }}
-<section>
-  <h1>{{ .Page.Title }}</h1>
-  <p><cap>{{ .Page.Type }}</cap>, {{ .Page.Created.Format "Jan 2, 2006" }}, on <a href="{{ .Config.BaseURL }}">{{ .Config.Title }}'s blog</a></p>
-  <div>
-    {{ .Page.HTML }}
-  </div>
-</section>
+<article>
+	<h1>{{ .Page.Title }}</h1>
+	<p><cap>{{ .Page.Type }}</cap>, {{ .Page.Created.Format "Jan 2, 2006" }}, on <a href="{{ .Config.BaseURL }}">{{ .Config.Title }}'s blog</a></p>
+	<div>{{ .Page.HTML }}</div>
+</article>
 
-<section>
-  <br><hr>
-  <p><big><strong>Other posts</strong></big></p>
-  <ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Other posts">
-    <meta itemprop="name" content="Other post">
-    {{ range .Pages | filterbytype "post" | random 15 }}
-      {{ if not .Draft }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    {{ end }}
-  </ul>
-</section>
+<div>
+	<br><hr>
+	<p><big><strong>Other posts</strong></big></p>
+	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Other posts">
+		<meta itemprop="name" content="Other post">
+		{{ range .Pages | filterbytype "post" | random 15 }}
+			{{ if not .Draft }}
+				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+			{{ end }}
+		{{ end }}
+	</ul>
+</div>
 
 {{ if .Page.Meta.mathjax }}
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js" async></script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js" async></script>
 {{ end }}
-
 {{ end }}

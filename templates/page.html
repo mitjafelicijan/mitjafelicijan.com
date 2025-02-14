@@ -5,7 +5,9 @@
 
 {{ define "content" }}
 <article>
-	<h1>{{ .Page.Title }}</h1>
+	<hgroup>
+		<h1>{{ .Page.Title }}</h1>
+	</hgroup>
 	<div>{{ .Page.HTML }}</div>
 </article>
 {{ end }}

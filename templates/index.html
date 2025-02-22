@@ -16,6 +16,7 @@
 </div>
 
 <section>
+	<h1>Notes, post and other stuff</h1>
 	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" class="flow">
 		{{ range .Pages }}
 			{{ if and (not .Draft) (or (eq .Type "note") (eq .Type "post")) }}

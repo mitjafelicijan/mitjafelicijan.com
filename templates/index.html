@@ -15,32 +15,19 @@
 	</div>
 </div>
 
-<section class="two-columns">
-	<div>
-		<h2>Notes?! Maybe useful</h2>
-		<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Notes?! Maybe useful">
-			<meta itemprop="name" content="Notes?! Maybe useful">
-			{{ range .Pages }}
-				{{ if and (eq .Type "note") (not .Draft) }}
-					<li>
-						{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
-						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-					</li>
+<section>
+	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" class="flow">
+		{{ range .Pages }}
+			{{ if and (not .Draft) (or (eq .Type "note") (eq .Type "post")) }}
+			<li>
+				{{ if eq .Type "note" }}
+				{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
 				{{ end }}
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			</li>
 			{{ end }}
-		</ul>
-	</div>
-	<div>
-		<h2>More long form, ramblings etc</h2>
-		<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="More long form, ramblings etc">
-			<meta itemprop="name" content="More long form, ramblings etc">
-			{{ range .Pages }}
-				{{ if and (eq .Type "post") (not .Draft) }}
-					<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-				{{ end }}
-			{{ end }}
-		</ul>
-	</div>
+		{{ end }}
+	</ul>
 </section>
 
 <div>

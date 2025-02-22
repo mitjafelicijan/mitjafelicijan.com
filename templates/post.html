@@ -19,7 +19,14 @@
 		<meta itemprop="name" content="Other post">
 		{{ range .Pages | filterbytype "post" | random 15 }}
 			{{ if not .Draft }}
-				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+				<li>
+					{{ if .Meta.tags }}
+						<div class="tags">
+						{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
+						</div>
+					{{ end }}
+					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+				</li>
 			{{ end }}
 		{{ end }}
 	</ul>

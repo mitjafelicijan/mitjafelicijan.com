@@ -21,8 +21,10 @@
 		{{ range .Pages }}
 			{{ if and (not .Draft) (or (eq .Type "note") (eq .Type "post")) }}
 			<li>
-				{{ if eq .Type "note" }}
-				{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
+				{{ if .Meta.tags }}
+					<div class="tags">
+					{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
+					</div>
 				{{ end }}
 				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			</li>

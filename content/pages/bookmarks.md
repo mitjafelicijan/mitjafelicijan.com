@@ -7,7 +7,6 @@ draft: false
 ---
 
 - [nesdoug &#8211; NES Programming with cc65](https://nesdoug.com/)
-- [Atari Gamer . Com](https://atarigamer.com/lynx/play)
 - [42Bastian/sprpck: Lynx Sprite Packer](https://github.com/42Bastian/sprpck)
 - [My Journey in Game Programming - Atari 8-bit Computer, C (with cc65) - Episode 45 - YouTube](https://www.youtube.com/watch?v=cHsvwbQEceU)
 - [Sage Guide | Classic WoW Leveling Guide (Alliance 1-60)](https://www.sageguide.net/)

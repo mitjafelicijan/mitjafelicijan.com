@@ -6,6 +6,8 @@ type: bookmarks
 draft: false
 ---
 
+- [1561 celestial phenomenon over Nuremberg](https://en.wikipedia.org/wiki/1561_celestial_phenomenon_over_Nuremberg)
+- [List of software and ideas developed or maintained by the OpenBSD project](https://www.openbsd.org/innovations.html)
 - [Mechanical Watch](https://ciechanow.ski/mechanical-watch/)
 - [Sturgeon's law](https://en.wikipedia.org/wiki/Sturgeon%27s_law)
 - [ no one knows who created skull trumpet (until now)](https://www.youtube.com/watch?v=ZYcHOEjGzPA)

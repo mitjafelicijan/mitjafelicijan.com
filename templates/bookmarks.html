@@ -1,0 +1,10 @@
+{{ template "base.html" . }}
+
+{{ define "content" }}
+<article>
+	<hgroup>
+		<h1>{{ .Page.Title }}</h1>
+	</hgroup>
+	<div class="flow-two-column">{{ .Page.HTML }}</div>
+</article>
+{{ end }}

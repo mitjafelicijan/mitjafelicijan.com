@@ -15,9 +15,9 @@
 	</div>
 </div>
 
-<section>
+<section class="flow-two-column">
 	<h1>Notes, post and other stuff</h1>
-	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" class="flow">
+	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list">
 		{{ range .Pages }}
 			{{ if and (not .Draft) (or (eq .Type "note") (eq .Type "post")) }}
 			<li>

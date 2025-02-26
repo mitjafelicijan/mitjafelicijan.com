@@ -1,6 +1,6 @@
 ---
-title: Male female body proportion references
-url: male-female-body-proportion-references.html
+title: Male and female body proportion reference images
+url: male-and-female-body-proportion-reference-images.html
 date: 2025-02-26T16:13:13+02:00
 type: note
 draft: false

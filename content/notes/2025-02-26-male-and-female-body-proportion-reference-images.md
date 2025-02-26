@@ -4,7 +4,7 @@ url: male-and-female-body-proportion-reference-images.html
 date: 2025-02-26T16:13:13+02:00
 type: note
 draft: false
-tags: []
+tags: [3d]
 ---
 
 ![](/assets/notes/male-body-proportions.jpg)

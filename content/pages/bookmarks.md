@@ -6,6 +6,12 @@ type: bookmarks
 draft: false
 ---
 
+- [Allwinner SoC based devices community](https://linux-sunxi.org/Main_Page)
+- [Tiny FEL tools for allwinner SOC, support RISC-V D1 chip](https://github.com/xboot/xfel)
+- [Linker Scripts](https://home.cs.colorado.edu/~main/cs1300/doc/gnu/ld_3.html)
+- [RISC-V Programming and debugging on Hifive1-RevB board with OpenOCD and GDB](https://www.youtube.com/watch?v=Xshh5iPholc)
+- [Raylib - Quickstart for building on macOS](https://github-wiki-see.page/m/raysan5/raylib/wiki/Working-on-macOS)
+- [BLP file format specification](https://wowwiki-archive.fandom.com/wiki/BLP_file)
 - [1561 celestial phenomenon over Nuremberg](https://en.wikipedia.org/wiki/1561_celestial_phenomenon_over_Nuremberg)
 - [List of software and ideas developed or maintained by the OpenBSD project](https://www.openbsd.org/innovations.html)
 - [Mechanical Watch](https://ciechanow.ski/mechanical-watch/)

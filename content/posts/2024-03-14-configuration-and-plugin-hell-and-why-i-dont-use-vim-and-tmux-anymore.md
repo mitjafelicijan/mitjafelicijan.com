@@ -3,7 +3,7 @@ title: "Configuration and plugin hell and why I don't use Vim and Tmux anymore"
 url: configuration-and-plugin-hell-and-why-i-dont-use-vim-and-tmux-anymore.html
 date: 2024-03-14T11:11:20+01:00
 type: post
-draft: false
+draft: true
 ---
 
 There are three tiers of CLI software as far as I am concerned:

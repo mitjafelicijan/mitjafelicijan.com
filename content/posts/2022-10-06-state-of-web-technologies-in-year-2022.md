@@ -3,7 +3,7 @@ title: State of Web Technologies and Web development in year 2022
 url: state-of-web-technologies-and-web-development-in-year-2022.html
 date: 2022-10-06T12:00:00+02:00
 type: post
-draft: false
+draft: true
 ---
 
 ## Initial thoughts

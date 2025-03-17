@@ -3,7 +3,7 @@ title: I think I was completely wrong about Git workflows
 url: i-was-wrong-about-git-workflows.html
 date: 2023-05-23T12:00:00+02:00
 type: post
-draft: false
+draft: true
 ---
 
 I have been using some approximation of [Git

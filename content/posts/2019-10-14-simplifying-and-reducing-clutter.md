@@ -3,7 +3,7 @@ title: Simplifying and reducing clutter in my life and work
 url: simplifying-and-reducing-clutter.html
 date: 2019-10-14T12:00:00+02:00
 type: post
-draft: false
+draft: true
 ---
 
 I recently moved my main working machine back from Hachintosh to Linux. Well the

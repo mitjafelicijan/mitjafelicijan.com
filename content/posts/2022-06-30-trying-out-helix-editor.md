@@ -3,7 +3,7 @@ title: Trying out Helix code editor as my main editor
 url: tying-out-helix-code-editor.html
 date: 2022-06-30T12:00:00+02:00
 type: post
-draft: false
+draft: true
 ---
 
 I have been searching for a lightweight code editor for quite some time. One of

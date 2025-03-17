@@ -3,7 +3,7 @@ title: Software development and my favorite pitfalls
 url: software-development-pitfalls.html
 date: 2015-11-10T12:00:00+02:00
 type: post
-draft: false
+draft: true
 ---
 
 Over the years I had the privilege to work on some very excited projects both in

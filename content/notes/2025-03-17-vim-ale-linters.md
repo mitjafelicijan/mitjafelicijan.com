@@ -7,7 +7,10 @@ draft: false
 tags: []
 ---
 
-- [Asynchronous Lint Engine](https://github.com/dense-analysis/ale)
+Reading material:
+
+- [Asynchronous Lint Engine](https://github.com/dense-analysis/ale/blob/master/doc/ale.txt)
+- [Let's have a pint of (vim) ale!](https://dmerej.info/blog/post/lets-have-a-pint-of-vim-ale/)
 
 Linters:
 

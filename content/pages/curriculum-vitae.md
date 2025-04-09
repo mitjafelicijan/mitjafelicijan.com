@@ -52,6 +52,9 @@ until it surrenders its mysteries to you.
 - Caching module for Apache web server (2022)
 - Task runner for the command line (2022)
 - World of Warcraft Tweaks and Enhancements Addon (2023)
+- Tiny terminal DAW using MIDI, Soundfonts and Lua for scripting (2024)
+- BLP texture file converter (2024)
+- RAG and LLM chat system for WoW guilds (2025)
 
 ## Employment history
 

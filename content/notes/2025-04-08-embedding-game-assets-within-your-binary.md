@@ -214,10 +214,12 @@ for an external script run from a Makefile.
 - I do like this approach, but some compilers might not support this feature,
   and this is why I will be sticking with manual approach for now.
 - One additional drawback is that every time you compile your game, all the
-  assets need to be re-read and converted. I have not heavily tested this, but
-  this could be a potential problem when you have a lot of assets.
+  assets need to be re-read and converted. I have not tested this heavily, but
+  this could potentially significantly increase build times when you have a lot
+  of assets.
 - Not using Make could be detrimental to incremental builds. But this would
-  also need to be tested. I do not claim that this is a real problem.
+  also need to be tested. I do not claim that this is a real problem. Test this
+  yourself.
 
 Read more about [Binary resource
 inclusion](https://en.cppreference.com/w/c/preprocessor/embed).

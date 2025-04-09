@@ -226,12 +226,12 @@ Below is a quick example how to use this new directive.
 #include <stdio.h>
 
 const uint8_t image_data[] = {
-  #embed "image.png"
+    #embed "image.png"
 };
 
 int main(void) {
-  printf("Image size: %d bytes\n", sizeof(image_data));
-  return 0;
+    printf("Image size: %d bytes\n", sizeof(image_data));
+    return 0;
 }
 ```
 

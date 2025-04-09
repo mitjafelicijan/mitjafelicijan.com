@@ -54,7 +54,7 @@
 			img, video { border: var(--border-width) solid var(--primary-color); padding: 0.5em; }
 			img.no-border, video.no-border { border: 0; padding: 0; }
 
-			pre { background: var(--code-color)!important; border: var(--border-width) solid var(--primary-color); text-wrap: wrap; padding: 1.0em; line-height: 170%; }
+			pre { background: var(--code-color)!important; border: var(--border-width) solid var(--primary-color); text-wrap: wrap; padding: 1.0em; line-height: 170%; text-wrap: nowrap; overflow-x: auto; }
 			code { background: var(--code-color); padding: 0 0.2em; }
 			pre code { padding: 0; }
 
@@ -64,30 +64,9 @@
 			article iframe { margin: 0!important; }
 			pre code span { display: initial !important; }
 
-			/*html { scroll-padding: 2rem; font-family: sans-serif; }
-			body { display: grid; gap: 2em; grid-template-columns: 16em auto; max-width: 1200px; line-height: 130%; }
-			h1, h2, h3, h4, h5, h6 { line-height: 120%; }
-			a { color: blue; text-decoration: none; }
-			a:hover { text-decoration: underline; }
-			img, video, audio { max-width: 100%; }
-			pre { background: #f5f5f5 !important; text-wrap: wrap; padding: 0.5em; }
-			code { background: #f5f5f5; }
-			li { break-inside: avoid-column; }
-			table { width: 100%; }
-			figure { margin: 0; }
-			.flow-two-column > ul { column-count: 2; column-gap: 3em; }
-			.flow-three-column > ul { column-count: 3; column-gap: 3em; }
-			.tags { display: inline-flex; gap: 0.2em; padding-right: 0.4em; font-family: monospace; }
-			.tags mark { padding: 0 0.2em; }
-			@media only screen and (max-width: 860px) {
-				body { display: block; }
-				main { margin: 1em 0; }
-				.flow-two-column > ul { column-count: 1; }
-				.flow-three-column > ul { column-count: 1; }
+			/*@media only screen and (max-width: 860px) {
 				.hide-on-mobile { display: none; }
-			}
-			article iframe { margin: 0!important; }
-			pre code span { display: initial !important; }*/
+			}*/
 		</style>
 		<script defer src="https://app.tinyanalytics.io/pixel/isfRNEahfHiS2Ttp"></script>
 	</head>

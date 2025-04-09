@@ -21,7 +21,7 @@ until it surrenders its mysteries to you.
   Prediction algorithms, Realtime analytics, Systems automation, Natural
   language processing, Bioinformatics, Game development.
 
-## Major projects
+## Some of the projects
 
 - SMS marketing system (2007)
 - Yacht management software (2008)

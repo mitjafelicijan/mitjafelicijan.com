@@ -8,6 +8,9 @@ draft: false
 
 **Mitja Felicijan**
 
+You do not learn by relaxing. You learn by violently assaulting your problem
+until it surrenders its mysteries to you.
+
 ## Technical experience
 
 - **Key languages:** C, Golang, Lua, Python, Bash.

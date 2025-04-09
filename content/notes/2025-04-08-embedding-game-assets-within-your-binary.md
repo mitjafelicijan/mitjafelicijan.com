@@ -22,6 +22,9 @@ Code for these notes is available as an
 tarball, but beware that this only includes the Linux build of raylib so please
 change to appropriate operating system.
 
+You can also check code on GitHub
+[@mitjafelicijan/probe/c-embedding-data](https://github.com/mitjafelicijan/probe/tree/master/c-embedding-data).
+
 ## Project structure
 
 We are going to keep it clean and simple here. I am using pre-build version of

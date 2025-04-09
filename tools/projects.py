@@ -135,13 +135,13 @@ def fetch_github_data():
     return include_repositories
 
 
-# include_repositories = fetch_github_data()
+include_repositories = fetch_github_data()
 
 # with open("out.json", "w") as json_file:
 #     json.dump(include_repositories, json_file, indent=4)
 
-# generate_markdown_file(include_repositories)
+generate_markdown_file(include_repositories)
 
-with open("out.json", "r") as fp:
-    include_repositories = json.load(fp)
-    generate_markdown_file(include_repositories)
+# with open("out.json", "r") as fp:
+#     include_repositories = json.load(fp)
+#     generate_markdown_file(include_repositories)

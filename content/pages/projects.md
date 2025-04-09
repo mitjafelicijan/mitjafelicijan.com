@@ -186,7 +186,7 @@ Displays progress bar in terminal. It can be used as a standalone program so you
 </div>
 
 ## newsbarge
-Converts RSS feeds into HTML
+Converts RSS feeds into single HTMLpage containing all the feed stories.
 
 
 <div class='project-release'>
@@ -319,7 +319,7 @@ ttdaw is a tiny terminal based digital audio workstation made for fun, experimen
 </div>
 
 ## TurtleTweaks
-World of Warcraft 1.12 Tweaks and Enhancements Addon
+World of Warcraft 1.12 client Tweaks and Enhancements Addon.
 
 
 <div class='project-release'>

@@ -93,7 +93,7 @@ CC          ?= cc
 CFLAGS      := -Wall -Wextra -Wunused -Wno-unused-parameter -Wswitch-enum -Wpedantic -Wno-bitwise-instead-of-logical
 LDFLAGS     := -I./libs -I./libs/raylib-$(RAYLIB_VER)/include ./libs/raylib-$(RAYLIB_VER)/lib/libraylib.a -lm
 
-game:
+game: embed
 	$(CC) $(CFLAGS) -o game main.c $(LDFLAGS)
 
 embed:
@@ -104,6 +104,9 @@ embed:
 This converted binary data files into C header style files which contain the
 array of bytes and the size of the array of bytes. This will be useful later
 with raylib code.
+
+If we execute `make embed` we will create C header files. But running `make
+game` will also call embed as well, so no need to call it separately.
 
 An example of such a file (in our case armor.png) looks like this.
 
@@ -189,6 +192,8 @@ need to also copy over these assets. Mind you, these binaries can potentially
 get quite big and if that is the problem, you could always compile this into a
 `so` library and include that. This way you could create data packs for audio,
 graphics, etc. and ship that alongside your game binary.
+
+Run `make -B game` and run the game.
 
 ![Basic window](/assets/notes/embedding-assets.png)
 

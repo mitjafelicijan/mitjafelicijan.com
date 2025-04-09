@@ -110,7 +110,9 @@ def fetch_github_data():
     if response.status_code == 200:
         repos = response.json()
         for repo in repos:
-            if "include" in repo["topics"]:
+            # Check if repository has "winc" topic. This means I want to include
+            # this repository on this page.
+            if "winc" in repo["topics"]:
                 include_repositories.append(repo)
     else:
         print(f"Failed to retrieve repositories: {response.status_code}")

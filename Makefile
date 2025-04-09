@@ -7,3 +7,6 @@ watch:
 
 server:
 	jbmafp -s
+
+fetch-projects:
+	cd tools && python projects.py

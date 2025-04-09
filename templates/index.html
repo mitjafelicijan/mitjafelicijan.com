@@ -1,45 +1,67 @@
 {{ template "base.html" . }}
 
 {{ define "content" }}
-<div>
-	<h2>Visualizations and exploration of binary files</h2>
-	<a href="https://mitjafelicijan.github.io/binary-visualization/" target="_blank">
-		<img src="/assets/general/trigraphs.gif">
-	</a>
-</div>
 
-<section class="flow-two-column">
-	<h1>Notes, post and other stuff</h1>
-	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list">
-		{{ range .Pages }}
-			{{ if and (not .Draft) (or (eq .Type "note") (eq .Type "post")) }}
-			<li>
-				{{ if .Meta.tags }}
-					<div class="tags">
-					{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
-					</div>
+<section>
+	<h2>Notes</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Title</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			{{ range .Pages }}
+				{{ if and (not .Draft) (eq .Type "note") }}
+				<tr>
+					<td><time datetime="{{ .Created.Format "2006-01-02" }}">{{ .Created.Format "2006-01-02" }}</time></td>
+					<td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+					<td class="tags">
+						{{ if .Meta.tags }}
+							{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
+						{{ end }}
+					</td>
+				</tr>
 				{{ end }}
-				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-			</li>
 			{{ end }}
-		{{ end }}
-	</ul>
+		</tbody>
+	</table>
 </section>
 
-<div>
-	<h2>Small side projects I work/worked on</h2>
-	<ul itemscope itemtype="https://schema.org/SiteNavigationElement" role="list" aria-label="Side projects">
-		<meta itemprop="name" content="Side projects">
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/makext" target="_blank">makext</a> — QOL Extensions for GNU Make</li>
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/binary-visualization" target="_blank">binary-visualization</a> — Visualizations and exploration of binary files</li>
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/p9tree" target="_blank">p9tree</a> — Tree utility for 9front/Plan9 operating systems</li>
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/i3blocks" target="_blank">i3blocks</a> — Minimal i3blocks indicators</li>
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/cord.h" target="_blank">cord.h</a> — Small C library for handling strings</li>
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/mprogress" target="_blank">mprogress</a> — Tiny utility that displays progress bar in terminal</li>
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/qli" target="_blank">qli</a> — Quantum Lorem Ipsum generator for command line</li>
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/journalctl-proxy" target="_blank">journalctl-proxy</a> — Exposes your systemd logs to web via web interface</li>
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/redis-marshal" target="_blank">redis-marshal</a> — Lightweight Redis UI tool</li>
-		<li role="listitem"><a href="https://github.com/mitjafelicijan/dna-encoding" target="_blank">dna-encoding</a> — Tools for encoding files to DNA sequences</li>
-	</ul>
-</div>
+<section>
+	<h2>Posts</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Title</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			{{ range .Pages }}
+				{{ if and (not .Draft) (eq .Type "post") }}
+				<tr>
+					<td><time datetime="{{ .Created.Format "2006-01-02" }}">{{ .Created.Format "2006-01-02" }}</time></td>
+					<td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+					<td class="tags">
+						{{ if .Meta.tags }}
+							{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
+						{{ end }}
+					</td>
+				</tr>
+				{{ end }}
+			{{ end }}
+		</tbody>
+	</table>
+</section>
+
+<section>
+	<h2>Visualizations and exploration of binary files</h2>
+	<a href="https://mitjafelicijan.github.io/binary-visualization/" target="_blank">
+		<img src="/assets/general/trigraphs.gif" class="no-border">
+	</a>
+</section>
 {{ end }}

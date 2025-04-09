@@ -7,7 +7,7 @@ draft: false
 tags: [3d]
 ---
 
-![](/assets/notes/male-body-proportions.jpg)
+![Male body proportions](/assets/notes/male-body-proportions.jpg)
 
-![](/assets/notes/female-body-proportions.jpg)
+![Female body proportions](/assets/notes/female-body-proportions.jpg)
 

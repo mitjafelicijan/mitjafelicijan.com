@@ -2,9 +2,9 @@
 title: Embedding game assets within your executable binary
 url: embedding-game-assets-within-your-binary.html
 date: 2025-04-08T16:13:13+02:00
-type: note
+type: post
 draft: false
-tags: [gamedev]
+tags: []
 ---
 
 ## Why?
@@ -50,18 +50,6 @@ We first need to setup main game loop and get the game running.
 #include "raylib.h"
 
 int main(void) {
-	SetConfigFlags(FLAG_WINDOW_RESIZABLE | FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI);
-	InitWindow(900, 400, "Embedding assets");
-	SetTargetFPS(60);
-
-	while (!WindowShouldClose()) {
-		BeginDrawing();
-		ClearBackground(BLACK);
-		EndDrawing();
-	}
-
-	CloseWindow();
-	return 0;
 }
 ```
 

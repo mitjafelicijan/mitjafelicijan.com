@@ -12,34 +12,50 @@
 
 		<style>
 			:root {
+				--base-background: white;
+				--base-color: black;
+				--link-color: blue;
 				--first-child-width: 150px;
 				--primary-color: gainsboro;
 				--secondary-color: black;
 				--tertiary-color: #eee;
 				--code-color: #f9f9f9;
 				--border-width: 1px;
+				--header-color: black;
 				--header-border-width: 2px;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--base-background: black;
+					--base-color: white;
+					--link-color: white;
+					--primary-color: white;
+					--secondary-color: white;
+					--code-color: black;
+					--header-color: black;
+				}
 			}
 
 			* { box-sizing: border-box; }
 
 			html { scroll-padding-top: 1.5em; }
-			body { font-family: sans-serif; padding: 0 1em; line-height: 160%; display: flex; flex-direction: column; gap: 4em; }
+			body { font-family: sans-serif; padding: 0 1em; line-height: 160%; display: flex; flex-direction: column; gap: 4em; background: var(--base-background); color: var(--base-color); }
 			table { width: 100%; border: var(--border-width) solid var(--primary-color); border-collapse: collapse; }
-			table thead { background: var(--primary-color); border: var(--border-width) solid var(--secondary-color); }
+			table thead { background: var(--primary-color); border: var(--border-width) solid var(--secondary-color); color: var(--header-color); }
 			table td, table th { text-align: left; padding: 0.3em 0.5em; }
 			table tbody tr { border-bottom: var(--border-width) solid var(--primary-color); vertical-align: middle; }
 			table tr td:first-child { width: var(--first-child-width); }
 			table td.tags { display: flex; gap: 0.5em; justify-content: flex-end; align-items: center; }
 			table td.tags mark { padding: 0 0.4em; background: var(--primary-color); font-size: small; }
 
-			a { color: blue; text-decoration: none; }
+			a { color: var(--link-color); text-decoration: none; }
 			a:hover { text-decoration: underline; }
 
 			header { border-bottom: var(--header-border-width) solid var(--secondary-color); padding: 0.5em 0; display: flex; }
 			header nav:first-child { display: flex; width: var(--first-child-width); }
 			header nav:last-child { display: flex; gap: 1.5em; }
-			header nav:last-child a { color: black; }
+			header nav:last-child a { color: var(--base-color); }
 
 			footer { color: gray; }
 			footer a { color: gray; text-decoration: underline; }

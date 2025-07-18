@@ -24,6 +24,7 @@ draft: false
 - [sparklines](#sparklines) 
 - [ttdaw](#ttdaw) 
 - [TurtleTweaks](#turtletweaks) 
+- [xmagnify](#xmagnify) 
 
 
 </div>
@@ -341,6 +342,25 @@ World of Warcraft 1.12 client Tweaks and Enhancements Addon.
 <div class='github-link'>
 
 ![](/assets/general/github.svg)[mitjafelicijan/TurtleTweaks](https://github.com/mitjafelicijan/TurtleTweaks)
+
+</div>
+
+## xmagnify
+Xmagnify is a real-time screen magnification tool for X11 systems that provides a zoomed view of the area around your mouse cursor.
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2025-07-18|First release| [xmagnify-v1.0.tar.gz](/projects/xmagnify-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/xmagnify](https://github.com/mitjafelicijan/xmagnify)
 
 </div>
 

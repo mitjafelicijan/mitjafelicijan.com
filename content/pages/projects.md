@@ -19,6 +19,7 @@ draft: false
 - [newsbarge](#newsbarge) 
 - [oberon](#oberon) 
 - [p9tree](#p9tree) 
+- [pats](#pats) 
 - [rssperado](#rssperado) 
 - [sm](#sm) 
 - [sparklines](#sparklines) 
@@ -240,6 +241,25 @@ tree is written with Plan9 Operating System in mind so it may not work with othe
 <div class='github-link'>
 
 ![](/assets/general/github.svg)[mitjafelicijan/p9tree](https://github.com/mitjafelicijan/p9tree)
+
+</div>
+
+## pats
+Pats is a command-line tool for managing PulseAudio audio sinks that allows you to list available audio outputs and cycles between them seamlessly.
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2025-07-19|First release| [pats-v1.0.tar.gz](/projects/pats-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/pats](https://github.com/mitjafelicijan/pats)
 
 </div>
 

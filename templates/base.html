@@ -68,7 +68,7 @@
 			img, video, audio { max-width: 100%; }
 			figure { display: flex; justify-content: center; margin: 2.5em 0; }
 			img, video { border: var(--border-width) solid var(--primary-color); padding: 0.5em; }
-			img.no-border, video.no-border { border: 0; padding: 0; }
+			img.no-border, video.no-border, img[src$="?no-border"] { border: 0; padding: 0; }
 
 			pre { background: var(--code-color)!important; border: var(--border-width) solid var(--primary-color); text-wrap: wrap; padding: 1.0em; line-height: 170%; text-wrap: nowrap; overflow-x: auto; }
 			code { background: var(--code-color); padding: 0 0.2em; }

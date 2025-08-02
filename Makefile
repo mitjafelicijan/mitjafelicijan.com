@@ -1,4 +1,5 @@
 MAKEFLAGS+=-j2
+PROJECTS_FILENAME = content/pages/projects.md
 
 dev: watch server
 
@@ -8,5 +9,22 @@ watch:
 server:
 	jbmafp -s
 
-fetch-projects:
-	cd tools && python projects.py
+update-projects: projects-header
+	cat content/pages/projects.fossil.md.part \
+		content/pages/projects.github.md.part >> \
+		content/pages/projects.md
+
+projects-header:
+	echo "---" > $(PROJECTS_FILENAME)
+	echo "title: Personal projects" >> $(PROJECTS_FILENAME)
+	echo "date: 2024-10-21T12:00:00+02:00" >> $(PROJECTS_FILENAME)
+	echo "url: projects.html" >> $(PROJECTS_FILENAME)
+	echo "type: page" >> $(PROJECTS_FILENAME)
+	echo "draft: false" >> $(PROJECTS_FILENAME)
+	echo "---\n" >> $(PROJECTS_FILENAME)
+
+update-fossil:
+	cd tools && bash fossil-projects.sh
+
+update-github:
+	cd tools && python github-projects.py

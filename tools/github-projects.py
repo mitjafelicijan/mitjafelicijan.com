@@ -12,17 +12,11 @@ headers = {
     "Accept": "application/vnd.github.v3+json"
 }
 
-
 def generate_markdown_file(include_repositories):
-    file = open("../content/pages/projects.md", "w")
+    file = open("../content/pages/projects.github.md.part", "w")
 
-    file.write("---\n")
-    file.write("title: Personal projects\n")
-    file.write("date: 2024-10-21T12:00:00+02:00\n")
-    file.write("url: projects.html\n")
-    file.write("type: page\n")
-    file.write("draft: false\n")
-    file.write("---")
+    file.write(DOUBLE_NL)
+    file.write("## GitHub repositories")
     file.write(DOUBLE_NL)
 
     file.write("<div class='project-list'>")
@@ -76,8 +70,6 @@ def generate_markdown_file(include_repositories):
 
     file.close()
 
-
-
 def download_tarball(url, filepath):
     with requests.get(url, stream=True, timeout=30) as response:
         response.raise_for_status()
@@ -85,7 +77,6 @@ def download_tarball(url, filepath):
         with open(filepath, "wb") as file:
             for chunk in response.iter_content(chunk_size=8192):
                 file.write(chunk)
-
 
 def assert_rate_limit(response):
     rate_limit_limit = int(response.headers.get("x-ratelimit-limit"))
@@ -96,7 +87,6 @@ def assert_rate_limit(response):
 
     if rate_limit_remaining == 0:
         sys.exit(1)
-
 
 def fetch_github_data():
     include_repositories = []
@@ -135,7 +125,6 @@ def fetch_github_data():
                 download_tarball(release["tarball_url"], f"../static/projects/{release['filename']}")
         
     return include_repositories
-
 
 include_repositories = fetch_github_data()
 

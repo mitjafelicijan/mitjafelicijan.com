@@ -2,17 +2,17 @@
 title: Personal projects
 date: 2024-10-21T12:00:00+02:00
 url: projects.html
-type: page
+type: page-no-title
 draft: false
 ---
 
-## Fossil repositories
+# Fossil repositories
 
-- [pats.fossil](/projects/pats.fossil)<br><small>Size: 220K, Modified: 2025-08-02 20:21:40</small>
-- [xmagnify.fossil](/projects/xmagnify.fossil)<br><small>Size: 220K, Modified: 2025-08-02 20:21:40</small>
+- [pats.fossil](/projects/pats.fossil)<br><small>Size: 220K, Modified: 2025-08-02 20:30:23</small>
+- [xmagnify.fossil](/projects/xmagnify.fossil)<br><small>Size: 220K, Modified: 2025-08-02 20:37:02</small>
 
 
-## GitHub repositories
+# GitHub repositories
 
 <div class='project-list'>
 

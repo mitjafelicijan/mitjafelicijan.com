@@ -16,7 +16,7 @@ def generate_markdown_file(include_repositories):
     file = open("../content/pages/projects.github.md.part", "w")
 
     file.write(DOUBLE_NL)
-    file.write("## GitHub repositories")
+    file.write("# GitHub repositories")
     file.write(DOUBLE_NL)
 
     file.write("<div class='project-list'>")

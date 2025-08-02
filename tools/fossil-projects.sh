@@ -1,11 +1,9 @@
-set -xe
-
 OUT=../content/pages/projects.fossil.md.part
 
-echo -e "## Fossil repositories\n" > $OUT
+echo -e "# Fossil repositories\n" > $OUT
 
 find ~/Projects/ -type f -name "*.fossil" -not -path "*/website/*" | while read -r file; do
-	cp $file ../static/projects/
+	rsync -uv $file ../static/projects/
 done
 
 find ../static/projects/ -type f -name "*.fossil" | while read -r file; do

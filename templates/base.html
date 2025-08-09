@@ -25,18 +25,6 @@
 				--header-border-width: 2px;
 			}
 
-			/*@media (prefers-color-scheme: dark) {
-				:root {
-					--base-background: black;
-					--base-color: white;
-					--link-color: white;
-					--primary-color: white;
-					--secondary-color: white;
-					--code-color: black;
-					--header-color: black;
-				}
-			}*/
-
 			* { box-sizing: border-box; }
 
 			html { scroll-padding-top: 1.5em; }
@@ -46,8 +34,13 @@
 			table td, table th { text-align: left; padding: 0.3em 0.5em; }
 			table tbody tr { border-bottom: var(--border-width) solid var(--primary-color); vertical-align: middle; }
 			table tr td:first-child { width: var(--first-child-width); }
+			table.normal tr td:first-child { width: auto; }
 			table td.tags { display: flex; gap: 0.5em; justify-content: flex-end; align-items: center; }
 			table td.tags mark { padding: 0 0.4em; background: var(--primary-color); font-size: small; }
+
+			.left { text-align: left }
+			.center { text-align: center }
+			.right { text-align: right }
 
 			a { color: var(--link-color); text-decoration: none; }
 			a:hover { text-decoration: underline; }
@@ -80,9 +73,9 @@
 			article iframe { margin: 0!important; }
 			pre code span { display: initial !important; }
 
-			/*@media only screen and (max-width: 860px) {
-				.hide-on-mobile { display: none; }
-			}*/
+			@media print {
+				header, footer { display: none }
+			}
 		</style>
 		<script defer src="https://app.tinyanalytics.io/pixel/isfRNEahfHiS2Ttp"></script>
 	</head>

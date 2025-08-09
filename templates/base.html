@@ -23,6 +23,7 @@
 				--border-width: 1px;
 				--header-color: black;
 				--header-border-width: 2px;
+				--content-width: 840px;
 			}
 
 			* { box-sizing: border-box; }
@@ -38,22 +39,21 @@
 			table td.tags { display: flex; gap: 0.5em; justify-content: flex-end; align-items: center; }
 			table td.tags mark { padding: 0 0.4em; background: var(--primary-color); font-size: small; }
 
-			.left { text-align: left }
-			.center { text-align: center }
-			.right { text-align: right }
-
 			a { color: var(--link-color); text-decoration: none; }
 			a:hover { text-decoration: underline; }
 
-			header { border-bottom: var(--header-border-width) solid var(--secondary-color); padding: 0.5em 0; display: flex; }
-			header nav:first-child { display: flex; width: var(--first-child-width); }
-			header nav:last-child { display: flex; gap: 1.5em; }
-			header nav:last-child a { color: var(--base-color); }
+			header { border-bottom: var(--header-border-width) solid var(--secondary-color); padding: 0.5em 0; }
+			header div { min-width: var(--content-width); max-width: var(--content-width); display: flex; }
+			header div nav:first-child { display: flex; width: var(--first-child-width); }
+			header div nav:nth-child(2) { display: flex; gap: 1.5em; }
+			header div nav:nth-child(2) a { color: var(--base-color); }
+			header div nav:last-child { text-align: right; margin-left: auto; display: flex; }
 
 			footer { color: gray; }
+			footer div { min-width: var(--content-width); max-width: var(--content-width); }
 			footer a { color: gray; text-decoration: underline; }
 
-			main { max-width: 840px; display: flex; gap: 2em; flex-direction: column; }
+			main {  min-width: var(--content-width); max-width: var(--content-width); display: flex; gap: 2em; flex-direction: column; }
 			h1, h2, h3, h4 { font-size: initial; }
 			article h2, article h3, article h4 { margin-block-start: 2.5em; }
 			article h1 { font-size: 130%; line-height: 110%; }
@@ -69,12 +69,18 @@
 
 			.capitalize { text-transform: capitalize; }
 			
+			.text-left { text-align: left; }
+			.text-center { text-align: center; }
+			.text-right { text-align: right; }
+
+			.content-center { margin: 0 auto; }
+
 			/* Hotfixes for strange behaviour. */
 			article iframe { margin: 0!important; }
 			pre code span { display: initial !important; }
 
 			@media print {
-				header, footer { display: none }
+				header, footer { display: none; }
 			}
 		</style>
 		<script defer src="https://app.tinyanalytics.io/pixel/isfRNEahfHiS2Ttp"></script>
@@ -82,27 +88,70 @@
 
 	<body>
 		<header>
-			<nav>
-				<span><strong>Navigation</strong></span>
-			</nav>
-			<nav>
-				<span><a href="/">Home</a></span>
-				<span><a href="/projects.html">Projects</a></span>
-				<span><a href="https://github.com/mitjafelicijan/probe" target="_blank">Probe</a></span>
-				<span><a href="https://github.com/mitjafelicijan" target="_blank">Code</a></span>
-				<span><a href="https://github.com/mitjafelicijan/dotfiles" target="_blank">Dotfiles</a></span>
-				<span><a href="/curriculum-vitae.html">CV</a></span>
-				<span><a href="/feed.xml">RSS</a></span>
-			</nav>
+			<div class="content">
+				<nav>
+					<span><strong>Navigation</strong></span>
+				</nav>
+				<nav>
+					<span><a href="/">Home</a></span>
+					<span><a href="/projects.html">Projects</a></span>
+					<span><a href="https://github.com/mitjafelicijan/probe" target="_blank">Probe</a></span>
+					<span><a href="https://github.com/mitjafelicijan" target="_blank">Code</a></span>
+					<span><a href="https://github.com/mitjafelicijan/dotfiles" target="_blank">Dotfiles</a></span>
+					<span><a href="/curriculum-vitae.html">CV</a></span>
+					<span><a href="/feed.xml">RSS</a></span>
+				</nav>
+				<nav>
+					<button id="content_align_button">center</button>
+				</nav>
+			</div>
 		</header>
-		<main>
+
+		<main class="content">
 			{{ block "content" . }}{{ end }}
 		</main>
 
 		<footer>
-			<p>You can write me an email at <a href="mailto:mitja.felicijan@gmail.com">mitja.felicijan@gmail.com</a> or catch up with me <a href="https://telegram.me/mitjafelicijan" target="_blank">on Telegram</a>.</p>
-			<p>This page's is also available as <a href="/feed.xml" target="_blank">RSS feed</a>. Page was built with <a href="https://github.com/mitjafelicijan/jbmafp" target="_blank">jbmafp</a>.</p>
+			<div class="content">
+				<p>You can write me an email at <a href="mailto:mitja.felicijan@gmail.com">mitja.felicijan@gmail.com</a> or catch up with me <a href="https://telegram.me/mitjafelicijan" target="_blank">on Telegram</a>.</p>
+				<p>This page's is also available as <a href="/feed.xml" target="_blank">RSS feed</a>. Page was built with <a href="https://github.com/mitjafelicijan/jbmafp" target="_blank">jbmafp</a>.</p>
+			</div>
 		</footer>
+
+		<script>
+			function align_content_left() {
+				document.querySelectorAll(".content").forEach(el => {
+					el.classList.remove("content-center");
+				});
+				content_align_button.innerText = "center";
+				localStorage.setItem("content-align", "left");
+			}
+
+			function align_content_center() {
+				document.querySelectorAll(".content").forEach(el => {
+					el.classList.add("content-center");
+				});
+				content_align_button.innerText = "left";
+				localStorage.setItem("content-align", "center");
+			}
+
+			{
+				let initial_align = localStorage.getItem("content-align");
+				if (!initial_align) {
+					localStorage.setItem("content-align", "left");
+					initial_align = localStorage.getItem("content-align");
+				}
+
+				if (initial_align == "center") {
+					align_content_center();
+				}
+			}
+
+			content_align_button.onclick = function(e) {
+				const align = localStorage.getItem("content-align");
+				if (align == "center") { align_content_left(); }
+				if (align == "left") { align_content_center(); }
+			}
+		</script>
 	</body>
 </html>
-

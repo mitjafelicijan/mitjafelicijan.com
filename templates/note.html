@@ -15,30 +15,13 @@
 
 <section>
 	<h2>Other notes</h2>
-	<table>
-		<thead>
-			<tr>
-				<th>Date</th>
-				<th>Title</th>
-				<th></th>
-			</tr>
-		</thead>
-		<tbody>
-			{{ range .Pages | filterbytype "note" | random 15 }}
-				{{ if not .Draft }}
-				<tr>
-					<td><time datetime="{{ .Created.Format "2006-01-02" }}">{{ .Created.Format "2006-01-02" }}</time></td>
-					<td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-					<td class="tags">
-						{{ if .Meta.tags }}
-							{{ range .Meta.tags }}<mark>{{ . }}</mark>{{ end }}
-						{{ end }}
-					</td>
-				</tr>
-				{{ end }}
-			{{ end }}
-		</tbody>
-	</table>
+	<nav class="multicolumn-list">
+		{{ range .Pages | filterbytype "note" | random 12 }}
+		{{ if not .Draft }}
+		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		{{ end }}
+		{{ end }}
+	</nav>
 </section>
 
 {{ if .Page.Meta.mathjax }}

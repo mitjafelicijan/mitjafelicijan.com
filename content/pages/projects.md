@@ -391,14 +391,3 @@ Xmagnify is a real-time screen magnification tool for X11 systems that provides 
 ![](/assets/general/github.svg)[mitjafelicijan/xmagnify](https://github.com/mitjafelicijan/xmagnify)
 
 </div>
-
-
-
-<style>
-.project-release table tr td:last-child { text-align: right; }
-.project-release table tr th:last-child { text-align: right; }
-.project-list ul { column-count: 3; column-gap: 3em; }
-.github-link p { display: flex; align-items: center; gap: 0.3em; }
-.github-link p img { border: 0; padding: 0; height: 15px; }
-</style>
-

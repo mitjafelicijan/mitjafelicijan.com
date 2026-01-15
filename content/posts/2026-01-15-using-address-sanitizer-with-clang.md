@@ -54,9 +54,6 @@ If you run the binary it should trigger ASan.  You can also specify what to
 show with `ASAN_OPTIONS=detect_leaks=1:verbosity=1:symbolize=1 ./main` and you
 should see something like this.
 
-> By using any kind of optimization with `-On` will likely optimize the
-> problematic code out. But you can never be sure of it.
-
 ```text
 MemToShadow(shadow): 0x00008fff7000 0x000091ff6dff 0x004091ff6e00 0x02008fff6fff
 redzone=16

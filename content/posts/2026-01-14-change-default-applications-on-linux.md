@@ -1,7 +1,7 @@
 ---
 title: Change default applications on Linux from terminal
 url: change-default-applications-on-linux-from-terminal.html
-date: 2026-01-15T16:13:13+02:00
+date: 2026-01-14T16:13:13+02:00
 type: post
 draft: false
 tags: []

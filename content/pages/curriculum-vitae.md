@@ -55,6 +55,8 @@ until it surrenders its mysteries to you.
 - Tiny terminal DAW using MIDI, Soundfonts and Lua for scripting (2024)
 - BLP texture file converter (2024)
 - RAG and LLM chat system for WoW guilds (2025)
+- X11 floating window manager inspired by CWM (2025)
+- Toy debugger with better terminal interface (2026)
 
 ## Employment history
 

@@ -32,3 +32,8 @@ update-fossil: # Update Fossil projects
 
 update-github: # Update GitHub projects
 	cd tools && python github-projects.py
+
+deploy:
+	-rm public/
+	jbmafp --build
+	rsync -avz --delete --progress ./public/ web@mitjafelicijan.com:/home/web/htdocs/

@@ -14,8 +14,7 @@ server:
 	jbmafp -s
 
 update-projects: projects-header # Update projects page
-	cat content/pages/projects.fossil.md.part \
-		content/pages/projects.github.md.part >> \
+	cat content/pages/projects.github.md.part >> \
 		content/pages/projects.md
 
 projects-header:
@@ -26,9 +25,6 @@ projects-header:
 	echo "type: page-no-title" >> $(PROJECTS_FILENAME)
 	echo "draft: false" >> $(PROJECTS_FILENAME)
 	echo "---\n" >> $(PROJECTS_FILENAME)
-
-update-fossil: # Update Fossil projects
-	cd tools && bash fossil-projects.sh
 
 update-github: # Update GitHub projects
 	cd tools && python github-projects.py

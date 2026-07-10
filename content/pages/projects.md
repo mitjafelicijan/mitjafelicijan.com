@@ -6,10 +6,6 @@ type: page-no-title
 draft: false
 ---
 
-# Fossil repositories
-
-- [pats.fossil](/projects/pats.fossil)<br><small>Size: 220K, Modified: 2025-08-02 20:30:23</small>
-- [xmagnify.fossil](/projects/xmagnify.fossil)<br><small>Size: 220K, Modified: 2025-08-02 20:37:02</small>
 
 
 # GitHub repositories
@@ -17,22 +13,32 @@ draft: false
 <div class='project-list'>
 
 - [abtts](#abtts) 
+- [bbgit](#bbgit) 
+- [bidi](#bidi) 
 - [blpconvert](#blpconvert) 
 - [ClassicEnhanced](#classicenhanced) 
 - [clutch](#clutch) 
+- [crep](#crep) 
+- [glitch](#glitch) 
+- [hepi](#hepi) 
 - [jbmafp](#jbmafp) 
 - [lazycommit](#lazycommit) 
+- [luna](#luna) 
 - [makext](#makext) 
 - [mprogress](#mprogress) 
 - [newsbarge](#newsbarge) 
 - [oberon](#oberon) 
 - [p9tree](#p9tree) 
 - [pats](#pats) 
+- [qwe-editor](#qwe-editor) 
 - [rssperado](#rssperado) 
 - [sm](#sm) 
 - [sparklines](#sparklines) 
+- [tinyos](#tinyos) 
+- [toy-debugger](#toy-debugger) 
 - [ttdaw](#ttdaw) 
 - [TurtleTweaks](#turtletweaks) 
+- [xdgctl](#xdgctl) 
 - [xmagnify](#xmagnify) 
 
 
@@ -56,6 +62,44 @@ Convert text like ebooks into audiobooks with UnrealSpeech.
 <div class='github-link'>
 
 ![](/assets/general/github.svg)[mitjafelicijan/abtts](https://github.com/mitjafelicijan/abtts)
+
+</div>
+
+## bbgit
+Simple Git web interface in Go
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2026-05-19|First release| [bbgit-v1.0.tar.gz](/projects/bbgit-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/bbgit](https://github.com/mitjafelicijan/bbgit)
+
+</div>
+
+## bidi
+Bidi is a lightweight framework and/or fantasy console designed for creating tiny video games, perfect for learning and having fun.
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2025-08-11|First release| [bidi-v1.0.tar.gz](/projects/bidi-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/bidi](https://github.com/mitjafelicijan/bidi)
 
 </div>
 
@@ -117,6 +161,63 @@ Clutch allows you to run nested dwm session inside your existing X or Wayland se
 
 </div>
 
+## crep
+If grep and etags had a baby
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2026-01-22|First release| [crep-v1.0.tar.gz](/projects/crep-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/crep](https://github.com/mitjafelicijan/crep)
+
+</div>
+
+## glitch
+Minimal X11 window manager
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2026-04-30|First release| [glitch-v1.0.tar.gz](/projects/glitch-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/glitch](https://github.com/mitjafelicijan/glitch)
+
+</div>
+
+## hepi
+A command-line tool for testing REST APIs using YAML configurations that supports environment variables, dynamic data generation, and state/response chaining
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2026-02-07|First release| [hepi-v1.1.0.tar.gz](/projects/hepi-v1.1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/hepi](https://github.com/mitjafelicijan/hepi)
+
+</div>
+
 ## jbmafp
 A simple static site generator that is semi compatible with Hugo and aims to be a simpler version of it, getting out of your way when it comes to taxonomies.
 
@@ -157,8 +258,27 @@ Git commit messages for lazy people that use AI in the backend.
 
 </div>
 
+## luna
+Lightweight Lua runtime powered by LuaJIT and libev
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2026-05-18|First release| [luna-v1.0.tar.gz](/projects/luna-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/luna](https://github.com/mitjafelicijan/luna)
+
+</div>
+
 ## makext
-Makext is a collection of useful extensions for Makefiles, aimed at simplifying and enhancing the functionality of Make-based projects. These extensions provide additional features and convenience functions to improve the overall usage of GNU Make as a task runner.
+Makext is a collection of extensions for Makefiles that enhance the functionality of GNU Make in projects
 
 
 <div class='project-release'>
@@ -271,6 +391,25 @@ Pats is a command-line tool for managing PulseAudio audio sinks that allows you 
 
 </div>
 
+## qwe-editor
+Small, opinionated modal text editor in the terminal.
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2026-05-20|First release| [qwe-editor-v1.0.tar.gz](/projects/qwe-editor-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/qwe-editor](https://github.com/mitjafelicijan/qwe-editor)
+
+</div>
+
 ## rssperado
 The RSS parser is a command-line utility that simplifies the process of parsing RSS feeds, enriching the extracted data, exporting it to JSON files, enabling content classification, and providing English translation.
 
@@ -310,7 +449,7 @@ Simple snapshot utility that uses TAR to compress current directory into a .tar 
 </div>
 
 ## sparklines
-Self-contained tiny SVG sparkline chart library written in vanilla JS with zero dependencies.
+Self-contained tiny SVG sparkline chart library written in vanilla JS with zero dependencies
 
 
 <div class='project-release'>
@@ -325,6 +464,44 @@ Self-contained tiny SVG sparkline chart library written in vanilla JS with zero 
 <div class='github-link'>
 
 ![](/assets/general/github.svg)[mitjafelicijan/sparklines](https://github.com/mitjafelicijan/sparklines)
+
+</div>
+
+## tinyos
+Minimal, 32-bit x86 operating system
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2026-05-09|First release| [tinyos-v1.0.tar.gz](/projects/tinyos-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/tinyos](https://github.com/mitjafelicijan/tinyos)
+
+</div>
+
+## toy-debugger
+Toy Debugger built with LLDB C++ API
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2026-01-17|First release| [toy-debugger-v1.0.tar.gz](/projects/toy-debugger-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/toy-debugger](https://github.com/mitjafelicijan/toy-debugger)
 
 </div>
 
@@ -373,6 +550,26 @@ World of Warcraft 1.12 client Tweaks and Enhancements Addon.
 
 </div>
 
+## xdgctl
+TUI for managing XDG default applications
+
+
+<div class='project-release'>
+
+|Released|Description|Download|
+|--------|-----------|--------|
+|2026-06-30|Added per extension association| [xdgctl-v1.1.tar.gz](/projects/xdgctl-v1.1.tar.gz) |
+|2026-01-26|First release| [xdgctl-v1.0.tar.gz](/projects/xdgctl-v1.0.tar.gz) |
+
+
+</div>
+
+<div class='github-link'>
+
+![](/assets/general/github.svg)[mitjafelicijan/xdgctl](https://github.com/mitjafelicijan/xdgctl)
+
+</div>
+
 ## xmagnify
 Xmagnify is a real-time screen magnification tool for X11 systems that provides a zoomed view of the area around your mouse cursor.
 
@@ -391,3 +588,4 @@ Xmagnify is a real-time screen magnification tool for X11 systems that provides 
 ![](/assets/general/github.svg)[mitjafelicijan/xmagnify](https://github.com/mitjafelicijan/xmagnify)
 
 </div>
+
